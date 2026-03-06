@@ -116,3 +116,31 @@ A diferencia de los virus, los troyanos no se replican por sí mismos; utilizan 
 ### 🔑 Concepto: Ataque de Fuerza Bruta (Brute Force)
 * **Definición:** Es un método de "ensayo y error" donde el atacante intenta adivinar contraseñas o credenciales probando múltiples combinaciones hasta encontrar la correcta.
 * **Uso en Emotet:** Sirve para ganar acceso a otros equipos y servidores dentro de la misma red una vez que el troyano inicial ha infectado una máquina.
+###
+## 🔒 Ransomware: El secuestro de datos
+El Ransomware es un tipo de malware que toma como "rehén" a un sistema o a sus datos, restringiendo el acceso hasta que se pague un rescate.
+
+### 🧠 Tácticas de Ataque y Psicología
+Este malware es altamente efectivo porque utiliza el **miedo y el pánico** del usuario mediante mensajes alarmantes:
+* **Falsas alertas de virus:** "Tu dispositivo tiene un virus. Para eliminarlo, haz clic aquí".
+* **Amenazas de cifrado:** "Tus archivos están cifrados. Paga el rescate en menos de 48 horas para recuperar el acceso".
+
+> **Nota Crítica:** A veces, el mensaje es un truco inicial; el malware puede no estar instalado hasta que el usuario interactúa con la alerta.
+
+### ⚠️ Consecuencias y Recuperación
+* **Complejidad:** La recuperación es tan difícil que suele requerir especialistas en recuperación de datos.
+* **Sin garantías:** Pagar el rescate **no garantiza** que el atacante devuelva el acceso a los archivos.
+![WannaCry](../img/WannaCry.png)
+
+
+### 😷 Caso de Estudio: WannaCry (El Ransomware Global)
+WannaCry es uno de los ataques de ransomware más devastadores de la historia, destacando la importancia de mantener los sistemas actualizados.
+
+* **Impacto Global:** En tan solo unas pocas horas, afectó a más de **150 países** y **230,000 computadoras**.
+* **Modus Operandi:** * Una vez activado, cifraba los datos del usuario.
+    * Instruía a las víctimas a pagar un rescate utilizando **criptomonedas** (monedas digitales no reguladas) para dificultar el rastreo del dinero.
+* **El factor clave (Software desactualizado):** El ataque capitalizó vulnerabilidades en software antiguo, ensañándose particularmente con la **industria de la salud** (hospitales).
+* **Costo Económico:** Se estima que WannaCry costó a las organizaciones más de **4 mil millones de dólares** en todo el mundo.
+
+
+> **Lección de Seguridad:** La mayoría de las infecciones se habrían evitado si los sistemas hubieran tenido los parches de seguridad al día. Esto demuestra que la "Gobernanza" (gestión de actualizaciones) es una barrera técnica vital.
