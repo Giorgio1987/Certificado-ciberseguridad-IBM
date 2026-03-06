@@ -33,4 +33,20 @@ Basado en el programa oficial de IBM SkillsBuild:
 * [ ] Creación de un plan de control de seguridad física.
 
 ---
-> *Notas en progreso conforme avanzo en el contenido.*
+
+## 🌐 Peligros al Navegar por Internet
+Al procesar y compartir información digital, nos exponemos a una gran variedad de ataques diseñados para obtener control o causar daño.
+
+### 🚨 Tipos de Amenazas Digitales
+* **Virus:** Cualquier programa que infecta un sistema sin permiso del usuario para ganar control o causar daño.
+* **Adware:** Software no deseado diseñado para mostrar anuncios en el navegador, exponiéndonos a ataques maliciosos.
+* **Keyloggers:** Herramientas que registran cada tecla presionada, permitiendo el robo de contraseñas, datos médicos y financieros.
+
+### 🛡️ Controles de Seguridad y Soluciones
+Para prevenir que estos ataques tengan éxito, se deben implementar diferentes tipos de controles:
+* **Basados en Software:** Uso de programas antivirus y bloqueadores de anuncios (ad blockers).
+* **Estándares de la Industria:** Implementación de marcos de trabajo como **CIS Controls** y **NIST**.
+
+
+---
+> *“A medida que los atacantes se vuelven más inteligentes, es vital conocer las amenazas y las debilidades que buscan explotar.”*
