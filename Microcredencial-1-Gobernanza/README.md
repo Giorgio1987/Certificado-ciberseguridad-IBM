@@ -53,3 +53,17 @@ Para prevenir que estos ataques tengan éxito, se deben implementar diferentes t
 ---
 
 ![EXPLICACIÓN DE LOS PELIGROS](../img/peligros-sin-antivirus.png)
+ 
+### 🦠 El Virus Informático: El riesgo de la interacción
+Inspirados en los virus biológicos, estos programas se replican y propagan dañando los sistemas a su paso.
+
+* **Definición:** Malware que se adjunta a archivos o programas legítimos para replicarse y saltar de un dispositivo a otro.
+* **El factor humano (Activación):** Los virus **necesitan interacción del usuario** para ejecutarse. No actúan solos; necesitan que alguien "abra la puerta".
+* **Vectores de infección comunes:**
+    * Archivos adjuntos en correos electrónicos (documentos que parecen inofensivos pero son ejecutables disfrazados).
+    * Descargas desde sitios web no confiables.
+    * Conexión de dispositivos ya infectados (como pendrives o discos externos) a tu equipo.
+* **Impacto y Daño:** * Disrupción de operaciones y alteración de datos críticos.
+    * Borrado completo de discos duros.
+    * El daño se intensifica exponencialmente a medida que el virus logra replicarse y extenderse por la red.
+    ![I LOVE YOU](../img/I-LOVE-YOU.png)
