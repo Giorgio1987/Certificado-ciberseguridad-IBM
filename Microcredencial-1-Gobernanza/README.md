@@ -67,3 +67,29 @@ Inspirados en los virus biológicos, estos programas se replican y propagan dañ
     * Borrado completo de discos duros.
     * El daño se intensifica exponencialmente a medida que el virus logra replicarse y extenderse por la red.
     ![I LOVE YOU](../img/I-LOVE-YOU.png)
+
+    **Worm (Gusano):** Malware independiente que se propaga automáticamente a través de las redes explotando vulnerabilidades, a diferencia del virus sin necesidad de intervención humana.
+    Los gusanos pueden eliminar datos, saturar redes, degradar el rendimiento del hardware e instalar otro software malicioso.
+
+    ![Stuxnet worn](../img/Stuxnet.png)
+---
+
+## ☣️ Caso de Estudio: El Gusano Stuxnet
+Stuxnet es uno de los ejemplos más famosos de cómo un malware puede saltar del mundo digital al mundo físico para causar daño real.
+
+### 🔍 ¿Qué fue Stuxnet?
+* **Definición:** Un gusano informático extremadamente complejo diseñado para sabotear infraestructuras críticas (específicamente centrífugas de procesamiento de uranio en Irán).
+* **Vector de Infección:** Se propagó inicialmente a través de **unidades USB infectadas**, logrando saltar el "Air Gap" (aislamiento de red).
+* **Modus Operandi:** * El malware enviaba señales falsas a los sensores de control industrial para ocultar su presencia mientras dañaba físicamente la maquinaria.
+    * Fue diseñado para operar de forma totalmente sigilosa y mezclarse con las operaciones normales de la planta.
+
+---
+
+## ⏱️ Vulnerabilidades de Día Cero (Zero-day)
+Stuxnet fue revolucionario porque utilizó múltiples vulnerabilidades de este tipo al mismo tiempo.
+
+* **Concepto:** Son fallos de seguridad en un software o hardware que son previamente desconocidos por el fabricante.
+* **El Riesgo:** Como el fabricante aún no conoce la debilidad, **no existe un parche o actualización** disponible para arreglarla.
+* **Ataque de Día Cero:** Ocurre cuando un atacante descubre y explota esta vulnerabilidad antes de que el desarrollador tenga oportunidad de crear una defensa.
+
+---
