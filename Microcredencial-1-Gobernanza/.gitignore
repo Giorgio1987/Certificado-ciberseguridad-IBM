@@ -1,0 +1,18 @@
+# Extensiones de VS Code y archivos del sistema
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Archivos temporales o de respaldo
+*.tmp
+*.bak
+*.log
+
+# PRIVACIDAD (Opcional)
+# Si quiero guardar PDFs privados en tu PC pero NO en GitHub, 
+# quito el '#' de la línea de abajo:
+# *.pdf
+
+# Imágenes pesadas o archivos de diseño
+# *.psd
+# *.ai
