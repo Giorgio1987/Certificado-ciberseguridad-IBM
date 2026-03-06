@@ -93,3 +93,26 @@ Stuxnet fue revolucionario porque utilizó múltiples vulnerabilidades de este t
 * **Ataque de Día Cero:** Ocurre cuando un atacante descubre y explota esta vulnerabilidad antes de que el desarrollador tenga oportunidad de crear una defensa.
 
 ---
+**Trojan (Troyano):** Se disfraza de software legítimo y útil para engañar al usuario. Su objetivo suele ser crear "puertas traseras" (backdoors) para el atacante.
+Los atacantes disfrazan los troyanos como programas o archivos benignos, como juegos, fondos de pantalla u otras descargas.
+Cuando ejecutas el troyano, el atacante puede controlar tu ordenador de forma remota, robar datos, espiar tu actividad, instalar malware,o realizar otras acciones maliciosas.
+Y al igual que los gusanos, algunos troyanos no requieren la interacción del usuario para ejecutarse.
+
+***
+![EMOTET](../img/Emotet.png)
+
+## 🐎 Troyanos (Trojans): El engaño como arma
+A diferencia de los virus, los troyanos no se replican por sí mismos; utilizan el engaño para que el usuario les permita la entrada al sistema.
+
+### 🔍 Caso de Estudio: Emotet
+**Emotet** es un troyano avanzado diseñado originalmente para robar credenciales bancarias.
+
+* **Vector de ataque:** Se propaga mediante archivos adjuntos de correo electrónico disfrazados de documentos de Microsoft Word.
+* **Activación:** El malware se activa en cuanto el usuario hace clic en el archivo adjunto.
+* **Persistencia:** Una vez dentro, utiliza ataques de **fuerza bruta** para adivinar contraseñas y propagarse por la red hacia unidades compartidas.
+
+
+
+### 🔑 Concepto: Ataque de Fuerza Bruta (Brute Force)
+* **Definición:** Es un método de "ensayo y error" donde el atacante intenta adivinar contraseñas o credenciales probando múltiples combinaciones hasta encontrar la correcta.
+* **Uso en Emotet:** Sirve para ganar acceso a otros equipos y servidores dentro de la misma red una vez que el troyano inicial ha infectado una máquina.
