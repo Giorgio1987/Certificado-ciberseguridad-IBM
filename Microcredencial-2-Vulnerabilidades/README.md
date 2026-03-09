@@ -210,3 +210,40 @@ Para evitar ataques como Dark Hotel o el robo de datos en tránsito, sigue estas
 2. **Desconfiar de Actualizaciones:** Nunca descargues actualizaciones de software mientras estés conectado a una red que no sea la de tu hogar u oficina.
 3. **Autenticación de Dos Factores (2FA):** Incluso si un Keylogger roba tu contraseña, el 2FA evitará que el atacante entre a tus cuentas.
 4. **Olvidar Redes:** Configura tu dispositivo para que no se conecte automáticamente a redes Wi-Fi abiertas.
+
+## 📢 Adware (Advertising-supported Software)
+El adware es software diseñado para mostrar anuncios no deseados de forma automática en tu dispositivo.
+
+### 🔍 Características Principales
+* **Propósito:** Generar ingresos para el desarrollador mediante la visualización de publicidad (pop-ups, banners o redirecciones en el navegador).
+* **Método de entrada:** Suele venir "empaquetado" con software gratuito (freeware) o programas descargados de sitios no oficiales.
+* **Comportamiento:** * Cambia la página de inicio del navegador sin permiso.
+    * Muestra anuncios emergentes incluso cuando no estás navegando.
+    * Puede ralentizar el rendimiento del sistema y consumir ancho de banda.
+
+### ⚠️ El riesgo oculto: Malvertising
+Aunque el adware suele ser solo molesto, puede cruzar la línea hacia el peligro real:
+1. **Rastreo:** Puede actuar como un spyware básico, recolectando tu historial de búsqueda para "personalizar" los anuncios.
+2. **Puerta de enlace:** Algunos anuncios pueden contener scripts maliciosos que instalan otros tipos de malware (como troyanos o ransomware) si haces clic en ellos.
+
+### 🛠️ Prevención
+* Utilizar bloqueadores de anuncios (**Ad-blockers**).
+* Leer cuidadosamente los pasos de instalación de programas gratuitos para desmarcar "software adicional".
+* Realizar escaneos periódicos con herramientas como **Malwarebytes**.
+
+![Fireball](../img/Fireball.png)
+
+### 📦 Caso de Estudio: Fireball (Adware Masivo)
+Descubierto en 2017, Fireball demostró que el adware puede ser una herramienta de espionaje y control a nivel global.
+
+Escala del Ataque: Infectó a más de 250 millones de computadoras en todo el mundo.
+
+Método de Infección: Se distribuía "empaquetado" (bundled) con otros programas de software legítimos e instalándose sin que el usuario se diera cuenta.
+
+Acciones Maliciosas:
+
+Secuestro del Navegador: Cambiaba el motor de búsqueda predeterminado por uno controlado por los atacantes para rastrear toda la actividad de navegación.
+
+Ejecución de Código: Instalaba extensiones en el navegador capaces de ejecutar cualquier código que los creadores desearan, convirtiendo el equipo en una puerta abierta para otros malware.
+####
+
