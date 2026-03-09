@@ -256,3 +256,20 @@ Muchos tipos de Adware (como Fireball) no se limitan a mostrar anuncios; actúan
 > **🛡️ Tip de Seguridad:** Para mitigar este riesgo, es fundamental realizar limpiezas periódicas de cookies y utilizar bloqueadores de rastreo (trackers) en el navegador.
 
 ![Bots](../img/bots.png)
+## 🤖 Bots y Botnets: El ejército zombi
+Un **Bot** es un software malicioso diseñado para realizar tareas automáticas en internet bajo el control de un atacante remoto.
+
+### 🕸️ ¿Qué es una Botnet?
+Cuando miles o millones de dispositivos infectados (llamados "zombies") se conectan entre sí y son controlados por un único atacante (Botmaster), forman una **Botnet**.
+
+* **Control Remoto:** Los bots esperan instrucciones de un servidor de "Comando y Control" (C2).
+* **Propósito:** Se utilizan para realizar ataques a gran escala que un solo computador no podría lograr por sí solo.
+* **Impacto:** Los dispositivos infectados suelen volverse lentos, ya que sus recursos (procesador y red) están siendo utilizados para tareas maliciosas sin que el dueño lo sepa.
+
+### 🚨 Acciones comunes de una Botnet
+1. **Ataques DDoS (Distributed Denial of Service):** Inundar un sitio web con tanto tráfico que se cae y deja de funcionar.
+2. **Spam Masivo:** Enviar millones de correos basura o phishing de forma simultánea.
+3. **Fuerza Bruta:** Usar miles de IPs diferentes para intentar adivinar contraseñas, evitando que el sistema bloquee una sola dirección.
+4. **Minería de Criptomonedas:** Utilizar la potencia de cálculo de los dispositivos infectados para minar monedas digitales para el atacante.
+
+![3ve botnet](../img/botnet.png)
