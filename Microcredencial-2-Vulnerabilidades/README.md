@@ -1,4 +1,4 @@
-# Microcredencial 1: Gobernanza, Riesgo y Cumplimiento 🛡️
+# Microcredencial 2: Gestión de vulnerabilidades 🛡️
 
 En este módulo, exploro las diversas ciberamenazas y las mejores prácticas para combatirlas, enfocándome en la protección de activos y la gestión de riesgos humanos y físicos.
 
