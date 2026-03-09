@@ -273,3 +273,20 @@ Cuando miles o millones de dispositivos infectados (llamados "zombies") se conec
 4. **Minería de Criptomonedas:** Utilizar la potencia de cálculo de los dispositivos infectados para minar monedas digitales para el atacante.
 
 ![3ve botnet](../img/botnet.png)
+
+## 🕸️ Caso de Estudio: Botnet 3ve
+Este caso es un ejemplo de una infraestructura criminal compleja diseñada para defraudar a empresas mediante publicidad engañosa.
+
+El Objetivo: Engañar a empresas para que pagaran por servicios publicitarios que nunca llegaban a personas reales.
+
+Método de Infección: Los atacantes enviaban malware a través de archivos adjuntos en correos electrónicos. Una vez instalados, estos archivos convertían los dispositivos de los usuarios en "bots".
+
+Funcionamiento del Fraude:
+
+Los dispositivos infectados (bots) generaban vistas de anuncios falsas.
+
+También enviaban tráfico a sitios web falsos controlados por los mismos atacantes para generar aún más visualizaciones ficticias.
+
+Escala y Sofisticación: En su punto máximo, el esquema comprometió más de 700,000 sistemas. Al venir de tantas ubicaciones diferentes, los anunciantes creían que las vistas eran legítimas.
+
+![CHECK ✅](../img/check.png)
