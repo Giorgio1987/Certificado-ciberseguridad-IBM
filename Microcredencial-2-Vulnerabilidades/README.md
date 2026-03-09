@@ -290,3 +290,64 @@ También enviaban tráfico a sitios web falsos controlados por los mismos atacan
 Escala y Sofisticación: En su punto máximo, el esquema comprometió más de 700,000 sistemas. Al venir de tantas ubicaciones diferentes, los anunciantes creían que las vistas eran legítimas.
 
 ![CHECK ✅](../img/check.png)
+
+![CASO DE ESTUDIO ](../img/case_study.png)
+
+## 🏥 Caso de Estudio: Ataque de Ransomware a Synnovis (Londres, 2024)
+Este incidente es un ejemplo crítico de cómo un ataque a un proveedor de servicios puede paralizar toda una red hospitalaria.
+
+El Objetivo: Synnovis, un proveedor de servicios de diagnóstico y laboratorio para el Servicio Nacional de Salud (NHS) del Reino Unido.
+
+El Incidente: El 3 de junio de 2024, un ataque de ransomware sofisticado explotó debilidades en la red, cifrando sistemas esenciales para la comunicación con los servidores del NHS.
+
+Impacto en la Operación:
+
+Cancelaciones Masivas: Se cancelaron miles de cirugías y citas médicas.
+
+Falla en Patología: El departamento de patología quedó incomunicado, impidiendo el procesamiento de análisis de sangre de forma automatizada.
+
+Crisis de Suministro: Se lanzó un llamado urgente para donaciones de sangre tipo O, ya que los hospitales no podían verificar las compatibilidades mediante sus sistemas habituales.
+
+Respuesta ante el Incidente:
+
+Creación de una fuerza de tareas con expertos internos y del NHS.
+
+Colaboración con el National Cyber Security Centre (NCSC) y el equipo de Operaciones Cibernéticas.
+
+Denuncia ante las autoridades policiales.
+
+Lecciones de Ciberseguridad: Este caso resalta la necesidad de infraestructuras IT resilientes, monitoreo de red en tiempo real, sistemas de identidad seguros y, sobre todo, planes robustos de respuesta ante incidentes en el sector salud.
+
+## 📚 Casos de Estudio: Análisis de Amenazas Reales
+
+Esta sección analiza incidentes históricos y recientes que demuestran el impacto crítico del malware en infraestructuras globales y servicios esenciales.
+
+### 1. Emotet: El Troyano de Propagación por Red
+* **Tipo:** Troyano avanzado.
+* **Objetivo:** Robo de credenciales bancarias de las víctimas.
+* **Mecanismo:** Se propaga mediante archivos de Microsoft Word adjuntos en correos electrónicos. Al activarse, utiliza **fuerza bruta** (ensayo y error con contraseñas) para propagarse lateralmente por la red y replicarse en unidades compartidas.
+
+### 2. WannaCry: Ransomware a Escala Global
+* **Impacto:** Infectó más de 230,000 computadoras en 150 países en cuestión de horas.
+* **Consecuencias:** Cifró datos críticos y exigió rescates en criptomonedas (moneda digital no regulada).
+* **Lección:** Aprovechó software desactualizado, afectando gravemente a la industria de la salud y costando más de 4 mil millones de dólares a nivel mundial.
+
+### 3. Caso Siemens: La Amenaza Interna (Bomba Lógica)
+* **Incidente:** Un consultor externo insertó bombas lógicas en programas de hojas de cálculo.
+* **Modus Operandi:** El malware se activaba en fechas específicas causando fallos en los programas, lo que obligaba a la empresa a recontratarlo para "repararlos".
+* **Detección:** El esquema fue descubierto cuando una bomba se activó mientras el consultor estaba fuera de la ciudad y el personal interno tuvo acceso al código.
+
+### 4. Synnovis (Junio 2024): Ransomware en Infraestructura Crítica
+Este caso reciente (basado en reportes de *Dark Reading*, *The Standard* y *The Record*) destaca la vulnerabilidad actual de los sistemas de salud:
+* **El Ataque:** Un ransomware interrumpió las operaciones del proveedor de laboratorios Synnovis, afectando a múltiples hospitales en Londres.
+* **Impacto Humano:** * Cancelación masiva de cirugías y citas médicas.
+    * Declaración de "incidente crítico" debido a la imposibilidad de procesar análisis de sangre.
+    * Llamados urgentes a donantes de sangre tipo O porque los hospitales no podían verificar la compatibilidad de forma automatizada.
+
+### 📖 Fuentes y Referencias (Case Study: Synnovis)
+*Este análisis se basa en la recopilación de información de las siguientes fuentes oficiales y de prensa técnica:*
+
+* **Montalbano, Elizabeth.** *Ransomware Attack Disrupts Operations Across London Hospital*. [Dark Reading](https://www.darkreading.com), 5 de junio, 2024.
+* **Dollar, Mark.** *Synnovis’ Statement on This Week’s Cyberattack*. [Synnovis Official](https://www.synnovis.co.uk), 4 de junio, 2024.
+* **Davidson, Tom.** *Critical incident at London hospitals due to cyber attack with surgeries cancelled*. [The Standard](https://www.standard.co.uk), 4 de junio, 2024.
+* **Martin, Alexander.** *Urgent call for O-type blood donations following London hospitals ransomware attack*. [The Record](https://therecord.media), 10 de junio, 2024.
