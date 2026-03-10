@@ -409,3 +409,5 @@ Recursos Humanos: Movilización de equipos de TI de otras sedes del NHS para apo
 Crisis de Reputación: Como mencionas, genera desconfianza social. La sociedad se pregunta: "¿Están mis datos médicos seguros?".
 
 Transparencia: La organización debe gestionar una comunicación constante para mitigar el pánico, especialmente cuando se lanzan pedidos públicos de donación de sangre, lo que hace que la amenaza sea visible para todos.
+
+![MALWARE CONTROL](../img/malware-control.png)
