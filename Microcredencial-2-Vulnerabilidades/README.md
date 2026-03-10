@@ -570,3 +570,10 @@ En el incidente de Martino, se identificaron las siguientes brechas:
     2. Ejecución de análisis secundario con Malwarebytes para asegurar que no existan restos de persistencia.
 * **Lección Aprendida:** Los repositorios de terceros y complementos de comunidad son vectores comunes para la distribución de malware. La defensa en capas (Defender + escaneo manual) es vital incluso en software de uso cotidiano.
 
+### ✅ Arquitectura de Seguridad Finalizada
+Se ha implementado una estrategia de **Defensa en Profundidad** (Defense in Depth) en el host local:
+
+1. **Protección Primaria:** Microsoft Defender Antivirus (Capa activa 24/7).
+2. **Protección Secundaria:** Malwarebytes Free Edition (Capa de auditoría bajo demanda).
+
+**Resultado:** Se eliminaron los conflictos de registro en el Security Center de Windows, permitiendo que el sistema operativo mantenga sus defensas nativas activas mientras se conserva un motor heurístico avanzado para escaneos manuales de seguridad.
