@@ -411,3 +411,162 @@ Crisis de Reputación: Como mencionas, genera desconfianza social. La sociedad s
 Transparencia: La organización debe gestionar una comunicación constante para mitigar el pánico, especialmente cuando se lanzan pedidos públicos de donación de sangre, lo que hace que la amenaza sea visible para todos.
 
 ![MALWARE CONTROL](../img/malware-control.png)
+![SOLUCIONES PREVENTIVAS](../img/preventivas.png)
+## 🛡️ Software Antimalware: El Motor de Detección
+El software antimalware (o antivirus) actúa como un guardia de seguridad que compara a cada visitante con una base de datos de "delincuentes conocidos".
+
+🔍 Detección por Firmas (Signature-based Detection)
+Es el método más común y efectivo para amenazas ya identificadas.
+
+¿Qué es una Firma? Es un patrón de atributos único (como un hash o una secuencia de código) que identifica un malware específico.
+
+El Proceso: El software escanea cada archivo del dispositivo y compara su "huella digital" con una base de datos global de firmas.
+
+Acciones tras la detección:
+
+Eliminación: Borra el archivo infectado permanentemente.
+
+Cuarentena: Mueve el archivo a una zona aislada y segura donde no puede ejecutarse ni dañar el sistema.
+
+Alerta: Notifica al usuario sobre una posible infección para que tome una decisión manual.
+
+🌐 Implementación en Entornos Profesionales
+Como futuro Analista, es importante distinguir las dos formas de gestionar estos sistemas:
+
+Local: Instalación individual en cada dispositivo (ideal para usuarios finales).
+
+Centralizada: El software se corre y administra desde un servidor central. Esto permite a los administradores de TI monitorear toda la red de la empresa, desplegar actualizaciones de firmas y responder a amenazas en miles de equipos al mismo tiempo.
+
+![Antivirus](../img/antivirus.png)
+
+# 🛡️ Unidad 2: Controles y Mitigación de Malware
+
+En esta sección se documentan las estrategias y herramientas fundamentales para prevenir, detectar y neutralizar las amenazas informáticas.
+
+## ⚙️ El Motor de Detección: Software Antimalware
+El software antimalware (antivirus) es una pieza crítica de la seguridad del endpoint. Su funcionamiento principal se basa en:
+
+* **Detección por Firmas (Signatures):** El software compara archivos con una base de datos de "huellas digitales" de malware conocido.
+* **Análisis Heurístico:** Identifica amenazas nuevas basándose en comportamientos sospechosos, no solo en patrones fijos.
+* **Acciones de Respuesta:**
+    * **Cuarentena:** Aislamiento lógico del archivo en una zona segura donde no puede ejecutarse ni dañar el sistema.
+    * **Eliminación:** Borrado permanente del código malicioso.
+    * **Alerta:** Notificación al usuario para una toma de decisión manual (especialmente ante "falsos positivos").
+
+---
+
+## 📊 Comparativa Técnica: Antivirus vs. Firewall
+Es común confundirlos, pero operan en capas diferentes de la **Defensa en Profundidad**.
+
+| Característica | Antivirus / Antimalware | Firewall (Cortafuegos) |
+| :--- | :--- | :--- |
+| **Nivel de Acción** | Analiza archivos internos (Disco/Memoria). | Analiza el tráfico de red (Internet/LAN). |
+| **Función** | Detectar y eliminar código malicioso. | Bloquear accesos no autorizados. |
+| **Metodología** | Escaneo de firmas y comportamiento. | Filtrado de puertos y direcciones IP. |
+| **Analogía** | El guardia de seguridad **interno**. | El portero o **reja** del edificio. |
+
+
+
+---
+
+## 🛠️ Buenas Prácticas de Mitigación
+Ninguna herramienta es 100% infalible; la seguridad requiere un conjunto de controles:
+
+1. **Gestión de Parches (Patch Management):** Mantener el sistema operativo y aplicaciones al día para cerrar vulnerabilidades conocidas.
+2. **Higiene de Contraseñas:** Uso de frases robustas y **MFA** (Autenticación de Múltiples Factores).
+3. **Navegación Segura:** Bloqueo de URLs maliciosas y desconfianza ante adjuntos sospechosos (anti-phishing).
+4. **Gestión Centralizada:** En entornos empresariales, el antimalware se administra desde un servidor central para monitorear toda la red simultáneamente.
+
+
+
+---
+
+## 🧪 Práctica de Laboratorio: Malwarebytes
+## 🛠️ Herramientas de Defensa: Malwarebytes
+Malwarebytes es una solución de seguridad avanzada que complementa a los antivirus tradicionales mediante la detección de exploits, ransomware y programas potencialmente no deseados (PUPs).
+
+### 🔍 Tipos de Análisis y Protección
+Para mantener la integridad del sistema, se utilizan tres modalidades de defensa:
+
+1. **Escaneo Programado (Scheduled Scan):**
+    * Se ejecuta automáticamente en intervalos definidos (ej: lunes a las 9:00 AM).
+    * **Ventaja:** Garantiza que el sistema se revise periódicamente sin intervención del usuario.
+    * *Nota:* El dispositivo debe estar encendido para completar la tarea.
+
+2. **Escaneo Bajo Demanda (On-demand Scan):**
+    * Se inicia manualmente mediante la interacción del usuario.
+    * **Uso ideal:** Tras descargar archivos sospechosos o notar un comportamiento inusual en el sistema.
+
+3. **Protección en Tiempo Real (Real-time Protection):**
+    * Monitoreo constante de la actividad del sistema y la red.
+    * **Funciones clave:**
+        * Bloquea malware antes de que se ejecute.
+        * Evita el acceso a sitios web maliciosos conocidos.
+        * Detiene intentos de explotación de vulnerabilidades en aplicaciones.
+
+
+
+---
+
+### 🧪 Guía de Laboratorio: Mitigación con Malwarebytes
+*En esta sección se documentará la experiencia práctica utilizando la herramienta.*
+
+#### Pasos realizados:
+* **Escaneo Crítico:** Análisis de objetos en memoria, elementos de inicio y registro.
+* **Detección de Amenazas:** Identificación de firmas de malware y heurística de comportamiento.
+* **Gestión de Resultados:**
+    * **Cuarentena:** Aislamiento de archivos detectados para prevenir su ejecución.
+    * **Informe de Escaneo:** Revisión de las rutas de archivos afectados y nombres de las amenazas.
+
+> **💡 Dato de carrera:** Los **Analistas de Malware** utilizan estas herramientas no solo para limpiar sistemas, sino para estudiar el comportamiento de las amenazas en entornos controlados (Sandboxing) y fortalecer las reglas del Firewall.
+* **Estado:** Pendiente de ejecución.
+* **Objetivo:** Realizar un escaneo completo, identificar PUPs (Programas Potencialmente No Deseados) y gestionar la cuarentena.
+
+![Malwarebyts](../img/malwarebytes.png)
+
+### 📝 Resolución de Incidente: Caso Martino
+* **Problema:** El usuario reportó programas no autorizados, lentitud extrema y desactivación de software de seguridad.
+* **Diagnóstico:** Infección por **Troyano (Trojan)**.
+* **Justificación técnica:** Los troyanos actúan como "puertas traseras" (*backdoors*). A diferencia del spyware (que busca ser invisible), este incidente fue "ruidoso" debido a la instalación masiva de software adicional y la manipulación directa de las políticas de seguridad del sistema.
+* **Acción Correctiva:** Ejecución de análisis profundo con **Malwarebytes** para identificar y remover los ejecutables maliciosos y restaurar la configuración del sistema.
+
+![pc](../img/pc.png)
+## paso 1
+![Scan](../img/scan.png)
+![scan2](../img/scan2.png)
+![Simulacion](../img/simulacion.png)
+### 🔬 Reporte de Escaneo: Caso Martino
+Tras ejecutar un **Threat Scan** (Análisis de Amenazas) con Malwarebytes, se obtuvieron los siguientes resultados:
+
+* **Amenaza Detectada:** `Trojan.Loader`
+* **Tipo:** Malware / Troyano.
+* **Ubicación:** `C:\Downloads\Loader.exe`
+* **Estado:** Identificado y listo para ser enviado a **Cuarentena**.
+* **Análisis Técnico:** El archivo se encontraba en la carpeta de Descargas, lo que sugiere que el usuario pudo haberlo bajado pensando que era un software legítimo (ingeniería social). Este tipo de troyano es responsable de instalar otros programas maliciosos, explicando por qué Martino veía aplicaciones nuevas en su sistema.
+
+#### Acciones Realizadas en la Simulación:
+1.  **Escaneo Completo:** Se analizaron más de 265,000 elementos en 1 minuto y 13 segundos.
+2.  **Identificación:** El motor de firmas detectó el hash malicioso de `Loader.exe`.
+3.  **Aislamiento:** El siguiente paso es seleccionar **"Quarantine"** para mover el archivo a un entorno seguro donde no pueda ejecutarse.
+![QUESTIONS](../img/questions.png)
+## 💡 Un detalle de "pro" 
+En la ruta del archivo: C:\Downloads\Loader.exe.
+Como futuro analista, esto me dice que la capacitación en concientización de seguridad para los empleados es tan importante como tener el antivirus. Si Martino no hubiera descargado ese archivo, el troyano nunca habría entrado.
+#### 🔍 ¿Por qué fallaron los controles preventivos?
+En el incidente de Martino, se identificaron las siguientes brechas:
+1. **Falla de Capa de Red (Firewall):** El malware ingresó mediante una descarga web autorizada (Puerto 443), evadiendo el filtrado de paquetes básico.
+2. **Ausencia de Protección Endpoint:** Sin un agente activo (como Malwarebytes en tiempo real), el sistema no pudo analizar el archivo en el momento de la descarga.
+3. **Factor Humano:** La ejecución manual del archivo `Loader.exe` permitió que el troyano escalara privilegios y deshabilitara las defensas locales del sistema.
+## Moraleja técnica: Por eso hoy se habla de "Zero Trust" (Nunca confiar, siempre verificar). No alcanza con un Firewall; necesitás que el Antivirus esté siempre vigilando y que el usuario esté capacitado.
+
+## "La seguridad no es un producto, es un proceso. El hecho de que un archivo sea descargado exitosamente no garantiza su integridad; la ejecución de ejecutables desconocidos sin un análisis multiplataforma representa el mayor vector de riesgo para el sistema."
+
+### Nota técnica: "Para una defensa robusta, se recomienda el uso complementario de VirusTotal como herramienta de análisis estático (previo a la ejecución) y Malwarebytes como herramienta de análisis dinámico y remediación de incidentes."
+
+### ⚠️ Incidente Real: Detección de Troyano en Software de Streaming (experiencia de campo)
+* **Escenario:** Tras la instalación de complementos (add-ons) en Stremio, Windows Defender emitió una alerta de troyano.
+* **Acción de Respuesta:**
+    1. Aislamiento y eliminación inmediata mediante Windows Defender.
+    2. Ejecución de análisis secundario con Malwarebytes para asegurar que no existan restos de persistencia.
+* **Lección Aprendida:** Los repositorios de terceros y complementos de comunidad son vectores comunes para la distribución de malware. La defensa en capas (Defender + escaneo manual) es vital incluso en software de uso cotidiano.
+
