@@ -637,5 +637,39 @@ B) Mhall.IfwwasEtmw!
 C) whiteassnow
 
 (Pista: La B cumple con longitud, símbolos, mayúsculas y no es una palabra de diccionario).
+
+## Your password might be Mh1llifwwasetMwtlwstg!. You used capital letters for names, the number 1 to indicate one little lamb, and an exclamation mark at the end of the phrase. This password seems nonsensical at first, but it’s long and easy to remember. 
+
 > **Estatus del Módulo:** ✅ Lección de Contraseñas Completada.
 > 
+![pack management](../img/management.png)
+
+## 🆙 Gestión de Parches (Patch Management)
+
+La seguridad no es estática. El software, por bien diseñado que esté, siempre presenta vulnerabilidades que son descubiertas con el tiempo. El **Patch Management** es el proceso crítico de aplicar actualizaciones para mitigar estos riesgos.
+
+### ⚠️ El Riesgo del Software "End of Life" (EoL)
+Como se analiza en el curso, el uso de software sin soporte oficial es un vector de ataque mayor:
+* **Caso de estudio (Windows 7):** Al finalizar el soporte oficial, Microsoft dejó de lanzar parches de seguridad. Esto convierte a cualquier dispositivo con Windows 7 en un "blanco fácil", ya que las nuevas vulnerabilidades descubiertas jamás serán reparadas por el fabricante.
+* **Lección para Organizaciones:** Es imperativo utilizar versiones de software con soporte activo para garantizar la recepción de parches de seguridad.
+
+### 🛠️ Estrategia Implementada
+En mi estación de trabajo, se aplica la política de **Actualización Continua**:
+1. **Priorización:** Instalación inmediata de parches de "Seguridad Crítica" que resuelven vulnerabilidades de ejecución de código remoto.
+2. **Ciclo de Vida:** Monitoreo del estado de soporte (Life Cycle) de las herramientas de análisis utilizadas (Burp Suite, Metasploit, etc.) para asegurar que operen en versiones protegidas.
+![safe browsing practices ](../img/browsing.png)
+## 🌐 Prácticas de Navegación Segura (Safe Browsing)
+
+Como analista, la prevención en el navegador es la primera línea de defensa para evitar que el malware llegue al sistema. He implementado las siguientes directrices de higiene digital:
+
+### ✅ Lista de Verificación de Seguridad
+* **Gestión de Mensajería:** Política de "Cero Confianza" ante correos, archivos adjuntos o SMS de remitentes desconocidos.
+* **Escrutinio de Archivos:** Análisis obligatorio de cualquier adjunto, incluso si el remitente parece legítimo (prevención de suplantación de identidad).
+* **Control de Navegación:** * Activación de bloqueadores de ventanas emergentes (Pop-up blockers) para mitigar ataques de *drive-by download*.
+    * Instalación de **Ad Blockers** para prevenir el *malvertising* (publicidad maliciosa que inyecta código).
+* **Confidencialidad:** Prohibición estricta de compartir credenciales de acceso bajo cualquier circunstancia.
+
+---
+
+> **Estatus Final del Módulo 1:** 🏆 **COMPLETADO**
+> Todos los controles técnicos (Malwarebytes/Defender), de acceso (Passphrases) y de mantenimiento (Patch Management) han sido documentados y aplicados.
