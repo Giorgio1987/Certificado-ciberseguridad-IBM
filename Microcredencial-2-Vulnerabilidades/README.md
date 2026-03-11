@@ -808,6 +808,25 @@ Social engineering works because people are imperfect. Attackers exploit people�
 
 Attackers use other tricks to encourage bad decisions. 
 
-## PRACTICA 
+## OTROS CASOS  
 ![FEAR AND URGENCY ](../img/fear_and_urgency.png)
 ![URGENCY](../img/urgency.png)
+
+![PHISHING](../img/phishing.png)
+![PHISHING](../img/imagen_phishing.png)
+## Phishing attempts come in various forms, including phone calls, text messages, social media, and even mail. One of the most common forms of phishing is through email. Out of the 800,944 reports of cybercrime reported to the FBI in 2022, 300,497 involved phishing. Phishing caused over USD 50,000,000 in losses, not including lost business, time, wages, data, or remediation services.
+
+## Most phishing emails don’t target a specific victim. Instead, attackers send them far and wide. Think of phishing like the activity from which its name derives: fishing. When fishing, you cast your reel into the water and wait. Plenty of fish might swim by the bait, but many will ignore it. You’re satisfied as long as at least one fish takes the bait. Likewise, phishing scammers assume most recipients won’t fall for their scam. They only need a few victims to reap potentially huge rewards. 
+
+### 📊 El Impacto Global del Phishing (Estadísticas FBI 2022)
+
+El phishing no es solo un correo molesto; es el vector de cibercrimen más reportado a nivel mundial debido a su alta tasa de retorno para el atacante.
+
+* **Volumen de Incidencias:** Representó aproximadamente el **37.5%** de todos los reportes de cibercrimen (300,497 de 800,944 casos).
+* **Impacto Económico:** Más de **USD 50,000,000** en pérdidas directas (sin contar costos de remediación, pérdida de datos o tiempo operativo).
+
+### 🎣 La Analogía del "Pescador" (Massive Outreach)
+A diferencia de los ataques dirigidos (Spear Phishing), el phishing masivo opera bajo la lógica de la pesca comercial:
+1. **Lanzamiento:** El atacante envía miles o millones de correos (lanza el anzuelo).
+2. **Bait (Cebo):** El mensaje engañoso diseñado para atraer a cualquier "pez" (usuario).
+3. **Conversión:** No importa si el 99% ignora el correo; con que un pequeño porcentaje muerda el anzuelo, el ataque es rentable y exitoso.
