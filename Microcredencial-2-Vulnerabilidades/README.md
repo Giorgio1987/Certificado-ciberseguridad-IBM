@@ -673,3 +673,141 @@ Como analista, la prevención en el navegador es la primera línea de defensa pa
 
 > **Estatus Final del Módulo 1:** 🏆 **COMPLETADO**
 > Todos los controles técnicos (Malwarebytes/Defender), de acceso (Passphrases) y de mantenimiento (Patch Management) han sido documentados y aplicados.
+
+![career](../img/career.png)
+
+## 🎯 Horizonte Profesional: Malware Analyst
+
+Tras completar esta lección, identifico el rol de **Analista de Malware** como un objetivo clave en mi desarrollo profesional. Este rol integra habilidades de investigación, ingeniería y programación para:
+
+* **Análisis Profundo:** Estudiar diversos tipos de malware para determinar su funcionamiento y métodos de mitigación.
+* **Respuesta ante Incidentes:** Actuar como primer respondiente ante amenazas detectadas, limitando su propagación y liderando los esfuerzos de recuperación (como en el caso de estudio de Synnovis).
+* **Políticas de Seguridad:** Colaborar en la redacción de estándares y procedimientos de ciberseguridad corporativa.
+
+> **Habilidades en desarrollo:** Conocimiento profundo de sistemas operativos, lenguajes de programación y monitoreo constante de las últimas amenazas y controles de seguridad.
+
+## 🔎 Investigación de Rol: Analista de Malware
+
+Basado en la investigación de habilidades técnicas necesarias para el éxito en la industria, he identificado las tres áreas de conocimiento fundamentales para dominar este rol:
+
+### 1. Taxonomía y Comportamiento de Malware
+Es esencial dominar la clasificación de amenazas (Ransomware, Spyware, Rootkits, Infostealers). Un analista debe entender no solo qué es el malware, sino su **comportamiento en el sistema**: cómo logra la persistencia, cómo se comunica con el servidor de Comando y Control (C2) y qué vectores de ataque utiliza.
+
+### 2. Análisis de Código y Programación (Reversing)
+Para identificar códigos maliciosos, se requiere conocimiento en lenguajes como **Python, C/C++ y Assembly**. Esto permite realizar:
+* **Análisis Estático:** Leer el código sin ejecutarlo para buscar indicadores de compromiso (IoCs).
+* **Análisis Dinámico:** Observar el comportamiento del código en un entorno seguro (Sandbox).
+
+### 3. Psicología de la Ingeniería Social
+El malware no siempre se autoinstala; suele requerir un error humano. Comprender las tácticas de manipulación psicológica (urgencia, autoridad, miedo) es clave para anticipar cómo los atacantes logran que un usuario ejecute un archivo malicioso, permitiendo diseñar mejores políticas de prevención y concientización.
+## 🚀 RoadMap de Especialización Técnica
+
+Para evolucionar mi perfil hacia un rol de **Senior Malware Analyst**, me he propuesto dominar las siguientes áreas técnicas:
+
+1. **Análisis de Tráfico de Red:** Dominio de Wireshark para detectar exfiltración de datos y comunicaciones con servidores de Comando y Control (C2).
+2. **Análisis Dinámico Avanzado:** Implementación de Sandboxes aisladas para el monitoreo de procesos, cambios en el registro y persistencia de amenazas en memoria.
+3. **Ingeniería Inversa (RE):** Introducción al uso de herramientas como Ghidra para el desensamblado de binarios maliciosos y comprensión de la lógica del atacante.
+
+## 🔎 Investigación de Rol: Analista de Malware (Consolidado)
+
+Tras comparar mis hipótesis iniciales con los estándares de la industria, he definido las tres áreas de conocimiento críticas que un analista debe dominar para tener éxito:
+
+### 1. Programación y Análisis de Código
+No basta con identificar que un archivo es malicioso; hay que entender **cómo** fue construido. 
+* **Lenguajes Clave:** C, C++, Python y especialmente **Assembly** (ensamblador), que es el lenguaje que "habla" el procesador.
+* **Habilidad:** Comprender cómo se compila, vincula y ejecuta el código para realizar ingeniería inversa (Reverse Engineering).
+
+### 2. Arquitectura de Sistemas Operativos (Windows, Linux, Unix)
+Un analista debe ser un experto en el "terreno de juego". Esto incluye:
+* **Estructura Interna:** Entender el sistema de archivos, los procesos y la arquitectura del kernel.
+* **Seguridad Nativa:** Conocer las funciones de seguridad del SO para entender cómo el malware intenta evadirlas o desactivarlas.
+
+### 3. Redes y Comunicación (Networking)
+El malware moderno rara vez actúa solo; necesita comunicarse.
+* **Interacción:** Entender cómo el código malicioso interactúa con otras máquinas o servidores de Comando y Control (C2).
+* **Protocolos:** Conocimiento profundo de redes para rastrear la exfiltración de datos y el movimiento lateral dentro de una organización.
+
+---
+> **Reflexión Personal:** Mis ideas sobre Ingeniería Social y Tipos de Malware son el complemento perfecto para esta base técnica, ya que cubren el "quién" y el "qué", mientras que estos puntos del curso cubren el "cómo" a nivel profundo.
+
+![summary](../img/summary.png)
+## 🏁 Conclusión del Módulo 1 y Transición
+
+He completado el estudio de las amenazas de software, comprendiendo cómo los atacantes buscan comprometer la **Tríada CIA** (Confidentiality, Integrity, Availability) para obtener beneficios económicos.
+
+### ⏭️ Próximo Objetivo: El Factor Humano (Social Engineering)
+La siguiente fase del laboratorio se centrará en las amenazas físicas y psicológicas, incluyendo:
+* **Phishing:** Identificación de correos y mensajes fraudulentos.
+* **Tácticas de Manipulación:** Cómo reconocer intentos de engaño en escenarios del mundo real.
+* **Seguridad Física:** Protección de activos más allá del código.
+
+![social engineering](../img/social_engineering.png)
+
+## 👥 Módulo 2: Ingeniería Social - El Factor Humano
+
+En esta fase, analizo cómo los atacantes explotan el error emocional o el comportamiento social para vulnerar la seguridad.
+
+### 🔍 Tipos de Ataques Identificados:
+1. **Phishing (Digital):** Suplantación de identidad de fuentes confiables para captura de datos sensibles.
+2. **Trampa de Miel (Honey Trap):** Manipulación emocional para generar confianza y exfiltrar información.
+3. **Tailgating (Físico):** Infiltración en instalaciones físicas aprovechando la cortesía o falta de control en accesos.
+4. **Shoulder Surfing:** Recolección de información mediante observación directa de credenciales en uso.
+
+### 🛡️ Mitigación:
+* **Concientización:** El entrenamiento de los usuarios es la única defensa efectiva contra la ingeniería social.
+* **MFA (Multifactor):** Reduce el impacto si el atacante logra obtener la contraseña mediante Phishing o Shoulder Surfing.
+
+### 🛡️ Caso de Estudio: Phishing de Servicios de Logística
+
+**Escenario:** Recepción de un correo sobre un paquete retenido que solicita un pago pequeño por "tasas de aduana".
+
+**Irregularidades Detectadas (Red Flags):**
+* **Solicitud de Acción Financiera:** Exigencia de introducir datos de tarjeta de crédito o realizar pagos mediante enlaces externos.
+* **Inconsistencia de Dominio:** El remitente no coincide con el dominio oficial de la empresa de logística.
+* **Urgencia Psicológica:** Uso de amenazas de devolución o destrucción del paquete para forzar una decisión rápida (vulnerabilidad emocional).
+* **Enlaces Maliciosos:** URLs que redirigen a sitios de captura de datos (Harvesting) en lugar de portales oficiales de seguimiento.
+
+**Protocolo de Respuesta:**
+1. No interactuar con los enlaces.
+2. Reportar el correo como Phishing.
+3. Verificar el estado del envío directamente en la web oficial ingresando el número de seguimiento manualmente.
+
+![what is social engineering ?](../img/what.png)
+
+## ⚖️ Malware vs. Ingeniería Social: El Blanco del Ataque
+
+Es fundamental diferenciar el vector de ataque para aplicar los controles correctos.
+
+| Característica | Malware (Ataque Técnico) | Ingeniería Social (Human Hacking) |
+| :--- | :--- | :--- |
+| **Objetivo Principal** | Vulnerabilidades en software/hardware. | Vulnerabilidades en la psicología humana. |
+| **Método** | Explotación de código, troyanos, virus. | Decepción, manipulación, falsas promesas. |
+| **Punto Débil** | Sistemas desactualizados. | Impulso de tomar "atajos" o decisiones rápidas. |
+| **Control Primario** | Antimalware, Parches (Updates). | Concientización, Entrenamiento, Políticas. |
+
+### 🧠 ¿Por qué funciona el "Human Hacking"?
+Como indica el material de estudio, los atacantes se aprovechan de que las personas son imperfectas. Explotan tres factores psicológicos clave:
+1. **Confianza:** El deseo natural de ayudar o creer en fuentes aparentemente legítimas.
+2. **Urgencia:** Forzar una decisión rápida para que el usuario ignore las señales de alerta.
+3. **Atajos:** La tendencia humana a buscar la solución más fácil o rápida.
+
+![decepción](../img/deception.png)
+
+## 🚀 ¿Qué trucos usan para "fomentar malas decisiones"?
+El texto menciona que los atacantes usan "otros trucos". En ciberseguridad, estos se conocen como Principios de Influencia de Cialdini, y seguramente sean el próximo tema de tu video o lectura:
+
+## Autoridad: "Soy el jefe de IT, pasame tu clave ya".
+
+## Escasez: "Última oportunidad para reclamar tu premio".
+
+## Consenso: "Todos tus compañeros ya actualizaron sus datos aquí".
+
+## Why does social engineering work? 
+
+Social engineering works because people are imperfect. Attackers exploit people’s propensity to take shortcuts and make quick decisions based on false promises. 
+
+Attackers use other tricks to encourage bad decisions. 
+
+## PRACTICA 
+![FEAR AND URGENCY ](../img/fear_and_urgency.png)
+![URGENCY](../img/urgency.png)
