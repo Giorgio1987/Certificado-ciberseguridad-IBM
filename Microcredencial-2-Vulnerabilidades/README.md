@@ -577,3 +577,65 @@ Se ha implementado una estrategia de **Defensa en Profundidad** (Defense in Dept
 2. **Protección Secundaria:** Malwarebytes Free Edition (Capa de auditoría bajo demanda).
 
 **Resultado:** Se eliminaron los conflictos de registro en el Security Center de Windows, permitiendo que el sistema operativo mantenga sus defensas nativas activas mientras se conserva un motor heurístico avanzado para escaneos manuales de seguridad.
+
+![Contraseñas](../img/passwords.png)
+
+## 🔐 Gestión de Accesos y Seguridad de Credenciales
+
+Tras asegurar la integridad del host, se implementaron políticas de control de acceso basadas en los estándares del curso para mitigar ataques de **Fuerza Bruta**.
+
+### 1. Robustez de Contraseñas (Método de Inicialismo)
+Se adoptó la técnica de creación de contraseñas mediante **inicialismos** para balancear la complejidad técnica con la usabilidad humana.
+
+* **Técnica:** Utilizar la primera letra de cada palabra de una frase memorable (ej. una rima o canción).
+* **Requisitos implementados:** * Mínimo de 12 caracteres.
+    * Uso de mayúsculas, minúsculas, números y caracteres especiales.
+    * Exclusión de datos personales (fechas, nombres) y términos de diccionario.
+
+### 2. Mitigación de Ataques de Fuerza Bruta
+El uso de contraseñas largas y complejas previene que herramientas automatizadas de "trial and error" logren descifrar las credenciales en tiempos operativos. 
+
+> **Dato Técnico:** Una contraseña de 8 caracteres puede ser crackeada en minutos; una passphrase de 12+ caracteres con inicialismo puede requerir décadas para ser vulnerada por fuerza bruta.
+
+### 3. Autenticación Multifactor (MFA)
+Como capa final de seguridad de acceso, se refuerza la política de que la contraseña no sea el único factor. El uso de aplicaciones de autenticación (2FA) es obligatorio para proteger el acceso a las herramientas de análisis y cuentas críticas de contenido.
+
+---
+![Mary](../img/mary.png)
+## 📝 Aplicando el ejemplo del curso:
+La frase es: "Mary had a little lamb. Its fleece was white as snow. Everywhere that Mary went, the lamb was sure to go."
+
+Si tomamos la primera letra de cada palabra y le agregamos los requisitos de longitud y caracteres especiales, nos quedaría algo así:
+
+Frase original: "Mary had a little lamb. Its fleece was white as snow..."
+
+Inicialismo: MhallIfwwasEtmwtlwstg
+
+Haciéndola "Robusta" (Agregando números y símbolos):
+
+Podés cambiar el "as" por un "2" (sonido parecido en inglés).
+
+Podés agregar un símbolo al final.
+
+Resultado: Mhall.Ifww2sEtmw!2026
+
+🚀 Concepto clave para tu portafolio: El ataque de Brute Force
+El curso menciona el Brute Force (Fuerza Bruta). Como analista, tenés que saber que:
+
+Ataque de Diccionario: El hacker usa una lista de palabras comunes (como "password" o "123456").
+
+Fuerza Bruta: Una computadora prueba trillones de combinaciones por segundo.
+
+Por qué funciona el inicialismo: Porque para una computadora, Mhall.Ifww2s parece una secuencia aleatoria de caracteres, lo que hace que el tiempo para crackearla pase de minutos a decenas de años.
+
+🎯 Practice Quiz (Simulación)
+Seguramente la siguiente pregunta del quiz te pida identificar cuál de estas opciones es una contraseña fuerte basándose en ese texto.
+
+¿Cuál elegirías vos siguiendo estas reglas?
+A) Mary1234
+B) Mhall.IfwwasEtmw!
+C) whiteassnow
+
+(Pista: La B cumple con longitud, símbolos, mayúsculas y no es una palabra de diccionario).
+> **Estatus del Módulo:** ✅ Lección de Contraseñas Completada.
+> 
