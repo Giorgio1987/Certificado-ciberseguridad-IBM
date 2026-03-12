@@ -897,3 +897,66 @@ La tecnología puede fallar, por lo que el analista debe aplicar el criterio de 
 * **Acceso Directo:** Ante un pedido de login de una fuente conocida, se ignora el enlace del mail y se accede manualmente escribiendo la URL oficial en el navegador.
 * **Verificación por Canal Secundario (Out-of-band):** Si un conocido pide información sensible, se verifica la identidad por un medio distinto (ej. llamada telefónica o chat interno) antes de responder.
 * **Eliminación Preventiva:** Los correos cuestionables no se abren; se eliminan o se reportan al equipo de seguridad de inmediato.
+
+![Activity Phishing](../img/activity_phishing.png)
+![Imagine](../img/imagine.png)
+![Caso uno ](../img/caso_uno.png)
+## 🕵️ Análisis del correo de Larry Jones
+A simple vista parece inofensivo porque es "un compañero de trabajo", pero fijate en estos detalles críticos:
+
+El Dominio del Remitente: Larry dice ser "Payroll Specialist" (Especialista en Nómina) de XYZ Corporation. Sin embargo, su mail es Larry.Jones@gmail.com.
+
+Regla de oro: Alguien que maneja pagos en una empresa nunca te va a mandar documentos oficiales desde una cuenta personal de Gmail. Usaría @xyzcorporation.com.
+
+El Gancho (The Bait): El tema es "January Pay Schedule" (Calendario de pagos de enero). Es un tema de alta importancia para cualquier empleado. Los atacantes usan temas de dinero o recursos humanos para que hagas clic rápido sin pensar.
+
+El Enlace al Documento: Está pidiendo que hagas clic en un link para ver un archivo .docx. Este es el vector perfecto para descargar malware o llevarte a una página donde te pida "loguearte con tu cuenta de la empresa" para ver el archivo, robándote las credenciales.
+
+
+### 🕵️ Caso de Análisis #1: Suplantación de Identidad Interna
+
+**Escenario:** Correo de un supuesto especialista en nómina enviando el calendario de pagos.
+
+**Hallazgos de Phishing:**
+* **Uso de Cuentas Personales:** El remitente utiliza un servicio de correo gratuito (Gmail) en lugar del dominio corporativo oficial.
+* **Ingeniería Social:** Se utiliza el interés financiero del empleado (pagos) para incentivar la interacción con un enlace externo.
+* **Riesgo de Documentos:** Los enlaces a documentos compartidos fuera de la intranet oficial son vectores comunes para la entrega de malware o robo de sesiones.
+* **Tambien el documento .docx. al pasar el scroll con el mouse por arriba me dirige a otro sitio web.**
+### 🔗 Análisis del Vector de Ataque: Link Masking
+
+Se identificó una discrepancia crítica entre el texto del hipervínculo y la URL de destino:
+* **Texto visual:** `January Schedule.docx` (Sugiere un documento de Word inofensivo).
+* **Destino real:** URL externa no relacionada con los servidores de XYZ Corporation.
+
+**Riesgos Técnicos:**
+1. **Malware Delivery:** El enlace podría iniciar la descarga automática de un archivo con macros maliciosas (ej. un troyano).
+2. **Credential Harvesting:** Redirección a un portal de inicio de sesión falso (ej. una imitación de Microsoft 365) para capturar el usuario y contraseña del empleado.
+**Acción Correcta:** Marcar como Phishing y verificar con el departamento de RR.HH. a través de un canal oficial interno.
+![Correcta](../img/correcta.png)
+
+![Segundo caso](../img/caso_dos.png)
+
+## 🕵️ Análisis Forense: El caso "UPS Shipping USA"
+Typosquatting descarado: Mira el remitente: no-reply@upps.com. UPS solo tiene una "P". Agregar letras extra (UPPS) es la técnica clásica para engañar a usuarios distraídos.
+
+Inconsistencia Total (Subject vs Body): El asunto dice "A New Device Has Accessed Your Account" (Un nuevo dispositivo accedió a tu cuenta), pero el cuerpo del mensaje habla de un paquete listo para entregar. Los estafadores a veces reciclan plantillas y se olvidan de cambiar el asunto. Esa falta de coherencia es una señal de alerta inmediata.
+
+Gramática y Sintaxis Desastrosas: * "You have (1) package for a deliver" (Sintaxis rota).
+
+"We are sorry and want to get to you packages on time" (No tiene sentido gramatical).
+
+"Please put your delivery code and phones to dial" (Traducción muy pobre).
+
+Una empresa multinacional como UPS jamás enviaría algo con este nivel de errores.
+
+### 🚩 Caso de Análisis #2: Phishing de Suplantación de Marca (UPS)
+
+**Hallazgos Técnicos:**
+* **Dominio Fraudulento:** Uso de `upps.com` (Typosquatting) para imitar el dominio oficial de UPS.
+* **Falta de Coherencia:** Discrepancia total entre el asunto del correo (alerta de seguridad) y el contenido (entrega de paquete).
+* **Calidad del Mensaje:** Presencia de errores gramaticales graves y redacción inconsistente, lo que indica un origen no profesional.
+* **Llamado a la Acción (CTA):** Uso de un botón llamativo ("Find My Package") diseñado para redirigir a un sitio de captura de datos o descarga de malware.
+
+**Conclusión:** Intento de phishing masivo que utiliza el reconocimiento de marca para inducir al error mediante la curiosidad por un supuesto paquete.
+![Correcto](../img/correcta2.png)
+
