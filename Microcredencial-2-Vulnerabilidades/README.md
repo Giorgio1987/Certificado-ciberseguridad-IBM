@@ -830,3 +830,70 @@ A diferencia de los ataques dirigidos (Spear Phishing), el phishing masivo opera
 1. **Lanzamiento:** El atacante envía miles o millones de correos (lanza el anzuelo).
 2. **Bait (Cebo):** El mensaje engañoso diseñado para atraer a cualquier "pez" (usuario).
 3. **Conversión:** No importa si el 99% ignora el correo; con que un pequeño porcentaje muerda el anzuelo, el ataque es rentable y exitoso.
+
+## How phishing works
+
+## So, how does phishing work?
+
+![Paso 1](../img/paso1.png)
+![Step 1](../img/step1.png)
+![Step 2](../img/step2.png)
+![Step 3](../img/step3.png)
+![Step 4](../img/step4.png)
+![Step 5](../img/step5.png)
+![Step 6](../img/step6.png)
+## Resumen
+
+## ¡Así es como funcionan las estafas de phishing! Los detalles pueden variar de un intento a otro, pero los pasos son prácticamente los mismos. El atacante, haciéndose pasar por una figura de confianza, envía un mensaje aparentemente legítimo que engaña a la víctima para que proporcione información confidencial.
+
+![Signs of a phising](../img/signs.png)
+![Twitter](../img/twitter.png)
+![Una señal ](../img/una_señal.png)
+![Dos señal ](../img/dos_señal.png)
+![Tres señal](../img/tres-señal.png)
+
+### 🕵️ Análisis Técnico: Anatomía de un correo de Phishing
+
+A través del análisis de un caso simulado de suplantación de identidad (Twitter/X), se identificaron las siguientes técnicas de engaño:
+
+| Indicador | Hallazgo en el ejemplo | Concepto Técnico |
+| :--- | :--- | :--- |
+| **Remitente** | `verify@twwitter.com` | **Typosquatting:** Uso de carácteres extra para imitar dominios legítimos. |
+| **Hipervínculo** | Texto: `twitter.com` / Destino: `twitterrr.com` | **Link Masking:** Enmascaramiento de la URL real mediante etiquetas de texto engañosas. |
+| **Saludo** | "Dear account holder" | **Generic Salutation:** Falta de personalización, indicativo de una campaña masiva (Broadcasting). |
+| **Protocolo** | `http://` (en lugar de `https://`) | **Insecure Connection:** Falta de cifrado SSL, inusual en portales de seguridad legítimos. |
+
+### 🚩 Indicadores Lingüísticos de Fraude
+
+Al analizar el contenido del correo, se detectaron fallos en la profesionalidad del mensaje que confirman el intento de ingeniería social:
+
+1. **Errores Ortográficos:** El uso de palabras mal escritas (ej. "unusual" mal deletreado) es una técnica común para evadir filtros de spam básicos y denota falta de legitimidad.
+2. **Gramática Deficiente:** El uso de frases como "log at the link" en lugar de "log in" indica que el atacante probablemente utilizó un traductor automático o no tiene fluidez en el idioma, algo que una empresa global no permitiría.
+3. **Formato Inconsistente:** Las empresas legítimas mantienen estándares de diseño y redacción pulidos. Cualquier error en el formato es una señal de que el correo es una imitación.
+
+## 🚀 Tip de Oro 
+Siempre que veas un link sospechoso, el truco de "pasar el mouse por arriba" es tu mejor amigo. Pero como analista, si alguna vez tenés que investigar ese link sin infectarte, podrías usar herramientas como VirusTotal o URLScan.io para ver qué hay del otro lado sin entrar vos mismo.
+
+**Conclusión del Analista:** Se trata de un ataque de *Credential Harvesting* diseñado para capturar el usuario y contraseña de la víctima mediante una página de inicio de sesión falsa.
+
+## This example phishing email demonstrates a few typical traits of phishing emails. Let’s explore a few other signs to watch for.
+
+![Fear and Urgency](../img/firts-urgency.png)
+![Amazing offert ](../img/amazing_offert.png)
+![Unusual requests](../img/unusual.png)
+![Suspicius attachments](image.png)
+## 🛡️ Estrategias de Defensa contra el Phishing
+
+Para mitigar los ataques de ingeniería social, he implementado un modelo de defensa dual que combina herramientas técnicas con protocolos de conducta.
+
+### ⚙️ 1. Controles Tecnológicos (La Red de Seguridad)
+Son las herramientas que actúan como primera barrera para filtrar o bloquear la amenaza:
+* **Filtros de Spam:** Configuración de motores de detección para cuarentena automática de correos sospechosos.
+* **Endpoint Protection:** Uso de software antimalware para interceptar ejecuciones accidentales de archivos adjuntos.
+* **Hardening del Navegador:** Instalación de extensiones de seguridad (ej. Malwarebytes Browser Guard) para bloquear el acceso a sitios de phishing conocidos mediante listas negras (Blacklisting).
+
+### 🧠 2. Protocolos de Comportamiento (Higiene Digital)
+La tecnología puede fallar, por lo que el analista debe aplicar el criterio de "Confianza Cero" (Zero Trust):
+* **Acceso Directo:** Ante un pedido de login de una fuente conocida, se ignora el enlace del mail y se accede manualmente escribiendo la URL oficial en el navegador.
+* **Verificación por Canal Secundario (Out-of-band):** Si un conocido pide información sensible, se verifica la identidad por un medio distinto (ej. llamada telefónica o chat interno) antes de responder.
+* **Eliminación Preventiva:** Los correos cuestionables no se abren; se eliminan o se reportan al equipo de seguridad de inmediato.
