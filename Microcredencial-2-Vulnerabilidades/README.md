@@ -881,7 +881,7 @@ Siempre que veas un link sospechoso, el truco de "pasar el mouse por arriba" es 
 ![Fear and Urgency](../img/firts-urgency.png)
 ![Amazing offert ](../img/amazing_offert.png)
 ![Unusual requests](../img/unusual.png)
-![Suspicius attachments](image.png)
+![Suspicius attachments](../img/suspicious.png)
 ## 🛡️ Estrategias de Defensa contra el Phishing
 
 Para mitigar los ataques de ingeniería social, he implementado un modelo de defensa dual que combina herramientas técnicas con protocolos de conducta.
