@@ -959,4 +959,134 @@ Una empresa multinacional como UPS jamás enviaría algo con este nivel de error
 
 **Conclusión:** Intento de phishing masivo que utiliza el reconocimiento de marca para inducir al error mediante la curiosidad por un supuesto paquete.
 ![Correcto](../img/correcta2.png)
+## 🎯 Phishing vs. Spear Phishing: Precisión del Ataque
 
+En mi estudio de vectores de ingeniería social, he diferenciado dos niveles de sofisticación:
+
+| Concepto | Analogía | Objetivo | Personalización |
+| :--- | :--- | :--- | :--- |
+| **Phishing** | Pesca con red | Masivo / Aleatorio | Muy baja (genérica) |
+| **Spear Phishing** | Pesca con arpón | Individuo o Empresa específica | Muy alta (detalles reales) |
+
+### 🔍 Características del Spear Phishing:
+* **Investigación Previa:** El atacante recolecta datos públicos (OSINT) de la víctima para generar confianza.
+* **Mensaje a Medida:** Utiliza nombres reales, cargos específicos o referencias a proyectos actuales del usuario.
+* **Mayor Tasa de Éxito:** Al parecer una comunicación legítima del trabajo o de un conocido, es mucho más difícil de detectar para un usuario promedio.
+![Research](../img/research.png)
+
+### 🔄 Ciclo de un Ataque de Spear Phishing
+
+A diferencia del phishing masivo, el Spear Phishing sigue un proceso de inteligencia detallado:
+
+#### 1. Fase de Investigación (Research / OSINT)
+El atacante recolecta información pública de la víctima (Open Source Intelligence) utilizando:
+* **Redes Sociales:** LinkedIn (puesto, empresa, colegas), Facebook/Instagram (ubicación, amigos, intereses).
+* **Sitios Corporativos:** Estructura de la organización, proyectos actuales o software que utiliza la empresa.
+* **Datos Personales:** Direcciones de correo, historial educativo y laboral.
+
+#### 2. Fase de Mensajería (The Message)
+Con los datos recolectados, el atacante construye un mensaje altamente persuasivo:
+* **Personalización:** Usa nombres reales y referencias a personas de confianza (amigos o jefes).
+* **Relevancia:** El tema del correo es algo que la víctima está esperando o que le interesa legítimamente.
+* **Detección Difícil:** Al no tener los errores obvios de un phishing masivo, el usuario tiende a bajar la guardia.
+
+### 💼 Caso Real: Spear Phishing a Twitter (X)
+### Spear phishing example
+
+Attackers get creative with their research methods. 
+
+One of the most well-known social engineering incidents involved phone spear phishing. The attacker manipulated a small group of employees at Twitter, now known as X, into providing access to their internal support tools. 
+
+With those tools, the attacker took over 100 prominent Twitter accounts. The accounts included those for business leaders such as Jeff Bezos, celebrities such as Kim Kardashian, and corporations such as Uber. From each account, he posted a tweet encouraging followers to send bitcoin, claiming that they would receive twice the amount that they gave. This scam netted the attacker USD 100,000 worth of bitcoin.
+
+**Objetivo:** Obtener acceso a herramientas de soporte interno de la red social.
+**Método:** Vishing (Spear Phishing por teléfono) dirigido a empleados específicos del equipo de soporte.
+
+**Cronología del Ataque:**
+1. **Research:** El atacante identificó empleados con acceso a herramientas administrativas.
+2. **Engaño:** Se hizo pasar por personal del departamento de IT de la propia empresa para obtener credenciales.
+3. **Escalación de Privilegios:** Con el acceso interno, tomó el control de cuentas de alto perfil (Elon Musk, Bill Gates, Apple, etc.).
+4. **Monetización:** Publicó una estafa de duplicación de Bitcoin, recaudando **USD 100,000** en pocas horas.
+
+**Lección para el Analista:** Los atacantes no siempre buscan la puerta principal (el usuario final); a menudo buscan al "administrador" para comprometer a miles de usuarios a la vez.
+
+## 🛡️ Defensas Críticas: Hardening de tu Presencia Online
+* * El curso te da la clave: Controlar tu huella digital (Digital Footprint). Como sos Systems Technician y estás en Cybersecurity, esto es algo que tenés que aplicar ya mismo en tus propias cuentas.
+
+Estrategias de Reducción de Superficie de Ataque:
+Privacidad en Redes: No dejes tu lista de amigos o contactos pública (los atacantes la usan para saber a quién suplantar).
+
+Geolocalización: Evitá subir fotos que revelen tu ubicación exacta en tiempo real (oficina, casa, universidad).
+
+Separación de Perfiles: Usar un mail específico para redes sociales y otro totalmente distinto para recuperaciones de cuentas bancarias o laborales.
+
+## 🏟️ Ingeniería Social Física (In-Person Attacks)
+
+No todas las amenazas son digitales. He analizado cómo los atacantes utilizan la presencia física para comprometer la seguridad.
+
+### 🔍 Vectores Identificados:
+1. **Shoulder Surfing:** Espionaje visual directo para captura de credenciales en tiempo real.
+2. **Tailgating:** Explotación de la cortesía social para evadir controles de acceso físicos (puertas, molinetes).
+3. **Dumpster Diving:** Recuperación de información sensible a partir de desechos no destruidos correctamente.
+
+### 🛡️ Controles de Mitigación Física:
+* **Cultura de Seguridad:** Instruir a los empleados para que no permitan el ingreso de personas sin credencial (anti-tailgating).
+* **Destrucción de Documentos:** Uso de trituradoras de papel y políticas de borrado seguro de hardware.
+* **Privacidad Visual:** Uso de filtros de pantalla para laptops en lugares públicos.
+
+![EXAMPLE](../img/example.png)
+
+### 🛡️ Medidas de Prevención contra el Espionaje Físico
+
+Para mitigar riesgos como el **Shoulder Surfing**, se deben aplicar los siguientes controles:
+
+1. **Controles Físicos:**
+   * Uso de filtros de privacidad en pantallas de notebooks (reducen el ángulo de visión).
+   * Posicionamiento estratégico: Sentarse de espaldas a la pared en lugares públicos.
+   * Cobertura de teclados al ingresar PINs o credenciales.
+
+2. **Controles Técnicos (Defensa en Profundidad):**
+   * **Multifactor Authentication (MFA):** Implementar obligatoriamente un segundo factor de autenticación. Esto garantiza que el robo de una contraseña por observación directa no sea suficiente para comprometer la cuenta.
+
+   ### 🗑️ Dumpster Diving: El riesgo de los desechos
+El atacante busca información confidencial en la basura física o digital de una organización.
+
+**Información crítica recolectada:**
+* Hábitos de compra (vía empaques y recibos).
+* Especificaciones técnicas de hardware (vía cajas de equipos).
+* Datos financieros y números de cuenta (vía ofertas de crédito y facturas).
+
+**Control de Mitigación:**
+* **Shredding (Triturado):** Implementar el uso de trituradoras de papel de corte cruzado para todos los documentos sensibles.
+* **Política de Escritorio Limpio:** No dejar notas con claves y asegurar que el hardware viejo sea destruido por empresas certificadas.
+
+## EJEMPLO
+
+##### 🔗 Del Dumpster Diving al Spear Phishing: El rompecabezas de la identidad
+
+Un atacante no necesita robarte la billetera si puede reconstruir tu vida desde el tacho de basura. 
+
+**Ejemplo de vector de ataque combinado:**
+1. **Recolección:** El atacante obtiene tu banco y el nombre de tu mascota de la basura.
+2. **El Engaño (Spear Phishing):** Te envía un mail que dice: *"Hola [Tu Nombre], detectamos un cargo inusual en tu cuenta de [Tu Banco]. Para verificar tu identidad, por favor ingresa el nombre de tu mascota (pregunta de seguridad) y tu fecha de nacimiento"*.
+3. **Resultado:** Al usar datos reales (tu banco y el nombre de Fluffy), la confianza es total y entregás el resto de tus credenciales sin dudar. 
+
+### 🛡️ Checklist de Prevención de Dumpster Diving
+
+✅Destrucción Total (Shredding): No basta con romper el papel a mano. Usar trituradoras que corten en partículas (corte cruzado) para que sea imposible reconstruir el documento.
+
+✅Gestión de Cajas: Desarmar las cajas de tecnología, darlas vuelta (que no se vea la marca) y, si es posible, llevarlas directamente al centro de reciclaje en lugar de dejarlas en la puerta.
+
+✅Higiene de Etiquetas: Arrancá siempre las etiquetas de envío. Tienen tu nombre, dirección y, a veces, hasta tu número de celular.
+
+### 🚪 Tailgating: La Explotación de la Cortesía
+
+El Tailgating ocurre cuando una persona no autorizada sigue a una autorizada hacia un área restringida.
+
+**Escenario Típico:**
+* El atacante se disfraza de repartidor o técnico y carga objetos pesados para forzar a un empleado a sostenerle la puerta por cortesía.
+
+**Controles de Mitigación (Prevención):**
+* **Cero Excepciones:** No permitir el ingreso de nadie sin su propia credencial, sin importar qué lleve en las manos.
+* **Redirección:** Si alguien no tiene acceso, debe ser derivado siempre a la recepción o al guardia de seguridad.
+* **Infraestructura:** Uso de molinetes, esclusas (man-traps) o cámaras de seguridad con analítica de conteo de personas.
