@@ -1098,3 +1098,266 @@ Tras completar el análisis de vectores de ataque humano, se desprenden las sigu
 1. **La Concientización es el Firewall Humano:** La capacitación de empleados en la detección de Phishing y Spear Phishing es la defensa más efectiva contra ataques digitales dirigidos.
 2. **Políticas y Procedimientos:** Combatir el Tailgating y el Dumpster Diving requiere protocolos claros, como el uso obligatorio de trituradoras y el reporte de accesos no autorizados.
 3. **Defensa en Profundidad:** La seguridad física y la digital deben trabajar juntas; por ejemplo, la MFA anula el éxito de un ataque de Shoulder Surfing.
+
+![THIS LESSON](../img/lesson.png)
+# Cybersecurity attacks often include digital elements, such as malware, and psychological elements, such as phishing. But no cybersecurity program is complete without accounting for physical threats to the buildings and devices housing valuable assets. 
+
+## In this lesson, you’ll learn about physical security, types of physical threats, and strategies for addressing them. You’ll then explore types of physical controls and environmental controls and practice developing a plan to implement them in a realistic scenario. 
+
+## 🏛️ Seguridad Física y Resiliencia de Infraestructura
+
+La seguridad física es la primera línea de defensa para garantizar la tríada de la CIA (Confidencialidad, Integridad y Disponibilidad).
+
+### 🔍 Gestión de Amenazas Ambientales
+He analizado cómo factores no humanos impactan en la disponibilidad de los sistemas:
+* **Monitoreo Térmico:** Implementación de controles detectivos (termostatos) y correctivos (climatización automática) para prevenir daños por calor.
+* **Protección de Hardware:** Defensa contra sobretensiones e interferencias electromagnéticas.
+
+### 🔐 Capas de Control Implementadas (Defensa en Profundidad)
+1. **Acceso Perimetral:** Cámaras y seguridad física.
+2. **Acceso a Instalaciones:** Uso de Key Cards y registros de ingreso.
+3. **Acceso al Endpoint:** Autenticación biométrica (huella dactilar) y contraseñas robustas.
+
+### 📉 Análisis de Incidente: Intento de Acceso No Autorizado
+**Escenario:** Sujeto con vestimenta formal intenta ingresar a la zona restringida alegando olvido de credencial (Key Card).
+
+**Vectores de Ataque Identificados:**
+* **Pretexting:** Uso de una excusa creíble (olvido de tarjeta) para ganar acceso.
+* **Impersonation:** Vestimenta de negocios para aparentar ser un ejecutivo o empleado de alto nivel.
+
+**Resultado:** Control Exitoso. El personal de seguridad actuó como control administrativo, derivando al sujeto según el protocolo y manteniendo la integridad del perímetro físico.
+
+## Amenazas a la Infraestructura y Datos
+Acceso Directo: Ningún software de seguridad puede evitar que alguien conecte físicamente un dispositivo a un puerto de red si logra entrar.
+
+Instalación de Malware: Una vez dentro, podría insertar una unidad USB en una estación de trabajo para instalar un virus que se propague por toda la red.
+
+Robo de Hardware: Podría sustraer computadoras portátiles o incluso discos duros directamente de un centro de datos.
+
+Daño Físico: Existe el riesgo de vandalismo o sabotaje que deshabilite la energía o dañe dispositivos de red críticos.
+
+🛡️ Controles de Seguridad Aplicados
+En este caso, el personal de seguridad actuó como un control administrativo efectivo al seguir las políticas de la empresa. Los controles físicos están diseñados para:
+
+Disuadir, prevenir o retrasar a los actores maliciosos.
+
+Identificar personas no autorizadas mediante la verificación de credenciales (como la key card que el hombre decía no tener).
+
+## 🏛️ Seguridad Física y Defensa en Profundidad
+La seguridad física es la protección del hardware y la infraestructura contra amenazas directas como el robo, el daño o el acceso no autorizado. Las organizaciones suelen adoptar un enfoque de defensa en profundidad, utilizando capas de controles para que, si uno falla, otro pueda compensarlo.
+
+Niveles de Control y Ejemplo Práctico
+Considerando el recorrido de un analista de ciberseguridad hacia su puesto de trabajo, se pueden identificar múltiples controles en capas:
+
+* Acceso Perimetral y de Instalaciones: Uso de una tarjeta de acceso (key card) para entrar al vestíbulo y ser reconocido por el personal de seguridad.
+
+* Vigilancia y Monitoreo: Cámaras ubicadas en vestíbulos, pasillos y ascensores.
+
+* Control de Áreas Restringidas: Segundo uso de la tarjeta de acceso para ingresar a áreas específicas, como un Centro de Operaciones de Seguridad (SOC).
+
+* Controles Automáticos: Luces con sensores de movimiento que se activan al detectar presencia.
+
+* Acceso al Endpoint: Requisito de contraseñas y verificación de identidad mediante biometría (huella dactilar) en el equipo de trabajo.
+
+⚠️ Gestión de Amenazas Físicas
+Las amenazas físicas pueden comprometer la tríada de seguridad (Confidencialidad, Integridad y Disponibilidad) de maneras que los firewalls digitales no pueden detener.
+
+* Tipos de Amenazas
+# Amenazas Externas: Atacantes que utilizan ingeniería social física, como el tailgating, para ingresar a áreas restringidas y robar laptops o instalar virus mediante unidades USB.
+
+# Amenazas Internas: Trabajadores malintencionados que abusan de su acceso autorizado para sustraer componentes, como discos duros, para vender la información al mejor postor.
+
+# Amenazas Ambientales: Factores naturales o de infraestructura que pueden destruir el hardware, incluyendo temperaturas extremas, humedad, incendios, inundaciones, sobretensiones eléctricas o interferencia electromagnética.
+
+![Purposes](../img/purposes.png)
+
+# 🏛️ Laboratorio de Seguridad Física y Organizacional
+
+En este módulo del certificado de IBM, he analizado cómo las organizaciones protegen sus activos tangibles, hardware e infraestructura crítica mediante una estrategia de **Defensa en Profundidad**.
+
+## 🛡️ Estrategia de Defensa en Profundidad
+La seguridad física no depende de un solo control, sino de capas superpuestas. Si una capa es vulnerada, las demás deben ser capaces de detectar o mitigar la amenaza.
+
+### 🧱 Niveles de Control y Acceso
+He documentado el flujo de seguridad que protege los datos desde el exterior hacia el núcleo de la empresa:
+
+1. **Perímetro y Fachada:** Guardias de seguridad y recepción (filtros administrativos y humanos).
+2. **Vigilancia Constante:** Sistemas de CCTV en pasillos y puntos de tránsito (controles detectivos).
+3. **Áreas Restringidas:** Acceso a salas de servidores o el SOC mediante **Key Cards** y lectores magnéticos.
+4. **Endpoint Seguro:** Acceso final al hardware protegido por biometría (huella dactilar) y contraseñas robustas.
+
+
+
+## 📊 Matriz de Clasificación de Controles
+Para una gestión eficiente del riesgo, clasificamos los controles según su función técnica:
+
+| Función | Propósito | Ejemplo del Mundo Real |
+| :--- | :--- | :--- |
+| **Disuadir / Prevenir** | Evitar que el incidente ocurra. | Muros, guardias, biometría y políticas de acceso. |
+| **Detectar** | Identificar la amenaza en tiempo real. | Sensores de movimiento, alarmas de humo y cámaras. |
+| **Corregir** | Mitigar el daño tras la detección. | Sistemas de supresión de incendios o climatización automática. |
+
+## 🌪️ Gestión de Amenazas Ambientales y Disponibilidad
+La tríada de la CIA (Confidencialidad, Integridad y Disponibilidad) también depende de factores ambientales. El hardware debe ser protegido contra:
+
+* **Clima Extremo:** Temperaturas y humedad fuera de rango que dañan los componentes.
+* **Incidentes Eléctricos:** Sobretensiones o interferencias electromagnéticas.
+* **Respuesta Automática:** Implementación de termostatos vinculados a sistemas de enfriamiento (controles correctivos).
+
+
+
+## 📑 Caso de Análisis: Intento de Acceso No Autorizado
+Se analizó un escenario donde un atacante utilizó **Ingeniería Social (Pretexting)** para intentar ingresar a una oficina alegando el olvido de su credencial.
+* **Conclusión:** El éxito de la seguridad dependió de la rigidez de los **Controles Administrativos** (políticas de la empresa) y la capacitación del personal para no ceder ante la presión social.
+
+## 🧱 Catálogo de Controles de Seguridad Física
+
+La protección de los activos de IT requiere una combinación de barreras materiales y sistemas tecnológicos. A continuación, se detallan los controles implementados y analizados en este laboratorio:
+
+### 1. Seguridad de Perímetro (Exterior)
+*Son la primera línea de defensa para disuadir e impedir el acceso a la propiedad.*
+* **Muros y Cercas:** Barreras físicas que delimitan el área segura.
+* **Alambre de Púas / Concertina:** Elementos disuasorios sobre muros para evitar escaladas.
+* **Iluminación de Seguridad:** Luces con sensores de movimiento que eliminan puntos ciegos.
+* **Bolardos:** Postes resistentes para evitar ataques con vehículos (ramming).
+* **Guardias de Seguridad:** Personal humano para vigilancia activa y respuesta inmediata.
+
+### 2. Control de Acceso (Entradas y Áreas Internas)
+*Mecanismos para verificar la identidad y restringir el movimiento de personas.*
+* **Key Cards (RFID):** Tarjetas magnéticas o de proximidad programadas con permisos específicos.
+* **Controles Biométricos:** Escáneres de huellas dactilares, reconocimiento facial o de iris.
+* **Mantraps (Esclusas):** Sistema de doble puerta donde la segunda no abre hasta que la primera esté cerrada (evita el tailgating).
+* **Molinetes / Torniquetes:** Barreras mecánicas que permiten el paso de una sola persona a la vez.
+
+### 3. Vigilancia y Detección
+*Sistemas que monitorean y registran eventos para auditoría y respuesta.*
+* **CCTV (Circuito Cerrado de Televisión):** Cámaras con grabación 24/7 y analítica de video.
+* **Sensores de Movimiento:** Detectores infrarrojos que activan alertas ante intrusos.
+* **Sensores de Contacto:** Alarmas en puertas y ventanas que detectan aperturas no autorizadas.
+
+### 4. Protección de Infraestructura y Datos
+*Controles específicos para el hardware crítico.*
+* **Racks Cerrados con Llave:** Gabinetes que impiden el acceso físico a servidores y switches.
+* **Cerraduras Electrónicas:** Registran qué empleado abrió qué puerta y a qué hora.
+* **Pantallas de Privacidad:** Filtros físicos que evitan el "Shoulder Surfing" en oficinas abiertas.
+* **Protección de Puertos:** Bloqueadores físicos de puertos USB y RJ45 para evitar la conexión de dispositivos maliciosos.
+
+### 5. Controles Ambientales (Resiliencia)
+*Garantizan la disponibilidad del hardware frente a fallos del entorno.*
+* **Sistemas de Supresión de Incendios:** Extintores automáticos de gas inerte (no dañan la electrónica).
+* **UPS (SAI) y Generadores:** Garantizan energía continua ante cortes de suministro.
+* **Sensores de Inundación y Humedad:** Previenen daños por filtraciones o condensación.
+* **Climatización de Precisión (HVAC):** Mantiene los servidores a la temperatura óptima.
+
+### 🔄 Funciones Estratégicas: Retrasar y Defender
+
+Para que la seguridad física sea efectiva, los controles deben cumplir funciones temporales y defensivas:
+
+#### ⏳ Retraso (Delay)
+Su propósito es ralentizar al atacante para permitir una respuesta operativa.
+* **Controles de acceso vehicular:** Portones y bloqueos en parkings.
+* **Filtros humanos:** Recepcionistas entrenados para demorar perfiles sospechosos mientras se alerta a seguridad.
+
+#### 🛡️ Defensa (Defense)
+La última barrera física para prevenir la pérdida de activos.
+* **Physical Locks:** Uso de cerraduras en puertas, racks y gabinetes de datos.
+* **Device Tethering:** Cables de acero y bloqueos físicos para evitar el robo de laptops y estaciones de trabajo.
+* **Almacenamiento Seguro:** Safes y vaults para activos de alta criticidad.
+* **Apprehension:** Protocolos de respuesta con fuerzas de seguridad (Law Enforcement).
+
+## ACTIVITY
+
+## Activity: Develop a physical security control plan (step 1) 
+
+Imagine that you’re a member of a cybersecurity team working for a corporation bidding on a government contract. All confidential information must remain onsite. Therefore, the contract prohibits saving confidential information to USB flash drives or other removable storage devices usable for transporting files offsite. 
+
+The corporation must improve its security measures to prevent this type of data breach. Currently, the corporation has the following security measures: 
+
+The server room is locked. Each IT staff member has a key to the server room. 
+
+The door to the shared workspaces is not locked. However, a sign outside this door clearly states, “Authorized personnel only”, and a receptionist screens all visitors. 
+
+All employees have their own usernames and passwords. 
+
+All employees have been instructed not to plug USB flash drives or external hard disk drives into their work computers. 
+
+Your supervisor tasks you with developing a plan for meeting the contract’s requirements.
+
+Step 1 
+
+In this step, you will design the physical controls for an organization that is undertaking a government contract. In the following diagram, explore the layout of the first floor and experiment with the placement of new physical controls. 
+
+Drag the physical controls into the appropriate locations to meet the contract’s requirements. You can select the Reset button to adjust your design. When you have placed the physical controls in the appropriate locations, take a screen capture of your design, and then insert it into the “Physical Security Control Plan” and write your plan.
+
+![Paso 1](../img/security_elements.png)
+![Paso 2](../img/security1.png)
+### 📋 Fase 2: Justificación Técnica del Plan de Seguridad
+
+Para cumplir con las cláusulas de "No almacenamiento removible" del contrato, he definido la siguiente matriz de controles:
+
+| Control Físico | Función Primaria | Impacto en la Seguridad |
+| :--- | :--- | :--- |
+| **Biometría** | Prevención / Acceso | Elimina el riesgo de llaves físicas perdidas o duplicadas en el Server Room. |
+| **CCTV (Cámaras)** | Detección / Disuasión | Monitoreo constante de workstations para prevenir el uso de USBs no autorizados. |
+| **Guardias** | Defensa / Retraso | Validación física de identidad y prevención de exfiltración de hardware. |
+
+**Mitigación de Riesgos:** El plan aborda tanto la amenaza externa (intrusos) como la interna (empleados con acceso que intentan extraer datos), cumpliendo con el estándar de "Confidencialidad Onsite".
+
+### 📋 Fase 2: Mejora del Plan de Seguridad Física
+
+Basado en los requerimientos del contrato, he añadido capas de detección específicas para mitigar amenazas internas y externas:
+
+* **Monitoreo Crítico:** Se añadieron cámaras dentro del Server Room para prevenir la conexión física de medios de almacenamiento (USB/Discos).
+* **Detección Activa:** Implementación de sensores de movimiento para alertar sobre accesos no autorizados en áreas de alta sensibilidad.
+* **Respuesta Inmediata:** Instalación de alarmas perimetrales para apoyar la labor de los guardias y la recepción.
+
+![Control ambiental](../img/ambiental.png)
+
+## 🌡️ Gestión de Amenazas Ambientales y Resiliencia
+La disponibilidad de los sistemas no solo depende de la seguridad contra ataques humanos, sino de mantener el hardware dentro de parámetros operativos seguros.
+
+## . Parámetros Ideales de Funcionamiento
+Para maximizar la vida útil del equipo y evitar fallos catastróficos, se deben mantener los siguientes rangos en salas de servidores y data centers:
+
+Temperatura: 18°C – 24°C (65°F – 75°F).
+
+Humedad: 40% – 60% (un nivel muy bajo genera electricidad estática; un nivel muy alto causa corrosión y cortocircuitos).
+
+## 2. Estrategias de Climatización (Airflow)
+La disposición física del hardware es un control de prevención ambiental:
+
+Pasillos Fríos y Calientes (Cold/Hot Aisles): El aire frío se dirige al frente de los dispositivos y el aire caliente se expulsa hacia un pasillo trasero independiente.
+
+Sensores y Alertas: Uso de controles detectivos conectados a servicios de monitoreo remoto que notifican a los administradores ante cualquier desviación de los rangos ideales.
+
+## 3. Otras Amenazas de Infraestructura
+Incendios: Necesidad de sistemas de supresión que no dañen la electrónica (gas en lugar de agua).
+
+Interferencia Electromagnética (EMI): Protección contra campos magnéticos que puedan corromper datos en tránsito o almacenados.
+
+### 🌪️ Control Ambiental y Disponibilidad (Availability)
+
+He documentado las medidas preventivas para proteger el hardware contra factores físicos externos:
+
+* **Monitoreo de Precisión:** Implementación de sensores de temperatura (18°C-24°C) y humedad (40%-60%) para evitar fallos por calor o estática.
+* **Diseño de Flujo de Aire:** Configuración de pasillos fríos/calientes para optimizar la disipación térmica en racks.
+* **Controles Correctivos:** Configuración de alertas automáticas y sistemas de climatización redundantes para mitigar picos térmicos.
+
+![Plano](../img/plano.png)
+## 🌬️ Proceso de Enfriamiento por Pasillos (Hot/Cold Aisles)
+* Entrada de Aire Frío (1): El aire refrigerado fluye hacia los pasillos fríos situados frente a los racks. Los servidores succionan este aire para mantener sus componentes internos a la temperatura ideal de 18°C–24°C.
+
+* Emisión de Aire Caliente (2): A medida que el aire pasa por los procesadores y fuentes de energía, absorbe el calor y es expulsado por la parte trasera de los servidores.
+
+* Flujo hacia el Intercambiador (3): Este aire caliente se concentra en el pasillo caliente y es dirigido hacia el extremo del pasillo.
+
+* Tratamiento del Aire (4): El intercambiador de calor enfría y deshumidifica el aire (manteniendo la humedad entre 40% y 60%) antes de reintroducirlo al ciclo.
+
+## 🛡️ ¿Por qué esto es Seguridad Física?
+Como estás estudiando para Analista de Ciberseguridad, es clave recordar que estos son controles preventivos ambientales:
+
+Disponibilidad (Availability): Si el intercambio de calor falla, los sistemas se apagan automáticamente para evitar daños físicos, lo que provoca una caída del servicio.
+
+Controles Detectivos: Se utilizan sensores de temperatura y humedad vinculados a alertas para que el personal de IT actúe antes de que el hardware falle.
+
+Controles Correctivos: El sistema de aire acondicionado (HVAC) actúa automáticamente para corregir desviaciones térmicas detectadas por los termostatos.
