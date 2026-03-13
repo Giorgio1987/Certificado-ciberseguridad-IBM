@@ -1389,3 +1389,181 @@ Para completar el esquema de seguridad física, se han integrado controles contr
 * **Blindaje Electromagnético (EMI):** * Uso de **EMI Shielding** en cableado estructurado.
     * Disponibilidad de recintos de **Faraday** para proteger equipos críticos contra interferencias y pulsos electromagnéticos.
 
+## 🌪️ Fase 3: Plan de Controles Ambientales y Disponibilidad
+
+En esta etapa final del diseño, implementé controles específicos para minimizar la pérdida de datos ante desastres naturales, incendios o fallos en el suministro eléctrico, garantizando la continuidad del negocio (**Business Continuity**).
+
+### 📋 Selección de Controles Ambientales
+
+#### 1. Sistema de Supresión de Incendios (Clean Agent System)
+* **Razonamiento:** El uso de agua en una sala de servidores es contraproducente. Implementé un sistema basado en **agentes gaseosos** que extinguen el fuego eliminando el calor o el oxígeno sin dañar los componentes electrónicos. Es un control **correctivo** vital para proteger la integridad física de los discos duros y servidores ante un inicio de ignición por sobrecalentamiento.
+
+#### 2. Generador de Emergencia (Backup Generator)
+* **Razonamiento:** Un corte de energía no solo apaga los servidores, sino que detiene los sistemas de enfriamiento. En minutos, la temperatura puede subir a niveles críticos. El generador garantiza que el sistema **HVAC** mantenga el rango ideal de **18°C–24°C**, protegiendo el hardware de daños permanentes y asegurando la **Disponibilidad** de la información onsite exigida por el contrato.
+
+#### 3. Mantenimiento y Limpieza Programada
+* **Razonamiento:** Actúa como un control **preventivo**. La acumulación de polvo es una de las principales causas de incendios por cortocircuitos y fallos en el flujo de aire. Mantener el entorno limpio reduce la probabilidad de incidentes térmicos y extiende la vida útil de la infraestructura crítica.
+
+### 📊 Resumen de Mitigación de Riesgos
+
+| Amenaza | Control Implementado | Tipo de Control | Objetivo |
+| :--- | :--- | :--- | :--- |
+| **Incendio** | Supresión por Gas | Correctivo | Integridad |
+| **Apagón Eléctrico** | Generador / UPS | Preventivo | Disponibilidad |
+| **Calor / Estática** | Sensores y Limpieza | Detectivo | Confiabilidad |
+
+
+
+---
+
+### 🏁 Conclusión del Proyecto de Seguridad Física
+Con la integración de estos controles físicos, administrativos y ambientales, la corporación ahora cumple con los requisitos del contrato gubernamental. Se ha pasado de una seguridad basada en "buena voluntad" (carteles y llaves comunes) a una **Defensa en Profundidad** robusta que mitiga tanto amenazas externas como internas.
+
+### 🚀 Proyección Profesional: Physical Security Service Technician
+
+Como parte de mi formación en Cybersecurity, he analizado el rol del Técnico de Seguridad Física, un puesto que combina mis habilidades previas como **Técnico en Sistemas** con la protección de infraestructura crítica:
+
+* **Gestión de Dispositivos:** Capacidad para instalar y mantener cámaras, biometría y controles de acceso.
+* **Integración IT:** Los sistemas modernos dependen de servidores y redes, áreas donde mi experiencia técnica permite una administración eficiente.
+* **Sectores Críticos:** Preparado para trabajar en entornos de alta seguridad (Banca/Energía), protegiendo activos tangibles e información confidencial.
+
+![What do you think ?](../img/what_do_you-think.png)
+### 🔍 Investigación de Mercado: Perfil de IT Support & Security
+
+He analizado posiciones abiertas que integran el soporte técnico con la seguridad física, identificando a **ShipHero** como un referente en trabajo remoto.
+
+**Habilidades Clave Identificadas:**
+1. **Administración Multi-Plataforma:** Gestión de entornos híbridos (Linux, Windows, MacOS).
+2. **Infraestructura de Seguridad Física:** Implementación de cámaras PoE y dispositivos de red, reforzando la **Defensa en Profundidad**.
+3. **Ciberseguridad Proactiva:** Identificación de amenazas como Phishing para proteger la integridad de la organización.
+4. **Soporte Bilingüe:** Competencia técnica tanto en Inglés como en Español para entornos globales.
+
+### 🚀 Profesional en Formación: Cybersecurity & IT Support
+
+Mi enfoque combina la robustez de los sistemas informáticos con la precisión de la seguridad física. 
+
+* **Especialidad:** Integración de infraestructura (Cámaras PoE, Networking) con ciberseguridad lógica.
+* **Sistemas:** Dominio de entornos Windows, Linux y virtualización avanzada.
+* **Idiomas:** Capacidad para brindar soporte técnico bilingüe (Español/Inglés) en entornos globales.
+* **Meta:** Aplicar controles de "Defensa en Profundidad" para proteger la integridad y disponibilidad de la información en sectores críticos.
+
+## 🛡️ Laboratorio: Diseño de Seguridad Física para Contratos Gubernamentales
+
+Este ejercicio consistió en el rediseño de la seguridad de una corporación para cumplir con normativas estrictas de "Confidencialidad Onsite", prohibiendo la extracción de datos mediante dispositivos extraíbles (USB/Discos).
+
+### 📍 Paso 1 & 2: Implementación de Controles Físicos
+He transformado el layout de la planta baja pasando de una seguridad pasiva a una **Defensa en Profundidad**:
+
+* **Server Room (Máxima Seguridad):** Sustitución de llaves físicas por **Acceso Biométrico** y **Key Card Readers**. Se añadió monitoreo constante mediante **CCTV** para prevenir amenazas internas.
+* **Lobby y Perímetro:** Ubicación estratégica de **Guardias de Seguridad** y **Cámaras** en puntos ciegos y ascensores para actuar como controles de **Retraso (Delay)** y **Detección**.
+* **Shared Workspaces:** Instalación de cerraduras electrónicas en puertas que anteriormente estaban abiertas, asegurando que solo el personal autorizado acceda a las estaciones de trabajo.
+
+### 🌪️ Paso 3: Resiliencia Ambiental
+Para garantizar la **Disponibilidad** y la integridad del hardware ante desastres:
+1. **Supresión de Incendios:** Implementación de sistemas por gas inerte para proteger los servidores sin usar agua.
+2. **Control Térmico:** Diseño de pasillos fríos/calientes y sensores de humedad (40-60%) para evitar fallos por estática o calor.
+3. **Energía Redundante:** Generadores de respaldo para mantener los sistemas de enfriamiento operativos durante apagones.
+
+### 💼 Perfil Profesional y Mercado Laboral
+La investigación de mercado (ej. vacante de **IT Support en ShipHero**) demuestra que el rol del técnico moderno es híbrido. El perfil desarrollado para este proyecto incluye:
+* **Habilidades IT:** Gestión de Windows, Mac, Linux e iOS.
+* **Habilidades de Seguridad:** Instalación de cámaras PoE, configuración de redes y respuesta ante Phishing.
+* **Habilidades Blandas:** Comunicación bilingüe (Español/Inglés) y priorización basada en riesgo.
+
+### 🔐 Glosario de Conceptos Clave en Ciberseguridad
+* 🦠 1. Malware y Protección Lógica
+El malware es software diseñado para comprometer la Tríada CIA (Confidencialidad, Integridad y Disponibilidad).
+
+Tipos comunes: Virus, gusanos, troyanos, ransomware (como el Rhadamanthys que eliminamos antes), bombas lógicas, spyware y adware.
+
+Controles esenciales: * Software antimalware (ej. Malwarebytes para escaneos y protección en tiempo real).
+
+Gestión de parches (Patch Management).
+
+Políticas de navegación segura.
+
+* 🧠 2. Ingeniería Social y Factor Humano
+El uso del engaño para manipular a las personas y obtener datos confidenciales.
+
+Phishing: Identificable por remitentes sospechosos, errores gramaticales, lenguaje urgente o archivos adjuntos extraños.
+
+Tácticas Físicas: * Shoulder Surfing: Mirar por encima del hombro.
+
+Dumpster Diving: Buscar información sensible en la basura.
+
+Tailgating: Seguir a alguien a un área restringida sin autorización.
+
+* 🏢 3. Seguridad Física y Estrategia
+Protección directa de los activos tangibles contra intrusiones o peligros naturales.
+
+Defense in Depth (Defensa en Profundidad): Estrategia de múltiples capas donde, si una falla, otra compensa la seguridad.
+
+Propósitos de los Controles Físicos:
+
+Deter (Disuadir): Que no lo intenten.
+
+Deny (Denegar): Bloquear el acceso.
+
+Detect (Detectar): Saber si entraron.
+
+Delay (Retrasar): Ganar tiempo para responder.
+
+Defend (Defender): Protección final de los activos en sitio.
+
+* 🌪️ 4. Resiliencia Ambiental
+Monitoreo para evitar daños por factores del entorno.
+
+Variables Críticas: Temperatura, humedad, incendios e interferencia electromagnética (EMI).
+
+Objetivo: Mantener el hardware operativo dentro de rangos ideales para asegurar la disponibilidad de los servicios.
+
+### 🔑 Conceptos Fundamentales de Seguridad
+
+He consolidado los pilares de la ciberseguridad analizados en este módulo:
+
+* **Gestión de Amenazas:** Identificación de tipos de malware y técnicas de ingeniería social (Phishing/Tailgating).
+* **Defensa en Profundidad:** Implementación de controles físicos bajo los principios de Disuadir, Denegar, Detectar, Retrasar y Defender.
+* **Seguridad Ambiental:** Importancia del monitoreo de condiciones críticas para garantizar la resiliencia del hardware.
+* **Herramientas:** Uso de soluciones como Malwarebytes para la protección de endpoints y mitigación de amenazas digitales.
+
+### 🎓 Habilidades Desarrolladas: Pensamiento Crítico y Sistémico
+
+He completado el análisis de roles y amenazas, adquiriendo las siguientes capacidades:
+
+1. **Análisis de Malware:** Capacidad para diferenciar tipos de software malicioso y aplicar medidas de remediación activa.
+2. **Detección de Ingeniería Social:** Identificación de patrones de engaño tanto en medios digitales (Phishing) como físicos (Tailgating).
+3. **Planificación Estratégica:** Desarrollo de planes de control físico que integran la seguridad lógica con la protección de infraestructura.
+4. **Orientación de Carrera:** Comprensión de las tareas y habilidades necesarias para desempeñarse como Analista de Malware o Técnico en Seguridad Física.
+
+![Learning objetives ](../img/learning.png)
+## 📚 Referencias Bibliográficas y Casos de Estudio
+
+Para el desarrollo de este proyecto y el fortalecimiento de los controles de seguridad, se han tomado como referencia los siguientes recursos técnicos y estudios de casos reales:
+
+### 1. Ransomware: Mecánicas de Secuestro de Datos
+* **Referencia:** [What is Ransomware? - IBM Technology (YouTube)](https://www.youtube.com/watch?v=imNfrtvYYbw)
+* **Concepto:** Análisis profundo sobre cómo el software malicioso cifra la información crítica y los métodos de mitigación, como la regla de backups 3-2-1, el parcheo de vulnerabilidades CVE y la importancia de no pagar rescates para no financiar el ecosistema criminal.
+
+### 2. Amenazas Internas (Insider Threats)
+* **Referencia:** [What are Insider Threats? - IBM Topic Guide](https://www.ibm.com/think/topics/insider-threats)
+* **Concepto:** Definición de los vectores de riesgo que provienen de usuarios autorizados. Se categorizan en:
+    * **Maliciosos:** Búsqueda de beneficio económico o sabotaje.
+    * **Negligentes:** Errores humanos y falta de concienciación.
+    * **Comprometidos:** Credenciales legítimas robadas por atacantes externos.
+
+### 3. Casos Reales de Brechas de Seguridad por Insiders
+* **Referencia:** [7 Real-Life Data Breaches Caused by Unmitigated Insider Threats - Syteca](https://www.syteca.com/en/blog/real-life-examples-insider-threat-caused-breaches)
+* **Estudios de Caso:**
+    * **Google (2024):** Robo de 500 archivos de propiedad intelectual sobre arquitectura de chips de IA por parte de un ingeniero de software.
+    * **Coinbase (2025):** Empleados de soporte técnico sobornados para filtrar datos de 70,000 usuarios.
+    * **Marks & Spencer (2025):** Ataque de ingeniería social a un proveedor externo que derivó en la implementación de ransomware en sus servidores.
+    * **FinWise Bank (2024):** Brecha de datos causada por un ex-empleado que aún mantenía acceso activo tras su desvinculación (Fallo en el proceso de Offboarding).
+
+---
+
+### 🛠️ Aplicación Práctica en este Proyecto
+Los conocimientos extraídos de estas referencias fueron aplicados en el **Plan de Control de Seguridad Física** de este repositorio, específicamente en:
+* Implementación de **MFA (Multi-Factor Authentication)** para mitigar credenciales comprometidas.
+* Procesos de **Offboarding Automatizado** para revocar accesos de inmediato.
+* Diseño de **Resiliencia Ambiental** para asegurar la disponibilidad de los datos ante ataques de sabotaje físico.
+
