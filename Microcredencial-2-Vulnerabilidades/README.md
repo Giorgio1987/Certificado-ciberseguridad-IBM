@@ -1361,3 +1361,31 @@ Disponibilidad (Availability): Si el intercambio de calor falla, los sistemas se
 Controles Detectivos: Se utilizan sensores de temperatura y humedad vinculados a alertas para que el personal de IT actúe antes de que el hardware falle.
 
 Controles Correctivos: El sistema de aire acondicionado (HVAC) actúa automáticamente para corregir desviaciones térmicas detectadas por los termostatos.
+
+## 🔥 Prevención y Supresión de Incendios
+El fuego en una sala de servidores es una amenaza crítica de disponibilidad. Las causas comunes incluyen fallos en el equipo de IT, cables recalentados bajo el suelo técnico o incendios externos.
+
+Medidas Preventivas Recomendadas:
+Evaluación de Riesgos: Programar inspecciones periódicas para identificar puntos de ignición.
+
+Limpieza Regular: El polvo es altamente inflamable y puede causar cortocircuitos por sobrecalentamiento.
+
+Monitoreo Térmico: Controlar la temperatura para evitar que los componentes alcancen su punto de ignición.
+
+Sistemas de Supresión: Implementar sistemas que utilicen agentes limpios (gas inerte o agentes químicos) que extinguen el fuego sin dañar los circuitos electrónicos con agua.
+
+* ⚡ Interferencia Electromagnética (EMI)
+La radiación electromagnética puede degradar el rendimiento de los dispositivos o corromper los datos. Puede provenir de tormentas eléctricas o, más comúnmente, de otros dispositivos electrónicos cercanos (microondas, luces LED, celulares).
+
+* Técnicas de Mitigación:
+EMI Shielding (Blindaje): Uso de cables de red y AV recubiertos con materiales conductores o magnéticos que bloquean las ondas externas.
+
+Jaulas y Bolsas de Faraday: Recintos fabricados con materiales metálicos especiales que protegen a los dispositivos sensibles de ráfagas o pulsos electromagnéticos.
+### 🛡️ Resiliencia ante Desastres Físicos
+
+Para completar el esquema de seguridad física, se han integrado controles contra amenazas ambientales extremas:
+
+* **Protección contra Incendios:** Se prioriza la limpieza, el monitoreo térmico y la implementación de sistemas de supresión de incendios por gas (Clean Agents) para proteger la integridad del hardware.
+* **Blindaje Electromagnético (EMI):** * Uso de **EMI Shielding** en cableado estructurado.
+    * Disponibilidad de recintos de **Faraday** para proteger equipos críticos contra interferencias y pulsos electromagnéticos.
+
