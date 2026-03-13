@@ -1090,3 +1090,11 @@ El Tailgating ocurre cuando una persona no autorizada sigue a una autorizada hac
 * **Cero Excepciones:** No permitir el ingreso de nadie sin su propia credencial, sin importar qué lleve en las manos.
 * **Redirección:** Si alguien no tiene acceso, debe ser derivado siempre a la recepción o al guardia de seguridad.
 * **Infraestructura:** Uso de molinetes, esclusas (man-traps) o cámaras de seguridad con analítica de conteo de personas.
+
+## 🏁 Conclusión: Ingeniería Social y Mitigación
+
+Tras completar el análisis de vectores de ataque humano, se desprenden las siguientes conclusiones para un Analista de Ciberseguridad:
+
+1. **La Concientización es el Firewall Humano:** La capacitación de empleados en la detección de Phishing y Spear Phishing es la defensa más efectiva contra ataques digitales dirigidos.
+2. **Políticas y Procedimientos:** Combatir el Tailgating y el Dumpster Diving requiere protocolos claros, como el uso obligatorio de trituradoras y el reporte de accesos no autorizados.
+3. **Defensa en Profundidad:** La seguridad física y la digital deben trabajar juntas; por ejemplo, la MFA anula el éxito de un ataque de Shoulder Surfing.
