@@ -1567,3 +1567,19 @@ Los conocimientos extraídos de estas referencias fueron aplicados en el **Plan 
 * Procesos de **Offboarding Automatizado** para revocar accesos de inmediato.
 * Diseño de **Resiliencia Ambiental** para asegurar la disponibilidad de los datos ante ataques de sabotaje físico.
 
+### 📚 Fuentes y Lecturas de Referencia (Módulo 1)
+
+Para el análisis de amenazas y el diseño de controles, se han consultado las siguientes fuentes técnicas y reportes de la industria:
+
+#### Lección 1: Malware y Controles de Software
+* **Causas de Brechas:** [80% de las brechas de datos se deben a contraseñas débiles](https://www.insightsforprofessionals.com/it/security/80-percent-data-breaches-weak-passwords) - *IFP: Insights for Professionals (2021).*
+* **Bombas Lógicas:** [Contratista de Siemens encarcelado por plantar bombas lógicas](https://www.infosecurity-magazine.com/news/siemens-contractor-jailed-for/) - *Infosecurity (2019).*
+* **Adware:** [Fireball: Adware con potenciales consecuencias nucleares](https://www.kaspersky.com/blog/fireball-adware/17013/) - *Kaspersky Daily (2017).*
+
+#### Lección 2: Amenazas de Ingeniería Social
+* **Reporte de Crímenes:** [2022 Internet Crime Report](https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf) - *Internet Crime Complaint Center (IC3).*
+* **Casos Reales:** [El hackeo de Twitter 2020: Estafa de Bitcoin a cuentas de Biden, Musk y Obama](https://www.cnbc.com/2021/07/21/man-busted-in-2020-twitter-hack-bitcoin-scam-of-biden-obama-musk-buffett-accounts.html) - *CNBC (2021).*
+
+#### Lección 3: Amenazas y Controles Físicos
+* **Prevención de Incendios:** [6 consejos de prevención de incendios en salas de computadoras y servidores](https://www.impactfire.com/6-computer-and-server-room-fire-prevention-tips-you-cant-ignore/) - *Impact Fire (2022).*
+
