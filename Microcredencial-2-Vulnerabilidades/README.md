@@ -1583,3 +1583,232 @@ Para el análisis de amenazas y el diseño de controles, se han consultado las s
 #### Lección 3: Amenazas y Controles Físicos
 * **Prevención de Incendios:** [6 consejos de prevención de incendios en salas de computadoras y servidores](https://www.impactfire.com/6-computer-and-server-room-fire-prevention-tips-you-cant-ignore/) - *Impact Fire (2022).*
 
+## ---------------------------------------------------------------------------------------##
+
+## Modulo 2
+
+## En este módulo, explorarás la inteligencia de amenazas, el conocimiento que ayuda a las organizaciones a comprender, identificar y responder a las amenazas que enfrentan. Aprenderás sobre los tres tipos de inteligencia de amenazas y descubrirás cómo los expertos en ciberseguridad la recopilan, crean y comparten. A continuación, aprenderás sobre la evaluación de vulnerabilidades, un proceso clave para crear inteligencia de amenazas específica para una organización en particular. Aprenderás los cuatro pasos de la evaluación de vulnerabilidades y cómo priorizar las vulnerabilidades descubiertas según su gravedad. Luego, explorarás las pruebas de penetración, un proceso que simula técnicas de hacking reales para encontrar más vulnerabilidades que los atacantes podrían explotar. Aprenderás sobre las cuatro fases de las pruebas de penetración e incluso practicarás probando una aplicación en busca de vulnerabilidades.
+
+---
+
+## 🔍 Microcredencial 2 | Módulo 2: Gestión de Vulnerabilidades
+
+Este módulo se centra en la proactividad: cómo las organizaciones utilizan la inteligencia y las pruebas técnicas para cerrar brechas antes de que sean explotadas.
+
+### 🧠 1. Inteligencia de Amenazas (Threat Intelligence)
+Es el conocimiento basado en evidencia que permite comprender e identificar las amenazas. Se divide en tres tipos:
+* **Estratégica:** Panorama general de amenazas para la toma de decisiones de alto nivel.
+* **Táctica:** Detalles sobre las tácticas, técnicas y procedimientos (TTPs) de los atacantes.
+* **Operacional:** Información específica sobre ataques inminentes o en curso.
+
+### 🛡️ 2. Evaluación de Vulnerabilidades (Vulnerability Assessment)
+Proceso sistemático para identificar y priorizar debilidades en una organización específica. Consta de 4 pasos clave:
+1. **Identificación:** Localizar vulnerabilidades en sistemas y aplicaciones.
+2. **Análisis:** Determinar la causa raíz y el impacto potencial.
+3. **Evaluación de Riesgos:** Priorizar según la gravedad (utilizando marcos como CVSS).
+4. **Remediación:** Aplicar parches o controles para mitigar el riesgo.
+
+### ⚔️ 3. Pruebas de Penetración (Pentesting)
+Simulación de ataques reales para descubrir qué tan vulnerables son los sistemas ante técnicas de hacking.
+* **Fases del Pentesting:**
+    1. **Planificación y Reconocimiento:** Definir alcance y recolectar info.
+    2. **Escaneo:** Uso de herramientas para entender cómo responde el objetivo.
+    3. **Obtención de Acceso:** Explotar vulnerabilidades para entrar al sistema.
+    4. **Ma### 🕵️ Inteligencia de Amenazas y Evaluación de Vulnerabilidades
+
+Como dice la máxima de Sun Tzu: *"Conoce a tu enemigo y conócete a ti mismo"*. En este módulo, he profundizado en cómo aplicar este principio a la ciberseguridad moderna.
+
+#### 🧠 Clasificación de la Inteligencia de Amenazas (Threat Intelligence)
+Para fortalecer las defensas, clasificamos la inteligencia en tres niveles críticos:
+1. **Estratégica:** Análisis de alto nivel sobre tendencias de ataques y motivos de los adversarios.
+2. **Táctica:** Detalles técnicos sobre el funcionamiento del malware y los pasos específicos que los atacantes utilizan para evadir detecciones.
+3. **Operacional:** Información en tiempo real sobre amenazas específicas: de dónde viene el ataque, qué hace y cómo responder de inmediato.
+
+#### 🔄 El Ciclo de Vida de la Inteligencia
+Para que la información sea útil, sigo un proceso de 5 etapas:
+* **Requerimientos:** Determinar qué necesitamos saber.
+* **Recolección:** Obtener los datos.
+* **Análisis:** Convertir los datos en información procesable.
+* **Diseminación:** Compartir los hallazgos con los equipos relevantes.
+* **Feedback:** Evaluar si la inteligencia ayudó a fortalecer los controles.
+
+#### 🔍 Evaluación de Vulnerabilidades (Vulnerability Assessment)
+A diferencia de la inteligencia de amenazas (que mira hacia afuera), la evaluación de vulnerabilidades mira hacia adentro.
+* **Escaneo:** Análisis de redes, hosts, aplicaciones y bases de datos.
+* **Priorización:** Identificar, clasificar y ordenar las vulnerabilidades según su criticidad para garantizar la **Confidencialidad, Integridad y Disponibilidad (CIA)**.
+
+---
+
+### 💼 Habilidades Profesionales Identificadas (Soft & Hard Skills)
+Basado en los perfiles de **Physical Security Service Technicians**, he integrado las siguientes competencias a mi perfil técnico:
+
+* **Gestión de Riesgos y Cumplimiento:** Capacidad para manejar controles de privacidad y normativas de seguridad IT.
+* **Seguridad en la Nube:** Habilidad para implementar soluciones de seguridad en entornos multicloud.
+* **Pensamiento Analítico:** Capacidad para analizar problemas complejos y proponer soluciones técnicas precisas.
+* **Comunicación Efectiva:** Habilidades de comunicación escrita y verbal, esenciales para documentar incidentes y colaborar bajo supervisión general mantenimiento del Acceso y Análisis:** Ver qué tan profundo se puede llegar y documentar los hallazgos.
+
+## Imagine that you’re a vulnerability assessment analyst. While performing a network security check at a community hospital, you gather threat intelligence on malware trying to gain access to confidential patient data. 
+
+## Which steps of the threat intelligence lifecycle do you still need to complete to ensure the organization gets the information it needs to understand and act on the threat?
+
+## 🔍 Pasos para completar el Ciclo de Inteligencia
+1. Análisis (Lo que te faltaba definir)
+¿Cómo lo harías?
+No es solo mirar el código; es darle contexto. Como analista en ese hospital, deberías:
+
+Correlacionar: Ver si ese malware ya atacó a otros hospitales (Inteligencia Táctica).
+
+Evaluar el impacto: ¿Qué pasa si esos datos se filtran? (Cumplimiento de leyes de privacidad de salud).
+
+Identificar el "Cómo": ¿El malware entra por una vulnerabilidad en las máquinas de rayos X o por un correo de phishing?
+
+Resultado: Transformás logs crudos en un informe de riesgo.
+
+2. Diseminación (Compartir con los equipos)
+¿Con quiénes?
+
+Equipo Técnico: Para que bloqueen las IP sospechosas en el firewall o instalen parches.
+
+Directivos: Para que entiendan el riesgo financiero y legal.
+
+Personal del Hospital: Para alertarlos si hay una campaña de phishing activa.
+
+3. Feedback (Retroalimentación)
+¿Qué evaluamos?
+
+¿La información que diste llegó a tiempo?
+
+¿Se logró bloquear el malware antes de que toque los datos de los pacientes?
+
+Mejora continua: Si algo falló, ajustamos los "Requerimientos" para la próxima vez.
+
+### 🏥 Caso Práctico: Análisis en Entorno Hospitalario
+
+**Escenario:** Detección de malware intentando acceder a registros confidenciales de pacientes.
+
+**Fases del Ciclo de Inteligencia aplicadas:**
+1. **Análisis:** Procesamiento de indicadores de compromiso (IoC) para determinar el vector de ataque y el riesgo para la privacidad de los datos.
+2. **Diseminación:** Comunicación estratégica de hallazgos al equipo de infraestructura para el bloqueo inmediato de amenazas y al personal administrativo para concienciación.
+3. **Feedback:** Revisión de la efectividad de las medidas tomadas, fortaleciendo los controles de red y ajustando los sensores de detección para futuras amenazas similares.
+
+
+### 🔬 Simulación: Analista de Vulnerabilidades en Entorno de Salud
+
+He documentado la resolución de una amenaza de malware en un hospital comunitario aplicando las fases finales del ciclo de inteligencia que faltaba :
+
+* **Análisis:** Transformación de indicadores de compromiso (IoC) en un mapa de riesgo específico para el sector salud, priorizando la protección de servidores de bases de datos SQL de pacientes.
+* **Diseminación:** Distribución de reportes de impacto a las áreas de infraestructura y cumplimiento legal para asegurar una respuesta coordinada.
+* **Feedback:** Evaluación post-incidente para ajustar los requisitos de inteligencia, optimizando los sensores de red para detectar variantes similares de malware de forma proactiva.
+
+### 🔄 Ciclo de Vida de la Inteligencia de Amenazas (5 Etapas)
+
+He aplicado el marco de trabajo de 5 pasos para la gestión de incidentes:
+
+1. **Dirección/Requisitos:** Definición de activos críticos a proteger.
+2. **Recolección:** Obtención de datos brutos y telemetría de red.
+3. **Análisis:** Procesamiento técnico para identificar patrones de ataque (TTPs).
+4. **Diseminación:** Comunicación de alertas y reportes a los stakeholders.
+5. **Feedback:** Mejora continua del proceso basada en la efectividad de la respuesta.
+
+## what is intelligense ?
+
+![intelligense in cibersecurity](../img/intelligense.png)
+
+##  Datos(Amenaza) vs. Inteligencia: El valor del Análisis
+En ciberseguridad, la inteligencia no es solo acumular datos; es el conocimiento derivado de una investigación profunda y un análisis reflexivo.
+
+Información (Datos Brutos): Son los hechos aislados sin procesar.
+
+Ejemplo: Registrar cuántas veces un usuario postea en X por día. En seguridad, esto sería ver una IP intentando conectarse 100 veces a un puerto.
+
+Conocimiento (Inteligencia): Es la conclusión con significado que extraemos tras examinar los patrones en los datos.
+
+Ejemplo: Notar patrones en los temas que postea esa persona o a quién responde para concluir cuáles son sus intereses políticos. En seguridad, esto sería concluir que esos 100 intentos de conexión provienen de un botnet específico que busca vulnerabilidades en bases de datos SQL.
+
+### 💡 Diferencia Crítica: Datos(Amenaza) vs. Inteligencia
+
+Como analista, mi objetivo no es solo recolectar **información** (datos brutos), sino generar **inteligencia** (conocimiento accionable).
+
+* **Dato(Amenaza):** Una alerta de malware detectada en un endpoint.
+* **Inteligencia:** El análisis de los patrones de ese malware, su origen probable y la intención del adversario, permitiendo fortalecer los controles de forma estratégica.
+
+La inteligencia requiere **observación, investigación y análisis** para transformar lo que vemos en una defensa efectiva.
+
+### 🧠 Metodología: Creación de Inteligencia Específica
+
+Mi enfoque como analista no es solo observar ataques globales, sino filtrar esa información para generar **Inteligencia Organizacional**:
+
+1. **Análisis de Tendencias:** Identificación de patrones de ataque en el sector [Industria] mediante la correlación de datos de diversas fuentes.
+2. **Evaluación de Impacto:** Mapeo de amenazas externas contra las vulnerabilidades internas identificadas en el sistema.
+3. **Estrategia de Mitigación:** Desarrollo de planes de acción basados en mejores prácticas para la remediación de vulnerabilidades críticas.
+
+### 📖 Terminología de Seguridad
+
+Para un análisis preciso de la superficie de ataque, distingo entre los siguientes conceptos:
+
+* **Attacker:** Entidad que intenta activamente vulnerar la seguridad de un activo con fines maliciosos.
+* **Threat Actor / Malicious Actor:** Entidad (individuo o grupo organizado) con la capacidad e intención de comprometer la seguridad. El uso de este término permite un enfoque proactivo, centrado en el riesgo potencial antes de que ocurra la intrusión.
+
+![Types of intelligense ](../img/types.png)
+
+### 🌐 Inteligencia Estratégica: El "Quién" y el "Por qué"
+
+La inteligencia estratégica es el nivel más alto de análisis de amenazas. Su objetivo es proporcionar a los niveles ejecutivos una visión panorámica del riesgo para la toma de decisiones financieras y operativas.
+
+#### 🎯 Enfoque y Objetivos
+A diferencia de la inteligencia técnica, la estratégica busca responder:
+* **¿Quién?** Identificación de los *Threat Actors* con interés real en la organización.
+* **¿Por qué?** Análisis de las motivaciones (económicas, políticas o ideológicas) que impulsan a los atacantes.
+
+#### 📊 Factores de Análisis
+Para generar esta inteligencia, se monitorean tres áreas clave:
+1. **Motivos e Intenciones:** ¿Qué activos específicos buscan (ej: propiedad intelectual, datos de clientes)?
+2. **Tendencias de la Industria:** Patrones de ataques detectados en organizaciones del mismo sector.
+3. **Geopolítica y Política Global:** Cómo los movimientos sociales o conflictos internacionales pueden convertir a la empresa en un objetivo.
+
+> **💡 Caso de Estudio: Empresa de Infraestructura Crítica**
+>
+**💡 Caso de Estudio: Empresa de Infraestructura Crítica**
+> Si una empresa de servicios públicos detecta un movimiento político regional que promueve el sabotaje de infraestructura, la **Inteligencia Estratégica** permite a los directivos reasignar presupuesto de inmediato para fortalecer la seguridad física y lógica antes de que el primer ataque ocurra.
+
+### 🛡️ Inteligencia Táctica: Detección y Respuesta en Tiempo Real
+
+Mientras que la inteligencia estratégica mira el panorama general, la **Inteligencia Táctica** se enfoca en el "qué" y el "cómo". Es la herramienta fundamental para los equipos de respuesta que operan en la primera línea de defensa.
+
+#### 🔍 El concepto de IOC (Indicadores de Compromiso)
+En ciberseguridad, los "síntomas" de un ataque se denominan **IOCs**. Identificar estos indicadores nos permite confirmar una intrusión y determinar su naturaleza.
+* **Ejemplos de IOCs:** Asuntos de correos sospechosos, hashes de archivos maliciosos, direcciones IP de comando y control (C2).
+* **Función:** Permiten realizar un **triaje** efectivo, asignando prioridades de respuesta basadas en la evidencia técnica.
+
+#### 🛠️ Fuentes de Información Táctica
+Para construir esta inteligencia, los profesionales utilizamos:
+1. **Threat Intelligence Feeds:** Listas automatizadas de amenazas globales conocidas.
+2. **Security Tools:** Logs de firewalls, antivirus y sistemas de detección de intrusos.
+3. **Análisis Interno:** Monitoreo y búsqueda de anomalías dentro de la propia infraestructura.
+
+
+
+#### 👥 Aplicación por Perfiles Técnicos
+* **Security Analysts (SOC):** Utilizan esta info para monitorear alertas diarias.
+* **Incident Responders:** Actúan basándose en tácticas conocidas para contener brechas de datos activas.
+
+> **💡 Caso Práctico: Respuesta ante una Brecha de Datos**
+> Ante un intento de robo de información, el personal técnico recopila inteligencia táctica para identificar la fuente y el método (ej: phishing). Con estos datos, se ejecutan acciones inmediatas de aislamiento y limpieza para evitar que el daño se propague a otros activos críticos.
+
+### ⚙️ Inteligencia Operacional: Anticipación y Prevención
+
+La inteligencia operacional es el pilar preventivo de la ciberseguridad. Se utiliza en el día a día para identificar y reducir riesgos antes de que un *threat actor* pueda explotarlos.
+
+#### 🎯 Enfoque: El "Cómo" y el "Dónde"
+* **¿Cómo atacarán?** Anticipación de técnicas de ataque futuras.
+* **¿Dónde atacarán?** Identificación de vulnerabilidades en activos críticos (software desactualizado, malas configuraciones).
+
+#### 🛠️ Herramientas de Recolección
+Para generar esta inteligencia, realizo:
+1. **Vulnerability Scans:** Evaluaciones asistidas por software para detectar fallos conocidos.
+2. **Análisis de Logs:** Seguimiento del rendimiento y comportamiento del sistema.
+3. **Evaluación de Controles:** Pruebas constantes para verificar si las defensas actuales son efectivas.
+
+> **💡 Ejemplo Operativo:**
+> Mediante un escaneo periódico, detectamos que un servidor tiene un puerto abierto innecesariamente. La inteligencia operacional nos dicta la **mejor práctica** para cerrar ese puerto y actualizar el firmware, eliminando la oportunidad de ataque antes de que sea detectada por un tercero.
+
