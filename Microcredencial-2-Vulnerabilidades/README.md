@@ -1812,3 +1812,360 @@ Para generar esta inteligencia, realizo:
 > **💡 Ejemplo Operativo:**
 > Mediante un escaneo periódico, detectamos que un servidor tiene un puerto abierto innecesariamente. La inteligencia operacional nos dicta la **mejor práctica** para cerrar ese puerto y actualizar el firmware, eliminando la oportunidad de ataque antes de que sea detectada por un tercero.
 
+### 📚 Fuentes y Herramientas de Inteligencia
+
+Para mantenerme actualizado y fortalecer la postura de seguridad, utilizo diversos canales de recolección de datos:
+
+1. **OSINT (Open-Source Intelligence):** Monitoreo activo de fuentes públicas como blogs especializados (Krebs on Security, Dark Reading), repositorios de GitHub y comunidades de seguridad para identificar tendencias emergentes.
+2. **Feeds de Amenazas:** Uso de bases de datos compartidas y recursos públicos (como AlienVault OTX o VirusTotal) para obtener IOCs actualizados.
+3. **Documentación Técnica:** Análisis de registros públicos y sitios web oficiales de fabricantes para detectar vulnerabilidades en software específico.
+
+## 🌐 Fuentes de Inteligencia: Colaboración y OSINT
+Dada la velocidad con la que evolucionan los threat actors, las organizaciones no pueden depender solo de sus propios datos. La clave está en el intercambio de información y el uso de fuentes abiertas.
+
+🔓 Inteligencia de Fuentes Abiertas (OSINT)
+OSINT (Open-Source Intelligence) es cualquier inteligencia que se genera a partir de información disponible públicamente. Es una de las herramientas más poderosas para un analista inicial.
+
+Fuentes Comunes: Blogs de seguridad, bibliotecas técnicas, noticias, sitios web corporativos, redes sociales (como X/Twitter para alertas rápidas) y registros públicos.
+
+Ventaja: Es accesible para cualquiera y permite aprender de las experiencias de otros investigadores.
+
+🔐 Recursos Privados y Suscripciones
+Para obtener datos más críticos o inmediatos, las organizaciones utilizan servicios pagos:
+
+Actualización en Tiempo Real: Estos servicios suelen actualizarse en menos de 24 horas tras detectar un nuevo tipo de ataque o actor.
+
+Contenido Especializado: Ofrecen técnicas de mitigación específicas y detalles profundos sobre la infraestructura de los atacantes que no siempre son públicos.
+
+🤝 Colaboración Inter-Organizacional
+Muchas empresas forman alianzas para compartir inteligencia específica de su industria, creando una red de defensa colectiva donde el ataque a una sirve de lección para todas.
+
+> ### 🔍 Evaluación de Vulnerabilidades: El arte de conocerse a uno mismo
+
+Para garantizar la tríada **CIA** (Confidencialidad, Integridad y Disponibilidad), aplico un proceso sistemático de evaluación:
+
+1. **Identificación:** Escaneo exhaustivo de activos (redes, bases de datos y apps) en busca de debilidades.
+2. **Análisis:** Determinación de la naturaleza técnica de la vulnerabilidad identificada.
+3. **Clasificación y Priorización:** Uso de inteligencia operativa y marcos como CVSS para determinar el impacto potencial y el orden de atención.
+4. **Remediación:** Implementación de medidas correctivas (parches, endurecimiento de sistemas) para mitigar el riesgo.
+
+#### 🌐 Fuentes de Consulta de Élite
+En mis procesos de investigación, integro datos de fuentes reconocidas como:
+* **CISA** (Alertas gubernamentales)
+* **IBM X-Force Exchange** (Colaboración global)
+* **Yeti** (Gestión de IoCs)
+* **InfraGard** (Guías del FBI para infraestructura crítica) Clave:** La ciberseguridad es un esfuerzo colaborativo. El uso de OSINT permite anticipar ataques basándose en la experiencia global de la comunidad técnica.
+
+![Activity](../img/analyze.png)
+
+## Report 1: IBM X-Force Exchange intelligence report for CVE-2023-2541 
+
+
+## 📄 Caso de Estudio: Análisis de Inteligencia (IBM X-Force Exchange)
+
+Como parte de las actividades prácticas del Módulo 2, realicé un análisis detallado de un reporte de inteligencia real utilizando la plataforma **IBM X-Force Exchange**.
+
+### Report 1: Intelligence Analysis for CVE-2023-2541
+**Vulnerabilidad:** KNIME Business Hub Information Disclosure (Divulgación de Información)
+
+#### 🔍 1. Descripción del Hallazgo
+Se identificó una vulnerabilidad en el producto **KNIME Business Hub** que permite a un atacante remoto obtener información sensible (como versiones de software, nombres de host e IPs) debido a un **control de acceso inadecuado**.
+
+#### 📊 2. Análisis del Vector de Ataque (Métricas CVSS 3.0)
+La vulnerabilidad posee un **Base Score de 5.3 (Medio)**. A continuación, el desglose técnico de los vectores:
+
+| Métrica | Valor | Descripción Técnica |
+| :--- | :--- | :--- |
+| **Attack Vector** | Network | El ataque es ejecutable de forma remota a través de la red. |
+| **Attack Complexity** | Low | No requiere condiciones especiales para ser explotado. |
+| **Privileges Required** | None | No se requiere autenticación previa del atacante. |
+| **User Interaction** | None | El ataque se realiza de forma autónoma sin intervención del usuario. |
+| **Confidentiality** | Low | Existe filtrado de datos del sistema, pero no compromiso total. |
+
+#### 🧠 3. Aplicación de Inteligencia Táctica y Operacional
+* **Táctica (El "Cómo"):** El atacante utiliza una **solicitud especialmente diseñada** (*specially crafted request*) para engañar los mecanismos de control de acceso.
+* **Operacional (Estado):** El reporte indica un nivel de confianza **"Confirmed"**, aunque el estado de explotabilidad actual es **"Unproven"** (no se han reportado ataques masivos aún), lo que permite una ventana de acción para la remediación proactiva.
+
+#### 🛠️ 4. Plan de Remediación (Remedy)
+Basado en la inteligencia recolectada, las acciones recomendadas son:
+1. **Consultar:** Revisar el aviso de seguridad oficial de KNIME (*Security Advisory*).
+2. **Actualizar:** Aplicar el parche oficial o la actualización de software recomendada para corregir el fallo de control de acceso.
+3. **Validar:** Realizar un escaneo de seguimiento para confirmar que la vulnerabilidad ha sido mitigada.
+
+## "La combinación de AC: Low, PR: None y UI: None clasifica a esta vulnerabilidad como una prioridad de remediación inmediata. A pesar de que el impacto directo es bajo, la facilidad de explotación permite a un atacante realizar una fase de reconocimiento exitosa de forma automatizada, aumentando drásticamente e🕒 CVSS 3.0 Temporal Score: 4.6
+
+Notarás que el puntaje bajó de 5.3 a 4.6. Esto es una buena noticia para el analista, y estas tres variables explican por qué:
+
+1. Exploitability: Unproven (Explotabilidad: No probada)
+Esto significa que, aunque se sabe que el agujero existe, no hay un código de ataque (exploit) público o funcional que cualquiera pueda descargar y usar.
+
+En criollo: Sabemos que la ventana está mal cerrada, pero todavía no vimos a ningún ladrón con la escalera adecuada para subir. Esto reduce la urgencia inmediata.
+
+2. Remediation Level: Official Fix (Nivel de Remediación: Parche Oficial)
+Indica que el fabricante (en este caso KNIME) ya se puso las pilas y ya existe un parche oficial o una actualización para arreglarlo.
+
+En criollo: No tienes que inventar nada raro ni apagar el servidor; solo tienes que instalar la actualización oficial para estar protegido.
+
+3. Report Confidence: Confirmed (Confianza del Reporte: Confirmado)
+Significa que la existencia de la vulnerabilidad ha sido totalmente verificada por el fabricante o por investigadores de confianza. No es un rumor ni una teoría; el fallo es real.
+
+En criollo: Es 100% seguro que el problema está ahí, así que no ignores el parche.
+
+## 📝 Resumen :
+
+"El Temporal Score de 4.6 ajusta la prioridad de la vulnerabilidad basándose en el estado actual del ecosistema de amenazas. Dado que la explotabilidad es Unproven y ya existe un Official Fix, la organización tiene una oportunidad crítica para remediar el sistema antes de que se desarrolle un exploit público, aprovechando que el reporte ya está Confirmed."l riesgo de ataques dirigidos posteriores."
+
+**Reflexión Técnica:** Este análisis demuestra cómo el uso de herramientas como **IBM X-Force Exchange** permite transformar datos brutos en **Inteligencia Táctica** para priorizar el parcheo de sistemas antes de que un *threat actor* logre la explotación.
+
+![CASO 2 ](../img/Report.png)
+
+## Este reporte del CVE-2022-4569 es mucho más serio que el anterior. Si bien el de KNIME era una "curiosidad" de información, este es un problema de Escalación de Privilegios.
+## Aquí la cosa se pone picante: un atacante que ya tiene un acceso básico a la computadora (por ejemplo, un empleado con permisos limitados) podría aprovechar este fallo para convertirse en Administrador/Root.
+
+* 🔍 2. El Vector de Ataque (Diferencia clave)
+A diferencia del anterior, este dice Attack Vector: Local.
+
+* ¿Qué significa? El atacante no puede entrar desde China por Internet directamente. Tiene que tener acceso físico o remoto a la máquina (por ejemplo, a través de otro malware o siendo un usuario de la empresa).
+
+Una vez adentro, envía una "solicitud especialmente diseñada" durante la actualización del firmware y ¡pum!, gana control total.
+
+* 🕒 3. Análisis Temporal (Score: 6.8)
+Al igual que el otro, el puntaje baja un poco porque:
+
+Exploitability: Unproven: Todavía no hay un virus "suelto" en la calle que use esto de forma masiva.
+
+Remediation Level: Official Fix: Lenovo ya sacó el parche.
+
+### Report 2: Análisis de Escalación de Privilegios (CVE-2022-4569)
+**Producto:** Lenovo ThinkPad Dock Firmware Update Tool
+
+#### 🚨 Análisis de Riesgo Elevado
+A diferencia de los casos de divulgación de información, este reporte detalla una vulnerabilidad de **Escalación de Privilegios** con un **Base Score de 7.8**. 
+
+* **El Peligro:** Un atacante local autenticado puede obtener privilegios elevados y ejecutar código arbitrario con total control sobre los tres pilares de la seguridad (**CIA**): Confidencialidad, Integridad y Disponibilidad (todos en **High**).
+* **Vector Local:** Aunque requiere acceso al sistema, la baja complejidad (**AC: Low**) y la falta de interacción del usuario (**UI: None**) hacen que, una vez que el atacante está dentro, la escalación sea casi automática.
+
+#### ✅ Acción Recomendada
+El reporte tiene una confianza **Confirmed** y existe un **Official Fix** (Lenovo Security Advisory: LEN-103544). La prioridad de actualización para laptops corporativas que usen este dock es **CRÍTICA**.
+
+## ¿La diferencia?
+
+El de KNIME (5.3) era: "Cualquiera puede entrar desde afuera pero se lleva poca cosa".
+
+El de Lenovo (7.8) es: "Solo entra el que ya está adentro, pero si entra, rompe todo".
+
+### 📡 ¿De dónde provienen estos reportes?
+
+La inteligencia de amenazas que analizo en este repositorio proviene de un ecosistema colaborativo global:
+
+* **CVE (Common Vulnerabilities and Exposures):** Identificador único asignado por la organización **MITRE** para estandarizar el reporte.
+* **NIST & NVD:** Organismos que validan el impacto técnico y asignan el puntaje de severidad **CVSS**.
+* **Vendors (Fabricantes):** Empresas como Lenovo o Microsoft que emiten avisos oficiales y parches de seguridad.
+* **IBM X-Force:** Plataforma de agregación que utilizo para centralizar esta inteligencia y agilizar la toma de decisiones.
+
+### ⚖️ Comparativa de Inteligencia: Priorización de Vulnerabilidades
+
+Como analista, la clave no es solo detectar fallos, sino saber cuál parchear primero. A continuación, presento una comparativa técnica de los dos reportes de **IBM X-Force Exchange** analizados:
+
+| Característica | Reporte 1 (CVE-2023-2541) | Reporte 2 (CVE-2022-4569) |
+| :--- | :--- | :--- |
+| **Producto afectado** | KNIME Business Hub | Lenovo ThinkPad Dock Tool |
+| **Severidad (Base Score)** | **5.3 (Medio)** | **7.8 (Alto)** |
+| **Vector de Ataque** | **Network** (Remoto) | **Local** (Requiere acceso) |
+| **Complejidad / Privilegios** | Baja / Ninguno (Fácil) | Baja / Bajos (Fácil) |
+| **Impacto Principal** | Divulgación de Información (IPs) | **Escalación de Privilegios (Admin)** |
+| **Tríada CIA afectada** | Solo Confidencialidad (Low) | **Conf., Integridad y Disp. (High)** |
+| **Prioridad de Acción** | Monitoreo y actualización programada. | **Remediación Crítica e Inmediata.** |
+* 🛠️ ¿Cómo es el "paso a paso" en la vida real?
+Cuando ves un reporte de estos, tu cerebro de analista hace este proceso en segundos:
+
+*Inventario*: ¿Tenemos este software o hardware en la empresa? (Ej: ¿Hay docks de Lenovo?).
+
+*Exposición*: Si lo tenemos, ¿quién lo usa? ¿Son los directivos? ¿Es la gente de ventas?
+
+*Priorización*: Mirás el Score CVSS. Si es un 7.8 (Alto) como el de Lenovo, dejás el café y te ponés a trabajar. Si es un 2.0 (Bajo), quizás lo anotás para la semana que viene.
+
+*Remediación*: Buscás el link que dice "Official Fix" en el reporte, bajás el parche y lo instalás en todas las máquinas.
+
+#### 🧠 Conclusión del Analista
+La inteligencia de amenazas nos muestra dos escenarios distintos:
+1. El caso de **KNIME** es una "puerta entreabierta" por donde cualquiera puede mirar desde afuera. Es un riesgo de reconocimiento.
+2. El caso de **Lenovo** es una "llave maestra" que alguien ya dentro de la casa puede usar para abrir todas las cajas fuertes. Aunque el vector es local, el impacto es total sobre el sistema.
+
+## "El monitoreo constante de plataformas como IBM X-Force permite realizar una gestión de vulnerabilidades basada en riesgos. No se trata solo de ver números, sino de entender el contexto: mientras que el CVE-2023-2541 nos advierte sobre fugas de información, el CVE-2022-4569 representa un peligro crítico de control total del sistema. Mi rol como analista es filtrar esta inteligencia para aplicar parches donde el impacto sea mayor."
+
+> **Estrategia Aplicada:** Mi rol como analista es utilizar el **Temporal Score** y el **Impacto en el Negocio** para filtrar el ruido de las alertas y enfocar los recursos de defensa donde el daño potencial sea mayor.
+
+## explicación real :
+* Como SOC Nivel 1, tu pantalla principal va a ser el SIEM (como QRadar o Splunk). El SIEM es el que "grita" cuando algo anda mal. Pero para que el SIEM sepa qué es peligroso, necesita alimentarse de esos reportes que estuvimos viendo.
+
+* Mirá cómo funciona la cadena en la vida real:
+
+1. El SIEM (Tu herramienta de monitoreo)
+El SIEM recibe millones de datos (logs) de toda la empresa. Pero el SIEM por sí solo no sabe que el proceso lenovo_update.exe es peligroso.
+
+¿Cómo se entera? A través de los Threat Intelligence Feeds. El administrador del SIEM configura que se descarguen automáticamente las bases de datos de IBM X-Force o CISA.
+
+2. La Alerta (Tu "Uh, qué pasó acá")
+Cuando el SIEM detecta que una notebook Lenovo está ejecutando ese proceso de actualización y ve un comportamiento raro, te dispara un Alert/Offense.
+
+*Tu tarea:* Ahí es donde entrás vos. Abrís el alerta y ves: "Posible explotación de CVE-2022-4569".
+
+3. Tu investigación (El reporte que analizamos)
+Como Analista Nivel 1, tu trabajo es validar si esa alerta es real o un error (Falso Positivo).
+
+*¿Qué hacés?* Te vas a IBM X-Force Exchange (la ficha que me pasaste), leés que el Base Score es 7.8 y que causa Escalación de Privilegios.
+
+*Tu conclusión:* "Che, esto es en serio. Es un riesgo Alto (7.8), el vector es local y el impacto es total sobre la tríada CIA".
+
+4. La Escalación
+Ahí es donde hacés el triaje:
+
+"Paso este ticket al Nivel 2 (Incident Response) porque confirmé que este software es vulnerable y el comportamiento en la máquina coincide con el reporte de inteligencia".
+
+### 🖥️ El Rol del Analista SOC y la Inteligencia de Amenazas
+
+En un entorno operativo real, el **SIEM (Security Information and Event Management)** actúa como el sistema de alerta temprana, integrando **Threat Intelligence Feeds** para identificar comportamientos maliciosos. 
+
+Como **Analista SOC Nivel 1**, mi responsabilidad es:
+1. **Monitorear:** Observar las alertas generadas por el SIEM.
+2. **Investigar:** Utilizar fuentes como **IBM X-Force** para entender la naturaleza de la vulnerabilidad (CVE) detectada.
+3. **Validar:** Analizar las métricas CVSS (Base y Temporal) para confirmar la severidad del incidente.
+4. **Escalar:** Proveer un informe técnico preciso al equipo de Respuesta a Incidentes para su mitigación.
+
+## Expand for some more thoughts
+The summary that you wrote should summarize the current intelligence detailed in the report. IBM X-Force Exchange vulnerability reports provide the following information about a specific vulnerability: 
+
+Date of the report 
+
+Name of the vulnerability 
+
+Description of the vulnerability 
+
+Consequences if a threat actor exploits the vulnerability 
+
+Recommendation for fixing the vulnerability 
+
+Common Vulnerability Scoring System (CVSS) score, an industry-standard vulnerability assessment score that rates vulnerabilities’ severity on a 0–10 scale.
+![ESTRUCTURA DE LA INTELIGENCIA ](../img/structured.png)
+## 🧬 STIX: El Idioma Universal de las Amenazas
+*Structured Threat Information eXpression (STIX)* es un lenguaje de programación de código abierto que estandariza cómo se comparte la inteligencia. En lugar de mandar un PDF largo, mandamos "objetos" de código que cualquier software de seguridad entiende.
+
+🧱 ¿Cómo funciona? (La arquitectura de Objetos)
+STIX trata cada dato como un bloque de código llamado Objeto. Cada objeto tiene propiedades que lo definen:
+
+Type (Tipo): Define qué es la información (ej: attack-pattern, threat-actor, malware, location).
+
+Name (Nombre): El nombre específico (ej: "Spear Phishing").
+
+Description (Descripción): Detalles técnicos sobre cómo funciona.
+
+🔗 El Poder de las Relaciones
+Lo más valioso de STIX no son solo los objetos, sino cómo se conectan. Podés crear un mapa que diga:
+
+El Threat Actor "APT28" (Objeto 1) utiliza el Malware "X-Tunnel" (Objeto 2) para realizar un Attack Pattern de "Exfiltración de datos" (Objeto 3).
+
+### 🤖 STIX: Estandarización y Automatización de Inteligencia
+
+Para gestionar el enorme volumen de datos de amenazas, utilizo el estándar **STIX (Structured Threat Information eXpression)**. Este lenguaje permite que la inteligencia sea "legible por máquinas" (*machine-readable*), facilitando el intercambio entre plataformas de seguridad.
+
+#### Conceptos Clave de STIX:
+* **Objetos (SDO):** Bloques de información estandarizados (ej: Atacantes, Campañas, Indicadores).
+* **Propiedades:** Atributos que definen al objeto, como su `type` (tipo) y `description`.
+* **Interoperabilidad:** Permite que un reporte de **IBM X-Force** se integre automáticamente en un **SIEM** o un **EDR** sin intervención manual.
+
+> **💡 Visión del Analista:** > STIX transforma la narrativa de un ataque en un gráfico de relaciones técnicas. Esto permite que, como analista SOC, pueda visualizar conexiones entre diferentes incidentes y responder de forma mucho más rápida y precisa.
+
+## Common STIX object types
+
+![common STIX](../img/stix2.png)
+![common STIX](../img/stix1.png)
+
+### 🧩 Estructura de Datos STIX: Objetos de Inteligencia
+
+Para estandarizar la comunicación de amenazas, utilizo el framework **STIX**, el cual desglosa la inteligencia en los siguientes objetos clave:
+
+| Objeto | Descripción Técnica |
+| :--- | :--- |
+| **Attack Pattern** | Tácticas y procedimientos de ataque (TTPs). |
+| **Campaign** | Conjunto de ataques coordinados en un tiempo definido. |
+| **Course of Action** | Medidas de mitigación y respuesta recomendadas. |
+| **Identity / Actor** | Identificación de víctimas o grupos atacantes específicos. |
+| **Indicator** | Evidencia técnica (IoCs) que activa las alertas en el SIEM. |
+| **Malware / Tool** | Código malicioso o herramientas usadas en la intrusión. |
+| **Vulnerability** | Fallos técnicos identificados (CVE) que permiten el ataque. |
+| **Relationship** | Conexiones lógicas que dan sentido a la narrativa del ataque. |
+
+> **Nota de Analista:** La potencia de STIX reside en su capacidad de crear un **Grafo de Relaciones**. Al conectar estos objetos, puedo visualizar no solo "qué" pasó, sino "quién" lo hizo, "cómo" lo logró y "qué" debo hacer para frenarlo.
+
+
+## – Introduction to STIX, OASIS Open  https://oasis-open.github.io/cti-documentation/stix/intro.html
+
+*STIX expressions*
+
+Now that you know some common STIX object types, you’ll discover how to use them in STIX expressions. In programming, an expression is a combination of code components that a program can interpret and use. Every STIX object is an expression consisting of the object’s type and properties. 
+
+STIX expressions come in JavaScript Object Notation (JSON), a standard text-based data format. JSON uses human-readable text that you can easily store and transmit using an automated system. 
+
+Examine this example STIX expression:
+
+{ 
+
+“type”: “indicator”, 
+
+“id”: “indicator--2f54e292-8b64-4495-bc02-6a9198a365e3”, 
+
+“created”: “2022-02-01T08:08:15.000Z”, 
+
+“modified”: “2023-02-15T08:08:15.000Z”, 
+
+“pattern”: “[file:hashes.MD5 = ‘d41d8cd98f00b204e9800998ecf8427e’]”, 
+
+“valid_from”: “2022-03-15T08:08:15.000Z”, 
+
+“labels”: [“malware”], 
+
+“name”: “Empty file MD5 hash”, 
+
+“description”: “Indicates the presence of an empty file with an MD5 hash value of d41d8cd98f00b204e9800998ecf8427e which is a common tactic used by malware authors to evade detection.” 
+
+}
+
+## 💻 Anatomía de una Expresión STIX (Formato JSON)
+Cuando exportás un reporte de IBM X-Force (como el botón azul que vimos), lo que descargás es exactamente esto. Vamos a desglosar el ejemplo del Indicator:
+
+*"type":* "indicator": Define que este objeto sirve para detectar algo (una señal de humo).
+
+*"id":* Es el "DNI" único de este objeto en todo el mundo.
+
+*"created" / "modified":* Marcas de tiempo para saber qué tan vieja es la información.
+
+*"pattern":* ¡Esta es la parte más importante! Es la regla técnica. En este caso, dice: "Buscá cualquier archivo cuyo hash MD5 sea d41d8cd98f00b204e9800998ecf8427e".
+
+*"labels":* ["malware"]: Clasifica la amenaza.
+
+*"description":* Explica por qué esto es peligroso (en este caso, un archivo vacío usado por malware para evadir detección).
+
+### 💻 Implementación Técnica: Expresiones STIX en JSON
+
+La inteligencia de amenazas se intercambia mediante archivos **JSON**, lo que permite la automatización entre plataformas de seguridad. A continuación, un ejemplo de cómo se representa un **Indicador (Indicator)** en el estándar STIX 2.1:
+
+```json
+{ 
+  "type": "indicator", 
+  "id": "indicator--2f54e292-8b64-4495-bc02-6a9198a365e3", 
+  "name": "Empty file MD5 hash", 
+  "pattern": "[file:hashes.MD5 = 'd41d8cd98f00b204e9800998ecf8427e']", 
+  "description": "Indica la presencia de un archivo vacío con hash MD5 específico, táctica común para evadir detección." 
+}
+```
+
+### 🚀 Activity: Analyze a STIX expression
+
+
+
+
+
+
+
+
