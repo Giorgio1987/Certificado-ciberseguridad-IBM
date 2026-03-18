@@ -2162,10 +2162,172 @@ La inteligencia de amenazas se intercambia mediante archivos **JSON**, lo que pe
 
 ### 🚀 Activity: Analyze a STIX expression
 
+![Actividad](../img/json1.png)
+![Actividad](../img/json2.png)
+
+📝 Corrección de la Actividad: CryptolockerX
+Analizando el código de la imagen 600b7b, los valores correctos son:
+
+What is this object's type?
+
+❌ Pusiste: Ransomware
+
+✅ Debe ser: Malware
+
+Explicación: En JSON, tenés que mirar la etiqueta "type". En la primera línea del código dice "type": "malware". Ransomware es el subtipo.
+
+What type of malware is associated with this object?
+
+❌ Pusiste el ID largo.
+
+✅ Debe ser: Ransomware
+
+Explicación: La pregunta pide el tipo de malware. Si miras la etiqueta "malware_types", el valor que aparece entre corchetes es ["ransomware"].
+
+What is the name of the object?
+
+✅ Pusiste: CryptolockerX (¡Correcto!)
+
+When was the indicator first confirmed...? (Year-Month-Day)
+
+✖️ Pusiste: 2022-03-15 (¡incorrecto!)
+
+Nota: Usaste la fecha de "modified", que es cuando se confirma la versión final del patrón.
+
+💡 Tip para no confundirte más:
+En STIX/JSON, siempre busca la palabra a la izquierda de los dos puntos (:) para saber qué te están preguntando, y el valor es lo que está a la derecha.
+
+"type" -> Es la categoría general (Malware).
+
+"malware_types" -> Es el "modelo" específico (Ransomware).
+
+#### 📝 Resolución de Actividad: Análisis de Objeto STIX (Malware)
+
+En este ejercicio, analicé un objeto JSON que representa una variante de Ransomware denominada **CryptolockerX**. 
+
+**Resultados del análisis técnico:**
+1. **Object Type:** `malware` (Definido en la raíz del objeto).
+2. **Malware Type:** `ransomware` (Localizado en la lista `malware_types`).
+3. **Name:** `CryptolockerX`.
+4. **First Official Association (valid_from):** `2022-01-01`.
+
+> **Lección aprendida:** Es fundamental distinguir entre las propiedades de sistema (`created`, `modified`) y las propiedades de inteligencia (`valid_from`). Mientras que las primeras indican cambios en el archivo, `valid_from` establece cuándo la comunidad de seguridad confirmó que ese patrón es efectivamente malicioso.
 
 
+## Imagino como una receta de cocina:
 
+El reporte azul: Es la foto del plato terminado y la explicación linda en el menú para que el humano la entienda.
 
+El JSON/STIX: Es la lista técnica de ingredientes y pasos codificada para que una máquina (un robot de cocina) la pueda ejecutar sola.
 
+Aquí explico el flujo de cómo "viaja" esa información desde que se descubre hasta que llega a la pantalla:
 
+1. El Origen: Alguien descubre la amenaza
+Un investigador de seguridad encuentra un nuevo malware (digamos, el CryptolockerX). Para que el mundo se proteja, no puede simplemente escribir un post en Facebook. Tiene que documentarlo seriamente.
 
+Ese investigador llena un formulario en una plataforma (como IBM X-Force o MITRE). Al guardar ese formulario, la plataforma genera dos versiones del mismo reporte:
+
+2. La Versión para Humanos (La "Pantalla Azul")
+Es lo que viste en las capturas de IBM. Está diseñada para que vos, el analista, la leas.
+
+Formato: HTML/Web.
+
+Uso: Para que entiendas el contexto, veas los gráficos de barritas del CVSS y decidas si es urgente o no.
+
+Lectura: Lenta (un humano tarda minutos en leer y procesar).
+
+3. La Versión para Máquinas (El JSON/STIX)
+Es el archivo de texto con llaves { } que estuvimos analizando.
+
+Formato: STIX (el lenguaje) dentro de un archivo JSON (el envase).
+
+Uso: Para automatización.
+
+Flujo: Tu SIEM (QRadar, Splunk) está "suscripto" a IBM X-Force. Cada vez que sale un reporte nuevo, el SIEM descarga el archivo JSON en milisegundos.
+
+4. ¿Cómo interactúan en tu trabajo diario?
+Como SOC Nivel 1, el proceso es este:
+
+El SIEM lee el JSON automáticamente y crea una regla: "Si ves este hash de archivo, bloquealo".
+
+Un usuario en tu empresa intenta bajar ese archivo. El SIEM lo bloquea y te tira una Alerta en tu monitor.
+
+Vos hacés clic en la alerta y el SIEM te muestra el link al Reporte Azul.
+
+Vos leés el Reporte Azul para entender qué es ese malware y poder explicarle a tu jefe: "Bloqueamos un Ransomware llamado CryptolockerX que es de severidad Alta".
+
+### 🔄 Flujo de la Inteligencia: Del Reporte a la Acción
+
+La inteligencia de amenazas (Threat Intel) se consume en dos formatos simultáneos para maximizar la eficiencia:
+
+1. **Formato Humano (Dashboard):** Visualizaciones en plataformas como **IBM X-Force**. Permite al analista comprender la severidad (CVSS), el contexto y las recomendaciones de remediación.
+2. **Formato Máquina (STIX/JSON):** Archivos estructurados que se integran directamente en el **SIEM/EDR**. Esto permite la "Defensa Activa", donde las herramientas de seguridad aprenden a detectar la amenaza automáticamente sin intervención humana manual.
+
+> **Conclusión:** El estándar **STIX** actúa como el traductor universal que permite que un descubrimiento hecho por un investigador en otro continente se convierta en una regla de bloqueo en mi infraestructura en cuestión de segundos.
+
+### 🤝 Colaboración y Comunidad: El Rol del Contribuidor
+
+La ciberseguridad moderna se basa en la inteligencia compartida. Cuando un investigador descubre un nuevo vector de ataque:
+
+* **Documentación:** Traduce el hallazgo a objetos **STIX**.
+* **Distribución:** Lo comparte en comunidades de confianza o plataformas públicas (ISACs, IBM X-Force, etc.).
+* **Impacto:** Permite que miles de **Analistas SOC** reciban la actualización en sus **SIEM** de forma automática a través de archivos **JSON**, logrando una defensa colectiva contra el atacante.
+
+> **Reflexión:** "La seguridad de uno es la seguridad de todos". Hablar en STIX es la forma más eficiente de neutralizar amenazas antes de que se propaguen.
+
+## 🚀 Resumen y Próximos Pasos: De la Inteligencia a la Acción
+
+He finalizado el módulo de **Threat Intelligence**, donde aprendí cómo las organizaciones recolectan, generan y comparten datos para tomar decisiones basadas en evidencia.
+
+### 📋 Conceptos Consolidados:
+* **Tipos de Inteligencia:** Estratégica, Táctica y Operacional.
+* **Estandarización:** Uso del lenguaje **STIX** y formato **JSON** para la interoperabilidad entre sistemas de defensa (SIEM/EDR).
+* **Fuentes de Datos:** Análisis de CVEs a través de **IBM X-Force Exchange** y otras plataformas OSINT.
+
+---
+
+## 🛡️ Hacia el Pentesting: Las 4 Fases de la Evaluación
+
+Para poner en práctica la inteligencia recolectada, el siguiente paso es el **Vulnerability Assessment** y el **Pentesting**, siguiendo estas fases fundamentales:
+
+### 1. Planning & Scoping (Planificación)
+* Se definen los objetivos, el alcance (qué IP/Sistemas atacar) y las limitaciones legales. Es la fase del "contrato".
+
+### 2. Information Gathering & Scanning (Descubrimiento)
+* Utilizo la inteligencia (CVEs) para escanear la red en busca de debilidades. Aquí es donde los reportes de STIX que analizamos me dicen qué buscar exactamente.
+
+### 3. Exploitation (Explotación)
+* El momento de la verdad. Intento penetrar las defensas explotando las vulnerabilidades confirmadas (ej. aprovechando un fallo de escalación de privilegios).
+
+### 4. Reporting & Cleanup (Informe y Limpieza)
+* Genero un reporte técnico detallado con recomendaciones para el cliente y elimino cualquier rastro o "puerta trasera" creada durante la prueba.
+
+> **Próximo Objetivo:** Profundizar en el análisis de severidad de vulnerabilidades y la generación de reportes operativos para equipos de respuesta a incidentes.
+
+## What is vulnerability assessment?
+
+### 🛡️ Evaluación de Vulnerabilidades (Vulnerability Assessment)
+
+La evaluación de vulnerabilidades es un pilar de la **Inteligencia Operacional**. Su propósito es identificar y evaluar debilidades para determinar el riesgo de seguridad real de la organización.
+
+#### 🔄 El Ciclo de Evaluación:
+* **Identificación:** Descubrimiento sistemático de fallos en activos (Sistemas, Redes, Apps).
+* **Análisis:** Uso de métricas **CVSS** (Base, Temporal y Ambiental) para entender la gravedad técnica.
+* **Priorización:** Clasificación de hallazgos según el impacto potencial, permitiendo una remediación eficiente.
+
+> **Diferencia Clave:** Mientras que la *Inteligencia de Amenazas* nos dice qué hay "allá afuera", la *Evaluación de Vulnerabilidades* nos dice qué tan expuestos estamos "aquí adentro". Es el paso previo indispensable antes de realizar un Pentesting.
+
+### 🗓️ Estrategia de Evaluación de Vulnerabilidades
+
+La gestión de vulnerabilidades es un proceso dinámico que responde a los cambios del entorno tecnológico. Una evaluación efectiva permite identificar:
+
+* **Nuevas Amenazas:** Detección de CVEs recientes antes de que sean explotados.
+* **Evolución del Riesgo(cambios de amenazas previamente conocidas):** Monitoreo de amenazas conocidas que han aumentado su severidad o facilidad de explotación.
+* **Higiene de Seguridad:(vulnerabilidades sin corregir)** Identificación de activos que aún poseen vulnerabilidades críticas no parcheadas.
+
+#### ✅ Momentos Clave para la Acción:
+1. Tras la **modificación de configuraciones** críticas en red o sistemas.
+2. Durante la **implementación de nuevos activos** (Software/Hardware).
+3. Como parte de un **ciclo de auditoría recurrente** para garantizar la resiliencia continua.
+
+> **Reflexión Final:** "La seguridad no es un producto, es un proceso". El Vulnerability Assessment es el motor que mantiene ese proceso en marcha, transformando la Inteligencia de Amenazas en medidas de protección reales.
