@@ -48,3 +48,6 @@ A continuación, detallo los módulos del programa. Iré marcando cada uno confo
 ---
 
 *“La ciberseguridad no es un producto, es un proceso.”* – **Bruce Schneier**
+
+# Clases :
+*Clase intro* https://youtu.be/Hyj7B_7HJ2o
