@@ -270,3 +270,324 @@ La PII es cualquier dato que pueda usarse para distinguir o rastrear la identida
 
 ## Se puede  definir a *PII* como el "activo crítico" que las leyes de privacidad (como la Ley de Protección de Datos Personales en Argentina o la GDPR en Europa) obligan a las organizaciones a proteger mediante cifrado y controles de acceso estrictos.
 
+## Tipos de datos
+
+* Los expertos en seguridad clasifican los datos por su nivel de sensibilidad. 
+
+### 🏷️ Clasificación de Datos y Niveles de Sensibilidad
+
+Como parte de la estrategia de GRC, clasifico la información para determinar los controles de seguridad necesarios:
+
+* **Datos Públicos:** Información de libre distribución.
+* **Datos Confidenciales:** Información que requiere control de acceso (ej. Código Fuente).
+* **Datos de Propiedad Exclusiva:** Activos que otorgan ventaja competitiva (ej. Secretos comerciales).
+* **Datos Privados:** Información personal que se subdivide en:
+    * **PII (Personally Identifiable Information):** Identificadores como DNI, domicilio o fotos.
+    * **PHI (Protected Health Information):** Datos médicos sensibles (recetas, diagnósticos).
+
+> **Regla de Oro:** Todo dato **PHI** es también **PII**, pero no toda la **PII** es **PHI**. La protección de estos datos privados es la máxima prioridad para evitar implicancias legales y daños a las personas.
+
+🚀 ¿Viste la diferencia?
+Imaginalo así:
+
+El manual de usuario de un producto es Público.
+
+El plan de ventas del año que viene es Propiedad Exclusiva.
+
+El recibo de sueldo de un empleado es Privado (PII).
+
+El resultado de un análisis de sangre de un cliente es Privado (PHI).
+
+## 🗄️ La "Mamushka" de la Clasificación de Datos
+Para que te sea fácil de recordar imaginalo como un sistema de carpetas una dentro de otra:
+
+* Datos Confidenciales (La carpeta más grande): Es el término paraguas. Todo lo que la empresa no quiere que se filtre es confidencial. Aquí dentro guardamos tanto los secretos de la empresa (Propiedad Exclusiva) como la información de la gente (Privados).
+
+* Datos Privados (La subcarpeta): Dentro de lo confidencial, están los datos de las personas. Solo se pueden tocar con autorización.
+
+* PII y PHI (El contenido específico): Dentro de lo privado, clasificamos si el dato sirve para identificar a alguien (PII) o si además es un dato de salud (PHI).
+
+
+* Dato: Dirección Postal,¿Por qué encaja?
+Es PII,Porque permite localizar e identificar a un individuo específico.
+Es Privada,Porque pertenece a la vida íntima y su divulgación requiere consentimiento legal.
+Es Confidencial,Porque la organización tiene la obligación de protegerla contra el acceso no autorizado.
+
+## 🔑 Regla Nemotécnica para el Analista:
+"Todo dato PII es Privado, y todo dato Privado es Confidencial. Pero no todo lo Confidencial es PII (por ejemplo, el código fuente de un software es confidencial pero no es PII)."
+
+🚀 ¿Por qué te sirve saber esto en el SOC?
+Cuando recibas una alerta de seguridad que diga: "Se ha filtrado una base de datos con direcciones de clientes", ya sabés que tenés un triple problema:
+
+Violación de Confidencialidad (falla técnica).
+
+Violación de Privacidad (falla legal).
+
+Exposición de PII (riesgo directo para la persona).
+
+## --------------------------------Protección de datos--------------------------------------
+### ⚖️ Seguridad de Datos vs. Privacidad de Datos
+
+Para una gobernanza efectiva, distingo entre los mecanismos de defensa y los derechos de los individuos:
+
+1. **Seguridad de Datos:** El conjunto de medidas técnicas para prevenir el acceso, divulgación o destrucción no autorizada de **cualquier activo de información** de la empresa (incluyendo propiedad exclusiva y secretos comerciales).
+2. **Privacidad de Datos:** Una disciplina específica de la seguridad enfocada en garantizar que los **datos privados de personas** (clientes y empleados) se recolecten y utilicen únicamente bajo autorización y para los fines permitidos.
+
+> **Reflexión de Analista:** Podés tener seguridad sin privacidad (por ejemplo, los datos están bien guardados pero la empresa los vende sin permiso), pero **no podés tener privacidad sin seguridad** (si no protegés los datos, cualquiera puede violar la privacidad de los usuarios).
+
+## 🚀 ¿Viste la relación?
+Como hacker de sombrero blanco, tu trabajo técnico suele estar más del lado de la Seguridad (cerrar brechas), pero las leyes te obligan a trabajar para la Privacidad (que esos datos de personas no queden expuestos).
+
+## Por qué es importante la privacidad de los datos
+
+### 🚨 El Costo de Ignorar la Privacidad
+
+La privacidad de los datos es un pilar estratégico. Una violación en este ámbito no es solo un problema técnico, sino una crisis multiforme:
+
+* **Impacto Financiero:** Sanciones regulatorias masivas y costos de remediación inesperados.
+* **Impacto Operativo:** Parálisis de los procesos de negocio y desvío de recursos críticos para la recuperación de sistemas.
+* **Impacto Reputacional:** Pérdida definitiva de la confianza del consumidor, el activo más difícil de reconstruir.
+
+> **Caso de Estudio:** Mientras que la *Seguridad* evita que el hacker entre, la *Privacidad* garantiza que, si los datos se usan, se haga bajo el marco legal. Fallar en cualquiera de las dos puede resultar en la quiebra de la organización.
+
+![EQUIFAX](/img/equifax.png)
+
+### 🔎 Caso de Estudio: La Filtración de Equifax , agencia de calificación crediticia de EE. UU.(2017)
+
+Este caso demuestra que la ciberseguridad es una inversión inteligente frente al costo devastador de una filtración.
+
+* **La Falla:** No se aplicó un parche de seguridad conocido y se almacenaron credenciales administrativas sin cifrado.
+* **Datos Comprometidos (PII):** * 147 millones de nombres y fechas de nacimiento.
+    * 145.5 millones de números de seguridad social.
+    * 209,000 números de tarjetas de pago.
+* **Consecuencia Principal:** Multas de hasta $700 millones y pérdida total de la confianza del consumidor.
+
+> **Lección para el Analista:** Una sola filtración puede devastar una organización. La ciberseguridad no es un gasto, es una elección responsable para evitar que los datos caigan en manos equivocadas.
+
+### ⚠️ Lección de GRC: El Caso Equifax (Análisis de Consecuencias)
+
+Este caso demuestra que la falta de un parche de seguridad y el almacenamiento de credenciales sin cifrado generan un efecto dominó:
+
+1. **Financiero:** Multas y acuerdos que superan los 425M USD.
+2. **Operativo:** Parálisis de la innovación para enfocarse en la remediación y auditoría de políticas.
+3. **Reputacional:** Daño permanente a la marca por falta de transparencia y soporte deficiente.
+
+> **Conclusión del Analista:** La ciberseguridad es una inversión inteligente. El 10% del presupuesto de TI en seguridad es mínimo comparado con el costo de una filtración que puede devastar la reputación y las finanzas de una organización.
+
+GRC significa Governance, Risk, and Compliance (en español: Gobernanza, Riesgo y Cumplimiento).
+
+Es el marco de trabajo que asegura que una organización actúe con integridad y alcance sus objetivos de seguridad de manera ordenada. Imaginalo como el "cerebro" estratégico que decide qué tecnologías y procesos se deben usar.
+
+Aquí detallo qué significa cada letra:
+
+🏛️ G - Gobernanza (Governance)
+Es el conjunto de reglas y políticas que dirigen a la organización.
+
+Define quién toma las decisiones y quién es responsable de la seguridad.
+
+Asegura que los esfuerzos de ciberseguridad ayuden a los objetivos del negocio y no sean solo "instalar programas".
+
+📉 R - Riesgo (Risk Management)
+Es el proceso de identificar y manejar las posibles amenazas antes de que se conviertan en desastres.
+
+Se analizan las vulnerabilidades (como el parche que no aplicó Equifax) y el impacto que tendrían si alguien las explota.
+
+Ayuda a decidir dónde invertir el presupuesto de seguridad (ese 10% del que hablamos) de forma inteligente.
+
+⚖️ C - Cumplimiento (Compliance)
+Se encarga de que la empresa siga todas las leyes y regulaciones externas.
+
+Por ejemplo, asegurar que se cumplan las leyes de Privacidad de Datos para proteger la PII de los clientes.
+
+Evita las consecuencias financieras (multas de millones de dólares) y legales que vimos en el caso de Equifax.
+
+## 📜 Los 10 Principios de Privacidad (GAPP)
+Estos principios aseguran que la privacidad esté presente en todo el ciclo de vida del dato:
+
+* Gestión: La organización debe tener políticas claras y personas responsables de la privacidad.
+
+* Notificación: Se debe informar al usuario sobre qué datos se recopilan y para qué se usan.
+
+* Elección y consentimiento: El usuario debe poder elegir si quiere compartir sus datos y dar su autorización explícita.
+
+* Recopilación: Solo se deben recolectar los datos necesarios para los fines informados.
+
+* Uso, retención y eliminación: Los datos solo se usan para lo acordado, se guardan el tiempo necesario y luego se destruyen de forma segura.
+
+* Acceso: Los usuarios tienen derecho a ver, revisar y corregir su información personal.
+
+* Divulgación a terceros: Los datos solo se comparten con terceros si el usuario lo autorizó o si la ley lo exige.
+
+* Seguridad para la privacidad: Se deben usar medidas técnicas (como cifrado y firewalls) para proteger los datos de accesos no autorizados.
+
+* Calidad: La organización debe asegurar que la información personal sea exacta y completa.
+
+* Supervisión y cumplimiento: Se deben realizar auditorías internas y tener mecanismos para resolver quejas de los usuarios.
+
+### ⚖️ Principios GAPP: El Estándar de Privacidad Organizacional
+
+Para garantizar que una organización cumple con la ética y la ley, sigo los 10 principios del estándar **GAPP** (Generally Accepted Privacy Principles):
+
+* **Transparencia:** Notificación clara y obtención de consentimiento antes de la recopilación.
+* **Limitación:** Recopilar y usar solo lo necesario (Minimización de datos).
+* **Protección:** Aplicar controles de seguridad técnica para salvaguardar la PII/PHI.
+* **Derechos del Usuario:** Facilitar el acceso, corrección y eliminación de los datos por parte de sus dueños.
+
+> **Importancia para el Analista:** Aplicar GAPP reduce drásticamente el riesgo de **consecuencias financieras y reputacionales** como las ocurridas en el caso Equifax, donde fallaron principios básicos de seguridad y notificación oportuna.
+
+### 💼 Perfiles Profesionales en el área de Privacidad
+
+Dentro de mi formación, identifico tres rutas de especialización según el enfoque de la organización:
+
+| Rol | Enfoque Principal | Responsabilidad Clave |
+| :--- | :--- | :--- |
+| **Especialista** | Normativo y Auditoría. | Garantizar el cumplimiento de leyes y regulaciones. |
+| **Analista** | Técnico y Operativo. | Desarrollar controles automatizados y supervisar la infraestructura. |
+| **Administrador** | Estratégico y Humano. | Mapear flujos de datos y liderar la concientización organizacional. |
+
+> **Mi Perfil:** Gracias a mi base en Análisis de Sistemas, tengo una afinidad natural hacia el rol de **Analista de Privacidad**, donde puedo aplicar controles técnicos para evitar accesos no autorizados y participar en la respuesta ante incidentes.
+
+### 🛠️ Habilidades Profesionales (Soft Skills)
+
+Para complementar mi formación técnica, he desarrollado competencias clave que aseguran una gestión de privacidad eficiente:
+
+* **Gestión del Tiempo:** Capacidad para planificar y ejecutar auditorías y controles en tiempo y forma.
+* **Colaboración:** Orientado al trabajo en equipo y a la articulación entre áreas técnicas y administrativas.
+* **Comunicación y Auditoría:** Experiencia en la elaboración de informes técnicos y disposición para asumir roles de auditoría y control de cumplimiento.
+
+> **Perfil del Analista:** Mi enfoque organizado y mi disposición para la auditoría me permiten asegurar que los marcos de privacidad (como GAPP) se mantengan vigentes y operativos dentro de la organización.
+
+## Ampliar para ver más ideas
+## Tu respuesta podría incluir algunas de las siguientes habilidades: 
+
+Atención al detalle: Los profesionales de la ciberseguridad deben ser meticulosos y prestar mucha atención a los detalles. Hasta el más mínimo descuido puede dejar un sistema vulnerable a un ataque. Las personas que son detallistas en su vida personal, como las que disfrutan organizando o planificando eventos, podrían encontrar que sus habilidades se trasladan bien a una carrera en ciberseguridad. 
+
+Resolución de problemas: La ciberseguridad requiere una gran capacidad para resolver problemas. Los profesionales deben estar constantemente atentos a las nuevas amenazas e idear soluciones innovadoras para evitar los ataques. Las personas a las que les gustan los rompecabezas o tienen experiencia en otros campos de resolución de problemas, como la ingeniería o las matemáticas, podrían encontrar que sus habilidades son valiosas para la ciberseguridad. 
+
+Comunicación: Una buena capacidad de comunicación es esencial en ciberseguridad, porque los profesionales a menudo deben explicar conceptos técnicos complejos a partes interesadas sin conocimientos técnicos. Las personas que son buenas para explicar, como los docentes o los presentadores públicos, podrían encontrar que sus habilidades son muy valiosas para desarrollarse profesionalmente en el campo de la ciberseguridad. Además, las personas capaces de comunicar eficazmente, más allá de las barreras culturales y lingüísticas, pueden resultar especialmente valiosas en el panorama mundial de la ciberseguridad. 
+
+## CIA 
+### 🛡️ La Tríada CIA: Marco de Evaluación de Riesgos
+
+En mi práctica como analista, utilizo la Tríada CIA como la piedra angular para identificar vulnerabilidades y proponer soluciones:
+
+| Pilar | Definición | Aplicación de Sombrero Blanco |
+| :--- | :--- | :--- |
+| **Confidencialidad** | Solo personal autorizado accede al dato. | Implementación de cifrado para proteger PII/PHI. |
+| **Integridad** | El dato es veraz y no ha sido alterado. | Uso de Hashes para verificar que el software no fue modificado. |
+| **Disponibilidad** | El sistema funciona cuando se requiere. | Planes de recuperación ante desastres y mantenimiento preventivo. |
+
+> **Reflexión:** Un programa de seguridad exitoso es aquel que logra el equilibrio entre estos tres objetivos. Si priorizo demasiado la confidencialidad (poniendo 10 contraseñas), puedo terminar afectando la disponibilidad.
+
+## Nota: El origen del término tríada CIA es difícil de determinar. Pero sus conceptos guiaron a generales militares durante siglos, incluso a Julio César durante las guerras de las Galias.
+
+### 📋 Parámetros de Auditoría para Datos Confidenciales
+
+Como Analista, evalúo la postura de seguridad basándome en el ciclo de vida de la información:
+
+| Parámetro | Pregunta Clave de Auditoría | Objetivo CIA |
+| :--- | :--- | :--- |
+| **Identificación** | ¿Qué datos específicos son confidenciales (PII/PHI)? | Confidencialidad |
+| **Almacenamiento** | ¿El repositorio cuenta con cifrado en reposo (at rest)? | Confidencialidad / Integridad |
+| **Acceso** | ¿Se aplica el control de acceso basado en roles (RBAC)? | Confidencialidad |
+| **Flujo** | ¿Los datos están protegidos durante el tránsito (in transit)? | Confidencialidad / Integridad |
+| **Monitoreo** | ¿Existe trazabilidad (logs) de quién accedió al dato? | Disponibilidad / Integridad |
+
+> **Enfoque Práctico:** En mi laboratorio virtual con Windows Server y Linux, aplico estos parámetros al configurar **Dominios** y **Permisos de Archivos**, asegurando que el flujo de datos sea siempre visible y controlado.
+
+![controles](/img/controles.png)
+
+### 🛠️ Implementación de Controles de Seguridad
+
+Para mitigar riesgos, diseño defensas en profundidad utilizando tres tipos de controles:
+
+| Tipo de Control | Aplicación Práctica | Ejemplo en mi Laboratorio |
+| :--- | :--- | :--- |
+| **Administrativo** | Políticas de uso aceptable y gestión de claves. | Configuración de directivas de grupo (GPO) en Active Directory. |
+| **Físico** | Seguridad perimetral y control de acceso. | Gestión de acceso físico a dispositivos de red. |
+| **Técnico** | Herramientas de protección lógica. | Uso de Wireshark para monitoreo y Cifrado BitLocker. |
+
+#### 🔑 Diferencia Crítica: Borrado vs. Eliminación Permanente
+En el manejo de **PII**, es fundamental aplicar software de **borrado de datos** (sobreescritura) en lugar de solo eliminar archivos, garantizando que la información sensible sea irrecuperable según los estándares de cumplimiento.
+
+## Prevención de pérdida de datos
+## 🎯 Conclusión: Prevención de Pérdida de Datos (DLP)
+
+La **Pérdida de Datos** (Data Loss) ocurre cuando la información confidencial es expuesta a personas no autorizadas, comprometiendo la tríada CIA. Una estrategia **DLP** efectiva es la capacidad organizacional de combinar:
+
+1. **Personas:** Capacitadas para manejar PII/PHI con ética y responsabilidad.
+2. **Procesos:** Marcos de trabajo (como GAPP y GRC) que definen el flujo seguro de la información.
+3. **Tecnología:** Herramientas que protegen los datos en sus tres estados: **en reposo, en movimiento y en uso**.
+
+> **Misión del Analista:** Implementar controles administrativos, físicos y técnicos para asegurar que el "negocio" sea resiliente ante las amenazas y cumpla con las leyes de privacidad vigentes.
+
+### 🛡️ DLP: Protección en los Tres Estados del Dato
+
+Como Analista, mi objetivo es implementar controles que garanticen la seguridad del dato en todo su ciclo de vida:
+
+| Estado del Dato | Descripción | Control Técnico Sugerido |
+| :--- | :--- | :--- |
+| **En Reposo** | Almacenado en discos o servidores. | Cifrado de archivos y bases de datos. |
+| **En Movimiento** | Viajando a través de redes o internet. | Uso de protocolos seguros (VPN, SSL/TLS). |
+| **En Uso** | Procesado activamente en la memoria (RAM). | Gestión segura de identidad y acceso (IAM). |
+
+> **Nota Técnica:** Una filtración como la de **Equifax** ocurrió porque los datos **en reposo** (credenciales) no estaban cifrados y el monitoreo de los datos **en movimiento** falló durante meses.
+
+
+## 🛡️ Tipos de Sistemas DLP y su Aplicación
+Herramientas según el área que protegen:
+
+1. DLP a Nivel de Archivo (Basado en Metadatos)
+Este sistema "etiqueta" los archivos. Utiliza los metadatos (información oculta sobre el archivo) para ponerle reglas.
+
+Ejemplo: Un archivo de Excel con salarios tiene un metadato que dice "Prohibido enviar por Email". Si alguien intenta adjuntarlo, el sistema lo bloquea automáticamente.
+
+2. DLP de Red (Network DLP)
+Es el "vigilante" del tráfico. Monitorea todo lo que entra y sale de la organización.
+
+Capacidad: Protege datos en reposo, movimiento y uso dentro de la red.
+
+Ejemplo: Si un empleado intenta subir los planos de un nuevo producto (Propiedad Exclusiva) a un sitio de transferencias externo, la DLP de red lo registra y bloquea.
+
+3. DLP en la Nube (Cloud DLP)
+Es vital hoy en día, ya que muchas empresas usan Google Drive, OneDrive o AWS.
+
+Función: Detecta datos sensibles y los cifra antes de que lleguen a la nube, asegurando que, aunque la nube sea vulnerada, los datos sigan siendo ilegibles.
+
+4. DLP de Puntos de Conexión (Endpoint DLP)
+Se instala directamente en los dispositivos finales (laptops, servidores, PC de escritorio).
+
+Función: Monitorea lo que el usuario hace en su máquina. Por ejemplo, puede bloquear que alguien copie PII a un pendrive USB o que haga una captura de pantalla de información médica protegida (PHI).
+
+### 🛡️ Implementación de Sistemas DLP (Data Loss Prevention)
+
+Para una protección integral de los activos, clasifico y utilizo diferentes soluciones DLP según el entorno:
+
+| Tipo de DLP | Alcance de Protección | Mecanismo de Control |
+| :--- | :--- | :--- |
+| **A nivel de Archivo** | Documentos específicos. | Uso de **Metadatos** para aplicar reglas de seguridad al archivo. |
+| **De Red** | Tráfico de red (Email, Web). | Monitoreo activo de transferencias para evitar filtraciones. |
+| **En la Nube** | Repositorios externos (Cloud). | Cifrado preventivo antes del almacenamiento en la nube. |
+| **De Endpoints** | Dispositivos finales (Laptops, PC). | Control de puertos USB y actividades locales del usuario. |
+
+> **Rol del Analista:** Mi objetivo es asegurar que las políticas de seguridad se traduzcan en reglas técnicas dentro de estos sistemas, garantizando que el flujo de datos sea siempre legítimo y monitoreado.
+
+### 🎯 Competencias Fundamentales del Analista según mi opinión 
+
+Para garantizar una defensa efectiva de la información, aplico tres habilidades transversales:
+
+1. **Evaluación basada en la Tríada CIA:** Utilizo Confidencialidad, Integridad y Disponibilidad como métricas para auditar cualquier sistema.
+2. **Vigilancia Operativa (Alerta Continua):** Monitoreo constante de los cinco parámetros (Acceso, Almacenamiento, Flujo, Monitoreo e Identificación) para detectar anomalías.
+3. **Clasificación Estratégica de Datos:** Capacidad para identificar y categorizar PII, PHI y Propiedad Exclusiva, asegurando que los controles de seguridad (DLP) se apliquen de forma eficiente.
+
+> **Mi Enfoque:** Mi formación técnica me permite no solo identificar el riesgo, sino también proponer el control (Administrativo, Físico o Técnico) más adecuado para mitigarlo.
+
+## Ampliar para ver más ideas
+Tu respuesta podría incluir algunas de las siguientes habilidades: 
+
+Pensamiento analítico: Los analistas de seguridad de datos deben emplear el pensamiento analítico para detectar posibles amenazas a la seguridad. Por ejemplo, podrían analizar redes informáticas para evaluar los riesgos y luego determinar las mejoras necesarias en las políticas de seguridad para hacerles frente. 
+
+Comunicación escrita: Los analistas de seguridad de datos deben ser expertos en la redacción de estrategias para mejorar la seguridad. Por ejemplo, crean informes que documentan las actualizaciones necesarias del programa de seguridad. También podrían simplificar directrices y prácticas de seguridad complejas en un correo electrónico que envían a los empleados de todos los niveles de una organización. 
+
+Atención al detalle: Los analistas de seguridad de datos deben prestar atención a los detalles cuando auditan el programa de seguridad de una organización. Deben identificar todas las formas sutiles que podría usar un atacante para poner en peligro los datos de una organización, por ejemplo explotando vulnerabilidades en la configuración de seguridad de la red. 
+
