@@ -613,7 +613,236 @@ Como el cifrado utiliza algoritmos que actúan sobre caracteres individuales, se
 
 ![DESCIFRADO](/img/desifrado.png)
 
-Concepto,Nivel de Operación,Ejemplo,Ventaja en IT
-Cifrado,Caracteres individuales (símbolos).,Hola -> Krod (César +3),Muy fácil de automatizar con algoritmos computacionales.
-Codificación,Unidades de significado (palabras/frases).,Misión cumplida -> El águila aterrizó,"Útil para comunicación humana encubierta, pero difícil de escalar técnicamente."
+### 🔑 Fundamentos de Criptografía: Cifrado vs. Codificación
+
+Para entender la protección de datos actual, es vital diferenciar cómo se transforma la información:
+
+* **Cifrado (Encryption):** Actúa sobre símbolos individuales. Es la base de la seguridad informática actual debido a su facilidad para ser automatizado mediante algoritmos.
+    * *Ejemplos clásicos:* César, A1Z26, Monoalfabético.
+* **Codificación (Coding):** Actúa sobre el significado de palabras o frases completas (lenguaje en clave).
+
+#### 🧪 Ejercicio de Aplicación:
+Frase: `Esta información está clasificada`
+
+1. **Cifrado César (+3):** `Hvwd lairqdflrq hvwd fodvlilfdgd`
+   * *Uso:* Protección lógica de datos mediante software.
+2. **Codificación:** `Un elefante corre libre`
+   * *Uso:* Comunicación táctica basada en semántica.
+
+> **Lección de Seguridad:** El cifrado es la herramienta técnica que preserva la **Confidencialidad** en la tríada CIA, permitiendo que solo el poseedor de la clave pueda revertir la transformación.
+
+## 🔨 El Ataque de Fuerza Bruta (Brute Force)
+Como bien describe la imagen, este ataque es el método más simple pero más persistente: el ensayo y error.
+
+Cómo funciona: El atacante utiliza scripts automatizados para probar miles (o millones) de combinaciones de contraseñas por segundo hasta que una coincide.
+
+Por qué el cifrado ayuda: Si un atacante intercepta una base de datos cifrada, no solo necesita la contraseña del sistema, sino que tendría que aplicar fuerza bruta para adivinar la clave de descifrado. Esto puede tomar años o incluso siglos con la tecnología actual.
+
+El factor "objetivo poco atractivo": En ciberseguridad hablamos de "elevar el costo del ataque". Si un hacker ve que tus datos están bien cifrados, probablemente busque una víctima más fácil (como ocurrió con Equifax, que tenía credenciales sin cifrar).
+
+🛡️ Beneficios Estratégicos del Cifrado
+Más allá de la técnica, el cifrado es una herramienta de gestión de reputación:
+
+Protección contra Intercepción: Si los datos en movimiento (red) son interceptados, el atacante solo ve "galimatías".
+
+Seguridad de los Clientes: Almacenar datos en formato cifrado garantiza que, incluso ante una intrusión física o lógica, la Confidencialidad se mantenga intacta.
+
+Cumplimiento Legal: Muchas normativas exigen el cifrado como estándar mínimo para manejar PII (como esos 145 millones de números de seguridad social de la imagen).
+
+### ⚔️ Amenaza: Ataques de Fuerza Bruta vs. Cifrado
+
+Un **Ataque de Fuerza Bruta** es un método de ensayo y error para adivinar credenciales. Mi estrategia como Analista para mitigar esto incluye:
+
+* **Cifrado Robusto:** Utilizar algoritmos que conviertan los datos en "galimatías" inútiles para el atacante.
+* **Políticas de Complejidad:** Implementar requisitos de contraseñas largas y variadas (Control Administrativo) para que el tiempo necesario para un ataque de fuerza bruta sea matemáticamente inviable.
+* **Bloqueo de Intentos:** Configurar controles técnicos que bloqueen una cuenta tras X intentos fallidos.
+
+> **Lección del caso Equifax:** La falta de cifrado en las credenciales administrativas permitió que los atacantes tomaran el control total. El cifrado no solo protege el dato, protege la continuidad del negocio y la reputación de la marca.
+
+## 🚀 Reflexión para un "White Hat"
+Como sos estudiante de la Universidad del Gran Rosario, recordá que en tus laboratorios de Kali Linux, herramientas como John the Ripper o Hydra se usan justamente para probar la resistencia de las contraseñas mediante fuerza bruta.
+
+¿Viste lo importante que es balancear la técnica con la estrategia? El cifrado es la herramienta, pero la política de seguridad (Gobernanza) es la que decide dónde y cómo usarla.
+
+## 🔑 ¿Cómo funciona el Cifrado de Clave Pública?
+A diferencia de los métodos clásicos que vimos (como el César), donde se usa la misma clave para cifrar y descifrar, aquí cada usuario tiene un par de claves matemáticas vinculadas:
+
+## Clave Pública: Es como tu dirección de correo o tu CBU; se puede compartir con todo el mundo. Se utiliza para cifrar el mensaje.
+
+## Clave Privada: Es como la contraseña de tu cuenta; solo vos la tenés y nadie más debe conocerla. Se utiliza para descifrar el mensaje.
+
+El flujo lógico es:
+
+Si yo quiero enviarte un mail, busco tu clave pública y cifro el mensaje con ella.
+
+Una vez cifrado, ese mail es un "galimatías" que viaja por internet.
+
+Solo vos, con tu clave privada, podés abrirlo y leerlo.
+
+### 📧 Cifrado de Clave Pública (Asimétrico)
+
+Para proteger los **datos en movimiento** (especialmente correos electrónicos), implementamos el cifrado asimétrico. Este método es fundamental para garantizar que el mensaje solo sea leído por el destinatario legítimo.
+
+* **Dato en Tránsito:** El correo electrónico mientras viaja del remitente al destinatario.
+* **Mecanismo:** * Se utiliza la **Clave Pública** del destinatario para cerrar el candado (cifrar).
+    * Se utiliza la **Clave Privada** del destinatario para abrir el candado (descifrar).
+
+> **Importancia técnica:** Este método resuelve el problema de cómo compartir claves de forma segura a través de internet, algo que el cifrado simétrico tradicional no puede hacer fácilmente.
+
+## ✉️ El paso a paso del envío seguro:
+Tu amigo te da su "candado": Tu amigo tiene dos claves. Él publica su Clave Pública (imaginala como un candado abierto que cualquiera puede usar).
+
+Vos cerrás el mensaje: Cuando le escribís, vos usás la Clave Pública de tu amigo para cifrar el correo. Una vez que hacés esto, el mensaje se transforma en "galimatías".
+
+El viaje: El correo viaja por internet cifrado. Si un hacker lo intercepta, no puede hacer nada porque no tiene la llave.
+
+Tu amigo abre el mensaje: Solo tu amigo tiene la Clave Privada (la única llave que abre ese candado específico). Él la usa para descifrar el mensaje y leerlo.
+
+## 💡 La analogía del Buzón:
+Para que no te olvides nunca, pensalo así:
+
+Clave Pública: Es como la ranura del buzón de tu amigo. Cualquiera puede pasar por la calle y meter una carta (cifrar), pero una vez que la carta cae adentro, ya nadie puede sacarla.
+
+Clave Privada: Es la llave de la puertita trasera del buzón. Solo tu amigo tiene esa llave para sacar las cartas y leerlas (descifrar).
+
+📝 Resumen:
+"En el cifrado asimétrico, el emisor cifra el mensaje utilizando la clave pública del receptor. De esta manera, se garantiza que solo el poseedor de la clave privada correspondiente (el receptor legítimo) pueda acceder a la información original."
+
+## 🛡️ Las 3 Funciones del Cifrado de Red Moderno
+Cuando los datos viajan (en movimiento) entre un servidor y un cliente (como tu PC), estos algoritmos garantizan lo siguiente:
+
+1. Autenticación (¿Sos quién decís ser?)
+Asegura que el origen del mensaje es legítimo.
+
+* Cómo funciona: El sistema verifica certificados digitales (como el candadito de las webs), contraseñas o biometría antes de permitir el acceso.
+
+* Para el Analista: Evita que un atacante suplante la identidad de un servidor bancario o de una base de datos corporativa.
+
+2. Integridad (¿Alguien cambió el mensaje?)
+Verifica que los datos no hayan sido alterados durante el viaje.
+
+* Cómo funciona: Los algoritmos generan firmas digitales o códigos MAC. Si un solo bit cambia en el camino, la firma ya no coincide y el sistema descarta los datos.
+
+* Para el Analista: Es vital para transacciones financieras o actualizaciones de software; asegura que el archivo que descargaste es exactamente el que envió el autor.
+
+3. No Rechazo o No Repudio (Yo no fui...)
+Garantiza que ninguna de las partes pueda negar que participó en la transmisión.
+
+* Cómo funciona: El remitente tiene una prueba de que el mensaje se entregó y el receptor tiene una prueba de quién lo envió.
+
+* Para el Analista: Esto es esencial para temas legales y contratos digitales. Si enviás una orden de compra cifrada, no podés decir después "yo no la envié".
+
+### 🌐 Cifrado de Red y Garantías de Seguridad
+
+El cifrado moderno ha evolucionado más allá del estándar **DES** (hoy considerado inseguro/obsoleto) para ofrecer una arquitectura de confianza completa:
+
+* **Autenticación:** Validación de identidad mediante certificados digitales y biometría.
+* **Integridad:** Uso de firmas digitales y códigos MAC para asegurar que el dato no fue modificado en tránsito.
+* **No Rechazo:** Garantía técnica de que ni el emisor ni el receptor pueden negar la transacción (evidencia digital).
+
+> **Contexto Técnico:** Estos pilares son los que permiten que iniciativas de seguridad modernas sean confiables, protegiendo no solo la privacidad del dato, sino la validez de la operación completa.
+
+### ⚖️ Comparativa: Algoritmos Simétricos y Asimétricos
+
+En la implementación de controles técnicos, distingo entre dos arquitecturas de cifrado:
+
+#### 1. Cifrado Simétrico (Clave Única)
+* **Algoritmo:** **AES** (Advanced Encryption Standard).
+* **Ventaja:** Alta velocidad de procesamiento.
+* **Desafío:** La distribución segura de la clave; si el atacante intercepta la clave privada compartida, la confidencialidad se rompe.
+
+#### 2. Cifrado Asimétrico (Par de Claves)
+* **Algoritmo:** **RSA** (Rivest-Shamir-Adleman).
+* **Ventaja:** Máxima seguridad, ya que la clave privada permanece local y secreta. Facilita la autenticación y firmas digitales.
+* **Desafío:** Mayor consumo de recursos computacionales (más lento).
+
+> **Aplicación Práctica:** El cifrado asimétrico se utiliza para la **identificación** y el intercambio seguro de claves, mientras que el simétrico se prefiere para el **cifrado de archivos masivos** y datos en reposo.
+
+## 🏛️ 1. ¿Cuál es más segura?
+En términos estrictos de protección de la clave, la Asimétrica es más segura.
+
+* ¿Por qué? Porque en el cifrado Asimétrico, vos nunca tenés que enviarle tu "llave maestra" (clave privada) a nadie. En cambio, en el Simétrico, si querés que alguien lea tu mensaje, tenés que compartir la clave. Si un hacker intercepta la clave mientras se la pasás a tu amigo, la seguridad se rompe totalmente.
+
+## 🛠️ 2. ¿En qué casos se usa cada una?
+Cifrado Simétrico (AES): Se usa para "Volumen"
+Se utiliza cuando necesitás velocidad y tenés que cifrar mucha información.
+
+* Archivos en tu PC: Si usás BitLocker o cifrás una carpeta en tu Windows Server.
+
+* Bases de datos: Para proteger los registros de millones de clientes.
+
+* WhatsApp: Una vez que la charla empezó, los mensajes fluyen rápido gracias al cifrado simétrico.
+
+* Cifrado Asimétrico (RSA): Se usa para "Identidad"
+Se utiliza para situaciones donde dos personas (o máquinas) no se conocen y necesitan hablar de forma segura por primera vez.
+
+* Firmas Digitales: Para demostrar que un PDF realmente lo firmaste vos.
+
+* Certificados de sitios web (HTTPS): Para que tu navegador sepa que está hablando con el servidor real de tu banco y no con un impostor.
+
+## 🤝 3. El "Truco Final": El Cifrado Híbrido
+En la vida real (como cuando entrás a Google o Facebook), se hace un proceso híbrido que combina lo mejor de los dos mundos:
+
+* El Saludo (Asimétrico): Tu PC y el servidor usan cifrado asimétrico para presentarse y verificar que son quienes dicen ser. Es lento, pero muy seguro.
+
+* El Intercambio: Por ese canal seguro "asimétrico", tu PC le envía al servidor una clave simétrica temporal.
+
+* La Navegación (Simétrico): A partir de ahí, toda la charla (fotos, textos, videos) se cifra con esa clave simétrica porque es mucho más rápido y no sobrecarga tu procesador.
+
+### ⚖️ Aplicación Práctica de Cifrados
+
+En la arquitectura de sistemas, selecciono el algoritmo según el caso de uso:
+
+* **Cifrado Simétrico (AES):** Lo aplico para **Datos en Reposo** (discos duros, bases de datos) por su alta velocidad de procesamiento.
+* **Cifrado Asimétrico (RSA):** Lo aplico para **Autenticación** y el intercambio inicial de claves, garantizando que la clave privada nunca viaje por la red.
+
+> **Dato Pro:** La seguridad moderna (HTTPS, VPN, SSH) utiliza un sistema **híbrido**: asimétrico para la conexión inicial y simétrico para el intercambio masivo de datos.
+
+## ----------------------------------Cifrado de archivos-------------------------------------------
+
+## 📂 Cifrado de Archivos: Protegiendo la "Caja", no solo el "Túnel"
+A diferencia del cifrado de red (que protege el viaje), el cifrado de archivos protege el dato en sí mismo.
+
+1. Datos en Reposo (At Rest)
+Es el uso más común. Aplicás el cifrado directamente sobre el disco duro o carpetas específicas.
+
+Soporte Nativo: Sistemas operativos como Windows (con BitLocker o EFS) y Linux (con LUKS) permiten que el sistema de archivos sea ilegible sin la clave de usuario.
+
+Dispositivos Extraíbles: Podés cifrar un pendrive USB completo. Si se te cae en la calle, quien lo encuentre solo verá "galimatías".
+
+2. Datos en Movimiento (In Transit)
+El cifrado de archivos ofrece una capa extra de seguridad (Defense in Depth).
+
+El escenario: Si enviás un Excel con PII por mail, el mail viaja por un túnel seguro (HTTPS/TLS). Pero si el servidor de correo del receptor es hackeado, el archivo queda expuesto.
+
+La solución: Si cifrás el archivo antes de enviarlo, el atacante puede interceptar el mail, pero no podrá abrir el Excel adjunto sin la clave que vos le diste a tu amigo por un canal seguro.
+
+### 🔒 Cifrado de Archivos y Sistemas de Archivos
+
+Como Analista, implemento el cifrado de archivos para garantizar la Confidencialidad de la PII y PHI, tanto en almacenamiento local como en tránsito:
+
+| Escenario | Aplicación Técnica | Resultado de Seguridad |
+| :--- | :--- | :--- |
+| **Disco Local / Servidor** | Cifrado de volumen completo (BitLocker/LUKS). | Protección contra robo físico del hardware. |
+| **Almacenamiento Externo** | Cifrado de unidades USB / Discos extraíbles. | Datos ilegibles en caso de pérdida del dispositivo. |
+| **Envío de Documentos** | Cifrado a nivel de archivo (File-level encryption). | Seguridad persistente del dato, incluso si el canal de envío falla. |
+
+> **Principio de Seguridad:** El cifrado de archivos asegura que el control de acceso acompañe al dato, sin importar dónde resida o por dónde viaje.
+
+### 📈 Camino de Especialización (Roadmap)
+
+Como parte de mi compromiso con la formación continua en ciberseguridad, tengo como objetivo la certificación:
+
+* **EC-Council Certified Encryption Specialist (ECES):**
+    * **Enfoque:** Profundizar en algoritmos simétricos, asimétricos y protocolos de hashing.
+    * **Propósito:** Desarrollar la capacidad técnica para seleccionar e implementar estándares de cifrado robustos que aseguren la confidencialidad e integridad en infraestructuras críticas.
+    * **Mentalidad:** Evolucionar del análisis de sistemas hacia la arquitectura de seguridad defensiva.
+
+### 🎯 Próximos Pasos y Certificaciones (Roadmap)
+
+Como parte de mi especialización en seguridad de datos y criptografía, tengo proyectado cursar la siguiente certificación:
+
+* **ECES (EC-Council Certified Encryption Specialist):** * **Enfoque:** Algoritmos simétricos/asimétricos, hashing, teoría numérica y criptoanálisis.
+    * **Enlace oficial:** [EC-Council Certified Encryption Specialist (ECES)](https://www.eccouncil.org/train-certify/ec-council-certified-encryption-specialist-eces/)
+
 
