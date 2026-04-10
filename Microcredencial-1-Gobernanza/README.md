@@ -591,3 +591,29 @@ Comunicación escrita: Los analistas de seguridad de datos deben ser expertos en
 
 Atención al detalle: Los analistas de seguridad de datos deben prestar atención a los detalles cuando auditan el programa de seguridad de una organización. Deben identificar todas las formas sutiles que podría usar un atacante para poner en peligro los datos de una organización, por ejemplo explotando vulnerabilidades en la configuración de seguridad de la red. 
 
+## ----------------------------Cifrado------------------------------------------------------
+
+### 🔑 Cifrado: La última línea de defensa de la Confidencialidad
+
+El cifrado es el proceso de convertir texto en claro en un formato ilegible (texto cifrado) mediante una clave. Es el control técnico por excelencia para mitigar el impacto de una filtración:
+
+* **Protección de PII:** Si los 145 millones de números de seguridad social de Equifax hubieran estado cifrados, los atacantes habrían obtenido datos inútiles.
+* **Preservación de la Tríada:** El cifrado garantiza la **Confidencialidad** incluso si el atacante logra romper el parámetro de **Almacenamiento** o **Acceso**.
+
+> **Concepto Clave:** En mi rol de analista, priorizo el cifrado tanto para datos **en tránsito** (vía protocolos como TLS/SSL) como para datos **en reposo** (usando cifrado de disco o base de datos).
+
+![CIFRADO ](/img/cifrado1.png)
+![CIFRADO CESAR](/img/cifrado_cesar.png)
+![CIFRADO MONOALFABETICO](/img/cifrado_mono.png)
+Nota: A menudo se utilizan de manera indistinta los términos cifrar y codificar, pero en ciberseguridad sus significados difieren. El cifrado convierte cada símbolo o carácter en otro símbolo o carácter. En cambio, la codificación convierte unidades de significado mayores, como palabras o frases enteras, en otras palabras o frases. 
+
+Por ejemplo, veamos la siguiente frase Esta información está clasificada. El cifrado César podría convertir cada letra en la letra que se ubica tres lugares después en el alfabeto. El texto cifrado resultante es Hvwd lairqdflrq hvwd fodvlilfdgd. En contraste, en el caso de la codificación se convertiría cada palabra en otra palabra, como Un por Esta, elefante por información, corre por está y libre por clasificada. En este caso, la frase codificada es Un elefante corre libre.
+
+Como el cifrado utiliza algoritmos que actúan sobre caracteres individuales, se puede automatizar con mayor facilidad el cifrado y el descifrado con computadores.  
+
+![DESCIFRADO](/img/desifrado.png)
+
+Concepto,Nivel de Operación,Ejemplo,Ventaja en IT
+Cifrado,Caracteres individuales (símbolos).,Hola -> Krod (César +3),Muy fácil de automatizar con algoritmos computacionales.
+Codificación,Unidades de significado (palabras/frases).,Misión cumplida -> El águila aterrizó,"Útil para comunicación humana encubierta, pero difícil de escalar técnicamente."
+
