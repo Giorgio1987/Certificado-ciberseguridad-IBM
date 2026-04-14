@@ -1132,3 +1132,83 @@ Como profesional en formación, consulto las siguientes fuentes de autoridad par
 * **Formación:** [EC-Council Certified Encryption Specialist](https://www.eccouncil.org/train-certify/ec-council-certified-encryption-specialist-eces/) - Roadmap para especialización en criptografía aplicada.
 
 
+## ---------------------- GOBERNANZA RIESGO Y CUMPLIMIENTO --------------------------------------------
+
+## El marco de gobernanza, riesgo y cumplimiento (GRC) es fundamental para gestionar la privacidad de los datos. Las organizaciones lo necesitan para preservar la confidencialidad de los datos y la confianza de las partes interesadas, y tu lo necesitas si quieres desarrollar una trayectoria profesional exitosa en ciberseguridad. 
+
+## Te damos la bienvenida al módulo de Gobernanza, Riesgo y Cumplimiento. En este módulo, aprenderás sobre cada parte del marco de GRC. Descubrirás el propósito de la gobernanza y examinarás sus cuatro componentes básicos. A continuación, explorarás el riesgo y practicarás la realización de una evaluación de riesgos. Por último, aprenderás sobre el cumplimiento de leyes, regulaciones y estándares esenciales que las organizaciones deben cumplir, así como los controles típicos necesarios para garantizar el cumplimiento. 
+
+## 🏛️ ¿Qué es la Gobernanza en Ciberseguridad?
+No se trata de configurar un firewall, sino de quién decide qué debe bloquear ese firewall. La gobernanza es el marco de reglas y procesos que aseguran que las actividades de TI estén alineadas con los objetivos del negocio.
+
+![Gobernanza](/img/gov.png)
+## Las 3 Herramientas de la Gobernanza:
+
+* Objetivos: ¿Qué quiere lograr la empresa? (Ej: "Ser la tienda más segura para comprar online").
+
+* Políticas: Las reglas de alto nivel. (Ej: "Todos los empleados deben usar autenticación de dos factores").
+
+* Procedimientos: El paso a paso técnico. (Ej: "Cómo configurar el 2FA en el correo corporativo").
+
+### 🏛️ Fundamentos de Gobernanza (Governance)
+
+La gobernanza es el pilar que transforma los objetivos de negocio en acciones de seguridad concretas y medibles:
+
+* **Alineación Estratégica:** Garantiza que cada control técnico (como el cifrado o los backups) responda a una necesidad real de la organización.
+* **Cumplimiento (Compliance):** Asegura que la empresa respete las normativas legales (como HIPAA o GDPR) y las expectativas de los clientes.
+* **Cultura de Seguridad:** Facilita que los empleados comprendan su rol y responsabilidad, eliminando la ambigüedad en los procesos.
+
+> **Visión del Analista:** La gobernanza es el "mapa" que guía la implementación técnica; sin ella, la seguridad es reactiva y desorganizada.
+
+## 💡 Un ejemplo mio
+Imaginá que en tu canal TecnoGio decidís que "la privacidad del suscriptor es lo primero".
+
+* Objetivo: Proteger la identidad de quienes comentan.
+
+* Política: No mostrar correos electrónicos en pantalla durante los tutoriales.
+
+* Procedimiento: Usar una herramienta de edición para pixelar los datos sensibles antes de subir el video.
+
+## 🏛️ Los 3 Pilares del GRC
+1. Gobernanza (Governance)
+Es el conjunto de reglas que aseguran que las actividades de TI apoyen los objetivos de la empresa.
+
+Qué hace: Define quién toma las decisiones y crea las políticas (ej. "Nadie puede usar USBs personales").
+
+Objetivo: Que todos remen para el mismo lado.
+
+2. Riesgo (Risk)
+Es el proceso de identificar, evaluar y responder a las amenazas que podrían afectar a la empresa.
+
+Qué hace: Se pregunta "¿Qué podría salir mal?" (ej. un ataque de Ransomware o un incendio en el datacenter) y decide qué hacer al respecto.
+
+Objetivo: Priorizar los recursos para proteger lo más importante.
+
+![RISK](/img/risk.png)
+
+3. Cumplimiento (Compliance)
+Es asegurarse de que la empresa siga las leyes, regulaciones y estándares de la industria.
+
+Qué hace: Verifica que se cumplan normas como la Ley HIPAA (que vimos en tus ejercicios), GDPR o normativas del BCRA (si trabajás en un banco con COBOL).
+
+Objetivo: Evitar multas, sanciones legales y pérdida de reputación.
+
+## 🔄 Cómo interactúan entre sí
+El GRC no es una lista estática, es un ciclo continuo:
+
+La Gobernanza establece la estrategia.
+
+El Riesgo identifica qué puede impedir esa estrategia.
+
+El Cumplimiento asegura que la respuesta al riesgo sea legal y ética.
+
+### 🛡️ Marco de Gobernanza, Riesgo y Cumplimiento (GRC)
+
+Implemento una visión estructurada de la ciberseguridad basada en el modelo GRC:
+
+* **Governance (G):** Alineación de la infraestructura técnica con la misión organizacional.
+* **Risk (R):** Identificación proactiva de vulnerabilidades y amenazas para minimizar el impacto operativo.
+* **Compliance (C):** Aseguramiento de la integridad operativa mediante el cumplimiento de marcos legales (NIST, ISO 27001) y regulaciones locales.
+
+> **Mentalidad Analítica:** Un GRC sólido permite que la seguridad sea un facilitador del negocio y no un obstáculo, transformando la prevención en una ventaja competitiva.
+
