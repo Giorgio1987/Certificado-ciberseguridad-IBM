@@ -2085,3 +2085,576 @@ Entiendo la jerarquía y obligatoriedad de los requisitos en ciberseguridad:
 * **Estándares:** Marcos de trabajo voluntarios (NIST, ISO) que definen la excelencia técnica y las mejores prácticas de la industria.
 
 > **Reflexión Técnica:** "La ley te obliga a ser seguro; el estándar te enseña a serlo."
+
+## --------------- PROYECTO ------------------------------------------------------------------------------------------------------------
+
+## Descripción del proyecto
+Te damos la bienvenida al proyecto final Evaluar la postura de seguridad de los datos de una organización 
+
+En este proyecto final, evaluarás la postura de seguridad de los datos de Cedarville Family Health, un proveedor de atención médica de Rhode Island. El objetivo es identificar y abordar posibles problemas en las siguientes áreas: 
+
+##
+Seguridad de los datos y de la información
+
+##
+Cumplimiento de las disposiciones de la Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA)
+
+Su proceso incluye la evaluación sistemática de las prácticas de seguridad actuales de la clínica basadas en la documentación de la directora del consultorio. A medida que examines esta documentación, identificarás los riesgos internos y externos, analizarás las consecuencias asociadas y determinarás si es necesario realizar intervenciones inmediatas. 
+
+Luego de evaluar las políticas y procedimientos de la organización, recomendarás las medidas de control adecuadas para mejorar la seguridad y cumplir con las disposiciones de la ley HIPAA. En general, tu objetivo es reforzar la infraestructura de seguridad de la información de Cedarville Family Health, fomentando una mayor confianza del paciente y la eficiencia organizacional.
+
+## Aprendizaje previo
+
+Este proyecto se basa en los conocimientos y habilidades que adquiriste en estos módulos:
+
+##
+Datos y privacidad
+
+##
+Gobernanza, riesgo y cumplimiento
+
+## Resumen de competencias
+Luego de completar este proyecto final, deberías ser capaz de:
+##
+Evaluar la seguridad y la privacidad de los datos
+##
+Evaluar el riesgo
+##
+Elaborar un plan para las copias de seguridad
+##
+Aplicar el cifrado de archivos y unidades
+## 
+Habilidades para la inserción laboral
+##
+Además, habrás practicado estas habilidades para la inserción laboral:
+##
+Pensamiento analítico
+Pensamiento crítico
+Documentación
+Atención al detalle
+
+## Pensamiento analítico
+Demostrarás pensamiento analítico evaluando la postura de seguridad actual de Cedarville Family Health empleando los requisitos de la ley HIPAA y tus conocimientos sobre la seguridad de los datos y la información. Debes analizar los documentos proporcionados, identificar brechas en las políticas y procedimientos de la clínica y evaluar los riesgos. La evaluación de Cedarville Family Health requiere un enfoque sistemático y lógico para desglosar el complejo problema de ciberseguridad en partes manejables. 
+
+
+## Pensamiento crítico
+Aplicarás el pensamiento crítico para interpretar los documentos proporcionados y formular soluciones eficaces. Esto incluye determinar si los riesgos identificados son tolerables y recomendar controles para gestionar estos riesgos. Además, deberás desarrollar un plan de respaldo de datos y aplicar principios de cifrado. Debes usar tu criterio y las habilidades de toma de decisiones para discernir cuáles son las preocupaciones de seguridad de datos más pertinentes y cómo abordarlas mejor. 
+
+## Documentación
+Las habilidades de documentación son vitales en este proyecto. Documentarás de manera minuciosa los resultados, razonamientos y recomendaciones respondiendo preguntas en un formulario simulado de evaluación de seguridad organizacional. 
+
+## Atención al detalle
+Debes demostrar precisión y atención a los detalles al revisar la documentación de la ley HIPAA para conocer los requisitos pertinentes, identificar problemas de seguridad de datos en la documentación de la clínica y proponer soluciones.
+
+## Descripción general
+## En el paso 1, evaluar la postura de seguridad de los datos de Cedarville Family Health, leerás sobre Cedarville Family Health, una pequeña clínica de atención médica. También leerás documentos que te ayudarán a evaluar el riesgo de la clínica, como sus políticas de ciberseguridad y resúmenes de los requisitos pertinentes de la Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA). A continuación, responderás a preguntas sobre la seguridad de los datos, las prácticas y los riesgos de la clínica para completar el formulario de evaluación de la postura de seguridad de los datos de una organización. Aplicarás los requisitos de la ley HIPAA y tus conocimientos sobre gobernanza, riesgo, cumplimiento y seguridad de los datos para responder a estas preguntas. 
+
+## En el paso 2, aplicar controles de seguridad, completarás las secciones del formulario que refieren a los controles de seguridad. En primer lugar, responderás a preguntas sobre las copias de seguridad de los datos para desarrollar un plan de copias de seguridad. Después, responderás a preguntas adicionales para determinar qué prácticas de cifrado recomendarás a la clínica para proteger los datos de sus pacientes.
+
+
+
+### 🏛️ ¿Qué es HIPAA en la práctica?
+No es solo una lista de consejos; es una ley federal obligatoria. Si una clínica como **Cedarville Family Health** no la cumple, enfrenta multas millonarias y juicios.
+
+Se divide principalmente en dos grandes "reglas" que vas a tener que evaluar en tu proyecto:
+
+1.  **Regla de Privacidad (Privacy Rule):**
+    * Se enfoca en **quién** tiene derecho a ver la información.
+    * Protege el **ePHI** (Información de Salud Protegida Electrónica). Solo el personal autorizado puede acceder a la historia clínica de un paciente.
+
+2.  **Regla de Seguridad (Security Rule):**
+    * Se enfoca en el **cómo** se protege esa información técnicamente.
+    * Aquí entra lo que estás estudiando: **Cifrado**, **MFA**, **Copias de Seguridad (Backups)** y **Control de Accesos**.
+
+
+
+---
+
+### 🛠️ ¿Por qué te lo dan en el curso de IBM?
+Porque es el estándar de oro para aprender a manejar **Datos Sensibles**. En ciberseguridad, los datos de salud son más valiosos en el mercado negro que los datos de una tarjeta de crédito, porque los datos de salud no se pueden cambiar (tu historial médico es para siempre).
+
+**En tu proyecto de Cedarville, HIPAA te va a servir para medir las "brechas" (gaps):**
+* **Si el documento dice:** "Los médicos anotan las claves en un post-it".
+* **Tu análisis bajo HIPAA será:** "Incumplimiento de la Regla de Seguridad (Control de Acceso). Riesgo de exposición de ePHI".
+
+---
+
+### 💡 Conexión con lo que ya sabés
+* **En el Banco Austral:** Tu "Norte" era el BCRA y proteger el dinero.
+* **En Cedarville:** Tu "Norte" es HIPAA y proteger la privacidad y la vida del paciente.
+
+**¿Viste que el Paso 2 te pide hablar de cifrado y backups?**
+Eso es porque HIPAA exige que, si un hacker entra a la red de la clínica, los archivos estén **cifrados** (para que no los pueda leer) y que haya **backups** (para que la clínica pueda seguir atendiendo si hay un ataque de Ransomware).
+
+![primer imagen](/img/h1.png)
+![segunda imagen](/img/h2.png)
+![tercera imagen](/img/h3.png)
+![cuarta imagen](/img/h4.png)
+
+![Quinta imagen](/img/h5.png)
+![Sexta imagen](/img/h6.png)
+
+
+### 🏥 Análisis de las nuevas capturas
+
+**1. Disponibilidad y Recuperación de Datos:**
+* **La brecha:** El documento indica que Cedarville **no tiene un proceso de recuperación de datos probado**. Confían en backups manuales que no saben si funcionan.
+* **El Riesgo:** Ante un ataque de Ransomware, la clínica perdería acceso a las historias clínicas.
+* **Impacto HIPAA:** Incumplimiento del estándar de **Plan de Contingencia**. HIPAA exige que la organización pueda recuperar copias exactas de ePHI.
+* **Tu recomendación:** Implementar una solución de backup automatizada y realizar **pruebas de restauración trimestrales** para asegurar que los datos sean recuperables.
+
+**2. Integridad y Cifrado (image_4b867e.png):**
+* **La brecha:** Se menciona que los datos que salen de la clínica (hacia seguros o farmacias) no siempre viajan protegidos.
+* **El Riesgo:** **Intercepción de datos (Sniffing)**. Si alguien intercepta ese tráfico, puede leer los diagnósticos de los pacientes.
+* **Impacto HIPAA:** Viola la **Transmisión Segura**.
+* **Tu recomendación:** Implementar protocolos de cifrado para datos en tránsito, como **VPN** para accesos remotos y **TLS 1.2+** para correos electrónicos con información sensible.
+
+---
+
+### 📝 Cómo redactar tus respuestas en el formulario de IBM
+
+Usá estos párrafos para que tu entrega tenga un nivel profesional de **Analista de Riesgos**:
+
+* **Sobre Identificación de Riesgos:** > "Se ha identificado un riesgo crítico en la **Disponibilidad** de los datos debido a la falta de un plan de recuperación ante desastres formalizado. La dependencia de backups manuales sin verificación periódica pone a la clínica en una postura de vulnerabilidad ante incidentes de integridad de datos o ataques de cifrado malicioso."
+
+* **Sobre Medidas de Control:** > "Para mitigar los riesgos de acceso no autorizado, se recomienda la adopción inmediata de **Cifrado de Unidad Completa (FDE)** en todos los dispositivos móviles y la implementación de un **MFA** obligatorio para validar la identidad única del personal, eliminando la dependencia de contraseñas compartidas o expuestas físicamente."
+
+---
+
+### 💡 Un concepto que te va a servir para el cierre del proyecto:
+Como estás viendo el tema de **Cifrado**, recordá la diferencia entre:
+* **Simétrico:** Usás la misma clave para cifrar y descifrar (rápido, para discos rígidos).
+* **Asimétrico:** Usás una clave pública y una privada (ideal para mandar mails seguros a farmacias).
+
+Eso que mencionás es una de las **vulnerabilidades físicas y de cumplimiento** más graves que vas a encontrar en la documentación de la directora de **Cedarville Family Health**.
+
+
+### 🚩 El Problema: Transporte Inseguro de ePHI
+Llevarse los backups a casa es una práctica de "vieja escuela" para prevenir incendios en la clínica, pero hoy genera riesgos mayores:
+
+1.  **Falta de Cifrado:** Si el disco o pendrive no está cifrado (AES-256), cualquier persona que lo encuentre o lo robe puede acceder a las historias clínicas de todos los pacientes.
+2.  **Riesgo de Pérdida o Robo:** El trayecto entre la clínica y la casa es el momento de mayor vulnerabilidad. Un robo en el auto o la pérdida de la mochila expone a la clínica a multas masivas de HIPAA.
+3.  **Falta de Custodia (Chain of Custody):** No hay un registro de quién tiene los datos, dónde están guardados en la casa ni quién tiene acceso a ellos (familiares, visitas).
+
+
+
+### ⚖️ Incumplimiento de HIPAA
+HIPAA exige un **Plan de Contingencia** y **Controles de Acceso Físico**. Llevarse los datos de forma manual e informal viola:
+* **Security Rule (Physical Safeguards):** No hay control sobre las instalaciones donde se guardan los datos fuera de la clínica.
+* **Device and Media Controls:** No hay un procedimiento formal para el movimiento de medios que contienen ePHI.
+
+### 🛡️ Tu Recomendación en el Formulario de IBM
+Para corregir esto, no basta con decirle que no lo haga; tenés que proponer una solución técnica:
+
+* **Solución 1 (Nube Segura):** Reemplazar los backups manuales por una solución de **Backup en la Nube cifrado de extremo a extremo** que cumpla con HIPAA (ej. AWS S3 con cifrado). Esto elimina el transporte físico.
+* **Solución 2 (Si siguen usando discos):** Si deciden seguir llevando copias físicas, es obligatorio el **Cifrado de Unidad (FDE)** y el uso de maletines con seguridad física, además de un log de transporte firmado.
+* **Solución 3 (Regla 3-2-1):** Explicar que la copia "fuera de sitio" (off-site) es correcta, pero debe ser automatizada y protegida lógicamente, no físicamente por una persona.
+
+
+### 1. El Riesgo de "Datos en Reposo" (Data at Rest)
+Se refiere a la información guardada en los discos duros de la clínica y en los backups que la directora se lleva a su casa.
+* **Vulnerabilidad:** Al no estar cifrados, los archivos (historias clínicas, DNI, seguros) son legibles para cualquiera con acceso físico al hardware.
+* **Consecuencia HIPAA:** Una filtración de datos no cifrados obliga a la clínica a realizar una **notificación pública de brecha de seguridad**, lo que destruye la reputación de Cedarville y genera multas severas.
+
+
+
+### 2. El Riesgo de "Datos en Tránsito" (Data in Transit)
+Se refiere a la información que viaja por la red cuando mandan una receta a la farmacia o un informe al seguro médico.
+* **Vulnerabilidad:** Si usan canales comunes (como un mail estándar sin TLS o una red Wi-Fi mal configurada), un atacante puede realizar un ataque de **Man-in-the-Middle (MitM)** y capturar los paquetes de datos.
+* **Solución:** Implementar protocolos seguros (HTTPS, SFTP) y asegurar que los mails internos y externos usen cifrado de extremo a extremo.
+
+
+
+### 3. Propuesta de Control para el Formulario de IBM
+Cuando el formulario te pida cómo solucionar esto, podés recomendar estos dos estándares:
+
+* **AES-256 (Advanced Encryption Standard):** Es el algoritmo que deberías recomendar para los discos rígidos (Full Disk Encryption). Es prácticamente imposible de romper por fuerza bruta hoy en día.
+* **BitLocker o FileVault:** Son las herramientas comerciales más comunes para aplicar ese cifrado de forma sencilla en las laptops que salen de la clínica.
+
+---
+
+**💡 Un consejo para tu pensamiento crítico en el proyecto:**
+Recordá lo que vimos de la **"Joya de la Corona"**. En Cedarville, la joya es el **ePHI**. Si esos datos no están cifrados, la joya está expuesta en una vitrina de vidrio común en lugar de estar en una caja fuerte.
+
+Si te preguntan por la **integridad** (que los datos no sean modificados), el cifrado también ayuda, porque si un atacante altera un archivo cifrado sin la clave, el archivo se corrompe y el sistema detecta que fue manipulado.
+
+![septima](/img/h7.png)
+![octava](/img/h8.png)
+![novena](/img/h9.png)
+![decima](/img/h10.png)
+
+
+---
+
+## ✅ Lo que está bien (puntos fuertes)
+
+**1. Enfoque correcto en la triada CIA**
+
+* Mencionan **confidencialidad, integridad y disponibilidad** ✔️
+  👉 Esto es clave y está alineado con buenas prácticas.
+
+**2. Política clara de confidencialidad**
+
+* Solo personas autorizadas pueden acceder a datos de pacientes ✔️
+  👉 Fundamental en salud (tipo HIPAA en EE.UU.).
+
+**3. Protección de datos**
+
+* Hablan de **medidas físicas y electrónicas** ✔️
+  👉 Bien que no se quedan solo en lo digital.
+
+**4. Capacitación continua**
+
+* **Semanal + anual obligatoria** 🔥
+  👉 Esto es MUY bueno, muchas empresas fallan acá.
+
+---
+
+## ⚠️ Lo que falta o se puede mejorar
+
+Acá es donde podés sumar puntos si lo llevás a un foro o trabajo 👇
+
+### 1. ❌ Falta especificidad (muy general)
+
+La política es demasiado “declarativa”.
+
+👉 Ejemplo:
+
+* Dice que hay medidas… pero **no cuáles**
+* No menciona:
+
+  * cifrado
+  * backups
+  * control de accesos (roles)
+  * autenticación (MFA)
+
+📌 Mejora:
+
+> Incluir controles concretos (ej: cifrado de datos, autenticación multifactor, logs de acceso, etc.)
+
+---
+
+### 2. ❌ No define responsabilidades
+
+No queda claro:
+
+* ¿Quién es responsable de seguridad?
+* ¿Hay un CISO o encargado?
+* ¿Qué pasa si alguien incumple?
+
+📌 Mejora:
+
+> Definir roles y responsabilidades claras.
+
+---
+
+### 3. ❌ No hay gestión de incidentes
+
+No dice:
+
+* Qué hacer si hay una brecha de datos
+* Cómo se reporta
+* Tiempos de respuesta
+
+📌 Mejora:
+
+> Incluir un **plan de respuesta a incidentes**.
+
+---
+
+### 4. ❌ No menciona clasificación de la información
+
+👉 Tema clave que justo estás viendo.
+
+No distingue entre:
+
+* datos críticos (historias clínicas)
+* datos internos
+* datos públicos
+
+📌 Mejora:
+
+> Implementar clasificación (ej: pública, interna, confidencial, crítica).
+
+---
+
+### 5. ❌ No habla de backups ni continuidad
+
+En salud esto es crítico.
+
+📌 Falta:
+
+* copias de seguridad
+* plan de recuperación (DRP)
+* continuidad del negocio
+
+---
+
+### 6. ❌ No menciona auditorías o controles
+
+No dice si:
+
+* se revisa el cumplimiento
+* hay auditorías internas
+
+📌 Mejora:
+
+> Agregar revisiones periódicas.
+
+---
+
+### 7. ❌ Acceso “restringido” pero no definido
+
+Dice que el acceso está restringido… pero:
+
+* ¿por roles?
+* ¿por necesidad?
+* ¿principio de mínimo privilegio?
+
+📌 Mejora:
+
+> Aplicar **principio de menor privilegio** explícitamente.
+
+---
+
+## 💡 Sobre la capacitación (muy buen punto tuyo)
+
+Esto suma muchísimo:
+
+✔ Obligatoria
+✔ Frecuencia alta
+
+Pero podrías mejorar diciendo:
+
+* qué contenidos incluyen
+* evaluación de empleados
+* simulaciones (ej: phishing)
+
+---
+
+## 🧠 Conclusión (para que la uses directa si querés)
+
+La política es correcta a nivel general y demuestra una intención clara de proteger la información de los pacientes, especialmente en términos de confidencialidad. Sin embargo, presenta un nivel de abstracción alto y carece de detalles operativos clave como la definición de controles específicos, gestión de incidentes, clasificación de la información y asignación de responsabilidades.
+
+Para alinearse con estándares como ISO 27001 o regulaciones del sector salud, sería necesario complementar esta política con procedimientos más concretos, controles técnicos y mecanismos de auditoría.
+
+
+## 🏥 ¿Qué es HIPAA?
+
+Es una ley que regula cómo se protege la información médica de los pacientes (llamada **PHI – Protected Health Information**).
+
+👉 Aplica a:
+
+* Clínicas
+* Hospitales
+* Seguros médicos
+* Cualquier sistema que maneje datos de salud
+
+---
+
+## 🔐 ¿Qué exige HIPAA? (lo importante)
+
+HIPAA se basa en 3 grandes pilares:
+
+### 1. **Privacidad (Privacy Rule)**
+
+* Los datos del paciente **no pueden compartirse libremente**
+* Solo personas autorizadas pueden acceder ✔️ (tu política lo menciona bien)
+
+---
+
+### 2. **Seguridad (Security Rule)**
+
+Obliga a implementar medidas:
+
+* **Administrativas**
+  (políticas, capacitaciones, gestión de riesgos)
+
+* **Físicas**
+  (acceso a instalaciones, servidores, equipos)
+
+* **Técnicas**
+  (contraseñas, cifrado, control de accesos)
+
+👉 Acá tu clínica está floja porque no detalla estas medidas.
+
+---
+
+### 3. **Notificación de brechas (Breach Notification Rule)**
+
+* Si hay una fuga de datos, **se debe informar**
+* A los pacientes
+* Al gobierno
+* En ciertos casos, al público
+
+👉 Esto NO aparece en la política que viste ❌
+
+---
+
+## ⚖️ Relación con lo que analizaste
+
+Tu análisis encaja perfecto con HIPAA:
+
+✔ Bien:
+
+* Confidencialidad ✔️
+* Acceso restringido ✔️
+* Capacitación ✔️
+
+❌ Falta:
+
+* Gestión de incidentes (HIPAA lo exige)
+* Controles técnicos específicos
+* Auditoría y monitoreo
+* Detalle de cómo se protege la información
+
+---
+
+## 💡 Frase lista para el foro (si querés copiar 👇)
+
+> En el contexto de Estados Unidos, estas políticas deberían alinearse con la normativa HIPAA (Health Insurance Portability and Accountability Act), que establece requisitos específicos para la protección de la información de salud. Si bien la clínica contempla aspectos generales como la confidencialidad y la capacitación del personal, se observa una falta de detalle en controles técnicos, gestión de incidentes y notificación de brechas, los cuales son fundamentales según dicha regulación.
+
+---
+
+# Caso de Estudio: Seguridad de la Información en Entornos de Salud (Cedarville Family Health)
+
+Este documento resume los principios de ciberseguridad, gestión de riesgos y estrategias de mitigación analizados para el fortalecimiento de la infraestructura tecnológica de una entidad sanitaria.
+
+## 🛡️ 1. Identificación de Riesgos y Amenazas
+
+Se categorizaron los vectores de ataque en dos frentes principales:
+
+* **Riesgos Externos:** * Explotación de vulnerabilidades en redes no seguras.
+    * Ataques de Ransomware mediante malware.
+    * Campañas de Phishing dirigidas a empleados.
+* **Riesgos Internos:**
+    * Falla en la custodia física de hardware (ej. robo de discos de backup).
+    * Accesos no revocados de ex-empleados (falla en el proceso de offboarding).
+    * Higiene de seguridad deficiente (administración inadecuada de contraseñas).
+
+## 🔑 2. Estrategias de Cifrado de Datos
+
+Dependiendo del estado y la naturaleza de los datos, se definieron los siguientes estándares:
+
+| Escenario | Tipo de Cifrado Recomendado | Justificación |
+| :--- | :--- | :--- |
+| **Datos en Reposo (Endpoints)** | Cifrado de Disco Completo (FDE) | Protege el sistema operativo y archivos ante robo físico del dispositivo. |
+| **Comunicaciones (Email)** | Cifrado Asimétrico | Uso de claves públicas/privadas para garantizar confidencialidad y autenticidad en tránsito. |
+| **Copias de Seguridad (Backups)** | Cifrado Simétrico | Optimiza la velocidad de procesamiento para grandes volúmenes de datos internos (ej. AES-256). |
+
+## 📂 3. Gestión de Continuidad del Negocio
+
+Para equilibrar la eficiencia operativa y la capacidad de recuperación ante desastres:
+
+* **Estrategia de Backup:** Implementación de **Copias de Seguridad Diferenciales**. Este método captura cambios desde el último backup completo, optimizando el espacio de almacenamiento y permitiendo una restauración más ágil que el método incremental.
+* **Respuesta a Incidentes (IRP):** Establecimiento de un plan integral para identificar y mitigar efectos de forma inmediata, priorizando la contención de la brecha y el cumplimiento normativo.
+
+## 📈 4. Gobernanza y Cumplimiento
+
+* **Evaluación de Postura:** Es fundamental realizar auditorías previas para identificar vulnerabilidades específicas antes de implementar nuevas medidas.
+* **Auditorías Periódicas:** Necesarias para garantizar el **cumplimiento continuo** (ej. HIPAA), adaptar las defensas a nuevas amenazas y verificar la efectividad de las políticas internas.
+* **Gestión de Ex-empleados:** No se debe tolerar el riesgo de acceso de personal desvinculado debido a las graves implicaciones legales, multas y riesgos de integridad de datos que conlleva.
+
+
+---
+
+## 📘 Resumen – Seguridad de la Información en Clínica (Cedarville Family Health)
+
+### 🔐 Políticas de Seguridad
+
+La clínica establece una política orientada a proteger la **confidencialidad, integridad y disponibilidad (CIA)** de la información, especialmente los datos de pacientes.
+
+**Puntos fuertes:**
+
+* Enfoque en confidencialidad
+* Acceso restringido a personal autorizado
+* Uso de medidas físicas y electrónicas
+* Capacitación obligatoria (semanal y anual)
+
+**Mejoras posibles:**
+
+* Falta de controles técnicos específicos (cifrado, MFA, logs)
+* No define roles y responsabilidades
+* No incluye gestión de incidentes
+* No contempla clasificación de la información
+* Falta de políticas de backup y continuidad
+* No menciona auditorías
+
+---
+
+### 🏥 Marco normativo en EE.UU.
+
+La clínica debería alinearse con **HIPAA (Health Insurance Portability and Accountability Act)**, que exige:
+
+* Protección de datos de salud (PHI)
+* Medidas administrativas, físicas y técnicas
+* Notificación de brechas de seguridad
+
+---
+
+### 💾 Tipos de Copias de Seguridad
+
+* **Completa (Full):**
+
+  * Copia todos los datos
+  * Alta seguridad, pero consume mucho espacio
+
+* **Incremental:**
+
+  * Copia solo cambios desde el último backup
+  * Rápida y eficiente (ideal para uso diario)
+
+* **Diferencial:**
+
+  * Copia cambios desde el último backup completo
+  * Balance entre espacio y velocidad
+
+**Uso recomendado:**
+
+* Backup completo semanal + incrementales diarios
+
+---
+
+### 📊 Regla 3-2-1
+
+Estrategia de respaldo:
+
+* 3 copias de los datos
+* 2 medios diferentes
+* 1 copia fuera de las instalaciones (off-site)
+
+**Objetivo:**
+Maximizar la **protección y disponibilidad de los datos**
+
+---
+
+### 🧠 Conceptos clave en seguridad
+
+* **Política:**
+  Define qué se debe hacer (obligatorio)
+  Ej: “Los datos deben estar cifrados”
+
+* **Estándar:**
+  Define valores concretos o métricas
+  Ej: “Responder en 24 horas”
+
+* **Procedimiento:**
+  Define cómo se hace
+  Ej: pasos para realizar un backup
+
+* **Directriz:**
+  Recomendación no obligatoria
+
+---
+
+### 🎯 Conclusión
+
+La clínica cuenta con una base adecuada de seguridad, pero necesita mayor nivel de detalle técnico y operativo para alinearse con estándares como HIPAA y buenas prácticas como ISO 27001, especialmente en áreas como gestión de incidentes, backups, controles de acceso y auditoría.
+
+---
+
+
+
+
+
+
