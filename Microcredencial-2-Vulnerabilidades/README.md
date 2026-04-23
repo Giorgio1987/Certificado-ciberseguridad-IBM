@@ -2331,3 +2331,22 @@ La gestión de vulnerabilidades es un proceso dinámico que responde a los cambi
 3. Como parte de un **ciclo de auditoría recurrente** para garantizar la resiliencia continua.
 
 > **Reflexión Final:** "La seguridad no es un producto, es un proceso". El Vulnerability Assessment es el motor que mantiene ese proceso en marcha, transformando la Inteligencia de Amenazas en medidas de protección reales.
+
+## ---------------------------------- Herramientas de pruebas de penetración ------------------------------------------------
+
+## Herramientas para la recopilación de información
+
+## Los evaluadores de pruebas de penetración emplean varias herramientas para recopilar información, incluidos mapeadores de red, escáneres de puertos, escáneres de vulnerabilidades y analizadores de paquetes. 
+
+
+## Los mapeadores de red encuentran y mapean todos los dispositivos en una red. También descubren datos sobre cada dispositivo, como su dirección IP. Algunos de los mapeadores de red más populares incluyen Angry IP Scanner y SolarWinds Network Topology Mapper.
+
+## Los escáneres de puertos identifican los puertos abiertos o disponibles de una red. Un puerto es un punto de conexión de red que envía o recibe datos para un servicio específico, como el correo electrónico. Un puerto abierto es aquel que acepta una conexión. Los atacantes quieren encontrar y explotar los puertos abiertos, y los administradores de red quieren cerrarlos o bloquearlos garantizando al mismo tiempo que los usuarios legítimos sigan teniendo acceso. 
+
+
+## Existen muchas herramientas de escaneo de puertos, como Netcat y SolarWinds Open Port Scanner, pero el escáner de puertos más conocido es Nmap. Nmap, abreviatura de Network Mapper, es un escáner de puertos y mapeador de red gratuito y de código abierto disponible para Windows, macOS, Linux y otros SO. La mayoría de las instalaciones de Nmap también incluyen Zenmap, la interfaz gráfica oficial de Nmap.
+
+## Los escáneres de vulnerabilidades analizan un sistema en busca de vulnerabilidades conocidas, como software obsoleto, parches faltantes, configuraciones erróneas o contraseñas débiles. Algunos escáneres de vulnerabilidades populares incluyen Nessus, Burp Suite y OWASP ZAP.
+
+## Los analizadores de paquetes, también conocidos como rastreadores de paquetes, analizadores de protocolos o analizadores de red, capturan e inspeccionan datos en tránsito a través de una red. Con un analizador de paquetes, puedes determinar la cantidad de tráfico, la frecuencia de transmisión y, posiblemente, incluso el contenido de los datos. Dos de los analizadores de paquetes más populares son tcpdump y Wireshark.
+
