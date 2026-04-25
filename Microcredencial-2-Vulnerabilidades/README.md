@@ -2350,3 +2350,407 @@ La gestión de vulnerabilidades es un proceso dinámico que responde a los cambi
 
 ## Los analizadores de paquetes, también conocidos como rastreadores de paquetes, analizadores de protocolos o analizadores de red, capturan e inspeccionan datos en tránsito a través de una red. Con un analizador de paquetes, puedes determinar la cantidad de tráfico, la frecuencia de transmisión y, posiblemente, incluso el contenido de los datos. Dos de los analizadores de paquetes más populares son tcpdump y Wireshark.
 
+
+# 🛡️ Formación en Ciberseguridad: Herramientas de Penetración
+
+Este repositorio contiene la documentación y conceptos clave aprendidos durante el curso de Ciberseguridad de **IBM**. A continuación, se detallan las herramientas esenciales utilizadas en las fases de reconocimiento y explotación.
+
+---
+
+## 1. 🔍 Recopilación de Información (Information Gathering)
+
+La fase de reconocimiento es el primer paso crítico. Permite a los evaluadores identificar activos y entender la infraestructura del objetivo.
+
+### Categorías de Herramientas
+
+| Categoría | Descripción | Ejemplos |
+| :--- | :--- | :--- |
+| **Mapeadores de Red** | Encuentran y mapean todos los dispositivos en una red, descubriendo datos como direcciones IP y topología. | *Angry IP Scanner, SolarWinds Network Topology Mapper* |
+| **Escáneres de Puertos** | Identifican qué puertos están abiertos y qué servicios están ejecutándose en los sistemas. | *Nmap, Masscan* |
+| **Escáneres de Vulnerabilidades** | Buscan debilidades conocidas, configuraciones erróneas o parches de seguridad faltantes. | *Nessus, OpenVAS, Nikto* |
+| **Analizadores de Paquetes** | Capturan e inspeccionan el tráfico de red en tiempo real para analizar protocolos. | *Wireshark, Tcpdump* |
+
+---
+
+## 2. ⚔️ Herramientas de Ataque y Explotación
+
+Una vez identificadas las vulnerabilidades, se utilizan herramientas específicas para demostrar el impacto mediante la explotación controlada.
+
+### 🚀 Marcos de Explotación (Exploitation Frameworks)
+Conjuntos de herramientas diseñados para automatizar la verificación de vulnerabilidades y la ejecución de *payloads*.
+* **Metasploit Framework:** El estándar más utilizado para desarrollo y ejecución de exploits.
+* **Core Impact:** Solución empresarial para pruebas de penetración automatizadas.
+* **Canvas:** Enfocado en el desarrollo de exploits y pruebas de penetración profundas.
+
+### 🔑 Descifrado de Contraseñas (Password Cracking)
+Aplicaciones para recuperar credenciales mediante el análisis de hashes o ataques directos.
+* **John the Ripper:** Versátil, soporta múltiples tipos de cifrado y hashes.
+* **Hashcat:** Herramienta de alta velocidad basada en el uso de GPU.
+* **Hydra:** Especialista en ataques de fuerza bruta en red (SSH, FTP, HTTP).
+
+---
+
+> [!IMPORTANT]
+> **Nota de Ética:** Todas estas herramientas deben utilizarse exclusivamente en entornos autorizados o laboratorios de práctica. El uso no autorizado en sistemas ajenos es ilegal.
+
+🛡️ Foco en Herramientas: OWASP ZAP
+El Zed Attack Proxy (ZAP) de OWASP es un escáner de vulnerabilidades de código abierto diseñado específicamente para probar la seguridad de aplicaciones web. Permite tanto el descubrimiento de fallos como su explotación para confirmar riesgos reales.
+
+⚙️ Metodología de Funcionamiento (Escaneo Automatizado)
+El flujo de trabajo estándar de ZAP se divide en tres fases principales:
+
+* Paso 1: Escaneo Pasivo (Passive Scan)
+En esta fase, ZAP utiliza una Araña (o crawler) para navegar por la aplicación sin interactuar de forma agresiva.
+
+* Función: Busca e indexa contenido (hipervínculos, etiquetas HTML y metadatos).
+
+* Proceso: Crea una lista de URLs, accede a ellas y repite el proceso recursivamente hasta mapear toda la estructura del sitio.
+
+* Resultado: Genera un mapa completo de las páginas y anota vulnerabilidades potenciales detectadas en el tráfico.
+
+* Paso 2: Escaneo Activo (Active Scan)
+Una vez mapeada la aplicación, ZAP pasa a la ofensiva.
+
+* Función: Emplea ataques conocidos contra las URLs identificadas.
+
+* Objetivo: Intentar explotar las vulnerabilidades para confirmar su existencia y descubrir fallos más profundos que no son visibles mediante la simple navegación.
+
+* Paso 3: Informe (Reporting)
+ZAP consolida los hallazgos de ambos escaneos en un documento técnico detallado.
+
+* Clasificación: Las vulnerabilidades se categorizan por nivel de riesgo.
+
+Utilidad: Este informe es la base para priorizar la remediación y guiar investigaciones posteriores más detalladas.
+
+💡 Tip para tu repositorio
+Como estás usando Kali Linux o Parrot OS, podrías añadir una pequeña nota sobre cómo lanzarlo desde la terminal:
+
+
+# Para iniciar ZAP en modo GUI
+zaproxy
+
+
+## 🌐 Análisis de Aplicaciones Web: OWASP ZAP
+
+El **Zed Attack Proxy (ZAP)** es un escáner de vulnerabilidades de código abierto diseñado para probar la seguridad de aplicaciones web. Es una de las herramientas más activas del proyecto OWASP.
+
+### ⚙️ Metodología de Escaneo Automatizado
+
+ZAP opera siguiendo un flujo de trabajo lógico en tres etapas fundamentales:
+
+1.  **Escaneo Pasivo (Passive Scan):**
+    * Utiliza una **Araña** (crawler) para navegar e indexar el contenido (hipervínculos, etiquetas HTML, metadatos).
+    * Mapea las páginas de la aplicación y detecta vulnerabilidades sin interactuar agresivamente con el servidor.
+
+2.  **Escaneo Activo (Active Scan):**
+    * Emplea ataques conocidos contra las URLs identificadas en la fase anterior.
+    * Su objetivo es intentar explotar las debilidades y descubrir nuevas vulnerabilidades que no son visibles de forma pasiva.
+
+3.  **Informe (Reporting):**
+    * Genera un reporte detallado clasificando los hallazgos por **nivel de riesgo**.
+    * Sirve como hoja de ruta para priorizar la investigación y corrección de los fallos encontrados.
+
+---
+
+> [!IMPORTANT]
+> **Nota de Ética:** Todas estas herramientas deben utilizarse exclusivamente en entornos autorizados o laboratorios de práctica. El uso no autorizado en sistemas ajenos es ilegal.
+
+![Zap](/img/zap.png)
+### 🖼️ Exploración de la Interfaz
+
+Para dominar OWASP ZAP, es esencial entender sus paneles principales:
+
+1. **Contexto y Sitios (Izquierda):** Visualización jerárquica del árbol de directorios del objetivo.
+2. **Modos de Inicio (Centro):**
+   - **Escaneo Automatizado:** Ideal para una evaluación inicial rápida.
+   - **Exploración Manual:** Permite navegar el sitio mientras ZAP captura el tráfico de fondo.
+3. **Panel de Alertas y Respuesta (Abajo):** Registro de todas las peticiones (History) y clasificación de fallos de seguridad detectados (Alerts).
+4. **Barra de Herramientas:** Configuración de Proxies, Certificados SSL y herramientas de ataque como *Brute Force* o *Spider*.
+
+![Zap1](/img/zap1.png)
+![Zap2](/img/zap2.png)
+![Zap3](/img/zap3.png)
+### 🕵️‍♂️ Análisis de Hallazgos
+
+Para documentar vulnerabilidades en un reporte técnico, nos enfocamos en dos áreas clave de la interfaz:
+
+1. **Jerarquía del Sitio (Ventana Tree):** - Expandimos el nodo **Sites** para revisar la estructura del sitio.
+   - Buscamos archivos de configuración expuestos o directorios de administración.
+
+2. **Gestión de Vulnerabilidades (Panel Alerts):**
+   - Revisamos cada alerta generada en la **Ventana Information**.
+   - **Tip:** Al seleccionar una alerta, ZAP muestra en el panel derecho la descripción detallada, la evidencia en la solicitud HTTP y las recomendaciones de mitigación para el desarrollador.
+
+### 🚥 Clasificación de Vulnerabilidades
+
+Para una gestión eficiente, ZAP categoriza los hallazgos mediante un sistema de banderas de colores:
+
+- **Banderas Rojas (Riesgo Alto):** Vulnerabilidades graves que deben ser remediadas de inmediato para evitar brechas de seguridad críticas.
+- **Banderas Naranjas/Amarillas (Riesgo Medio/Bajo):** Fallos de configuración o debilidades que aumentan la superficie de ataque del sitio.
+- **Banderas Azules (Información):** Datos técnicos recopilados que ayudan al analista a entender mejor el entorno tecnológico del objetivo.
+
+> **Tip de Analista:** Al realizar un reporte, siempre se debe comenzar detallando las alertas rojas, ya que representan la mayor amenaza para la integridad de la aplicación.
+
+### 🔍 Nota sobre el Árbol de Sitios (Multi-dominio)
+
+Durante un escaneo, es normal observar múltiples dominios en la ventana **Sites**. Esto no significa que estemos atacando dominios ajenos, sino que ZAP está detectando la infraestructura completa de la aplicación:
+
+- **Dependencias Externas:** Scripts, fuentes y estilos cargados desde CDNs.
+- **Servicios de Terceros:** Rastreadores de análisis, mapas integrados o pasarelas de pago.
+- **Arquitectura Distribuida:** Conexiones a APIs o bases de datos que residen en distintos servidores.
+
+**Advertencia de Seguridad:** Como analista, es vital configurar el **Scope (Alcance)** en ZAP para indicarle a la herramienta que solo realice ataques activos en el dominio sobre el cual tenemos permiso, ignorando los dominios de terceros para evitar problemas legales.
+
+![Zap4](/img/zap4.png)
+
+### 🚥 Clasificación de Riesgos
+- 🔴 **Rojo (Alto):** Vulnerabilidades críticas como **XSS (Reflected)** o Inyecciones. Requieren remediación inmediata.
+- 🟠 **Naranja (Medio):** Fallos que comprometen datos bajo ciertas condiciones.
+- 🟡 **Amarillo (Bajo):** Debilidades de configuración o falta de cabeceras de seguridad.
+- 🔵 **Azul (Informativo):** Datos técnicos sobre el entorno del servidor.
+
+### 👾 Foco: Cross-Site Scripting (XSS)
+El XSS es un ataque dirigido al **navegador del usuario**. El atacante inyecta scripts maliciosos que el navegador ejecuta al considerarlos de una fuente confiable. ZAP identifica estos puntos de inyección para prevenir el robo de cookies y sesiones.
+
+---
+
+> [!IMPORTANT]
+> **Compromiso Ético:** El uso de estas herramientas se limita estrictamente a entornos de laboratorio y sistemas donde poseo autorización explícita para realizar pruebas.
+
+### 🎯 Estrategia de Priorización de Vulnerabilidades
+
+No todas las vulnerabilidades tienen el mismo peso. En un entorno profesional, la priorización basada en gravedad e impacto es clave por dos motivos:
+
+- **Eficiencia Operativa:** Permite asignar recursos limitados (tiempo de desarrolladores, presupuesto) para resolver los riesgos que realmente podrían paralizar la organización.
+- **Mitigación de Impacto:** Al solucionar primero los problemas críticos, se minimiza la ventana de oportunidad para ataques que resulten en robo de datos o interrupción del servicio.
+
+> **Regla de Oro:** Se debe abordar lo que es **fácil de explotar** y tiene **alto impacto** antes de preocuparse por hallazgos informativos o de bajo riesgo.
+
+### 🔍 Nota sobre el Árbol de Sitios (Multi-dominio)
+
+Durante un escaneo, es normal observar múltiples dominios en la ventana **Sites**. Esto no significa que estemos atacando dominios ajenos, sino que ZAP está detectando la infraestructura completa de la aplicación:
+
+- **Dependencias Externas:** Scripts, fuentes y estilos cargados desde CDNs.
+- **Servicios de Terceros:** Rastreadores de análisis, mapas integrados o pasarelas de pago.
+- **Arquitectura Distribuida:** Conexiones a APIs o bases de datos que residen en distintos servidores.
+
+**Advertencia de Seguridad:** Como analista, es vital configurar el **Scope (Alcance)** en ZAP para indicarle a la herramienta que solo realice ataques activos en el dominio sobre el cual tenemos permiso, ignorando los dominios de terceros para evitar problemas legales.
+
+![zap5](/img/zap5.png)
+
+* El Clickjacking (también conocido como ataque de "secuestro de clics") es una técnica engañosa donde un atacante utiliza capas invisibles para engañar a un usuario.
+
+* 🧐 ¿Cómo funciona?
+Imagina que estás navegando en una web que promete un premio si haces clic en un botón que dice "Ganar iPhone". Sin embargo, de forma invisible para ti, el atacante ha cargado encima de ese botón otra página (por ejemplo, la configuración de tu cuenta de Amazon o Facebook) dentro de un marco transparente (iframe).
+
+Cuando tú haces clic en "Ganar", en realidad le estás dando clic al botón de "Eliminar cuenta" o "Comprar ahora" de la página invisible.
+
+* 🚩 ¿Por qué ZAP marcó "Falta de encabezado anti-clickjacking"?
+Para que este ataque funcione, la página víctima debe permitir ser "enmarcada" (metida dentro de un iframe) por otros sitios. ZAP detectó que tu aplicación no tiene activadas las protecciones necesarias en el servidor.
+
+Las dos defensas principales que ZAP busca son:
+
+X-Frame-Options: Es un encabezado que le dice al navegador: "No permitas que nadie me meta en un frame" (DENY) o "Solo permítelo si el frame es de mi propio dominio" (SAMEORIGIN).
+
+Content Security Policy (CSP): Una versión más moderna que usa la directiva frame-ancestors 'self', que hace lo mismo pero con más control.
+
+* 📊 Resumen para tu documentación
+Si quieres explicarlo técnico pero simple en tu curso, puedes usar esto:
+
+* Impacto: El usuario realiza acciones involuntarias (cambio de contraseñas, compras, seguir a alguien en redes sociales).
+
+* Vulnerabilidad: El servidor no envía instrucciones al navegador para prohibir que la web sea cargada dentro de marcos de sitios externos.
+
+* Solución: Configurar el servidor web (Apache, Nginx, etc.) para que envíe el encabezado X-Frame-Options: SAMEORIGIN.
+
+### 🖱️ Anatomía del Clickjacking (UI Redressing)
+
+El Clickjacking es un ataque de "secuestro de interfaz" donde el usuario es engañado para realizar acciones involuntarias.
+
+- **Mecanismo:** Uso de capas transparentes (`iframes`) sobre una interfaz legítima.
+- **Riesgo Detectado:** Falta de cabeceras de seguridad que prohíban el enmarcado no autorizado.
+- **Impacto:** Robo de clics para cambiar configuraciones de seguridad, realizar compras o conceder permisos de cámara/micrófono sin consentimiento.
+- **Mitigación:** Implementar encabezados `X-Frame-Options: SAMEORIGIN` o políticas CSP robustas en el servidor web.
+
+### 🔧 Metodología de Revisión de Alertas
+
+Para una auditoría efectiva, sigo este proceso de revisión dentro de la interfaz de ZAP:
+
+1.  **Identificación:** Localizar las banderas en el panel de **Alerts**.
+2.  **Expansión:** Desplegar la alerta para listar las **URLs afectadas**. Esta es la forma más rápida y precisa de ver qué recursos activaron la vulnerabilidad.
+3.  **Evidencia:** Seleccionar una URL para inspeccionar el tráfico en la ventana de **Request/Response**.
+4.  **Remediación:** Utilizar las recomendaciones proporcionadas por ZAP en la descripción de la alerta para proponer soluciones técnicas (ej. añadir atributos `SameSite` a las cookies o cabeceras de seguridad).
+
+🎯 Mecanismo del Ataque
+El ataque ocurre cuando un ciberdelincuente coloca un hipervínculo o un botón malicioso oculto justo debajo de un elemento que parece legítimo y seguro. Al interactuar con lo que parece ser una función normal del sitio, el usuario está, sin saberlo, haciendo clic en la capa invisible del atacante.
+
+⚠️ Consecuencias Comunes
+Al caer en este engaño, el usuario puede realizar acciones involuntarias con consecuencias graves, tales como:
+
+Conceder permisos: Activar el acceso al micrófono o a la cámara del dispositivo de forma inadvertida.
+
+Acciones en cuentas: Realizar transferencias bancarias, cambiar contraseñas o eliminar perfiles en redes sociales sin consentimiento.
+
+🛡️ ¿Cómo lo identifica OWASP ZAP?
+Durante un análisis de seguridad, OWASP ZAP busca la ausencia de protecciones específicas en la configuración del sitio web:
+
+Detección: ZAP genera una alerta de riesgo medio si detecta que falta el encabezado X-Frame-Options o políticas de seguridad de contenido (CSP).
+
+Información Detallada: En la ventana Edit Alert (Editar alerta), la herramienta explica que la respuesta del servidor no incluye instrucciones para que el navegador se proteja contra ataques de enmarcado (framing).
+
+Alcance: ZAP enumera todas las URLs específicas que son vulnerables a esta técnica, permitiendo al analista identificar exactamente dónde se debe aplicar la corrección.
+
+✅ Solución Recomendada
+Para mitigar este riesgo, los desarrolladores deben asegurarse de que el servidor web envíe encabezados de seguridad adecuados:
+
+X-Frame-Options: Configurado como SAMEORIGIN o DENY para evitar que el sitio sea cargado dentro de marcos de sitios externos.
+
+Content-Security-Policy (CSP): Utilizando la directiva frame-ancestors para especificar qué dominios tienen permiso para incrustar el contenido.
+
+### 📝 Notas de Autoevaluación (Conceptos de Examen)
+
+| Pregunta | Respuesta Correcta | Justificación Técnica |
+| :--- | :--- | :--- |
+| **¿Qué reporta ZAP al detectar fallos?** | URLs afectadas, descripciones y soluciones. | ZAP actúa como una guía completa de remediación, no solo como un detector. |
+| **¿Dónde se revisan los hallazgos?** | Ventana de Información (Panel de Alertas). | Centraliza todas las vulnerabilidades detectadas para su análisis detallado. |
+| **¿Qué define al XSS?** | Inyección de código malicioso ejecutado por el navegador del usuario. | El ataque compromete al cliente, no directamente a la base de datos del servidor. |
+| **¿Qué es el Clickjacking?** | Secuestro de clics mediante capas invisibles. | Es un engaño de interfaz de usuario que se previene con cabeceras de seguridad. |
+
+* Aspecto destacado de la gestión profesional: Certificación CompTIA PenTest+
+Habilidades de gestión de carrera
+
+* ¿Está pensando en convertirte en un evaluador de pruebas de penetración? Si es así, debes obtener la certificación. Esto demuestra a los posibles empleadores que tienes los conocimientos y las habilidades necesarios para probar sus sistemas y evaluar su postura de seguridad. 
+
+* Considera una certificación de Computing Technology Industry Association (CompTIA), una organización de certificación de tecnología de la información y ciberseguridad muy respetada. Su certificación PenTest+ es para cualquiera que quiera realizar pruebas de penetración y tareas de gestión de vulnerabilidades. El examen de certificación cubre las fases de pruebas de penetración, los requisitos legales y de cumplimiento, y los casos de uso de varias herramientas. 
+
+* 🛡️ Ciclo de Vida de una Prueba de Penetración
+Un proceso de auditoría de seguridad se divide en fases críticas que garantizan que las pruebas sean legales, exhaustivas y útiles para la organización.
+
+1. Planificación (Planning)
+Es la fase inicial donde se establecen los cimientos del proyecto.
+
+Acuerdos Legales: Se firman los contratos y autorizaciones necesarios antes de realizar cualquier acción técnica.
+
+Alcance y Objetivos: Se definen los límites de la prueba (por ejemplo, una lista específica de direcciones IP) y qué datos críticos se busca proteger.
+
+Reunión Inicial: Coordinación con los departamentos de TI para comprender el entorno y las posibles amenazas.
+
+2. Recopilación de Información (Information Gathering)
+En esta etapa, el evaluador utiliza diversas herramientas para descubrir y mapear la infraestructura del objetivo.
+
+Mapeadores de Red: Encuentran todos los dispositivos activos y sus direcciones IP (ej. Angry IP Scanner).
+
+Escáneres de Puertos: Identifican servicios y puertos abiertos para hallar posibles puntos de entrada.
+
+Analizadores de Paquetes: Herramientas como Wireshark que permiten inspeccionar el tráfico de red en detalle.
+
+3. Pruebas y Explotación (Testing & Exploitation)
+Se utilizan herramientas especializadas para identificar y validar vulnerabilidades activas.
+
+Escaneo Automatizado: Herramientas como OWASP ZAP buscan fallos conocidos como Cross-Site Scripting (XSS) o Clickjacking.
+
+Marcos de Explotación: Aplicaciones diseñadas para ejecutar ataques controlados (ej. Metasploit).
+
+Descifrado de Contraseñas: Uso de software para evaluar la robustez de las credenciales de acceso.
+
+4. Informes (Reporting)
+La fase final donde se consolidan los hallazgos para que la organización pueda tomar medidas.
+
+Análisis de Resultados: Se examinan las alertas generadas para encontrar URLs específicas afectadas y la evidencia del fallo.
+
+Priorización: Los riesgos se clasifican por su gravedad e impacto potencial para asignar recursos de manera eficiente.
+
+Recomendaciones: Se proporcionan soluciones técnicas y pasos de remediación para cerrar las brechas de seguridad detectadas.
+
+Acá tenés un formato prolijo para pegar directo en tu README 👇
+
+---
+
+# 🛡️ Puntos para recordar - Ciberseguridad
+
+## 📌 Conceptos clave
+
+### 🔎 Inteligencia de amenazas
+
+* La **inteligencia de amenazas** permite a las organizaciones tomar decisiones informadas sobre riesgos de ciberseguridad.
+* Se construye recopilando datos de múltiples fuentes y analizándolos para obtener conclusiones útiles.
+* Existen tres tipos:
+
+  * **Estratégica** → decisiones a largo plazo
+  * **Táctica** → técnicas y métodos de ataque
+  * **Operativa** → amenazas específicas y activas
+* Fuentes importantes:
+
+  * Cybersecurity and Infrastructure Security Agency (CISA)
+  * IBM X-Force Exchange
+* Herramientas utilizadas:
+
+  * **STIX** (lenguaje para compartir inteligencia de amenazas)
+
+---
+
+### ⚠️ Evaluación de vulnerabilidades
+
+* Permite **identificar, analizar y corregir vulnerabilidades** antes de que sean explotadas.
+* Pasos principales:
+
+  1. Identificación
+  2. Análisis
+  3. Priorización
+  4. Corrección
+* Las vulnerabilidades se priorizan mediante sistemas de puntuación.
+* Se utilizan herramientas automatizadas para agilizar el proceso.
+
+---
+
+### 💻 Pruebas de penetración (Pentesting)
+
+* Simulan ataques reales para detectar vulnerabilidades explotables.
+* Se usan para validar evaluaciones de vulnerabilidad y encontrar fallas adicionales.
+
+#### 🧩 Fases del pentesting
+
+1. Planeación
+2. Recopilación de información
+3. Pruebas (explotación)
+4. Informes
+
+#### 🛠️ Herramientas comunes
+
+* Mapeadores de red
+* Escáneres de puertos
+* Escáneres de vulnerabilidades
+* Analizadores de paquetes
+* Marcos de explotación
+* Herramientas de descifrado de contraseñas
+
+📍 Ejemplo:
+
+* OWASP ZAP → escanea aplicaciones web y explota vulnerabilidades para confirmar su existencia.
+
+---
+
+## 📚 Referencias
+
+### 🔎 Lección 1: Inteligencia de amenazas
+
+1. National Institute of Standards and Technology (NIST). *Intelligence*. Consultado el 14 de abril de 2023.
+2. Ritu Gill. *What is Open-Source Intelligence?* SANS Institute, 23 de febrero de 2023.
+3. *What is Threat Intelligence?* IBM, consultado el 13 de abril de 2023.
+4. *Introduction to STIX*. OASIS Open, 15 de febrero de 2023.
+
+---
+
+### ⚠️ Lección 2: Evaluación de vulnerabilidades
+
+1. *X-Force Red Vulnerability Management Services*. IBM, consultado el 17 de abril de 2023.
+
+---
+
+### 💻 Lección 3: Pruebas de penetración
+
+1. *What is Penetration Testing?* IBM, consultado el 23 de abril de 2023.
+2. Ryan Clancy. *What is Enumeration in Ethical Hacking?* EC-Council, consultado el 23 de abril de 2023.
+
+---
+
