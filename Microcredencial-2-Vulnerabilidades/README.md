@@ -2782,3 +2782,266 @@ Aplicar tácticas adecuadas de mitigación de amenazas para abordar estas vulner
 * En el paso 4, justificar las tácticas de mitigación de amenazas, propondrás técnicas de mitigación para abordar las vulnerabilidades identificadas mediante un formulario para seleccionar los controles apropiados, con opciones de andamiaje para facilitar la toma de decisiones. A continuación, justificarás las técnicas de mitigación seleccionadas, empleando de nuevo un formulario con opciones guiadas. También identificarás los posibles retos a la hora de implantar estos controles, teniendo en cuenta las necesidades específicas de Capital Ink Publishing. Al final de este paso, revisarás un formulario totalmente cumplimentado con tus mitigaciones propuestas, justificaciones y retos identificados, que culminará con un análisis de impacto exhaustivo para abordar las vulnerabilidades. 
 
 
+
+---
+
+## 🛡️ Laboratorio: Análisis de Vulnerabilidades con OWASP ZAP
+
+Este proyecto consistió en la ejecución de una auditoría de seguridad sobre la infraestructura web de **Capital Ink Publishing**, utilizando **OWASP ZAP** como herramienta principal de exploración y diagnóstico.
+
+### 📋 Objetivos y Acciones Realizadas
+* **Configuración del Entorno:** Inicio de sesión en OWASP ZAP configurando la persistencia de datos de sesión para entornos de laboratorio.
+* **Reconocimiento y Mapeo:** Ejecución de un mapeo detallado (Spidering) para identificar la estructura completa de la aplicación, incluyendo directorios ocultos y páginas no seguras.
+* **Escaneo de Vulnerabilidades:** Análisis de tráfico y detección de fallos de seguridad mediante el examen detallado de las pestañas de **Alertas** e **Historial**.
+* **Identificación de Amenazas:** Detección confirmada de vulnerabilidades críticas, específicamente **Cross-Site Scripting (XSS)**, con potencial de robo de credenciales y secuestro de sesiones.
+
+### 🧠 Conceptos de Ciberseguridad Aplicados
+* **Inteligencia de Amenazas:** Aplicación de **Inteligencia Táctica** para investigar vectores de ataque específicos y responder de forma técnica ante vulnerabilidades recién descubiertas.
+* **Gestión de Vulnerabilidades:** * Uso del estándar **CVSS** (Common Vulnerability Scoring System) para calificar la gravedad de los hallazgos en una escala de 0 a 10.
+    * Priorización de remediación basada en la **Gravedad de la Vulnerabilidad**, categorizando como **Críticos** aquellos incidentes con exfiltración de datos, movimiento lateral o acceso no autorizado a bases de datos.
+* **Pentesting Activo:** Diferenciación entre escaneo pasivo y pruebas de penetración activas para confirmar y explotar vulnerabilidades de forma controlada.
+
+### 🛠️ Herramientas Utilizadas
+* **OWASP ZAP 2.12.0** (Intercepción, Spidering y Alert Analysis).
+* **Marcos de Evaluación:** Priorización de riesgos basada en impacto y probabilidad.
+
+---
+
+**Nota:** Este laboratorio forma parte de mi formación continua en **Ciberseguridad**, enfocándome en la protección de activos digitales y la gestión técnica de incidentes.
+
+
+Claro. Aquí tienes un documento limpio y listo para pegar en tu `README.md` con todas las preguntas, respuestas y razones técnicas del chat.
+
+---
+
+# 📘 Seguridad en Capital Ink Publishing – Evaluación y Mitigación de Vulnerabilidades
+
+Este documento resume las decisiones de seguridad tomadas para mitigar vulnerabilidades en la infraestructura de Capital Ink Publishing, incluyendo exposición de metadatos en la nube, accesos no autorizados, malware y ataques XSS.
+
+---
+
+## 1. Priorización de exposición de metadatos en la nube
+
+**Pregunta:**  
+¿Cómo se debe priorizar esta exposición de metadatos en la nube de acuerdo con el marco de evaluación de vulnerabilidades?
+
+**Respuesta:**  
+✅ **Crítico**
+
+**Razón:**  
+La exposición de metadatos en la nube por controles de acceso mal configurados puede permitir a un atacante obtener credenciales, claves de acceso y roles. Esto lleva al compromiso total de los recursos. En marcos como CVSS, se considera **Crítico** por el alto impacto, facilidad de explotación y escalada de privilegios.
+
+---
+
+## 2. Vulnerabilidad a corto plazo
+
+**Pregunta:**  
+¿Cuál de las siguientes vulnerabilidades debería abordarse a corto plazo?
+
+**Respuesta:**  
+✅ **Exposición de metadatos en la nube** – *A corto plazo (dentro de 1 semana)*
+
+**Razón:**  
+Los metadatos expuestos contienen credenciales temporales y configuraciones sensibles. Su corrección es prioritaria porque permite acceso remoto y escalado de privilegios. Un acceso no autorizado a BD interna puede planificarse a mediano plazo si existen controles compensatorios.
+
+---
+
+## 3. Mitigación de malware activo
+
+**Pregunta:**  
+Para mitigar malware diseñado para exfiltrar datos confidenciales en varias estaciones de trabajo, ¿qué método debe implementarse primero?
+
+**Respuesta:**  
+✅ **Actualizar el software antivirus y antimalware**
+
+**Razón:**  
+Es la respuesta más directa ante un incidente activo. Permite detectar, poner en cuarentena y eliminar el malware rápidamente, además de actualizar firmas para prevenir reinfecciones.
+
+---
+
+## 4. Evitar accesos no autorizados a BD interna
+
+**Pregunta:**  
+¿Qué técnica de mitigación debe implementarse para evitar futuros accesos no autorizados a la base de datos interna?
+
+**Respuesta:**  
+✅ **Implementar la autenticación multifactor**
+
+**Razón:**  
+El acceso no autorizado suele deberse a credenciales comprometidas. MFA agrega una capa de seguridad que bloquea el acceso incluso si la contraseña es robada.
+
+---
+
+## 5. Protección del entorno cloud ante metadatos expuestos
+
+**Pregunta:**  
+¿Qué técnica de mitigación debería implementarse para proteger el entorno de la nube?
+
+**Respuesta:**  
+✅ **Revisar y actualizar las políticas de control de acceso**
+
+**Razón:**  
+Corrige la causa raíz: controles de acceso mal configurados. Se deben revisar políticas IAM, RBAC y permisos de metadatos.
+
+---
+
+## 6. Importancia de desinfectar entradas de usuario (XSS)
+
+**Pregunta:**  
+¿Por qué es importante desinfectar las entradas de los usuarios para prevenir ataques de cross-site scripting?
+
+**Respuesta:**  
+✅ **Garantiza que las entradas de los usuarios se traten como datos en lugar de código ejecutable**
+
+**Razón:**  
+La desinfección (escapando caracteres como `<`, `>`, `&`) evita que el navegador ejecute código inyectado, neutralizando ataques XSS.
+
+---
+
+## 7. Desafío al actualizar antivirus/antimalware
+
+**Pregunta:**  
+¿Qué desafío podría surgir durante la actualización del software antivirus y antimalware?
+
+**Respuesta:**  
+✅ **Garantizar la compatibilidad con los sistemas existentes**
+
+**Razón:**  
+Pueden ocurrir conflictos, falsos positivos o degradación del rendimiento. La compatibilidad técnica es un desafío crítico.
+
+---
+
+## 8. Desafío al implementar MFA
+
+**Pregunta:**  
+¿A qué desafío podría enfrentarse la empresa con la implementación de MFA?
+
+**Respuesta:**  
+✅ **Resistencia de los empleados debido a los inconvenientes percibidos**
+
+**Razón:**  
+MFA agrega un paso extra al inicio de sesión, lo que genera resistencia por la percepción de lentitud o molestia. Es un desafío común de adopción.
+
+---
+
+## 9. Desafío al desinfectar entradas para prevenir XSS
+
+**Pregunta:**  
+¿Qué desafío podría surgir durante la implementación de desinfección de entradas?
+
+**Respuesta:**  
+✅ **Garantizar que todos los campos de entrada estén debidamente desinfectados**
+
+**Razón:**  
+El mayor desafío es la cobertura completa: identificar **todos** los campos de entrada (formularios, URL, cabeceras, API) y desinfectarlos según el contexto. Un solo campo sin desinfectar puede ser explotado.
+
+---
+
+## 10. Desafío al revisar políticas de control de acceso en cloud
+
+**Pregunta:**  
+¿Qué desafío podría surgir al revisar y actualizar las políticas de control de acceso?
+
+**Respuesta:**  
+✅ **Identificar todas las instancias de controles de acceso mal configurados**
+
+**Razón:**  
+En entornos cloud complejos (múltiples servicios, cuentas, regiones), encontrar todas las configuraciones incorrectas (IAM excesivos, metadatos expuestos, etc.) es difícil y fácil de pasar por alto.
+
+---
+
+📌 **Nota final:**  
+Todas las decisiones están basadas en buenas prácticas de seguridad (frameworks como CVSS, OWASP, NIST) y priorizan la mitigación de riesgos críticos, activos y de acceso directo a recursos sensibles.
+
+---
+¡Claro! Aquí tienes un **segundo documento de resumen** con todas las preguntas adicionales que faltaban del chat, listo para pegar en tu `README.md` junto con el anterior.
+
+---
+
+# 📘 Seguridad en Capital Ink Publishing – Resumen Adicional de Preguntas y Decisiones
+
+Este documento complementa el resumen principal e incluye preguntas sobre actualización de antimalware, configuración de acceso en la nube, medidas inmediatas contra acceso no autorizado, defensa contra phishing, uso de OWASP ZAP, y más.
+
+---
+
+## 1. ¿Por qué actualizar regularmente el software antimalware?
+
+**Pregunta:**  
+¿Por qué Capital Ink Publishing debería actualizar de manera regular su software antimalware?
+
+**Respuesta:**  
+✅ **Para garantizar que el software siga siendo eficaz en la detección y eliminación de las últimas amenazas y vulnerabilidades de seguridad.**
+
+**Razón:**  
+Las firmas y reglas heurísticas del antimalware deben actualizarse constantemente para detectar malware nuevo y variantes existentes (ransomware, troyanos, etc.). Sin actualizaciones, el software queda obsoleto y no protege contra el panorama actual de amenazas.
+
+---
+
+## 2. Reto al revisar políticas de control de acceso en la nube
+
+**Pregunta:**  
+¿Qué reto podría encontrar la empresa al revisar y actualizar las políticas de control de acceso para mitigar la exposición de metadatos?
+
+**Respuesta:**  
+✅ **Localizar errores de configuración de acceso en la nube.**
+
+**Razón:**  
+Los entornos cloud son extensos, dinámicos y complejos (múltiples regiones, cuentas, recursos). Identificar todas las configuraciones incorrectas (permisos sobredimensionados, buckets públicos, roles mal asignados) es difícil y fácil de pasar por alto.
+
+---
+
+## 3. Medidas inmediatas ante una vulnerabilidad crítica de acceso no autorizado
+
+**Pregunta:**  
+¿Qué medidas inmediatas debería tomar Capital Ink Publishing para mitigar una vulnerabilidad crítica que representa un riesgo de acceso no autorizado a datos confidenciales?
+
+**Respuesta:**  
+✅ **Aplicar controles de acceso estrictos para limitar quién puede acceder a la información confidencial.**
+
+**Razón:**  
+Es la medida más directa e inmediata. Restringir permisos basándose en el principio de mínimo privilegio reduce la superficie de ataque de forma rápida, evitando que atacantes o usuarios no autorizados accedan a datos sensibles.
+
+---
+
+## 4. Defensa más eficaz contra intentos de phishing
+
+**Pregunta:**  
+¿Cuál es la forma más eficaz para que Capital Ink Publishing se defienda contra intentos de phishing?
+
+**Respuesta:**  
+✅ **Implementar el filtrado de correos electrónicos para evitar que lleguen mensajes maliciosos a los empleados.**
+
+**Razón:**  
+El filtrado (gateways de correo seguro, soluciones anti-phishing) actúa como primera línea de defensa, bloqueando la mayoría de los correos peligrosos antes de que lleguen al usuario. Es preventivo, mientras que otras opciones son reactivas o menos efectivas.
+
+---
+
+## 5. Razón más convincente para usar OWASP ZAP antes del despliegue
+
+**Pregunta:**  
+¿Cuál es la razón más convincente para que Capital Ink Publishing use OWASP ZAP antes del despliegue de una nueva aplicación web, incluso si retrasa el lanzamiento?
+
+**Respuesta:**  
+✅ **Para identificar y abordar cualquier vulnerabilidad adicional que pueda plantear riesgos graves si no se detecta, incluso si retrasa el despliegue.**
+
+**Razón:**  
+OWASP ZAP (herramienta DAST) puede descubrir vulnerabilidades más allá de la ya conocida. Lanzar con fallos críticos expone a brechas, compromiso total, pérdida de confianza y sanciones. Un retraso es un costo menor comparado con las consecuencias de un incidente en producción.
+
+---
+
+## 6. Resumen de métricas de priorización (tabla opcional)
+
+| Vulnerabilidad / Control | Prioridad | Plazo sugerido |
+|--------------------------|-----------|----------------|
+| Exposición de metadatos en la nube | Crítico | Corto plazo (1 semana) |
+| Acceso no autorizado a BD interna | Alto | Mediano plazo (1 mes) |
+| Malware activo exfiltrando datos | Crítico | Inmediato |
+| Phishing | Alto | Corto plazo (filtrado + concientización) |
+| Vulnerabilidad crítica en nueva app web | Crítico | Resolver antes del despliegue |
+
+---
+
+📌 **Nota final:**  
+Todas estas decisiones se basan en principios de seguridad fundamentales: defensa en profundidad, mínimo privilegio, prevención sobre reacción, y priorizar el riesgo real sobre los plazos operativos.
+
+---
