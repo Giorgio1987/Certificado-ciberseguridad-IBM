@@ -2753,4 +2753,32 @@ Acá tenés un formato prolijo para pegar directo en tu README 👇
 2. Ryan Clancy. *What is Enumeration in Ethical Hacking?* EC-Council, consultado el 23 de abril de 2023.
 
 ---
+![Arrancando](/img/analisis.png)
+
+* Te damos la bienvenida a Realizar un análisis de impacto para abordar las vulnerabilidades. 
+
+En este proyecto final, realizarás un análisis de impacto para abordar las vulnerabilidades de Capital Ink Publishing, una pequeña editorial en Washington, DC. 
+
+Capital Ink Publishing depende en gran medida de sus aplicaciones web para las operaciones, incluida una plataforma de publicación en línea, un sistema de gestión de contenido (CMS) y un sitio de comercio electrónico para vender publicaciones. Estas aplicaciones web son críticas para las operaciones diarias de la empresa y las interacciones con los clientes. 
+
+El proyecto tiene dos objetivos: 
+
+•
+Identificar las vulnerabilidades de Capital Ink Publishing
+
+•
+Aplicar tácticas adecuadas de mitigación de amenazas para abordar estas vulnerabilidades
+
+* Tu proceso incluye evaluar el estado actual de la seguridad de Capital Ink Publishing en función de varios artefactos. Los artefactos incluyen un informe de evaluación de vulnerabilidades, informes de inteligencia de amenazas y avisos de seguridad. A medida que examinas los artefactos, analizarás el impacto potencial de las amenazas de ciberseguridad en los sistemas y procesos de Capital Ink Publishing. 
+
+* Para ayudar a Capital Ink Publishing a abordar las vulnerabilidades, las clasificarás por gravedad. De esa manera, se garantiza que la organización aborde las vulnerabilidades con el mayor impacto. Por último, recomendarás tácticas, o controles, de mitigación de amenazas, para abordar las vulnerabilidades y justificar tus elecciones. Estas tácticas ayudarán a Capital Ink Publishing a resistir los ciberataques y garantizar que sus sistemas permanezcan seguros. 
+
+* En el paso 1, evaluar el estado actual de la seguridad de la organización, realizarás una serie de tareas destinadas a identificar y resumir las vulnerabilidades web. Usarás OWASP ZAP para ejecutar un escaneo y detectar vulnerabilidades en las aplicaciones web de Capital Ink Publishing. A continuación, resumirás los resultados del escaneo OWASP ZAP de forma estructurada. También revisarás los informes de inteligencia de amenazas para identificar vulnerabilidades a un nivel general, lo cual te permitirá comprender mejor la postura de seguridad de la organización. 
+
+* En el paso 2, analizar el impacto de las amenazas de ciberseguridad en los sistemas y procesos, rellenarás un formulario para analizar los resultados del informe de escaneo OWASP ZAP. Para analizar los informes de inteligencia de amenazas, deberás rellenar otro formulario con insights relevantes. Para identificar los impactos potenciales de las amenazas sobre la integridad de la red, la continuidad del negocio y la seguridad de los datos, deberás rellenar el formulario con tus determinaciones. Al final de este paso, revisarás un formulario totalmente completado que refleje las decisiones tomadas durante el análisis. 
+
+* En el paso 3, categorizar las vulnerabilidades por gravedad para priorizar los controles, priorizarás las vulnerabilidades y documentarás tus decisiones en un formulario proporcionado. Recomendarás un plazo de mitigación basado en las vulnerabilidades priorizadas, y tomarás decisiones dentro del formulario para construir un plazo eficaz. Al final de este paso, revisarás un formulario totalmente completado que muestre la priorización y el plazo de mitigación realizados. 
+
+* En el paso 4, justificar las tácticas de mitigación de amenazas, propondrás técnicas de mitigación para abordar las vulnerabilidades identificadas mediante un formulario para seleccionar los controles apropiados, con opciones de andamiaje para facilitar la toma de decisiones. A continuación, justificarás las técnicas de mitigación seleccionadas, empleando de nuevo un formulario con opciones guiadas. También identificarás los posibles retos a la hora de implantar estos controles, teniendo en cuenta las necesidades específicas de Capital Ink Publishing. Al final de este paso, revisarás un formulario totalmente cumplimentado con tus mitigaciones propuestas, justificaciones y retos identificados, que culminará con un análisis de impacto exhaustivo para abordar las vulnerabilidades. 
+
 
