@@ -1573,4 +1573,1330 @@ Los dispositivos que necesitan parches incluyen tanto computadoras de empleados 
 
 > *"La gestión de parches no es opcional. Es la primera línea de defensa contra atacantes que buscan sistemas desactualizados. Un sistema sin parches es un sistema vulnerable."*
 
+### 🧪 Escenario práctico: Configurar el Firewall de Windows Defender
+
+#### 📋 Situación
+
+Sos un **técnico de asistencia** en una compañía que emplea trabajadores remotos. Luke, uno de los empleados, usa una laptop Windows para trabajar. Tu tarea es asegurarte de que su dispositivo esté protegido, empezando por verificar que el **Firewall de Windows Defender** esté funcionando y correctamente configurado.
+
+#### 🎯 Objetivo
+
+Confirmar que el Firewall de Windows Defender esté activo y usando la configuración de seguridad recomendada por Microsoft. El firewall ayuda a:
+- Detectar y responder a intentos de acceso no autorizado.
+- Registrar anomalías en los logs que Luke puede revisar regularmente.
+
+#### ⚙️ Paso a paso de la solución
+
+| Paso | Acción | Resultado |
+|------|--------|-----------|
+| **1** | Abrir el menú de búsqueda de Windows y escribir `Firewall de Windows Defender`. | Aparece la herramienta de configuración del firewall. |
+| **2** | Presionar Enter para abrir la ventana del Firewall de Windows Defender. | Se muestran las opciones de configuración del firewall. |
+| **3** | Observar que el firewall no está usando la configuración recomendada. | Aparecen opciones como "Activar o desactivar Firewall de Windows Defender". |
+| **4** | Seleccionar **"Turn Windows Defender Firewall on or off"** (Activar o desactivar el Firewall de Windows Defender). | Permite modificar la configuración. |
+| **5** | Activar el firewall para redes de dominio, privadas y públicas según lo recomendado. | El firewall queda correctamente configurado y brindando protección óptima. |
+
+#### ✅ Respuesta correcta
+
+> Si el Firewall de Windows Defender no utiliza la configuración de seguridad recomendada, se debe seleccionar **"Activar o desactivar Firewall de Windows Defender"** para actualizar la configuración y garantizar una protección óptima.
+
+#### 🔐 Opciones disponibles en el Firewall de Windows Defender
+
+| Opción | ¿Qué hace? |
+|--------|------------|
+| **Allow an app or feature through Windows Defender Firewall** | Permite que aplicaciones específicas se comuniquen a través del firewall. |
+| **Change notification settings** | Configura las notificaciones cuando el firewall bloquea algo. |
+| **Turn Windows Defender Firewall on or off** | Activa o desactiva el firewall para cada tipo de red. |
+| **Restore defaults** | Restaura la configuración original del firewall. |
+| **Advanced settings** | Accede a reglas avanzadas de entrada/salida y seguridad de conexión. |
+
+#### 🧠 Lección aprendida
+
+> El firewall es la primera línea de defensa de un sistema operativo. Verificar que esté activo y correctamente configurado es una de las tareas más básicas y fundamentales en seguridad informática. Un firewall mal configurado o desactivado deja el sistema completamente expuesto.
+
+### 🧪 Escenario práctico: Activar el Firewall en redes privadas y públicas (continuación)
+
+#### 📋 Situación
+
+Después de ingresar a la ventana **"Personalizar configuración"** del Firewall de Windows Defender, se observa que el firewall está **deshabilitado** tanto para redes privadas como públicas. Esto deja el dispositivo de Luke completamente expuesto a amenazas en línea.
+
+---
+
+#### ⚙️ Configuración encontrada (antes del cambio)
+
+| Tipo de red | Estado del Firewall | ¿Es seguro? |
+|-------------|---------------------|-------------|
+| **Red privada** | ❌ Desactivado (no recomendado) | No |
+| **Red pública** | ❌ Desactivado (no recomendado) | No |
+
+---
+
+#### 🔧 Paso a paso de la solución
+
+| Paso | Acción | Explicación |
+|------|--------|-------------|
+| **1** | Ir a la sección **"Private network settings"** (Configuración de redes privadas). | Las redes privadas son redes de confianza, como la LAN de una oficina o el WiFi de casa. |
+| **2** | Seleccionar **"Turn on Windows Defender Firewall"** (Activar Firewall de Windows Defender). | Esto habilita la protección para redes de confianza. |
+| **3** | Repetir el proceso en **"Public network settings"** (Configuración de redes públicas). | Las redes públicas son las de cafeterías, aeropuertos o hotspots. Son menos seguras y necesitan protección extra. |
+| **4** | Opcional: marcar la casilla **"Notify me when Windows Defender Firewall blocks a new app"** . | Así Luke recibirá notificaciones cuando el firewall bloquee algo y podrá decidir si permite la conexión. |
+
+---
+
+#### 🔐 ¿Por qué activar el firewall para redes privadas?
+
+| Motivo | Explicación |
+|--------|-------------|
+| **Protege contra accesos no autorizados** | Aunque sea una red de confianza, puede haber dispositivos infectados o atacantes internos. |
+| **Mejora la seguridad general** | Un firewall activo filtra el tráfico entrante y saliente. |
+| **Garantiza integridad y confidencialidad** | Evita que malware o hackers accedan a los datos del dispositivo. |
+
+> ✅ **Respuesta correcta:** Activar el Firewall de Windows Defender para redes privadas protege el dispositivo del acceso no autorizado y de posibles amenazas, mejorando la seguridad y garantizando la integridad y confidencialidad de los datos.
+
+---
+
+#### 🆚 Diferencia entre redes privadas y públicas
+
+| Tipo de red | ¿Cuándo se usa? | Nivel de confianza | Configuración recomendada |
+|-------------|-----------------|--------------------|---------------------------|
+| **Red privada** | Hogar u oficina | Alta (red conocida) | Firewall activado. No bloquear todas las conexiones entrantes para permitir compartir archivos e impresoras. |
+| **Red pública** | Cafeterías, aeropuertos, hotspots | Baja (red desconocida) | Firewall activado. Considerar bloquear todas las conexiones entrantes para máxima seguridad. |
+
+---
+
+#### 📋 Estado final deseado
+
+| Tipo de red | Estado del Firewall |
+|-------------|---------------------|
+| **Red privada** | ✅ Activado |
+| **Red pública** | ✅ Activado |
+
+> *"Un firewall desactivado es como una puerta sin cerradura. Activarlo para todos los tipos de red es lo mínimo indispensable para proteger un sistema operativo."*
+
+### 🧪 Escenario práctico: Bloquear conexiones entrantes (continuación)
+
+#### 📋 Situación
+
+Después de activar el Firewall de Windows Defender para redes privadas, el siguiente paso es aumentar la seguridad **bloqueando todas las conexiones entrantes**, incluso las de aplicaciones permitidas.
+
+---
+
+#### ⚙️ Paso a paso
+
+| Paso | Acción | Explicación |
+|------|--------|-------------|
+| **1** | Dentro de **"Private network settings"**, ubicar la casilla **"Block all incoming connections, including those in the list of allowed apps"**. | Esta opción refuerza la seguridad al máximo nivel. |
+| **2** | Marcar la casilla. | Ahora el firewall rechazará **todas** las conexiones entrantes, sin excepciones. |
+
+---
+
+#### 🔐 ¿Cuál es el propósito de esta configuración?
+
+✅ **Respuesta correcta:** El bloqueo de todas las conexiones entrantes en una red privada **evita el acceso no autorizado de fuentes externas** y garantiza que **solo los dispositivos autorizados** puedan comunicarse, mejorando la seguridad de la red.
+
+---
+
+#### 🧠 ¿Por qué hacer esto en una red privada?
+
+| Motivo | Explicación |
+|--------|-------------|
+| **Prevenir accesos externos no autorizados** | Aunque sea una red de confianza, pueden existir intentos de intrusión desde afuera. |
+| **Aislar dispositivos** | Solo los equipos autorizados dentro de la red pueden comunicarse entre sí. |
+| **Máxima seguridad** | Al bloquear incluso las apps permitidas, se evita que una aplicación vulnerable sea explotada como puerta de entrada. |
+| **Protección adicional para trabajo remoto** | Luke trabaja desde casa. Bloquear conexiones entrantes reduce el riesgo de ataques dirigidos a su dispositivo. |
+
+---
+
+#### ⚠️ Consideración importante
+
+| Ventaja | Desventaja |
+|---------|------------|
+| Máxima protección contra intrusiones. | Algunas funciones legítimas (como compartir archivos o impresoras en red) pueden dejar de funcionar temporalmente. Si se necesita usarlas, se puede desmarcar esta casilla más adelante. |
+
+---
+
+#### 📋 Configuración final para red privada
+[x] Turn on Windows Defender Firewall
+[x] Block all incoming connections, including those in the list of allowed apps
+[ ] Notify me when Windows Defender Firewall blocks a new app
+[ ] Turn off Windows Defender Firewall (not recommended)
+
+
+> *"Bloquear todas las conexiones entrantes es como cerrar con llave todas las puertas y ventanas. Nadie entra sin tu permiso, incluso si antes lo habías autorizado."*
+
+### 🧪 Escenario práctico: Configurar red pública (continuación)
+
+#### 📋 Situación
+
+Después de configurar la red privada con bloqueo total de conexiones entrantes, llega el momento de configurar la **red pública**. La estrategia aquí es **diferente**: no se deben bloquear todas las conexiones entrantes.
+
+---
+
+#### ⚙️ Configuración para red pública
+
+| Opción | Estado | Motivo |
+|--------|--------|--------|
+| **Turn on Windows Defender Firewall** | ✅ Activado | Protege el dispositivo en redes no confiables (cafeterías, aeropuertos, hotspots). |
+| **Block all incoming connections** | ❌ No marcar | Se necesitan conexiones entrantes para servicios esenciales. |
+| **Notify me when Windows Defender Firewall blocks a new app** | Opcional | Puede activarse para mayor control. |
+
+---
+
+#### 🔐 ¿Por qué permitir algunas conexiones entrantes en redes públicas?
+
+✅ **Respuesta correcta:** Permitir algunas conexiones entrantes en redes públicas habilita **servicios como la navegación web, el correo electrónico y el acceso remoto**, mientras el firewall sigue filtrando y controlando el tráfico. Esto garantiza que los servicios esenciales funcionen correctamente sin sacrificar la seguridad.
+
+---
+
+#### 🆚 Diferencia clave entre red privada y pública
+
+| Configuración | Red privada | Red pública |
+|---------------|-------------|-------------|
+| **Firewall** | Activado | Activado |
+| **Bloquear todas las conexiones entrantes** | ✅ Sí (máxima seguridad) | ❌ No (se necesitan servicios esenciales) |
+| **Motivo** | Solo los dispositivos autorizados deben comunicarse. | Se necesita navegar, recibir correos y permitir acceso remoto. |
+| **Nivel de confianza** | Alto (red conocida) | Bajo (red desconocida) |
+
+---
+
+#### 🧠 Lógica de la configuración
+
+Parece contradictorio: ¿no debería ser más segura la red pública?
+
+| Tipo de red | Lógica de seguridad |
+|-------------|---------------------|
+| **Red privada** | Como es de confianza, **bloqueamos todo** para que nada externo interfiera. Si necesitamos compartir archivos, lo configuramos puntualmente. |
+| **Red pública** | Como es desconocida, **permitimos solo lo esencial** (web, email, remoto) y el firewall filtra el resto. Bloquear todo impediría trabajar. |
+
+> *"En red privada cerrás todas las puertas porque estás adentro. En red pública dejás abierta solo la recepción, pero con un guardia de seguridad (el firewall) que revisa quién entra."*
+
+---
+
+#### 📋 Configuración final para red pública
+[x] Turn on Windows Defender Firewall
+[ ] Block all incoming connections, including those in the list of allowed apps
+[ ] Notify me when Windows Defender Firewall blocks a new app
+[ ] Turn off Windows Defender Firewall (not recommended)
+
+
+---
+
+#### ✅ Resumen final de configuración
+
+| Tipo de red | Firewall | Bloquear todas las conexiones entrantes |
+|-------------|----------|----------------------------------------|
+| **Privada** | Activado | ✅ Sí |
+| **Pública** | Activado | ❌ No |
+
+> *"La seguridad no es aplicar la misma regla para todo. Es entender el contexto y configurar según el riesgo."*
+
+En tu casa:       Una sola red → La configurás como PRIVADA.
+En una empresa:   El mismo equipo puede conectarse a:
+                  - Red de la oficina → PRIVADA
+                  - WiFi de cafetería → PÚBLICA
+
+
+### 🧪 Escenario práctico: Verificar estado del Firewall y acceder al router (continuación)
+
+#### 📋 Situación
+
+Después de configurar el Firewall de Windows Defender, se verifica que esté **activado** para ambas redes. Luego, el escenario cambia: ahora hay que proteger la **red doméstica** de Luke, empezando por actualizar el firmware de su router.
+
+---
+
+#### ✅ Verificación final del Firewall
+
+| Tipo de red | Estado del Firewall | Bloquear conexiones entrantes | Notificaciones |
+|-------------|---------------------|-------------------------------|----------------|
+| **Red privada** | ✅ Activado | ✅ Bloquear todas, incluso apps permitidas | Sin notificaciones |
+| **Red pública o de invitados** | ✅ Activado | ❌ No bloquear todas (solo apps no permitidas) | ✅ Notificar cuando bloquee algo |
+
+**Resultado:** El Firewall de Windows Defender está correctamente configurado y brindando protección óptima.
+
+---
+
+#### 🔐 Nuevo objetivo: Proteger la red doméstica
+
+| Prioridad | Acción |
+|-----------|--------|
+| **1** | Actualizar el firmware del router (Netgear Nighthawk RAX50). |
+| **2** | Asegurar que el firewall del router esté actualizado. |
+| **3** | Corregir otras vulnerabilidades y mejorar el rendimiento. |
+
+---
+
+#### ⚙️ Cómo acceder a la interfaz del router
+
+| Paso | Acción | Explicación |
+|------|--------|-------------|
+| **1** | Abrir el navegador web. | Chrome, Edge, Firefox, cualquiera funciona. |
+| **2** | Escribir en la barra de direcciones: **`192.168.1.1`** | Es la dirección IP del router. |
+| **3** | Presionar **Enter**. | Se abre la página de inicio de sesión del router. |
+
+---
+
+#### 🔍 ¿Cómo se determina la dirección IP del router?
+
+✅ **Respuesta correcta:** Se determina empleando la **dirección IP del router** que se encuentra en:
+- La **documentación** del router (manual, caja).
+- Una **etiqueta** pegada en la parte inferior o trasera del dispositivo.
+- La **configuración de red** de la computadora.
+
+---
+
+#### 📋 Direcciones IP más comunes de routers
+
+| Fabricante | Dirección IP típica |
+|------------|---------------------|
+| Netgear | 192.168.1.1 |
+| TP-Link | 192.168.1.1 o 192.168.0.1 |
+| Linksys | 192.168.1.1 |
+| D-Link | 192.168.0.1 |
+| ASUS | 192.168.1.1 |
+| ISP genérico (proveedor) | 192.168.1.254 o 192.168.0.1 |
+
+**¿Y si no funciona?**
+En Windows, abrí una terminal (cmd) y escribí `ipconfig`. La dirección IP del router aparece como **"Puerta de enlace predeterminada"** .
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Aplicación en este escenario |
+|---------------|------------------------------|
+| **Firmware** | El router tiene firmware que debe actualizarse para cerrar vulnerabilidades. |
+| **Plan de firmware de seguridad** | Estamos aplicando el Paso 1 (identificar dispositivo con firmware) y Paso 3 (revisar actualización). |
+| **Hardening del sistema** | Actualizar el firmware del router es una práctica de hardening a nivel de red. |
+| **Firewall** | El router también tiene su propio firewall que se actualiza junto con el firmware. |
+
+> *"Después de proteger el sistema operativo, el siguiente paso es proteger la red. Todo empieza por el router: si su firmware está desactualizado, toda la red queda vulnerable."*
+
+
+### 🧪 Escenario práctico: Iniciar sesión en el router y verificar firmware (continuación)
+
+#### 📋 Situación
+
+Después de acceder a la interfaz del router mediante la dirección IP `192.168.1.1`, hay que iniciar sesión y verificar si el firmware está actualizado.
+
+---
+
+#### ⚙️ Paso a paso completo
+
+| Paso | Acción | Explicación |
+|------|--------|-------------|
+| **1** | Abrir el navegador y escribir `192.168.1.1`. | Es la dirección IP del router Netgear Nighthawk RAX50. |
+| **2** | Aceptar la advertencia de seguridad. | El navegador avisa: *"Your connection to this site is not private"*. Esto es normal porque el router no tiene un certificado HTTPS válido. Se continúa de todos modos. |
+| **3** | Ingresar el **nombre de usuario**: `admin`. | Es el usuario por defecto de la mayoría de los routers. |
+| **4** | Ingresar la **contraseña**: `3wC7U;2Rr23+`. | Contraseña compleja (buena práctica de seguridad). |
+| **5** | Hacer clic en **Sign in**. | Se accede al panel de administración del router. |
+| **6** | Ir a la pestaña **ADVANCED** (Avanzado). | Muestra información detallada del router, incluida la versión de firmware. |
+| **7** | Observar la versión de firmware actual. | En este caso: **V1.0.12.120_1.0.17**. |
+| **8** | Seleccionar **Administration** (Administración) en el menú lateral. | Permite acceder a las opciones de administración, incluyendo actualización de firmware. |
+| **9** | Buscar la opción de actualización de firmware. | Normalmente está en "Administration > Firmware Update" o "Router Update". |
+| **10** | Ejecutar el **Asistente de actualización de firmware**. | El router se conecta al servidor de Netgear para buscar nuevas versiones. |
+| **11** | Esperar a que busque actualizaciones. | El asistente muestra: *"Attempting to connect to Netgear Server. Please Wait..."*. |
+
+---
+
+#### 🔐 Datos de acceso utilizados
+
+| Campo | Valor |
+|-------|-------|
+| **Dirección IP del router** | `192.168.1.1` |
+| **Usuario** | `admin` |
+| **Contraseña** | `3wC7U;2Rr23+` |
+| **Versión de firmware actual** | `V1.0.12.120_1.0.17` |
+
+---
+
+#### ⚠️ ¿Por qué aparece "Your connection to this site is not private"?
+
+| Motivo | Explicación |
+|--------|-------------|
+| El router usa **HTTP** en lugar de **HTTPS**. | Los routers domésticos no suelen tener certificados SSL válidos. |
+| **No es peligroso** en este caso. | Estás accediendo a un dispositivo en tu propia red local, no a un sitio externo. |
+| Se puede continuar sin problema. | La conexión es segura porque estás dentro de tu red. |
+
+---
+
+#### 🔍 Información mostrada en el panel ADVANCED
+
+| Información | Valor |
+|-------------|-------|
+| **Modelo del router** | Nighthawk RAX50 |
+| **Versión de firmware** | V1.0.12.120_1.0.17 |
+| **Dirección MAC del puerto Internet** | 10:0C:6B:19:25:F9 |
+| **Dirección IP pública** | 69.130.255.94 |
+| **Tipo de conexión** | DHCP |
+
+---
+
+#### 📋 Opciones del panel ADVANCED
+
+| Menú | ¿Qué permite hacer? |
+|------|---------------------|
+| **Setup Wizard** | Asistente de configuración inicial. |
+| **WPS Wizard** | Configuración de Wi-Fi Protected Setup. |
+| **Setup** | Configuración de Internet, red local y WiFi. |
+| **USB Functions** | Gestionar dispositivos USB conectados al router. |
+| **Security** | Configurar firewall, bloqueo de sitios y servicios. |
+| **Administration** | Actualizar firmware, cambiar contraseña, hacer backup. |
+| **Advanced Setup** | Configuraciones avanzadas de red (DNS, rutas, NAT). |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Aplicación en este paso |
+|---------------|-------------------------|
+| **Firmware** | Estamos verificando la versión actual del firmware del router. |
+| **Plan de firmware (Paso 3)** | Identificar la versión instalada y buscar actualizaciones. |
+| **Contraseñas seguras** | La contraseña del router es compleja (`3wC7U;2Rr23+`), buena práctica. |
+| **HTTP vs HTTPS** | El router usa HTTP, por eso el navegador advierte que "no es privado". |
+| **Gestión de parches** | Buscar actualizaciones de firmware es parte de la gestión de parches. |
+
+> *"El panel de administración del router es el centro de control de la red. Mantener su firmware actualizado es tan importante como actualizar el sistema operativo."*
+
+
+### 🧪 Escenario práctico: Actualización de firmware completada (continuación)
+
+#### 📋 Situación
+
+Después de que el **Asistente de actualización de firmware** buscó y encontró una nueva versión, el router descargó e instaló el firmware actualizado. Ahora se verifica que la instalación fue exitosa.
+
+---
+
+#### ⚙️ Pasos finales
+
+| Paso | Acción | Explicación |
+|------|--------|-------------|
+| **1** | El asistente encontró una nueva versión de firmware disponible. | El router se conectó al servidor de Netgear y detectó una actualización. |
+| **2** | Se descargó e instaló el nuevo firmware. | El proceso es automático una vez que se confirma la actualización. |
+| **3** | El router se reinició. | Después de instalar firmware nuevo, el router se reinicia para aplicar los cambios. |
+| **4** | Se verifica la nueva versión en **Router Information**. | Ahora muestra la versión actualizada. |
+
+---
+
+#### 📊 Comparación: Antes y después
+
+| Momento | Versión de firmware |
+|---------|---------------------|
+| **Antes de actualizar** | V1.0.12.120_1.0.17 |
+| **Después de actualizar** | V1.0.12.120_2.0.83 ✅ |
+
+---
+
+#### 📋 Información del router después de la actualización
+
+| Información | Valor |
+|-------------|-------|
+| **Modelo** | Nighthawk RAX50 |
+| **Versión de hardware** | RAX50 |
+| **Versión de firmware** | V1.0.12.120_2.0.83 ✅ |
+| **Versión de idioma de interfaz** | V1.0.12.120_2.1.46.1 |
+| **Dirección MAC (Internet)** | 10:0C:6B:19:25:F9 |
+| **Dirección IP pública** | 69.130.255.94 |
+| **Tipo de conexión** | DHCP |
+
+---
+
+#### 🧠 Menú Administration del router
+
+| Opción | ¿Qué hace? |
+|--------|------------|
+| **Router Status** | Muestra información general del router (firmware, IP, MAC, estado de conexión). |
+| **Logs** | Registros de actividad del router (conexiones, errores, intentos de acceso). |
+| **Attached Devices** | Lista de dispositivos conectados a la red. |
+| **Backup Settings** | Permite guardar o restaurar la configuración del router. |
+| **Set Password** | Cambiar la contraseña de administración del router. |
+| **NTP Settings** | Configurar el servidor de hora (Network Time Protocol). |
+| **Router Update** | Buscar e instalar actualizaciones de firmware. |
+
+---
+
+#### ✅ Escenario completado: Resumen de todo lo hecho
+
+| Etapa | Acción realizada | Resultado |
+|-------|------------------|-----------|
+| **1. Firewall de Windows** | Verificar y activar el Firewall de Windows Defender. | Firewall activado para redes privadas y públicas. |
+| **2. Red privada** | Bloquear todas las conexiones entrantes. | Máxima seguridad para la red de confianza. |
+| **3. Red pública** | Activar firewall sin bloquear todas las conexiones. | Servicios esenciales funcionan con protección. |
+| **4. Acceso al router** | Ingresar a `192.168.1.1` con usuario y contraseña. | Acceso exitoso al panel de administración. |
+| **5. Verificar firmware** | Revisar la versión de firmware instalada. | Se detectó que estaba desactualizada. |
+| **6. Actualizar firmware** | Buscar, descargar e instalar la nueva versión. | Firmware actualizado a V1.0.12.120_2.0.83. |
+
+---
+
+#### 🔗 Conexión con todo el módulo
+
+| Tema del módulo | Aplicación en este escenario |
+|-----------------|------------------------------|
+| **Seguridad del sistema** | Proteger la laptop con firewall. |
+| **Firmware** | Actualizar el firmware del router. |
+| **Hardening del SO** | Activar firewall, bloquear conexiones innecesarias. |
+| **Gestión de parches** | Buscar e instalar actualizaciones de firmware. |
+| **Plan de firmware de seguridad** | Aplicar los 4 pasos del plan en un caso real. |
+| **Protección del SO host** | Firewall como primera línea de defensa. |
+| **Superficie de ataque** | Reducir puntos de entrada cerrando conexiones y actualizando firmware. |
+
+---
+
+#### 🎯 Lección final del escenario
+
+> *"Proteger un sistema operativo y una red doméstica implica múltiples capas: firewall activo, configuraciones adecuadas para cada tipo de red, firmware actualizado y contraseñas seguras. Cada capa refuerza a las demás. Si una falla, las otras siguen protegiendo."*
+
+
+### 🚫 Deshabilitar puertos y servicios innecesarios
+
+Cuando las organizaciones dejan funcionando **servicios que no usan**, le están dando a los atacantes un **perfil de ataque mejorado**. Los atacantes monitorean constantemente en busca de puertos abiertos con servicios en ejecución para encontrar por dónde entrar.
+
+---
+
+#### ⚠️ ¿Por qué es peligroso dejar servicios innecesarios activos?
+
+| Riesgo | Explicación |
+|--------|-------------|
+| **Más puntos de entrada** | Cada servicio activo y cada puerto abierto es una puerta potencial para un atacante. |
+| **Detección por parte de atacantes** | Los hackers escanean redes constantemente buscando puertos abiertos con servicios vulnerables. |
+| **Vulnerabilidades sin parchear** | Si un servicio no se usa, es probable que tampoco se actualice, acumulando fallos de seguridad. |
+| **Mayor superficie de ataque** | Cuantos más servicios corren, más oportunidades tiene un atacante de encontrar una debilidad. |
+
+---
+
+#### 📋 Ejemplos de servicios que suelen dejarse activos sin necesidad
+
+| Servicio | ¿Para qué sirve? | ¿Se usa realmente? |
+|----------|------------------|---------------------|
+| **Servidor de Exchange** | Servidor de correo corporativo. | Si la empresa ya migró a la nube (Microsoft 365), no debería estar activo. |
+| **Servidores backend** | Aplicaciones internas, bases de datos, APIs. | Si el proyecto se descontinuó, el servidor puede seguir corriendo sin que nadie lo recuerde. |
+| **FTP** | Transferencia de archivos. | Si ya no se usa, debe desactivarse. |
+| **Telnet** | Acceso remoto por terminal (sin cifrado). | Obsoleto e inseguro. Se debe usar SSH en su lugar. |
+| **Bluetooth** | Conexión inalámbrica de corto alcance. | Si no se usa, debe desactivarse. |
+| **Servicio de impresión** | Compartir impresoras en red. | Si no hay impresoras compartidas, debe apagarse. |
+
+---
+
+#### 🛠️ Buenas prácticas
+
+| Práctica | Descripción |
+|----------|-------------|
+| **Auditar servicios activos** | Revisar periódicamente qué servicios están corriendo en cada sistema. |
+| **Apagar lo que no se usa** | Desactivar o desinstalar servicios innecesarios. |
+| **Cerrar puertos** | Usar el firewall para bloquear puertos que no necesitan estar abiertos. |
+| **Principio de mínimo privilegio** | Solo mantener activo lo estrictamente necesario para el funcionamiento del sistema. |
+| **Documentar** | Llevar un registro de qué servicios están activos y por qué. |
+
+---
+
+#### 🔍 ¿Cómo identificar servicios innecesarios?
+
+**En Windows:**
+- Abrir `services.msc` (presionar Windows + R y escribir `services.msc`).
+- Revisar la lista de servicios y su estado.
+- Poner en "Manual" o "Deshabilitado" los que no se necesiten.
+
+**En Linux:**
+- Usar el comando `systemctl list-units --type=service` para ver servicios activos.
+- Usar `netstat -tuln` o `ss -tuln` para ver puertos abiertos.
+- Desactivar con `systemctl disable [servicio]` y `systemctl stop [servicio]`.
+
+---
+
+#### 🧠 Analogía
+
+> *Un sistema con servicios innecesarios activos es como una casa con muchas puertas y ventanas abiertas. Aunque las principales estén cerradas con llave, un atacante solo necesita encontrar una ventana olvidada para entrar.*
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Superficie de ataque** | Deshabilitar servicios reduce directamente la superficie de ataque. |
+| **Hardening del sistema** | Es una de las prácticas estándar de hardening. |
+| **Firewall** | El firewall bloquea puertos, complementando esta práctica. |
+| **Protección del SO** | Es la segunda medida esencial después de la gestión de parches. |
+
+> *"Cada servicio innecesario que se desactiva es una puerta menos para los atacantes. La seguridad también se construye quitando, no solo agregando."*
+
+### 📧 Exchange Server y la deshabilitación de servicios innecesarios
+
+**Exchange Server** es el servidor de correo corporativo de Microsoft. Tiene un despliegue basado en **roles** para separar los tipos de tráfico de red y permitir un control más preciso de la seguridad.
+
+---
+
+#### 🎯 ¿Por qué separar en roles?
+
+Separar las funciones en distintos servidores permite:
+
+| Beneficio | Explicación |
+|-----------|-------------|
+| **Control de rutas de protocolo** | Cada servidor maneja solo el tráfico que le corresponde. |
+| **Separación lógica** | Aísla las funciones críticas (buzones) de las que dan la cara al usuario (web). |
+| **Reducción de superficie de ataque** | Se deshabilitan todos los servicios innecesarios en cada servidor. |
+
+---
+
+#### 📋 Roles principales de Exchange Server
+
+| Rol | ¿Qué hace? | ¿Qué protocolos usa? |
+|-----|------------|----------------------|
+| **Servidor de acceso de cliente (Client Access)** | Es la cara visible. Recibe las conexiones de los usuarios (OWA, Outlook, móviles). | **Solo HTTP/HTTPS**. Se comporta como un servidor web. |
+| **Servidor de buzones (Backend)** | Almacena los buzones de correo y procesa los mensajes. | Solo los servicios necesarios para alojar buzones. Algunos servicios web mínimos para que Exchange funcione. |
+
+---
+
+#### 🧠 Ejemplo: Outlook Web App (OWA)
+
+Cuando un usuario accede a su correo desde el navegador:
+Usuario → Navegador (HTTPS) → Servidor de acceso de cliente (OWA) → Servidor de buzones
+
+- El servidor de acceso de cliente **expone solo protocolos web (HTTP/HTTPS)** .
+- El administrador puede **optimizar la ruta del protocolo** y **deshabilitar todos los servicios innecesarios**.
+- El servidor de buzones solo ejecuta lo mínimo para alojar los correos.
+
+---
+
+#### 🔐 Seguridad según el Departamento de Defensa de EE. UU. (DoD)
+
+Para reducir ataques al correo electrónico, los protocolos deben cumplir con las opciones de implementación de escritorio estándar del DoD:
+
+| Requisito | ¿En qué consiste? |
+|-----------|-------------------|
+| **Microsoft Outlook con MAPI** | Usar el cliente Outlook con la interfaz de programación de aplicaciones de mensajería (MAPI) para comunicarse con Exchange de forma segura. |
+| **Clientes habilitados para S/MIME** | Secure/Multipurpose Internet Mail Extensions: permite cifrar y firmar digitalmente los correos electrónicos. |
+| **Conexiones seguras** | Todo el tráfico debe ir cifrado (HTTPS, TLS). |
+
+---
+
+#### 🛠️ Buenas prácticas aplicadas
+
+| Práctica | Cómo se aplica en Exchange |
+|----------|----------------------------|
+| **Separación de roles** | Servidor de acceso separado del servidor de buzones. |
+| **Deshabilitar servicios innecesarios** | Cada servidor ejecuta solo lo que su rol necesita. |
+| **Reducción de superficie de ataque** | El servidor de acceso solo expone HTTP/HTTPS. |
+| **Cifrado** | S/MIME para correos, TLS para conexiones. |
+
+---
+
+#### 🧠 Analogía
+
+> *Exchange con roles separados es como un edificio de oficinas con recepción:*
+> - **Servidor de acceso de cliente** = la recepción. Solo habla con los visitantes y recibe paquetes.
+> - **Servidor de buzones** = la bóveda interna. Solo se comunica con la recepción, no con el exterior.
+> - *Si un atacante quiere entrar, primero tiene que pasar por recepción, que está diseñada para filtrar accesos.*
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación con este contenido |
+|---------------|-----------------------------|
+| **Deshabilitar puertos y servicios innecesarios** | Cada rol de Exchange desactiva los servicios que no necesita. |
+| **Superficie de ataque** | Separar roles reduce la superficie de ataque de cada servidor. |
+| **Cifrado** | S/MIME y TLS protegen los correos en reposo y en tránsito. |
+| **Hardening del sistema** | La separación de roles es una práctica avanzada de hardening. |
+
+> *"La arquitectura basada en roles de Exchange es un ejemplo concreto de cómo reducir la superficie de ataque en entornos corporativos. Cada servidor hace solo lo que debe, y nada más."*
+
+### 📋 Habilitar el registro de eventos (logging)
+
+El **registro de eventos** es un recurso fundamental que proporciona información sobre el tráfico de red, la seguridad, el uso y otras condiciones del sistema. Los administradores y profesionales de seguridad recuperan estos datos para gestionar la disponibilidad, seguridad, rendimiento y transparencia.
+
+---
+
+#### 📊 Información crucial que contienen los registros
+
+| Dato registrado | ¿Para qué sirve? | Ejemplo |
+|-----------------|------------------|---------|
+| **Fecha y hora** | Saber exactamente cuándo ocurrió un suceso. | `2026-05-08 14:32:15` |
+| **Descripción del suceso** | Entender qué pasó. | "Intento de inicio de sesión fallido". |
+| **Gravedad** | Priorizar la respuesta según el nivel de riesgo. | Crítico, Error, Advertencia, Informativo. |
+| **Aplicación o proceso implicado** | Identificar qué componente falló o fue atacado. | `svchost.exe`, `sshd`, `mysql`. |
+| **Código específico** | Identificar el tipo exacto de evento. | Evento ID 4625 (fallo de inicio de sesión en Windows). |
+| **Información relevante adicional** | Rastrear el origen del problema. | Direcciones IP, nombres de usuario, puertos. |
+
+---
+
+#### 🔍 Análisis en profundidad
+
+El análisis de registros es fundamental para el **análisis de causa raíz** de incidentes:
+
+| Tipo de incidente | ¿Qué se busca en los logs? |
+|-------------------|----------------------------|
+| **Fallo de hardware** | Errores de disco, sobrecalentamiento, fallos de memoria. |
+| **Error del sistema operativo** | Pantallas azules, kernel panic, servicios detenidos. |
+| **Infracción de seguridad** | Intentos de acceso fallidos, escalada de privilegios, conexiones sospechosas. |
+| **Fallo de aplicación** | Crashes, excepciones no manejadas, timeouts. |
+| **Degradación de rendimiento** | Picos de CPU, memoria agotada, latencia de disco. |
+
+> **Técnica clave:** examinar los eventos que ocurrieron **antes del incidente** para encontrar la causa.
+
+---
+
+#### 🛠️ Solución de problemas con múltiples registros
+
+A veces un solo registro no alcanza. Se necesita **correlacionar varios registros** para construir una imagen completa del sistema.
+
+| Fuente de registro | ¿Qué información aporta? |
+|--------------------|--------------------------|
+| **Logs del sistema operativo** | Eventos de inicio, errores del kernel, servicios. |
+| **Logs de aplicación** | Errores de software, accesos a bases de datos. |
+| **Logs de seguridad** | Intentos de login, cambios de permisos, auditorías. |
+| **Logs de red** | Conexiones entrantes/salientes, tráfico sospechoso. |
+| **Logs del firewall** | Bloqueos, intentos de intrusión, reglas activadas. |
+
+**Técnicas modernas de gestión de logs:**
+- **Agregación:** reunir logs de múltiples fuentes en un solo lugar.
+- **Correlación:** encontrar relaciones entre eventos de distintos sistemas.
+- **Detección de tendencias y anomalías:** identificar patrones que indiquen un problema o ataque.
+
+---
+
+#### 🔭 Observabilidad del sistema
+
+La **observabilidad** es la capacidad de medir el estado actual de un sistema analizando los datos que genera, incluidos los registros de eventos.
+
+| Componente de observabilidad | ¿Qué responde? |
+|------------------------------|----------------|
+| **Logs** | ¿Qué pasó y cuándo? |
+| **Métricas** | ¿Cuánto tardó? ¿Cuánta memoria usó? |
+| **Trazas (traces)** | ¿Qué camino siguió una solicitud a través del sistema? |
+
+> *En sistemas distribuidos complejos, el análisis de un solo registro no siempre es suficiente. La correlación de múltiples fuentes permite detectar problemas que de otra forma pasarían desapercibidos.*
+
+---
+
+#### 🧠 ¿Por qué es importante en ciberseguridad?
+
+| Motivo | Explicación |
+|--------|-------------|
+| **Detección de intrusiones** | Logs de seguridad muestran intentos de acceso sospechosos. |
+| **Respuesta a incidentes** | Permiten reconstruir qué hizo un atacante después de entrar. |
+| **Cumplimiento normativo** | Muchas regulaciones exigen mantener registros por un período mínimo. |
+| **Análisis forense** | Los logs son evidencia digital en investigaciones. |
+| **Mejora continua** | Identificar vulnerabilidades y errores recurrentes para corregirlos. |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación con el registro de eventos |
+|---------------|-------------------------------------|
+| **Protección del SO** | Es la tercera medida esencial para proteger un SO. |
+| **Monitoreo de logs** | Mencionado en las mejores prácticas de protección del SO host. |
+| **Hardening del sistema** | Activar logging es parte del hardening. |
+| **Firewall** | Los logs del firewall son una fuente clave de información de seguridad. |
+| **Detección de intrusiones** | Los logs alimentan sistemas IDS/IPS y SIEM. |
+
+> *"Los registros de eventos son como las cámaras de seguridad de un sistema. Sin ellos, un incidente puede pasar desapercibido y, si ocurre, no hay forma de saber qué pasó."*
+
+### 🔐 Uso de autenticación segura
+
+Hacer copias de seguridad de los datos es vital, pero también puede ser un **riesgo de seguridad** si no se usa una autenticación segura. La falta de controles en los respaldos ha causado muchas violaciones de seguridad que comprometieron millones de registros confidenciales.
+
+---
+
+#### ⚠️ El peligro de los backups sin autenticación segura
+
+| Riesgo | Consecuencia |
+|--------|--------------|
+| **Backups sin protección** | Un atacante que accede al backup accede a todos los datos, igual que si hubiera entrado al sistema principal. |
+| **Falta de controles de acceso** | Cualquiera con acceso a la red puede leer, modificar o eliminar las copias de seguridad. |
+| **Replicación sin seguridad** | Replicar datos confidenciales no es suficiente. Hay que proteger también los backups. |
+
+**Casos reales:** muchas filtraciones comprometieron información personal, propiedad intelectual y datos confidenciales por errores relacionados con las copias de seguridad.
+
+---
+
+#### ✅ Métodos de autenticación segura para backups
+
+| Método | ¿En qué consiste? | ¿Cómo protege los backups? |
+|--------|-------------------|----------------------------|
+| **Autenticación multifactor (MFA)** | Requiere dos o más factores para verificar la identidad (algo que sabés, algo que tenés, algo que sos). | Aunque alguien robe la contraseña del sistema de backups, no podrá acceder sin el segundo factor. |
+| **Control de acceso basado en roles (RBAC)** | Asigna permisos según el rol del usuario (administrador, operador, auditor). Solo accede a los backups quien realmente lo necesita. | Un empleado de marketing no puede acceder a los backups de la base de datos financiera. |
+| **Cifrado** | Codifica los datos para que solo puedan leerse con una clave. Se aplica tanto en tránsito como en reposo. | Si alguien roba un disco de backup, los datos son ilegibles sin la clave de cifrado. |
+| **Registros de acceso** | Guarda un historial de quién accedió a los backups, cuándo y qué hizo. | Permite detectar accesos no autorizados y auditar el uso del sistema de respaldo. |
+
+---
+
+#### 🧠 ¿Por qué es importante?
+
+| Motivo | Explicación |
+|--------|-------------|
+| **Los backups son un blanco atractivo** | Contienen todos los datos de la organización en un solo lugar. |
+| **Los atacantes también apuntan a los backups** | Si un ransomware cifra los datos y también los backups, la organización no puede recuperarse. |
+| **Cumplimiento normativo** | Muchas regulaciones exigen proteger los backups con los mismos estándares que los datos originales. |
+| **Protección post-incidente** | Después de un ataque, los backups seguros permiten restaurar los sistemas sin pagar rescates ni perder datos. |
+
+---
+
+#### 🛠️ Buenas prácticas
+
+| Práctica | Descripción |
+|----------|-------------|
+| **Aplicar MFA** | Todo acceso al sistema de backups debe requerir múltiples factores de autenticación. |
+| **Implementar RBAC** | Solo el personal autorizado puede acceder, modificar o eliminar copias de seguridad. |
+| **Cifrar todo** | Backups cifrados en tránsito (durante la transferencia) y en reposo (cuando se almacenan). |
+| **Registrar accesos** | Auditar periódicamente quién accede a los backups y detectar comportamientos anómalos. |
+| **Backup del backup (inmutabilidad)** | Mantener copias que no puedan ser modificadas ni eliminadas (backups inmutables). |
+| **Probar la restauración** | Verificar que los backups se puedan restaurar correctamente y que la autenticación funcione. |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación con este contenido |
+|---------------|-----------------------------|
+| **Autenticación segura** | Cuarta medida esencial para proteger un SO. |
+| **Cifrado** | Protege los datos en reposo y en tránsito. |
+| **Registro de eventos** | Los logs de acceso son parte del monitoreo de seguridad. |
+| **Hardening del sistema** | Aplicar MFA y RBAC son prácticas de hardening. |
+| **Copia de seguridad** | Quinta medida esencial, que debe combinarse con autenticación segura. |
+
+> *"Un backup sin autenticación segura es como guardar todas tus joyas en una caja fuerte y dejar la llave puesta. No basta con tener copia: hay que proteger quién y cómo puede acceder a ella."*
+
+### 💾 Copia de seguridad de datos
+
+Las copias de seguridad son esenciales para evitar la **pérdida de datos** por fallas de hardware, errores de software, corrupción de datos o eliminación accidental. Si ocurre un incidente, la copia de seguridad permite **recuperar los datos y volver a la normalidad**.
+
+---
+
+#### 📦 ¿Dónde almacenar las copias de seguridad?
+
+Es fundamental guardar las copias en un **dispositivo diferente** al de los datos originales:
+
+| Medio de almacenamiento | Ventaja |
+|-------------------------|---------|
+| **Disco duro externo** | Rápido, portable, accesible sin internet. |
+| **Unidad flash USB** | Muy portable, ideal para pequeñas cantidades de datos. |
+| **Sistema de almacenamiento en disco (NAS)** | Accesible desde toda la red, gran capacidad. |
+| **Nube** | Accesible desde cualquier lugar, resistente a desastres físicos. |
+| **Unidad de cinta** | Usado en empresas para backups masivos de larga duración. |
+
+---
+
+#### 🏠 Ubicación del backup
+
+| Ubicación | Protege contra... |
+|-----------|-------------------|
+| **Misma ubicación** (mismo edificio) | Fallos de hardware, eliminación accidental. |
+| **Ubicación remota** (otra ciudad, nube) | Incendios, inundaciones, robos, desastres naturales. |
+
+---
+
+#### ⏱️ Frecuencia de las copias de seguridad
+
+| Regla | Explicación |
+|-------|-------------|
+| **Copias regulares y consistentes** | Cuanto más tiempo pase entre backups, más datos se pueden perder. |
+| **Entre más críticos los datos, más frecuente el backup** | Sistemas financieros: backups cada hora. Documentos personales: cada día o semana. |
+| **Múltiples versiones** | Guardar varias copias de distintos momentos permite restaurar a un punto anterior no afectado. |
+
+**Ejemplo:**
+- Backup diario → pérdida máxima: 1 día de trabajo.
+- Backup semanal → pérdida máxima: 1 semana de trabajo.
+- Backup mensual → pérdida máxima: 1 mes de trabajo.
+
+---
+
+#### 📋 Regla 3-2-1 de backups
+
+Es la regla de oro para una estrategia de respaldo sólida:
+
+| Regla | ¿Qué significa? |
+|-------|-----------------|
+| **3** copias de los datos | La original + dos backups. |
+| En **2** tipos de medios diferentes | Ejemplo: disco externo + nube. |
+| **1** copia fuera del sitio | En ubicación remota por si hay desastre físico. |
+
+---
+
+#### 🛡️ ¿Contra qué protegen los backups?
+
+| Amenaza | ¿El backup ayuda? |
+|---------|-------------------|
+| **Falla de hardware** | ✅ Sí. Restaurás en un dispositivo nuevo. |
+| **Error humano (borrar sin querer)** | ✅ Sí. Recuperás la versión anterior. |
+| **Corrupción de datos** | ✅ Sí. Volvés a un punto antes de la corrupción. |
+| **Ransomware** | ✅ Sí, si el backup no fue afectado. Por eso debe estar en un dispositivo separado o ser inmutable. |
+| **Desastre natural** | ✅ Sí, si hay copia remota. |
+| **Robo del dispositivo** | ✅ Sí, si hay copia en la nube o ubicación remota. |
+
+---
+
+#### 🧠 Mejores prácticas
+
+| Práctica | Descripción |
+|----------|-------------|
+| **Automatizar** | Configurar backups automáticos para no depender de la memoria. |
+| **Verificar** | Probar periódicamente que los backups se pueden restaurar. |
+| **Cifrar** | Proteger los backups con cifrado para que nadie pueda leerlos si los roba. |
+| **Autenticación segura** | Usar MFA y RBAC para controlar quién accede a los backups. |
+| **Backups inmutables** | Mantener copias que no se puedan modificar ni borrar (protección anti-ransomware). |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación con este contenido |
+|---------------|-----------------------------|
+| **Protección del SO** | Es la quinta medida esencial. |
+| **Autenticación segura** | Los backups deben protegerse con MFA, RBAC y cifrado. |
+| **Hardening del sistema** | Tener un plan de backup es parte del hardening. |
+| **Ransomware** | Un backup seguro e inmutable es la mejor defensa contra el secuestro de datos. |
+
+> *"Hacer backup es fácil. Lo difícil es acordarse de hacerlo, hacerlo bien y verificar que funcione. Un backup que no se puede restaurar no es un backup: es una ilusión de seguridad."*
+
+## 📋 Plan de Seguridad del Sistema Operativo
+
+### 1. Evaluación de configuraciones de actualizaciones
+
+#### 📊 Configuración actual
+
+| Dispositivo / Software | ¿Se actualiza automáticamente? | Frecuencia de actualización | ¿Es suficiente? |
+|------------------------|--------------------------------|-----------------------------|-----------------|
+| **Windows 11 (SO)** | ✅ Sí | Automática (mensual) | ✅ Sí |
+| **Microsoft Office** | ✅ Sí | Automática | ✅ Sí |
+| **Navegador (Chrome)** | ✅ Sí | Automática | ✅ Sí |
+| **Antivirus (Windows Defender)** | ✅ Sí | Automática (diaria) | ✅ Sí |
+| **Router WiFi (firmware)** | ❌ No | Manual (cada 3-4 meses) | ⚠️ Debería revisar más seguido |
+| **Impresora (firmware)** | ❌ No | Manual (cada 6 meses) | ⚠️ Debería revisar más seguido |
+| **Drivers de hardware** | ⚠️ Parcial | Algunos automáticos, otros manuales | ⚠️ Revisar cada 3 meses |
+
+#### 🔧 Acciones de mejora
+
+- Activar las actualizaciones automáticas del router si tiene la opción.
+- Programar un recordatorio cada 3 meses para revisar firmware de router e impresora.
+- Usar una herramienta como "Windows Update" para verificar drivers pendientes.
+
+---
+
+### 2. Evaluación de puertos y dispositivos
+
+#### 📋 Dispositivos y puertos que tengo
+
+| Dispositivo / Puerto | ¿Lo uso regularmente? | ¿Debería desactivarlo? | Acción |
+|----------------------|------------------------|------------------------|--------|
+| **Bluetooth** | Solo a veces (auriculares). | ✅ Sí, cuando no lo uso. | Desactivar desde el centro de actividades cuando no se necesite. |
+| **WiFi** | Sí, siempre. | ❌ No | Mantener activo. |
+| **Puertos USB frontales** | Sí, para pendrives. | ❌ No | Mantener. |
+| **Cámara web** | Solo en videollamadas. | ✅ Sí, cuando no la uso. | Tapar físicamente o desactivar en administrador de dispositivos. |
+| **Micrófono** | Solo en videollamadas. | ✅ Sí, cuando no lo uso. | Desactivar en configuración de privacidad. |
+| **Extensor WiFi** | No tengo. | - | Si tuviera, desconectar cuando no se use. |
+| **Servicios de red innecesarios** | Revisar. | ✅ Sí. | Desactivar servicios como "Compartir impresoras" o "Escritorio remoto" si no se usan. |
+
+#### 🔧 Acciones de mejora
+
+- Desactivar Bluetooth cuando no se use.
+- Tapar la cámara web físicamente.
+- Revisar en `services.msc` qué servicios están corriendo y desactivar los que no necesito.
+- Cerrar puertos innecesarios desde el firewall.
+
+---
+
+### 3. Registro de eventos
+
+#### 📋 Evaluación actual
+
+| Sistema | ¿Tiene registro de eventos? | ¿Está habilitado? | ¿Qué registra? |
+|---------|-----------------------------|-------------------|----------------|
+| **Windows 11** | ✅ Sí (Visor de eventos) | ✅ Sí | Inicios de sesión, errores del sistema, eventos de seguridad, actividad de aplicaciones. |
+| **Router** | ✅ Sí (Logs del router) | ✅ Sí | Conexiones entrantes/salientes, intentos de acceso, cambios de configuración. |
+| **Firewall de Windows** | ✅ Sí | ✅ Sí | Conexiones bloqueadas, reglas activadas, intentos de intrusión. |
+
+#### 🔧 Acciones de mejora
+
+- Revisar el Visor de eventos de Windows una vez por semana.
+- Configurar alertas para eventos críticos (ej. múltiples intentos de inicio de sesión fallidos).
+- Activar el envío de logs del router a un correo o servidor si es posible.
+
+---
+
+### 4. Seguridad del acceso al sistema operativo
+
+#### 📋 Evaluación actual
+
+| Método de autenticación | ¿Lo uso? | ¿Es suficiente? | Acción de mejora |
+|-------------------------|----------|-----------------|------------------|
+| **Contraseña de inicio de sesión** | ✅ Sí | ⚠️ Regular | Usar contraseña más larga y compleja. |
+| **Windows Hello (PIN/Huella/Rostro)** | ✅ Sí (PIN) | ✅ Sí | Agregar huella dactilar si el equipo lo permite. |
+| **Autenticación multifactor (MFA)** | ✅ Sí (cuentas online) | ✅ Sí | Activar MFA en todas las cuentas que lo permitan. |
+| **Contraseña de administrador** | ✅ Sí | ✅ Sí | Mantener separada de la cuenta de uso diario. |
+| **Contraseñas para datos sensibles** | ⚠️ Parcial | ❌ No suficiente | Agregar cifrado con contraseña a carpetas sensibles. |
+| **Bloqueo automático de pantalla** | ✅ Sí (5 min) | ✅ Sí | Reducir a 2-3 minutos. |
+
+#### 🔧 Acciones de mejora
+
+- Activar MFA en todas las cuentas (email, banca, redes sociales, trabajo).
+- Crear una cuenta de usuario estándar para el día a día y reservar la de administrador solo para cambios del sistema.
+- Usar BitLocker (Windows) o VeraCrypt para cifrar carpetas con datos sensibles.
+- Cambiar contraseñas cada 90 días.
+
+---
+
+### 5. Frecuencia de copias de seguridad
+
+#### 📋 Evaluación actual
+
+| Tipo de datos | ¿Tiene backup? | Frecuencia | Medio de almacenamiento | ¿Es suficiente? |
+|---------------|----------------|------------|-------------------------|-----------------|
+| **Documentos personales** | ✅ Sí | Semanal | Disco duro externo | ⚠️ Debería ser más frecuente. |
+| **Fotos y videos** | ✅ Sí | Mensual | Nube (Google Photos) | ⚠️ Si agrego muchas fotos, debería ser semanal. |
+| **Configuraciones del sistema** | ❌ No | - | - | ❌ Debería crear un punto de restauración. |
+| **Datos de aplicaciones** | ❌ No | - | - | ❌ Debería incluir backups de configuraciones de apps importantes. |
+| **Copia fuera del sitio** | ⚠️ Parcial | - | Nube | ✅ Sí, pero no para todos los datos. |
+
+#### 📊 Cantidad de datos entre backups
+
+| Período | Datos nuevos agregados | Riesgo de pérdida |
+|---------|------------------------|-------------------|
+| **Entre backups semanales** | Aproximadamente 10-15 documentos, 50 fotos. | Medio: perdería una semana de trabajo. |
+| **Entre backups mensuales** | Aproximadamente 40-60 documentos, 200 fotos. | Alto: perdería un mes de recuerdos y trabajo. |
+
+#### 🔧 Acciones de mejora
+
+- Aumentar la frecuencia de backup de documentos a **diario** (automatizado).
+- Aumentar la frecuencia de backup de fotos a **semanal**.
+- Crear un punto de restauración del sistema una vez por mes.
+- Aplicar la regla **3-2-1**: 3 copias, 2 medios diferentes, 1 fuera de casa.
+- Agregar un backup en la nube (OneDrive, Google Drive) además del disco externo.
+- Probar la restauración de un archivo una vez cada 3 meses para verificar que los backups funcionan.
+
+---
+
+### ✅ Resumen del plan de acción
+
+| Prioridad | Acción | Plazo |
+|-----------|--------|-------|
+| 🔴 Alta | Activar MFA en todas las cuentas. | Hoy |
+| 🔴 Alta | Aumentar frecuencia de backups a diario. | Esta semana |
+| 🟡 Media | Desactivar Bluetooth y cámara cuando no se usen. | Hoy |
+| 🟡 Media | Revisar logs del sistema semanalmente. | Esta semana |
+| 🟡 Media | Cifrar carpeta de datos sensibles con BitLocker/VeraCrypt. | Este mes |
+| 🟢 Baja | Programar recordatorio de actualización de firmware cada 3 meses. | Este mes |
+| 🟢 Baja | Crear punto de restauración del sistema. | Este mes |
+
+---
+
+### 💭 Reflexión personal
+
+> Hacer este plan me permitió darme cuenta de que tenía varios puntos débiles que no había considerado. Mis backups no eran tan frecuentes como deberían y no tenía MFA activado en todas mis cuentas. Tampoco revisaba los logs del sistema ni desactivaba el Bluetooth cuando no lo usaba.
+>
+> Lo más valioso de este ejercicio fue entender que la seguridad del sistema operativo no es una configuración que se hace una sola vez, sino una serie de hábitos y revisiones periódicas. No necesito ser un experto para aplicar estas medidas: solo necesito ser constante.
+>
+> A partir de ahora, mi sistema está más protegido y tengo un plan claro para mantenerlo así en el tiempo.
+
+## 📝 Resumen de la lección: Seguridad del sistema operativo
+
+En esta lección aprendimos la importancia de **proteger y fortalecer el sistema operativo** para evitar que las amenazas cibernéticas accedan a datos confidenciales.
+
+### ✅ Técnicas aprendidas para proteger sistemas
+
+| # | Técnica | ¿En qué consiste? |
+|---|---------|-------------------|
+| 1 | **Mantener el sistema actualizado** | Aplicar parches y actualizaciones de seguridad al SO, aplicaciones y firmware. |
+| 2 | **Usar contraseñas seguras** | Implementar contraseñas complejas, MFA y políticas de caducidad. |
+| 3 | **Restringir el acceso** | Limitar usuarios con privilegios, aplicar RBAC y usar firewalls. |
+| 4 | **Implementar software de seguridad** | Antivirus, antimalware, IDS/IPS. |
+| 5 | **Habilitar el cifrado** | Cifrado de disco completo y de datos en tránsito y en reposo. |
+| 6 | **Monitorear los registros del sistema** | Revisar logs para detectar actividad sospechosa. |
+| 7 | **Realizar copias de seguridad periódicas** | Backups regulares, automatizados y con la regla 3-2-1. |
+
+### 🧠 Lo más importante
+
+> *"Proteger un sistema operativo no es una acción única: es una combinación de buenas prácticas que se refuerzan entre sí. La seguridad está en las capas."*
+
+### 🔜 Próximo paso
+
+Esta fue la lección final del módulo. A continuación, revisaremos los **puntos clave de todo el módulo 3** y exploraremos recursos adicionales relacionados con la seguridad del sistema.
+
+
+## 📚 Módulo 3: Seguridad de redes - Puntos para recordar
+
+---
+
+### 🔑 Conceptos clave
+
+#### Firmware
+1. El **firmware** es un componente de hardware crítico integrado en los dispositivos para ayudarlos a funcionar eficazmente.
+2. Se diferencia del software en que está diseñado para almacenarse **permanentemente en memoria no volátil** y controla el comportamiento del dispositivo.
+3. Existen **tres tipos** de firmware: **bajo nivel** (ROM, no actualizable), **alto nivel** (flash, actualizable) y **subsistema** (independiente, para partes específicas).
+4. Las vulnerabilidades del firmware pueden exponer a los sistemas a los mismos riesgos que un SO sin parches. Es esencial prevenir amenazas como el phishing.
+5. Las vulnerabilidades comunes incluyen: **falta de cifrado, desbordamiento de búfer, inyección de comandos, contraseñas débiles** y errores de autenticación.
+
+---
+
+#### Servidores
+6. Un **servidor** es un dispositivo o sistema de software especializado que almacena y procesa datos, actuando como concentrador central en una red.
+7. Tipos de servidores según su propósito:
+   - Servidor web
+   - Servidor FTP (transferencia de archivos)
+   - Servidor de aplicaciones
+   - Servidor de archivos
+   - Servidor de base de datos
+   - Servidor de correo
+   - Servidor de impresión
+   - Servidor DNS (nombres de dominio)
+   - Servidor de monitoreo y administración
+8. Comprender los roles de los servidores ayuda a entender los requisitos de los sistemas operativos que los gestionan.
+
+---
+
+#### Sistemas operativos
+9. Un **sistema operativo (SO)** gestiona todas las aplicaciones y programas. Cuando se carga, permite que las aplicaciones interactúen con el hardware.
+10. Sin un SO instalado, una computadora **no puede ejecutar programas**. Es el componente esencial del sistema informático.
+11. Para garantizar **integridad, confidencialidad y disponibilidad** del SO, hay que protegerlo de virus, malware e intrusiones de hackers remotos.
+
+---
+
+#### Seguridad del SO
+12. El **endurecimiento del sistema (hardening)** es el proceso de asegurar un sistema mitigando posibles vulnerabilidades.
+13. Métodos para proteger un sistema operativo:
+
+| # | Método | Objetivo |
+|---|--------|----------|
+| 1 | **Gestión de parches** | Mantener SO, aplicaciones y firmware actualizados. |
+| 2 | **Deshabilitar puertos y servicios innecesarios** | Reducir la superficie de ataque. |
+| 3 | **Habilitar registro de eventos** | Monitorear tráfico, seguridad y uso. |
+| 4 | **Usar autenticación segura** | MFA, contraseñas fuertes, RBAC, cifrado. |
+| 5 | **Copia de seguridad de datos** | Backups regulares con regla 3-2-1. |
+
+---
+
+### 💡 Grandes ideas y habilidades practicadas
+
+| Habilidad | Actividad realizada |
+|-----------|---------------------|
+| **Pensamiento analítico, comunicación escrita** | Explicar por qué la seguridad del sistema es tan importante como la seguridad física de una casa u oficina. |
+| **Ingenio, comunicación escrita** | Crear un plan para garantizar la seguridad del firmware (4 pasos). |
+| **Mentalidad de crecimiento, comunicación escrita** | Enumerar los requisitos para ser ingeniero de firmware. |
+| **Comunicación escrita** | Enumerar información clave sobre la certificación Red Hat (RHCSA). |
+| **Pensamiento crítico** | Determinar el servidor apropiado para cada necesidad. |
+| **Clasificación** | Clasificar los tipos de sistemas operativos (servidor, estación de trabajo, móvil). |
+| **Descripción** | Describir el fortalecimiento del sistema (hardening). |
+| **Resolución de problemas, agilidad de aprendizaje** | Proteger un sistema operativo host configurando firewall y actualizando firmware. |
+| **Pensamiento crítico, documentación** | Crear un plan para proteger un sistema operativo. |
+| **Gestión de carrera** | Resumir habilidades para ingeniero de firmware y tareas de un administrador Red Hat. |
+
+---
+
+### 🎯 Objetivos de aprendizaje cumplidos
+
+Al completar este módulo, ahora podés:
+
+| # | Objetivo | ¿Dónde lo aplicaste? |
+|---|----------|----------------------|
+| 1 | ✅ **Actualizar firmware** | Escenario práctico: actualizar el firmware del router Netgear. Plan de firmware de 4 pasos. |
+| 2 | ✅ **Proteger un sistema operativo host** | Escenario práctico: configurar Firewall de Windows Defender, bloquear conexiones entrantes. |
+| 3 | ✅ **Crear un plan para asegurar un sistema operativo** | OS Security Plan: actualizaciones, puertos, logs, autenticación y backups. |
+
+---
+
+### 🗺️ Mapa del módulo 3
+Módulo 3: Seguridad de redes
+│
+├── 🔐 Seguridad del sistema
+│ ├── Analogía casa ↔ sistema
+│ └── Medidas básicas de protección
+│
+├── 🔧 Firmware
+│ ├── ¿Qué es y para qué sirve?
+│ ├── Tipos (bajo nivel, alto nivel, subsistema)
+│ ├── Plan de firmware de seguridad (4 pasos)
+│ ├── Vulnerabilidades comunes (CWE)
+│ └── Hackeo de firmware (bootkits, rootkits)
+│
+├── 🖥️ Servidores
+│ ├── Características clave
+│ └── Tipos de servidores (web, FTP, DNS, correo, etc.)
+│
+├── 💻 Sistemas operativos
+│ ├── Componentes (bootloader, kernel)
+│ ├── Tipos (servidor, estación de trabajo, móvil)
+│ ├── Windows (Home vs Pro)
+│ ├── macOS
+│ └── Linux (distribuciones, entornos de escritorio)
+│
+├── 🛡️ Seguridad del SO
+│ ├── Hardening del sistema
+│ ├── Protección del SO host (7 prácticas)
+│ ├── 5 medidas esenciales (parches, puertos, logs, autenticación, backups)
+│ ├── Gestión de parches
+│ ├── Deshabilitar puertos y servicios
+│ ├── Registro de eventos
+│ ├── Autenticación segura
+│ └── Copia de seguridad de datos
+│
+├── 🧪 Escenarios prácticos
+│ ├── Configurar Firewall de Windows Defender
+│ ├── Actualizar firmware del router
+│ └── Plan de seguridad del SO
+│
+└── 💼 Gestión de carrera
+├── Ingeniero de firmware
+└── RHCSA (Red Hat Certified System Administrator)
+
+
+---
+
+### 🏆 Logros del módulo
+
+> Completaste el módulo 3 del curso de ciberseguridad de IBM SkillsBuild. Aprendiste sobre firmware, servidores, sistemas operativos y cómo protegerlos. Aplicaste tus conocimientos en escenarios prácticos y creaste planes de seguridad reales. ¡Excelente trabajo!
+
+## 📖 Explora más recursos
+
+Para profundizar en los conceptos cubiertos en este módulo, consultá estos recursos:
+
+### 🔗 Recursos adicionales
+
+| Tema | Recurso | Descripción |
+|------|---------|-------------|
+| **Sistemas operativos no compatibles** | [¿Cuáles son los problemas de seguridad del uso de un sistema operativo no compatible?](https://www.itconvergence.com/blog/security-risks-of-unsupported-operating-systems/) | Blog de IT Convergence que explica los riesgos de seguridad de usar un SO que ya no recibe soporte. |
+| **Proceso de arranque de Windows** | [Proteger el proceso de arranque de Windows](https://learn.microsoft.com/es-es/windows/security/operating-system-security/system-security/secure-the-windows-10-boot-process) | Documentación oficial de Microsoft sobre cómo proteger el proceso de arranque de Windows. |
+| **Windows Server Security** | [Documentación de Windows Server Security](https://learn.microsoft.com/es-es/windows-server/security/security-and-assurance) | Microsoft explica cómo Windows Server Security proporciona capas de protección integradas en el SO. |
+| **Linux en ciberseguridad** | [Cinco habilidades de Linux que debe dominar para ser un profesional de la ciberseguridad](https://www.comptia.org/blog/linux-skills-for-cybersecurity-professionals) | Blog de CompTIA sobre la relevancia de Linux para los profesionales de ciberseguridad. |
+
+---
+
+### 📚 Fuentes y referencias del módulo
+
+#### Lección 1: Seguridad del firmware
+
+| Fuente | Enlace |
+|--------|--------|
+| **CWE Top 25 Most Dangerous Software Weaknesses (2022)** | [https://cwe.mitre.org/top25/archive/2022/2022_cwe_top25.html](https://cwe.mitre.org/top25/archive/2022/2022_cwe_top25.html) |
+
+#### Lección 2: Servidores y sistemas operativos
+
+| Fuente | Enlace |
+|--------|--------|
+| **Windows 1.0 - PCMag Encyclopedia** | [https://www.pcmag.com/encyclopedia/term/windows-10](https://www.pcmag.com/encyclopedia/term/windows-10) |
+
+---
+
+### 🎓 Certificaciones mencionadas en el módulo
+
+| Certificación | Descripción |
+|---------------|-------------|
+| **Red Hat Certified System Administrator (RHCSA)** | Certificación de Red Hat para administradores de sistemas Linux. Ideal para validar habilidades en entornos empresariales. |
+| **Certified Firmware Engineer (CFE)** | Certificación para ingenieros de firmware. |
+| **Certified Firmware Security Engineer (CFSE)** | Certificación enfocada en seguridad del firmware. |
+
+---
+
+### 🛠️ Herramientas y tecnologías vistas
+
+| Herramienta / Tecnología | ¿Para qué se usa? |
+|--------------------------|-------------------|
+| **Windows Defender Firewall** | Firewall integrado en Windows para proteger contra accesos no autorizados. |
+| **BitLocker** | Cifrado de disco completo en Windows. |
+| **FileVault** | Cifrado de disco completo en macOS. |
+| **LUKS** | Cifrado de disco en Linux. |
+| **BIOS / UEFI** | Firmware de la placa madre. UEFI es la versión moderna con más seguridad (Secure Boot). |
+| **TPM (Trusted Platform Module)** | Chip de seguridad que almacena claves de cifrado y verifica la integridad del sistema. |
+| **SIEM** | Sistema de gestión de eventos e información de seguridad para monitoreo centralizado. |
+| **IDS / IPS** | Sistema de detección / prevención de intrusiones. |
+| **Red Hat Enterprise Linux** | Distribución de Linux para servidores empresariales. |
+| **Ubuntu, Fedora, Debian** | Distribuciones de Linux populares para escritorio y servidor. |
+| **Kali Linux** | Distribución de Linux especializada en ciberseguridad y pruebas de penetración. |
+| **MAPI** | Interfaz de programación de aplicaciones de mensajería (usada por Outlook/Exchange). |
+| **S/MIME** | Estándar para cifrar y firmar digitalmente correos electrónicos. |
+
+---
+
+### 📝 Glosario rápido del módulo 3
+
+| Término | Definición breve |
+|---------|------------------|
+| **Firmware** | Software de bajo nivel integrado en el hardware que controla su funcionamiento. |
+| **Bootloader** | Programa que carga el sistema operativo al encender la computadora. |
+| **Kernel** | Núcleo del SO que gestiona hardware y software. |
+| **Hardening** | Proceso de asegurar un sistema reduciendo vulnerabilidades. |
+| **Superficie de ataque** | Conjunto de puntos de entrada que un atacante puede explotar. |
+| **Parche** | Actualización que corrige vulnerabilidades de seguridad. |
+| **MFA** | Autenticación multifactor: verificación con dos o más métodos. |
+| **RBAC** | Control de acceso basado en roles. |
+| **Bootkit** | Malware que infecta el proceso de arranque. |
+| **Rootkit** | Malware que se oculta modificando el sistema operativo. |
+| **Jailbreak** | Eliminar restricciones de iOS para instalar apps no autorizadas. |
+| **Rooting** | Obtener permisos de superusuario en Android. |
+| **Logs** | Registros de eventos del sistema. |
+| **Backup** | Copia de seguridad de datos. |
+| **Regla 3-2-1** | Estrategia de backup: 3 copias, 2 medios, 1 fuera del sitio. |
+| **OTA** | Actualización inalámbrica de firmware/software (Over-The-Air). |
+| **DNS** | Sistema de nombres de dominio: traduce nombres a direcciones IP. |
+| **FTP** | Protocolo de transferencia de archivos. |
+| **HTTP/HTTPS** | Protocolo de transferencia de hipertexto (seguro con cifrado). |
+
+## 🧪 Preguntas de repaso - Módulo 3
+
+---
+
+### Pregunta 1: Cifrado de datos del firmware
+
+**WeInvest crea un plan para garantizar la seguridad del firmware de sus dispositivos IoT. Para ello, WeInvest cifra los datos de su firmware. ¿Por qué debería cifrar los datos del firmware?**
+
+✅ **Respuesta correcta:** Para evitar modificaciones no autorizadas o manipulación del firmware.
+
+| Opción | ¿Es correcta? | Explicación |
+|--------|:---:|-------------|
+| Para facilitar la integración con otros dispositivos IoT | ❌ | El cifrado protege datos, no facilita integración. |
+| Para mejorar el rendimiento y la velocidad | ❌ | El cifrado no mejora rendimiento, su propósito es seguridad. |
+| Para evitar modificaciones no autorizadas o manipulación | ✅ | El cifrado garantiza que solo usuarios autorizados puedan modificar el firmware. |
+| Para restringir el acceso a funciones críticas | ❌ | Eso se hace con autenticación y autorización (RBAC). |
+
+---
+
+### Pregunta 2: Actualizaciones OTA
+
+**WeInvest implementa actualizaciones over-the-air (OTA) para sus dispositivos móviles. ¿Cuál es el propósito de las actualizaciones OTA?**
+
+✅ **Respuesta correcta:** Para transmitir de forma inalámbrica nuevo firmware a dispositivos móviles.
+
+| Opción | ¿Es correcta? | Explicación |
+|--------|:---:|-------------|
+| Para restringir el acceso a la red | ❌ | Eso se hace con firewalls y control de acceso. |
+| Cómo deshabilitar los puertos USB | ❌ | Se deshabilitan desde configuración del sistema. |
+| Para cifrar datos confidenciales | ❌ | El cifrado es una función de seguridad independiente. |
+| Para transmitir de forma inalámbrica nuevo firmware | ✅ | Definición exacta de OTA: software/firmware transmitido sin cables. |
+
+---
+
+### Pregunta 3: Cifrado de copias de seguridad
+
+**Debes proteger un sistema operativo implementando métodos de autenticación seguros para las copias de seguridad de los datos. ¿Qué método consiste en codificar los datos de la copia de seguridad y emplear una clave de descifrado para acceder a ellos?**
+
+✅ **Respuesta correcta:** Cifrado.
+
+| Opción | ¿Es correcta? | Explicación |
+|--------|:---:|-------------|
+| Cifrado | ✅ | Codifica datos y requiere clave para descifrarlos. |
+| Control de acceso basado en roles | ❌ | Controla quién accede, pero no codifica datos. |
+| Registros de acceso | ❌ | Auditan quién accedió, no codifican. |
+| Autenticación de dos factores | ❌ | Verifica identidad con dos métodos, no codifica datos. |
+
+---
+
+### 📊 Resumen de los cuatro métodos de autenticación para backups
+
+| Método | ¿Qué hace? |
+|--------|------------|
+| **Cifrado** | Codifica los datos. Solo se leen con clave de descifrado. |
+| **Control de acceso basado en roles (RBAC)** | Asigna permisos según el rol del usuario. |
+| **Registros de acceso** | Guarda historial de quién accedió y qué hizo. |
+| **Autenticación multifactor (MFA)** | Requiere dos o más factores para verificar identidad. |
+
+---
+
+### 🎯 Puntaje acumulado
+
+| Pregunta | Valor | Resultado |
+|----------|-------|-----------|
+| Cifrado de firmware | 20 CyberCoins | ✅ Correcto |
+| Actualizaciones OTA | 30 CyberCoins | ✅ Correcto |
+| Cifrado de backups | 30 CyberCoins | ✅ Correcto |
+| **Total** | **80 CyberCoins** | 🏆 |
+
+
+
 
