@@ -2898,5 +2898,777 @@ Para profundizar en los conceptos cubiertos en este módulo, consultá estos rec
 | **Total** | **80 CyberCoins** | 🏆 |
 
 
+## 🌐 Módulo 4: Seguridad de redes (Network Security)
 
+La seguridad general de un sistema depende de la seguridad de la red. Una organización puede tener políticas sólidas sobre cómo el personal usa y mantiene cada dispositivo, pero si no protege **cómo esos dispositivos se conectan y comunican** entre sí y con otras redes (incluido Internet), el sistema sigue siendo vulnerable.
+
+---
+
+### 📋 Lo que vamos a ver en este módulo
+
+| Tema | Descripción |
+|------|-------------|
+| **Tipos de ataques a redes** | Cómo funcionan y qué amenazan. |
+| **Dispositivos de seguridad de red** | Herramientas que los administradores usan para proteger contra ataques. |
+| **Arquitectura de red segura** | Cómo diseñar redes con seguridad incorporada desde el principio. |
+| **Control de acceso a la red** | Por qué es crucial para una seguridad de red sólida. |
+
+---
+
+### 🧠 Idea clave del módulo
+
+> *"No basta con proteger cada dispositivo por separado. La red que los conecta también debe ser segura. Si la red es vulnerable, todos los dispositivos conectados a ella están en riesgo."*
+
+---
+
+### 🔗 Conexión con el módulo anterior
+
+| Módulo 3 (Seguridad del sistema) | Módulo 4 (Seguridad de redes) |
+|----------------------------------|-------------------------------|
+| Protegimos dispositivos individuales (SO, firmware). | Ahora protegemos la **conexión entre ellos**. |
+| Vimos firewall como protección local. | Veremos firewalls de red y otros dispositivos. |
+| Aprendimos a asegurar el SO host. | Aprendemos a asegurar la infraestructura de red. |
+
+
+### 🎯 Objetivos de aprendizaje
+
+Al completar este módulo, deberás ser capaz de:
+
+| # | Objetivo | ¿Qué implica? |
+|---|----------|---------------|
+| 1 | **Clasificar los tipos de ataques de aplicaciones y servicios** | Identificar y diferenciar ataques como DoS, DDoS, inyección SQL, cross-site scripting (XSS), etc. |
+| 2 | **Clasificar los tipos de ataques inalámbricos** | Reconocer ataques específicos de redes WiFi: rogue access points, evil twin, war driving, etc. |
+| 3 | **Identificar los beneficios de los dispositivos de seguridad de red** | Saber para qué sirven firewalls, IDS/IPS, proxies, VPNs y otros dispositivos de protección. |
+| 4 | **Diseñar una red segura** | Aplicar principios de arquitectura de red segura desde el diseño inicial. |
+| 5 | **Diferenciar entre los controles de acceso a la red** | Distinguir métodos como NAC, MAC filtering, 802.1X, y entender cuándo usar cada uno. |
+
+---
+
+### 🗺️ Mapa visual de objetivos
+Módulo 4: Seguridad de redes
+│
+├── Amenazas
+│ ├── Ataques a aplicaciones y servicios
+│ └── Ataques inalámbricos
+│
+├── Defensas
+│ └── Dispositivos de seguridad de red
+│
+├── Diseño
+│ └── Arquitectura de red segura
+│
+└── Control
+└── Control de acceso a la red (NAC)
+
+## ⚠️ Lección 1: Amenazas a la seguridad de la red
+
+La seguridad de la red es vital para mantener la **integridad de los datos** y la **privacidad** de una organización y sus empleados. Para garantizar una protección eficaz, se necesita una **comprensión completa** de las posibles amenazas y riesgos.
+
+---
+
+### 📋 Lo que vamos a ver en esta lección
+
+| Tema | Descripción |
+|------|-------------|
+| **Importancia de la seguridad de la red** | Por qué es fundamental proteger la red. |
+| **Tipos de ataques** | Las diferentes amenazas que pueden atacar una red. |
+| **Cómo se producen los ataques** | El mecanismo detrás de cada tipo de ataque. |
+
+---
+
+### 🧠 Idea clave
+
+> *"Para defender una red, primero hay que conocer qué la amenaza. Entender los ataques es el primer paso para protegerse."*
+
+## 🌐 Seguridad de red y ataques de red
+
+La **seguridad de red** protege la infraestructura de red del acceso no autorizado que puede provocar robos o daños. Protege información sensible como datos financieros, personales y empresariales confidenciales.
+
+> *Incluso con buena seguridad en los sistemas y dispositivos, es fundamental proteger la red que los conecta. Si la red es vulnerable, todos los dispositivos quedan expuestos.*
+
+---
+
+### ⚠️ Tipos de amenazas a la seguridad de red
+
+| Tipo de ataque | ¿En qué consiste? | Ejemplo |
+|----------------|-------------------|---------|
+| **Ataques a aplicaciones** | Explotan una vulnerabilidad conocida en el software que se ejecuta en un servidor. | **Ataque de intermediario (Man-in-the-Middle):** un actor malicioso engaña al usuario para robar información. Ejemplo: redirigir a un usuario a un sitio web falso que se parece al original para capturar contraseñas. |
+| **Ataques inalámbricos** | Aprovechan las vulnerabilidades de las redes inalámbricas para interceptar información. | **Gemelo maligno (Evil Twin):** el atacante configura un punto de acceso WiFi falso. Si los usuarios se conectan, el atacante accede a su sistema e información. |
+
+---
+
+### 🛡️ Capas de una buena seguridad de red
+
+| Capa | ¿Qué incluye? | ¿Para qué sirve? |
+|------|---------------|------------------|
+| **Control de acceso por software** | Autenticación de usuarios y dispositivos. Control de acceso por rol (RBAC). | Verificar identidad y otorgar o denegar acceso a recursos. Limitar quién usa recursos o datos según su rol. |
+| **Hardware de seguridad** | Switches, routers, firewalls. | Monitorear y controlar el tráfico de red. Asegurar que solo el tráfico autorizado pase. |
+| **Sistemas de detección y prevención** | IDS/IPS, firewalls. | Monitorear tráfico en busca de actividad sospechosa y bloquear ataques. |
+| **Arquitectura de red segura** | Zonas, topologías, segmentación, aislamiento. | Ubicar estratégicamente servidores y dispositivos de seguridad para maximizar disponibilidad y minimizar riesgos. |
+
+---
+
+### 🎯 Ejemplos de ataques mencionados
+
+| Ataque | Tipo | Descripción breve |
+|--------|------|-------------------|
+| **Gemelo maligno (Evil Twin)** | Inalámbrico | Punto de acceso WiFi falso que imita a uno legítimo. |
+| **Secuestro (Hijacking)** | Aplicación | Tomar control de una sesión o conexión legítima. |
+| **Inyecciones** | Aplicación | Insertar código malicioso en una aplicación (SQL, comandos). |
+| **Envenenamiento ARP** | Red | Manipular las tablas ARP para interceptar tráfico. |
+| **Bluejacking** | Inalámbrico | Enviar mensajes no solicitados por Bluetooth. |
+| **Bluesnarfing** | Inalámbrico | Acceder a información de un dispositivo por Bluetooth sin autorización. |
+| **Día cero (Zero-day)** | Aplicación/SO | Explotar una vulnerabilidad antes de que el fabricante la conozca o publique un parche. |
+
+---
+
+### 🧠 ¿Qué abarca la seguridad de red?
+Prácticas básicas: Prácticas avanzadas:
+├── Contraseñas seguras ├── Firewalls
+├── Cerrar sesión ├── IDS/IPS
+├── No compartir credenciales├── Segmentación de red
+└── Sentido común └── Arquitectura segura
+
+
+La seguridad de red cubre desde lo más simple hasta lo más complejo. También incluye las **políticas** relacionadas con el manejo de información confidencial.
+
+---
+
+### ⚠️ ¿Por qué es importante?
+
+| Motivo | Consecuencia de no proteger la red |
+|--------|-------------------------------------|
+| Cada vez hay más información sensible en línea y en dispositivos. | Un acceso no autorizado puede tener **resultados desastrosos**. |
+| Los ataques evolucionan constantemente. | Sin seguridad, los datos financieros, personales y empresariales quedan expuestos. |
+| La red conecta todos los dispositivos. | Una red vulnerable pone en riesgo todos los sistemas, aunque estén bien protegidos individualmente. |
+
+> *"La seguridad de red garantiza que los servicios y recursos críticos permanezcan intactos, seguros y disponibles para los usuarios autorizados, evitando accesos no autorizados e interrupciones por ciberataques."*
+
+
+### 💭 Pregunta de reflexión: Tres principales medidas de seguridad de red
+
+Después de ver el video, estas serían las **tres principales medidas de seguridad de red** que recomendaría a una organización:
+
+---
+
+#### 🥇 1. Control de acceso a la red
+
+| ¿En qué consiste? | ¿Por qué es prioridad? |
+|-------------------|------------------------|
+| Usar técnicas de **autenticación** para verificar la identidad de usuarios y dispositivos. Conceder o denegar acceso a los recursos según el **rol o grupo** del usuario (RBAC). | Es la primera línea de defensa. Si solo entra quien debe entrar, se reduce drásticamente la superficie de ataque. Sin control de acceso, cualquier otra medida pierde efectividad. |
+
+---
+
+#### 🥈 2. Sistemas de detección y prevención de intrusiones (IDS/IPS y firewalls)
+
+| ¿En qué consiste? | ¿Por qué es prioridad? |
+|-------------------|------------------------|
+| Monitorear el tráfico de red en busca de **actividad sospechosa**. Configurar firewalls y sistemas IDS/IPS para **detectar y bloquear ataques** antes de que lleguen a los sistemas internos. | Aunque un atacante intente entrar, estos sistemas actúan como guardianes que vigilan las 24 horas. Sin monitoreo, un ataque puede pasar desapercibido durante meses. |
+
+---
+
+#### 🥉 3. Arquitectura de red segura (segmentación y zonas)
+
+| ¿En qué consiste? | ¿Por qué es prioridad? |
+|-------------------|------------------------|
+| Diseñar la red usando **zonas, topologías y segmentación** para ubicar estratégicamente servidores y dispositivos. Aislar los recursos críticos del resto de la red. | Si un atacante logra entrar, la segmentación **limita el daño**. No puede moverse libremente por toda la red. Es como tener compartimentos estancos en un barco: si uno se inunda, los demás no. |
+
+---
+
+### 📊 Por qué estas tres y no otras
+
+| Medida | ¿Qué pasaría sin ella? |
+|--------|------------------------|
+| **Control de acceso** | Cualquiera podría conectarse a la red y acceder a recursos sensibles. |
+| **IDS/IPS y firewalls** | Los ataques entrarían sin ser detectados ni bloqueados. |
+| **Segmentación de red** | Un atacante que ingresa a un solo dispositivo podría moverse libremente por toda la organización. |
+
+---
+
+### 🧠 Lógica de prioridades
+1º Control de acceso → Definir QUIÉN puede entrar.
+2º Monitoreo y bloqueo → Vigilar y frenar a los que intentan entrar igual.
+3º Segmentación → Limitar el daño si alguien logra entrar.
+
+
+> *"La seguridad es como una cebolla: tiene capas. Si solo ponés una, cuando la atraviesen, quedás expuesto. Las tres medidas juntas crean una defensa sólida."*
+
+## ⚠️ Ataques a aplicaciones y servicios
+
+Los ataques a aplicaciones y servicios son una de las formas más comunes de ataque. Se dividen en dos categorías principales:
+
+| Tipo | Objetivo |
+|------|----------|
+| **Ataque de aplicación** | Explota una vulnerabilidad en una aplicación o software para obtener acceso no autorizado, robar datos o tomar control del sistema. |
+| **Ataque de servicio** | Busca **apagar** una computadora o red, dejándola no disponible para los usuarios legítimos. |
+
+---
+
+### 📋 Tipos de ataques más frecuentes
+
+#### 1. Denegación de servicio (DoS y DDoS)
+
+| Característica | DoS | DDoS |
+|----------------|-----|------|
+| **¿Cuántos dispositivos atacan?** | Una sola computadora. | Múltiples dispositivos conectados (botnet). |
+| **¿Cómo funciona?** | Inunda la máquina objetivo con peticiones hasta que no puede procesar el tráfico normal. | Satura el sitio web objetivo con tráfico falso desde muchos dispositivos a la vez. |
+| **Resultado** | El servicio deja de estar disponible para usuarios legítimos. | Igual que DoS, pero a mucha mayor escala. |
+
+**Analogía:** Un embotellamiento de autos rojos que impide que los autos blancos (usuarios legítimos) puedan entrar a la carretera.
+
+---
+
+#### 2. Ataque de intermediario (MITM)
+
+| ¿Qué es? | ¿Cómo funciona? |
+|----------|-----------------|
+| Un atacante se interpone en una conversación o transferencia de datos entre dos participantes. | Se inserta en la comunicación y finge ser el participante legítimo para ambos lados. Ninguno de los dos sabe que el atacante está ahí. |
+
+**¿Qué puede hacer el atacante?**
+- Interceptar información y datos de cualquiera de las partes.
+- Enviar enlaces maliciosos a ambos participantes.
+
+**Abreviaturas:** MITM, MitM, MIM.
+
+**Analogía:** Alguien que intercepta las cartas entre dos personas, las lee, las modifica y las reenvía sin que nadie se dé cuenta.
+
+---
+
+#### 3. Desbordamiento de búfer
+
+| ¿Qué es? | ¿Cómo funciona? |
+|----------|-----------------|
+| Un programa intenta almacenar más datos en un área de almacenamiento temporal (búfer) de los que puede manejar. | Los datos sobrantes se desbordan hacia zonas de memoria cercanas, sobrescribiendo lo que haya allí. |
+
+**¿Por qué es peligroso?**
+- Puede causar fallos o dañar datos.
+- Un atacante puede **enviar datos adicionales a propósito** para provocar el desbordamiento.
+- Puede incluir **instrucciones dañinas** en el desbordamiento.
+- Si el programa ejecuta esas instrucciones, el atacante puede **tomar control del sistema**.
+
+**Analogía:** Una valija pequeña a la que le metés demasiada ropa. La ropa sobrante se desborda y hace un desastre alrededor.
+
+---
+
+#### 4. Día cero (Zero-day)
+
+| Fase | ¿Qué ocurre? |
+|------|--------------|
+| **1. Vulnerabilidad introducida** | La organización publica software con una vulnerabilidad que desconoce. |
+| **2. Vulnerabilidad descubierta** | Los atacantes encuentran la vulnerabilidad antes que el fabricante. |
+| **3. Explotación** | Los atacantes lanzan malware aprovechando la vulnerabilidad. Todavía **no existe parche** (de ahí "día cero"). |
+| **4. Solución desarrollada** | El fabricante se entera y crea un parche. |
+| **5. Parche publicado** | El fabricante distribuye la solución. |
+| **6. Parche implementado** | Los usuarios instalan la actualización. La vulnerabilidad deja de ser "día cero". |
+
+**Dato clave:** Pueden pasar **meses o incluso años** antes de que el fabricante descubra la vulnerabilidad.
+
+---
+
+#### 5. Suplantación de identidad (Spoofing)
+
+Un atacante usa un dispositivo o red para **hacerse pasar por una entidad legítima**. Esto le permite tomar control de dispositivos o acceder a datos confidenciales.
+
+| Tipo de suplantación | ¿En qué consiste? |
+|----------------------|-------------------|
+| **Suplantación de IP** | Crear paquetes IP con direcciones de origen **falsas** para hacerse pasar por otro sistema. Permite infectar con malware, robar datos o colapsar servidores sin ser detectado. |
+| **Envenenamiento de DNS** | Introducir información falsa en la caché de un servidor DNS. Las consultas devuelven una dirección IP incorrecta, enviando a los usuarios a **sitios web falsos**. También se llama "suplantación de DNS". |
+| **Suplantación de MAC** | Interceptar o manipular los mensajes de control intercambiados entre un dispositivo y su dirección MAC. Permite **falsificar la identidad** de un dispositivo en la red. |
+
+**Analogía:** Un actor malicioso usando una máscara para hacerse pasar por un usuario legítimo.
+
+---
+
+### 📊 Resumen de ataques
+
+| Ataque | Tipo | Objetivo principal |
+|--------|------|-------------------|
+| **DoS / DDoS** | Servicio | Dejar un servicio no disponible. |
+| **MITM** | Aplicación | Interceptar y manipular comunicaciones. |
+| **Desbordamiento de búfer** | Aplicación | Tomar control del sistema explotando errores de memoria. |
+| **Día cero** | Aplicación | Explotar vulnerabilidades antes de que exista parche. |
+| **Suplantación (Spoofing)** | Aplicación/Red | Hacerse pasar por una entidad legítima para robar datos o lanzar ataques. |
+
+### 🔍 Suplantación de IP, DNS y MAC: diferencias y aclaraciones
+
+---
+
+#### 📍 Suplantación de IP
+
+**¿Qué es?**
+Un atacante **falsea la dirección IP de origen** de los paquetes que envía. Es como poner un remitente falso en una carta. El que la recibe cree que viene de otro lado.
+
+**Ejemplo concreto:**
+Situación normal:
+Tu PC (192.168.1.50) → Servidor (192.168.1.1)
+El servidor sabe quién le habla.
+
+Con suplantación de IP:
+Atacante (IP real 10.0.0.99) → Falsea su IP como 192.168.1.50 → Servidor (192.168.1.1)
+El servidor cree que le está hablando tu PC, cuando en realidad es el atacante.
+
+
+**¿Para qué se usa?**
+
+| Objetivo | ¿Cómo? |
+|----------|--------|
+| **Ocultar la identidad** | El atacante no quiere ser rastreado. |
+| **Lanzar ataques DoS** | Enviar miles de paquetes con IP falsa para saturar un servidor. |
+| **Saltarse filtros de seguridad** | Si el servidor solo acepta conexiones de ciertas IPs, el atacante falsifica una IP autorizada. |
+
+---
+
+#### 🆚 ¿Es lo mismo suplantación de IP que envenenamiento de DNS?
+
+**No, no son lo mismo.** Hacen cosas distintas:
+
+| | Suplantación de IP | Envenenamiento de DNS |
+|--|---------------------|------------------------|
+| **¿Qué falsea?** | La dirección IP de origen de un paquete. | La información dentro de la caché de un servidor DNS. |
+| **¿Dónde actúa?** | En los paquetes de datos que viajan por la red. | En el servidor que traduce nombres a IPs. |
+| **Resultado** | El servidor cree que le habla otra persona. | El usuario es enviado a un sitio web falso sin saberlo. |
+| **Analogía** | Poner un remitente falso en una carta. | Cambiar las páginas de la guía telefónica para que el número de "Banco" lleve a la casa del ladrón. |
+
+**Ejemplo de envenenamiento de DNS:**
+Normal:
+Escribís "banco.com" → DNS responde IP real: 200.10.5.1 → Vas al banco de verdad.
+
+Envenenado:
+Escribís "banco.com" → DNS responde IP falsa: 150.99.2.7 → Vas a una copia del banco hecha por el atacante.
+
+
+> El usuario **no se da cuenta** porque la dirección del navegador sigue diciendo "banco.com". Pero está en un sitio falso.
+
+---
+
+#### 🔐 Suplantación de MAC y filtrado por MAC
+
+**¿Qué es la suplantación de MAC?**
+Cada dispositivo de red tiene una **dirección MAC** única (grabada de fábrica en la placa de red). La suplantación de MAC consiste en **cambiar esa dirección** para hacerse pasar por otro dispositivo.
+
+**¿Para qué sirve?**
+
+| Objetivo | ¿Cómo? |
+|----------|--------|
+| **Saltarse filtros MAC** | Si una red solo acepta ciertas MACs, el atacante copia una autorizada. |
+| **Robar la identidad de un dispositivo** | El atacante se hace pasar por una impresora, cámara o PC legítima. |
+| **Capturar tráfico** | Hacerse pasar por el router para que todos los dispositivos le envíen datos a él. |
+
+---
+
+#### 🛡️ ¿Sirve configurar el filtrado de direcciones MAC en el router?
+
+El **filtrado de direcciones MAC** es una medida de seguridad que muchos routers domésticos permiten. Consiste en crear una **lista blanca** con las MACs de tus dispositivos. Cualquier dispositivo que no esté en la lista no se conecta.
+
+| Ventajas | Desventajas |
+|----------|-------------|
+| ✅ Agrega una capa extra de seguridad. | ❌ Un atacante con conocimientos puede **espiar** las MACs autorizadas usando herramientas como Wireshark. |
+| ✅ Fácil de configurar desde el panel del router. | ❌ Luego de ver una MAC autorizada, puede **cambiar su propia MAC** para hacerse pasar por ella (suplantación de MAC). |
+| ✅ Filtra conexiones no deseadas de vecinos o intrusos casuales. | ❌ Es molesto cuando recibís visitas: cada vez hay que agregar la MAC del nuevo dispositivo. |
+
+> **Conclusión:** El filtrado MAC es una barrera adicional, pero **no es infalible**. Es como un portero que revisa nombres en una lista. Si alguien escucha el nombre de un invitado autorizado y lo repite, puede entrar. **Complementa** otras medidas (contraseña fuerte, WPA3, firewall), pero **no reemplaza** una buena seguridad básica.
+
+---
+
+#### 📊 Comparación final de los tres tipos de suplantación
+
+| Tipo | ¿Qué falsea? | ¿Se puede prevenir? |
+|------|--------------|---------------------|
+| **Suplantación de IP** | Dirección IP de origen de un paquete. | Firewalls configurados para rechazar paquetes con IPs inconsistentes. |
+| **Envenenamiento de DNS** | Información en la caché del servidor DNS. | Usar DNSSEC (DNS Security Extensions). |
+| **Suplantación de MAC** | Dirección MAC de un dispositivo. | Filtrado MAC (barrera parcial) + monitoreo de red para detectar MACs duplicadas. |
+
+
+## 📡 Ataques inalámbricos
+
+Los ataques inalámbricos explotan las características y funciones específicas de las **redes inalámbricas**. El objetivo suele ser el mismo que en los ataques a aplicaciones: **robar información, controlar dispositivos o dejar servicios fuera de línea**.
+
+La tecnología inalámbrica ofrece flexibilidad, comodidad y velocidad, pero puede ser más vulnerable que las redes cableadas tradicionales.
+
+---
+
+### 📋 Tipos de ataques inalámbricos más comunes
+
+#### 1. Gemelo malvado (Evil Twin)
+
+| ¿Qué es? | ¿Cómo funciona? |
+|----------|-----------------|
+| Un tipo de ataque de **intermediario (MITM)** donde el atacante configura un **punto de acceso WiFi falso**. | El WiFi falso se hace pasar por uno legítimo. El nombre de la red (SSID) parece idéntico al real. |
+
+**¿Dónde se usa?**
+- Aeropuertos
+- Cafeterías
+- Parques públicos
+- Cualquier lugar con WiFi gratuito
+
+**¿Qué logra el atacante?**
+- Robar información (contraseñas, datos bancarios).
+- Infiltrarse en el dispositivo de la víctima.
+- Redirigir a sitios web falsos.
+
+**Analogía:** Un ladrón que monta un puesto de café falso al lado del verdadero. Los clientes le entregan su dinero sin saber que no es el auténtico.
+
+---
+
+#### 2. Punto de acceso no autorizado (Rogue Access Point)
+
+| ¿Qué es? | ¿Es siempre malicioso? |
+|----------|------------------------|
+| Cualquier punto de acceso inalámbrico que **no pertenece a la red oficial**. | No siempre. Algunos son instalados por empleados sin mala intención o por personal de TI para pruebas. |
+
+**Cuando es instalado por un atacante:**
+
+| Riesgo | Consecuencia |
+|--------|--------------|
+| **Eludir firewalls y dispositivos de seguridad** | Abre la red a ataques externos. |
+| **Monitorear la actividad del usuario** | El atacante ve qué sitios visitás y qué descargás. |
+| **Redirigir a sitios falsos** | Te lleva a una página creada para robar información o instalar malware. |
+| **Filtrar información confidencial** | Roba contraseñas, datos de tarjetas, documentos. |
+
+**Diferencia clave con el gemelo malvado:**
+
+| Gemelo malvado | Punto de acceso no autorizado |
+|----------------|-------------------------------|
+| Imita a un WiFi legítimo **fuera** de la red. | Está conectado **dentro** de la red oficial, saltándose las protecciones internas. |
+
+---
+
+#### 3. Jamming (Interferencia)
+
+| ¿Qué es? | ¿Cómo funciona? |
+|----------|-----------------|
+| Un tipo de ataque de **denegación de servicio (DoS)** contra redes inalámbricas. | Un dispositivo emite **energía electromagnética** que interfiere con las señales legítimas, aumentando el ruido y haciendo la red inutilizable. |
+
+**Otros métodos de jamming:**
+- Causar un mal funcionamiento en el protocolo de "apretón de manos" (handshake) para que los dispositivos no puedan conectarse.
+- Saturar las frecuencias de WiFi o Bluetooth.
+
+**Resultado:** Los usuarios legítimos no pueden comunicarse.
+
+**Analogía:** Un tipo con un megáfono gigante al lado tuyo mientras intentás hablar por teléfono. No escuchás nada.
+
+---
+
+#### 4. Bluesnarfing
+
+| ¿Qué es? | ¿Cómo funciona? |
+|----------|-----------------|
+| Ataque que aprovecha **vulnerabilidades en Bluetooth** para robar información o usar el dispositivo de la víctima. | El atacante se cuela en dispositivos móviles que dejaron la conexión Bluetooth **abierta y detectable**. |
+
+**¿Qué puede robar el atacante?**
+- Correos electrónicos
+- Lista de contactos
+- Números de teléfono
+- Contraseñas
+- Fotos y archivos
+
+**Otros riesgos:**
+- Usar el teléfono de la víctima para hacer **llamadas caras o ilegales**.
+- Los **altavoces inteligentes** también son vulnerables.
+
+**¿Se necesita ser un experto?**
+No. Existen herramientas de bluesnarfing **listas para usar** y hasta **servicios de bluesnarfer de alquiler**.
+
+**Analogía:** Alguien que, sin que te des cuenta, te saca la billetera del bolsillo mientras caminás por la calle. No forcejea, solo aprovecha que la dejaste al alcance.
+
+---
+
+### 📊 Resumen de ataques inalámbricos
+
+| Ataque | Tipo | ¿Qué busca? | ¿Dónde actúa? |
+|--------|------|-------------|---------------|
+| **Gemelo malvado** | MITM | Robar información interceptando tráfico. | WiFi (punto de acceso falso fuera de la red). |
+| **Punto de acceso no autorizado** | Acceso | Abrir una puerta trasera en la red. | WiFi (punto de acceso conectado dentro de la red). |
+| **Jamming** | DoS | Dejar la red inutilizable. | Frecuencias de WiFi/Bluetooth. |
+| **Bluesnarfing** | Robo de datos | Robar información y usar el dispositivo. | Bluetooth. |
+
+---
+
+### 🛡️ Medidas de protección básicas
+
+| Ataque | Cómo protegerse |
+|--------|-----------------|
+| **Gemelo malvado** | No conectarse a redes WiFi abiertas sin verificar. Usar VPN. |
+| **Punto de acceso no autorizado** | Monitorear la red para detectar dispositivos no autorizados. |
+| **Jamming** | Usar redes cableadas para servicios críticos. Monitorear la señal. |
+| **Bluesnarfing** | Desactivar Bluetooth cuando no se use. No dejar el dispositivo en modo "detectable". |
+
+### 🎭 Evil Twin hoy: ¿sigue siendo peligroso?
+
+Si bien antes los ataques de Gemelo Malvado eran mucho más efectivos, hoy en día **siguen existiendo**, pero son **más difíciles de ejecutar con éxito** gracias a varias protecciones modernas. Sin embargo, los atacantes **evolucionaron** y encontraron nuevas formas de engañar a los usuarios.
+
+---
+
+### 🛡️ ¿Por qué ya casi no funciona el Evil Twin clásico?
+
+| Protección moderna | ¿Qué hace? |
+|--------------------|------------|
+| **HTTPS en casi todas partes** | Casi todas las páginas usan HTTPS. Aunque el atacante intercepte el tráfico, **no puede leerlo** porque va cifrado. Los navegadores además muestran una alerta muy visible si un sitio no es seguro. |
+| **Apps de home banking con SSL Pinning** | Las apps de los bancos tienen "grabada" la identidad exacta del servidor legítimo. Si alguien intenta hacerse pasar por el banco, la app **no se conecta**. No hay forma de engañarla con un WiFi falso. |
+| **Cifrado de extremo a extremo (WhatsApp, Signal)** | Los mensajes se cifran en **tu celular** y solo se descifran en el celular de destino. Ni el atacante, ni el proveedor de internet, ni siquiera WhatsApp pueden leerlos. |
+| **Navegadores más inteligentes** | Chrome, Firefox y Edge bloquean sitios de phishing conocidos y muestran advertencias muy visibles si algo falla con el certificado de seguridad. |
+
+---
+
+### ⚠️ Lo que TODAVÍA puede hacer un atacante con un Evil Twin
+
+| Ataque | ¿Funciona hoy? | ¿Qué tan grave es? |
+|--------|:---:|:---:|
+| **Ver qué sitios visitás** (dominios) | ✅ Sí | Medio. Sabe que entraste a `banco.com`, pero no ve tu contraseña ni tu saldo. |
+| **Redirigir a sitios falsos sin HTTPS** | ⚠️ Muy raro | Bajo. Casi ningún sitio importante usa HTTP hoy en día. |
+| **Capturar datos de formularios no seguros** | ⚠️ Muy raro | Bajo. La mayoría de los formularios usan HTTPS. |
+| **Inyectar malware en descargas** | ⚠️ Parcial | Medio. Solo funciona si la descarga es por HTTP, algo cada vez menos común. |
+| **Ataque de degradación (forzar HTTP)** | ❌ Casi no | Muy bajo. Los navegadores modernos lo detectan y bloquean. |
+| **Portal cautivo falso** | ✅ Sí | **Alto.** Es la evolución más peligrosa del Evil Twin. |
+
+---
+
+### 🚨 La amenaza real hoy: el Portal Cautivo Falso
+
+Es la **evolución moderna del Evil Twin** y sí es peligrosa porque no intenta romper el cifrado: **te engaña a vos para que le entregues tus datos voluntariamente**.
+
+#### ¿Qué es un portal cautivo?
+
+Es esa página que aparece automáticamente cuando te conectás a un WiFi público, antes de poder navegar. Suele pedirte:
+- Que aceptes los términos y condiciones.
+- Que ingreses un código.
+- Que inicies sesión con alguna cuenta.
+
+**Ejemplos legítimos:**
+- WiFi de aeropuertos.
+- WiFi de hoteles.
+- WiFi de cafeterías con sistema de acceso.
+
+#### ¿Cómo funciona el portal cautivo falso?
+Paso 1: El atacante crea un WiFi falso llamado "WiFi Gratis Aeropuerto".
+
+Paso 2: La víctima se conecta. El celular muestra "Conectado" y abre automáticamente el portal cautivo.
+
+Paso 3: El portal cautivo dice:
+┌─────────────────────────────────────┐
+│ ¡Bienvenido al WiFi del Aeropuerto! │
+│ │
+│ Para conectarse, inicie sesión │
+│ con su cuenta: │
+│ │
+│ [✓] Google │
+│ [ ] Facebook │
+│ [ ] Correo electrónico │
+└─────────────────────────────────────┘
+
+Paso 4: La víctima hace clic en "Google". Se abre una página que se ve
+EXACTAMENTE igual al inicio de sesión real de Google.
+
+Paso 5: La víctima ingresa su email y contraseña reales.
+
+Paso 6: El atacante YA TIENE las credenciales de Google de la víctima.
+Con eso accede a Gmail, Drive, YouTube, fotos, y todo lo demás.
+
+
+#### ¿Por qué es tan efectivo?
+
+| Motivo | Explicación |
+|--------|-------------|
+| **Es visualmente idéntico** | La página de inicio de sesión falsa se ve exactamente igual a la real. El candado HTTPS incluso puede aparecer si el atacante usa un certificado válido para su sitio falso. |
+| **El usuario lo entrega voluntariamente** | No está rompiendo ningún cifrado. La víctima **escribe su contraseña por voluntad propia** creyendo que es legítimo. |
+| **Es común en WiFi públicos** | La gente está acostumbrada a que los WiFi públicos pidan iniciar sesión. No sospechan. |
+| **Funciona en cualquier dispositivo** | Celular, tablet, laptop. Todos son vulnerables a este engaño. |
+
+---
+
+### 🛡️ ¿Cómo protegerse del portal cautivo falso?
+
+| Medida | ¿Por qué funciona? |
+|--------|--------------------|
+| **No uses WiFi públicos abiertos para nada sensible** | Si necesitás hacer algo importante (banco, email, compras), usá tus datos móviles 4G/5G. |
+| **Si el portal cautivo te pide iniciar sesión con Google, Facebook o email... desconfiá** | Un WiFi legítimo rara vez necesita tus credenciales de redes sociales. Lo más común es que solo pida aceptar términos y condiciones. |
+| **Verificá la URL antes de ingresar datos** | Si dice `google.com` es legítimo. Si dice `google-login-wifi.com` o cualquier variante rara, es falso. |
+| **Usá autenticación multifactor (MFA)** | Aunque el atacante robe tu contraseña, no podrá entrar sin el segundo factor (código en tu celular, huella, etc.). |
+| **No reutilices contraseñas** | Si usás la misma contraseña para todo, el atacante que roba tu "contraseña del WiFi" ahora tiene acceso a tu banco, email y redes. |
+| **Preguntá al personal del lugar** | "¿Tienen WiFi? ¿Cuál es el nombre exacto y cómo se accede?". Así sabés si el portal cautivo que te aparece es el real. |
+
+---
+
+### 📊 Evolución del Evil Twin
+
+| Época | Método del atacante | ¿Funcionaba? |
+|-------|---------------------|:---:|
+| **Antes (2005-2015)** | Interceptar tráfico HTTP directamente. Leer contraseñas en texto plano. | ✅ Muy efectivo |
+| **Transición (2015-2020)** | HTTPS se generaliza. El atacante intenta degradar conexiones o usar certificados falsos. | ⚠️ Menos efectivo |
+| **Hoy (2020-presente)** | Portal cautivo falso. Phishing directo al usuario. Robo de cookies de sesión. | ✅ Efectivo (pero más difícil de ejecutar) |
+
+> *"Antes el atacante podía leer tus cartas espiando al cartero. Ahora las cartas van en una caja fuerte blindada. Pero si vos le abrís la caja fuerte al atacante porque creíste que era el del banco, el resultado es el mismo."*
+
+### 🔵 Bluesnarfing: el riesgo de andar con Bluetooth prendido por la ciudad
+
+---
+
+#### ¿Qué es el bluesnarfing?
+
+Es un ataque donde alguien accede a tu dispositivo a través de Bluetooth **sin que te des cuenta**, para robar información o usar tu equipo.
+
+| Palabra | Significado |
+|---------|-------------|
+| **Blue** | Bluetooth |
+| **Snarf** | Término hacker para "robar datos sin dejar rastro" |
+
+---
+
+#### ¿Cómo funciona paso a paso?
+
+| Fase | ¿Qué hace el atacante? |
+|------|------------------------|
+| **1. Escaneo** | Camina por la calle, un centro comercial, un subte, un bar. Con su laptop o celular escanea dispositivos con Bluetooth encendido y **detectable**. |
+| **2. Detección** | Ve tu celular en la lista. Aparece el nombre: "iPhone de María", "Galaxy S24", "Auriculares JBL". Ya sabe qué dispositivo tenés. |
+| **3. Conexión** | Explota una vulnerabilidad del Bluetooth para **conectarse sin que vos aceptes**. No te aparece ningún mensaje de "¿Aceptar conexión?". Entra directo. |
+| **4. Robo** | Una vez conectado, copia tus contactos, fotos, mensajes, contraseñas guardadas, archivos. También puede hacer llamadas desde tu número. |
+| **5. Desconexión** | Se va. Vos no te enteraste de nada. Seguís caminando como si nada. |
+
+---
+
+#### ¿Qué tan cerca tiene que estar el atacante?
+
+| Versión de Bluetooth | Alcance aproximado |
+|----------------------|---------------------|
+| **Bluetooth clásico (hasta 4.0)** | 10 metros |
+| **Bluetooth 5.0 en adelante** | Hasta 100 metros (en espacio abierto) |
+
+> Un atacante puede estar sentado en la misma cafetería, en la mesa de al lado en el patio de comidas, o caminando detrás tuyo en la calle. Ni lo notás.
+
+---
+
+#### ¿Qué información puede robar?
+
+| Dato | ¿Se puede robar? | Ejemplo |
+|------|:---:|---------|
+| **Lista de contactos** | ✅ Sí | Nombres y teléfonos de toda tu agenda. |
+| **Fotos y videos** | ✅ Sí | Tus fotos personales, documentos escaneados. |
+| **Correos electrónicos** | ✅ Sí | Si el cliente de correo está sincronizado localmente. |
+| **Contraseñas guardadas** | ⚠️ Depende | Si están en archivos accesibles del sistema. |
+| **Mensajes SMS** | ✅ Sí | Mensajes de texto, códigos de verificación. |
+| **Llamadas** | ✅ Sí | El atacante puede **usar tu número** para hacer llamadas caras o ilegales. |
+| **Datos de apps** | ⚠️ Depende | Algunas apps almacenan datos localmente sin cifrar. |
+
+---
+
+#### 🎯 Escenario real en la ciudad
+Lugar: Patio de comidas de un shopping. Hora pico. Mucha gente.
+
+Atacante:
+
+Se sienta en una mesa con su mochila. Saca una laptop o un celular.
+
+Abre una herramienta de escaneo Bluetooth (gratuita, fácil de encontrar).
+
+En 30 segundos ve 15 dispositivos con Bluetooth detectable:
+
+"iPhone de Laura"
+
+"Galaxy S24 de Carlos"
+
+"AirPods Pro"
+
+"Auriculares Sony"
+
+Selecciona uno. La herramienta busca vulnerabilidades conocidas.
+
+Si encuentra una sin parche, se conecta en segundos.
+
+Descarga contactos, fotos y mensajes.
+
+Cierra todo. Se va a otra mesa o a otro shopping.
+
+La víctima:
+
+Está almorzando con amigos. Ni se enteró.
+
+Tenía Bluetooth prendido porque siempre lo deja así.
+
+El dispositivo estaba en modo "detectable" (configuración por defecto).
+
+
+---
+
+#### ⚠️ ¿Esto todavía funciona hoy?
+
+| Época | ¿Era fácil? | ¿Por qué? |
+|-------|:---:|-----------|
+| **2005-2012** | ✅ Muy fácil | Bluetooth tenía muchas vulnerabilidades. Los parches tardaban años en llegar. |
+| **2013-2019** | ⚠️ Más difícil | Los sistemas operativos mejoraron. Android e iOS limitan la detectabilidad. |
+| **2020-hoy** | ❌ Más difícil, pero no imposible | Los parches llegan rápido. Pero **siempre hay dispositivos desactualizados** o vulnerabilidades nuevas (zero-day). |
+
+**Hoy en día es más difícil porque:**
+- Los celulares modernos piden confirmación para conexiones entrantes.
+- El modo "detectable" suele apagarse solo después de unos minutos.
+- Los parches de seguridad se instalan automáticamente.
+
+**Pero sigue siendo posible si:**
+- Tenés un dispositivo viejo sin actualizar.
+- Dejaste el Bluetooth en modo detectable permanentemente.
+- Aparece una vulnerabilidad zero-day que todavía no tiene parche.
+
+---
+
+#### 🔵 Dispositivos más vulnerables
+
+| Dispositivo | ¿Por qué es más vulnerable? |
+|-------------|------------------------------|
+| **Auriculares Bluetooth** | Siempre están en modo "emparejamiento" o detectable. No tienen pantalla para pedir confirmación. Algunos modelos baratos no tienen seguridad. |
+| **Parlantes inteligentes** | Siempre escuchando conexiones. Si no están actualizados, son una puerta de entrada. |
+| **Smartwatches** | Se conectan automáticamente. Algunos transfieren datos de salud, notificaciones y mensajes. |
+| **Dispositivos IoT** | Cerraduras inteligentes, sensores, rastreadores. Muchos no reciben actualizaciones de seguridad. |
+
+**Ejemplo real con auriculares:**
+Un atacante podría conectarse a tus auriculares Bluetooth mientras viajás en subte. No para robarte datos, sino para **escuchar lo que estás escuchando** o incluso **inyectar audio** (meter ruido o voces en tus auriculares sin que sepas de dónde viene).
+
+---
+
+#### 🛡️ ¿Cómo protegerse?
+
+| Medida | ¿Qué hace? |
+|--------|------------|
+| **Apagar Bluetooth cuando no lo uses** | Si no estás usando auriculares, el auto o el smartwatch, **apagalo**. Es la medida más efectiva. |
+| **No dejar el dispositivo en modo "detectable"** | En Android e iOS, la opción de "Visible para otros dispositivos" debe estar desactivada. |
+| **No aceptar conexiones de dispositivos desconocidos** | Si te aparece un mensaje para emparejar con algo que no reconocés, **rechazalo**. |
+| **Eliminar dispositivos emparejados que ya no uses** | Esa impresora vieja, el parlante que ya no tenés, el auto que vendiste. Borralos de la lista. |
+| **Mantener el sistema operativo actualizado** | Los parches de seguridad cierran vulnerabilidades de Bluetooth. |
+| **No usar dispositivos Bluetooth baratos o genéricos** | Muchos no tienen seguridad implementada. Son una puerta abierta. |
+| **Usar auriculares y dispositivos de marcas reconocidas** | Suelen tener mejor soporte y actualizaciones. |
+
+---
+
+#### 🎯 En resumen
+
+| Andar con Bluetooth prendido por la ciudad... |
+|-----------------------------------------------|
+| ❌ No es seguro. |
+| ⚠️ El riesgo real es bajo si tenés el sistema actualizado, pero **no es cero**. |
+| 🎯 Un atacante paciente puede encontrar un dispositivo vulnerable en un lugar concurrido. |
+| 🛡️ **Apagalo si no lo necesitás.** Es un gesto simple que elimina el riesgo por completo. |
+
+> *"El Bluetooth es como la puerta de tu casa. Si la dejás abierta, no significa que te vayan a robar seguro. Pero es mucho más fácil para el ladrón. Cerrar la puerta (apagar el Bluetooth) es lo más inteligente."*
+
+## 🛡️ Lección 2: Dispositivos de seguridad de red
+
+Ya aprendiste algunos de los ataques que pueden amenazar una red. Los ciberataques ocurren a un ritmo cada vez mayor y los atacantes **evolucionan constantemente** sus métodos.
+
+**La pregunta lógica es:** ¿Cómo podemos mantenernos al día y seguir protegiendo las redes y los datos?
+
+Afortunadamente, existen **herramientas** para contraatacar. En esta lección vamos a ver los **dispositivos de seguridad de red** y el hardware que se puede usar para proteger una red y sus activos de acciones maliciosas.
+
+---
+
+### 📋 Lo que vamos a ver en esta lección
+
+| Tema | Descripción |
+|------|-------------|
+| **Dispositivos de seguridad de red** | Herramientas físicas y virtuales que protegen la infraestructura. |
+| **Hardware de protección** | Firewalls, IDS/IPS, proxies, VPN concentrators y más. |
+| **Cómo funcionan** | El papel de cada dispositivo en la defensa de la red. |
+
+---
+
+### 🧠 Idea clave
+
+> *"No basta con conocer los ataques. Hay que saber qué herramientas existen para detenerlos. Cada dispositivo de seguridad cumple un rol específico en la defensa."*
 
