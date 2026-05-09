@@ -3672,3 +3672,2469 @@ Afortunadamente, existen **herramientas** para contraatacar. En esta lección va
 
 > *"No basta con conocer los ataques. Hay que saber qué herramientas existen para detenerlos. Cada dispositivo de seguridad cumple un rol específico en la defensa."*
 
+### 🔧 ¿Qué son los dispositivos de seguridad de red?
+
+La seguridad de la red implica implementar **hardware y software** para proteger la red y la infraestructura del acceso no autorizado, las interrupciones y los ataques.
+
+Una seguridad de red efectiva ayuda a proteger los activos de la organización contra amenazas tanto **externas** como **internas**.
+
+---
+
+### 📋 Dispositivos más comunes para combatir amenazas
+
+| Dispositivo | Función principal | Imagen mental |
+|-------------|-------------------|---------------|
+| **Firewalls (Cortafuegos)** | Filtran el tráfico entrante y saliente según reglas de seguridad. Son la primera línea de defensa. | Un guardia de seguridad que revisa quién entra y quién sale. |
+| **Enrutadores (Routers)** | Dirigen el tráfico entre redes. Pueden incluir funciones de seguridad como listas de control de acceso (ACL). | Un semáforo que decide por dónde va cada auto. |
+| **Conmutadores de red (Switches)** | Conectan dispositivos dentro de una misma red. Algunos ofrecen segmentación y seguridad a nivel de puerto. | Las calles internas de un barrio cerrado. |
+| **Servidores proxy** | Actúan como intermediarios entre los usuarios e internet. Filtran contenido, ocultan direcciones IP y cachean datos. | Un mayordomo que recibe los paquetes en la puerta y los revisa antes de entregártelos. |
+| **Equilibradores de carga (Load Balancers)** | Distribuyen el tráfico entre varios servidores para evitar sobrecargas y mejorar la disponibilidad. | Un empleado que reparte gente entre varias cajas para que ninguna se sature. |
+| **Módulos de seguridad de hardware (HSM)** | Almacenan y protegen claves de cifrado en un dispositivo físico especializado. | Una caja fuerte específicamente diseñada para guardar llaves. |
+
+---
+
+### 🧠 En resumen
+
+> *"Cada dispositivo de seguridad cumple un rol específico. Como las piezas de un equipo de fútbol: el arquero (firewall), los defensores (proxy), los mediocampistas (router/switch) y el director técnico que organiza (load balancer). Todos trabajan juntos para proteger la red."*
+
+### 🔥 Firewalls (Cortafuegos)
+
+El término "firewall" proviene del siglo XVII y se refería a un **muro ignífugo** para evitar que los incendios se propagaran. En los años 70, los ingenieros informáticos lo adoptaron para describir herramientas que evitan que los ciberataques tengan éxito.
+
+**¿Qué hace un firewall?**
+Monitorea **todo el tráfico** entre una red e Internet. Examina cada paquete que entra y sale y aplica **reglas predefinidas** para decidir si lo permite o lo bloquea.
+
+---
+
+#### 🧠 Analogía
+
+> Un firewall es como un **controlador de tráfico** en la entrada de un edificio. Revisa cada vehículo (paquete), consulta su lista de reglas y decide quién puede pasar y quién no.
+
+**Funciones del firewall:**
+- Bloquear tráfico no deseado o fuentes no reconocidas.
+- Validar el acceso evaluando el tráfico en busca de malware o ataques.
+
+---
+
+#### 📋 Métodos de filtrado de reglas de firewall
+
+| Método | ¿Cómo funciona? | Ejemplo |
+|--------|------------------|---------|
+| **Permitir o bloquear (filtrado simple)** | El tipo más básico. Permite o bloquea **todo** el tráfico que cumple con los criterios establecidos. | Bloquear todo el tráfico del puerto 80 (HTTP). Permitir solo el puerto 443 (HTTPS). |
+| **Filtrado basado en origen y destino** | Permite o bloquea tráfico según **de dónde viene** (IP de origen) o **hacia dónde va** (IP de destino). | Bloquear todo el tráfico que venga de Rusia. Permitir solo conexiones hacia el servidor de la empresa. |
+| **Filtrado de inspección con estado (Stateful)** | Analiza si el paquete forma parte de una **conexión previamente establecida**. No solo mira el paquete individual, sino el contexto. | Si un usuario interno pidió una página web, el firewall deja entrar la respuesta. Si alguien externo intenta iniciar una conexión, la bloquea. |
+| **Filtrado a nivel de aplicación** | Bloquea el tráfico de **aplicaciones específicas** que no son relevantes para el trabajo. | Bloquear Netflix, YouTube o torrents en la red corporativa. Permitir solo aplicaciones de trabajo. |
+
+---
+
+#### 📊 Tipos de reglas en resumen
+
+| Regla se basa en... | ¿Qué filtra? |
+|---------------------|--------------|
+| **Números de puerto** | Tráfico por servicio (HTTP: 80, HTTPS: 443, FTP: 21). |
+| **Protocolos** | TCP, UDP, ICMP. |
+| **Nombres de dominio** | `facebook.com`, `netflix.com`. |
+| **Direcciones IP** | IPs específicas o rangos de IPs. |
+| **Usuarios** | Tráfico según el usuario autenticado. |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Firewall de Windows Defender** | Es un firewall a nivel de host. Los firewalls de red protegen toda la infraestructura. |
+| **Hardening del sistema** | Configurar reglas de firewall es una práctica de hardening. |
+| **Superficie de ataque** | Un firewall bien configurado reduce drásticamente la superficie de ataque. |
+
+### 📡 Enrutadores (Routers)
+
+Los enrutadores son la **conexión de hardware** de una red a datos externos, generalmente desde Internet. Los datos viajan desde un módem al router, que luego los dirige a los dispositivos de la red.
+
+---
+
+#### ⚠️ El peligro de un router inseguro
+
+Si un router funciona con la **configuración predeterminada de fábrica**:
+
+| Riesgo | Consecuencia |
+|--------|--------------|
+| Dirección IP pública sin contraseña WiFi única. | Cualquiera con un dispositivo inalámbrico puede acceder. |
+| Contraseña de administrador por defecto (`admin/admin`). | Un atacante puede tomar control del router. |
+| Sin cifrado o con cifrado débil. | La información sensible viaja expuesta. |
+
+**Datos en riesgo:** correos electrónicos, información bancaria, programación de dispositivos inteligentes del hogar.
+
+---
+
+#### 🛡️ Cómo mantener seguro un enrutador
+
+| Paso | Acción |
+|------|--------|
+| **1** | Buscar la **dirección IP** del router (en el manual o sitio del fabricante). |
+| **2** | Encontrar el **nombre de usuario y contraseña** de administrador. |
+| **3** | Desde un navegador, ingresar la dirección IP del router en la barra de búsqueda. |
+| **4** | Iniciar sesión con el usuario y contraseña de administrador. |
+| **5** | Crear un **nombre para el router** que no sea fácilmente asociable a vos (no usar tu apellido). |
+| **6** | **Cambiar la contraseña inmediatamente.** Elegir una contraseña compleja, única y difícil de adivinar. |
+| **7** | Seleccionar un **tipo de cifrado** fuerte. |
+| **8** | Guardar la configuración actualizada. |
+
+---
+
+#### 🔐 Tipos de cifrado del router
+
+| Tipo | Seguridad | Características |
+|------|:---:|------------------|
+| **WEP** (Wired Equivalent Privacy) | ❌ Muy baja | El más antiguo y el **menos seguro**. Usa ondas de radio fáciles de descifrar. Misma clave para cada paquete. Los atacantes pueden analizarlo fácilmente con software automatizado. |
+| **WPA** (Wi-Fi Protected Access) | ⚠️ Media | Desarrollado para resolver los defectos de WEP. Codifica la clave de cifrado. Más seguro que WEP, pero aún vulnerable. |
+| **WPA2** (Wi-Fi Protected Access 2) | ✅ Alta | Actualmente la **forma más segura** disponible para la mayoría de los routers. Codifica la clave de cifrado y no permite protocolos débiles como TKIP. |
+| **WPA3** (Wi-Fi Protected Access 3) | ✅ Muy alta | La versión más reciente. Protección contra ataques de fuerza bruta y cifrado más robusto. Disponible en routers modernos. |
+| **AES** (Advanced Encryption Standard) | ✅ Muy alta | Cifrado extremadamente seguro. Es el mismo tipo que usa el gobierno de EE.UU. para información clasificada. Se debe usar **junto con WPA2 o WPA3**. Routers fabricados después de 2006 deberían tener esta opción. |
+
+---
+
+#### 📊 Comparación de cifrados
+
+| Cifrado | ¿Se recomienda? | ¿Por qué? |
+|---------|:---:|-----------|
+| **WEP** | ❌ No | Obsoleto. Se descifra en minutos. |
+| **WPA** | ❌ No | Mejor que WEP, pero aún vulnerable. |
+| **WPA2 + AES** | ✅ Sí | Seguro y ampliamente compatible. |
+| **WPA3 + AES** | ✅ Sí (recomendado) | La opción más segura disponible hoy. |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Firmware del router** | Mantener el firmware actualizado es parte de la seguridad del router. |
+| **Plan de firmware de seguridad** | Los pasos para asegurar el router son parte del plan. |
+| **Contraseñas seguras** | Cambiar la contraseña por defecto es una práctica esencial de hardening. |
+| **Cifrado** | Elegir WPA2/WPA3 con AES protege la red inalámbrica. |
+
+> *"Un router con la configuración de fábrica es una puerta abierta. Cambiar la contraseña, elegir un buen cifrado y mantener el firmware actualizado son los tres pilares de la seguridad del router."*
+
+### 🔀 Conmutadores de red (Switches)
+
+Mientras que las redes domésticas suelen tener solo un módem, un router y algunos dispositivos, las organizaciones necesitan conectar y gestionar muchos más equipos. Para eso usan **conmutadores de red**.
+
+---
+
+#### ¿Qué hace un switch?
+
+Un switch **integra todos los dispositivos de una red**, permitiendo que compartan y transfieran datos sin problemas entre ellos.
+
+**Dispositivos que puede conectar:**
+- Firewalls
+- Puntos de acceso inalámbricos
+- Teléfonos VoIP
+- Impresoras
+- Servidores
+- Computadoras
+- Cámaras de seguridad
+- Y más...
+
+---
+
+#### 🛠️ ¿Qué permite hacer?
+
+| Función | Beneficio |
+|---------|-----------|
+| **Conexión centralizada** | Todos los dispositivos se conectan al switch, que los comunica entre sí. |
+| **Gestión centralizada** | Los administradores pueden controlar y monitorear todos los dispositivos desde una sola plataforma. |
+| **Asignación de recursos** | Permite mover recursos rápidamente por la red según sea necesario. |
+
+---
+
+#### ⚠️ Vulnerabilidades de seguridad
+
+Debido a que los switches conectan tantos dispositivos, son un **blanco atractivo para los atacantes**. Si comprometen un switch, pueden obtener acceso a toda la red.
+
+**Riesgos:**
+- Acceso no autorizado a la red.
+- Interceptación de tráfico entre dispositivos.
+- Ataques de suplantación de MAC.
+
+---
+
+#### 🛡️ Cómo proteger un switch
+
+| Medida | ¿En qué consiste? |
+|--------|-------------------|
+| **Seguridad física** | Bloquear físicamente el switch en un armario o rack con acceso restringido. |
+| **Deshabilitar puertos no utilizados** | Apagar los puertos que no tienen dispositivos conectados para que nadie pueda enchufar algo sin autorización. |
+| **Configurar ajustes de firmware** | Mantener el firmware actualizado y revisar la configuración de seguridad. |
+| **Segmentación (VLANs)** | Separar la red en segmentos lógicos para aislar dispositivos sensibles. |
+| **Port Security** | Limitar qué direcciones MAC pueden conectarse a cada puerto. |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Firmware** | Los switches tienen firmware que debe actualizarse. |
+| **Suplantación de MAC** | Un switch protegido con port security puede prevenir este ataque. |
+| **Hardening del sistema** | Deshabilitar puertos no usados es una práctica de hardening. |
+| **Superficie de ataque** | Cada puerto abierto en un switch es un punto de entrada potencial. |
+
+> *"Un switch es como una central telefónica: conecta a todos. Si alguien toma el control de la central, puede escuchar todas las conversaciones. Por eso protegerlo es crítico."*
+
+### 🔄 Servidores proxy
+
+Un medio importante para implementar firewalls es a través de **servidores proxy**.
+
+---
+
+#### ¿Qué es un servidor proxy?
+
+Un **proxy** (o servidor proxy) es un sistema o router que actúa como **puerta de enlace** entre los usuarios e Internet. A veces se lo llama **"intermediario"** porque va entre los usuarios y los sitios web que visitan.
+
+Usuario → Servidor Proxy → Internet → Sitio web
+↑
+Tiene su propia IP.
+La red conoce esta dirección.
+
+
+---
+
+#### ¿Cómo funciona?
+
+| Paso | Acción |
+|------|--------|
+| **1** | El usuario envía una solicitud para visitar un sitio web. |
+| **2** | La solicitud viaja a través del servidor proxy. |
+| **3** | El proxy obtiene la respuesta del servidor web (usando su propia IP, no la del usuario). |
+| **4** | El proxy reenvía los datos al navegador del usuario. |
+
+---
+
+#### 🛡️ ¿Qué capa de seguridad proporciona?
+
+| Función de seguridad | ¿Cómo lo hace? |
+|----------------------|----------------|
+| **Filtrado de contenido** | Los administradores pueden configurar filtros web para bloquear sitios maliciosos o no deseados. |
+| **Protección contra malware** | El proxy puede analizar el tráfico entrante en busca de software malicioso antes de que llegue al usuario. |
+| **Ocultar direcciones IP** | El sitio web de destino ve la IP del proxy, no la del usuario. Esto protege la privacidad. |
+| **Protección contra espionaje** | Protege la actividad de los empleados contra miradas externas. |
+
+---
+
+#### 🚀 Otras tareas clave del proxy
+
+| Función | Beneficio |
+|---------|-----------|
+| **Balanceo de tráfico** | Distribuye las solicitudes para evitar fallos y sobrecargas. |
+| **Ahorro de ancho de banda** | Almacena archivos en **caché**. Si varios usuarios piden lo mismo, el proxy lo entrega sin volver a pedirlo a Internet. |
+| **Compresión de tráfico** | Comprime datos entrantes para reducir el consumo de ancho de banda. |
+| **Integración con otras herramientas** | Se puede combinar con puertas de enlace web seguras o productos de seguridad de email. |
+
+---
+
+#### 🧠 Analogía
+
+> Un proxy es como un **asistente personal** que hace los mandados por vos:
+> - Vos le decís "traeme el diario".
+> - Él va al kiosco, compra el diario y te lo trae.
+> - El kiosquero no sabe quién sos vos. Solo ve al asistente.
+> - Si el diario viene con algo sospechoso, el asistente lo revisa antes de entregártelo.
+
+---
+
+#### 📊 Ventajas del proxy
+
+| Ventaja | Explicación |
+|---------|-------------|
+| **Privacidad** | Los sitios web no ven tu IP real. |
+| **Seguridad** | Filtra malware y sitios maliciosos antes de que lleguen a vos. |
+| **Control** | La empresa puede decidir qué sitios se permiten y cuáles no. |
+| **Rendimiento** | La caché acelera el acceso a sitios visitados frecuentemente. |
+| **Ahorro** | Comprime datos y reduce el consumo de ancho de banda. |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Firewall** | Un proxy puede funcionar como firewall a nivel de aplicación. |
+| **Tipos de servidores** | El servidor proxy es uno de los tipos de servidores vistos en el módulo 3. |
+| **Superficie de ataque** | El proxy reduce la superficie de ataque ocultando las IPs internas. |
+| **Filtrado de contenido** | Similar a las reglas de firewall, pero a nivel de aplicación web. |
+
+### ⚖️ Equilibradores de carga (Load Balancers)
+
+Un **equilibrador de carga** es un dispositivo de hardware dedicado o un servidor orientado a Internet que ejecuta un servicio de balanceo de carga.
+
+---
+
+#### ¿Qué hace un balanceador de carga?
+
+| Función | ¿En qué consiste? |
+|---------|-------------------|
+| **Distribuir tráfico** | Reparte las solicitudes entre **varios servidores** para que ninguno se sobrecargue. |
+| **Descifrar tráfico SSL** | Puede descifrar el tráfico HTTPS para aliviar la carga de los servidores web. |
+| **Mejorar rendimiento** | Ahorra tiempo a los servidores y mejora la velocidad de las aplicaciones. |
+
+---
+
+#### 🧠 Analogía
+
+> Un balanceador de carga es como el **empleado de un banco** que organiza la fila y va repartiendo clientes entre las cajas disponibles:
+> - Si una caja está ocupada, manda al siguiente cliente a otra caja libre.
+> - Si una caja se descompone, deja de mandarle gente.
+> - Los clientes no se amontonan en una sola caja.
+
+Usuarios → Balanceador de carga → Servidor 1
+→ Servidor 2
+→ Servidor 3
+
+
+---
+
+#### 📊 Tipos de balanceadores de carga
+
+| Tipo | Características |
+|------|-----------------|
+| **Hardware dedicado** | Dispositivo físico especializado. Alto rendimiento, pero costoso y requiere mantenimiento. |
+| **Servidor (software)** | Se instala en un servidor común. Más flexible y económico. |
+| **En la nube** | Servicio ofrecido por proveedores cloud (AWS, Azure, Google Cloud). Se está volviendo la opción **más popular**. |
+
+---
+
+#### ⚠️ Consideraciones de seguridad
+
+Independientemente del tipo de balanceador, los administradores deben considerar:
+
+| Riesgo | Descripción |
+|--------|-------------|
+| **Vulnerabilidades del propio balanceador** | El dispositivo o software puede tener fallos de seguridad. |
+| **Configuración incorrecta** | Una mala configuración puede exponer la red o los servidores. |
+| **Uso inadecuado** | No actualizarlo o no monitorearlo correctamente. |
+
+---
+
+#### ☁️ Ventajas del balanceo de carga en la nube
+
+| Ventaja | ¿Por qué? |
+|---------|-----------|
+| **Menos vulnerable a explotación** | Los proveedores cloud protegen sus productos rigurosamente. |
+| **Parches rápidos** | Si encuentran un problema, lo solucionan de inmediato. |
+| **Servicio independiente** | Es difícil para un atacante penetrar el balanceador para comprometer la red. |
+| **Resuelve riesgos de sistemas tradicionales** | Elimina muchos de los problemas de los balanceadores físicos antiguos. |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Disponibilidad** | El balanceador garantiza que los servicios sigan funcionando aunque un servidor falle. |
+| **Ataques DoS/DDoS** | Un balanceador ayuda a mitigar ataques distribuyendo el tráfico malicioso. |
+| **Tipos de servidores** | El balanceador trabaja en conjunto con servidores web y de aplicaciones. |
+| **Hardening** | Configurar correctamente el balanceador es parte del hardening de la red. |
+
+> *"Un balanceador de carga es como un director de tránsito inteligente. Si una calle se congestiona, desvía el tráfico por otra. Y si alguien intenta saturar una calle a propósito, distribuye los autos para que nadie se quede parado."*
+
+### 🔑 Módulos de seguridad de hardware (HSM)
+
+La **criptografía** es una parte clave de la seguridad de la red. Las organizaciones usan **módulos de seguridad de hardware** para realizar funciones criptográficas y proteger las claves.
+
+---
+
+#### ¿Qué es un HSM?
+
+Un **HSM (Hardware Security Module)** es un **procesador criptográfico dedicado**, diseñado específicamente para proteger el **ciclo de vida de la clave criptográfica**.
+Servidor/aplicación → Solicita cifrar, descifrar o firmar → HSM (guarda y protege las claves)
+
+
+---
+
+#### 🛡️ ¿Qué hace un HSM?
+
+| Función | Descripción |
+|---------|-------------|
+| **Gestionar claves** | Administra de forma segura todo el ciclo de vida de las claves criptográficas (creación, almacenamiento, uso, rotación, destrucción). |
+| **Procesar claves** | Realiza operaciones criptográficas dentro de un dispositivo **reforzado y resistente a manipulaciones**. |
+| **Almacenar claves** | Guarda las claves en hardware seguro. Si alguien intenta abrir físicamente el dispositivo, las claves se destruyen automáticamente. |
+| **Cifrar y descifrar** | Realiza cifrado y descifrado de datos. |
+| **Autenticación** | Verifica identidades mediante firmas digitales. |
+| **Firma digital** | Crea firmas digitales para transacciones, documentos y software. |
+
+---
+
+#### 🏢 ¿Quiénes usan HSM?
+
+Los HSM actúan como **anclas de confianza** que protegen la infraestructura criptográfica de las organizaciones más preocupadas por la seguridad del mundo.
+
+| Industria | ¿Para qué lo usa? |
+|-----------|-------------------|
+| **Bancos y finanzas** | Proteger transacciones financieras, identidades de clientes y cumplir con normativas (PCI-DSS). |
+| **Gobierno** | Proteger información clasificada y firmar documentos oficiales. |
+| **Certificadoras (CA)** | Proteger las claves privadas que firman certificados digitales (HTTPS). |
+| **Salud** | Proteger datos de pacientes (HIPAA). |
+| **Nube** | Los proveedores cloud ofrecen HSM como servicio para sus clientes. |
+
+---
+
+#### 🧠 Analogía
+
+> Un HSM es como una **caja fuerte especializada para llaves digitales**:
+> - Guarda las llaves (claves criptográficas) en un lugar extremadamente seguro.
+> - Solo las usa dentro de la caja. Las llaves **nunca salen** del HSM.
+> - Si alguien intenta forzar la caja, las llaves se **autodestruyen**.
+> - Es a prueba de manipulaciones, fuego, golpes y hackers.
+
+---
+
+#### 📊 Características clave
+
+| Característica | Explicación |
+|----------------|-------------|
+| **Dedicado** | Es hardware diseñado exclusivamente para tareas criptográficas. |
+| **Reforzado** | Construido para resistir ataques físicos y lógicos. |
+| **Resistente a manipulaciones** | Si detecta manipulación, borra las claves automáticamente. |
+| **Alto rendimiento** | Puede procesar miles de operaciones criptográficas por segundo. |
+| **Cumplimiento normativo** | Ayuda a cumplir con estándares como FIPS 140-2, PCI-DSS, GDPR. |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Cifrado** | El HSM es el dispositivo que realiza y protege el cifrado. |
+| **Autenticación segura** | Los HSM almacenan las claves usadas en autenticación y firmas digitales. |
+| **Copia de seguridad** | Las claves del HSM también necesitan respaldo seguro. |
+| **PKI (Infraestructura de clave pública)** | Los HSM son el corazón de una PKI: protegen las claves privadas de las autoridades certificadoras. |
+
+> *"Un HSM es el guardián definitivo de las claves. Si las claves son el secreto mejor guardado, el HSM es la fortaleza donde viven. Sin HSM, las claves estarían en software común, mucho más vulnerables a robos."*
+
+### 💼 Gestión de carrera: Administrador de red
+
+Los **administradores de red** gestionan y mantienen las redes informáticas para que los usuarios y los servicios puedan acceder a los recursos de red de manera **eficiente y segura**.
+
+---
+
+#### 📋 ¿Qué hace un administrador de red?
+
+| Responsabilidad | Descripción |
+|-----------------|-------------|
+| **Crear y aplicar políticas y procedimientos** | Define las reglas de uso de la red y las hace cumplir. |
+| **Monitorear la red** | Supervisa el tráfico, el rendimiento y la seguridad de forma continua. |
+| **Solucionar problemas** | Diagnostica y resuelve fallos de conectividad, rendimiento o seguridad. |
+| **Gestionar cuentas de usuario** | Crea, modifica y elimina usuarios. Asigna permisos y controla accesos. |
+| **Colaborar con ciberseguridad** | En organizaciones grandes, trabaja junto al equipo de seguridad. En empresas pequeñas, puede ser el responsable directo de la seguridad de la red. |
+
+---
+
+#### 🛠️ Tecnologías que debe dominar
+
+| Tecnología | ¿Para qué? |
+|------------|------------|
+| **Sistemas operativos** | Windows Server, Linux, macOS. |
+| **Enrutadores (Routers)** | Dirigir el tráfico entre redes. |
+| **Conmutadores (Switches)** | Conectar dispositivos dentro de la red. |
+| **Firewalls** | Proteger la red filtrando tráfico malicioso. |
+| **Servidores proxy** | Intermediar entre usuarios e Internet. |
+| **Redes inalámbricas** | Gestionar puntos de acceso WiFi y su seguridad. |
+
+---
+
+#### 🔍 Habilidades clave
+
+| Habilidad | ¿Por qué es importante? |
+|-----------|-------------------------|
+| **Evaluar nuevas tecnologías** | Determinar si pueden mejorar el diseño o la funcionalidad de la red. |
+| **Conocimiento de tendencias** | Estar al día con las últimas tecnologías y amenazas. |
+| **Comprensión de objetivos de negocio** | Alinear la infraestructura de red con las metas de la organización. |
+| **Resolución de problemas** | Diagnosticar y arreglar fallos rápidamente para minimizar el tiempo de inactividad. |
+
+---
+
+#### 🔗 Conexión con lo aprendido en el módulo
+
+| Tema del módulo | Relación con el administrador de red |
+|-----------------|--------------------------------------|
+| **Dispositivos de seguridad de red** | Son las herramientas que el administrador configura y mantiene. |
+| **Firewalls, routers, switches, proxies** | Forman parte del día a día del administrador. |
+| **Ataques a la red** | El administrador debe conocerlos para defender la red. |
+| **Hardening** | Aplicar medidas de endurecimiento en todos los dispositivos. |
+| **Control de acceso** | Gestionar quién entra a la red es una de sus tareas principales. |
+| **Firmware** | Mantener actualizado el firmware de todos los dispositivos. |
+
+---
+
+#### 🎯 Perfil profesional
+
+> Un administrador de red es como el **director de infraestructura** de una ciudad digital:
+> - Diseña las calles (topología de red).
+> - Instala semáforos (routers y switches).
+> - Pone guardias (firewalls).
+> - Repara baches (soluciona problemas).
+> - Y se asegura de que todo funcione las 24 horas.
+
+---
+
+#### 📊 Comparación con otros roles de TI
+
+| Rol | Foco principal |
+|-----|----------------|
+| **Administrador de red** | Infraestructura de conectividad. |
+| **Administrador de sistemas** | Servidores y sistemas operativos. |
+| **Especialista en ciberseguridad** | Protección contra amenazas. |
+| **Ingeniero de firmware** | Software de bajo nivel de dispositivos. |
+
+> *"El administrador de red es quien mantiene la autopista digital funcionando. Sin él, los datos no llegan a destino y la organización se queda incomunicada."*
+
+## 🏗️ Lección 3: Arquitectura de seguridad de red
+
+Si alguien quiere construir un banco, pensará detenidamente cómo hacerlo seguro:
+- Diseñar la **bóveda** para que los ladrones no puedan entrar fácilmente.
+- Diseñar el edificio para que las **salidas sean limitadas** y fáciles de vigilar.
+- Asegurarse de que las medidas de seguridad **no interfieran** con el funcionamiento normal del banco.
+
+Cuando alguien diseña una red, tiene **preocupaciones similares**. Una de las formas más efectivas de proteger una red es **diseñarla para la seguridad desde el principio**.
+
+---
+
+### 📋 Lo que vamos a ver en esta lección
+
+| Tema | Descripción |
+|------|-------------|
+| **Conceptos básicos de arquitectura de sistemas** | Fundamentos del diseño de redes. |
+| **Métodos de arquitectura segura** | Técnicas que los arquitectos de sistemas usan para crear redes intrínsecamente más seguras. |
+| **Protección desde el diseño** | Cómo anticiparse a filtraciones y ataques desde la fase de planificación. |
+
+---
+
+### 🧠 Idea clave
+
+> *"No es lo mismo agregar seguridad después de construir la red, que diseñarla con seguridad desde el primer plano. La arquitectura segura ahorra problemas, dinero y filtraciones."*
+
+### 🏗️ ¿Qué es la arquitectura de red?
+
+Cuando una organización necesita una red, un **arquitecto de red** la planifica primero. Decide:
+- **Qué dispositivos** usar (routers, switches, firewalls, servidores).
+- **Cómo se conectarán** entre sí.
+- **Cómo el sistema realizará** las funciones necesarias.
+
+---
+
+#### 📋 Definición
+
+La **arquitectura de red** es el **diseño estructural y lógico** de una red. Describe:
+
+| Elemento | ¿Qué define? |
+|----------|--------------|
+| **Dispositivos de red** | Qué equipos se utilizan (routers, switches, firewalls, proxies, etc.). |
+| **Conexiones** | Cómo se conectan los dispositivos entre sí (topología, cableado, inalámbrico). |
+| **Reglas de transferencia** | Los protocolos y políticas que rigen cómo se mueven los datos. |
+
+---
+
+#### ⚠️ Impacto de una buena o mala arquitectura
+
+| Una buena arquitectura... | Una mala arquitectura... |
+|---------------------------|--------------------------|
+| Mejora el rendimiento de toda la organización. | Ralentiza la red y dificulta el trabajo. |
+| Facilita la seguridad desde el diseño. | Deja agujeros de seguridad difíciles de cerrar después. |
+| Soporta crecimiento futuro. | Se vuelve obsoleta rápidamente. |
+| Permite autenticación rápida y eficiente. | Dificulta el reconocimiento y autorización de usuarios. |
+
+---
+
+#### 🔍 Ejemplos de decisiones arquitectónicas
+
+| Decisión | Consecuencia si se elige mal |
+|----------|------------------------------|
+| **Cables o equipos incorrectos** para la carga esperada del servidor. | La red se vuelve lenta. |
+| **Protocolos que no soportan autenticación eficiente**. | Los usuarios tardan en conectarse o quedan expuestos. |
+| **Falta de segmentación**. | Un atacante que entra a un dispositivo puede moverse libremente por toda la red. |
+| **No considerar el crecimiento de dispositivos**. | La red se satura al agregar nuevos usuarios o dispositivos IoT. |
+
+---
+
+#### 🧠 Analogía
+
+> La arquitectura de red es como el **plano de un edificio**:
+> - Define dónde van las paredes (segmentación).
+> - Por dónde pasan las cañerías y cables (cableado estructurado).
+> - Dónde están las puertas y quién tiene llave (control de acceso).
+> - Si el plano está mal hecho, el edificio tendrá problemas para siempre. Si está bien diseñado desde el principio, todo funciona y es seguro.
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Dispositivos de seguridad de red** | Son las piezas que el arquitecto decide dónde colocar. |
+| **Hardening** | Una buena arquitectura facilita aplicar hardening. |
+| **Superficie de ataque** | La arquitectura define la superficie de ataque de la red. |
+| **Segmentación** | Es una decisión arquitectónica clave para la seguridad. |
+
+> *"La arquitectura de red no se trata solo de que internet funcione. Se trata de que funcione rápido, seguro y que pueda crecer sin romperse. Un buen diseño desde el principio ahorra millones en problemas después."*
+
+### 📐 Diseño de red
+
+El **diseño de red** es el proceso de crear una arquitectura de red para una organización y situación específicas. Incluye:
+
+- Análisis de red.
+- Selección de hardware.
+- Planeación de la implementación.
+- Y otros procesos de planificación.
+
+---
+
+#### 🧠 ¿Cuándo empieza y termina?
+Identificación de requisitos → Diseño → Implementación
+(comerciales y técnicos)
+
+
+El diseño comienza con la **identificación de requisitos** y continúa hasta justo antes de la implementación física de la red.
+
+---
+
+#### 📊 Complejidad según el tamaño
+
+| Tipo de red | Complejidad del diseño | Ejemplo |
+|-------------|------------------------|---------|
+| **Hogar u oficina pequeña** | Simple y directo. | Una casa con módem, router y 5 dispositivos. |
+| **Gran empresa** | Muy complejo. | Un banco con sucursales, data centers y miles de empleados. |
+
+---
+
+#### 📋 Las dos categorías de requisitos
+
+Antes de diseñar una red, se debe recopilar información hablando con las partes interesadas de la organización. Esta información se divide en dos categorías:
+
+| Categoría | ¿Qué responde? | Ejemplos |
+|-----------|----------------|----------|
+| **Requisitos empresariales** | ¿Qué necesita el negocio? | Presupuesto, cantidad de usuarios, tipo de aplicaciones, expectativas de crecimiento, normativas a cumplir. |
+| **Requisitos técnicos** | ¿Qué necesita la tecnología? | Ancho de banda, velocidad, latencia, protocolos, dispositivos necesarios, compatibilidad, seguridad. |
+
+---
+
+#### 🔍 Ejemplos concretos
+
+**Requisitos empresariales:**
+- "Necesitamos que 500 empleados trabajen sin problemas."
+- "La red debe cumplir con la normativa PCI-DSS porque procesamos pagos con tarjeta."
+- "Planeamos abrir dos sucursales nuevas en los próximos 3 años."
+
+**Requisitos técnicos:**
+- "El ancho de banda mínimo debe ser de 1 Gbps."
+- "La latencia entre sucursales no debe superar los 10 ms."
+- "Debemos usar WPA3 para todas las conexiones inalámbricas."
+- "El firewall debe soportar inspección SSL."
+
+---
+
+#### 🧠 Analogía
+
+> Diseñar una red es como construir una autopista:
+> - **Requisitos empresariales:** ¿Cuántos autos van a circular? ¿Va a crecer el tráfico? ¿Qué peajes necesitamos?
+> - **Requisitos técnicos:** ¿Cuántos carriles? ¿De qué material? ¿Qué señalización? ¿Dónde van los puentes?
+> - Si no preguntás ambas cosas, la autopista queda chica, se congestiona o se cae a los pocos años.
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Arquitectura de red** | El diseño es el proceso que crea la arquitectura. |
+| **Dispositivos de seguridad** | La selección de hardware es parte del diseño. |
+| **Hardening** | Un buen diseño facilita el hardening posterior. |
+| **Ataques a la red** | Conocer las amenazas ayuda a diseñar una red más resistente. |
+
+> *"El diseño de red no es solo conectar cables. Es entender qué necesita la organización y planificar una red que lo cumpla de forma segura, eficiente y escalable."*
+
+### 🔌 Dispositivos de infraestructura de red
+
+Los **dispositivos de infraestructura de red** son los componentes que controlan las comunicaciones necesarias para datos, aplicaciones, servicios y multimedia.
+
+**Ejemplos:**
+- Enrutadores (routers)
+- Firewalls
+- Conmutadores (switches)
+- Servidores
+- Equilibradores de carga (load balancers)
+- Sistemas de detección de intrusiones (IDS)
+- Sistemas de nombres de dominio (DNS)
+- Redes de área de almacenamiento (SAN)
+
+---
+
+#### ⚠️ ¿Por qué son blancos ideales para atacantes?
+
+Estos dispositivos **literalmente conforman la red**. La mayor parte o **todo el tráfico** debe pasar a través de ellos.
+
+| Si un atacante controla... | Puede... |
+|----------------------------|----------|
+| **El router de puerta de enlace** | Monitorear, modificar y denegar el tráfico hacia y desde la organización. |
+| **La infraestructura interna de enrutamiento y conmutación** | Monitorear, modificar y denegar el tráfico hacia y desde hosts clave dentro de la red. |
+
+> *"Quien controla la infraestructura de enrutamiento de una red, controla los datos que fluyen a través de ella."*
+
+---
+
+#### 🛡️ Mejores prácticas para proteger la infraestructura de red
+
+| # | Práctica | ¿En qué consiste? |
+|---|----------|-------------------|
+| 1 | **Configuraciones seguras** | Proteger los dispositivos con configuraciones endurecidas como requisito básico. Seguir guías, benchmarks y mejores prácticas de fabricantes y organismos. |
+| 2 | **Deshabilitar protocolos de administración remota sin cifrar** | No usar Telnet, HTTP o FTP para administrar dispositivos. Usar SSH, HTTPS y SFTP. |
+| 3 | **Desactivar servicios innecesarios** | Apagar protocolos de descubrimiento, enrutamiento de origen, HTTP, SNMP y cualquier servicio que no se use. |
+| 4 | **Políticas de contraseñas sólidas** | Usar contraseñas fuertes y el cifrado más potente disponible para protegerlas. |
+| 5 | **Restringir el acceso físico** | Limitar quién puede tocar físicamente routers y switches. Asegurar el acceso a líneas de consola, auxiliares y terminales virtuales. |
+| 6 | **Respaldar configuraciones** | Hacer copias de seguridad de las configuraciones y almacenarlas **sin conexión** (offline). |
+| 7 | **Mantener actualizado el SO del dispositivo** | Usar la última versión del sistema operativo del dispositivo de red y aplicar todos los parches. |
+
+---
+
+#### 🧠 Analogía
+
+> Los dispositivos de infraestructura de red son como las **centrales eléctricas y estaciones de bombeo** de una ciudad:
+> - Si alguien toma el control de la central eléctrica, apaga la luz de toda la ciudad.
+> - Si alguien envenena la estación de bombeo, contamina el agua que llega a todas las casas.
+> - Por eso protegerlos no es opcional: son el corazón de la red.
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Hardening del sistema** | Las prácticas de protección son hardening aplicado a dispositivos de red. |
+| **Gestión de parches** | Mantener actualizado el SO del dispositivo es gestión de parches. |
+| **Contraseñas seguras** | Políticas de contraseñas fuertes y cifrado. |
+| **Copia de seguridad** | Respaldar configuraciones offline para recuperación ante desastres. |
+| **Firmware** | Muchos dispositivos de red funcionan con firmware que debe actualizarse. |
+
+> *"Proteger cada dispositivo de infraestructura no es un lujo: es la base sobre la que se construye toda la seguridad de la red. Si la base se cae, todo lo demás se derrumba."*
+
+
+### 🏛️ DMZ (Zona Desmilitarizada)
+
+Una **DMZ** (DeMilitarized Zone, zona desmilitarizada) es una **red separada** que actúa como **amortiguador** entre la red interna de una organización e Internet.
+
+---
+
+#### ¿Qué hace una DMZ?
+
+| Función | Descripción |
+|---------|-------------|
+| **Protege la LAN interna** | Agrega una capa adicional de seguridad contra tráfico no confiable. |
+| **Se conecta a Internet** | Proporciona acceso a algunos recursos externos. |
+| **Conexión limitada a la red interna** | Solo tiene una conexión segura y controlada con la red privada. |
+Internet ↔ DMZ (servidores públicos) ↔ Firewall ↔ Red interna (datos sensibles)
+
+
+---
+
+#### 🧠 Analogía
+
+> Una DMZ es como el **hall de entrada de un banco**:
+> - El público puede entrar al hall (DMZ) para hacer trámites.
+> - Pero la bóveda (red interna) está detrás de una puerta blindada.
+> - Aunque alguien cause problemas en el hall, no puede llegar a la bóveda.
+
+---
+
+#### 🎯 ¿Para qué sirve?
+
+| Beneficio | Explicación |
+|-----------|-------------|
+| **Aísla servidores públicos** | Los servidores que deben ser accesibles desde Internet están en la DMZ, no en la red interna. |
+| **Limita el daño** | Si un atacante compromete un servidor en la DMZ, **no puede acceder directamente** a los datos internos. |
+| **Dificulta el acceso a datos sensibles** | Hace más difícil que un atacante obtenga acceso a servidores internos desde Internet. |
+
+---
+
+#### 📋 ¿Qué se aloja típicamente en una DMZ?
+
+| Servicio | Ejemplo |
+|----------|---------|
+| **Servidor web** | El sitio web público de la empresa. |
+| **Servidor DNS** | Resolución de nombres de dominio para consultas externas. |
+| **Servidor FTP** | Transferencia de archivos con clientes o proveedores. |
+| **Servidor de correo** | Recepción de correos desde Internet. |
+| **Servidor proxy** | Intermediario para acceso a Internet. |
+| **Servidor VoIP** | Comunicaciones de voz sobre IP. |
+
+---
+
+#### 🔍 Ejemplos concretos
+
+**Ejemplo 1: Minorista de comercio electrónico**
+
+| Componente | Ubicación |
+|------------|-----------|
+| **Servidor web** (tienda online) | DMZ |
+| **Base de datos de clientes y tarjetas** | Red interna |
+| **Resultado:** Los clientes pueden comprar. Si el servidor web es hackeado, los datos sensibles siguen protegidos en la red interna. |
+
+**Ejemplo 2: Red social o proveedor cloud**
+
+| Componente | Ubicación |
+|------------|-----------|
+| **Servidores web y API públicas** | DMZ |
+| **Base de datos de usuarios, mensajes privados** | Red interna |
+| **Resultado:** Millones de usuarios acceden a los servicios. Un ataque a los servidores públicos no compromete los datos privados. |
+
+---
+
+#### 📊 Estructura típica de una DMZ
+INTERNET
+│
+▼
+┌────────────────┐
+│ Firewall 1 │ (Perimetral)
+└────────────────┘
+│
+▼
+┌──────────────────────────────────────┐
+│ DMZ │
+│ Servidor Web | DNS | FTP | Correo │
+└──────────────────────────────────────┘
+│
+▼
+┌────────────────┐
+│ Firewall 2 │ (Interno)
+└────────────────┘
+│
+▼
+┌────────────────┐
+│ RED INTERNA │
+│ (Bases de │
+│ datos, │
+│ archivos, │
+│ empleados) │
+└────────────────┘
+
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Firewalls** | La DMZ se implementa usando firewalls que separan las zonas. |
+| **Superficie de ataque** | La DMZ reduce la superficie de ataque de la red interna. |
+| **Segmentación** | La DMZ es una forma de segmentación de red por seguridad. |
+| **Arquitectura de red** | Es una decisión de diseño arquitectónico para mejorar la seguridad. |
+
+> *"La DMZ es el patio de recepción. Todos los visitantes pasan por ahí. La casa (red interna) está detrás de otra puerta. Si un visitante se porta mal, solo llega hasta el patio."*
+
+### 🔄 NAT: Traducción de direcciones de red
+
+**NAT (Network Address Translation)** es un proceso mediante el cual una **única dirección IP pública** puede representar a **varias computadoras** dentro de una red privada.
+
+Un dispositivo de red (generalmente un router o firewall NAT) asigna esta IP pública a un grupo de computadoras internas.
+
+---
+
+#### 🧠 Analogía
+
+> NAT es como la **recepcionista de una gran empresa**:
+> - El mundo exterior llama al **número público** de la empresa (la IP pública).
+> - La recepcionista atiende y decide a quién pasar la llamada.
+> - La persona que llama **nunca obtiene tu número interno** (tu IP privada).
+> - La recepcionista tiene instrucciones sobre qué llamadas bloquear, cuáles transferir y a dónde.
+
+---
+
+#### ⚙️ ¿Cómo funciona?
+Internet → Solicitud llega a IP pública + puerto → NAT traduce → IP privada interna
+│
+Nadie afuera ve las IPs internas.
+
+
+| Paso | Acción |
+|------|--------|
+| **1** | Llega una solicitud a la dirección IP pública del router. |
+| **2** | NAT consulta sus reglas y traduce la IP pública a la IP privada del dispositivo correcto. |
+| **3** | Reenvía el paquete sin revelar las direcciones IP privadas internas. |
+| **4** | La respuesta viaja de vuelta, NAT traduce de nuevo a la IP pública. |
+
+---
+
+#### 🛡️ ¿Qué beneficios tiene?
+
+| Beneficio | Explicación |
+|-----------|-------------|
+| **Oculta la red interna** | Muestra solo **una IP** al mundo exterior. Nadie sabe cuántos dispositivos hay adentro ni sus direcciones reales. |
+| **Conservación de direcciones IP** | Muchas computadoras comparten una sola IP pública. Importante porque las IPs públicas son limitadas. |
+| **Seguridad adicional** | Actúa como una barrera natural. Los dispositivos internos no son directamente accesibles desde Internet. |
+| **Ideal para acceso remoto** | Los arquitectos de red la implementan en entornos donde empleados se conectan desde afuera. |
+
+---
+
+#### 📊 Comparación: Sin NAT vs Con NAT
+
+| | Sin NAT | Con NAT |
+|--|---------|---------|
+| **Cada dispositivo tiene...** | Su propia IP pública (cara y poco segura). | Una IP privada. Comparten una sola IP pública. |
+| **Visibilidad desde Internet** | Cada dispositivo es visible. | Solo se ve el router/firewall. |
+| **Seguridad** | Baja. Cada dispositivo es un blanco. | Alta. La red interna está oculta. |
+
+---
+
+#### 🏠 Ejemplo real: Tu casa
+Tu router de casa tiene UNA sola IP pública (ej: 181.45.23.10)
+
+Dentro de tu casa:
+
+Tu celular: 192.168.1.5 (IP privada)
+
+Tu laptop: 192.168.1.7 (IP privada)
+
+Tu Smart TV: 192.168.1.10 (IP privada)
+
+Cuando cualquiera de estos navega por internet:
+Todos salen con la misma IP pública: 181.45.23.10
+
+Nadie en Internet sabe cuántos dispositivos tenés ni sus IPs reales.
+
+
+---
+
+#### 🔗 NAT y DMZ: ¿Se llevan bien?
+
+| NAT | DMZ |
+|-----|-----|
+| Oculta la red interna mostrando una sola IP. | Expone algunos servidores (los de la DMZ) a Internet. |
+| Protege los dispositivos privados. | Protege la red interna poniendo los servidores públicos en otra zona. |
+
+> **NAT y DMZ trabajan juntos.** NAT oculta la red interna. La DMZ expone solo lo necesario (servidor web, por ejemplo) mientras el resto sigue oculto.
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Firewall** | Muchos firewalls incluyen función NAT. |
+| **Router** | El router de casa hace NAT automáticamente. |
+| **DMZ** | NAT oculta la red interna, la DMZ expone solo ciertos servidores. |
+| **IP Pública vs Privada** | NAT es el traductor entre ambas. |
+
+> *"NAT es el guardián silencioso. No lo ves, no lo tocás, pero todos los días evita que Internet sepa cuántos dispositivos tenés, cómo se llaman y dónde están."*
+
+### 🍯 Honeypot (Tarros de miel)
+
+Un **honeypot** es un sistema diseñado para **atraer a los atacantes** y distraerlos de los recursos reales de una organización. Se ve, se siente y actúa como una red llena de recursos valiosos, pero en realidad es una **trampa** con herramientas de monitoreo.
+
+---
+
+#### 🎯 ¿Para qué sirve?
+
+| Objetivo | Descripción |
+|----------|-------------|
+| **Distraer atacantes** | Los aleja de los sistemas reales y los mantiene ocupados en un entorno falso. |
+| **Estudiar su comportamiento** | Permite ver cómo se mueve un atacante dentro de un sistema sin poner en peligro la red real. |
+| **Detectar vulnerabilidades** | Los datos recolectados muestran qué técnicas usan los atacantes y qué debilidades explotan. |
+| **Mejorar la seguridad** | Con esa información, la organización puede corregir vulnerabilidades y entrenar a sus empleados. |
+
+---
+
+#### 🧠 Analogía
+
+> Un honeypot es como un **auto señuelo** que la policía deja estacionado en una zona de robos:
+> - Parece un auto real, pero tiene cámaras y GPS ocultos.
+> - Los ladrones lo roban sin saber que están siendo filmados.
+> - La policía estudia cómo lo robaron y atrapa a los responsables.
+> - El auto real de los vecinos está a salvo.
+
+---
+
+#### 📊 Honeypot vs Honeynet
+
+| Término | ¿Qué es? |
+|---------|----------|
+| **Honeypot** | Un **único** sistema señuelo (un servidor, una página de login falsa). |
+| **Honeynet** | Un **conjunto** de honeypots conectados entre sí, simulando una red entera. |
+
+---
+
+#### ⚙️ ¿Qué contiene un honeypot?
+
+| Elemento | Función |
+|----------|---------|
+| **Recursos falsos** | Archivos, bases de datos, páginas de login que parecen reales. |
+| **Herramientas de monitoreo** | Rastrean cada movimiento del atacante: qué hace, qué busca, cómo se mueve. |
+| **Aislamiento** | Está separado de la red real. Si el atacante entra, no puede saltar a los sistemas verdaderos. |
+| **Registro detallado** | Guarda logs de toda la actividad para análisis posterior. |
+
+---
+
+#### 🔍 Ejemplo real: Un banco
+
+| Situación | ¿Qué hace el banco? |
+|-----------|---------------------|
+| Es blanco frecuente de ataques por manejar información sensible. | Crea un honeypot que imita una **página de inicio de sesión falsa** de su sitio web. |
+| Los atacantes intentan entrar al honeypot creyendo que es real. | El sistema registra sus tácticas, sus herramientas y su comportamiento. |
+| El banco analiza los datos recolectados. | Descubre nuevas técnicas de ataque. |
+| Con esa información... | Corrige vulnerabilidades en el sistema real. Entrena a sus empleados para detectar esos ataques. |
+
+---
+
+#### 🧠 Valor para los profesionales de seguridad
+
+| Sin honeypot | Con honeypot |
+|--------------|--------------|
+| Dedican todo el día a **bloquear** ataques. | Pueden **estudiar** a los atacantes tranquilamente. |
+| No saben cómo se mueve un atacante hasta que ocurre un incidente real. | Ven en cámara lenta cómo se mueve, qué busca y qué herramientas usa. |
+| Reaccionan después del daño. | Anticipan y mejoran defensas antes de que ataquen el sistema real. |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **DMZ** | Un honeypot puede colocarse en la DMZ para atraer ataques lejos de la red interna. |
+| **Firewall** | El firewall puede redirigir tráfico sospechoso al honeypot en lugar de a los servidores reales. |
+| **Monitoreo y logs** | El honeypot es una herramienta de monitoreo avanzado. |
+| **Ataques a la red** | Permite estudiar en vivo los ataques que vimos en la lección 1. |
+
+> *"Un honeypot es como poner un cartel que dice 'tesoro aquí', pero en realidad es una celda con cámaras. El ladrón entra contento. Vos lo filmás, estudiás y cerrás la puerta."*
+
+### ✂️ Segmentación de red
+
+La **segmentación de red** es dividir una red grande en **segmentos más pequeños** (subredes), generalmente usando switches y routers. Esto permite controlar mejor el tráfico y el acceso.
+
+---
+
+#### 🎯 ¿Para qué sirve?
+
+| Beneficio | Descripción |
+|-----------|-------------|
+| **Mejorar la seguridad** | Si un atacante entra a un segmento, no puede moverse libremente a los demás. |
+| **Mejorar el monitoreo** | Es más fácil vigilar segmentos pequeños que una red gigante. |
+| **Mejorar el rendimiento** | El tráfico se mantiene dentro de cada segmento, reduciendo la congestión. |
+| **Controlar el tráfico** | Se pueden aplicar reglas específicas para cada subred. |
+
+---
+
+#### 🧠 Analogía
+
+> Una red sin segmentar es como un **edificio sin puertas internas**: cualquiera que entra al hall puede caminar por todas las oficinas.
+>
+> Una red segmentada es como un edificio con **puertas con llave en cada piso**: aunque alguien entre al hall, no puede pasar a los pisos sin autorización.
+Red sin segmentar: Red segmentada:
+┌─────────────────────┐ ┌──────┐ ┌──────┐ ┌──────┐
+│ │ │ RRHH │ │ TI │ │ Ventas│
+│ TODOS LOS │ │solo │ │solo │ │solo │
+│ DISPOSITIVOS │ │RRHH │ │TI │ │Ventas │
+│ JUNTOS │ └──────┘ └──────┘ └──────┘
+│ │ ↑ ↑ ↑
+└─────────────────────┘ Segmentos separados
+
+
+---
+
+#### 📋 Las 4 mejores prácticas de segmentación
+
+| # | Práctica | ¿En qué consiste? | Ejemplo |
+|---|----------|-------------------|---------|
+| 1 | **Principio de privilegio mínimo** | Asignar a los usuarios solo los permisos que necesitan para su trabajo. Nada más. | Un empleado de marketing no puede acceder a la base de datos financiera. |
+| 2 | **Aislar hosts de la red** | Separar redes según la criticidad de las operaciones. Si dos redes no necesitan comunicarse, **no deben poder hacerlo**. | Los servidores de pagos están en una subred separada de las PCs de los empleados. |
+| 3 | **Perfeccionar el proceso de autorización** | Solo usuarios autenticados y autorizados acceden a la red. Crear y actualizar políticas de autorización constantemente. | Si un usuario cambia de rol, sus permisos de acceso a subredes se actualizan de inmediato. |
+| 4 | **Lista de permitidos de tráfico** | Permitir solo lo que está autorizado, en lugar de bloquear lo malo. Es más seguro y mejora la productividad. | Solo las IPs del segmento de TI pueden acceder a los servidores de administración. Todo lo demás está bloqueado por defecto. |
+
+---
+
+#### 🔍 ¿Por qué la práctica 4 es más segura?
+
+| Enfoque | ¿Cómo funciona? | ¿Por qué es mejor? |
+|---------|-----------------|--------------------|
+| **Lista negra (blocklist)** | Bloquear lo que se sabe que es malo. | Si aparece algo nuevo y malo, pasa hasta que lo agreguen a la lista. |
+| **Lista blanca (allowlist)** | Permitir **solo** lo que está autorizado. Todo lo demás está bloqueado. | Lo nuevo y desconocido queda bloqueado automáticamente. |
+
+---
+
+#### 🛡️ ¿Qué pasa si un atacante entra?
+
+| Sin segmentación | Con segmentación |
+|------------------|------------------|
+| Se mueve lateralmente por toda la red. | Queda atrapado en un segmento pequeño. |
+| Puede llegar a servidores críticos. | No puede saltar a otros segmentos sin autorización. |
+| El daño es total. | El daño está **contenido**. |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **DMZ** | La DMZ es una forma de segmentación: separa lo público de lo privado. |
+| **VLANs** | Son la tecnología que permite segmentar lógicamente una red. |
+| **Firewall** | Se usan para controlar el tráfico entre segmentos. |
+| **Principio de privilegio mínimo** | Visto también en hardening y control de acceso. |
+
+> *"Segmentar una red es ponerle puertas a los pasillos. Si alguien entra por la ventana de la cocina, no puede abrir la puerta blindada de la tesorería."*
+
+### 🌐 Extranet e Intranet
+
+Otra forma de dividir estratégicamente una red es crear **redes separadas** según quién las usa.
+
+---
+
+#### 📋 Definiciones
+
+| Red | ¿Para quién es? | ¿Quién accede? |
+|-----|-----------------|----------------|
+| **Intranet** | Usuarios **internos** de la organización. | Solo empleados. |
+| **Extranet** | Usuarios **externos** autorizados (socios, proveedores, clientes). | Empleados + externos autorizados. |
+| **Internet** | Todo el mundo. | Cualquiera. |
+
+---
+
+#### 🧠 Diferencia clave
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+│ INTRANET │ │ EXTRANET │ │ INTERNET │
+│ │ │ │ │ │
+│ Solo emplea-│ │ Empleados + │ │ Todo el │
+│ dos. │ │ socios, │ │ mundo. │
+│ │ │ proveedores,│ │ │
+│ Documentos │ │ clientes. │ │ Acceso │
+│ internos, │ │ │ │ público. │
+│ RRHH, │ │ Pedidos, │ │ │
+│ finanzas. │ │ seguimiento │ │ │
+│ │ │ de envíos, │ │ │
+│ │ │ inventario. │ │ │
+└─────────────┘ └─────────────┘ └─────────────┘
+
+
+---
+
+#### ⚠️ Regla importante
+
+> **La extranet NO se conecta directamente a la intranet.** Aunque ambas pueden conectarse a Internet, están separadas. Esto evita que un usuario externo que accede a la extranet pueda llegar a la red interna.
+
+---
+
+#### 🎯 ¿Para qué sirve una extranet?
+
+| Función | Ejemplo |
+|---------|---------|
+| **Pedidos en línea** | Un proveedor entra a la extranet para ver los pedidos que le hizo la empresa. |
+| **Seguimiento de envíos** | Un cliente consulta el estado de su pedido sin acceder a los sistemas internos. |
+| **Gestión de inventario** | Un socio comercial revisa el stock disponible para planificar sus compras. |
+| **Comunicación con proveedores** | Compartir documentos, facturas y especificaciones técnicas de forma segura. |
+
+---
+
+#### 🛡️ ¿Por qué es más seguro?
+
+| Situación | Con extranet separada | Sin extranet (todo junto) |
+|-----------|----------------------|---------------------------|
+| Un proveedor necesita ver pedidos. | Entra a la extranet. No ve nada interno. | Tendría que entrar a la intranet y podría ver datos sensibles. |
+| Un cliente quiere seguir su envío. | Usa la extranet. No toca la red corporativa. | No habría forma segura de darle acceso. |
+| Un atacante compromete la cuenta de un proveedor. | Solo ve la extranet. La intranet sigue protegida. | Podría acceder a toda la red interna. |
+
+---
+
+#### 📶 WiFi para invitados: un ejemplo cotidiano
+
+El **WiFi para invitados** es una forma de extranet aplicada al hogar o la oficina:
+
+| WiFi principal | WiFi de invitados |
+|----------------|-------------------|
+| Conecta tus dispositivos personales. | Conecta a visitas, amigos, clientes. |
+| Tiene acceso a la red interna (impresora, archivos compartidos). | **Solo** da acceso a Internet. No ve nada interno. |
+| Contraseña privada. | Contraseña separada (o abierta con portal cautivo). |
+
+**Beneficio de seguridad:**
+- Si un amigo trae un celular con malware, ese malware no puede saltar a tus dispositivos porque está en una red separada.
+- Protege dispositivos más vulnerables (como cámaras IoT, impresoras) de visitantes no confiables.
+
+---
+
+#### 📊 Comparación final
+
+| Característica | Intranet | Extranet | Internet |
+|----------------|----------|----------|----------|
+| **Usuarios** | Solo empleados | Empleados + externos autorizados | Todo el mundo |
+| **Acceso a datos internos** | ✅ Sí | ❌ No (solo lo que se comparte) | ❌ No |
+| **Ejemplos** | Documentos de RRHH, finanzas, comunicados | Pedidos, seguimiento de envíos, portal de proveedores | Google, YouTube, redes sociales |
+| **Seguridad** | Alta (cerrada) | Media (controlada) | Baja (abierta) |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Segmentación de red** | Extranet e intranet son formas de segmentación por tipo de usuario. |
+| **DMZ** | La extranet a veces se implementa en una DMZ para aislarla de la intranet. |
+| **Firewall** | Separan la intranet de la extranet y de Internet. |
+| **Control de acceso** | Define quién puede entrar a cada red. |
+
+> *"La intranet es la oficina. La extranet es la sala de reuniones con los de afuera. Internet es la calle. Todas están conectadas, pero con puertas diferentes."*
+
+### 🏠 Segmentación, Extranet e Intranet explicadas con un ejemplo hogareño
+
+---
+
+#### 📶 Lo que hice en casa: Red de invitados
+
+Configuré mi router para tener **dos redes separadas**:
+Mi router
+│
+├── Red principal (la mía)
+│ └── Mis dispositivos: PC, celular, Smart TV
+│
+└── Red de invitados
+└── Dispositivos de visitas: el celular de un amigo
+
+
+---
+
+#### 📊 ¿Qué es cada cosa?
+
+| Lo que tengo en casa | Término técnico | ¿Qué significa? |
+|----------------------|-----------------|-----------------|
+| **Red principal** (la mía) | **Intranet** | Red privada para usuarios internos (yo y mi familia). Nadie de afuera puede entrar. |
+| **Red de invitados** | **Extranet** | Red separada para usuarios externos (visitas). Solo da acceso a Internet, no a mis dispositivos. |
+
+---
+
+#### ✂️ ¿Y si quisiera dividir mi red principal?
+
+Eso sería **segmentación de red (subredes)**:
+Mi router
+│
+└── Red principal (Intranet)
+├── Subred 1: 192.168.1.x → Mis dispositivos personales
+├── Subred 2: 192.168.2.x → Dispositivos IoT (cámaras, luces)
+└── Subred 3: 192.168.3.x → Dispositivos del trabajo
+
+
+Y después pondría **reglas**:
+
+| Regla | ¿Qué hace? |
+|-------|------------|
+| Subred 1 puede hablar con Subred 2. | ✅ Mi celular controla las luces. |
+| Subred 2 NO puede iniciar conexión a Subred 1. | ❌ Una cámara hackeada no puede llegar a mi PC. |
+| Subred 3 está completamente aislada. | ❌ Nadie puede entrar a mis dispositivos de trabajo. |
+
+---
+
+#### 🆚 Diferencia clave entre los tres conceptos
+
+| Concepto | ¿Qué es? | Ejemplo en casa |
+|----------|----------|-----------------|
+| **Intranet** | Red privada para los de adentro. | Mi red principal. |
+| **Extranet** | Red separada para usuarios externos. | Mi red de invitados. |
+| **Subred (segmentación)** | Dividir una misma red en partes con reglas. | Separar IoT, PCs y trabajo dentro de mi red principal. |
+
+---
+
+#### 🧠 Analogía
+Mi casa:
+├── Intranet: Las habitaciones de la familia.
+│ └── Subredes: Puertas con llave entre habitaciones (si quisiera ponerlas).
+│
+└── Extranet: El quincho para visitas.
+└── Usan el baño del quincho, no el de mi habitación.
+
+Todo usa la misma conexión de agua y luz (el mismo router/proveedor).
+Pero los espacios están separados.
+
+
+---
+
+#### ✅ ¿Es seguro lo que tengo ahora?
+
+| Lo que logré con la red de invitados | ¿Es seguro? |
+|--------------------------------------|:---:|
+| Las visitas usan Internet sin ver mis dispositivos. | ✅ Sí |
+| Mis dispositivos están protegidos de las visitas. | ✅ Sí |
+| No necesito más equipos ni otra línea de internet. | ✅ Sí |
+| Las visitas no pueden acceder a mis archivos ni a mi red. | ✅ Sí |
+
+---
+
+#### 🎯 Conclusión
+
+| ¿Necesito subredes? | ❌ No, para uso hogareño no hace falta. |
+|----------------------|------------------------------------------|
+| ¿Necesito otra línea de internet? | ❌ No. |
+| ¿Lo que tengo es suficiente? | ✅ Sí, es más de lo que la mayoría tiene. |
+| ¿Es seguro? | ✅ Sí. Separé lo interno de lo externo. |
+### 🧱 Air Gap (Brecha de aire)
+
+Un **air gap** es la forma más estricta de división de red. Consiste en **aislar completamente** un dispositivo o una red privada de otros dispositivos y redes, incluida la Internet pública.
+
+---
+
+#### ¿Qué significa "air gap"?
+
+Literalmente, **"brecha de aire"** . Significa que **no hay ninguna conexión física ni inalámbrica** entre el sistema protegido y el mundo exterior.
+
+> *"Con la red de invitados ya hice más del 90% de lo que la mayoría de la gente no hace. Funciona, es seguro y no necesito complicarme más."*
+
+Red normal: Red con air gap:
+┌──────────┐ ┌──────────┐ ┌──────────────────┐
+│ Red A │←──→│ Internet │ │ Red aislada │
+└──────────┘ └──────────┘ │ │
+│ SIN conexión a │
+│ Internet ni a │
+│ otras redes. │
+│ │
+│ Solo se comunica│
+│ internamente. │
+└──────────────────┘
+
+
+---
+
+#### 🔒 ¿Qué nivel de seguridad proporciona?
+
+| Característica | Descripción |
+|----------------|-------------|
+| **Aislamiento total** | Electromagnético, electrónico y físico. No hay WiFi, Bluetooth, ni cable de red al exterior. |
+| **Sin tráfico entrante ni saliente** | No pueden entrar ni salir datos. |
+| **Solo comunicación interna** | Los dispositivos solo hablan con otros dentro de la misma red aislada. |
+| **Protección absoluta** | Ningún ataque o violación en otras redes puede llegar más allá del air gap. |
+
+---
+
+#### 🎯 ¿Quién lo usa?
+
+| Sector | ¿Qué protege? |
+|--------|---------------|
+| **Militar** | Sistemas de armas, comunicaciones clasificadas, inteligencia. |
+| **Servicios públicos** | Centrales nucleares, redes eléctricas, plantas de agua. |
+| **Médico** | Equipos de diagnóstico, historiales clínicos críticos, sistemas de soporte vital. |
+| **Financiero** | Sistemas de liquidación de pagos entre bancos. |
+| **Gobierno** | Sistemas electorales, bases de datos clasificadas. |
+
+---
+
+#### 🧠 Analogía
+
+> Un air gap es como una **habitación sellada sin puertas ni ventanas**:
+> - No entra ni sale nada.
+> - Solo las personas que ya están adentro pueden comunicarse entre sí.
+> - Para meter algo nuevo (un archivo, una actualización), hay que usar un medio físico (USB, CD) y pasarlo manualmente, con estrictos controles de seguridad.
+
+---
+
+#### ⚠️ ¿Tiene desventajas?
+
+| Desventaja | Explicación |
+|------------|-------------|
+| **Inconveniente** | Pasar datos requiere medios físicos (USB, discos externos). Es lento y manual. |
+| **Caro** | Equipos dedicados, sin conexión a Internet. |
+| **No es práctico para todo** | Solo se usa para sistemas críticos. Nadie pondría su PC de escritorio en un air gap. |
+| **Riesgo de insider** | Si alguien con acceso físico mete un USB infectado, puede romper el air gap. |
+
+---
+
+#### 📊 Comparación con otras estrategias
+
+| Estrategia | Nivel de seguridad | ¿Conectado a Internet? |
+|------------|:---:|:---:|
+| **Firewall + NAT** | Medio | ✅ Sí |
+| **DMZ** | Alto | ✅ Parcialmente (solo la DMZ) |
+| **Extranet** | Alto | ✅ Limitado |
+| **Air Gap** | Máximo | ❌ No |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Segmentación de red** | Es la forma más extrema de segmentación. |
+| **DMZ** | La DMZ expone algo. El air gap no expone nada. |
+| **Firewall** | Si el air gap es una isla desierta, el firewall es una muralla con puertas controladas. |
+
+> *"El air gap es la máxima seguridad posible: un sistema tan aislado que ni Internet ni ninguna otra red puede tocarlo. Pero es tan restrictivo que solo se usa para lo más crítico."*
+
+## 🧪 Actividad: Diseño de una red segura
+
+### 📋 Escenario
+
+**Yummy In My Tummy**, una compañía de alimentos, quiere **alojar su propio servidor web** donde los clientes puedan buscar recetas que usen sus ingredientes. Las recetas deben almacenarse en una **base de datos** accesible para los clientes.
+
+El equipo de ciberseguridad propuso **cuatro opciones** de arquitectura de red. Nuestra tarea es analizar cada una y determinar si tiene el nivel de seguridad necesario.
+
+---
+
+### 🔍 Preguntas para evaluar cada diseño
+
+| # | Pregunta |
+|---|----------|
+| 1 | ¿Están presentes todos los **dispositivos necesarios** para una red segura? |
+| 2 | ¿El diagrama de arquitectura **separa los sistemas internos y externos**? |
+| 3 | ¿Existen **protecciones suficientes** para el modelo de negocio (servidor web + base de datos)? |
+
+---
+
+### 🧠 Lo que debemos buscar
+
+| Elemento de seguridad | ¿Por qué es necesario? |
+|-----------------------|------------------------|
+| **Firewall** | Para filtrar el tráfico entre Internet y los servidores. |
+| **DMZ** | Para alojar el servidor web público separado de la base de datos interna. |
+| **Separación servidor web / base de datos** | El servidor web (recetas) debe estar en la DMZ. La base de datos debe estar en la red interna. |
+| **NAT** | Para ocultar las IPs internas. |
+| **Segmentación** | Para que un ataque al servidor web no comprometa la base de datos. |
+
+---
+
+### 🎯 Objetivo de la actividad
+
+> Aplicar el pensamiento analítico para identificar qué arquitectura de red protege correctamente la información de los clientes, separando lo público (recetas en el servidor web) de lo interno (base de datos).
+
+## 🧪 Actividad: Diseño de una red segura
+
+### 📋 Escenario
+
+**Yummy In My Tummy**, una compañía de alimentos, quiere **alojar su propio servidor web** donde los clientes puedan buscar recetas que usen sus ingredientes. Las recetas deben almacenarse en una **base de datos** accesible para los clientes.
+
+El equipo de ciberseguridad propuso **cuatro opciones** de arquitectura de red. Nuestra tarea es analizar cada una y determinar cuál tiene el nivel de seguridad necesario.
+
+---
+
+### 🔍 Criterios de evaluación
+
+| # | Pregunta | ¿Por qué es importante? |
+|---|----------|--------------------------|
+| 1 | ¿Están presentes todos los **dispositivos necesarios** para una red segura? | Sin firewall, cualquiera entra. Sin DMZ, todo está expuesto. |
+| 2 | ¿El diagrama de arquitectura **separa los sistemas internos y externos**? | El servidor web es público. La base de datos debe ser privada. |
+| 3 | ¿Existen **protecciones suficientes** para el modelo de negocio (servidor web + base de datos)? | Si hackean el servidor web, la base de datos debe seguir protegida. |
+
+---
+
+### 📊 Análisis de las 4 arquitecturas
+
+#### ✅ Red 1 (CORRECTA)
+Internet → Firewall → Servidor web (DMZ)
+→ Base de datos (Red interna)
+
+
+| Elemento | ¿Está presente? | ¿Está bien ubicado? |
+|----------|:---:|:---:|
+| **Firewall** | ✅ Sí | ✅ Al perímetro |
+| **DMZ** | ✅ Sí | ✅ Contiene el servidor web |
+| **Servidor web** | ✅ Sí | ✅ En la DMZ |
+| **Base de datos** | ✅ Sí | ✅ En la red interna |
+| **Separación público/privado** | ✅ Sí | ✅ Correcta |
+
+**Veredicto:** ✅ **Arquitectura correcta.** Si hackean el servidor web, la base de datos sigue protegida en la red interna.
+
+---
+
+#### ❌ Red 2
+Internet → Firewall → Servidor web + Base de datos (todo junto)
+
+
+| Elemento | ¿Está presente? | ¿Está bien ubicado? |
+|----------|:---:|:---:|
+| **Firewall** | ✅ Sí | ✅ Al perímetro |
+| **DMZ** | ❌ No | ❌ No hay separación |
+| **Servidor web** | ✅ Sí | ❌ Está junto con la BD |
+| **Base de datos** | ✅ Sí | ❌ Está expuesta junto con el servidor web |
+| **Separación público/privado** | ❌ No | ❌ Todo está en el mismo lugar |
+
+**Veredicto:** ❌ **Insegura.** Si hackean el servidor web, acceden directamente a la base de datos.
+
+---
+
+#### ❌ Red 3
+Internet → Firewall → Servidor web + Base de datos (todo junto)
+
+
+| Elemento | ¿Está presente? | ¿Está bien ubicado? |
+|----------|:---:|:---:|
+| **Firewall** | ✅ Sí | ✅ Al perímetro |
+| **DMZ** | ❌ No | ❌ No hay separación |
+| **Servidor web** | ✅ Sí | ❌ Está junto con la BD |
+| **Base de datos** | ✅ Sí | ❌ Está expuesta junto con el servidor web |
+| **Separación público/privado** | ❌ No | ❌ Sin DMZ |
+
+**Veredicto:** ❌ **Insegura.** Mismo problema que la Red 2. Sin DMZ ni separación.
+
+---
+
+#### ❌ Red 4
+Internet → Firewall → DMZ (Servidor web + Base de datos juntos en la DMZ)
+
+
+| Elemento | ¿Está presente? | ¿Está bien ubicado? |
+|----------|:---:|:---:|
+| **Firewall** | ✅ Sí | ✅ Al perímetro |
+| **DMZ** | ✅ Sí | ✅ Existe |
+| **Servidor web** | ✅ Sí | ✅ En la DMZ |
+| **Base de datos** | ✅ Sí | ❌ Está en la DMZ (debería estar en red interna) |
+| **Separación público/privado** | ❌ No | ❌ La BD está en zona pública |
+
+**Veredicto:** ❌ **Insegura.** La DMZ está mal implementada. La base de datos no debe estar en la DMZ porque queda expuesta.
+
+---
+
+### 📊 Comparación final
+
+| Red | Firewall | DMZ | BD en red interna | Separación público/privado | ¿Es segura? |
+|-----|:---:|:---:|:---:|:---:|:---:|
+| **Red 1** | ✅ | ✅ | ✅ | ✅ | ✅ **Sí** |
+| **Red 2** | ✅ | ❌ | ❌ | ❌ | ❌ No |
+| **Red 3** | ✅ | ❌ | ❌ | ❌ | ❌ No |
+| **Red 4** | ✅ | ✅ | ❌ (está en DMZ) | ❌ | ❌ No |
+
+---
+
+### 🎯 Conclusión
+
+**La Red 1 es la arquitectura correcta** porque cumple con todos los requisitos de seguridad:
+
+| # | Requisito cumplido | ¿Cómo lo cumple? |
+|---|---------------------|-------------------|
+| 1 | Firewall protegiendo el perímetro. | ✅ Hay un firewall entre Internet y la DMZ. |
+| 2 | Servidor web en DMZ, accesible desde Internet. | ✅ Los clientes pueden buscar recetas. |
+| 3 | Base de datos en red interna, separada del servidor público. | ✅ Si hackean el servidor web, no pueden acceder a la BD. |
+| 4 | Separación entre sistemas internos y externos. | ✅ DMZ + Red interna correctamente divididos. |
+
+---
+
+### 🧠 Lección aprendida
+
+> *"Una arquitectura segura no solo necesita los dispositivos correctos (firewall, DMZ). Necesita que cada componente esté en la zona correcta. Un firewall sin DMZ no protege. Una DMZ con la base de datos adentro tampoco. La seguridad está en la correcta separación."*
+
+### 💼 Gestión de carrera: Certificación CompTIA Network+
+
+La certificación **Network+ de CompTIA** es una certificación de la industria diseñada para profesionales de TI que desean demostrar su conocimiento sobre **redes informáticas** y su capacidad para **implementarlas y mantenerlas**.
+
+---
+
+#### 📋 ¿Qué cubre la certificación?
+
+| Área | Contenido |
+|------|-----------|
+| **Instalación** | Cómo montar y poner en marcha una red. |
+| **Configuración** | Ajustes de routers, switches, firewalls y otros dispositivos. |
+| **Seguridad** | Protección de la red contra amenazas y ataques. |
+| **Resolución de problemas** | Diagnosticar y solucionar fallos de conectividad y rendimiento. |
+| **Hardware de red** | Conocimiento de routers, switches, cables, puntos de acceso. |
+| **Software y sistemas operativos** | Sistemas operativos de red y herramientas de gestión. |
+| **Protocolos de red** | TCP/IP, DNS, DHCP, HTTP/HTTPS, FTP, etc. |
+
+---
+
+#### 🎯 ¿Para quién es útil?
+
+| Puesto de trabajo | ¿Cómo ayuda la certificación? |
+|-------------------|-------------------------------|
+| **Especialista en soporte técnico** | Demuestra que sabés diagnosticar y resolver problemas de red. |
+| **Administrador de redes** | Valida que podés gestionar y mantener una red corporativa. |
+| **Analista de redes** | Acredita tu capacidad para analizar tráfico y rendimiento. |
+| **Ingeniero de sistemas** | Muestra que entendés la infraestructura de red a nivel profesional. |
+
+---
+
+#### 🧠 ¿Por qué es valiosa?
+
+| Beneficio | Explicación |
+|-----------|-------------|
+| **Reconocimiento internacional** | CompTIA es una de las organizaciones de certificación más respetadas del mundo. |
+| **Válida conocimientos prácticos** | No es solo teoría. Cubre escenarios reales de instalación, configuración y resolución de problemas. |
+| **Abre puertas laborales** | Muchas empresas la piden como requisito para puestos de TI y redes. |
+| **Base para otras certificaciones** | Sirve como fundamento para certificaciones más avanzadas (CCNA, Security+). |
+
+---
+
+#### 🔗 Conexión con lo aprendido en el módulo
+
+| Tema del módulo | Relación con Network+ |
+|-----------------|----------------------|
+| **Dispositivos de seguridad de red** | Firewalls, routers, switches, proxies son parte del examen. |
+| **Arquitectura de red** | DMZ, segmentación, NAT, extranet. |
+| **Ataques a la red** | Conocer amenazas ayuda a prevenirlas y solucionarlas. |
+| **Seguridad inalámbrica** | WPA2, WPA3, Evil Twin, Rogue AP. |
+| **Hardening de red** | Configuraciones seguras, deshabilitar servicios innecesarios. |
+
+> *"La certificación Network+ es como un pasaporte al mundo de las redes profesionales. Demuestra que no solo entendés cómo funciona una red, sino que podés armarla, protegerla y arreglarla."*
+
+## 🔐 Lección 4: Control de acceso a la red
+
+Cualquier sistema puede ser seguro solo si se puede **confiar en las personas que lo usan**. Si una red permite el acceso a los **usuarios equivocados** o permite a los usuarios acceder a los **activos y recursos equivocados**, el riesgo de ataque y daño crece enormemente.
+
+---
+
+### 📋 Lo que vamos a ver en esta lección
+
+| Tema | Descripción |
+|------|-------------|
+| **Control de acceso a la red** | Cómo los administradores configuran los sistemas para garantizar que las personas correctas accedan a los recursos que necesitan. |
+| **Principios de acceso** | Privilegio mínimo, necesidad de saber, separación de funciones. |
+| **Métodos de control** | NAC, 802.1X, MAC filtering, autenticación basada en roles. |
+
+---
+
+### 🧠 Idea clave
+
+> *"La seguridad de la red no solo depende de firewalls y DMZs. Depende de quién puede entrar, a qué puede acceder y qué permisos tiene. Si le das las llaves del banco a cualquiera, no importa qué tan buena sea la bóveda."*
+
+### 🔐 ¿Qué es el control de acceso a la red (NAC)?
+
+El **control de acceso a la red (NAC - Network Access Control)** es un proceso para **controlar y gestionar** el acceso a una red mediante la **autenticación de usuarios y dispositivos** antes de permitirles conectarse.
+
+---
+
+#### 🎯 ¿Qué busca garantizar?
+
+| Objetivo | Descripción |
+|----------|-------------|
+| **Solo usuarios de confianza** | Que únicamente las personas autorizadas puedan acceder a la red. |
+| **Dispositivos verificados** | Que los dispositivos que se conectan cumplan con las políticas de seguridad. |
+| **Posibles atacantes fuera** | Bloquear el acceso a cualquier entidad no autorizada o sospechosa. |
+
+---
+
+#### 🧠 Analogía
+
+> El NAC es como el **guardia de seguridad en la entrada de un edificio corporativo**:
+> - Te pide tu identificación (autenticación del usuario).
+> - Verifica que estés en la lista de invitados (autorización).
+> - Revisa que no traigas objetos peligrosos (cumplimiento del dispositivo).
+> - Si todo está en orden, te deja pasar. Si no, te bloquea.
+
+---
+
+#### 🛡️ ¿Por qué es vital para la seguridad de la red?
+
+| Beneficio | ¿Cómo ayuda? |
+|-----------|--------------|
+| **Evita acceso no autorizado** | Bloquea a usuarios y dispositivos que no cumplen con las políticas. |
+| **Reduce el riesgo de filtraciones** | Si solo entran los autorizados, hay menos posibilidades de robo de datos. |
+| **Reduce el riesgo de ciberataques** | Impide que atacantes se conecten libremente a la red. |
+| **Garantiza el cumplimiento normativo** | Ayuda a cumplir con políticas de seguridad y regulaciones (GDPR, PCI-DSS, HIPAA). |
+
+---
+
+#### ⚙️ ¿Cómo funciona el NAC?
+Dispositivo solicita conexión
+│
+▼
+¿Usuario autenticado?
+│ │
+Sí No
+│ │
+▼ ▼
+¿Dispositivo cumple Bloqueado
+políticas de
+seguridad?
+│ │
+Sí No
+│ │
+▼ ▼
+Acceso Acceso limitado
+completo o en cuarentena
+
+
+---
+
+#### 📊 Elementos que verifica el NAC
+
+| Elemento | ¿Qué revisa? | Ejemplo |
+|----------|--------------|---------|
+| **Usuario** | Credenciales, roles, permisos. | ¿Es un empleado activo? ¿Tiene permiso para esta red? |
+| **Dispositivo** | Sistema operativo, antivirus, parches, firewall. | ¿Tiene Windows actualizado? ¿Tiene antivirus activo? |
+| **Ubicación** | Desde dónde se conecta. | ¿Está en la oficina o en una cafetería? |
+| **Horario** | Cuándo intenta conectarse. | ¿Es horario laboral o las 3 AM? |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Autenticación segura** | El NAC usa autenticación como primer paso. |
+| **Firewall** | El NAC controla quién entra. El firewall controla qué tráfico pasa. |
+| **Segmentación** | Una vez dentro, el NAC puede asignar al usuario a una VLAN específica según su rol. |
+| **Hardening** | Verificar que los dispositivos cumplan políticas es parte del hardening. |
+
+> *"El NAC es la primera línea de defensa humana. Antes de que un paquete llegue al firewall, el NAC ya decidió si ese usuario y ese dispositivo pueden siquiera estar en la red."*
+
+Usuario intenta conectarse
+│
+▼
+AUTENTICACIÓN
+¿Quién sos?
+│ │
+OK Falló
+│ │
+▼ ▼
+AUTORIZACIÓN Acceso denegado
+¿Tenés permiso?
+│ │
+OK Falló
+│ │
+▼ ▼
+Acceso Acceso denegado
+concedido
+
+
+---
+
+#### 🛡️ ¿Por qué son importantes para la seguridad?
+
+| Beneficio | Explicación |
+|-----------|-------------|
+| **Protege información confidencial** | Solo usuarios verificados y autorizados acceden a datos sensibles. |
+| **Garantiza confianza en la red** | Todos los que están en la red fueron validados. |
+| **Previene accesos no autorizados** | Sin autenticación, cualquiera entra. Sin autorización, cualquiera hace lo que quiere. |
+| **Trazabilidad** | Se sabe quién accedió y qué hizo. |
+
+---
+
+#### 📊 Ejemplo concreto
+
+| Situación | Autenticación | Autorización |
+|-----------|---------------|--------------|
+| Un empleado de marketing quiere acceder a la carpeta de finanzas. | ✅ Pasó (es un empleado válido). | ❌ Denegado (no tiene permiso para esa carpeta). |
+| Un hacker intenta entrar con una contraseña robada. | ⚠️ Pasó (contraseña correcta). Pero si hay MFA... | ❌ Sin segundo factor, no pasa. |
+| Un administrador de TI necesita acceder al servidor. | ✅ Pasó. | ✅ Autorizado (tiene rol de administrador). |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **NAC (Control de acceso a la red)** | NAC usa autenticación y autorización como base. |
+| **MFA (Autenticación multifactor)** | Es un método de autenticación más fuerte. |
+| **RBAC (Control de acceso basado en roles)** | Es un método de autorización. |
+| **Firewall** | Controla tráfico. La autenticación/autorización controla usuarios. |
+
+> *"La autenticación dice quién sos. La autorización dice qué podés hacer. Sin la primera, cualquiera entra. Sin la segunda, cualquiera toca todo. Las dos juntas son el candado y la llave de la red."*
+
+Filtrado MAC (básico):
+"Tu MAC es AA:BB:CC:DD:EE:FF? Ok, pasá."
+→ Un atacante copia esa MAC y también pasa.
+
+
+--- --------------------------------------------------------------------------------------------
+NAC (avanzado):
+"¿Quién sos? (usuario/contraseña + MFA)
+ ¿Tu antivirus está activo? ¿Tu Windows está actualizado?
+ ¿Tu firewall está prendido? ¿Es horario laboral?
+ ¿Estás en la oficina o en un país sospechoso?"
+→ Si algo falla, no pasás o vas a cuarentena.
+
+Dispositivo → Agente NAC (revisa estado) → Switch/Router (punto de aplicación) → Servidor NAC (decide)
+                                                                                        │
+                                                                              ¿Cumple las políticas?
+                                                                                 │          │
+                                                                                Sí         No
+                                                                                 │          │
+                                                                             Accede    Bloqueado o
+                                                                             a la red  en cuarentena
+
+
+### 📋 IAAA: Identificación, Autenticación, Autorización y Contabilidad
+
+Los administradores usan el marco **IAAA** para controlar el acceso a los recursos y proteger la información confidencial. La **confidencialidad, integridad y disponibilidad** de los datos dependen de estos cuatro pilares.
+
+---
+
+#### 🔍 Los cuatro pilares de IAAA
+
+| Pilar | ¿Qué hace? | Pregunta que responde | Ejemplo |
+|-------|------------|----------------------|---------|
+| **Identificación** | Declara quién sos. | "¿Quién decís ser?" | Ingresar tu nombre de usuario o escanear tu tarjeta de acceso. |
+| **Autenticación** | Verifica que realmente sos quien decís ser. | "¿Podés probarlo?" | Ingresar tu contraseña, usar tu huella dactilar o mostrar tu DNI. |
+| **Autorización** | Determina qué podés hacer una vez adentro. | "¿Tenés permiso para esto?" | Un empleado puede ver su carpeta, pero no la de finanzas. |
+| **Contabilidad** | Registra todo lo que hiciste. | "¿Qué hiciste mientras estuviste adentro?" | Logs de acceso, archivos abiertos, cambios realizados, hora de entrada y salida. |
+
+---
+
+#### 🧠 Analogía
+
+> Es como entrar a un **hotel de alta seguridad**:
+> - **Identificación:** Decís "Soy Juan Pérez, tengo una reserva".
+> - **Autenticación:** Mostrás tu DNI o pasaporte para probarlo.
+> - **Autorización:** El recepcionista te da la llave de tu habitación, pero no la de la suite presidencial.
+> - **Contabilidad:** El hotel registra a qué hora entraste, qué servicios usaste y cuándo saliste.
+
+---
+
+#### ⚙️ Flujo completo de IAAA
+IDENTIFICACIÓN
+"Soy juan.perez"
+│
+▼
+
+AUTENTICACIÓN
+"Esta es mi contraseña y mi huella"
+│
+▼
+
+AUTORIZACIÓN
+"Podés acceder a tu carpeta y al email"
+│
+▼
+
+CONTABILIDAD
+"Registrado: juan.perez accedió a las 09:15, abrió 3 archivos, salió a las 17:00"
+
+
+---
+
+#### 📊 ¿Por qué son importantes los cuatro?
+
+| Si falta... | ¿Qué pasa? |
+|-------------|------------|
+| **Identificación** | No sabés quién entró. Cualquiera puede decir cualquier cosa. |
+| **Autenticación** | Alguien puede hacerse pasar por otro sin prueba. |
+| **Autorización** | Todos pueden acceder a todo. Un pasante puede ver datos confidenciales. |
+| **Contabilidad** | No hay registro de lo que pasó. Si hay un incidente, no sabés quién lo hizo ni cuándo. |
+
+---
+
+#### 🔗 Conexión con la tríada CIA
+
+| Pilar de IAAA | ¿A qué pilar de CIA ayuda? |
+|---------------|----------------------------|
+| **Identificación + Autenticación** | **Confidencialidad:** Solo los autorizados entran. |
+| **Autorización** | **Integridad:** Solo los autorizados modifican datos. |
+| **Contabilidad** | **Disponibilidad + Integridad:** Si algo falla, sabés quién lo hizo y podés recuperarlo. |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **Autenticación segura** | Es el segundo pilar de IAAA. |
+| **NAC** | NAC implementa IAAA a nivel de red. |
+| **RBAC** | Es un método de autorización. |
+| **Registro de eventos (logging)** | Es la base de la contabilidad. |
+| **Cifrado** | Protege la confidencialidad de los datos una vez que el usuario fue autenticado. |
+
+> *"IAAA es la fórmula completa del control de acceso. No alcanza con saber quién entra. Hay que verificarlo, limitarlo y registrar todo lo que hace. Si falta uno de los cuatro, la seguridad tiene un agujero."*
+
+### 🔐 Métodos de autenticación adicionales
+
+Los nombres de usuario y contraseñas brindan autenticación básica, pero la mayoría de los sistemas modernos usan **métodos adicionales** para un mayor nivel de protección.
+
+---
+
+#### 📋 Métodos de autenticación
+
+| Método | ¿En qué consiste? | Ejemplo |
+|--------|-------------------|---------|
+| **Autenticación basada en el conocimiento (KBA)** | Verifica la identidad haciendo preguntas basadas en información que **solo el usuario conoce**. | Pregunta secreta ("¿Cuál es el nombre de tu primera mascota?") o un PIN. |
+| **Inicio de sesión único (SSO)** | Permite acceder a **varios recursos** con un solo conjunto de credenciales. Autentica una vez y crea un token que sirve como llave para todo lo demás. | Iniciar sesión en Google y acceder a Gmail, Drive y YouTube sin volver a loguearte. |
+| **Autenticación multifactor (MFA)** | Requiere **dos o más factores** para demostrar la identidad. | Contraseña + código enviado al celular + huella dactilar. |
+| **Autenticación adaptativa** | Cambia los requisitos de autenticación **en tiempo real** según el riesgo detectado. | Si entrás desde tu PC habitual, solo contraseña. Si entrás desde otro país, te pide MFA adicional. |
+
+---
+
+#### 🔍 Detalle de cada método
+
+##### 1. KBA (Knowledge-Based Authentication)
+
+| Característica | Descripción |
+|----------------|-------------|
+| **¿Qué usa?** | Información que solo el usuario conoce. |
+| **Ejemplos** | Preguntas secretas, PIN, fecha de nacimiento. |
+| **¿Es segura?** | ⚠️ Media. Las respuestas pueden adivinarse o encontrarse en redes sociales. |
+
+---
+
+##### 2. SSO (Single Sign-On)
+
+| Característica | Descripción |
+|----------------|-------------|
+| **¿Qué hace?** | Autenticás una vez y accedés a múltiples servicios. |
+| **¿Cómo funciona?** | El portal de SSO autentica al usuario y crea un **certificado o token** que sirve como llave. |
+| **Ventaja** | Comodidad. No hay que recordar 50 contraseñas. |
+| **Desventaja** | Si alguien roba esa única contraseña, accede a todo. Por eso debe combinarse con MFA. |
+
+---
+
+##### 3. MFA (Autenticación Multifactor)
+
+| Factor | Tipo | Ejemplos |
+|--------|------|----------|
+| **Algo que sabés** | Conocimiento | Contraseña, PIN. |
+| **Algo que tenés** | Posesión | Código en el celular, token físico, tarjeta inteligente. |
+| **Algo que sos** | Biometría | Huella dactilar, reconocimiento facial, voz. |
+
+> *"MFA es la regla de oro hoy. Si alguien roba tu contraseña, todavía necesita tu celular o tu huella para entrar."*
+
+---
+
+##### 4. Autenticación adaptativa (basada en riesgos)
+
+| Característica | Descripción |
+|----------------|-------------|
+| **¿Qué evalúa?** | Contexto: ubicación, dispositivo, hora, comportamiento habitual. |
+| **¿Cómo responde?** | Si detecta algo inusual, **aumenta los requisitos de autenticación** automáticamente. |
+
+| Comportamiento normal | Comportamiento sospechoso |
+|-----------------------|---------------------------|
+| Inicio de sesión desde casa (8 AM). | Inicio de sesión desde otro país (3 AM). |
+| Solo pide contraseña. | Pide contraseña + código SMS + huella. |
+
+---
+
+#### 📊 Comparación de métodos
+
+| Método | Nivel de seguridad | Comodidad |
+|--------|:---:|:---:|
+| **Solo contraseña** | Bajo | Alta |
+| **KBA (preguntas secretas)** | Medio-Bajo | Media |
+| **SSO** | Medio (sin MFA) / Alto (con MFA) | Muy alta |
+| **MFA** | Alto | Media |
+| **Autenticación adaptativa** | Muy alto | Alta (se adapta automáticamente) |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **IAAA** | Estos métodos refuerzan el pilar de **Autenticación**. |
+| **NAC** | NAC usa varios de estos métodos para verificar usuarios y dispositivos. |
+| **Protección del SO** | MFA y SSO son parte de las mejores prácticas de seguridad. |
+
+> *"La contraseña sola ya no alcanza. MFA, SSO y autenticación adaptativa son el estándar actual. Cada capa adicional hace más difícil que un atacante se haga pasar por vos."*
+
+### 🔐 Esquemas de control de acceso
+
+Gestionar el acceso para un puñado de usuarios es fácil. Pero cuando hay **cientos o miles de usuarios y dispositivos**, se vuelve muy complejo. Los **esquemas de control de acceso** ayudan a proporcionar **coherencia** en el control de acceso a los recursos de red.
+
+---
+
+#### 🎯 ¿Qué garantizan?
+
+| Objetivo | Descripción |
+|----------|-------------|
+| **Solo usuarios autorizados** | Accedan a los recursos que necesitan. |
+| **Evitar acceso no autorizado** | Bloquear a quienes no tienen permiso. |
+| **Prevenir robo y daños** | Proteger los datos y sistemas. |
+
+---
+
+#### 📋 Los 4 esquemas principales
+
+| Esquema | ¿Quién decide el acceso? | ¿En qué se basa? | Analogía |
+|---------|--------------------------|------------------|----------|
+| **ABAC** (Atributos) | El sistema, basado en políticas. | Atributos del usuario, recurso y entorno. | Un portero que decide según tu cargo, hora y ubicación. |
+| **RBAC** (Roles) | El administrador, según roles. | Rol del usuario en la organización. | Un empleado de limpieza tiene llave de los armarios, no de la caja fuerte. |
+| **DAC** (Discrecional) | El **propietario** de cada recurso. | Lo que el dueño decide compartir. | Vos decidís quién entra a tu casa y quién no. |
+| **MAC** (Obligatorio) | Una **autoridad central**. | Reglas y políticas predeterminadas. Niveles jerárquicos. | El gobierno decide quién accede a documentos secretos. |
+
+---
+
+#### 1. ABAC: Control de acceso basado en atributos
+
+| Característica | Descripción |
+|----------------|-------------|
+| **¿En qué se basa?** | Atributos del **usuario** (cargo, ubicación), del **recurso** (tipo de archivo) y del **entorno** (hora del día). |
+| **¿Cómo decide?** | El sistema otorga o deniega acceso según cómo estos atributos coinciden con las políticas predefinidas. |
+| **Ejemplo** | Un médico puede ver historiales clínicos solo dentro del hospital y en horario laboral. |
+Usuario: Médico
+Recurso: Historia clínica
+Entorno: Hospital, 10 AM
+Política: Permitir
+
+Usuario: Médico
+Recurso: Historia clínica
+Entorno: Cafetería, 11 PM
+Política: Denegar
+
+
+---
+
+#### 2. RBAC: Control de acceso basado en roles
+
+| Característica | Descripción |
+|----------------|-------------|
+| **¿En qué se basa?** | Roles asignados a usuarios o grupos según su función empresarial. |
+| **¿Cómo decide?** | Los administradores asignan roles. El sistema concede derechos de acceso basados en esos roles. |
+| **Ejemplo** | El rol "Ventas" accede a clientes. El rol "RRHH" accede a empleados. Ninguno accede a lo del otro. |
+
+┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+│ Ventas │ │ RRHH │ │ TI │
+│ │ │ │ │ │
+│ • Clientes │ │ • Empleados │ │ • Servidores │
+│ • Pedidos │ │ • Sueldos │ │ • Red │
+│ • Facturas │ │ • Legajos │ │ • Todo │
+└──────────────┘ └──────────────┘ └──────────────┘
+
+
+---
+
+#### 3. DAC: Control de acceso discrecional
+
+| Característica | Descripción |
+|----------------|-------------|
+| **¿En qué se basa?** | Cada recurso tiene un **propietario** que decide quién accede. |
+| **¿Cómo decide?** | El propietario concede o deniega acceso a otros usuarios **según su criterio**. |
+| **Ejemplo** | Creás un documento en Google Drive y decidís compartirlo con Juan, pero no con María. |
+
+Vos (propietario del archivo)
+│
+├── Juan: ✅ Puede ver y editar
+└── María: ❌ No puede ver
+
+
+| Ventaja | Desventaja |
+|---------|------------|
+| Muy flexible. | Depende del criterio de cada usuario. Puede generar caos en organizaciones grandes. |
+
+---
+
+#### 4. MAC: Control de acceso obligatorio
+
+| Característica | Descripción |
+|----------------|-------------|
+| **¿En qué se basa?** | Una **autoridad central** (administrador de seguridad) define reglas estrictas. |
+| **¿Cómo decide?** | Los usuarios **no tienen control** sobre sus propios derechos. Todo está predeterminado por niveles jerárquicos. |
+| **Ejemplo** | Documentos clasificados como "Secreto", "Confidencial", "Público". Solo quien tiene el nivel autorizado accede. |
+
+Niveles de clasificación:
+┌──────────────────────────────────┐
+│ Alto Secreto │ Solo directores│
+│ Secreto │ Solo gerentes │
+│ Confidencial │ Empleados │
+│ Público │ Todos │
+└──────────────────────────────────┘
+Un empleado con nivel "Confidencial" NO puede ver documentos "Secretos".
+
+| Ventaja | Desventaja |
+|---------|------------|
+| Muy seguro. Centralizado. | Poco flexible. Se usa en entornos militares y gubernamentales. |
+
+---
+
+#### 📊 Comparación de esquemas
+
+| Esquema | Flexibilidad | Seguridad | ¿Quién controla? | Uso típico |
+|---------|:---:|:---:|------------------|------------|
+| **ABAC** | Alta | Alta | El sistema (políticas) | Empresas modernas |
+| **RBAC** | Media | Alta | Administrador | Empresas de todos los tamaños |
+| **DAC** | Muy alta | Media | Usuario propietario | PCs personales, pequeñas oficinas |
+| **MAC** | Baja | Muy alta | Autoridad central | Ejército, gobierno, inteligencia |
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **IAAA** | Estos esquemas implementan el pilar de **Autorización**. |
+| **NAC** | NAC puede usar RBAC o ABAC para decidir quién entra a la red. |
+| **Principio de privilegio mínimo** | RBAC y MAC lo aplican naturalmente. |
+| **Segmentación** | Los esquemas de acceso determinan quién puede cruzar los segmentos. |
+
+> *"Elegir el esquema correcto depende del tamaño y la sensibilidad de la organización. RBAC es el más común en empresas. MAC es para secretos de estado. DAC es para el día a día personal. ABAC es el futuro, combinando todo."*
+
+### 📁 Permisos del sistema de archivos
+
+Mientras que muchos métodos de control de acceso evalúan a los **usuarios y sus atributos**, los permisos del sistema de archivos están relacionados con los **propios recursos** (archivos y carpetas).
+
+---
+
+#### 🎯 ¿Qué determinan?
+
+Los controles del sistema de archivos determinan qué cuentas, usuarios, grupos o servicios pueden realizar **acciones** como:
+
+| Acción | ¿Qué permite? |
+|--------|---------------|
+| **Leer** | Ver el contenido de un archivo o carpeta. |
+| **Escribir** | Modificar o crear archivos. |
+| **Ejecutar** | Ejecutar programas o scripts. |
+
+---
+
+#### 🪟 Ejemplo: Sistema de archivos de Microsoft Windows
+
+En Windows, los permisos se pueden aplicar a:
+- **Archivos individuales** o **carpetas completas**.
+- **Heredados** de las carpetas principales (una subcarpeta hereda los permisos de la carpeta que la contiene).
+- Otorgados o denegados a **usuarios individuales** o **grupos**.
+- **Cambiados o eliminados** en cualquier momento por el propietario o administrador.
+
+---
+
+#### 📋 Permisos de Windows
+
+| Permiso | ¿Qué permite? |
+|---------|---------------|
+| **Control total** | Todo: leer, escribir, modificar, eliminar y cambiar permisos. |
+| **Modificar** | Leer, escribir, modificar y eliminar archivos. |
+| **Leer y ejecutar** | Ver archivos y ejecutar programas. |
+| **Leer** | Solo ver archivos y carpetas. |
+| **Escribir** | Crear y modificar archivos. |
+| **Permisos especiales** | Permisos avanzados y personalizados (tomar propiedad, cambiar auditoría, etc.). |
+
+---
+
+#### 🧠 Analogía
+
+> Los permisos de archivos son como las **llaves de una oficina**:
+> - **Control total:** Tenés la llave maestra. Entrás a todo y podés prestar llaves.
+> - **Modificar:** Entrás, trabajás y ordenás, pero no podés cambiar la cerradura.
+> - **Leer y ejecutar:** Podés leer documentos y usar programas, pero no modificar nada.
+> - **Leer:** Solo podés mirar. No tocás nada.
+> - **Escribir:** Podés dejar documentos nuevos, pero no ver los que ya están (raro, pero existe).
+
+---
+
+#### ⚙️ ¿Cómo funciona la herencia?
+Carpeta principal: "Proyectos" (permisos: Leer para todos)
+│
+├── Subcarpeta A (hereda "Leer para todos")
+├── Subcarpeta B (hereda "Leer para todos")
+└── Subcarpeta C (hereda "Leer para todos")
+
+
+Si cambiás los permisos en "Proyectos", todas las subcarpetas heredan el cambio automáticamente. A menos que rompas la herencia manualmente.
+
+---
+
+#### 📊 Denegar vs Permitir
+
+| Regla | ¿Qué pasa? |
+|-------|------------|
+| **Permitir** | El usuario o grupo puede realizar la acción. |
+| **Denegar** | El usuario o grupo NO puede, **incluso si otro permiso lo permite**. Denegar **siempre gana**. |
+Ejemplo:
+Usuario "Juan" tiene:
+
+Grupo "Ventas": Permitir Leer
+
+Permiso individual: Denegar Leer
+
+Resultado: Juan NO puede leer. Denegar tiene prioridad.
+
+
+---
+
+#### 🔗 Conexión con lo aprendido
+
+| Tema anterior | Relación |
+|---------------|----------|
+| **IAAA** | Los permisos de archivos son parte del pilar de **Autorización**. |
+| **DAC (Control discrecional)** | El propietario decide los permisos de cada archivo. |
+| **MAC (Control obligatorio)** | Los permisos los define una autoridad central, no el usuario. |
+| **RBAC (Roles)** | Los permisos se asignan por rol, no por usuario individual. |
+| **Hardening** | Configurar permisos correctos es una práctica de hardening. |
+
+> *"Los permisos de archivos son la última barrera. Aunque alguien entre a la red y acceda al servidor, los permisos correctos pueden evitar que lea o modifique datos sensibles."*
+
+### 💼 Gestión de carrera: Analista de Gestión de Identidad y Acceso (IAM)
+
+Los **analistas de IAM (Identity and Access Management)** gestionan y protegen el acceso de los usuarios a los recursos de la compañía: sistemas informáticos, redes y aplicaciones.
+
+**Deber principal:** Garantizar que **solo los usuarios autorizados** puedan acceder a información confidencial.
+
+---
+
+#### 🤝 ¿Con quién trabajan?
+
+| Equipo | Colaboración |
+|--------|--------------|
+| **TI** | Implementación técnica de controles de acceso. |
+| **Seguridad** | Monitoreo de amenazas y respuesta a incidentes. |
+| **Cumplimiento** | Asegurar que se cumplan normativas y políticas. |
+
+---
+
+#### 📋 Tareas típicas de un analista IAM
+
+| Área | Tareas |
+|------|--------|
+| **Gestión de cuentas de usuario** | Crear, modificar y desactivar cuentas de empleados, contratistas y socios. |
+| **Control de acceso** | Asignar y revocar permisos según el rol de cada usuario siguiendo el principio de mínimo privilegio. |
+| **Políticas de contraseñas** | Implementar y hacer cumplir políticas de contraseñas seguras, caducidad y complejidad. |
+| **Autenticación multifactor (MFA)** | Configurar y gestionar sistemas de MFA. |
+| **Single Sign-On (SSO)** | Administrar portales de inicio de sesión único para acceso a múltiples aplicaciones. |
+| **Revisión de accesos (Access Reviews)** | Auditorías periódicas de quién tiene acceso a qué. Detectar permisos innecesarios o cuentas huérfanas. |
+| **Gestión de roles (RBAC)** | Definir roles y asignar permisos según funciones laborales. |
+| **Monitoreo y detección** | Supervisar intentos de acceso sospechosos y alertar sobre anomalías. |
+| **Cumplimiento normativo** | Asegurar que los accesos cumplan con regulaciones (GDPR, HIPAA, PCI-DSS, SOX). |
+| **Automatización** | Implementar herramientas para automatizar altas, bajas y cambios de usuarios. |
+| **Documentación** | Mantener registros de políticas, procedimientos y cambios realizados. |
+| **Respuesta a incidentes** | Bloquear accesos comprometidos y colaborar en investigaciones de seguridad. |
+| **Gestión de identidades privilegiadas (PIM/PAM)** | Administrar cuentas con altos privilegios como administradores y superusuarios. |
+| **Onboarding/Offboarding** | Asegurar que los nuevos empleados tengan acceso el primer día y que los que se van lo pierdan de inmediato. |
+
+---
+
+#### 🧠 Perfil profesional
+
+| Habilidad | ¿Por qué es necesaria? |
+|-----------|------------------------|
+| **Atención al detalle** | Un permiso mal asignado puede causar una filtración. |
+| **Conocimiento de normativas** | GDPR, HIPAA, PCI-DSS requieren controles IAM estrictos. |
+| **Pensamiento analítico** | Detectar patrones sospechosos de acceso. |
+| **Trabajo en equipo** | Colaboración constante con TI, seguridad y RRHH. |
+| **Conocimiento técnico** | Active Directory, Azure AD, Okta, SailPoint, CyberArk. |
+
+---
+
+#### 🔗 Conexión con lo aprendido en el módulo
+
+| Tema del módulo | Relación con el analista IAM |
+|-----------------|------------------------------|
+| **IAAA** | Es la base de su trabajo diario. |
+| **RBAC, ABAC, MAC, DAC** | Son los esquemas que implementa y gestiona. |
+| **MFA y SSO** | Son herramientas que configura y administra. |
+| **NAC** | Control de acceso a la red, parte de sus responsabilidades. |
+| **Principio de privilegio mínimo** | Es la regla de oro que aplica a cada usuario. |
+| **Contabilidad (logging)** | Monitorea y audita accesos. |
+
+---
+
+#### 🌐 ¿Dónde buscar más información?
+
+| Fuente | Términos de búsqueda sugeridos |
+|--------|-------------------------------|
+| **Google** | "tareas para la administración de identidad y acceso" |
+| **Indeed / LinkedIn / Glassdoor** | "analista de administración de identidad y acceso", "analista de IAM", "Identity and Access Management analyst" |
+| **Portales de certificación** | CompTIA Security+, CISSP, CIAM |
+
+> *"El analista IAM es el guardián de las llaves digitales. Decide quién entra, quién no, y se asegura de que nadie tenga más acceso del que necesita. Si hay una filtración, es su responsabilidad haberlo evitado."*
+
+## 📚 Módulo 4: Seguridad de redes - Puntos para recordar
+
+---
+
+### 🔑 Conceptos clave
+
+#### Amenazas a la red
+1. **Ataques a aplicaciones y servicios** (los más comunes):
+   - **Ataque de aplicación:** explota una vulnerabilidad en una aplicación o software.
+   - **Ataque de servicio:** busca apagar una computadora o red para que no esté disponible.
+
+2. **Ataques inalámbricos:** explotan características específicas de las redes inalámbricas.
+
+---
+
+#### Dispositivos de seguridad
+3. Los **dispositivos de seguridad de red** son hardware que ayudan a detener ataques.
+
+4. Dispositivos más importantes:
+   - Firewalls
+   - Enrutadores (Routers)
+   - Conmutadores (Switches)
+   - Equilibradores de carga (Load Balancers)
+   - Módulos de seguridad de hardware (HSM)
+
+---
+
+#### Arquitectura de red
+5. La **arquitectura de red** puede facilitar la seguridad si se implementan las mejores prácticas desde el diseño.
+
+6. Estructuras que promueven la seguridad:
+   - **DMZ:** separa servidores públicos de la red interna.
+   - **NAT:** oculta direcciones IP internas.
+   - **Honeypots:** sistemas señuelo para estudiar atacantes.
+   - **Segmentación de red:** divide la red en partes más pequeñas.
+   - **Extranet:** red para usuarios externos autorizados.
+   - **Air Gap:** aislamiento total sin conexión al exterior.
+
+---
+
+#### Control de acceso
+7. El **control de acceso a la red (NAC)** permite que solo usuarios de confianza y autorizados accedan a la red.
+
+8. Las cuatro partes esenciales del control de acceso (**IAAA**):
+   - **Identificación:** quién decís ser.
+   - **Autenticación:** verificarlo.
+   - **Autorización:** qué podés hacer.
+   - **Contabilidad:** registrar todo.
+
+9. **Esquemas de control de acceso:**
+   - **ABAC:** basado en atributos.
+   - **RBAC:** basado en roles.
+   - **DAC:** control discrecional (el propietario decide).
+   - **MAC:** control obligatorio (autoridad central).
+
+---
+
+### 💡 Grandes ideas y habilidades practicadas
+
+| Habilidad | Actividad realizada |
+|-----------|---------------------|
+| **Pensamiento analítico, comunicación escrita** | Enumerar medidas de seguridad de red. Explicar cómo la autenticación y autorización mantienen la confidencialidad. |
+| **Pensamiento analítico** | Clasificar ataques a aplicaciones y servicios. Clasificar ataques inalámbricos. Diseñar una red segura. |
+| **Pensamiento crítico** | Describir protocolos de cifrado. Identificar beneficios de dispositivos de seguridad. |
+| **Mentalidad de crecimiento, comunicación escrita** | Enumerar habilidades técnicas para gestionar redes. Explorar certificación CompTIA Network+. |
+| **Investigación, comunicación escrita** | Resumir tareas típicas de un analista IAM. |
+| **Pensamiento creativo** | Diferenciar entre controles de acceso a la red. |
+
+---
+
+### 🎯 Objetivos de aprendizaje cumplidos
+
+| # | Objetivo | ¿Dónde lo aplicaste? |
+|---|----------|----------------------|
+| 1 | ✅ **Clasificar tipos de ataques a aplicaciones y servicios** | Lección 1: DoS/DDoS, MITM, desbordamiento de búfer, día cero, suplantación. |
+| 2 | ✅ **Clasificar tipos de ataques inalámbricos** | Lección 1: Gemelo malvado, punto de acceso no autorizado, jamming, bluesnarfing. |
+| 3 | ✅ **Identificar beneficios de dispositivos de seguridad** | Lección 2: Firewalls, routers, switches, proxies, load balancers, HSM. |
+| 4 | ✅ **Diseñar una red segura** | Lección 3: Actividad Yummy In My Tummy, arquitectura con DMZ, NAT, honeypot, segmentación. |
+| 5 | ✅ **Diferenciar entre controles de acceso a la red** | Lección 4: IAAA, NAC, RBAC, ABAC, DAC, MAC, permisos de archivos. |
+
+---
+
+### 🗺️ Mapa del módulo 4
+Módulo 4: Seguridad de redes
+│
+├── ⚠️ Lección 1: Amenazas a la seguridad de la red
+│ ├── Ataques a aplicaciones y servicios (DoS, DDoS, MITM, Buffer Overflow, Zero-day, Spoofing)
+│ └── Ataques inalámbricos (Evil Twin, Rogue AP, Jamming, Bluesnarfing)
+│
+├── 🛡️ Lección 2: Dispositivos de seguridad de red
+│ ├── Firewalls (filtrado simple, origen/destino, stateful, aplicación)
+│ ├── Routers (configuración segura, cifrado WEP/WPA/WPA2/WPA3)
+│ ├── Switches (segmentación, port security)
+│ ├── Proxies (intermediario, filtrado, caché)
+│ ├── Load Balancers (distribución de tráfico)
+│ └── HSM (protección de claves criptográficas)
+│
+├── 🏗️ Lección 3: Arquitectura de seguridad de red
+│ ├── Diseño de red (requisitos empresariales y técnicos)
+│ ├── Infraestructura de red (protección de dispositivos)
+│ ├── DMZ (zona desmilitarizada)
+│ ├── NAT (traducción de direcciones)
+│ ├── Honeypot (señuelo para atacantes)
+│ ├── Segmentación de red (subredes)
+│ ├── Extranet / Intranet
+│ ├── Air Gap (aislamiento total)
+│ └── Actividad: Diseñar una red segura (Yummy In My Tummy)
+│
+├── 🔐 Lección 4: Control de acceso a la red
+│ ├── NAC (Network Access Control)
+│ ├── IAAA (Identificación, Autenticación, Autorización, Contabilidad)
+│ ├── Métodos de autenticación (KBA, SSO, MFA, Adaptativa)
+│ ├── Esquemas de control de acceso (ABAC, RBAC, DAC, MAC)
+│ └── Permisos del sistema de archivos
+│
+└── 💼 Gestión de carrera
+├── Administrador de red
+├── Certificación CompTIA Network+
+└── Analista de gestión de identidad y acceso (IAM)
+
+
+---
+
+### 🏆 Logros del módulo
+
+> Completaste el módulo 4 del curso de ciberseguridad de IBM SkillsBuild. Aprendiste sobre amenazas a la red, dispositivos de seguridad, arquitectura segura y control de acceso. Diseñaste una red segura, clasificaste ataques y exploraste carreras profesionales. ¡Excelente trabajo!
+
+---
+
+### 📖 Recursos adicionales del módulo
+
+| Tema | Recurso |
+|------|---------|
+| **Certificación CompTIA Network+** | [CompTIA Network+](https://www.comptia.org/certifications/network) |
+| **Analista IAM** | Buscar en Indeed/LinkedIn: "analista de administración de identidad y acceso" |
+| **Seguridad de routers** | Documentación de fabricantes (Cisco, Netgear, TP-Link) |
+| **Arquitectura de red** | Guías de mejores prácticas de NIST, ISO 27001 |
+
+## 📖 Explora más recursos
+
+Para profundizar en los conceptos tratados en este módulo, consultá estos recursos:
+
+### 🔗 Recursos adicionales
+
+| Tema | Recurso | Descripción |
+|------|---------|-------------|
+| **Seguridad de la red** | [¿Qué es la seguridad de la red?](https://www.ibm.com/mx-es/topics/network-security) | Sitio web de IBM con una descripción general de la seguridad de la red y su importancia. |
+| **Gestión de roles de seguridad** | [Mejores prácticas en gestión de roles de seguridad](https://www.youtube.com/watch?v=Zg6XkLu0nwE) | Video del ingeniero IBM Security Jeff Crume explicando cómo usar roles para simplificar el acceso seguro. |
+| **Ataques de denegación de servicio** | [Explicación de los ataques de denegación de servicio](https://www.youtube.com/watch?v=7T0k0JXEOHw) | Video de Jeff Crume explicando qué es un ataque DoS y cómo funciona. |
+| **Equilibradores de carga** | [¿Qué es un equilibrador de carga?](https://www.youtube.com/watch?v=7XmWQqYk5Kw) | Video de Bradley Knapp de IBM Cloud explicando cómo usar load balancers. |
+| **Soluciones de protección de red** | [Soluciones de protección y seguridad de red](https://www.ibm.com/mx-es/security/network-security) | Sitio web de IBM con ejemplos de herramientas y recursos adicionales. |
+
+---
+
+### 📚 Fuentes y referencias del módulo
+
+#### Lección 2: Dispositivos de seguridad de red
+
+| Fuente | Enlace |
+|--------|--------|
+| **Los términos tecnológicos son más antiguos de lo que piensas** | [Merriam-Webster](https://www.merriam-webster.com/words-at-play/tech-terms-older-than-you-think) |
+
+---
+
+### 🎓 Certificaciones mencionadas en el módulo
+
+| Certificación | Descripción | Enlace |
+|---------------|-------------|--------|
+| **CompTIA Network+** | Certificación de redes informáticas para profesionales de TI. | [CompTIA Network+](https://www.comptia.org/certifications/network) |
+| **Red Hat Certified System Administrator (RHCSA)** | Certificación de administración de sistemas Linux de Red Hat. | [Red Hat RHCSA](https://www.redhat.com/en/services/certification/rhcsa) |
+
+---
+
+### 🛠️ Herramientas y tecnologías vistas en el módulo
+
+| Herramienta / Tecnología | ¿Para qué se usa? |
+|--------------------------|-------------------|
+| **Firewall (Cortafuegos)** | Filtrar tráfico de red según reglas de seguridad. |
+| **Router** | Dirigir tráfico entre redes. |
+| **Switch (Conmutador)** | Conectar dispositivos dentro de una misma red. |
+| **Proxy** | Intermediario entre usuarios e Internet. Filtrado y caché. |
+| **Load Balancer (Equilibrador de carga)** | Distribuir tráfico entre varios servidores. |
+| **HSM (Módulo de seguridad de hardware)** | Proteger claves criptográficas en hardware dedicado. |
+| **NAT (Network Address Translation)** | Traducir direcciones IP privadas a públicas y viceversa. |
+| **NAC (Network Access Control)** | Controlar qué usuarios y dispositivos pueden conectarse a la red. |
+| **VPN (Virtual Private Network)** | Conexión segura y cifrada a través de Internet. |
+| **WPA2 / WPA3** | Protocolos de cifrado para redes WiFi. |
+| **AES** | Estándar de cifrado avanzado. |
+| **SSO (Single Sign-On)** | Inicio de sesión único para múltiples aplicaciones. |
+| **MFA (Autenticación multifactor)** | Verificación de identidad con dos o más factores. |
+| **802.1X** | Protocolo de autenticación para control de acceso a la red. |
+| **VLAN** | Red de área local virtual para segmentación lógica. |
+
+---
+
+### 📝 Glosario rápido del módulo 4
+
+| Término | Definición breve |
+|---------|------------------|
+| **DoS** | Denegación de servicio: saturar un sistema para que no esté disponible. |
+| **DDoS** | DoS distribuido: ataque desde múltiples dispositivos (botnet). |
+| **MITM** | Ataque de intermediario: interceptar comunicación entre dos partes. |
+| **Buffer Overflow** | Desbordamiento de búfer: escribir más datos de los que un búfer puede manejar. |
+| **Zero-day** | Vulnerabilidad explotada antes de que el fabricante publique un parche. |
+| **Spoofing** | Suplantación de identidad (IP, DNS, MAC). |
+| **Evil Twin** | Punto de acceso WiFi falso que imita uno legítimo. |
+| **Rogue AP** | Punto de acceso no autorizado conectado a la red. |
+| **Jamming** | Interferencia de señales inalámbricas para denegar comunicación. |
+| **Bluesnarfing** | Robo de datos a través de Bluetooth. |
+| **DMZ** | Zona desmilitarizada: red separada para servidores públicos. |
+| **NAT** | Traducción de direcciones de red: oculta IPs internas. |
+| **Honeypot** | Sistema señuelo para atraer y estudiar atacantes. |
+| **Air Gap** | Aislamiento total: red sin conexión física al exterior. |
+| **Extranet** | Red privada abierta a usuarios externos autorizados. |
+| **Intranet** | Red privada solo para usuarios internos. |
+| **Segmentación** | Dividir una red en partes más pequeñas (subredes). |
+| **NAC** | Control de acceso a la red. |
+| **IAAA** | Identificación, Autenticación, Autorización, Contabilidad. |
+| **RBAC** | Control de acceso basado en roles. |
+| **ABAC** | Control de acceso basado en atributos. |
+| **DAC** | Control de acceso discrecional (el propietario decide). |
+| **MAC** | Control de acceso obligatorio (autoridad central). |
+| **MFA** | Autenticación multifactor. |
+| **SSO** | Inicio de sesión único. |
+| **KBA** | Autenticación basada en conocimiento (preguntas secretas). |
+| **WPA3** | Protocolo de cifrado WiFi más seguro actualmente. |
+| **HSM** | Módulo de seguridad de hardware para claves criptográficas. |
+
