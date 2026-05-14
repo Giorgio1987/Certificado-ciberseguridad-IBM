@@ -6138,3 +6138,219 @@ Para profundizar en los conceptos tratados en este módulo, consultá estos recu
 | **WPA3** | Protocolo de cifrado WiFi más seguro actualmente. |
 | **HSM** | Módulo de seguridad de hardware para claves criptográficas. |
 
+## 🏁 Proyecto final: Diseñar una red segura para aumentar la seguridad
+
+---
+
+### 📋 Descripción del proyecto
+
+En este proyecto final, vas a **diseñar una red segura** para mejorar las arquitecturas de sistemas y aumentar la seguridad. Responderás preguntas sobre redes seguras, aplicarás medidas de protección y diseñarás una arquitectura de sistema segura.
+
+---
+
+### 🎯 Objetivos del proyecto
+
+| # | Objetivo | ¿Qué implica? |
+|---|----------|---------------|
+| 1 | **Proteger un sistema operativo host** | Aplicar medidas de hardening, firewall, autenticación y buenas prácticas. |
+| 2 | **Actualizar el firmware en un dispositivo** | Identificar la versión actual, buscar actualizaciones y aplicar parches. |
+| 3 | **Diseñar una red segura** | Elegir la arquitectura correcta, ubicar dispositivos de seguridad, separar zonas (DMZ, red interna). |
+
+---
+
+### 📚 Aprendizaje previo
+
+Este proyecto se basa en los conocimientos adquiridos en dos módulos:
+
+| Módulo | Contenido aplicado |
+|--------|--------------------|
+| **Módulo 3: Seguridad del sistema** | Protección del SO host, hardening, gestión de parches, actualización de firmware. |
+| **Módulo 4: Seguridad de la red** | Dispositivos de seguridad, arquitectura de red, DMZ, NAT, segmentación, control de acceso. |
+
+---
+
+### 🎓 Resumen de competencias
+
+Al completar este proyecto final, deberías ser capaz de:
+
+| Competencia | Descripción |
+|-------------|-------------|
+| ✅ **Proteger un sistema operativo host** | Configurar firewall, deshabilitar servicios innecesarios, habilitar logs, aplicar autenticación segura. |
+| ✅ **Actualizar el firmware en un dispositivo** | Acceder al panel del router/dispositivo, verificar versión, buscar e instalar actualizaciones. |
+| ✅ **Diseñar una red segura** | Planificar arquitectura con DMZ, firewalls, NAT, segmentación y control de acceso. |
+
+---
+
+### 💼 Habilidades de empleabilidad practicadas
+
+| Habilidad | ¿Cómo se practica en este proyecto? |
+|-----------|-------------------------------------|
+| **Pensamiento analítico** | Analizar vulnerabilidades, evaluar riesgos y tomar decisiones informadas para implementar medidas de seguridad efectivas. |
+| **Atención al detalle** | Configurar cuidadosamente las medidas de seguridad, seguir instrucciones con precisión y minimizar vulnerabilidades. |
+| **Pensamiento creativo** | Generar ideas innovadoras, explorar enfoques alternativos y considerar soluciones no convencionales para mejorar la seguridad. |
+| **Pensamiento crítico** | Analizar y evaluar diferentes opciones de seguridad, cifrado, autenticación y tomar decisiones informadas comparando alternativas. |
+| **Agilidad de aprendizaje** | Aprender rápidamente sobre firmware, SO host y redes seguras, integrando conceptos nuevos con conocimientos previos. |
+| **Resolución de problemas** | Identificar vulnerabilidades potenciales, idear estrategias efectivas y analizar requisitos de red para mitigar riesgos. |
+| **Profesionalismo** | Demostrar responsabilidad, cumplir pautas, documentar el trabajo, comunicar decisiones y considerar aspectos éticos y legales. |
+| **Ingenio** | Recopilar información, encontrar soluciones y adaptar estrategias para abordar vulnerabilidades con éxito. |
+| **Autogestión** | Seguir protocolos establecidos, priorizar tareas y mantenerse enfocado a pesar de posibles distracciones o desafíos. |
+
+---
+
+### 🗺️ Mapa del proyecto
+Proyecto final
+│
+├── 1. Proteger un sistema operativo host
+│ ├── Configurar firewall (Windows Defender)
+│ ├── Aplicar hardening (deshabilitar servicios, puertos)
+│ ├── Configurar autenticación segura (MFA)
+│ ├── Habilitar registro de eventos
+│ └── Realizar copias de seguridad
+│
+├── 2. Actualizar firmware
+│ ├── Identificar dispositivo (router)
+│ ├── Acceder al panel de administración
+│ ├── Verificar versión actual
+│ └── Buscar e instalar actualización
+│
+└── 3. Diseñar una red segura
+├── Identificar requisitos empresariales y técnicos
+├── Seleccionar dispositivos de seguridad
+├── Diseñar arquitectura (DMZ, NAT, segmentación)
+└── Implementar control de acceso (NAC, IAAA, RBAC)
+
+
+
+---
+
+> *"Este proyecto integra todo lo aprendido en los módulos 3 y 4. Desde proteger un solo equipo hasta diseñar una red corporativa segura. Es la prueba final de que podés aplicar la teoría en la práctica."*
+
+### 📝 ¿Cómo serás evaluado?
+
+Completarás **dos evaluaciones** en este proyecto final:
+
+| Evaluación | Descripción | Puntaje mínimo | Reintentos |
+|------------|-------------|:---:|:---:|
+| **Proyecto** | Responderás preguntas demostrando tu conocimiento de seguridad de sistemas y redes. | 80 % | Ilimitados |
+| **Evaluación final** | 10 preguntas sobre los conocimientos y habilidades aplicados en el proyecto. | 80 % | Ilimitados |
+
+> ⚠️ **Importante:** No cierres el navegador mientras trabajás en el proyecto porque perderás tu progreso y tendrás que empezar de nuevo.
+
+---
+
+### 🛠️ Pasos para completar el proyecto
+
+En el papel de un **consultor de ciberseguridad**, diseñarás una red segura que incluya sistemas y dispositivos de seguridad. El proyecto se completa en **tres pasos**:
+
+| Paso | Objetivo | Tareas |
+|------|----------|--------|
+| **1** | **Proteger un sistema operativo host** | Identificar configuraciones de seguridad adecuadas. Usar características, herramientas y software de seguridad. |
+| **2** | **Actualizar el firmware de un dispositivo** | Identificar la importancia de las actualizaciones de firmware. Instalar una actualización de firmware en un router. |
+| **3** | **Diseñar una red segura** | Identificar las partes clave de una red segura. Configurar los componentes de red para aumentar la seguridad. |
+
+---
+
+### 🎯 Resumen visual del proyecto
+Paso 1: Proteger SO host
+├── Configuraciones de seguridad
+└── Herramientas de protección (firewall, hardening, logs)
+
+Paso 2: Actualizar firmware
+├── Importancia de las actualizaciones
+└── Instalar actualización en router
+
+Paso 3: Diseñar red segura
+├── Identificar partes clave (DMZ, NAT, segmentación)
+└── Configurar componentes (firewalls, NAC, IAAA)
+
+### 📋 Descripción general del proyecto
+
+---
+
+#### Paso 1: Proteger un sistema operativo host
+
+Aplicarás lo aprendido sobre seguridad de sistemas y redes respondiendo preguntas sobre:
+
+- **Mejores prácticas** de seguridad.
+- **Razonamiento** detrás de las diferentes acciones para proteger un SO host.
+
+Luego, usarás **funciones, herramientas y software de seguridad** para mejorar la postura de seguridad del sistema operativo host.
+
+---
+
+#### Paso 2: Actualizar el firmware de un dispositivo
+
+Responderás preguntas sobre:
+
+- El **firmware** de distintos dispositivos.
+- La **importancia** de las actualizaciones frecuentes.
+
+Después, **actualizarás un router** a la versión de firmware más reciente.
+
+---
+
+#### Paso 3: Diseñar una red segura
+
+Identificarás cómo **configurar con precisión** los componentes de seguridad.
+
+Luego, **diseñarás una red segura** disponiendo los componentes de una red en un diseño seguro y correcto.
+
+---
+
+### 🗺️ Flujo del proyecto
+Paso 1: SO HOST
+├── Preguntas teóricas (mejores prácticas, razonamiento)
+└── Práctica (firewall, hardening, herramientas)
+
+Paso 2: FIRMWARE
+├── Preguntas teóricas (importancia, actualizaciones)
+└── Práctica (actualizar router)
+
+Paso 3: RED SEGURA
+├── Identificar componentes de seguridad
+└── Diseñar y configurar la red
+
+# Resumen de Conceptos: Arquitectura de Red Segura y Hardening
+
+Este documento resume los pilares fundamentales de la ciberseguridad abordados en las sesiones de entrenamiento sobre protección de infraestructuras y sistemas host.
+
+---
+
+## 1. Fortalecimiento de Sistemas (OS Hardening)
+El hardening es el proceso de asegurar un sistema operativo mediante la reducción de su superficie de ataque.
+
+* **Actualizaciones y Parches:** La tarea crítica número uno para cerrar vulnerabilidades conocidas que podrían ser explotadas.
+* **Copias de Seguridad (Backup):** Garantizan la disponibilidad y la recuperación ante desastres (como ataques de Ransomware), permitiendo restaurar la operatividad sin ceder a extorsiones.
+* **Registro de Eventos (Logging):** Habilitar los logs es vital para la trazabilidad. Sin ellos, es imposible realizar un **Análisis de Causa Raíz (Root Cause Analysis)** o un análisis forense tras un incidente.
+
+## 2. Segmentación de Red y Zonas de Seguridad
+
+### DMZ (Zona Desmilitarizada)
+Subred lógica ubicada entre la red interna (privada) e Internet. 
+* **Uso:** Aloja servicios que deben ser accesibles desde el exterior, como **Servidores Web** o **Bases de Datos Externas**.
+* **Función:** Actúa como un buffer; si un servicio en la DMZ es comprometido, el Firewall impide que el atacante salte directamente a la red interna.
+
+### Red Interna
+Zona de máxima confianza donde se alojan los activos más críticos.
+* **Uso:** Aquí deben residir las **Bases de Datos Internas** (datos de empleados, financieros, etc.). Nunca deben exponerse en la DMZ.
+
+## 3. Aislamiento Extremo: Air Gap
+El **Air Gap** es una medida de seguridad física que consiste en asegurar que una red o equipo esté totalmente desconectado de cualquier otra red, inalámbrica o cableada.
+* **Objetivo:** Minimizar el riesgo de acceso no autorizado eliminando vectores de ataque remotos.
+* **Aplicación:** Sistemas de control industrial críticos, gestión de llaves criptográficas maestras y backups de última instancia.
+
+## 4. Dispositivos de Seguridad Perimetral
+
+### Firewall
+Se ubica en el perímetro de la red (entre Internet y la red interna).
+* **Función:** Filtra el tráfico entrante y saliente basándose en reglas de seguridad predefinidas, funcionando como la primera línea de defensa.
+
+## 5. Fundamentos de Criptografía
+
+### Cifrado Asimétrico (Clave Pública)
+Utiliza un par de claves (pública y privada).
+* **Propósito:** Garantiza que solo el destinatario previsto (poseedor de la clave privada) pueda descifrar el mensaje cifrado con su clave pública.
+* **Ventaja:** Permite el intercambio seguro de claves y la verificación de identidad (firmas digitales) en canales inseguros como Internet.
+
+---
+*Resumen generado como parte del proceso de formación en Ciberseguridad - 2026.*
