@@ -2855,4 +2855,969 @@ La respuesta correcta es **CASB (Cloud Access Security Broker)**. QuickBooks Onl
 </details>
 
 
+## Proyecto culminante: Proponer servicios en la nube y medidas de seguridad
+
+Te damos la bienvenida a **Proponer servicios en la nube y medidas de seguridad**.
+
+### Descripción del proyecto
+
+En este proyecto culminante, garantizarás la seguridad de los datos y la infraestructura de **Jasper Manufacturing**, una pequeña empresa de fabricación que migra sus sistemas y aplicaciones a la nube.
+
+El proyecto tiene **dos objetivos**:
+
+1. **Identificar los mejores modelos de computación en la nube** para las necesidades de Jasper Manufacturing
+2. **Recomendar tácticas adecuadas de mitigación de amenazas** para proteger los sistemas, los datos, las aplicaciones y la infraestructura en la nube de la empresa
+
+---
+
+### Aprendizaje previo
+
+Este proyecto se basa en los conocimientos y habilidades que adquiriste en estos módulos:
+
+- **Computación en la nube y virtualización** (Módulo 7)
+- **Protección de la infraestructura en la nube** (Módulo 8)
+
+---
+
+### Resumen de competencias
+
+Luego de completar este proyecto culminante, deberías poder realizar lo siguiente:
+
+- **Aplicar los modelos de computación en la nube adecuados** según las necesidades de una organización
+- **Resumir los conceptos clave** para proteger los datos, la infraestructura y las aplicaciones en la nube
+
+---
+
+### Habilidades para la inserción laboral
+
+Además, practicarás estas habilidades para la inserción laboral:
+
+| Habilidad | Cómo la aplicarás en este proyecto |
+|-----------|-------------------------------------|
+| **Pensamiento analítico** | Analizarás las necesidades de la empresa y los beneficios de diferentes modelos en la nube. También analizarás posibles amenazas y evaluarás tácticas de mitigación. |
+| **Atención al detalle** | Examinarás de cerca las necesidades de la empresa, las características de los modelos en la nube y la naturaleza de las amenazas potenciales. |
+| **Pensamiento crítico** | Evaluarás los pros y contras de diferentes modelos y marcos de computación en la nube, así como los riesgos y tácticas de mitigación. |
+| **Toma de decisiones** | Tomarás decisiones informadas sobre los mejores modelos en la nube y las tácticas de mitigación más efectivas. |
+| **Comunicación escrita** | Expresarás detalladamente tus recomendaciones y el razonamiento detrás de ellas, conectándolas con las necesidades de la empresa. |
+| **Agilidad de aprendizaje** | Aprenderás rápidamente sobre modelos de nube, amenazas de seguridad y tácticas de mitigación, integrando nuevos conceptos con lo que ya conoces. |
+| **Resolución de problemas** | Identificarás problemas potenciales (amenazas), los analizarás y propondrás soluciones (tácticas de mitigación). |
+
+---
+
+### Estructura del proyecto
+
+A continuación, se presentan los escenarios y las tareas que deberás completar para ayudar a **Jasper Manufacturing** en su migración a la nube.
+
+<!-- Acá irán los escenarios específicos del proyecto cuando los compartas -->
+
+### ¿Cómo te evaluarán?
+
+Completarás **dos evaluaciones** en este proyecto culminante:
+
+#### Evaluación 1: Proyecto
+
+Responderás preguntas para demostrar tu capacidad para garantizar la **protección de sistemas, datos, aplicaciones e infraestructura en la nube**.
+
+- **Puntaje mínimo requerido:** 80%
+- **Intentos:** Puedes volver a intentarlo tantas veces como desees
+- **⚠️ Importante:** No cierres el navegador mientras trabajas en el proyecto porque perderás tu progreso y tendrás que empezar de nuevo.
+
+#### Evaluación 2: Cuestionario
+
+Completarás una evaluación de **10 preguntas** para demostrar los conocimientos y habilidades que aplicaste en el proyecto.
+
+- **Puntaje mínimo requerido:** 80%
+- **Intentos:** Puedes volver a intentarlo si es necesario
+- **Feedback:** Recibirás comentarios sobre tus respuestas
+
+---
+
+### Pasos para completar el proyecto
+
+En el puesto de **analista de seguridad en la nube**, garantizarás la protección de los sistemas, los datos, las aplicaciones y la infraestructura en la nube.
+
+Completarás este proyecto en **cuatro pasos**:
+
+---
+
+#### Paso 1: Determinar el mejor modelo de despliegue en la nube para la organización
+
+| Tarea | Descripción |
+|-------|-------------|
+| **Tarea 1** | Analizar el escenario de Jasper Manufacturing |
+| **Tarea 2** | Identificar el modelo de despliegue en la nube que mejor se adapte a sus necesidades |
+| **Tarea 3** | Justificar la elección del modelo de despliegue |
+
+**Modelos de despliegue a considerar:**
+- Nube pública
+- Nube privada
+- Nube híbrida
+- Nube comunitaria
+
+---
+
+#### Paso 2: Determinar el mejor modelo de servicio en la nube para la organización
+
+| Tarea | Descripción |
+|-------|-------------|
+| **Tarea 1** | Identificar el modelo de servicio en la nube que mejor se adapte a las necesidades de la organización |
+| **Tarea 2** | Justificar la elección del modelo de servicio |
+
+**Modelos de servicio a considerar:**
+- IaaS (Infraestructura como Servicio)
+- PaaS (Plataforma como Servicio)
+- SaaS (Software como Servicio)
+- DBaaS (Base de Datos como Servicio)
+
+---
+
+#### Paso 3: Explicar las amenazas potenciales a un entorno basado en la nube
+
+| Tarea | Descripción |
+|-------|-------------|
+| **Tarea 1** | Identificar las amenazas potenciales para el entorno de la organización basado en la nube |
+| **Tarea 2** | Describir los riesgos asociados con cada amenaza identificada |
+| **Tarea 3** | Describir el impacto potencial de las amenazas en la organización |
+
+**Amenazas a considerar:**
+- Identidades mal gestionadas
+- Configuración incorrecta de la nube
+- Denegación de servicio (DoS/DDoS)
+- Amenazas internas
+- Visibilidad reducida de la infraestructura
+- Uso no autorizado de cargas de trabajo (TI en la sombra)
+- API poco seguras
+- Violaciones de cumplimiento
+
+---
+
+#### Paso 4: Recomendar métodos para proteger los datos, la infraestructura y las aplicaciones en la nube
+
+| Tarea | Descripción |
+|-------|-------------|
+| **Tarea 1** | Identificar tácticas de mitigación de amenazas para proteger los datos, la infraestructura y las aplicaciones en la nube |
+| **Tarea 2** | Describir cómo las tácticas de mitigación reducen o eliminan los riesgos asociados con la nube |
+
+**Tácticas de mitigación a considerar:**
+- IAM (Gestión de identidades y accesos)
+- Cifrado de datos (en reposo y en tránsito)
+- CSPM (Gestión de postura de seguridad en la nube)
+- CASB (Cloud Access Security Broker)
+- CNAPP (Plataforma de protección de aplicaciones nativas)
+- Copias de seguridad y recuperación ante desastres (Cloud DR)
+- Monitoreo continuo y detección de amenazas
+- POLP (Principio de mínimo privilegio)
+- Autenticación multifactor (MFA)
+- Firewalls y segmentación de red
+
+### Descripción general del proyecto por pasos
+
+#### Paso 1: Determinar el mejor modelo de despliegue en la nube para la organización
+
+En este paso, leerás sobre la situación de **Jasper Manufacturing** y su interés en la transición a la nube.
+
+**Analizarás:**
+- Su infraestructura informática actual
+- Sus objetivos empresariales
+- Requisitos o limitaciones específicos
+
+**Luego:**
+- Identificarás el **mejor modelo de despliegue en la nube** según las necesidades de Jasper Manufacturing
+- **Justificarás** tu elección
+
+**Modelos de despliegue a considerar:**
+- Nube pública
+- Nube privada
+- Nube híbrida
+- Nube comunitaria
+
+---
+
+#### Paso 2: Determinar el mejor modelo de servicio en la nube para la organización
+
+En este paso, evaluarás los beneficios de varios **modelos de servicio en la nube** para abordar la situación de la empresa.
+
+**Factores a considerar:**
+- Costo
+- Escalabilidad
+- Seguridad
+- Cumplimiento normativo
+
+**Luego:**
+- Seleccionarás el **modelo que mejor se adapte** a los criterios de la empresa
+- **Justificarás** tu elección
+
+**Modelos de servicio a considerar:**
+- IaaS (Infraestructura como Servicio)
+- PaaS (Plataforma como Servicio)
+- SaaS (Software como Servicio)
+- DBaaS (Base de Datos como Servicio)
+
+---
+
+#### Paso 3: Explicar las amenazas potenciales para un entorno basado en la nube
+
+En este paso, identificarás las **amenazas potenciales** para el entorno basado en la nube de Jasper Manufacturing.
+
+Para cada amenaza, deberás identificar:
+- **El riesgo asociado** (¿qué puede pasar?)
+- **El impacto potencial** si la empresa no la aborda (¿qué consecuencias tendría?)
+
+**Amenazas a considerar:**
+- Identidades mal gestionadas
+- Configuración incorrecta de la nube
+- Denegación de servicio (DoS/DDoS)
+- Amenazas internas
+- Visibilidad reducida de la infraestructura
+- Uso no autorizado de cargas de trabajo (TI en la sombra)
+- API poco seguras
+- Violaciones de cumplimiento
+
+---
+
+#### Paso 4: Recomendar métodos para proteger los datos, la infraestructura y las aplicaciones en la nube
+
+En este paso, identificarás los **controles específicos** que la empresa debería implementar para hacer frente a las amenazas a la nube.
+
+Para cada control recomendado:
+- Identificarás la **táctica de mitigación**
+- **Justificarás** por qué es adecuada para Jasper Manufacturing
+
+**Tácticas de mitigación a considerar:**
+- IAM (Gestión de identidades y accesos) con POLP y MFA
+- Cifrado de datos (en reposo y en tránsito)
+- CSPM (para monitorear configuraciones)
+- CASB (para proteger aplicaciones SaaS)
+- CNAPP (para aplicaciones nativas de la nube)
+- Copias de seguridad y recuperación ante desastres (Cloud DR)
+- Monitoreo continuo y detección de amenazas
+- Firewalls y segmentación de red
+- Capacitación en seguridad para empleados
+
+### Proyecto culminante: Jasper Manufacturing
+
+#### Antecedentes
+
+**Jasper Manufacturing** es una empresa mediana especializada en la producción de **componentes automotrices**. La empresa creció significativamente en los últimos años y ahora opera múltiples plantas de fabricación y oficinas en toda **América del Norte**.
+
+Para mantenerse al día con este crecimiento y mejorar la eficiencia operativa, Jasper Manufacturing desea migrar su infraestructura de TI a la **nube**.
+
+---
+
+#### Tu rol
+
+Jasper Manufacturing te contrata como **analista de seguridad en la nube** para obtener una opinión externa sobre su traslado a la nube.
+
+Tu punto de contacto es **Yemane**, el director de TI. Te pide que propongas los **servicios en la nube** y las **soluciones de seguridad** más apropiados dadas las necesidades de la empresa y que justifiques tus elecciones.
+
+---
+
+#### Infraestructura actual (según Yemane)
+
+| Aspecto | Descripción |
+|---------|-------------|
+| **Centros de datos locales** | 2 centros de datos en el medio oeste y la costa oeste de EE.UU. |
+| **Alojan** | Aplicaciones críticas, bases de datos, sistemas de almacenamiento de archivos |
+| **Red** | Infraestructura sólida que conecta todas las ubicaciones |
+| **Problema** | Algunas ubicaciones remotas experimentan **latencia** y **limitaciones de ancho de banda** |
+
+---
+
+#### Ecosistema de TI actual
+
+| Tipo de aplicación | Detalles |
+|-------------------|----------|
+| **ERP** | Sistemas de planificación de recursos empresariales |
+| **CRM** | Software de gestión de relaciones con clientes |
+| **Aplicaciones personalizadas** | Gestión de producción (requieren configuraciones específicas) |
+| **Herramientas de productividad** | Ofimática (correo, documentos, etc.) |
+| **Sistemas heredados** | Algunos requieren configuraciones específicas de hardware y software |
+
+---
+
+#### Datos confidenciales almacenados
+
+- **Procesos de fabricación patentados** (propiedad intelectual)
+- **Información de clientes**
+- **Registros de empleados**
+
+> ⚠️ **Estos datos requieren altos niveles de protección y cumplimiento normativo.**
+
+Jasper Manufacturing - Resumen fácil
+¿Qué es la empresa?
+Una empresa mediana que fabrica partes para autos. Tiene varias fábricas y oficinas en Estados Unidos y Canadá.
+
+¿Qué tienen ahora (antes de la nube)?
+Recurso	Qué es
+2 centros de datos propios	Son como dos "cuartos de servidores" grandes que la empresa maneja sola (uno en el medio oeste de EE.UU., otro en la costa oeste)
+Red interna	Conectan todas sus oficinas y fábricas entre sí
+Problema de red	Algunas oficinas remotas tienen internet lento y demora (latencia)
+¿Qué sistemas usan?
+Sistema	Para qué sirve
+ERP	Manejan toda la empresa (compras, inventario, finanzas)
+CRM	Manejan la relación con clientes
+Aplicaciones personalizadas	Programas hechos a medida para controlar la producción
+Herramientas de oficina	Correo, Word, Excel, etc.
+Sistemas viejos (heredados)	Programas antiguos que necesitan hardware o software específico para funcionar
+¿Qué datos sensibles tienen?
+Fórmulas y procesos de fabricación (secreto de la empresa)
+
+Datos de clientes
+
+Datos de empleados
+
+👉 Esto es muy importante: estos datos no se pueden perder ni filtrar.
+
+¿Qué problema quieren resolver?
+Crecieron mucho y sus centros de datos propios no les están dando abasto
+
+Algunas oficinas tienen internet lento
+
+Quieren modernizarse y ser más eficientes
+
+¿Qué quieren hacer?
+Migrar a la nube (irse de sus propios servidores a la nube como Azure, AWS, etc.)
+
+Resumen en una tabla fácil
+Aspecto	Situación actual
+Tamaño	Mediana
+Industria	Autopartes
+Ubicaciones	Fábricas y oficinas en toda América del Norte
+Centros de datos	2 propios (EE.UU.)
+Problema técnico	Internet lento en algunas oficinas remotas
+Aplicaciones	ERP, CRM, sistemas hechos a medida, sistemas viejos
+Datos sensibles	Fórmulas secretas, clientes, empleados
+Objetivo	Migrar a la nube para crecer y ser más eficientes
+¿Qué vas a tener que decidir como analista?
+Paso	Pregunta a responder
+1	¿Qué modelo de nube le conviene? (pública, privada, híbrida, comunitaria)
+2	¿Qué modelo de servicio le conviene? (IaaS, PaaS, SaaS, DBaaS)
+3	¿Qué amenazas pueden afectarlos en la nube?
+4	¿Qué medidas de seguridad tienen que poner para protegerse?
+
+
+### Proyecto Jasper Manufacturing - Preguntas de verificación
+
+#### Pregunta 1: Característica clave de la infraestructura actual
+- [x] **Dos centros de datos locales que albergan aplicaciones y datos críticos**
+- [ ] Un modelo de gestión de infraestructuras de TI externalizado
+- [ ] Un único centro de datos con conectividad de red limitada
+- [ ] Almacenamiento basado en la nube para todas las aplicaciones y datos
+
+#### Pregunta 2: Problema notable en la infraestructura de red
+- [x] **Latencia de red y restricciones de ancho de banda en algunas ubicaciones remotas**
+- [ ] Altos costos operativos de mantenimiento de la red
+- [ ] Falta de conectividad entre las distintas oficinas
+- [ ] Medidas de seguridad inadecuadas para la transmisión de datos
+
+#### Pregunta 3: Tipos de aplicaciones en el ecosistema de TI
+- [x] **Sistemas ERP, software CRM, aplicaciones de gestión de producción personalizadas y herramientas de productividad ofimática**
+- [ ] Software de colaboración basado en la nube, aplicaciones de código abierto y servicios alojados por terceros
+- [ ] Software financiero, herramientas de gestión de proyectos y servicios en la nube de terceros
+- [ ] Aplicaciones móviles, plataformas de redes sociales y aplicaciones web orientadas al cliente
+
+#### Pregunta 4: Preocupación importante sobre los datos almacenados
+- [x] **Confidencialidad de los datos, incluida la fabricación patentada y la información del cliente**
+- [ ] Altos costos asociados con el almacenamiento de datos y la infraestructura de gestión
+- [ ] Complejidad de gestionar e integrar diversas fuentes de datos de manera eficiente
+- [ ] Disponibilidad de servicios de almacenamiento de datos y soluciones confiables
+
+
+#### Pregunta 5: Limitación del personal de TI
+
+**¿Cuál es una limitación del personal de TI de Jasper Manufacturing en lo que respecta a las tecnologías en la nube?**
+
+- [ ] Capacitación insuficiente en análisis de datos y elaboración de informes
+- [x] **Experiencia limitada con tecnologías en la nube**
+- [ ] Falta de conocimiento en medidas avanzadas de ciberseguridad
+- [ ] Niveles de personal y recursos inadecuados
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Experiencia limitada con tecnologías en la nube**. Yemane mencionó que el personal tiene experiencia en infraestructura local (centros de datos propios), pero su experiencia con la nube es limitada.
+
+</details>
+
+### Proyecto Jasper Manufacturing - Objetivos empresariales
+
+#### Pregunta 1: Objetivo comercial principal
+- [ ] Reducir empleados y espacio de oficina
+- [ ] Eliminar servidores físicos y centros de datos
+- [x] **Mejorar la eficiencia operativa, la escalabilidad y la seguridad**
+- [ ] Implementar software de código abierto
+
+#### Pregunta 2: Gestión del gasto en TI
+- [ ] Reducir salarios del personal de TI
+- [ ] Vender los centros de datos existentes
+- [ ] Subcontratar todas las operaciones de TI
+- [x] **Usar modelos de precios de pago por uso**
+
+#### Pregunta 3: Tipo de entorno de TI buscado
+- [ ] Entorno rígido con protocolos estrictos
+- [x] **Entorno flexible que se adapta a necesidades cambiantes y soporta trabajo remoto**
+- [ ] Entorno desestructurado sin objetivos
+- [ ] Entorno mínimo sin flexibilidad
+
+#### Pregunta 4: Importancia de la recuperación ante desastres
+- [x] **Minimizar el tiempo de inactividad y la pérdida de datos en caso de desastre**
+- [ ] Evitar la necesidad de copias de seguridad periódicas
+- [ ] Reducir el personal de TI necesario
+- [ ] Eliminar completamente los ciberataques
+
+
+### Justificación del modelo de despliegue híbrido para Jasper Manufacturing
+
+**Jasper Manufacturing debe adoptar un modelo de nube HÍBRIDO** (combinación de nube privada + nube pública) por las siguientes razones:
+
+#### 1. Por sus sistemas heredados y aplicaciones personalizadas
+La empresa tiene **sistemas antiguos (heredados)** y **aplicaciones personalizadas** que requieren configuraciones específicas de hardware y software. Estos sistemas no pueden migrarse fácilmente a la nube pública. En un modelo híbrido, pueden:
+- **Mantener en su nube privada local** (o centro de datos propio) las aplicaciones heredadas que necesitan configuraciones especiales
+- **Migrar a la nube pública** las aplicaciones modernas (ERP, CRM, herramientas de oficina)
+
+#### 2. Por la confidencialidad de sus datos sensibles
+Jasper Manufacturing almacena **procesos de fabricación patentados** (secretos industriales), información de clientes y datos de empleados. Estos datos requieren altos niveles de protección. En un modelo híbrido:
+- Los **datos más sensibles** pueden mantenerse en la nube privada (mayor control)
+- Los **datos menos críticos** pueden ir a la nube pública (ahorro de costos)
+
+#### 3. Por la experiencia limitada del personal en nube
+El equipo de TI tiene **experiencia limitada con tecnologías de nube**. Un modelo híbrido permite:
+- Una **migración gradual** (no todo de golpe)
+- Mantener parte de la infraestructura conocida (local) mientras aprenden a manejar la nube pública
+- Reducir el riesgo de errores de configuración
+
+#### 4. Por los problemas de red (latencia y ancho de banda)
+Algunas ubicaciones remotas tienen **internet lento**. Con un modelo híbrido:
+- Las aplicaciones críticas que necesitan baja latencia pueden **seguir en infraestructura local** (cerca de las fábricas)
+- Las aplicaciones menos sensibles a la latencia pueden ir a la nube pública
+
+#### 5. Por los objetivos de escalabilidad y ahorro de costos
+Jasper Manufacturing quiere **pagar solo por lo que usa** (modelo de pago por uso) y poder **escalar rápidamente**. El modelo híbrido permite:
+- Usar la **nube pública** para manejar picos de demanda (escalabilidad)
+- Mantener la **nube privada** para cargas de trabajo estables y predecibles
+- Optimizar costos: no pagar por recursos que no se usan
+
+#### 6. Por la necesidad de recuperación ante desastres (DR)
+El modelo híbrido es ideal para **recuperación ante desastres**:
+- La nube pública puede actuar como **sitio de respaldo** de la infraestructura local
+- Si un centro de datos local falla, las aplicaciones críticas pueden **conmutar a la nube pública**
+- Minimiza el tiempo de inactividad y la pérdida de datos
+
+---
+
+### Por qué NO elegir los otros modelos
+
+| Modelo | ¿Por qué no es adecuado? |
+|--------|--------------------------|
+| **Nube pública sola** | No puede manejar sistemas heredados que requieren hardware específico. Riesgo de cumplimiento para datos sensibles. |
+| **Nube privada sola** | Requiere grandes inversiones de capital inicial (lo que quieren evitar). No ofrece la escalabilidad elástica del pago por uso. |
+| **Nube comunitaria** | Es para organizaciones con intereses comunes (varios hospitales, varios bancos). Jasper Manufacturing no comparte intereses específicos con otras empresas para justificar este modelo. |
+
+#### Pregunta de repaso: Características de la nube pública
+
+**¿Cuáles de las siguientes son características del modelo de nube pública?**
+
+- [ ] Combinación de escalabilidad con control local de datos confidenciales
+- [x] **Escalabilidad y rentabilidad, pero menos control sobre la seguridad de los datos**
+- [ ] Recursos compartidos con otras organizaciones que tienen necesidades similares
+- [ ] Control total sobre hardware y software, pero costos más altos
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Escalabilidad y rentabilidad, pero menos control sobre la seguridad de los datos**. Esta es la esencia de la nube pública: gran escalabilidad y bajo costo de entrada, pero con la responsabilidad compartida (el proveedor gestiona la infraestructura física, el cliente gestiona sus datos y accesos).
+
+</details>
+
+#### Pregunta de repaso: Características de la nube híbrida
+
+**¿Cuáles de las siguientes son cualidades del modelo de nube híbrida?**
+
+- [x] **Combinación de escalabilidad con control local de datos confidenciales**
+- [ ] Recursos compartidos con otras organizaciones que tienen necesidades similares
+- [ ] Control total sobre hardware y software, pero costos más altos
+- [ ] Escalabilidad y rentabilidad, pero menos control sobre la seguridad de los datos
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Combinación de escalabilidad con control local de datos confidenciales**. La nube híbrida permite usar la nube pública para escalar cuando sea necesario, mientras se mantienen los datos sensibles en un entorno privado o local con mayor control.
+
+</details>
+
+⚠️ CUIDADO: Esta selección es INCORRECTA.
+
+La imagen muestra que se seleccionó Nube Pública, pero según el análisis detallado que hicimos de Jasper Manufacturing, el modelo correcto es NUBE HÍBRIDA.
+
+Respuesta correcta
+Modelo elegido:
+
+☐ Público
+
+☐ Privado
+
+☑ Híbrido
+
+☐ Comunitario
+
+¿Por qué NO es correcta la nube pública para Jasper Manufacturing?
+Problema con nube pública	Por qué no funciona para Jasper
+Sistemas heredados	Tienen aplicaciones antiguas que requieren hardware/software específico. La nube pública no puede ejecutarlos sin modificaciones costosas.
+Datos sensibles	Tienen secretos de fabricación (propiedad intelectual). En la nube pública, los datos están en infraestructura compartida con otros clientes.
+Cumplimiento	Necesitan mantener altos niveles de seguridad y cumplimiento normativo. La nube pública da menos control.
+Latencia	Algunas ubicaciones remotas tienen internet lento. Depender solo de nube pública empeoraría el rendimiento.
+Resumen comparativo para tu proyecto
+Modelo	¿Sirve para Jasper?	¿Por qué?
+Pública	❌ No	Menos control para datos sensibles, no soporta sistemas heredados
+Privada	❌ No (sola)	Requiere alta inversión inicial (lo que quieren evitar)
+Híbrida	✅ Sí	Combina control local (datos sensibles + sistemas heredados) con escalabilidad de nube pública
+Comunitaria	❌ No	Solo para organizaciones con intereses comunes (varios hospitales, varios bancos)
+
+
+**Modelo elegido:** Híbrido
+
+**Justificación:** Jasper Manufacturing necesita un modelo híbrido porque:
+1. Tiene sistemas heredados que requieren hardware específico (se quedan en infraestructura local)
+2. Almacena datos sensibles (procesos patentados) que requieren mayor control (nube privada/local)
+3. Busca escalabilidad y pago por uso (nube pública para cargas variables)
+4. Necesita recuperación ante desastres (la nube pública puede ser el respaldo)
+5. Su personal tiene experiencia limitada en nube (migración gradual posible)
+
+#### Pregunta: Flexibilidad del modelo híbrido
+
+**¿Qué aspecto del modelo de nube híbrida respalda los requisitos de Jasper Manufacturing de un entorno de TI flexible que se adapte a las necesidades cambiantes del negocio?**
+
+- [ ] Simplifica la infraestructura de TI a una única plataforma
+- [ ] Restringe las actualizaciones a una vez al año
+- [ ] Limita el acceso solo a los empleados en el sitio
+- [x] **Proporciona recursos de nube locales y remotos**
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Proporciona recursos de nube locales y remotos**. El modelo híbrido permite mantener aplicaciones críticas y datos sensibles en infraestructura local (control), mientras se utiliza la nube pública para escalar, innovar o manejar picos de demanda (flexibilidad). Esto da a Jasper Manufacturing lo mejor de ambos mundos.
+
+</details>
+
+#### Pregunta: Cómo el modelo híbrido aborda la latencia y ancho de banda limitado
+
+**¿Por qué el modelo de nube híbrida es efectivo para abordar las limitaciones de ancho de banda y latencia de red de Jasper Manufacturing en ubicaciones remotas?**
+
+- [ ] Obliga a todas las ubicaciones remotas a actualizar su infraestructura de red
+- [ ] Elimina la necesidad de almacenamiento de datos local
+- [x] **Permite que los datos críticos se almacenen localmente mientras se emplean servicios en la nube para otras tareas**
+- [ ] Requiere que todos los datos se procesen a través de la nube pública
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Permite que los datos críticos se almacenen localmente mientras se emplean servicios en la nube para otras tareas**. El modelo híbrido permite mantener aplicaciones sensibles a la latencia y datos críticos en infraestructura local (cerca de las ubicaciones remotas), mientras se usa la nube pública para tareas no críticas que no requieren respuesta inmediata. Así se evita el problema de internet lento.
+
+</details>
+
+#### Pregunta: Recuperación ante desastres con modelo híbrido
+
+**¿Cómo mejora el modelo de nube híbrida las capacidades de recuperación ante desastres de Jasper Manufacturing?**
+
+- [ ] Simplifica la infraestructura de TI a una única plataforma
+- [ ] Restringe las actualizaciones a una vez al año
+- [ ] Limita el acceso solo a los empleados en el sitio
+- [x] **Proporciona recursos de nube locales y remotos**
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Proporciona recursos de nube locales y remotos**. El modelo híbrido permite tener infraestructura local para operaciones diarias y usar la nube pública como sitio de respaldo (DR site). Si ocurre un desastre local, las aplicaciones críticas pueden conmutar a la nube pública, minimizando el tiempo de inactividad y la pérdida de datos.
+
+</details>
+
+#### Pregunta: Recuperación ante desastres con modelo híbrido (versión 2)
+
+**¿Cómo mejora el modelo de nube híbrida las capacidades de recuperación ante desastres de Jasper Manufacturing?**
+
+- [ ] Emplea una única ubicación de copia de seguridad para todos los datos sin integración en la nube
+- [ ] Se basa completamente en servidores locales para toda la recuperación y el almacenamiento de datos
+- [ ] Implementa solo la nube pública para toda la recuperación ante desastres sin copias de seguridad locales
+- [x] **Combina la resiliencia de la nube pública con el control de la nube privada para datos críticos**
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Combina la resiliencia de la nube pública con el control de la nube privada para datos críticos**. El modelo híbrido permite usar la nube pública como sitio de respaldo (resiliencia, disponibilidad geográfica) mientras se mantienen los datos más sensibles en la nube privada o infraestructura local (control, cumplimiento). Así se logra lo mejor de ambos mundos para la recuperación ante desastres.
+
+</details>
+
+#### Pregunta: Seguridad y cumplimiento con modelo híbrido
+
+**¿De qué manera el modelo de nube híbrida garantiza altos niveles de seguridad de datos y cumplimiento para Jasper Manufacturing?**
+
+- [x] **Almacena datos confidenciales en una nube privada mientras usa una nube pública para tareas menos sensibles**
+- [ ] Depende únicamente de proveedores externos para todas las medidas de seguridad de datos
+- [ ] Coloca todos los datos en una nube pública para facilitar el acceso y la gestión
+- [ ] Reduce los requisitos de cumplimiento al limitar el almacenamiento de datos a una sola ubicación
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Almacena datos confidenciales en una nube privada mientras usa una nube pública para tareas menos sensibles**. El modelo híbrido permite mantener los datos más sensibles (procesos patentados, información de clientes) en un entorno privado y controlado para cumplir con normativas, mientras se aprovecha la nube pública para cargas de trabajo no críticas.
+
+</details>
+
+#### Pregunta: Beneficios de IaaS para Jasper Manufacturing
+
+**¿Cuáles de las siguientes son beneficios del modelo de infraestructura como servicio (IaaS) para Jasper Manufacturing?**
+
+- [x] **Escalabilidad y control sobre los recursos informáticos**
+- [ ] Capacidades de seguridad y cumplimiento reducidas
+- [ ] Alta inversión de capital inicial y complejidad de gestión
+- [ ] Personalización y control limitados sobre el hardware
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Escalabilidad y control sobre los recursos informáticos**. IaaS permite a Jasper Manufacturing escalar recursos bajo demanda (pagando solo por lo que usa) y mantener control sobre sistemas operativos, aplicaciones y configuraciones. Esto es ideal para sus sistemas heredados, aplicaciones personalizadas y picos de producción.
+
+</details>
+
+#### Pregunta: Ventajas de PaaS
+
+**¿Cuáles son las principales ventajas del modelo de plataforma como servicio (PaaS) para Jasper Manufacturing?**
+
+- [ ] Control total sobre las configuraciones de hardware y software
+- [x] **Desarrollo y despliegue racionalizados de las aplicaciones**
+- [ ] Menor necesidad de cumplir con las regulaciones de la industria
+- [ ] Capacidad mejorada para personalizar la infraestructura subyacente
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Desarrollo y despliegue racionalizados de las aplicaciones**. PaaS proporciona un entorno preconfigurado con herramientas de desarrollo, SO y runtime, lo que permite a los desarrolladores de Jasper Manufacturing enfocarse en el código y desplegar aplicaciones más rápido, sin gestionar la infraestructura subyacente.
+
+</details>
+
+#### Pregunta: Ventajas de SaaS
+
+**¿Qué ventajas ofrece el modelo de software como servicio (SaaS) para Jasper Manufacturing?**
+
+- [ ] Procesos complejos de configuración e integración
+- [ ] Alto control sobre el hardware y el software subyacentes
+- [x] **Ahorro de costos y facilidad de uso para aplicaciones de software**
+- [ ] Personalización de todos los aspectos del entorno de software
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Ahorro de costos y facilidad de uso para aplicaciones de software**. SaaS permite a Jasper Manufacturing usar aplicaciones (como Office 365, Salesforce) pagando una suscripción por usuario, sin invertir en servidores ni preocuparse por mantenimiento. Es ideal para herramientas de productividad, colaboración y CRM.
+
+</details>
+
+Respuesta correcta (si solo se puede elegir uno)
+✅ Infraestructura como servicio (IaaS)
+
+Modelo elegido:
+
+☑ Infraestructura como servicio (IaaS)
+
+☐ Plataforma como servicio (PaaS)
+
+☐ Software como servicio (SaaS)
+
+¿Por qué IaaS es la mejor opción si solo se puede elegir uno?
+Porque IaaS es el modelo FUNDACIONAL que cubre la mayoría de las necesidades críticas de Jasper Manufacturing:
+
+Necesidad crítica de Jasper	¿La cubre IaaS?	¿La cubre SaaS?	¿La cubre PaaS?
+Sistemas heredados (requieren configuraciones específicas)	✅ Sí	❌ No	❌ No
+Aplicaciones personalizadas	✅ Sí	❌ No	⚠️ Parcial
+Datos sensibles (procesos patentados, clientes)	✅ Sí	❌ No	⚠️ Parcial
+Control sobre SO y configuraciones	✅ Sí	❌ No	❌ No
+Escalabilidad y pago por uso	✅ Sí	✅ Sí	✅ Sí
+Migración gradual (personal con experiencia limitada)	✅ Sí	✅ Sí	⚠️ Parcial
+Además: Con IaaS, Jasper Manufacturing puede instalar y ejecutar aplicaciones SaaS-like en sus propias VMs (por ejemplo, instalar Nextcloud en lugar de usar Dropbox). Con SaaS no pueden ejecutar sus sistemas heredados.
+
+
+**Modelo elegido:** IaaS
+
+**Justificación:** Jasper Manufacturing debe elegir IaaS porque es el único modelo que satisface TODAS sus necesidades críticas:
+1. Permite ejecutar sistemas heredados que requieren configuraciones específicas
+2. Permite control total sobre aplicaciones personalizadas de producción
+3. Mantiene control sobre datos sensibles (procesos patentados)
+4. Ofrece escalabilidad y pago por uso sin inversión inicial
+5. Permite una migración gradual (el personal tiene experiencia limitada en nube)
+
+SaaS sería útil para oficina y CRM, pero no puede ejecutar sus sistemas críticos. IaaS es el modelo base indispensable.
+
+
+#### Pregunta: Ventajas de IaaS para Jasper Manufacturing
+
+**¿Cuáles de las siguientes son ventajas del modelo de infraestructura como servicio (IaaS) para Jasper Manufacturing?**
+
+- [ ] Personalización y control limitados sobre el hardware
+- [ ] Compatibilidad e integración de software mejoradas
+- [x] **Escalabilidad y control de los recursos informáticos**
+- [ ] Seguridad de datos mejorada a través del aislamiento físico
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Escalabilidad y control de los recursos informáticos**. IaaS permite a Jasper Manufacturing escalar recursos bajo demanda (pagando solo por lo que usa) y mantener control sobre sistemas operativos, aplicaciones y configuraciones. Esto es ideal para sus sistemas heredados, aplicaciones personalizadas y picos de producción.
+
+</details>
+
+#### Pregunta: Comparación IaaS vs PaaS
+
+**¿Cómo se compara IaaS con PaaS en términos de flexibilidad y control para Jasper Manufacturing?**
+
+- [ ] IaaS ofrece menos control sobre las configuraciones de hardware y software
+- [x] **IaaS ofrece más flexibilidad y control sobre la infraestructura**
+- [ ] IaaS ofrece más herramientas y servicios preconfigurados
+- [ ] IaaS ofrece menos control sobre la seguridad y el cumplimiento
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **IaaS ofrece más flexibilidad y control sobre la infraestructura**. A diferencia de PaaS, IaaS permite a Jasper Manufacturing elegir y configurar sistemas operativos, instalar cualquier software (incluyendo sistemas heredados y aplicaciones personalizadas), y gestionar la seguridad a su medida. PaaS es más restrictivo pero ofrece menos trabajo de administración.
+
+</details>
+
+#### Pregunta: Desafíos de adoptar IaaS
+
+**¿Cuáles son los posibles desafíos de adoptar IaaS para Jasper Manufacturing?**
+
+- [ ] Escalabilidad y asignación de recursos limitadas
+- [ ] Se requiere una alta inversión de capital inicial
+- [ ] Menor necesidad de cumplir con las regulaciones de la industria
+- [x] **Complejidad de la gestión y responsabilidad de la seguridad**
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Complejidad de la gestión y responsabilidad de la seguridad**. IaaS requiere que Jasper Manufacturing administre sistemas operativos, aplicaciones, configuraciones de red y seguridad (modelo de responsabilidad compartida). Esto es un desafío porque el personal de Jasper tiene **experiencia limitada en nube** y debe asegurar datos sensibles (procesos patentados, información de clientes).
+
+</details>
+
+
+#### Pregunta: Riesgo de acceso no autorizado
+
+**¿Cuál es un riesgo significativo relacionado con el acceso no autorizado en entornos de nube?**
+
+- [x] **Gestión de identidades incorrecta**
+- [ ] Configuración incorrecta de la nube
+- [ ] Amenazas internas
+- [ ] Denegación de servicio
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Gestión de identidades incorrecta**. Esto incluye credenciales débiles, falta de MFA, permisos excesivos, cuentas sin revocar. Estos problemas permiten que atacantes o usuarios no autorizados accedan a recursos que no deberían. Es la causa principal de accesos no autorizados en la nube.
+
+</details>
+
+#### Pregunta: Problema de configuración incorrecta
+
+**¿Qué problema surge de una configuración incorrecta en entornos de nube?**
+
+- [ ] Errores internos
+- [x] **Configuración incorrecta**
+- [ ] Tráfico de red excesivo
+- [ ] Actividades internas maliciosas
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Configuración incorrecta**. Es el nombre de la amenaza en sí misma. Cuando alguien configura mal un recurso en la nube (deja un bucket público, abre puertos innecesarios, asigna permisos excesivos), el problema resultante se denomina "configuración incorrecta de la nube".
+
+</details>
+
+#### Pregunta: Impacto de las amenazas internas
+
+**¿Cómo puede afectar el uso del acceso autorizado por parte de las amenazas internas a la seguridad en la nube?**
+
+- [ ] Mejorar el rendimiento de la red
+- [ ] Causar daños físicos a los servidores
+- [ ] Aumentar el costo de los servicios
+- [x] **Realizar actividades maliciosas**
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Realizar actividades maliciosas**. Las amenazas internas son empleados o contratistas con acceso legítimo que usan ese acceso para robar datos, sabotear sistemas o filtrar información sensible. Para Jasper Manufacturing, esto es crítico porque almacena procesos patentados y datos de clientes.
+
+</details>
+
+
+#### Pregunta: Preocupación principal sobre interfaces en la nube
+
+**¿Cuál es la principal preocupación al usar interfaces en entornos de nube?**
+
+- [x] **API poco seguras**
+- [ ] Tráfico de red excesivo
+- [ ] Configuración de ajustes incorrecta
+- [ ] Gestión de identidades incorrecta
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **API poco seguras**. En los entornos de nube, las APIs son las interfaces principales para interactuar con los servicios. Si no tienen autenticación y autorización adecuadas, los atacantes pueden acceder o manipular datos, crear o eliminar recursos, y comprometer la seguridad. El caso de Google+ (2018) es un ejemplo clásico de filtración por API insegura.
+#### Pregunta: Riesgo de configuración incorrecta
+
+**Amenaza:** Error de configuración
+
+**Riesgo asociado:** ✅ **Exposición de sistemas y datos a posibles atacantes**
+
+<details>
+<summary>Ver explicación</summary>
+
+La configuración incorrecta (misconfiguration) es una de las principales causas de filtraciones en la nube. El riesgo principal es que recursos como buckets de almacenamiento, bases de datos o servidores queden expuestos al público o a atacantes. Para Jasper Manufacturing, esto podría significar la pérdida de sus procesos patentados o datos de clientes.
+
+</details>
+</details>
+
+#### Pregunta: Riesgo de amenazas internas
+
+**Amenaza:** Amenazas internas
+
+**Riesgo asociado:** ✅ **Realizar actividades maliciosas con acceso autorizado**
+
+<details>
+<summary>Ver explicación</summary>
+
+Las amenazas internas son personas con acceso legítimo a los sistemas (empleados, contratistas). El riesgo principal es que usen ese acceso autorizado para actividades maliciosas: robo de datos sensibles, sabotaje, filtración de información. Para Jasper Manufacturing, esto es crítico por sus procesos patentados y datos de clientes.
+
+</details>
+
+✅ Explotación de API para acceder a datos o manipularlos
+
+¿Por qué?
+Las API poco seguras tienen vulnerabilidades en su diseño o implementación que permiten a los atacantes explotarlas para:
+
+Acceder a datos que no deberían poder ver
+
+Manipular o modificar datos
+
+Ejecutar acciones no autorizadas (crear, eliminar, modificar recursos)
+
+❌ Las otras opciones son incorrectas porque:
+
+Opción	¿Por qué es incorrecta?
+"Interrupción de las operaciones debido al tráfico de red saturado"	Eso es un ataque DoS/DDoS, no específico de APIs inseguras
+"Acceso no autorizado debido a una gestión de identidad deficiente"	Eso es identidades mal gestionadas (IAM), no específico de APIs
+"Pérdida de datos debido a una configuración incorrecta"	Eso es configuración incorrecta (misconfiguration) , no específico de APIs
+Ejemplo concreto
+Google+ (2018): Una API insegura permitió a desarrolladores externos acceder a datos de usuarios (nombres, correos, ocupaciones, edades) que no deberían haber podido ver. Explotaron la API para acceder a datos.
+
+Para Jasper Manufacturing: Si una API de su ERP o sistema de producción es insegura, un atacante podría:
+
+Extraer procesos patentados (robo de propiedad intelectual)
+
+Modificar órdenes de producción (sabotaje)
+
+Acceder a datos de clientes
+
+#### Pregunta: Riesgo de API poco seguras
+
+**Amenaza:** API poco seguras
+
+**Riesgo asociado:** ✅ **Explotación de API para acceder a datos o manipularlos**
+
+<details>
+<summary>Ver explicación</summary>
+
+Las API poco seguras permiten a los atacantes explotar vulnerabilidades para acceder a datos no autorizados o manipular recursos. Esto puede resultar en robo de propiedad intelectual, sabotaje, o violaciones de cumplimiento. El caso de Google+ (2018) es un ejemplo clásico.
+
+</details>
+
+#### Pregunta: Impacto de la configuración incorrecta (corregido)
+
+**Amenaza:** Error de configuración
+**Riesgo:** Exposición de sistemas y datos a posibles atacantes
+**Impacto:** ✅ **Daños financieros por incumplimiento de las prácticas de protección de datos**
+
+<details>
+<summary>Ver explicación</summary>
+
+La exposición de datos por mala configuración puede resultar en multas regulatorias, demandas, costos de notificación y remediación. Estos son daños financieros directos. Aunque también hay daño reputacional, el impacto más concreto y cuantificable suelen ser las pérdidas económicas.
+
+</details>
+
+#### Pregunta: Impacto de ataques DoS/DDoS
+
+**Amenaza:** Ataques de denegación de servicio (DoS)
+**Riesgo:** Interrupción de las operaciones debido a tráfico de red sobrecargado
+**Impacto:** ✅ **Interrupción de los servicios de la empresa debido a un procesamiento de red más lento**
+
+<details>
+<summary>Ver explicación</summary>
+
+Un ataque DoS/DDoS satura la red con tráfico falso, haciendo que el procesamiento sea lento o imposible. El impacto directo es que los servicios de la empresa (ERP, CRM, sistemas de producción) se interrumpen, afectando la operación diaria de Jasper Manufacturing.
+
+</details>
+
+#### Pregunta: Impacto de amenazas internas
+
+**Amenaza:** Amenazas internas  
+**Riesgo:** Realizar actividades maliciosas con acceso autorizado  
+**Impacto:** ✅ **Pérdida de confianza del público debido a que un empleado actuó maliciosamente**
+
+<details>
+<summary>Ver explicación</summary>
+
+Cuando un empleado de confianza (con acceso autorizado) realiza acciones maliciosas, como robar procesos patentados o filtrar datos de clientes, el impacto principal es la **pérdida de confianza del público**. Clientes, socios y el mercado pierden confianza en la empresa, lo que puede traducirse en pérdida de negocios, daño a la marca y dificultades para conseguir nuevos clientes.
+
+</details>
+
+- [ ] Aumento de los costos debido a protocolos de comunicación inseguros a través de las API
+- [ ] Pérdida de confianza por fugas de datos debido a API débiles
+- [x] **Interrupción de operaciones debido a vulnerabilidades de API**
+
+#### Pregunta: Mitigación de acceso no autorizado
+
+**Amenaza:** Acceso no autorizado
+**Control:** Implementar autenticación multifactor (MFA) y controles de acceso basados en roles (RBAC)
+**Descripción:** ✅ **Al aplicar una autenticación sólida y limitar el acceso de los usuarios**
+
+<details>
+<summary>Ver explicación</summary>
+
+La autenticación multifactor (MFA) proporciona una autenticación sólida al requerir múltiples factores de verificación. Los controles de acceso basados en roles (RBAC) limitan el acceso de los usuarios según lo que necesitan para su trabajo (principio de mínimo privilegio). Juntos, mitigan eficazmente el riesgo de acceso no autorizado.
+
+</details>
+
+- [ ] Al limitar el acceso a los recursos de la empresa y monitorear el uso
+- [ ] Al aumentar el número de servidores y la capacidad de la red
+- [x] **Al detectar y mitigar el tráfico excesivo**
+- [ ] Al externalizar la gestión de la red a un proveedor externo
+
+
+✅ Al garantizar el cumplimiento de las normas del sector
+
+¿Por qué?
+El riesgo es el incumplimiento normativo (no seguir leyes o estándares como GDPR, HIPAA, PCI-DSS, etc.).
+El control incluye dos acciones:
+
+Auditorías periódicas de cumplimiento → verifican si se están aplicando las normas requeridas.
+
+Programas de capacitación para empleados → enseñan al personal cómo actuar para cumplir las normas.
+
+El objetivo y el resultado de ambas medidas es garantizar el cumplimiento de las normas del sector.
+
+❌ Las otras opciones son incorrectas porque:
+
+Opción	¿Por qué es incorrecta?
+"Contratar un funcionario de cumplimiento a tiempo completo"	Puede ayudar, pero no es la descripción de lo que hacen las auditorías y la capacitación.
+"Reducir la cantidad de registros de datos almacenados"	Minimizar datos puede reducir el alcance del cumplimiento, pero no es la función principal de auditorías y capacitación.
+"Cambiar de proveedor de nube anualmente"	No tiene relación con auditorías internas ni capacitación, y además sería contraproducente.
+
+#### Pregunta: Mitigación del incumplimiento normativo
+
+**Amenaza:** Incumplimiento normativo
+**Control:** Auditorías periódicas de cumplimiento + capacitación a empleados
+**Descripción:** ✅ **Al garantizar el cumplimiento de las normas del sector**
+
+<details>
+<summary>Ver explicación</summary>
+
+Las auditorías verifican si se están cumpliendo las leyes y estándares aplicables (ej. GDPR, HIPAA). La capacitación enseña al personal cómo manejar datos y seguir los procedimientos necesarios. Juntos, estos controles ayudan a garantizar que Jasper Manufacturing cumple con las normas del sector.
+
+</details>
+
 
