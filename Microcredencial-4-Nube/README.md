@@ -952,3 +952,1907 @@ La siguiente lista contiene las fuentes de este módulo:
 
 > **Resumen:** IaaS = control total, PaaS = solo código, SaaS = solo uso, DBaaS = solo datos.
 
+## Módulo 8: Protección de la infraestructura en la nube
+
+### Acerca de este módulo
+
+Libera el poder de la **ciberseguridad en la nube** mientras te adentras en el ámbito de la protección de la infraestructura en la nube y el reforzamiento de tu habilidad digital contra las ciberamenazas.
+
+Tener una infraestructura de nube segura es importante porque más organizaciones están aprovechando los beneficios de la computación en la nube.
+
+Te damos la bienvenida al módulo **Protección de la infraestructura en la nube**.
+
+#### En este módulo aprenderás:
+
+- La importancia de la **seguridad de la infraestructura en la nube** en la ciberseguridad.
+- Las posibles **amenazas y vulnerabilidades** que pueden poner en riesgo los entornos y las aplicaciones en la nube.
+- Cómo proteger los datos basados en la nube y garantizar su **confidencialidad, integridad y disponibilidad** (tríada CIA).
+
+#### Al final de este módulo podrás:
+
+Mejorar las medidas de ciberseguridad y mantener segura la información confidencial en la nube.
+
+### Objetivos de aprendizaje
+
+Luego de completar este módulo, deberías ser capaz de:
+
+- **Aplicar la gestión de acceso a la identidad** a situaciones del mundo real
+- **Aplicar la infraestructura de la nube y los planes de recuperación** a un escenario
+- **Crear una máquina virtual segura** con Microsoft Azure
+- **Aplicar los principios de la estrategia de seguridad** a las aplicaciones en la nube
+- **Resumir los conceptos clave** para proteger los datos, la infraestructura y las aplicaciones en la nube
+
+### Visión general: Seguridad en la nube
+
+#### ¿Por qué es importante la seguridad en la nube?
+
+La computación en la nube ofrece un entorno informático dinámico y flexible, pero también presenta sus propios desafíos de seguridad. Los servicios en la nube son un objetivo tentador para los atacantes maliciosos porque hay muchos datos confidenciales almacenados en la nube.
+
+#### ¿Qué es la seguridad en la nube?
+
+La **seguridad en la nube** es el conjunto de prácticas, tecnologías y políticas diseñadas para hacer que el uso de los servicios en la nube sea más seguro. El objetivo principal es garantizar la **confidencialidad, integridad y disponibilidad** (tríada CIA) de los recursos basados en la nube.
+
+#### Desafíos únicos de la seguridad en la nube
+
+Aunque la computación en la nube enfrenta muchas de las mismas amenazas que un entorno local (on-premise), existen retos únicos:
+
+- **Control de acceso:** la nube permite que múltiples usuarios y aplicaciones desde distintas ubicaciones accedan a recursos compartidos, lo que aumenta el riesgo de acceso no autorizado.
+- **Secuestro de cuenta:** los atacantes pueden robar credenciales mediante phishing o ataques de fuerza bruta, obteniendo acceso a una amplia gama de recursos.
+- **Protección de datos en múltiples ubicaciones:** es más difícil proteger datos almacenados en varias ubicaciones y datos en tránsito.
+- **Escalabilidad:** aumenta el número de usuarios y recursos que pueden conectarse, dificultando la supervisión y seguridad del entorno.
+- **Cumplimiento normativo:** los entornos en la nube también deben cumplir regulaciones, estándares de la industria y mejores prácticas.
+
+#### Modelo de responsabilidad compartida
+
+Los **proveedores de servicios en la nube (CSP)** son responsables de:
+- Gestionar y mantener la infraestructura física y virtual
+- Garantizar la disponibilidad de sus servicios
+- Implementar cifrado de datos, seguridad de red, restricciones de acceso y otros controles de seguridad
+
+Sin embargo, la seguridad en la nube es una **responsabilidad compartida** entre:
+- El **proveedor de servicios en la nube**
+- La **empresa cliente** (debe crear políticas y procedimientos de seguridad sólidos)
+- El **usuario de la nube** (debe seguir esas políticas)
+
+> **Conclusión:** Si todos ponen de su parte, la computación en la nube puede seguir siendo una gran opción para un entorno de trabajo flexible, seguro y eficiente.
+
+### Amenazas exclusivas de la computación en la nube
+
+Imagina que estás trabajando para una organización que está estableciendo una oficina en una nueva ubicación. La gerencia está sopesando los pros y los contras de optar por la computación en la nube en lugar de configurar un entorno de TI en el sitio.
+
+En el caso de la computación en la nube, la **multiplicidad de usuarios y aplicaciones** puede dar lugar a las siguientes amenazas:
+
+- **Mayor riesgo de acceso no autorizado**
+- **Mayor riesgo de secuestro de cuentas de usuario**
+- **Mayor riesgo de ataques de phishing o de fuerza bruta**
+- **Dificultad para monitorear y asegurar los datos almacenados en múltiples ubicaciones**
+- **Mayor dificultad para el cifrado de datos y las restricciones de acceso**
+
+> **Nota:** Estas amenazas son exclusivas o se ven amplificadas en entornos de nube debido a su naturaleza compartida, la escalabilidad y el acceso desde múltiples ubicaciones.
+
+### Comprender las amenazas de la computación en la nube
+
+Con la computación en la nube, los usuarios pueden crear entornos sin tener que lidiar con los gastos generales de mantener una infraestructura física. Sin embargo, en el mundo empresarial, un **mayor uso de la nube conlleva más amenazas para la seguridad**. Por eso, es esencial comprender e identificar los riesgos de seguridad que conlleva el creciente uso de la tecnología de computación en la nube.
+
+#### Principales amenazas cibernéticas en la nube
+
+- **Identidades mal gestionadas**  
+  La mala gestión de usuarios, permisos y credenciales puede dar acceso a personas no autorizadas.
+
+- **Configuración incorrecta de la nube**  
+  Configuraciones erróneas (como almacenamiento público accidental) exponen datos sensibles.
+
+- **Denegación del servicio (DoS)**  
+  Ataques que saturan los recursos de la nube, dejando los servicios inaccesibles.
+
+- **Amenazas internas**  
+  Empleados o colaboradores con acceso legítimo que hacen mal uso de los datos o los exponen.
+
+- **Visibilidad reducida de la infraestructura**  
+  Al no controlar físicamente los servidores, es más difícil monitorear y detectar actividades sospechosas.
+
+- **Uso no autorizado de cargas de trabajo en la nube**  
+  Recursos de nube (como servidores virtuales) pueden ser secuestrados para actividades maliciosas (minería, ataques).
+
+- **Interfaces de programación de aplicaciones (API) poco seguras**  
+  APIs mal protegidas pueden ser explotadas para acceder o manipular datos.
+
+- **Violaciones de cumplimiento**  
+  Incumplimiento de normativas (GDPR, HIPAA, PCI-DSS) que puede derivar en multas y sanciones.
+
+  ### Identidades mal gestionadas
+
+Las credenciales de acceso mal utilizadas son ahora la **técnica más utilizada** en las filtraciones de datos. La mayoría de los atacantes apuntan constantemente al directorio de la empresa y a la infraestructura de identidad con un éxito fenomenal.
+
+La identidad es un **objetivo clave** en las redes no seguras. Cuando los atacantes tienen tus credenciales, pueden usarlas para obtener acceso a través de varios sitios.
+
+#### Caso de estudio: Target (2014)
+
+La multinacional minorista Target sufrió una filtración masiva de datos causada por un ciberataque. Los atacantes:
+
+- Accedieron a los sistemas de los puntos de venta de la empresa
+- Robaron información de tarjetas de crédito y débito de aproximadamente **40 millones de clientes**
+- Emplearon **credenciales robadas a un proveedor** de Target para acceder a la red
+- Navegaron hasta el directorio de empleados para obtener credenciales de nivel superior
+
+> **Lección aprendida:** Este ataque es un ejemplo clásico de cómo los atacantes pueden explotar controles de acceso mal configurados e identidades mal gestionadas para obtener acceso no autorizado a datos confidenciales. La filtración de Target puso de relieve la necesidad crítica de aplicar políticas sólidas de **gestión de identidades y accesos**.
+
+#### Recomendaciones para la gestión de identidades
+
+**1. Gobernanza y administración de identidades (IGA)**  
+Solución que ayuda a las organizaciones a gestionar el ciclo de vida de la identidad de los usuarios y su acceso a aplicaciones y datos críticos. Proporciona flujos de trabajo **automatizados** para crear, aprobar, modificar y revocar el acceso de los usuarios.
+
+**2. Gestión de accesos privilegiados (PAM)**  
+Solución que proporciona acceso **seguro y controlado** a cuentas privilegiadas, como las de los administradores de sistemas, para evitar el acceso no autorizado.
+
+**3. Gestión de derechos de infraestructura en la nube (CIEM)**  
+Soluciones que permiten a las organizaciones comprender sus derechos y permisos mediante el análisis y mapeo de todas las identidades, roles, grupos y políticas en **múltiples plataformas en la nube**.
+
+**4. Principio del mínimo privilegio (POLP)**  
+Debe aplicarse en todos los entornos, donde los usuarios solo tienen los permisos necesarios para realizar su trabajo **y nada más**.
+
+### Configuración incorrecta de la nube
+
+Las configuraciones incorrectas de la infraestructura en la nube siguen siendo una de las **principales causas** de las violaciones de seguridad de la computación en la nube en todo el mundo.
+
+#### Casos de estudio
+
+**1. Verizon (2021)**  
+Aproximadamente **7.5 millones de suscriptores inalámbricos** tuvieron algunos puntos de datos expuestos, incluyendo:
+- Qué tipo de dispositivos conectaron al servicio de Verizon
+- A qué recompensas se suscribieron
+- A qué servicios auxiliares se suscribieron (Apple Music, Disney+, YouTube TV o Verizon Cloud)
+
+> *Fuente: Android Police*
+
+**2. Adobe Creative Cloud (2019)**  
+Los datos básicos de los clientes de casi **7.5 millones de usuarios** de Adobe Creative Cloud se expusieron en Internet dentro de una base de datos de Elasticsearch que se dejó conectada en línea **sin contraseña**.
+
+> *Fuente: ZDNet*
+
+#### Problemas de configuración más comunes
+
+- **Buckets de almacenamiento de acceso público**  
+  Contenedores de almacenamiento en la nube (como AWS S3) que quedan abiertos a todo Internet.
+
+- **Controles de acceso a recursos inseguros**  
+  Permisos mal configurados que permiten accesos no deseados.
+
+- **Credenciales expuestas en repositorios públicos**  
+  Contraseñas o claves de API subidas por error a GitHub u otros repositorios públicos.
+
+#### Solución: CSPM (Cloud Security Posture Management)
+
+> **Nota:** La mayoría de las filtraciones en la nube se derivan de **errores de configuración**, por lo que es crucial monitorear constantemente los errores de configuración de la nube.
+
+El **software de gestión de la postura de seguridad en la nube (CSPM)** permite a las organizaciones hacer precisamente eso. En la cumbre de seguridad de Gartner de 2021 se mencionó que la **CSPM es ahora una herramienta obligatoria** para las organizaciones en la nube.
+
+## ¿Qué es una "configuración incorrecta en la nube"?
+Es cuando alguien (generalmente un administrador o desarrollador) deja mal configurada alguna opción de seguridad en un servicio de nube. Esto crea un agujero por donde los atacantes pueden colarse o acceder a datos que deberían estar protegidos.
+
+En pocas palabras: Es como dejar la puerta de tu casa abierta o la ventana sin seguro, pero en el mundo digital.
+
+Ejemplos concretos (los más comunes)
+1. Bucket de almacenamiento público (el error más famoso)
+¿Qué es un bucket? Es como un "cajón" en la nube donde se guardan archivos (AWS S3, Google Cloud Storage, etc.).
+
+El error: Lo configuran como "público" en lugar de "privado". Cualquier persona con el enlace puede ver o descargar todo.
+
+Ejemplo real: Adobe Creative Cloud (2019) dejó una base de datos sin contraseña y expuso 7.5 millones de registros de usuarios.
+
+Analogía: Dejaste un cajón lleno de documentos personales en la vereda con un cartel que dice "MIRÁ LO QUE TENGO".
+
+2. Puertos abiertos innecesarios
+¿Qué es? Los servidores tienen "puertos" (como puertas) por donde entran las conexiones.
+
+El error: Dejás abierto un puerto que no debería estar abierto (ej. el puerto 22 de SSH accesible desde todo Internet).
+
+Analogía: Dejaste abierta la puerta de entrada a tu casa, pero también la puerta del sótano que nadie usa, por donde puede entrar cualquiera.
+
+3. Credenciales en repositorios públicos (GitHub)
+¿Qué es? Programadores que suben su código a GitHub.
+
+El error: Olvidan sacar las contraseñas o claves de acceso (API keys) del código antes de hacerlo público.
+
+Analogía: Escribiste la clave de tu casa en un papel y lo pegaste en la pared de la plaza.
+
+4. Permisos demasiado amplios
+¿Qué es? En la nube se asignan permisos a usuarios o aplicaciones (quién puede hacer qué).
+
+El error: Dar permisos de "administrador total" a alguien que solo necesita leer un archivo.
+
+Analogía: Le das las llaves de todo el edificio al cadete que solo tiene que entregar un paquete en recepción.
+
+¿Por qué pasa tanto?
+Causa	Explicación fácil
+Complejidad	Las nubes (AWS, Azure, Google) tienen miles de opciones de configuración. Es fácil equivocarse.
+Rapidez	Los equipos de TI quieren lanzar rápido y a veces se saltan los controles de seguridad.
+Desconocimiento	No todos entienden qué opción es segura y cuál no.
+Cambios manuales	Alguien toca una configuración "provisoria" y se olvida de volver a dejarla segura.
+¿Cómo se evita?
+Herramientas como CSPM (Cloud Security Posture Management) escanean automáticamente tu nube en busca de configuraciones incorrectas y te alertan.
+
+Analogía: Es como tener un inspector de seguridad que camina por tu casa todo el día revisando que todas las puertas y ventanas estén cerradas.
+
+#### ¿Cómo sería una configuración incorrecta en la nube? (Explicación fácil)
+
+Una **configuración incorrecta en la nube** es cuando alguien deja mal configurada una opción de seguridad, creando un agujero por donde los atacantes pueden acceder a datos que deberían estar protegidos.
+
+##### Ejemplos comunes
+
+| Error | ¿Qué pasa? | Analogía |
+|-------|------------|----------|
+| **Bucket público** | Cualquiera puede ver/descargar archivos | Un cajón con documentos personales en la vereda |
+| **Puertos abiertos** | Acceso no deseado al servidor | Una puerta de casa abierta que no debería |
+| **Credenciales expuestas** | Contraseñas visibles en Internet | La clave de tu casa pegada en la plaza |
+| **Permisos excesivos** | Un usuario puede hacer más de lo que debe | Dar llaves de todo el edificio al cadete |
+
+##### ¿Por qué pasa?
+- La nube es compleja (miles de opciones de configuración)
+- Se prioriza la rapidez sobre la seguridad
+- Falta de conocimiento o errores humanos
+
+##### ¿Cómo se evita?
+Con herramientas **CSPM** (Cloud Security Posture Management) que escanean automáticamente las configuraciones y alertan sobre riesgos.
+
+### Denegación de servicio (DoS y DDoS)
+
+Los entornos de la nube son especialmente **vulnerables a los ataques de denegación de servicio (DoS)** y de **denegación distribuida de servicio (DDoS)** debido a la necesidad de conectividad a Internet para acceder a ellos.
+
+#### ¿En qué consisten?
+
+Con DoS y DDoS, los atacantes **inundan la red** de una organización con una gran cantidad de tráfico web, lo que hace que los recursos no estén disponibles para clientes y empleados.
+
+> **Cuanto mayor sea la parte de la infraestructura que reside en la nube, más disruptivo puede ser un ataque DoS.**
+
+#### Caso de estudio: MafiaBoy (2000)
+
+| ¿Quién? | Un hacker de 15 años conocido como **MafiaBoy** |
+|---------|-------------------------------------------------|
+| **¿Qué hizo?** | Creó una **botnet** infiltrándose en redes informáticas universitarias y las empleó para realizar ataques DDoS |
+| **Objetivos** | Dell, E-Trade, eBay y Yahoo! |
+| **Repercusiones** | Impacto significativo en la economía y el mercado de valores. Los precios de las acciones de Yahoo! y Amazon cayeron bruscamente. El índice Nasdaq cayó y tardó semanas en recuperarse. |
+
+> **Nota:** Una **botnet** es una red de dispositivos conectados a Internet infectados con malware que permite al atacante controlar los dispositivos de forma remota.
+
+#### Impacto del ataque de MafiaBoy
+
+- Puso de relieve la **vulnerabilidad de la infraestructura de Internet**
+- Llevó a un mayor **escrutinio de la seguridad en línea**
+- Las empresas invirtieron más recursos en mejorar su **ciberseguridad**
+- Los gobiernos promulgaron **nuevas leyes** para combatir los delitos cibernéticos
+
+#### Cómo reducir el riesgo de ataques DoS/DDoS
+
+1. **Restringir el acceso**  
+   Restringir el acceso a los puertos, protocolos y servicios de la red para **minimizar la superficie de ataque**.
+
+2. **Limitar los puntos únicos de fallo**  
+   Usar **equilibradores de carga** y **redes de entrega de contenido (CDN)**. Una CDN es una red de servidores que distribuye contenido (sitios web, imágenes, videos) a los usuarios según su ubicación geográfica.
+
+3. **Establecer una línea base de tráfico normal**  
+   Establecer una línea base para poder detectar cualquier cosa anormal, como un **aumento repentino** en el tráfico de red.
+
+4. **Instalar un firewall**  
+   Instalar un **firewall de aplicaciones web (WAF)** para protegerse contra quienes exploten vulnerabilidades conocidas.
+
+#### Ejemplos prácticos de mitigación de DoS/DDoS
+
+**1. Restringir el acceso**  
+*Sapphire Emporium* restringe el acceso a su aplicación web limitando el número de solicitudes procedentes de una dirección IP en un intervalo de tiempo determinado.
+
+**2. Instalar un firewall**  
+*Law-Tastic* instala un firewall para filtrar y bloquear el tráfico malicioso, protegiendo su red y servidores del acceso no autorizado.
+
+**3. Establecer una línea base de tráfico normal**  
+*Virtual Medics* establece una línea base de tráfico normal para su aplicación web mediante datos históricos y tendencias. Usa esta línea base para monitorear el tráfico entrante en busca de anomalías o picos que la excedan.
+
+**4. Limitar los puntos únicos de fallo**  
+*ZippyMart* configura varios servidores web para distribuir el tráfico entrante en su sitio. Si un servidor deja de funcionar, los otros servidores web pueden manejar el tráfico sin interrupción.
+
+### Amenazas internas
+
+Un gran porcentaje de las violaciones de seguridad se originan **en el interior de una organización**. Los ataques internos pueden ser:
+
+- **Maliciosos** (empleados descontentos que actúan con intención de dañar)
+- **Involuntarios** (errores accidentales, falta de conocimiento)
+
+#### Cómo mitigar las amenazas internas
+
+1. **Capacitación y sensibilización**  
+   Garantizar una capacitación adecuada en seguridad para todos los empleados. Es crucial para mitigar los ataques internos.
+
+2. **Principio de privilegio mínimo (POLP)**  
+   Seguir este principio al diseñar los controles de acceso de tu entorno para **limitar el daño** que los empleados pueden causar. También crear un **protocolo de baja de personal adecuado** (revocar accesos cuando un empleado se va).
+
+3. **Entorno de trabajo seguro y saludable**  
+   Proporcionar un buen ambiente laboral para reducir el riesgo de que un **trabajador descontento** se pase de listo y cause daños.
+
+### Reducción de la visibilidad de la infraestructura
+
+Si una organización emplea un proveedor externo para la informática, está entregando el **control parcial** al proveedor de servicios en la nube (CSP).
+
+#### Ejemplo práctico
+
+Una empresa que emplea **Amazon Web Services (AWS)** para alojar un sitio web cede la responsabilidad de alojamiento a un proveedor de nube externo. Esto significa que el CSP se encarga de:
+
+- Gestión de la infraestructura subyacente
+- Mantenimiento
+- Seguridad física y virtual
+
+La empresa se centra en el **contenido y la funcionalidad** de su sitio web.
+
+#### El problema
+
+Sin embargo, la empresa debe monitorear completamente la infraestructura de la red para garantizar que sea segura. La organización **no es propietaria de la infraestructura física**, lo que dificulta obtener:
+
+- Visibilidad completa de la infraestructura
+- Visibilidad de los usos de los recursos
+- Especialmente sin la experiencia técnica adecuada
+
+#### Responsabilidad compartida
+
+La nube opera con **responsabilidad compartida** entre la organización y el CSP:
+
+- El CSP gestiona la **infraestructura física**
+- La organización es responsable de garantizar que las **cargas de trabajo de datos y aplicaciones** en la nube permanezcan seguras
+
+> La falta de visibilidad es común en muchos entornos de nube intrincados, lo que los hace **abiertos a filtraciones de datos y amenazas**.
+
+#### Solución: Herramientas de monitoreo de red
+
+Una organización debe monitorear su red con las herramientas de monitoreo adecuadas para que los administradores tengan **visibilidad en tiempo real** del tráfico de red.
+
+**Ejemplos de herramientas de monitoreo de red:**
+
+- **Nagios**
+- **SolarWinds Network Performance Monitor**
+- **PRTG Network Monitor**
+- **Zabbix**
+
+#### Reducción de la visibilidad de la infraestructura (explicación fácil)
+
+##### ¿Cuál es el problema?
+
+Cuando usás la nube, **no sos dueño de los servidores físicos**. Están en centros de datos del proveedor (AWS, Azure, IBM). No podés ver físicamente qué pasa con ese hardware.
+
+##### Analogía: el estacionamiento
+
+Alquilás un auto (tu servicio en la nube), pero el auto está guardado en un estacionamiento de otra empresa. Vos manejás el auto, pero no sabés si el estacionamiento tiene cámaras, guardias o si el techo es seguro. **Eso es falta de visibilidad.**
+
+##### ¿Qué no podés ver?
+
+- El servidor físico real donde corren tus VMs
+- Qué otros clientes comparten el mismo hardware
+- Las configuraciones internas de red del proveedor
+- Los accesos físicos al centro de datos
+
+##### ¿Por qué es riesgoso?
+
+- No podés auditar completamente la seguridad
+- Dependés de que el proveedor haga bien su trabajo
+- Si el proveedor tiene un error, vos quedás expuesto
+- Es más difícil detectar amenazas
+
+##### Solución: herramientas de monitoreo
+
+Usar herramientas que te den visibilidad desde tu lado:
+
+- **Nagios** - monitoreo de servidores
+- **SolarWinds** - rendimiento de red
+- **PRTG** - tráfico y ancho de banda
+- **Zabbix** - monitoreo de infraestructura en nube
+
+### Responsabilidad compartida en la nube
+
+El modelo de **responsabilidad compartida** establece que la seguridad en la nube es una tarea que involucra tanto al **proveedor de servicios en la nube (CSP)** como a la **organización cliente**.
+
+- **El CSP protege:** servidores físicos, infraestructura, red física, hipervisor
+- **La organización protege:** cargas de trabajo, datos, aplicaciones, control de accesos (IAM)
+
+#### Ejemplos prácticos
+
+**1. Thermal Oasis**  
+*Thermal Oasis* depende de un proveedor de servicios en la nube para almacenar sus datos y proteger el acceso para evitar fugas o filtraciones. Mientras tanto, el CSP asume la responsabilidad de proteger los servidores físicos y la infraestructura donde se almacenan los datos.
+
+> ✅ **Correcto:** Thermal Oasis demuestra el modelo de responsabilidad compartida: el proveedor protege la infraestructura física y la organización asegura sus datos y aplicaciones.
+
+**2. Law-tastic (Sin acceso a infraestructura física)**  
+*Law-tastic* almacena datos confidenciales de clientes en su servidor en la nube, pero su servicio actual carece de visibilidad, seguridad y herramientas adecuadas de monitoreo de red.
+
+> ✅ **Correcto:** El servicio de Law-tastic carece de visibilidad porque no tiene acceso a la infraestructura física gestionada por el CSP. Esto dificulta monitorear completamente la infraestructura y el uso de recursos.
+
+**3. Leaf Technologies (Necesidad de herramientas de monitoreo)**  
+El departamento de TI de *Leaf Technologies* instala **Nagios**, una herramienta de monitoreo, para rastrear el tráfico de red en tiempo real. Nagios permite al departamento de TI identificar y solucionar problemas de red a medida que surgen, garantizando un tiempo de inactividad mínimo.
+
+> ✅ **Correcto:** Leaf Technologies utiliza Nagios para monitorear el tráfico de red en tiempo real, abordando la necesidad de herramientas de monitoreo para mantener la visibilidad.
+
+
+### Uso no autorizado de cargas de trabajo en la nube (TI en la sombra)
+
+La mayoría de los principales CSP operan con un modelo de **autoservicio**, lo que facilita a los usuarios el aprovisionamiento y desaprovisionamiento de cargas de trabajo a voluntad según sus necesidades. Sin embargo, esta facilidad de uso también genera **TI en la sombra**.
+
+#### ¿Qué es la TI en la sombra?
+
+La **TI en la sombra** es el uso de soluciones tecnológicas **no autorizadas** en una organización, a menudo fuera del ámbito del departamento de TI.
+
+**Ejemplos comunes:**
+
+- Empleados que usan cuentas personales de almacenamiento en la nube (Dropbox, Google Drive) para almacenar datos de la empresa
+- Uso de cuentas de correo electrónico personales para comunicación laboral
+- Uso de software o aplicaciones no autorizadas para realizar tareas laborales
+
+#### Problemas que causa la TI en la sombra
+
+- **Mayor riesgo de pérdida y fugas de datos**
+- **Costos inesperados** (servicios no controlados que generan gastos)
+- **Violaciones de cumplimiento** (normativas como GDPR, HIPAA)
+
+#### Métodos recomendados para mitigar la TI en la sombra
+
+**1. Principio de privilegio mínimo (POLP)**  
+Seguir el POLP y solo autorizar la creación de cargas de trabajo para los usuarios que necesiten hacerlo como parte de su trabajo.
+
+**2. Registro de auditoría**  
+Configurar registros de auditoría y mecanismos de alerta para rastrear todas las actividades que ocurren en el interior y detectar fácilmente cualquier actividad no autorizada.
+
+#### TI en la sombra (explicación fácil)
+
+##### ¿Qué es?
+
+Es cuando **empleados usan servicios o dispositivos que el departamento de TI no autorizó**. Trabajan "en las sombras", fuera del control de la empresa.
+
+##### Analogía: la cocina de la oficina
+
+Todos deberían usar la heladera y el microondas de la empresa. Pero algunos empleados traen su propia hornito y heladera personal sin avisar. El encargado no sabe qué enchufaron, si es peligroso o si guardan comida en mal estado.
+
+##### Ejemplos comunes
+
+| Lo que hace el empleado | El riesgo |
+|------------------------|-----------|
+| Guarda archivos de trabajo en su Dropbox personal | Si hackean su cuenta, se filtran datos de la empresa |
+| Usa su correo personal de Gmail para trabajar | La empresa no tiene auditoría de esos correos |
+| Instala software no autorizado | Puede traer virus o generar costos ocultos |
+| Sube datos internos a ChatGPT u otra IA | La empresa no sabe qué hace esa IA con los datos |
+
+##### ¿Por qué pasa?
+
+- El proceso oficial de TI es lento
+- Les resulta más cómodo o familiar
+- No saben los riesgos
+- Las herramientas oficiales a veces son malas
+
+##### Problemas que causa
+
+- Filtración de datos
+- Gastos inesperados
+- Multas por incumplir leyes
+
+##### Soluciones
+
+1. **POLP:** solo los empleados que realmente necesitan crear recursos tienen permiso
+2. **Registros de auditoría:** todo queda registrado, saltan alertas si alguien crea algo sin autorización
+3. **Capacitación:** explicar los riesgos a los empleados
+4. **Dar buenas herramientas oficiales:** para que no busquen alternativas por su cuenta
+
+
+### Interfaces de programación de aplicaciones (API) poco seguras
+
+Una empresa puede tener un control estricto dentro de su infraestructura, pero las **API inseguras** pueden debilitar las defensas del entorno y crear una entrada para atacantes.
+
+#### ¿Qué es una API?
+
+Una **interfaz de programación de aplicaciones (API)** es un grupo de rutinas, protocolos y herramientas para crear aplicaciones de software. Las API especifican cómo deben interactuar los componentes de software, permitiendo la comunicación entre diferentes sistemas, aplicaciones y servicios.
+
+> **Analogía:** Una API es como un **mesero en un restaurante**. Vos (aplicación) le pedís algo al mesero (API), y él se lo comunica a la cocina (otro sistema). Si el mesero no verifica quién sos, cualquiera puede pedir comida sin pagar.
+
+#### Problemas de seguridad de las API
+
+Muchas API tienen sus propias vulnerabilidades de seguridad que, cuando se explotan, pueden poner en riesgo un entorno de nube. Los atacantes pueden usar una API que **no tenga mecanismos de autenticación adecuados** para robar o manipular datos.
+
+#### Caso de estudio: Filtración de datos de Google+ (2018)
+
+Una vulnerabilidad en la **API de Google+** permitió a desarrolladores externos acceder a datos de los usuarios, incluyendo:
+
+- Nombres
+- Direcciones de correo electrónico
+- Ocupaciones
+- Edades
+
+> Esta fue una de las mayores filtraciones de datos involucrando a una API insegura.
+
+#### Cómo mitigar amenazas de API poco seguras
+
+El equipo de TI debe:
+
+1. **Verificar todas las aplicaciones externas** que cualquier equipo planea usar
+2. **Estar al tanto de los riesgos** antes de la implementación
+3. **Atender las actualizaciones de seguridad** y los **parches de aplicaciones** de manera oportuna
+
+### Violaciones de cumplimiento
+
+Las organizaciones deben cumplir con **múltiples regulaciones** dependiendo de sus operaciones geográficas y tipo de industria. Con la aparición de nuevas regulaciones y las más antiguas que se actualizan a medida que cambia el panorama, puede ser un desafío para las organizaciones mantenerse al día.
+
+#### Responsabilidad de la organización
+
+Las organizaciones deben asegurarse de que su **proveedor de nube (CSP) permita el cumplimiento** de las regulaciones necesarias. No todos los CSP cumplen con todas las normativas (GDPR, HIPAA, PCI-DSS, etc.).
+
+#### Mejor práctica: Cumplimiento continuo
+
+El **cumplimiento continuo de la nube** es la mejor solución para los problemas normativos. Las organizaciones deben:
+
+- Monitorear constantemente su estado de cumplimiento en la nube
+- **No esperar hasta la temporada de auditorías** para verificar el cumplimiento
+
+> Realizar la **debida diligencia** al principio del proceso mitiga los **altos costos del incumplimiento** (multas, sanciones, pérdida de reputación).
+
+### Defensa proactiva y holística
+
+Ninguna de estas amenazas es nueva, pero el **panorama cambiante** y la **transición a la nube** requieren un enfoque diferente en comparación con las cargas de trabajo locales del pasado.
+
+#### Beneficios de ser proactivo
+
+Ser **proactivo** (actuar antes de que ocurra un incidente) en lugar de reactivo (actuar después del incidente):
+
+- Evita problemas **mayores y más costosos**
+- Ayuda a las organizaciones a **construir su reputación** (confianza de clientes y socios)
+- Permite a los empleados **enfocarse en tareas que agregan valor** al negocio, en lugar de apagar incendios constantemente
+
+> **En resumen:** La defensa proactiva implica anticiparse a las amenazas, monitorear continuamente y corregir vulnerabilidades antes de que sean explotadas. Un enfoque **holístico** considera la seguridad en todas las capas: identidades, configuraciones, redes, aplicaciones, datos y cumplimiento.
+
+### Aspecto destacado de la gestión profesional: analista de seguridad en la nube
+
+¿Te parece emocionante combatir las amenazas de la nube como carrera? Si es así, considera una carrera como **analista de seguridad en la nube**.
+
+#### ¿Qué hace un analista de seguridad en la nube?
+
+Los analistas de seguridad en la nube garantizan la seguridad de los **sistemas y datos basados en la nube**. Sus responsabilidades incluyen:
+
+- Evaluar los **posibles riesgos de seguridad** y desarrollar planes para mitigarlos
+- **Monitorear los sistemas** en busca de accesos no autorizados o violaciones
+- **Implementar controles y procedimientos de seguridad** para protegerse contra amenazas
+- **Mantenerse al día** con las últimas tendencias y tecnologías de seguridad para mejorar continuamente la postura de seguridad del entorno de nube de la organización
+
+#### Pasos para convertirte en analista de seguridad en la nube
+
+**1. Obtener un título relevante**  
+Título en ciencias de la computación, ciberseguridad o un campo relacionado. Estos títulos proporcionan los conocimientos y habilidades fundamentales necesarios.
+
+**2. Obtener experiencia laboral**  
+Buscar pasantías, trabajos a tiempo parcial u oportunidades de voluntariado para obtener experiencia práctica en seguridad en la nube. Esto ayuda a desarrollar habilidades prácticas y comprender mejor la industria.
+
+**3. Certificarse**  
+Obtener certificaciones relevantes como:
+- **CCSP** (Certified Cloud Security Professional)
+- **CISSP** (Certified Information Systems Security Professional)
+- **CompTIA Cloud+**
+
+> Estas certificaciones demuestran tu experiencia en seguridad en la nube y pueden ayudarte a impresionar a posibles empleadores.
+
+**4. Mantenerse al día**  
+Mantenerse al tanto de las tendencias de la industria, nuevas tecnologías y amenazas emergentes leyendo publicaciones de la industria y asistiendo a conferencias y sesiones de capacitación.
+
+**5. Crear una red de contactos (Networking)**  
+Establecer relaciones con profesionales de la industria, asistir a eventos de networking y unirse a organizaciones profesionales relevantes. La creación de redes puede ayudarte a obtener información sobre la industria y generar oportunidades laborales.
+
+### Acerca de esta lección: Seguridad de la infraestructura en la nube
+
+La seguridad de la infraestructura en la nube es como un **juego de ajedrez**: debes planear y ejecutar cuidadosamente cada movimiento para proteger al **rey (los datos)** de los ataques del oponente **(hacker)**. La mejor defensa es una combinación de **posicionamiento estratégico** y **medidas proactivas**.
+
+A medida que las organizaciones migran más recursos a la nube, deben incorporar **herramientas de seguridad basadas en la nube** como parte de su infraestructura.
+
+#### Medidas de seguridad esenciales
+
+- **Red** (firewalls, segmentación, control de tráfico)
+- **Cifrado** (datos en reposo y en tránsito)
+- **Copias de seguridad de datos** (recuperación ante desastres)
+- **Contraseñas seguras** (políticas de autenticación robustas)
+- **Monitoreo continuo** (detección de anomalías en tiempo real)
+
+En esta lección, explorarás algunas **herramientas adicionales** para proteger la **superficie de ataque más amplia** que crea un entorno de nube.
+
+### Modelos de responsabilidad de seguridad
+
+Dependiendo del tipo de servicio en la nube (IaaS, PaaS, SaaS), la responsabilidad de la seguridad se divide de manera diferente entre el cliente y el proveedor.
+
+#### Responsabilidades según el modelo de servicio
+
+| Capa | IaaS | PaaS | SaaS |
+|------|------|------|------|
+| Configuración de la aplicación | Cliente | Cliente | Proveedor |
+| Controles de identidad y acceso | Cliente | Cliente | Compartida |
+| Almacenamiento de datos de aplicaciones | Cliente | Cliente | Proveedor |
+| Aplicación | Cliente | Cliente | Proveedor |
+| Sistema operativo | Cliente | Proveedor | Proveedor |
+| Controles de flujo de red | Cliente | Compartida | Proveedor |
+| Infraestructura de host | Proveedor | Proveedor | Proveedor |
+| Seguridad física | Proveedor | Proveedor | Proveedor |
+
+#### Niveles de responsabilidad
+
+- **El cliente es predominantemente responsable de la seguridad** → IaaS (la mayor parte recae en el cliente)
+- **Tanto el cliente como el servicio en la nube tienen responsabilidades de seguridad** → PaaS (responsabilidad compartida)
+- **El servicio en la nube es totalmente responsable de la seguridad** → SaaS (el cliente solo configura y usa)
+
+> **Recuerda:** En todos los modelos, el cliente siempre es responsable de sus **datos**, la **gestión de identidades (IAM)** y la **configuración de usuarios**.
+
+### Protección de la infraestructura en la nube: IAM, DLP y Cloud DR
+
+Ahora que entiendes el **modelo de responsabilidad compartida**, vamos a explorar herramientas adicionales que pueden asegurar la mayor superficie de ataque que crea un entorno en la nube.
+
+#### 1. IAM (Gestión de acceso a la identidad)
+
+La **gestión de acceso a la identidad (IAM)** implica gestionar las identidades de los usuarios y controlar su acceso a aplicaciones, redes y otros recursos.
+
+La IAM incluye el modelo **IAAA**:
+
+- **Identificación:** quién dice ser el usuario (ej. nombre de usuario)
+- **Autenticación:** probar que es quien dice ser (ej. contraseña, MFA)
+- **Autorización:** qué recursos puede acceder (ej. permisos, roles)
+- **Contabilidad (Accounting):** registrar lo que hace (ej. logs, auditoría)
+
+#### 2. DLP (Prevención de pérdida de datos)
+
+La **prevención de pérdida de datos (DLP)** es un conjunto de herramientas y procesos que ayudan a las organizaciones a proteger la información confidencial de la divulgación o el uso no autorizados mediante la **detección y prevención de filtraciones de datos en tiempo real**.
+
+**Ejemplos de lo que DLP puede prevenir:**
+- Un empleado que intenta enviar un archivo con datos de clientes a su correo personal
+- Alguien que copia información sensible a un USB no autorizado
+- Datos que se suben accidentalmente a un bucket público
+
+#### 3. Cloud DR (Recuperación ante desastres en la nube)
+
+La **recuperación ante desastres en la nube (Cloud DR)** es un servicio que permite a las organizaciones **replicar y recuperar** sus aplicaciones y datos críticos en la nube en caso de una interrupción o desastre de TI (ciberataque, incendio, fallo de hardware, etc.).
+
+**Beneficios del Cloud DR:**
+- Garantiza la **continuidad del negocio**
+- **Minimiza el tiempo de inactividad**
+- Permite recuperar sistemas rápidamente desde cualquier lugar
+
+> **Analogía del Cloud DR:** Es como tener un **seguro + una copia de las llaves guardada en casa de un vecino**. Si tu casa se inunda, podés ir al vecino y seguir operando mientras reparás la tuya.
+
+### Gestión de acceso a identidades (IAM)
+
+Los clientes de los proveedores de servicios en la nube son responsables de **proteger sus cuentas de usuario** y gestionar el acceso de los usuarios a los datos confidenciales.
+
+#### Diferencia entre entorno local y nube
+
+- **Entorno local tradicional:** los administradores protegen solo los recursos y usuarios dentro de las paredes de su negocio.
+- **Computación en la nube:** amplía la oportunidad para que usuarios globales accedan a los recursos, pero también **amplía las vulnerabilidades**. Esto hace que la gestión de cuentas de usuario y la seguridad de los datos sean aún más críticas.
+
+#### Ejemplo cotidiano de IAM
+
+Cuando compras una aplicación, descargas música o ves una película de Netflix, el acceso al contenido se gestiona verificando tu identidad a través de contraseñas, códigos de acceso, PIN y otras formas de verificación.
+
+#### Beneficios de IAM
+
+**1. Proteger los datos confidenciales**  
+IAM es fundamental para cualquier infraestructura de nube nativa o híbrida porque ayuda a las organizaciones a proteger los datos confidenciales, reducir el riesgo de acceso no autorizado y cumplir con las regulaciones de privacidad.
+
+**2. Desplegar protocolos de aplicación basados en políticas**  
+Según IBM, *"las herramientas y servicios de IAM permiten a las empresas desplegar protocolos de aplicación basados en políticas para todos los usuarios que intentan acceder a servicios tanto locales como basados en la nube. La funcionalidad principal de IAM es crear identidades digitales para todos los usuarios para que puedan ser monitoreados y restringidos activamente, cuando sea necesario, durante todas las interacciones de datos"*.
+
+**3. Proteger los activos de información**  
+Las soluciones de IAM ayudan a las organizaciones a proteger los activos de información controlando:
+- **Quién** puede acceder a qué sistemas
+- **Cuándo** pueden acceder a ellos
+- **Qué** pueden hacer mientras están conectados
+
+> Solo las personas autorizadas pueden realizar ciertas operaciones en sistemas protegidos sin comprometer la seguridad.
+
+#### IAM en la práctica: Sector salud
+
+Las organizaciones de atención médica usan IAM para asegurar el acceso a los **registros médicos electrónicos (EMR)** de los pacientes.
+
+**El proceso de IAM incluye:**
+
+1. **Autenticación:** el sistema solicita a cada proveedor de atención médica que proporcione sus credenciales únicas (nombre de usuario y contraseña).
+2. **Autorización:** luego de autenticar, el sistema verifica sus derechos de acceso y les otorga acceso **solo a los EMR** de los pacientes que están autorizados a ver.
+3. **Cumplimiento:** este proceso garantiza que las organizaciones de atención médica mantengan el cumplimiento de los requisitos normativos y protejan la privacidad de los datos de los pacientes.
+
+### Prevención de pérdida de datos (DLP)
+
+#### ¿Qué es la pérdida de datos?
+
+La **pérdida de datos** es otro término para una **filtración de datos**, que ocurre cuando el robo o la fuga de datos expone información confidencial a personas no autorizadas.
+
+Independientemente de los controles que uses para proteger la confidencialidad de los datos, el objetivo sigue siendo el mismo: **evitar la pérdida de datos**.
+
+La **prevención de pérdida de datos (DLP)** es la capacidad de una organización para **detectar y prevenir** la pérdida de datos.
+
+#### Escenario práctico: Institución financiera
+
+El equipo de seguridad de TI de una institución financiera implementó la tecnología DLP para evitar que los **datos confidenciales de los clientes** salgan de la red de la organización.
+
+**Configuración del sistema DLP:**
+- Monitorear todo el **tráfico de correo electrónico saliente**
+- Buscar datos confidenciales (números de Seguro Social, información de tarjetas de crédito)
+
+**Lo que sucedió:**
+Un día, el sistema DLP alertó al equipo de TI de que un empleado intentó enviar por correo una hoja de cálculo que contenía una gran cantidad de números de cuenta de clientes a una dirección **externa**.
+
+**Resultado:**
+El equipo de TI investigó de inmediato y descubrió que el empleado **no sabía** que enviar la hoja de cálculo por correo violaba la política de la empresa.
+
+> Con las soluciones DLP, las empresas pueden crear **políticas** que definan qué tipos de datos son confidenciales.
+
+#### Estrategias de DLP
+
+**1. Definir el uso de datos**  
+Las empresas pueden emplear soluciones DLP para establecer políticas que definan **cómo acceder y usar** estos datos. También pueden monitorear las actividades de los usuarios para garantizar el cumplimiento de estas políticas.
+
+**2. Usar el cifrado**  
+Las soluciones DLP incluyen tecnologías de cifrado para garantizar que la información personal **no se envíe en texto plano** a través de una red.
+
+**3. Usar análisis de comportamiento impulsados por IA**  
+Los sistemas DLP pueden incluir análisis de comportamiento que detectan actividades sospechosas como:
+- Intentos de acceder a varias cuentas o dispositivos a la vez
+- Un patrón inusual de solicitudes de datos
+
+### Microsoft Azure
+
+Las organizaciones tienen muchos proveedores de servicios en la nube para elegir. Algunos de los proveedores más populares incluyen:
+
+- **Amazon Web Services (AWS)**
+- **Google Cloud Platform (GCP)**
+- **Microsoft Azure**
+
+En esta lección, exploraremos **Microsoft Azure**.
+
+#### ¿Qué es Microsoft Azure?
+
+**Microsoft Azure** ofrece una amplia gama de servicios y herramientas para crear, desplegar y gestionar aplicaciones y servicios a través de centros de datos gestionados por Microsoft.
+
+#### Características de seguridad de Azure
+
+MS Azure proporciona varias características que las organizaciones pueden usar para mejorar la seguridad de su infraestructura en la nube:
+
+| Característica | ¿Qué hace? |
+|----------------|-------------|
+| **Gestión de identidad y acceso** | Controla quién puede acceder a qué recursos (Azure AD, MFA) |
+| **Seguridad de la red** | Firewalls, grupos de seguridad de red (NSG), redes virtuales (VNet) |
+| **Cifrado de datos** | Protege datos en reposo y en tránsito (Azure Key Vault) |
+| **Detección y monitoreo de amenazas** | Azure Security Center, Sentinel (SIEM) |
+| **Cumplimiento y gobernanza** | Azure Policy, Blueprints, cumplimiento normativo (GDPR, HIPAA, etc.) |
+| **Protección DDoS** | Protección contra ataques de denegación de servicio distribuido |
+
+> Estas funciones pueden ayudar a las organizaciones a **reforzar su postura de seguridad** en la nube, protegiendo sus aplicaciones, datos e infraestructura de posibles amenazas y vulnerabilidades.
+
+### Microsoft Azure: Portal y conceptos básicos
+
+El portal de Azure se puede acceder en **[portal.azure.com](https://portal.azure.com)**.
+
+#### Interfaz principal
+
+El portal muestra:
+- **Azure services:** Create a resource, Resource groups, Subscriptions, Microsoft Defender for Cloud, Virtual machines, Storage accounts, SQL databases, etc.
+- **Resources:** Recursos recientes y favoritos (nombre, tipo, última vista)
+- **Navigate:** Subscriptions, Resource groups, All resources, Dashboard
+
+#### Suscripciones
+
+Necesitas una **suscripción** para gestionar y organizar los recursos de Azure. La suscripción tiene un costo asociado.
+
+#### Grupos de recursos (Resource Groups)
+
+Un **grupo de recursos** es un contenedor lógico que organiza recursos relacionados (máquinas virtuales, cuentas de almacenamiento, redes, etc.) en una sola unidad.
+
+**Beneficios de los grupos de recursos:**
+- Organizan todos los recursos de una solución
+- Permiten gestionar recursos como un grupo
+- Cada organización decide cómo asignarlos según sus necesidades
+
+#### Creación de un grupo de recursos (pasos básicos)
+
+1. **Project details**
+   - **Subscription:** seleccionar la suscripción (ej. Azure subscription 1)
+   - **Resource group:** nombre del grupo (ej. Nexusfields)
+
+2. **Resource details**
+   - **Region:** seleccionar ubicación del centro de datos (ej. (US) East US)
+
+3. **Revisar y crear (Review + create)** - validar la configuración y crear el grupo
+
+> **Ejemplo del curso:** Asmarina guía la creación de un grupo llamado **Nexusfields**.
+
+### Microsoft Azure: Creación de grupo de recursos y máquina virtual
+
+#### Paso 1: Crear un grupo de recursos
+
+Una vez completados los datos del grupo de recursos, Azure valida la configuración.
+
+**Validación exitosa:** aparece el mensaje "Validation passed".
+
+**Configuración típica:**
+- **Subscription:** Azure subscription 1
+- **Resource group:** Nexusfields
+- **Region:** East US
+
+**Opciones disponibles:**
+- Review + create (Revisar y crear)
+- Download a template for automation (Descargar plantilla para automatización)
+
+> Al seleccionar **Create (Crear)** , Azure crea el grupo de recursos.
+
+#### Paso 2: Ver el grupo de recursos creado
+
+En la página **Resource groups** se puede ver:
+
+- Lista de grupos de recursos con su nombre, suscripción y ubicación
+- Opciones: Create, Manage view, Refresh, Export to CSV, Assign tags
+
+**Ejemplo:** Nexusfields - Azure subscription 1 - East US
+
+#### Paso 3: Navegar al inicio (Home)
+
+Una vez creado el grupo, se regresa a la página de inicio del portal de Azure para continuar con la siguiente tarea.
+
+#### Paso 4: Crear una máquina virtual
+
+**¿Qué es una máquina virtual? (recordatorio)**
+
+Una **máquina virtual (VM)** es un software que se comporta como una computadora física separada con:
+- Su propio **sistema operativo (SO)**
+- **Programas** y aplicaciones
+- **Almacenamiento**
+- **Conexiones a redes**
+
+Muchas máquinas virtuales pueden funcionar juntas en un **mismo servidor físico**.
+
+**Desde el portal de Azure:**
+1. En la página de inicio, seleccionar **Virtual machines** (Máquinas virtuales)
+2. Allí se podrá crear y configurar una nueva VM dentro del grupo de recursos Nexusfields
+
+### Microsoft Azure: Creación de una máquina virtual
+
+#### Pantalla principal de Máquinas Virtuales
+
+En la página **Virtual machines** se pueden:
+- **Crear** nuevas máquinas virtuales (Linux o Windows)
+- **Ver** todas las VM existentes
+- **Gestionar** VM (Iniciar, reiniciar, detener, eliminar)
+- Cambiar entre vista clásica o moderna
+
+> Si no hay VM creadas, se muestra el mensaje: *"No virtual machines to display"*
+
+**Opciones disponibles:** Create, Switch to classic, Reservations, Manage view, Refresh, Export to CSV, Open query, Assign tags, Start, Restart, Stop, Delete.
+
+#### Crear una nueva máquina virtual
+
+**Paso 1: Acceder a creación**
+- En la página de Virtual machines, seleccionar **Create** → **Azure virtual machine**
+
+**Paso 2: Configurar pestaña Basics (Datos básicos)**
+
+**Project details (Detalles del proyecto):**
+- **Subscription:** Azure subscription 1
+- **Resource group:** Nexusfields (o crear uno nuevo)
+
+**Instance details (Detalles de la instancia):**
+- **Virtual machine name:** nombre de la VM (ej. **VM Linux** o **LinuxVM1**)
+- **Region:** (US) East US (ubicación del centro de datos)
+- **Availability options:** opciones de disponibilidad
+
+**Pestañas adicionales de configuración:**
+- **Basics** → Datos básicos (suscripción, grupo, nombre, región)
+- **Disks** → Discos (tamaño y tipo de almacenamiento)
+- **Networking** → Redes (VNet, subred, IP pública, NSG)
+- **Management** → Gestión (monitoreo, backups, actualizaciones)
+- **Monitoring** → Monitoreo (alertas, diagnóstico)
+- **Advanced** → Opciones avanzadas (extensiones, scripts)
+- **Tags** → Etiquetas para organización
+- **Review + create** → Revisar y crear la VM
+
+> **Nota:** Se puede completar solo la pestaña Basics y luego usar **Review + create** para crear la VM con parámetros predeterminados, o revisar cada pestaña para una personalización completa.
+
+**Ejemplo del curso:** Nexusfields necesita una **VM Linux**. Se asigna el nombre **LinuxVM1** y se continúa con la configuración.
+
+#### Ejercicio de repaso: Selección de discos en Azure
+
+**Pregunta:**  
+Asmarina necesita elegir una opción de almacenamiento para copias de seguridad y datos no críticos, como archivos de proyectos archivados e informes antiguos. ¿Qué opción debería seleccionar?
+
+- [ ] Ultra Disk
+- [x] **Standard HDD**
+- [ ] Standard SSD
+- [ ] Premium SSD
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Standard HDD**. Es la opción más económica y adecuada para datos no críticos como copias de seguridad, archivos archivados e informes antiguos. Los discos Premium SSD o Ultra Disk están diseñados para cargas de trabajo de alto rendimiento y tienen un costo mayor.
+</details>
+
+### Microsoft Azure: Cifrado de discos y gestión de claves
+
+#### Configuración de discos en Azure
+
+En el panel **Disks** (Discos) se configura el disco duro virtual de la VM:
+
+- **OS disk size:** tamaño del disco del sistema operativo (ej. 30 GiB)
+- **OS disk type:** tipo de disco (Standard HDD, Standard SSD, Premium SSD)
+- **Delete with VM:** si el disco se elimina junto con la VM
+- **Key management:** gestión de claves de cifrado
+- **Enable Ultra Disk compatibility:** habilitar discos Ultra (alto rendimiento)
+
+#### Cifrado de discos en Azure
+
+Azure disk storage encryption **cifra automáticamente** los datos almacenados en discos gestionados (disco OS y discos de datos) en reposo por defecto.
+
+#### Opciones de gestión de claves (Key management)
+
+| Tipo de clave | ¿Qué es? | ¿Quién la gestiona? | ¿Cuándo usarla? |
+|---------------|----------|---------------------|-----------------|
+| **Platform-managed key (PMK)** | Clave de cifrado gestionada completamente por Azure | Azure | La mayoría de los casos, cuando no se requiere control específico sobre las claves |
+| **Customer-managed key (CMK)** | Clave de cifrado que el cliente importa desde otra ubicación | El cliente (debe importar, gestionar y almacenar la clave) | Requisitos normativos estrictos o necesidad de control total sobre las claves |
+
+> **Ejemplo del curso:** Nexusfields no tiene el tiempo ni la necesidad de gestionar la clave de cifrado, por lo que **PMK (Platform-managed key)** es la mejor opción.
+
+#### Resumen
+
+- **PMK:** Azure gestiona todo el ciclo de vida de las claves. Es más simple y recomendada para la mayoría de los escenarios.
+- **CMK:** El cliente importa sus propias claves (ej. desde AWS, on-premise o un HSM) y es responsable de su gestión. Ofrece mayor control pero requiere más administración.
+
+### Microsoft Azure: Despliegue completado y recursos creados
+
+#### Finalización del despliegue
+
+Una vez completada la configuración de la VM, Azure procede al despliegue. Al finalizar, se muestra la pantalla **"Your deployment is complete"**.
+
+**Detalles del despliegue:**
+- **Deployment name:** nombre del despliegue (ej. CreateVm-canonical...)
+- **Subscription:** Azure subscription 1
+- **Resource group:** Nexusfields
+
+**Opciones post-despliegue:**
+- **Cost Management:** configurar alertas de costos para evitar cargos inesperados
+- **Microsoft Defender for Cloud:** asegurar aplicaciones e infraestructura
+- **Free Microsoft tutorials:** acceder a tutoriales gratuitos de Azure
+
+#### Recursos creados
+
+En la página de inicio o en **Resources** (Recursos) aparecen los elementos creados recientemente:
+
+| Nombre | Tipo | Última vista |
+|--------|------|---------------|
+| **LinuxVM1** | Virtual machine | Hace 2 minutos |
+| **Nexusfields** | Resource group | Hace 2 minutos |
+
+#### Próximo paso: Proteger la VM
+
+Una vez creada la VM, se pueden tomar medidas adicionales para protegerla, como usar **Microsoft Defender for Cloud**, la herramienta de seguridad integrada de Microsoft Azure.
+
+> **Microsoft Defender for Cloud** permite:
+> - Monitorear la postura de seguridad
+> - Detectar amenazas y vulnerabilidades
+> - Recibir recomendaciones de seguridad
+> - Proteger cargas de trabajo en la nube
+
+
+### Microsoft Defender for Cloud y Firewall Manager
+
+#### Microsoft Defender for Cloud - Overview
+
+**Microsoft Defender for Cloud** es la herramienta de seguridad integrada de Microsoft Azure. Proporciona:
+
+- **Overview:** resumen general de la postura de seguridad
+- **Recommendations:** recomendaciones de seguridad clasificadas por gravedad
+- **Security alerts:** alertas de seguridad activas
+- **Inventory:** inventario de recursos
+- **Cloud Security Explorer:** consultas de seguridad personalizables
+
+#### Recommendations (Recomendaciones)
+
+El panel **Recommendations** muestra las recomendaciones de seguridad proporcionadas por Microsoft Defender for Cloud, clasificadas de mayor a menor gravedad:
+
+- **High** (Alta): 4/11
+- **Medium** (Media): 1/5
+- **Low** (Baja): 0/3
+
+> La columna **Status** (Estado) muestra si las tareas se completaron o no se asignaron. Las tareas no asignadas se enumeran como recursos incorrectos (Unhealthy).
+
+#### Cloud Security Explorer
+
+El panel **Cloud Security Explorer** permite realizar consultas relacionadas con la seguridad. **Ejemplos de plantillas de consulta:**
+
+| Consulta | ¿Qué busca? |
+|----------|-------------|
+| *Internet exposed VMs with high severity vulnerabilities* | VMs expuestas a Internet con vulnerabilidades de alta gravedad |
+| *Internet exposed VMs with low severity vulnerabilities* | VMs expuestas a Internet con vulnerabilidades de baja gravedad |
+| *User accounts without MFA and with permissions to Storage Accounts* | Cuentas de usuario sin MFA con permisos en cuentas de almacenamiento |
+| *User accounts with permission to vulnerable VMs* | Cuentas de usuario con permiso para acceder a VMs vulnerables |
+
+#### Firewall Manager
+
+El panel **Firewall Manager** muestra un resumen de las opciones de firewall disponibles o activas:
+
+- **Virtual hub security coverage** (cobertura de seguridad del hub virtual)
+- **Virtual network firewall security coverage** (cobertura de firewall de red virtual)
+- **Virtual network DDoS security coverage** (cobertura de protección DDoS)
+
+**Para crear un firewall:** se deben ver las **Azure Firewall policies** (pólizas de firewall de Azure) primero.
+
+> **Nota:** Azure Firewall es un servicio de seguridad de red que protege las redes virtuales de Azure filtrando el tráfico entrante y saliente.
+
+### Microsoft Azure: Creación de una política de firewall (Firewall Policy)
+
+#### Acceso a Azure Firewall Policies
+
+Desde **Firewall Manager**, se puede acceder a **Azure Firewall Policies** en el panel de seguridad (Security). Aquí se definen las reglas para el filtrado de tráfico en múltiples instancias de Azure Firewall.
+
+#### Crear una política de firewall
+
+Seleccionar **Create Azure Firewall Policy** para comenzar.
+
+#### Configuración de la política (pestaña Basics)
+
+**Project details:**
+- **Subscription:** Azure subscription 1
+- **Resource group:** Nexusfields (o el grupo creado)
+
+**Policy details:**
+- **Name:** nombre de la política (ej. **Firewall1** o **Firewall11**)
+  - Debe comenzar con letra o número
+  - Entre 1 y 80 caracteres
+  - Puede contener letras, números, guiones bajos, puntos o guiones
+- **Region:** East US (o la región correspondiente)
+
+#### Política heredada (Parent policy)
+
+- La política hija hereda todas las colecciones de reglas de la política padre seleccionada
+- Las reglas heredadas tienen prioridad sobre las reglas definidas en la política nueva
+- **Parent policy:** se puede seleccionar "None" si no se necesita heredar
+
+#### Niveles de política (Policy tier)
+
+| Nivel | Características | Costo | Uso típico |
+|-------|----------------|------|------------|
+| **Basic** | Funcionalidades básicas, soporte limitado | Más bajo | Pequeñas empresas, desarrollo, pruebas |
+| **Standard** | Funcionalidades completas, soporte estándar | Medio | Producción general |
+| **Premium** | Funcionalidades avanzadas, TLS inspección, IDPS | Más alto | Entornos críticos, alta seguridad |
+
+> **Ejemplo del curso:** Nexusfields ha aprobado solo el nivel más básico → se selecciona **Basic**.
+
+**Opciones adicionales:**
+- **DNS Settings:** configuración de DNS (siguiente pestaña)
+- **Download a template for automation:** descargar plantilla para automatización
+
+Una vez completada la configuración básica, se selecciona **Review + create** para crear la política de firewall.
+
+#### ¿Por qué usar VM + Firewall juntos? ¿No alcanza con aislar?
+
+**Aislar** (el aislamiento natural de Azure) evita que otras máquinas virtuales accedan a la tuya sin permiso. Pero **no protege contra atacantes de Internet**.
+
+**El firewall** filtra todo el tráfico que entra y sale de la VM:
+- Bloquea puertos innecesarios
+- Permite solo IPs autorizadas
+- Detecta y bloquea tráfico malicioso (DDoS, fuerza bruta)
+- Registra intentos de acceso
+
+> **Analogía:** El aislamiento es tener paredes y un portón. El firewall es tener un guardia de seguridad que revisa a cada persona que quiere entrar o salir. Se necesitan ambos porque las amenazas pueden venir de vecinos (otras VMs) O de extraños (Internet).
+
+**Caso concreto:** Sin firewall, cualquiera en Internet puede intentar conectarse a tu VM LinuxVM1 por SSH (puerto 22) y probar contraseñas. Con firewall, solo permites conexiones desde tu IP, bloqueando al resto del mundo.
+
+#### ¿Por qué crear la VM en Azure y no en mi PC local?
+
+**Tu PC local (VirtualBox/VMware):**
+- La VM solo corre cuando tu PC está encendida
+- Solo vos podés acceder (y desde tu casa)
+- Limitada por los recursos de tu PC (RAM, CPU, disco)
+- Sin herramientas de seguridad empresariales (Defender, Firewall avanzado)
+
+**Microsoft Azure (la nube):**
+- La VM corre 24/7 aunque apagues tu PC
+- Podés acceder desde cualquier lugar con Internet
+- Escalable: cambiás de tamaño con un clic
+- Herramientas profesionales: Microsoft Defender for Cloud, Azure Firewall, IAM, DDoS protection
+- Backups automáticos y recuperación ante desastres
+
+> **El curso usa Azure porque:** enseña seguridad en la nube real, con herramientas que usan las empresas (no solo virtualización básica). La experiencia con Azure es más valorada en el currículum que solo VirtualBox.
+
+**Conclusión:** Aprendé virtualización en tu PC local. Aprendé **seguridad empresarial en la nube** con Azure.
+
+#### ¿Microsoft Azure es pago?
+
+**Respuesta corta:** Depende, pero se puede usar gratis.
+
+**Opciones gratuitas:**
+- **Cuenta gratuita:** $200 USD de crédito por 30 días
+- **Servicios siempre gratis:** VM B1s (750 horas/mes), almacenamiento limitado, etc.
+- **Créditos para estudiantes:** $100 USD (con correo .edu)
+
+**Recomendación para el curso:**
+1. Creá una cuenta gratuita de Azure
+2. Usá el crédito de $200 USD para las prácticas
+3. **Eliminá o detené las VM** cuando termines de usarlas
+4. Configurá alertas de costo para evitar sorpresas
+
+> **Importante:** Si no activás el pago por uso o eliminás los recursos, **no te cobran**.
+
+### Recuperación ante desastres en la nube (Cloud DR)
+
+A pesar de implementar medidas preventivas tanto para las infraestructuras locales como para las basadas en la nube, las organizaciones aún pueden experimentar **filtraciones de datos e interrupciones disruptivas**.
+
+Las empresas deben reaccionar rápidamente a las vulnerabilidades recién descubiertas o a las interrupciones del sistema para garantizar la **continuidad del negocio** y la **disponibilidad de los datos**.
+
+#### ¿Qué es la recuperación ante desastres en la nube?
+
+Las soluciones de **recuperación ante desastres (DR)** son cruciales para la seguridad en la nube, ya que equipan a las organizaciones con las herramientas, los servicios y los protocolos necesarios para:
+
+- **Acelerar la recuperación de datos**
+- **Restaurar las operaciones comerciales normales**
+
+#### Caso de estudio: Interrupción de AWS (febrero de 2017)
+
+Uno de los desastres en la nube más significativos que requirió una solución de recuperación ante desastres fue la interrupción de **Amazon Web Services (AWS)**.
+
+| Hecho | Detalle |
+|-------|---------|
+| **1. Sitios web populares dejaron de estar disponibles** | La interrupción provocó que muchos sitios web y servicios populares dejaran de funcionar |
+| **2. Muchas organizaciones sintieron el impacto** | Entre las afectadas: empresas de medios, agencias gubernamentales, Netflix, Slack y GitHub |
+| **3. Servicio restaurado** | AWS restauró el servicio luego de aproximadamente **4 horas** |
+
+#### Lección aprendida
+
+El incidente destacó la **importancia de contar con soluciones de recuperación ante desastres** para mitigar el impacto de tales incidentes en las operaciones comerciales.
+
+> **Conclusión:** No basta con prevenir. Hay que estar preparados para **responder y recuperarse rápidamente** cuando ocurre un desastre (caída del proveedor, ciberataque, fallo de hardware, desastre natural).
+
+### Estrategia integral de copia de seguridad y replicación
+
+Una estrategia completa de **copia de seguridad y replicación** es una de las consideraciones más importantes para la **recuperación ante desastres** en una infraestructura basada en la nube.
+
+#### Mejores prácticas para copias de seguridad
+
+**1. Múltiples copias en diferentes regiones**  
+Es esencial tener varias copias de seguridad ubicadas en **diferentes regiones geográficas** y almacenadas con **otros proveedores de almacenamiento**. Esta estrategia garantiza que los datos estén siempre disponibles, aunque uno de los proveedores sufra una interrupción.
+
+**2. Cifrado de datos**  
+Es esencial asegurarse de que los conjuntos de datos estén correctamente **cifrados y protegidos**:
+- **En reposo:** cuando están almacenados
+- **En tránsito:** cuando se mueven entre sistemas
+
+> Esto evita el acceso no autorizado a información confidencial o actividades maliciosas, como **ataques de ransomware**.
+
+**3. Seguimiento y auditorías**  
+Es una buena práctica:
+- Realizar un seguimiento de los **inicios de sesión** y los **registros de acceso**
+- Realizar **auditorías de seguridad periódicas** para identificar posibles vulnerabilidades
+
+#### Recuperación ante desastres como servicio (DRaaS)
+
+Las organizaciones deben considerar el uso de soluciones **automatizadas** de recuperación ante desastres, como la **recuperación ante desastres como servicio (DRaaS)** basada en la nube.
+
+**Beneficios de DRaaS:**
+
+| Beneficio | Descripción |
+|-----------|-------------|
+| **Escalabilidad bajo demanda** | Se ajusta automáticamente a las necesidades de la organización |
+| **Ahorro de costos** | Comparado con procesos manuales de DR |
+| **Tiempos rápidos de recuperación** | Garantiza que las empresas puedan reanudar operaciones rápidamente luego de un evento inesperado |
+
+#### Características clave de una solución DR
+
+- **Cloud backup:** copias de seguridad en la nube
+- **Instant recovery:** recuperación instantánea
+- **End-to-end encryption:** cifrado de extremo a extremo
+
+> **En resumen:** Una buena estrategia de respaldo no solo guarda copias, sino que las distribuye, las cifra, las audita y permite recuperarlas rápidamente mediante automatización.
+
+### Aspecto destacado de la gestión profesional: certificación CompTIA Cloud+
+
+#### Habilidades de gestión profesional
+
+¿Estás interesado en la **seguridad de la infraestructura en la nube**? ¿Te emociona la idea de gestionar y mantener la seguridad en la nube y luchar contra los hackers? Si es así, deberías considerar una carrera en **seguridad de infraestructura en la nube**.
+
+Una forma de asegurar un puesto en este campo es obtener la certificación **Cloud+ de CompTIA**.
+
+#### ¿Qué es la certificación CompTIA Cloud+?
+
+> *"Es una certificación global que valida las habilidades necesarias para **implementar y automatizar entornos de nube seguros** que soporten la alta disponibilidad de sistemas y datos empresariales."*
+
+#### Áreas que evalúa la certificación
+
+- **Arquitectura y diseño de la nube**
+- **Seguridad en la nube**
+- **Despliegue en la nube**
+- **Operaciones y soporte**
+- **Solución de problemas**
+
+#### Carreras que benefician con esta certificación
+
+Esta certificación sería una excelente adición al currículo de alguien que busca ingresar a las siguientes carreras:
+
+- **Ingeniero en la nube**
+- **Especialista en la nube**
+- **Gestor de proyectos en la nube**
+- **Ingeniero de redes**
+- **Especialista en seguridad en la nube**
+
+### Acerca de esta lección: Seguridad de aplicaciones en la nube
+
+Proteger las aplicaciones basadas en la nube es como **proteger tu casa del cielo**: no puedes controlar el clima, pero puedes asegurarte de que el techo sea lo suficientemente fuerte como para resistir cualquier tormenta.
+
+#### ¿Qué aprenderás en esta lección?
+
+En esta lección, aprenderás sobre la **seguridad de las aplicaciones en la nube**, que implica proteger las aplicaciones de software que se ejecutan en la infraestructura de la nube.
+
+Explorarás:
+
+- **Cuatro principios** de una estrategia de seguridad en la nube
+- Varias **soluciones de seguridad de aplicaciones en la nube**
+
+### Aplicaciones en la nube
+
+Una amplia gama de aplicaciones en la nube puede permitir a las empresas lograr una mayor **agilidad**, **escalabilidad** y **eficiencia** en sus operaciones.
+
+#### ¿Qué es una aplicación en la nube?
+
+Una **aplicación en la nube** es un tipo de aplicación de software que se ejecuta en la infraestructura de la nube. Los usuarios pueden acceder y operar aplicaciones en la nube **completamente en línea** sin instalar software o hardware en una computadora local.
+
+#### Proveedores de servicios en la nube (CSP)
+
+Entre los proveedores típicos se incluyen:
+
+- **IBM**
+- **Amazon Web Services (AWS)**
+- **Microsoft Azure**
+- **Google Cloud Platform (GCP)**
+
+#### Características de las aplicaciones en la nube
+
+Los desarrolladores diseñan aplicaciones en la nube para que sean:
+
+- **Altamente escalables**
+- **Flexibles**
+- **Accesibles desde cualquier dispositivo** con conexión a Internet
+
+**Dispositivos de acceso:** computadoras de escritorio, portátiles, tabletas y teléfonos móviles (a través de navegador web o aplicación).
+
+#### Ejemplos de servicios ofrecidos
+
+| Categoría | Ejemplos |
+|-----------|----------|
+| **Almacenamiento de datos** | Box, OneDrive, Dropbox |
+| **Suites de productividad** | Google Workspace, Microsoft Office 365 |
+| **Herramientas de colaboración** | Slack, Teams, Trello |
+| **Plataformas CRM** | Salesforce Sales Cloud |
+| **Software de contabilidad** | QuickBooks Online, Wave Accounting, Quicken Online |
+
+#### Aplicaciones populares en la nube
+
+**Microsoft Office 365**  
+Colección de aplicaciones basadas en la nube útiles en el hogar y la oficina, que incluyen correo electrónico, creación y colaboración de documentos y videoconferencias.
+
+**Slack**  
+Plataforma de mensajería y colaboración basada en la nube. Los equipos pueden comunicarse y colaborar en tiempo real.
+
+**Salesforce Sales Cloud**  
+Plataforma de gestión de relaciones con los clientes (CRM) basada en la nube. Las empresas la usan para gestionar sus procesos de ventas e interacciones con los clientes.
+
+**QuickBooks Online**  
+Software de contabilidad basado en la nube. Las pequeñas y medianas empresas pueden gestionar sus finanzas desde cualquier lugar.
+
+> **Piensa en esto:** Probablemente uses al menos algunos de estos servicios en tu vida diaria (trabajo, escuela, hobbies, etc.). Puedes almacenar, compartir y acceder a archivos desde cualquier lugar mediante estas plataformas.
+
+### Estrategia de seguridad de aplicaciones en la nube
+
+El creciente uso de aplicaciones en la nube significa que una organización debe tener una **estrategia de seguridad de las aplicaciones en la nube**.
+
+#### ¿Qué es la seguridad de aplicaciones en la nube?
+
+Garantizar la seguridad de las aplicaciones de software basadas en la nube durante todo su **ciclo de vida de desarrollo** se conoce como seguridad de las aplicaciones en la nube.
+
+Implica el uso de:
+- **Políticas** a nivel de aplicación
+- **Herramientas** de seguridad
+- **Tecnologías** de protección
+- **Protocolos** de comunicación
+
+**Objetivos:**
+- Mantener una **visibilidad completa** de todos los recursos basados en la nube
+- **Defenderse contra los ciberataques**
+- **Restringir el acceso** únicamente a los usuarios autorizados
+
+> Las aplicaciones en la nube son vulnerables a amenazas y ataques, al igual que los sistemas locales.
+
+#### Principios de la estrategia de seguridad en la nube
+
+---
+
+### 1. Centrarse en el adversario
+
+**¿Qué significa?**  
+Comprender las **motivaciones, tácticas y técnicas** de los posibles atacantes para diseñar e implementar medidas de seguridad eficaces.
+
+**Implica:**
+- Adoptar un enfoque **proactivo** (no solo reaccionar después del ataque)
+- Mantenerse al día con las **amenazas emergentes** y técnicas de ataque
+- Comprender las últimas **tendencias de seguridad** y mejores prácticas
+- **Probar y refinar continuamente** las medidas de seguridad
+
+> **En resumen:** Pensar como un atacante para anticiparse a sus movimientos.
+
+---
+
+### 2. Reducir el riesgo de exposición
+
+**¿Qué significa?**  
+Minimizar el riesgo de que **usuarios no autorizados** tengan acceso a datos o infraestructura.
+
+**Medidas para mitigar riesgos:**
+
+| Medida | ¿Qué hace? |
+|--------|------------|
+| **Implementar controles de acceso** | Limita quién puede entrar y qué puede ver/hacer |
+| **Aplicar cifrado** | Protege datos incluso si son interceptados |
+| **Realizar evaluaciones de seguridad periódicas** | Identifica vulnerabilidades antes de que sean explotadas |
+| **Emplear medidas de detección y respuesta a amenazas** | Detecta y actúa ante incidentes en tiempo real |
+| **Aplicar políticas de seguridad** | Establece reglas claras para todos los usuarios |
+
+---
+
+### 3. Implementar una política, un marco y una arquitectura de seguridad en la nube
+
+**¿Qué significa?**  
+Un enfoque **holístico** para proteger los recursos, datos y cargas de trabajo de la nube.
+
+**Tres componentes clave:**
+
+| Componente | Descripción |
+|------------|-------------|
+| **Política** | Reglas, directrices y normas de acceso, uso y gestión de los recursos de la nube |
+| **Marco (Framework)** | Enfoque estructurado para desarrollar, desplegar y mantener aplicaciones e infraestructuras seguras en la nube |
+| **Arquitectura** | Diseño e implementación de controles de seguridad para proteger aplicaciones y sistemas en la nube |
+
+---
+
+### 4. Monitoreo de la superficie de ataque
+
+**¿Qué significa?**  
+Evaluar periódicamente las **posibles vulnerabilidades** y los **puntos de entrada** que los atacantes pueden aprovechar para comprometer los recursos de la nube.
+
+**Cómo se hace:**
+- **Herramientas automatizadas** (escaneo continuo)
+- **Revisiones manuales** (expertos en seguridad)
+
+**Beneficios del monitoreo proactivo:**
+- Identificar **riesgos potenciales**
+- Implementar medidas de seguridad **antes de un ataque**
+- Reducir la **exposición a los ataques**
+
+> **En resumen:** Conocer las propias debilidades antes de que las encuentre un atacante.
+
+#### Ejercicio: Aplicar los principios de seguridad a We Invest
+
+**Principio 1 - Centrarse en el adversario (enfoque proactivo)**
+- [x] Capacitar a empleados para reconocer y denunciar amenazas
+- [x] Analizar inteligencia de amenazas (motivaciones, tácticas, técnicas)
+
+**Principio 2 - Reducir el riesgo de exposición**
+- [x] Implementar autenticación multifactor (MFA)
+- [x] Implementar monitoreo continuo para detectar actividades sospechosas
+
+**Principio 3 - Política, marco y arquitectura (enfoque holístico)**
+- [x] Utilizar mejores prácticas de la industria para guiar políticas y marcos
+- [x] Implementar arquitectura de seguridad con controles diseñados
+
+**Principio 4 - Monitoreo de la superficie de ataque**
+- [x] Realizar evaluaciones periódicas de vulnerabilidades y pruebas de penetración
+- [x] Implementar monitoreo continuo para detectar accesos no autorizados
+
+### Soluciones de seguridad de aplicaciones en la nube
+
+A medida que más organizaciones adoptan la nube, particularmente en el contexto del desarrollo de software, deben establecer e implementar una **solución completa de seguridad en la nube** para protegerse contra un número creciente de amenazas y ataques.
+
+Las soluciones de seguridad, como las siguientes, son vitales para proteger una infraestructura de aplicaciones en la nube a lo largo de un **ciclo de vida del software**:
+
+- **CNAPP** (Cloud-Native Application Protection Platform)
+- **CASB** (Cloud Access Security Broker)
+- **CSPM** (Cloud Security Posture Management)
+
+---
+
+### 1. CNAPP (Plataforma de protección de aplicaciones nativa de la nube)
+
+#### ¿Qué es?
+
+Una **CNAPP** es una solución de seguridad para proteger las **aplicaciones nativas de la nube**. Proporciona protección y visibilidad integrales para aplicaciones creadas con:
+
+- **Microservicios** (arquitectura donde un sistema se divide en componentes pequeños e independientes que se comunican vía API)
+- **Contenedores**
+- Otras tecnologías nativas de la nube
+
+> *"La protección de las aplicaciones nativas de la nube implica un conjunto continuo de procesos centrados en identificar, acceder, priorizar y adaptar al riesgo en las aplicaciones, la infraestructura y la configuración nativas de la nube."*
+
+#### Características de CNAPP
+
+| Característica | ¿Qué hace? |
+|----------------|------------|
+| **Gestión de vulnerabilidades** | Escanea aplicaciones en busca de vulnerabilidades y brinda recomendaciones para remediarlas antes de que sean explotadas |
+| **Segmentación de la red** | Aísla aplicaciones, servicios y datos en entornos multinube y de nube híbrida |
+| **Protección en tiempo de ejecución** | Monitorea el entorno para detectar y responder a malware, ataques DDoS y exploits de bases de datos |
+| **Seguridad de API** | Protege las API aplicando políticas de limitación de velocidad, autenticación, cifrado y protección DDoS |
+
+---
+
+### 2. CASB (Cloud Access Security Broker)
+
+#### ¿Qué es?
+
+Un **CASB** actúa como un **firewall para los servicios en la nube**, proporcionando una puerta de enlace para hacer cumplir las políticas de seguridad. Actúa como un **guardián** entre los usuarios y los proveedores de servicios en la nube, permitiendo a las organizaciones extender sus políticas de seguridad más allá de su entorno de TI y hacia la nube.
+
+#### Cuatro objetivos principales de CASB
+
+| Objetivo | Descripción |
+|----------|-------------|
+| **Visibilidad** | Analiza y correlaciona actividades, eventos y registros de usuarios de varios servicios en la nube |
+| **Cumplimiento** | Ayuda a cumplir con regulaciones (GDPR, HIPAA, PCI DSS) mediante DLP, cifrado y control de acceso |
+| **Seguridad de datos** | Protege datos confidenciales con cifrado, tokenización y prevención de pérdida de datos |
+| **Protección frente a amenazas** | Protege contra malware, ransomware y ataques de phishing |
+
+---
+
+### 3. CSPM (Gestión de la postura de seguridad en la nube)
+
+#### ¿Qué es?
+
+El **CSPM** es un componente crítico que ayuda a las organizaciones a identificar y mitigar posibles riesgos de seguridad mediante:
+
+- **Automatización avanzada**
+- **Supervisión** continua
+- **Técnicas de detección de amenazas**
+
+#### Ejemplo práctico de CSPM
+
+Una organización despliega una nueva aplicación en la nube. Las herramientas CSPM escanean la aplicación y su infraestructura en busca de **errores de configuración o vulnerabilidades**.
+
+**Caso concreto:** Una herramienta CSPM detecta que una base de datos crítica se expuso inadvertidamente a Internet debido a una regla de control de acceso incorrecta. Alerta al equipo de seguridad, que soluciona rápidamente la configuración errónea restringiendo el acceso.
+
+> Así se evitan accesos no autorizados y posibles filtraciones de datos.
+
+#### Capacidades de CSPM
+
+| Capacidad | Descripción |
+|-----------|-------------|
+| **Monitoreo continuo del cumplimiento** | Verifica automáticamente el cumplimiento de estándares regulatorios y de la industria |
+| **Supervisión de la configuración de seguridad** | Identifica errores comunes como puertos abiertos, protocolos no seguros y datos no cifrados |
+| **Gestión de la seguridad multinube** | Proporciona gestión unificada en múltiples proveedores de nube (AWS, Azure, GCP) |
+| **Evaluación y priorización de riesgos** | Evalúa riesgos según su impacto potencial en la continuidad del negocio |
+| **Sugerencias de remediación y automatización** | Ofrece sugerencias de mitigación y puede automatizar el proceso según la gravedad de la vulnerabilidad |
+
+#### ¿En qué entornos funciona CSPM?
+
+Las herramientas CSPM pueden buscar configuraciones erróneas en múltiples entornos:
+
+- **IaaS** (Infraestructura como Servicio)
+- **SaaS** (Software como Servicio)
+- **PaaS** (Plataforma como Servicio)
+
+> **En resumen:** CSPM actúa como un **inspector continuo** que revisa automáticamente que todo esté bien configurado y seguro, antes de que ocurra un problema.
+
+### Actividad: Resumir los conceptos clave para proteger las aplicaciones en la nube
+
+#### Habilidades para la inserción laboral
+- **Agilidad en el aprendizaje**
+- **Comunicación escrita**
+
+Ahora que examinaste los conceptos clave para proteger las aplicaciones en la nube, aplicarás estos conceptos a las situaciones de dos empresas:
+
+- **Everwell** (proveedor de atención médica)
+- **Nexus Marketplace** (empresa de comercio electrónico)
+
+---
+
+### Escenario 1: Everwell
+
+**Contexto:**  
+Eres el director de seguridad de la información de **Everwell**, un gran proveedor de atención médica. Everwell ha migrado recientemente a un sistema basado en la nube para mantener **registros médicos electrónicos (EMR)** . Estás considerando implementar un **Cloud Access Security Broker (CASB)** para protegerte mejor contra las violaciones de datos y las violaciones de cumplimiento.
+
+**¿Por qué CASB es adecuado para Everwell?**
+
+| Necesidad de Everwell | Cómo ayuda CASB |
+|----------------------|-----------------|
+| **Datos sensibles de salud (PHI)** | Aplica cifrado, tokenización y prevención de pérdida de datos (DLP) |
+| **Cumplimiento normativo (HIPAA)** | Ayuda a cumplir regulaciones mediante políticas de control de acceso y monitoreo |
+| **Visibilidad del uso de la nube** | Analiza actividades y registros de usuarios en servicios en la nube |
+| **Protección contra amenazas** | Protege contra malware, ransomware y ataques de phishing |
+
+> **Conclusión para Everwell:** Un CASB es ideal para Everwell porque actúa como un guardián entre los usuarios y los servicios en la nube, asegurando que los datos médicos confidenciales se mantengan seguros y cumpliendo con normativas como HIPAA.
+
+---
+
+### Escenario 2: Nexus Marketplace
+
+**Contexto:**  
+Eres el director de seguridad de la información de **Nexus Marketplace**, una empresa de comercio electrónico. Nexus Marketplace ha migrado recientemente a un **entorno multinube** (múltiples proveedores como AWS, Azure, GCP) para servir mejor a sus clientes en todo el mundo. Debido a la mayor complejidad, la empresa está considerando implementar una herramienta de **Gestión de la Postura de Seguridad en la Nube (CSPM)**.
+
+#### ¿Cómo puede ayudar CSPM a Nexus Marketplace?
+
+**Resumen (2-3 puntos clave):**
+
+1. **Monitoreo continuo de configuraciones en múltiples nubes**  
+   CSPM escanea automáticamente los entornos de AWS, Azure y GCP en busca de **errores de configuración** (puertos abiertos, datos no cifrados, permisos incorrectos) que podrían exponer datos de clientes o transacciones.
+
+2. **Cumplimiento y evaluación de riesgos**  
+   CSPM verifica el cumplimiento de estándares como **PCI DSS** (requerido para procesar pagos con tarjeta) y prioriza los riesgos según su impacto potencial en el negocio.
+
+3. **Automatización de remediación**  
+   Cuando CSPM detecta una vulnerabilidad o mala configuración, puede **alertar al equipo de seguridad** y, en algunos casos, **corregir automáticamente** el problema antes de que sea explotado por atacantes.
+
+> **Conclusión para Nexus Marketplace:** CSPM es esencial para un entorno multinube porque proporciona una **vista unificada** de la seguridad a través de diferentes proveedores, identifica configuraciones erróneas y ayuda a mantener un cumplimiento consistente, reduciendo la complejidad operativa.
+
+---
+
+### Resumen de conceptos aplicados
+
+| Solución | Mejor para | Función principal |
+|----------|------------|-------------------|
+| **CASB** | Organizaciones con datos sensibles y requisitos de cumplimiento (Everwell) | Guardián entre usuarios y servicios en la nube, aplica políticas de seguridad |
+| **CSPM** | Entornos multinube y configuraciones complejas (Nexus Marketplace) | Monitoreo continuo, detección de configuraciones erróneas, cumplimiento |
+| **CNAPP** | Aplicaciones nativas de la nube (con microservicios, contenedores) | Protección integral durante todo el ciclo de vida de la aplicación |
+
+¿Qué son CASB, CSPM y CNAPP? (Explicación fácil)
+Primero, la analogía de la casa con alarma
+Imaginá que tu empresa es una casa y los datos son lo que hay adentro.
+
+Concepto	Analogía
+El proveedor de nube (Azure, AWS)	Es el terreno y la estructura de la casa. Ellos ponen las paredes, el techo, las cañerías.
+Tu empresa	Es el dueño que vive en la casa. Ponés los muebles, los electrodomésticos, y decidís quién entra.
+CASB, CSPM, CNAPP	Son como empresas de seguridad externas que contratás para que vigilen tu casa.
+¿Son software? ¿Vienen con la nube? ¿Hay que instalarlos?
+Respuesta corta:
+Pregunta	Respuesta
+¿Son software?	Sí, son programas/plataformas de software.
+¿Vienen incluidos con Azure/AWS?	Algunas funciones básicas sí, pero las herramientas completas suelen ser servicios adicionales (pagados o con capas gratuitas).
+¿Hay que instalarlos?	No se "instalan" como un programa en tu PC. Se activan o contratan dentro de la nube (como un servicio más).
+Explicación de cada uno con ejemplos concretos
+1. CASB (Cloud Access Security Broker) - "El portero"
+¿Qué hace?
+Controla quién se conecta a tus servicios en la nube y qué hace. Es como un portero que revisa a todos los que entran y salen de tu edificio.
+
+¿Cómo funciona?
+Se conecta entre tus usuarios y tus servicios en la nube (Office 365, Dropbox, Salesforce, etc.). Todo el tráfico pasa por él.
+
+Ejemplo concreto:
+
+Un empleado intenta descargar un archivo con datos de pacientes desde su casa.
+
+El CASB detecta que ese archivo es confidencial y bloquea la descarga o envía una alerta.
+
+¿Viene con Azure?
+Microsoft tiene Microsoft Defender for Cloud Apps (que es un CASB). Hay que activarlo desde el portal de Azure (no viene "prendido" por defecto).
+
+2. CSPM (Cloud Security Posture Management) - "El inspector de obra"
+¿Qué hace?
+Revisa cómo están configurados tus recursos en la nube. Busca errores como "dejé un bucket público" o "no tengo cifrado activado".
+
+¿Cómo funciona?
+Es un software que escanea automáticamente tu nube (AWS, Azure, GCP) y te dice: "Acá hay un problema, arreglalo".
+
+Ejemplo concreto:
+
+Un administrador crea una base de datos y sin querer la deja pública (cualquiera en Internet puede verla).
+
+El CSPM detecta eso en minutos y te envía una alerta: "¡Cuidado! Base de datos expuesta".
+
+¿Viene con Azure?
+Microsoft Defender for Cloud incluye funciones de CSPM. Hay que activarlo (tiene una capa gratuita básica y una versión paga con más funciones).
+
+3. CNAPP (Cloud-Native Application Protection Platform) - "El todoterreno"
+¿Qué hace?
+Es como CASB + CSPM + más cosas (protección de contenedores, microservicios, etc.). Es una solución todo en uno para proteger aplicaciones modernas.
+
+¿Cómo funciona?
+Unifica varias herramientas en una sola plataforma.
+
+Ejemplo concreto:
+
+Tenés una aplicación hecha con microservicios (muchos pedacitos chiquitos que hablan entre sí).
+
+CNAPP protege desde el código (cuando lo escribís) hasta la infraestructura (donde corre).
+
+¿Viene con Azure?
+Partes de CNAPP están en Microsoft Defender for Cloud (Defender para contenedores, para bases de datos, etc.). Se activa desde el portal.
+
+Entonces... ¿cómo se "instalan"?
+Paso	Qué hacés
+1. Entrás al portal de Azure (portal.azure.com)	Como cuando creaste la VM
+2. Buscás "Microsoft Defender for Cloud"	Es el nombre que usa Azure para estas herramientas
+3. Lo activás	A veces con un botón "Enable" o "Upgrade"
+4. Configurás qué querés monitorear	Elegís qué recursos (VMs, bases de datos, etc.)
+No es como instalar Word o Photoshop. Es como contratar un servicio: das unos clics, y Azure empieza a monitorear por vos.
+
+¿Cuestan plata?
+Herramienta	En Azure
+CSPM básico	Gratis (Microsoft Defender for Cloud - capa gratuita)
+CSPM completo + CASB + CNAPP	Pago (por recurso o por hora)
+Para aprender y practicar: la capa gratuita de Defender for Cloud es suficiente. Te muestra recomendaciones básicas.
+
+### ¿Cómo funcionan CASB, CSPM y CNAPP? (Explicación fácil)
+
+#### ¿Son software? ¿Se instalan?
+
+- **Son software**, pero no se "instalan" como un programa en tu PC.
+- Se **activan o contratan** como servicios dentro de la nube (Azure, AWS).
+- Se configuran desde el portal de nube (como cuando creaste la VM).
+
+#### ¿Vienen con la nube?
+
+- **Algunas funciones básicas vienen incluidas** (ej. CSPM gratuito en Azure).
+- Las **funciones completas son adicionales** (plan pago).
+
+#### ¿Cómo funcionan?
+
+| Herramienta | Analogía | ¿Qué hace? |
+|-------------|----------|------------|
+| **CASB** | El portero | Controla quién entra/sale y qué hace en la nube |
+| **CSPM** | El inspector de obra | Revisa configuraciones (cifrado, accesos, puertos) |
+| **CNAPP** | El todoterreno | Hace todo lo anterior + protege aplicaciones modernas |
+
+#### En Azure se llaman:
+
+- **Microsoft Defender for Cloud** (incluye CSPM + partes de CASB y CNAPP)
+- **Microsoft Defender for Cloud Apps** (el CASB completo)
+
+#### ¿Cómo se activa?
+
+1. Vas al portal de Azure
+2. Buscás "Microsoft Defender for Cloud"
+3. Lo activás (la capa gratuita alcanza para aprender)
+4. Azure empieza a monitorear tus recursos automáticamente
+
+
+### ¿Debo elegir CASB, CSPM o CNAPP? ¿O puedo elegir solo el "todoterreno"?
+
+**Respuesta corta:** Podés elegir CNAPP si querés, pero depende de tu caso.
+
+#### ¿Qué conviene según el escenario?
+
+| Escenario | Recomendación |
+|-----------|---------------|
+| **Usás solo Azure** | Usá **Microsoft Defender for Cloud** (ya incluye CSPM + partes de CNAPP). Es gratis (básico) o con plan pago. |
+| **Usás varias nubes (AWS + Azure + GCP)** | Considerá un **CNAPP multinube** externo (Wiz, Orca, Prisma Cloud) |
+| **Solo te importa controlar qué apps usan tus empleados** | Alcanza con un **CASB** |
+| **Solo te importa configuraciones (buckets públicos, puertos abiertos)** | Alcanza con un **CSPM** |
+
+#### En tu curso (usando Azure):
+
+**No necesitas decidir nada.** Usá **Microsoft Defender for Cloud** (ya lo tenés en tu suscripción de Azure). Te da:
+- Monitoreo básico de configuraciones (CSPM)
+- Recomendaciones de seguridad
+- Alertas de amenazas
+
+> **Regla general:** Si podés pagarlo y usás varias nubes, CNAPP es la mejor opción (hace todo). Si sos chico o usás una sola nube, las herramientas nativas del proveedor son suficientes.
+
+## Resumen y perspectivas
+
+En esta lección, aprendiste sobre las **aplicaciones en la nube** y las **estrategias y soluciones de seguridad** para protegerlas.
+
+Debido a que las aplicaciones en la nube se ejecutan en la nube, las organizaciones deben emplear soluciones basadas en la nube para garantizar su seguridad. También aprendiste la importancia de desarrollar una **estrategia de seguridad de aplicaciones en la nube**.
+
+Algunas de las soluciones de seguridad de aplicaciones en la nube más importantes incluyen:
+
+- **CNAPP** (Plataformas de protección de aplicaciones nativas de la nube)
+- **CASB** (Agentes de seguridad de acceso a la nube)
+- **CSPM** (Gestión de la postura de seguridad en la nube)
+
+---
+
+### Puntos para recordar - Conceptos clave
+
+1. La computación en la nube puede plantear importantes **amenazas de ciberseguridad** a las empresas, y es necesario adoptar medidas **proactivas** para mitigar los riesgos.
+
+2. Las **principales ciberamenazas** de computación en la nube incluyen:
+   - Identidades mal gestionadas
+   - Mala configuración de la nube
+   - Denegación del servicio (DoS/DDoS)
+   - Amenazas de usuarios internos
+   - Visibilidad reducida de la infraestructura
+   - Uso no autorizado de cargas de trabajo en la nube (TI en la sombra)
+   - API poco seguras
+   - Violaciones de cumplimiento
+
+3. Las organizaciones pueden implementar las siguientes medidas para **gestionar y gobernar identidades y derechos**:
+   - **IGA** (Gobernanza y administración de identidades)
+   - **PAM** (Gestión de acceso privilegiado)
+   - **CIEM** (Gestión de derechos de infraestructura en la nube)
+   - **POLP** (Principio de privilegios mínimos)
+
+4. Las organizaciones deben monitorear la **configuración incorrecta de la nube** de manera consistente, y el software **CSPM** les ayuda a hacerlo.
+
+5. La **seguridad de la red** incluye dos categorías: local y basada en la nube.
+
+6. La informática empresarial tradicional implica **servidores locales** y soporte de TI especializado.
+
+7. Los **principales proveedores de la nube** se encargan del mantenimiento, las copias de seguridad y las actualizaciones de software.
+
+8. Las **cinco mejores prácticas** para la seguridad en la nube incluyen:
+   - Cifrado del tráfico
+   - Planificación de copias de seguridad de datos
+   - Supervisión del entorno en la nube
+   - Mejora de la seguridad de la cuenta de usuario
+   - Evaluación de la postura de seguridad en la nube
+
+9. La responsabilidad de la seguridad informática se **comparte** entre el cliente de la nube y el proveedor en la nube pública.
+
+10. Las organizaciones deben consultar sobre:
+    - Medidas de seguridad de los proveedores de nube
+    - Ubicaciones de los servidores
+    - Protocolos de incidentes
+    - Planes de recuperación ante desastres
+    - Protección de acceso
+    - Soporte técnico
+    - Resultados de pruebas de penetración
+    - Cifrado de datos
+    - Licencias de acceso a los datos
+    - Métodos de autenticación
+    - Soporte de cumplimiento
+
+11. Las soluciones **IAM**, la **capacitación en ciberseguridad** y una sólida **seguridad de punto final** son esenciales para proteger los recursos de la nube.
+
+12. Las **aplicaciones en la nube** se ejecutan en una infraestructura en la nube y se accede a ellas totalmente en línea.
+
+13. Las aplicaciones en la nube pueden proporcionar: almacenamiento de datos, productividad, herramientas de colaboración, CRM y software de contabilidad.
+
+14. Una **estrategia integral de seguridad en la nube** debe:
+    - Centrarse en el adversario
+    - Reducir el riesgo de exposición
+    - Implementar una política, marco y arquitectura de seguridad
+    - Monitorear la superficie de ataque
+
+15. **CNAPP** y **CASB** son dos soluciones que proporcionan políticas y controles de seguridad para aplicaciones basadas en la nube.
+
+---
+
+### Grandes ideas - Habilidades practicadas
+
+Además, exploraste o practicaste estas habilidades:
+
+| Habilidad | Aplicación |
+|-----------|-------------|
+| **Habilidades de empleabilidad** | Atención al detalle |
+| **Pensamiento analítico** | Comunicación escrita |
+| **Pensamiento analítico** | Enumerar amenazas exclusivas de la computación en nube |
+| **Atención al detalle** | Distinguir entre tipos de mitigación para ataques DoS/DDoS |
+| **Mentalidad de crecimiento** | Identificar desafíos de visibilidad de infraestructura |
+| **Investigación** | Reflexionar sobre pasos para ser analista de seguridad en la nube |
+| **Pensamiento crítico** | Describir la TI en la sombra |
+| **Resolución de problemas** | Aplicar IAM a situaciones reales |
+| **Atención al detalle** | Crear una VM segura con Microsoft Azure |
+| **Agilidad de aprendizaje** | Aplicar principios de estrategia de seguridad |
+| **Pensamiento crítico** | Enumerar efectos de interrupción del servicio en la nube |
+| **Comunicación escrita** | Aplicar planes de recuperación e infraestructura |
+| **Adaptabilidad y resiliencia** | Reflexionar sobre habilidades para certificación CompTIA Cloud+ |
+
+---
+
+### Objetivos de aprendizaje - Módulo 8 completado
+
+Ahora que has completado este módulo, deberías poder:
+
+- ✅ **Aplicar la gestión de acceso a la identidad** a situaciones del mundo real
+- ✅ **Aplicar la infraestructura de la nube y los planes de recuperación** a un escenario
+- ✅ **Crear una máquina virtual segura** empleando Microsoft Azure
+- ✅ **Aplicar los principios de la estrategia de seguridad** a las aplicaciones en la nube
+- ✅ **Resumir los conceptos clave** para proteger los datos, la infraestructura y las aplicaciones en la nube
+
+---
+
+### Explora más recursos
+
+Para explorar los conceptos cubiertos en este módulo con más profundidad, consulta estos recursos:
+
+- **[Creación de un espacio de trabajo digital seguro y accesible con IBM Cloud Virtual Private Cloud](https://www.ibm.com)** (video) - Teck Wei Ting, jefe de operaciones técnicas de Inspire-Tech, analiza los beneficios de crear un espacio de trabajo digital seguro.
+
+- **[Soluciones de seguridad en la nube](https://www.ibm.com)** (artículo) - Cómo pasar con confianza a una multinube híbrida e integrar la seguridad en cada fase.
+
+- **[¿Qué es la seguridad en la nube?](https://www.ibm.com)** (artículo) - Explica varios aspectos de la seguridad en la nube, incluidos su importancia y desafíos.
+
+- **[Arquitectura de referencia técnica de seguridad en la nube de CISA](https://www.cisa.gov)** - Enfoque de arquitectura de referencia técnica (TRA) para la migración a la nube y la protección de datos.
+
+---
+
+### Referencias del módulo
+
+**Lección 1: Amenazas en la nube**
+
+1. Plachkinova, Miloslava, and Maurer, Chris. *Teaching Case: Security Breach at Target*. Journal of Information Systems Education, 2018.
+
+2. Wang, Jules. *Data breach exposed millions of Verizon customers' account info*. Android Police, 6 de marzo de 2023.
+
+3. Cimpanu, Catalin. *Adobe left 7.5 million Creative Cloud user records exposed online*. ZDNET, 26 de octubre de 2019.
+
+**Lección 2: Seguridad de la infraestructura en la nube**
+
+1. *Cloud security guidance*. National Cyber Security Centre (Reino Unido), consultado el 26 de junio de 2024.
+
+2. *What is cloud security?*. IBM, consultado el 26 de junio de 2024.
+
+3. *CompTIA Cloud+ certification*. CompTIA, consultado el 26 de junio de 2024.
+
+**Lección 3: Seguridad de aplicaciones en la nube**
+
+1. Alvarenga, Gui. *Cloud application security*. CrowdStrike, 18 de octubre de 2022.
+
+2. *CSPM Meaning: Understanding the Distinctions: CNAPP vs CSPM vs CWPP*. Uptycs, 23 de marzo de 2021.
+
+
+#### Ejercicio de repaso: Limitar la superficie de ataque contra DDoS
+
+**Pregunta:**  
+Imagina que eres el director de TI de una empresa llamada NoAlphabet, y tus recursos basados en la nube están actualmente bajo un ataque DDoS que causa una interrupción significativa del servicio.
+
+¿Qué estrategia limitaría la **superficie de ataque** que está disponible para un ataque distribuido de denegación de servicio?
+
+- [ ] Establecer una línea base de tráfico normal
+- [x] **Restringir el acceso a los puertos, protocolos y servicios de red**
+- [ ] Usar equilibradores de carga y redes de entrega de contenido (CDN)
+- [ ] Instalar un firewall de aplicaciones web (WAF)
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Restringir el acceso a los puertos, protocolos y servicios de red**. Esta estrategia reduce la superficie de ataque eliminando puntos de entrada innecesarios. Las otras opciones son medidas complementarias (detección, distribución de tráfico, filtrado) pero no reducen directamente la superficie de ataque.
+
+</details>
+
+#### Ejercicio de repaso: Estrategia para disponibilidad de datos
+
+**Pregunta:**  
+Luego de un ciberataque a MarketU, su plataforma basada en la nube experimentó una interrupción disruptiva. Como parte del proceso de recuperación, ¿qué estrategia priorizarías para **garantizar la disponibilidad de los datos incluso si otro proveedor experimenta una interrupción**?
+
+- [ ] Externalizar todas las responsabilidades de ciberseguridad al proveedor de la nube
+- [ ] Instalar software antivirus adicional e iniciar un plan de respuesta
+- [x] **Establecer varias copias de seguridad ubicadas en diferentes regiones**
+- [ ] Realizar un reinicio completo del sistema de inmediato
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Establecer varias copias de seguridad ubicadas en diferentes regiones**. Esta es la única opción que garantiza disponibilidad incluso si un proveedor de nube sufre una interrupción (redundancia geográfica y/o multinube).
+#### Ejercicio de repaso: Reducir exposición por acceso no autorizado
+
+**Pregunta:**  
+Eres un funcionario de ciberseguridad de Blue Tech, una empresa mediana que utiliza la plataforma de gestión de relaciones con el cliente (CRM) basada en la nube, Salesforce. Los usuarios no autorizados recientemente obtuvieron acceso a los datos de clientes de Blue Tech.
+
+¿Qué estrategia deberías implementar para **reducir el riesgo futuro** de tal exposición?
+
+- [ ] Realizar auditorías de rendimiento periódicas en Salesforce
+- [ ] Agregar redundancia invirtiendo en plataformas de CRM adicionales
+- [x] **Aplicar cifrado e implementar controles de acceso en Salesforce**
+- [ ] Delegar todas las responsabilidades de CRM a otro proveedor
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Aplicar cifrado e implementar controles de acceso en Salesforce**. Los controles de acceso evitan que usuarios no autorizados entren, y el cifrado protege los datos incluso si alguien logra interceptarlos. Las otras opciones no abordan el problema de raíz.
+
+</details>
+</details>
+
+#### Ejercicio de repaso: Elegir la solución de seguridad adecuada para SaaS
+
+**Pregunta:**  
+Como líder de ciberseguridad en WeInvest, una consultoría financiera, debes proteger su aplicación **QuickBooks Online** (software de contabilidad basado en la nube).
+
+¿Qué solución de seguridad deberías implementar?
+
+- [ ] Plataforma de protección de aplicaciones nativas de la nube (CNAPP)
+- [x] **Cloud Access Security Broker (CASB)**
+- [ ] Gestión de postura de seguridad en la nube (CSPM)
+- [ ] Sistema de detección de intrusiones (IDS)
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **CASB (Cloud Access Security Broker)**. QuickBooks Online es una aplicación SaaS (Software como Servicio). Un CASB está diseñado específicamente para proteger aplicaciones SaaS, actuando como un guardián que controla el acceso, aplica políticas de seguridad y monitorea la actividad de los usuarios.
+
+- **CNAPP** → protege aplicaciones nativas de la nube (las que desarrolla la empresa)
+- **CSPM** → protege configuraciones de infraestructura en la nube
+- **IDS** → detecta intrusiones en la red, pero no tiene visibilidad dentro de aplicaciones SaaS
+
+</details>
+
+
+
