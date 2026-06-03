@@ -1530,3 +1530,1295 @@ La respuesta correcta es **Jefe de equipo SOC**. Este rol lidera el equipo, prio
 
 </details>
 
+## Módulo 11: Monitoreo de Seguridad
+
+### Acerca de este módulo
+
+Adéntrate en el mundo de la **monitorización de la seguridad**, donde te conviertes en **detective de ciberseguridad**. Explora las técnicas que emplean los profesionales de la seguridad para:
+
+- **Descubrir posibles ataques**
+- **Investigar amenazas**
+- **Proteger sistemas y datos valiosos**
+
+Te damos la bienvenida al módulo de **Monitoreo de Seguridad**.
+
+#### En este módulo aprenderás:
+
+- **Herramientas de diagnóstico de red** y monitoreo del rendimiento
+- **Gestión de endpoints** y **detección y respuesta de endpoints (EDR)**
+- **Beneficios** de las herramientas de EDR
+- **Gestión de eventos e información de seguridad (SIEM)**
+- Cómo **SIEM mejora la seguridad** de un sistema
+- **Investigar una amenaza con Splunk**
+
+### ¿Qué es un endpoint?
+
+#### Definición simple
+
+Un **endpoint** es cualquier **dispositivo físico** que se conecta a una red e intercambia datos con ella. Es el "punto final" de la red.
+
+#### Ejemplos comunes
+
+| Tipo | Ejemplos |
+|------|----------|
+| Computadoras | PC de escritorio, laptops |
+| Dispositivos móviles | Smartphones, tablets |
+| Servidores | Físicos o virtuales |
+| Dispositivos IoT | Cámaras, termostatos inteligentes |
+| Especiales | Cajeros automáticos, puntos de venta |
+
+#### Analogía
+
+La red es un **edificio de oficinas**. Los endpoints son cada **escritorio o computadora** de los empleados.
+
+#### ¿Por qué son importantes en seguridad?
+
+- La mayoría de los ataques **comienzan en un endpoint** (phishing, malware)
+- Hay **cientos o miles** de endpoints en una empresa (muchos puntos de entrada)
+- El **trabajo remoto** hace que los endpoints estén fuera de la red corporativa
+
+#### EDR (Endpoint Detection and Response)
+
+Es la tecnología que protege los endpoints:
+- Monitorea en tiempo real
+- Detecta comportamientos sospechosos
+- Responde automáticamente (aisla, bloquea)
+
+### Objetivos de aprendizaje
+
+Luego de completar este módulo, deberías ser capaz de:
+
+- **Realizar reconocimiento de red**
+- **Aplicar los principios de gestión y monitoreo de endpoints** para usar una herramienta de EDR
+- **Realizar una investigación de amenazas** con Splunk Enterprise
+
+### Acerca de esta lección: Herramientas de monitoreo de seguridad
+
+Las herramientas de monitoreo de seguridad son la **primera línea de defensa** contra los ciberataques. Detectan actividades sospechosas para evitar que las amenazas potenciales causen daños.
+
+Sin estas herramientas, las organizaciones corren el riesgo de:
+- **Costosas filtraciones de datos**
+- **Pérdida de clientes**
+
+Las herramientas de monitoreo de seguridad adecuadas mantienen los servicios en línea **seguros y protegidos**.
+
+#### En esta lección aprenderás:
+
+- **Herramientas comunes de diagnóstico de red** y monitoreo del rendimiento
+- **Herramientas y servicios de monitoreo** como:
+  - **EDR** (Detección y respuesta de endpoints)
+  - **SIEM** (Información de seguridad y gestión de eventos)
+  - **NDR** (Detección y respuesta de red)
+- Cómo las organizaciones usan estas herramientas para proteger su **infraestructura**
+- Practicar el uso de **herramientas básicas de monitoreo de red** para aprender cómo los atacantes se infiltran en las redes de seguridad
+
+### ¿Cómo mejora EDR la seguridad y en qué se diferencia de las herramientas tradicionales?
+
+#### Beneficios de EDR
+
+- Recopila datos **continuamente** de todos los endpoints (PC, servidores, móviles)
+- Analiza datos en **tiempo real** en busca de amenazas
+- **Responde automáticamente** a las amenazas
+- Protege contra amenazas que **superan las herramientas tradicionales**
+
+#### Diferencia con herramientas tradicionales
+
+| Aspecto | Herramientas tradicionales | EDR |
+|---------|---------------------------|-----|
+| Protección | Basada en firmas de virus | Basada en **comportamiento** |
+| Monitoreo | Limitado | **Continuo** en tiempo real |
+| Cobertura | Dispositivos individuales | **Todos los endpoints** |
+| Respuesta | Manual (humano) | **Automática** |
+| Inteligencia | Antivirus | **IA y análisis avanzado** |
+
+#### MDR (Managed Detection and Response)
+
+Es **EDR con inteligencia humana agregada**. EDR recopila y analiza, luego analistas humanos evalúan alertas y determinan respuestas.
+
+### Monitoreo de la infraestructura
+
+El monitoreo de la infraestructura es como el **tablero de un auto**: muestra a qué velocidad va el auto, cuánto combustible tiene y qué tan caliente está el motor.
+
+Del mismo modo, las herramientas de monitoreo de la infraestructura muestran lo **bien que funcionan los sistemas informáticos** de una organización. Estas herramientas ayudan a las organizaciones a **detectar problemas antes de que se conviertan en problemas graves**.
+
+> Al igual que un conductor depende del tablero para que el auto funcione bien, las organizaciones dependen del monitoreo de la infraestructura para que sus sistemas informáticos funcionen correctamente.
+
+---
+
+### Herramientas de diagnóstico de red y monitoreo del rendimiento
+
+Las herramientas de diagnóstico de red y monitoreo del rendimiento ofrecen una **visión del estado de la red** de TI de una organización.
+
+#### Tipos de soluciones de monitoreo
+
+| Tipo | Descripción | Ejemplos |
+|------|-------------|----------|
+| **Monitoreo activo** | Funcionan en segundo plano **buscando activamente** posibles problemas o ralentizaciones. Alertan a los administradores en cuanto algo anda mal | NPM (Network Performance Monitoring), APM (Application Performance Monitoring) |
+| **Monitoreo pasivo** | **Observan y registran** lo que sucede sin interactuar activamente. Recopilan datos para detección y análisis de tendencias a largo plazo | Analizadores de tráfico de red, monitoreo de registros de eventos |
+
+---
+
+### Herramientas comunes de monitoreo del rendimiento de la red
+
+#### 1. Escáner de red
+
+**¿Qué hace?**  
+Detecta **hosts y servicios** que se ejecutan en una red. Detecta todos los hosts activos y los mapea a sus direcciones IP.
+
+**Usos para profesionales de seguridad:**
+- Mapeo de redes
+- Identificar posibles **vulnerabilidades** en dispositivos y servicios de red
+- Realizar seguimiento de **activos de red**
+- Identificar **hosts o servicios no autorizados**
+
+**Herramientas populares:** Nmap, Zenmap (disponibles para Windows, Linux y macOS)
+
+> ⚠️ **Nota:** Los atacantes también usan estas herramientas para recopilar información de una red objetivo.
+
+---
+
+#### 2. nslookup
+
+**¿Qué hace?**  
+Herramienta de línea de comandos que **consulta el sistema de nombres de dominio (DNS)** para obtener información sobre direcciones IP, nombres de dominio y otros registros DNS.
+
+**Usos para profesionales de seguridad:**
+- Encontrar direcciones IP asociadas a nombres de dominio
+- Solucionar problemas de **conectividad de red**
+- Verificar **configuraciones de DNS**
+- Investigar **dominios potencialmente maliciosos**
+
+---
+
+#### 3. Prueba de ping
+
+**¿Qué hace?**  
+Mide el **tiempo que tarda un paquete de datos** (ping) en viajar de una computadora o servidor a otro.
+
+**Usos para profesionales de seguridad:**
+- Solucionar problemas de **rendimiento de red** o aplicaciones
+- Encontrar posibles **ralentizaciones** en una red
+
+**Disponibilidad:** Ping está disponible en Windows, Linux y macOS
+
+---
+
+#### 4. Analizador de paquetes
+
+**¿Qué hace?**  
+Captura y analiza **datos en tránsito** a través de una red. Examina cada paquete de datos que pasa, buscando posibles problemas.
+
+**También conocido como:** Rastreador de paquetes, analizador de protocolo, analizador de red
+
+**Usos para profesionales de seguridad:**
+- Observar el **comportamiento de aplicaciones o usuarios** en la red
+- Monitorear el **rendimiento de conexiones de red**
+- Detectar **actividades maliciosas** en las redes
+- Identificar **uso no autorizado** de recursos corporativos
+
+**Herramientas populares:** tcpdump, Wireshark, SolarWinds
+
+---
+
+#### 5. Traceroute
+
+**¿Qué hace?**  
+Herramienta de diagnóstico que **rastrea el camino** que siguen los paquetes de datos desde un origen a un destino a través de una red. Envía mensajes de solicitud de eco ICMP e identifica cada **salto** (parada) en el recorrido.
+
+**Información que proporciona por cada salto:**
+- Dirección IP
+- Nombre de host (si está disponible)
+- **Tiempo de ida y vuelta** (RTT) que tarda el paquete en llegar y volver
+
+**Usos para profesionales de seguridad:**
+- **Diagnosticar problemas de red**
+- Señalar dónde se están produciendo problemas (retrasos o fallos)
+
+**Disponibilidad:** Traceroute está disponible en Windows, Linux y macOS
+
+---
+
+### Resumen de herramientas
+
+| Herramienta | Función principal | Comando/Herramienta |
+|-------------|-------------------|---------------------|
+| **Escáner de red** | Detectar hosts y servicios activos | Nmap, Zenmap |
+| **nslookup** | Consultar registros DNS | nslookup |
+| **Ping** | Medir tiempo de respuesta | ping |
+| **Analizador de paquetes** | Capturar y analizar tráfico | Wireshark, tcpdump |
+| **Traceroute** | Rastrear ruta de paquetes | traceroute, tracert |
+
+> **Nota importante:** Estas herramientas son recursos valiosos para administradores de redes y seguridad, pero **los atacantes también las usan** para recopilar información sobre una red objetivo.
+
+### Reconocimiento de la red
+
+#### ¿Qué es el reconocimiento de red?
+
+El **reconocimiento de red** es el proceso de recopilar información de forma **activa o pasiva** sobre una red, sus dispositivos y sus servicios para identificar posibles vulnerabilidades.
+
+#### Analogía
+
+Es como ser **detective** y recoger **pistas** para saber más sobre una situación o una persona.
+
+#### ¿Quiénes lo utilizan?
+
+| Usuario | Propósito |
+|---------|-----------|
+| **Administradores de red** (legítimo) | Mantener sus redes **seguras** utilizando la información recopilada |
+| **Hackers** (malicioso) | Encontrar **vulnerabilidades de red** que puedan explotar |
+
+#### Tipos de reconocimiento
+
+| Tipo | Descripción |
+|------|-------------|
+| **Activo** | Interactúa directamente con la red (ej. escaneo de puertos, ping) |
+| **Pasivo** | Observa y analiza el tráfico sin interactuar (ej. análisis de paquetes) |
+
+> **Nota:** Examinar la red puede ser útil para los administradores que mantienen sus redes seguras. Desafortunadamente, **los hackers también podrían usarlo** para encontrar vulnerabilidades que puedan explotar.
+
+#### Ejercicio: Reconocimiento de red - nslookup
+
+**Escenario:**  
+En SecureFin Solutions, debes encontrar la dirección IP asociada con el nombre de dominio `securefinsolutions.org` como parte del reconocimiento de red.
+
+**Pregunta:** ¿Qué comando debes utilizar?
+
+- [x] **nslookup securefinsolutions.org**
+- [ ] ipconfig securefinsolutions.org
+- [ ] tracert securefinsolutions.org
+- [ ] ping securefinsolutions.org
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **nslookup securefinsolutions.org**. Este comando consulta el sistema de nombres de dominio (DNS) para obtener la dirección IP asociada a un nombre de dominio específico.
+
+- **nslookup** → Consulta DNS
+- **ipconfig** → Muestra configuración de red local
+- **tracert** → Rastrea ruta de paquetes
+- **ping** → Prueba conectividad
+
+</details>
+
+![imagen de la consola](/img/cmd.png)
+
+Server: modem
+Address: 192.168.0.1
+
+Non-authoritative answer:
+Name: securefinsolutions.org
+Addresses: 2600:3c01::f03c:91ff:fe18:bb2f
+          45.33.32.156
+
+ping 45.33.32.156
+
+Pinging 45.33.32.156 with 32 bytes of data:
+Reply from 45.33.32.156: bytes=32 time=25ms TTL=53
+Reply from 45.33.32.156: bytes=32 time=23ms TTL=53
+Reply from 45.33.32.156: bytes=32 time=22ms TTL=53
+Reply from 45.33.32.156: bytes=32 time=21ms TTL=53
+
+Ping statistics for 45.33.32.156:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+    Approximate round trip times in milli-seconds:
+    Minimum = 21ms, Maximum = 25ms, Average = 22ms
+
+Información obtenida:
+
+Tiempo de respuesta (RTT): entre 21ms y 25ms (milisegundos) → indica distancia y latencia de la red
+
+TTL (Time To Live): 53 → indica la cantidad de saltos (hops) que el paquete puede recorrer
+
+Pérdida de paquetes: 0% → conexión estable sin pérdidas
+
+Aprendizaje clave
+Herramienta	Propósito	Información obtenida
+nslookup	Consultar registros DNS	Dirección IP asociada a un dominio
+ping	Probar conectividad	Tiempo de respuesta, TTL, pérdida de paquetes
+Nota: Estas herramientas son útiles para administradores de red que mantienen sus redes seguras, pero también pueden ser utilizadas por atacantes para recopilar información sobre una red objetivo.
+
+### Laboratorio: Reconocimiento de red con tracert (traceroute)
+
+#### Paso 3: Rastreo de ruta con tracert
+
+Después de obtener la dirección IP con `nslookup` y verificar conectividad con `ping`, el siguiente paso es rastrear la **ruta completa** que siguen los paquetes desde tu dispositivo hasta el host destino.
+
+**Comando utilizado:**
+```cmd
+tracert 45.33.32.156
+
+Tracing route to securefinsolutions.org [45.33.32.156] over a maximum of 30 hops:
+
+1    3 ms    2 ms    <1 ms    modem [192.168.0.1]
+2    9 ms    4 ms    4 ms    tuku-dsl-gw67.tuku.qwest.net [63.231.10.67]
+3    7 ms    4 ms    5 ms    tuku-agw1.inet.qwest.net [63.226.198.17]
+4    *    *    *    Request timed out.
+5    8 ms    4 ms    4 ms    ae1.3501.ear2.Seattle1.level3.net [4.69.203.173]
+6    8 ms    4 ms    7 ms    63.214.7.42
+7    5 ms    4 ms    2 ms    ae11.r01.sea01.icn.netarch.akamai.com [23.209.163.34]
+8    22 ms    22 ms    22 ms    ae3.r01.sjc01.icn.netarch.akamai.com [23.193.112.241]
+9    22 ms    22 ms    23 ms    ae1.r12.sjc01.ien.netarch.akamai.com [23.207.232.37]
+10   23 ms    23 ms    22 ms    a23-203-158-53.deploy.static.akamaitechnologies.com
+11   *    *    *    Request timed out.
+12   *    *    *    Request timed out.
+13   *    *    *    Request timed out.
+14   27 ms    24 ms    22 ms    securefinsolutions.org [45.33.32.156]
+
+Trace complete.
+
+Información obtenida
+Dato	Valor	Significado
+Hops totales	14	Hay 14 enrutadores/conmutadores entre tu dispositivo y el destino
+Primer salto	modem [192.168.0.1]	Tu router local (puerta de enlace)
+Saltos intermedios	Nombres de dominio y direcciones IP	Cada equipo por donde viajan los paquetes
+Request timed out	* * *	Algunos saltos no responden (por configuración de firewall)
+Destino final	securefinsolutions.org [45.33.32.156]	Host alcanzado en el salto 14
+¿Qué es el tiempo de vida (TTL)?
+El TTL (Time To Live) visto en el comando ping (valor 53) indica cuántos saltos más puede viajar el paquete. Cada salto reduce el TTL en 1. El TTL inicial típico es 64 (Linux/macOS) o 128 (Windows), por lo que:
+
+TTL 53 = 64 - 11 saltos (aproximadamente)
+
+Resumen de herramientas utilizadas
+Paso	Herramienta	Comando	Información obtenida
+1	nslookup	nslookup dominio	Dirección IP del dominio
+2	ping	ping IP	Tiempo de respuesta, TTL, pérdida de paquetes
+3	tracert	tracert IP	Ruta completa de los paquetes (cada salto)
+Conclusión del laboratorio
+Con el símbolo del sistema (CLI), lograste:
+
+Recopilar información de red
+
+Identificar conexiones activas
+
+Realizar diagnósticos de la red
+
+Estos pasos son cruciales para preparar la red de SecureFin Solutions para la auditoría de seguridad.
+
+Nota: Las mismas herramientas que usan los administradores de red para mantener seguras sus redes también pueden ser utilizadas por atacantes para encontrar vulnerabilidades y planificar sus ataques.
+
+
+### Laboratorio: Escaneo de red con Zenmap (Nmap GUI)
+
+#### Paso 4: Escaneo profundo de red con Zenmap
+
+Para un escaneo más profundo de la red de SecureFin Solutions, se utiliza **Zenmap**, la interfaz gráfica oficial de **Nmap** (Network Mapper).
+
+#### ¿Qué es Nmap?
+
+**Nmap** (Network Mapper) es una herramienta de escaneo de red de código abierto que permite:
+- Descubrir **hosts** y **servicios** en una red
+- Identificar **sistemas operativos**
+- Detectar **versiones de servicios**
+- Encontrar posibles **vulnerabilidades**
+
+#### ¿Qué es Zenmap?
+
+**Zenmap** es la **interfaz gráfica (GUI) oficial** de Nmap. Facilita el uso de Nmap sin necesidad de recordar comandos complejos.
+
+---
+
+#### Instrucción del laboratorio
+
+1. Abrir **Zenmap** (Nmap GUI)
+2. En el campo **Target** (Destino), escribir: `securefinsolutions.org`
+3. Presionar **Enter** para iniciar el escaneo
+
+#### Comando equivalente en Nmap (línea de comandos)
+
+```bash
+nmap securefinsolutions.org
+
+Nota: Nmap y Zenmap son herramientas muy poderosas para el reconocimiento de red. Los administradores de seguridad las usan para identificar vulnerabilidades, pero los atacantes también las utilizan para encontrar puntos débiles en una red.
+
+⚠️ Advertencia: El escaneo de redes sin autorización puede ser ilegal. Siempre debes tener permiso explícito antes de escanear cualquier red o sistema.
+
+#### Ejercicio: Campo Target en Zenmap
+
+**Pregunta:** ¿Qué información escribes en el campo **Target** (Destino) en Zenmap para iniciar un escaneo?
+
+- [ ] El nombre del perfil de escaneo
+- [ ] Las opciones del comando de escaneo
+- [ ] La interfaz de red que se va a usar
+- [x] **La dirección web o la dirección IP del host de destino**
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **La dirección web o la dirección IP del host de destino**. El campo Target es donde se especifica el objetivo del escaneo: un dominio (ej. example.com), una dirección IP (ej. 192.168.1.1) o un rango de IPs.
+
+</details>
+
+Diferencia entre escanear una red vs. escanear un dominio
+La analogía del edificio
+Imaginá que querés inspeccionar un edificio de oficinas:
+
+Concepto	Analogía
+Escanear una red	Inspeccionar todo el edificio: todas las oficinas, todos los pisos, todas las puertas
+Escanear un dominio	Inspeccionar una oficina específica dentro del edificio (la que tiene un cartel con un nombre)
+Explicación técnica
+Escaneo	¿Qué significa?	¿Qué estás escaneando?
+Escanear un dominio (ej. securefinsolutions.org)	Le pedís a Zenmap que encuentre la dirección IP de ese dominio y luego escanee solo esa IP	Un solo servidor (el que está detrás del nombre de dominio)
+Escanear una red (ej. 192.168.1.0/24)	Le pedís a Zenmap que escanee todos los dispositivos que están dentro de ese rango de direcciones IP	Múltiples dispositivos: computadoras, celulares, impresoras, servidores, etc.
+
+nmap securefinsolutions.org
+
+Lo que pasa detrás:
+
+Nmap consulta DNS (como hizo nslookup) y encuentra que securefinsolutions.org → 45.33.32.156
+
+Nmap escanea SOLO esa dirección IP (45.33.32.156)
+
+Resultado: Información sobre un solo servidor (los puertos abiertos, servicios, etc.)
+nmap 192.168.1.0/24
+
+Lo que pasa detrás:
+
+Nmap envía paquetes a todas las IP desde 192.168.1.1 hasta 192.168.1.254
+
+Nmap descubre todos los dispositivos que responden
+
+Resultado: Lista de todos los dispositivos en la red (ej. 192.168.1.1 router, 192.168.1.10 PC de Juan, 192.168.1.20 servidor, etc.)
+
+¿Cuándo se usa cada uno?
+Situación	Tipo de escaneo	¿Por qué?
+Auditoría de seguridad externa (desde Internet)	Dominio o IP específica	Solo podés escanear lo que está expuesto públicamente (el servidor web, el mail, etc.)
+Auditoría de seguridad interna (dentro de la empresa)	Red completa	Estás dentro de la red y querés descubrir TODOS los dispositivos conectados
+Investigación de una amenaza	IP específica	Ya sabés qué IP está haciendo cosas raras y querés investigarla a fondo
+En el laboratorio de SecureFin Solutions
+El laboratorio te pidió escanear el dominio securefinsolutions.org porque:
+
+Estás haciendo una auditoría externa (desde tu computadora conectada a Internet)
+
+Solo podés acceder a lo que está público (el servidor web)
+
+No tenés acceso interno a la red privada de SecureFin
+
+En el campo Target pusiste: securefinsolutions.org (un dominio)
+
+Resultado: Nmap escaneó solo el servidor que está detrás de ese dominio.
+
+### Diferencia entre escanear una red y escanear un dominio
+
+#### Analogía del edificio
+
+- **Escanear una red** = Inspeccionar **todo el edificio** (todas las oficinas, todos los pisos)
+- **Escanear un dominio** = Inspeccionar **una oficina específica** (la que tiene un cartel con un nombre)
+
+#### Ejemplo de comandos
+
+```bash
+# Escanear un dominio (un solo servidor)
+nmap securefinsolutions.org
+
+# Escanear una red completa (todos los dispositivos en el rango 192.168.1.1 a 192.168.1.254)
+nmap 192.168.1.0/24
+¿Cuándo se usa cada uno?
+Situación	Tipo de escaneo
+Auditoría de seguridad externa (desde Internet)	Dominio o IP específica
+Auditoría de seguridad interna (dentro de la empresa)	Red completa
+Investigación de una amenaza conocida	IP específica
+En el laboratorio de SecureFin
+Se escaneó el dominio securefinsolutions.org porque:
+
+Era una auditoría externa
+
+Solo se podía acceder al servidor web público
+
+No se tenía acceso interno a la red privada
+
+Resultado: Nmap escaneó solo el servidor detrás de ese dominio.
+
+### ¿Un dominio es igual a la red interna?
+
+**NO.** Son dos cosas completamente diferentes.
+
+- **El dominio (`empresa.com`)** es la **dirección de la calle** que lleva a la **recepción** del edificio (el servidor web público).
+- **La red interna (`192.168.1.0/24`)** es **todo el interior del edificio**: oficinas, computadoras de empleados, servidores de bases de datos, impresoras.
+
+#### ¿Qué puedes ver desde afuera (escaneando el dominio)?
+Solo la **recepción** (servidor web, puertos 80/443, tal vez el correo). Todo lo demás está oculto por el firewall.
+
+#### ¿Qué puedes ver desde adentro (escaneando la red interna)?
+**TODO.** Todos los dispositivos conectados a la red local de la empresa.
+
+#### ¿Por qué los atacantes empiezan por el dominio?
+Porque el dominio es la **única puerta de entrada desde el exterior**. No pueden magicamente ver tu red interna desde su casa. Primero tienen que encontrar una vulnerabilidad en la "recepción" (el servidor web) y colarse por ahí. Una vez que están dentro, ya pueden escanear toda la red interna.
+
+### En el laboratorio de SecureFin: Escaneamos el dominio, no la red interna
+
+El laboratorio simuló un **auditor externo** (como un atacante o un hacker ético) que NO está dentro de la empresa.
+
+| Lo que hicimos | Lo que escaneamos | Por qué |
+|----------------|-------------------|---------|
+| `nslookup securefinsolutions.org` | El **dominio** | Para encontrar la IP del servidor |
+| `ping 45.33.32.156` | El **dominio** (por IP) | Para ver si responde y medir latencia |
+| `tracert 45.33.32.156` | El **dominio** (por IP) | Para ver la ruta hasta el servidor |
+| **Zenmap** con target `securefinsolutions.org` | El **dominio** | Para descubrir puertos abiertos y servicios |
+
+> **Importante:** No escaneamos la red interna (`192.168.x.x`) porque no estábamos dentro de la empresa. Desde afuera, solo se ve el dominio.
+
+### Laboratorio: Escaneo con Zenmap - Perfiles de escaneo
+
+#### Paso 5: Comprendiendo el campo Command (Comando)
+
+En Zenmap, a medida que cambias los campos **Target** (Destino) y **Profile** (Perfil), el texto en el campo **Command** (Comando) se actualiza automáticamente.
+
+> Este texto es el **comando exacto** que se ejecutaría si usaras Nmap desde la línea de comandos.
+
+#### Paso 6: Perfiles de escaneo en Zenmap
+
+Zenmap ofrece varios perfiles de escaneo según:
+- El número de puertos escaneados
+- La cantidad de información recopilada
+
+| Perfil | Descripción | Velocidad | Detalle |
+|--------|-------------|-----------|---------|
+| **Quick scan** (Escaneo rápido) | Identifica rápidamente los puertos abiertos | Muy rápida | Básica |
+| **Intense scan** (Escaneo intenso) | Escaneo detallado del sistema | Lenta | Muy detallada |
+| **Ping scan** (Escaneo de ping) | Verifica qué hosts están activos | Rápida | Mínima |
+| **Regular scan** (Escaneo regular) | Descripción general de puertos y servicios abiertos | Media | Estándar |
+
+#### Selección del perfil para evaluación inicial
+
+Para una **evaluación inicial** con el objetivo de identificar problemas inmediatos para una investigación más profunda, se selecciona:
+
+✅ **Quick scan** (Escaneo rápido)
+
+#### Configuración del escaneo
+
+| Campo | Valor |
+|-------|-------|
+| **Target** (Destino) | `securefinsolutions.org` |
+| **Profile** (Perfil) | `Quick scan` (Escaneo rápido) |
+| **Command** (Comando generado) | `nmap -T4 -A -v securefinsolutions.org` |
+
+#### Paso 7: Ejecutar el escaneo
+
+Selecciona **Scan** (Escanear) para comenzar.
+
+#### Paso 8: Resultados del escaneo
+
+El resultado enumera los **puertos interesantes** del host de destino, que incluyen:
+
+- **Puertos abiertos** → Los más susceptibles a ataques
+- **Puertos en estado inusual** para ese sistema
+
+> **Nota:** Los puertos abiertos son puertas de entrada potenciales para los atacantes. Un escaneo rápido ayuda a identificarlos rápidamente para priorizar la investigación.
+
+
+### Laboratorio: Resultados del escaneo con Zenmap (Intense scan)
+
+#### Paso 8: Escaneo intenso
+
+Después del escaneo rápido, se realiza un **escaneo intenso (Intense scan)** para obtener información más detallada del sistema objetivo.
+
+**Configuración del escaneo:**
+| Campo | Valor |
+|-------|-------|
+| **Target** | `securefinsolutions.org` |
+| **Profile** | `Intense scan` (Escaneo intenso) |
+| **Command** | `nmap -T4 -A -v securefinsolutions.org` |
+
+#### Resultados del escaneo
+
+Starting Nmap 7.94 at 2023-11-24 13:54 Pacific Standard Time
+Nmap scan report for securefinsolutions.org (45.33.32.156)
+Host is up (0.028s latency).
+Not shown: 97 closed tcp ports (reset)
+
+PORT STATE SERVICE
+22/tcp open ssh
+25/tcp filtered smtp
+80/tcp open http
+5431/tcp filtered park-agent
+9929/tcp open nping-echo
+31337/tcp open tcpwrapped
+
+
+#### Puertos encontrados
+
+| Puerto | Estado | Servicio | Información adicional |
+|--------|--------|----------|----------------------|
+| **22** | `open` | ssh | OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0) |
+| **25** | `filtered` | smtp | Filtrado (no se pudo determinar) |
+| **80** | `open` | http | Apache httpd 2.4.7 ((Ubuntu)) |
+| **5431** | `filtered` | park-agent | Filtrado |
+| **9929** | `open` | nping-echo | Nping echo |
+| **31337** | `open` | tcpwrapped | - |
+
+#### Interpretación de los colores en el panel Ports/Hosts
+
+| Color | Significado |
+|-------|-------------|
+| 🟢 **Círculo verde** | Puerto **abierto** (acepta conexiones, vulnerable potencialmente) |
+| 🔴 **Círculo rojo** | Puerto **cerrado** o Nmap no pudo determinar su estado |
+
+#### Información adicional que proporciona el escaneo intenso
+
+- **Sistema operativo** del host
+- **Versión del kernel**
+- **Resultados de traceroute**
+- **Versión de las aplicaciones** asociadas a cada puerto
+
+#### ¿Qué significa cada estado?
+
+| Estado | Descripción |
+|--------|-------------|
+| **open** (abierto) | Hay una aplicación escuchando en ese puerto. Potencial punto de entrada para ataques |
+| **filtered** (filtrado) | Un firewall o regla de filtrado está bloqueando el acceso. Nmap no puede determinar si está abierto o cerrado |
+| **closed** (cerrado) | No hay ninguna aplicación escuchando en ese puerto |
+
+#### Aprendizaje clave
+
+> Los **puertos abiertos** (como el 22 SSH y el 80 HTTP) son los más susceptibles a ataques. Un escaneo de red permite identificar estos puntos de entrada para priorizar su protección.
+
+### Laboratorio: Paneles adicionales de Zenmap - Topology y Host Details
+
+#### Paso 9: Panel Topology (Topología)
+
+El panel **Topology** (Topología) muestra la **ruta de red** desde tu computadora hasta el host de destino, e incluye **cada host encontrado en el camino**.
+
+**Información que proporciona:**
+- Visualización gráfica de la ruta de los paquetes
+- Cada nodo (enrutador, switch) en el camino
+- Relación entre los diferentes hosts
+
+#### Código de colores en Topology
+
+| Color | Significado |
+|-------|-------------|
+| 🟢 **Verde** | Host con **menos de 3 puertos abiertos** |
+| 🟡 **Amarillo** | Host con **3 a 6 puertos abiertos** |
+| 🔴 **Rojo** | Host con **más de 6 puertos abiertos** |
+| ⚪ **Blanco** | Zenmap **no escaneó** el host (estado desconocido) |
+
+> **Interpretación:** Cuantos más puertos abiertos tenga un host, más vulnerable puede ser, ya que ofrece más puntos de entrada potenciales para atacantes.
+
+#### Paso 10: Panel Host Details (Detalles del host)
+
+El panel **Host Details** (Detalles del host) incluye información detallada sobre el host de destino:
+
+| Información | Descripción |
+|-------------|-------------|
+| **Estado** | Si el host está activo (up) o inactivo (down) |
+| **Direcciones** | Dirección IPv4 (entre paréntesis en la parte superior del panel) |
+| **Nombres de host** | Nombre de dominio asociado |
+| **Sistema operativo** | SO que ejecuta el host (ej. Ubuntu Linux) |
+
+#### Resumen de los paneles de Zenmap
+
+| Panel | ¿Qué muestra? |
+|-------|----------------|
+| **Nmap Output** | Resultado completo del escaneo en texto |
+| **Ports / Hosts** | Lista de puertos con estado, servicio y versión |
+| **Topology** | Ruta gráfica desde tu PC hasta el destino |
+| **Host Details** | Información detallada del sistema operativo y direcciones |
+| **Scans** | Historial de escaneos realizados |
+
+#### Aprendizaje clave
+
+- La **topología** ayuda a entender la infraestructura de red y los puntos intermedios
+- Los **colores** permiten identificar rápidamente hosts con muchos puertos abiertos (mayor riesgo)
+- Los **detalles del host** proporcionan información crucial sobre el sistema operativo y configuraciones
+
+### Laboratorio: Reconocimiento de red con Zenmap - Finalización
+
+#### Paso 11: Interpretación del icono de vulnerabilidad
+
+Al final del escaneo, observa que el **icono junto a la línea "Último arranque"** indica una **vulnerabilidad estimada** en función del número de puertos abiertos.
+
+| Icono | Cantidad de puertos abiertos | Nivel de vulnerabilidad estimado |
+|-------|------------------------------|----------------------------------|
+| 💰 **Cofre del tesoro** | 3 o 4 puertos abiertos | Moderado (requiere atención) |
+| (Otros iconos) | Más de 4 | Mayor riesgo |
+| (Otros iconos) | Menos de 3 | Menor riesgo |
+
+#### Conclusión del laboratorio
+
+Con la información recopilada durante el reconocimiento de red, ahora puedes:
+
+- ✅ **Priorizar** el abordaje de vulnerabilidades
+- ✅ **Fortalecer las defensas** de la red
+- ✅ **Preparar la red** para la próxima auditoría de seguridad
+
+---
+
+### Resumen de herramientas utilizadas en el laboratorio
+
+| Paso | Herramienta | Comando/Acción | Información obtenida |
+|------|-------------|----------------|---------------------|
+| 1 | **CLI (cmd)** | `nslookup securefinsolutions.org` | Dirección IP del dominio (`45.33.32.156`) |
+| 2 | **CLI (cmd)** | `ping 45.33.32.156` | Tiempo de respuesta, TTL, pérdida de paquetes |
+| 3 | **CLI (cmd)** | `tracert 45.33.32.156` | Ruta completa de los paquetes (saltos) |
+| 4 | **Zenmap (Nmap GUI)** | Target: `securefinsolutions.org` | Puertos abiertos, servicios, versiones |
+| 5 | **Zenmap** | Profile: `Quick scan` | Identificación rápida de puertos abiertos |
+| 6 | **Zenmap** | Profile: `Intense scan` | Información detallada (SO, versiones, traceroute) |
+| 7 | **Zenmap** | Panel `Ports/Hosts` | Lista de puertos con estado y servicios |
+| 8 | **Zenmap** | Panel `Topology` | Ruta gráfica de red |
+| 9 | **Zenmap** | Panel `Host Details` | SO, direcciones, estado del host |
+
+---
+
+### Vulnerabilidades identificadas
+
+| Puerto | Servicio | Vulnerabilidad potencial |
+|--------|----------|-------------------------|
+| **22/tcp** | SSH (OpenSSH 6.6.1p1) | Versión antigua de OpenSSH (posibles vulnerabilidades conocidas) |
+| **80/tcp** | HTTP (Apache 2.4.7) | Servidor web expuesto, posible falta de HTTPS |
+| **9929/tcp** | nping-echo | Servicio de eco que podría ser explotado para ataques |
+| **31337/tcp** | tcpwrapped | Puerto con estado desconocido, requiere investigación |
+
+---
+
+### Recomendaciones de seguridad
+
+| Prioridad | Acción recomendada |
+|-----------|-------------------|
+| **Alta** | Actualizar OpenSSH a la última versión estable |
+| **Alta** | Implementar HTTPS en el servidor web (puerto 443) |
+| **Media** | Revisar la necesidad del puerto 9929 (nping-echo) y cerrarlo si no es necesario |
+| **Media** | Investigar el puerto 31337 (tcpwrapped) |
+| **Baja** | Revisar por qué el puerto 25 (SMTP) aparece como "filtered" |
+
+---
+
+### Habilidades desarrolladas
+
+- ✅ **Reconocimiento de red** activo y pasivo
+- ✅ Uso de herramientas de línea de comandos (`nslookup`, `ping`, `tracert`)
+- ✅ Escaneo de puertos con **Nmap / Zenmap**
+- ✅ Interpretación de resultados de escaneo
+- ✅ Identificación de **puertos abiertos y vulnerabilidades potenciales**
+- ✅ Priorización de acciones correctivas
+
+> **¡Laboratorio completado con éxito!** Ahora puedes aplicar estas técnicas para fortalecer la seguridad de redes en entornos reales (siempre con la debida autorización).
+
+### Escaneo de seguridad de red - Herramientas avanzadas de monitoreo
+
+Aunque las herramientas básicas de monitoreo de seguridad de red proporcionan alertas en tiempo real y diagnostican ralentizaciones, existen herramientas de monitoreo de red más **avanzadas** que ofrecen una visión general más amplia del rendimiento de una red.
+
+Estas herramientas:
+- **Recopilan datos** durante períodos prolongados
+- **Identifican tendencias** o problemas subyacentes
+- **Detectan problemas** sin esperar a que se active una alerta activa
+
+> Al monitorear de manera **proactiva** el rendimiento de la red, las organizaciones pueden detectar y abordar posibles problemas **antes de que causen daños importantes**.
+
+---
+
+### Herramientas y servicios avanzados de monitoreo de seguridad
+
+#### 1. IDS / IDPS (Sistema de detección / prevención de intrusiones)
+
+| Aspecto | Descripción |
+|---------|-------------|
+| **Detección** | Monitorea todo el tráfico que entra y sale de una red. Si detecta algo sospechoso, notifica al administrador |
+| **Respuesta** | IDPS actúa automáticamente: bloquea ciertas IP o cierra puertos para evitar que atacantes ingresen |
+| **Prevención** | Identifica vulnerabilidades antes de que los atacantes las exploten |
+
+---
+
+#### 2. EDR (Detección y respuesta de endpoints)
+
+| Aspecto | Descripción |
+|---------|-------------|
+| **Detección** | Monitorea endpoints (archivos, actividades de usuarios, conexiones de red, procesos, recursos del sistema) en busca de actividades sospechosas |
+| **Respuesta** | Aísla el dispositivo de la red, termina procesos maliciosos, elimina archivos maliciosos **sin intervención humana** |
+| **Prevención** | Aplica políticas de seguridad en dispositivos individuales, restringe ciertas acciones |
+
+---
+
+#### 3. SIEM (Información de seguridad y gestión de eventos)
+
+| Aspecto | Descripción |
+|---------|-------------|
+| **Detección** | Recopila y analiza datos de registros, aplicaciones, bases de datos y tráfico de red para detectar incidentes |
+| **Respuesta** | Recopila y conecta automáticamente información de múltiples fuentes para crear un panorama completo de la seguridad |
+| **Prevención** | No previene directamente. Proporciona visibilidad detallada para identificar vulnerabilidades y áreas de mejora |
+
+---
+
+#### 4. NDR (Detección y respuesta de red)
+
+| Aspecto | Descripción |
+|---------|-------------|
+| **Detección** | Monitorea el tráfico de red para detectar comportamientos inusuales usando análisis, automatización e inteligencia de amenazas |
+| **Respuesta** | Bloquea el tráfico, aísla dispositivos comprometidos, pone en cuarentena archivos maliciosos |
+| **Prevención** | La mayoría solo detectan y responden, no previenen. Es un servicio de **proveedor externo** |
+
+---
+
+#### 5. SOAR (Orquestación, automatización y respuesta de seguridad)
+
+| Aspecto | Descripción |
+|---------|-------------|
+| **Detección** | Automatiza y agiliza los procesos de respuesta a incidentes |
+| **Respuesta** | Se integra con SIEM, NDR y EDR para recopilar alertas y activar respuestas automatizadas (poner en cuarentena endpoints, bloquear tráfico malicioso) |
+| **Prevención** | No previene. Se usa para **automatizar y agilizar** la respuesta a incidentes |
+
+> Los servicios SOAR incluyen **expertos en seguridad** que ayudan a personalizar herramientas, gestionar eventos y responder a incidentes.
+
+---
+
+#### 6. MDR (Detección y respuesta administradas)
+
+| Aspecto | Descripción |
+|---------|-------------|
+| **Detección** | Combina herramientas tecnológicas + **equipo de expertos** que trabajan juntos para detectar, investigar y responder a amenazas |
+| **Respuesta** | Emplea SIEM, NDR, EDR y otras herramientas. El equipo investiga, determina causa raíz y toma medidas para contener y remediar |
+| **Prevención** | Expertos examinan alertas, identifican actividades sospechosas y enseñan a los clientes cómo estar más seguros |
+
+---
+
+### Resumen comparativo
+
+| Herramienta | Detección | Respuesta | Prevención | Tipo |
+|-------------|-----------|-----------|------------|------|
+| **IDS** | ✅ | ⚠️ (solo alerta) | ❌ | Herramienta |
+| **IDPS** | ✅ | ✅ | ✅ | Herramienta |
+| **EDR** | ✅ | ✅ (automática) | ✅ | Herramienta |
+| **SIEM** | ✅ | ✅ (recopila info) | ❌ (solo visibilidad) | Herramienta |
+| **NDR** | ✅ | ✅ | ❌ | Servicio externo |
+| **SOAR** | ✅ | ✅ (automatizada) | ❌ | Herramienta |
+| **MDR** | ✅ | ✅ | ✅ (con expertos) | Servicio externo |
+
+---
+
+### ¿Cómo se usan estas herramientas?
+
+| Necesidad de la organización | Herramientas recomendadas |
+|-----------------------------|--------------------------|
+| **Monitoreo básico de red** | IDS / IDPS |
+| **Protección de dispositivos individuales** | EDR |
+| **Análisis centralizado de logs y eventos** | SIEM |
+| **Análisis de tráfico de red** | NDR |
+| **Automatización de respuesta a incidentes** | SOAR |
+| **Equipo externo que gestione la seguridad** | MDR |
+
+> Las organizaciones pueden emplear estas herramientas **por separado o conjuntamente** según sus necesidades. Algunas usan varias herramientas para crear un sistema de seguridad integral que **detecte, prevenga y responda** a amenazas potenciales.
+
+### Monitoreo de aplicaciones
+
+#### ¿Qué es el monitoreo de aplicaciones?
+
+Las **herramientas de monitoreo de aplicaciones** son programas o sistemas de software diseñados para **identificar y reducir** posibles riesgos de seguridad y vulnerabilidades en programas y aplicaciones informáticas.
+
+**¿Qué hacen?**
+- Monitorean **activamente** el comportamiento y el rendimiento de las aplicaciones
+- Detectan cualquier **actividad sospechosa o maliciosa** que pueda comprometer la seguridad
+- Presentan la información en un **panel** o **registro** (log)
+
+---
+
+#### Beneficios del monitoreo de aplicaciones
+
+| Beneficio | Descripción |
+|-----------|-------------|
+| **Detección temprana de amenazas** | Identifican y alertan rápidamente a desarrolladores o equipos de seguridad sobre posibles violaciones, permitiendo tomar medidas inmediatas |
+| **Monitoreo en tiempo real** | Monitorean continuamente las aplicaciones, brindando información en tiempo real sobre problemas de seguridad o actividad anormal |
+| **Evaluación de vulnerabilidades** | Realizan escaneos periódicos para identificar debilidades en el código, configuraciones o dependencias de la aplicación |
+
+---
+
+#### Ejemplo industrial: TMBG Technology
+
+**Contexto:**  
+TMBG Technology desarrolla una **aplicación web** que maneja información confidencial del cliente (nombres de usuario, contraseñas, datos personales).
+
+**Acción tomada:**  
+Despliegan una **herramienta de monitoreo de aplicaciones** para garantizar la seguridad.
+
+**¿Qué monitorea la herramienta?**
+- Tráfico de red de la aplicación
+- Actividades del usuario
+- Registros del sistema (logs)
+
+**¿Qué hace cuando detecta algo sospechoso?**
+- Detecta: intentos de acceso no autorizados, transferencias de datos inusuales
+- Alerta: inmediatamente al equipo de seguridad
+- El equipo investiga, bloquea amenazas e implementa medidas de seguridad
+
+> **Resultado:** TMBG Technology puede proteger **proactivamente** sus datos de aplicaciones y clientes de posibles brechas de seguridad.
+
+---
+
+#### Ejemplos de herramientas de monitoreo de aplicaciones
+
+| Herramienta | Descripción |
+|-------------|-------------|
+| **Azure Application Insights** | Servicio de monitoreo de aplicaciones de Microsoft Azure |
+| **Splunk** | Plataforma para analizar y monitorear datos de máquinas (logs, métricas, etc.) |
+| **Dynatrace** | Monitoreo de rendimiento de aplicaciones (APM) con IA |
+| **Datadog** | Monitoreo y análisis de infraestructura y aplicaciones en la nube |
+
+> Estas herramientas brindan a las organizaciones **información en tiempo real** sobre el rendimiento de sus aplicaciones en diferentes dispositivos, redes y geografías.
+
+### Monitoreo de usuarios
+
+#### ¿Qué es el monitoreo de usuarios?
+
+A través del monitoreo de usuarios, las organizaciones **observan y analizan activamente** las acciones y comportamientos de los empleados mientras interactúan con un sistema informático o red.
+
+El monitoreo de usuarios permite a los equipos de seguridad **detectar posibles amenazas de seguridad de manera temprana**.
+
+#### Beneficios del monitoreo de usuarios
+
+| Beneficio | Descripción |
+|-----------|-------------|
+| **Detección temprana** | Al monitorear continuamente las actividades de los usuarios, los equipos de seguridad pueden identificar comportamientos anormales o sospechosos (intentos de acceso no autorizado, descargas de archivos inusuales) |
+| **Identificación de amenazas internas** | Personas autorizadas que hacen mal uso de sus privilegios. Se pueden detectar accesos no autorizados a datos o cambios no autorizados en configuraciones |
+| **Investigación de incidentes** | Los datos recopilados ayudan a comprender el alcance del incidente, evaluar el impacto e implementar medidas para contener y mitigar la filtración |
+
+---
+
+#### Ejemplo práctico de monitoreo de usuarios
+
+Una empresa tiene un **software de monitoreo de usuarios** que rastrea:
+- Uso de computadoras durante horas de trabajo
+- Actividades de los usuarios
+- Conexiones de red
+- Transferencias de archivos
+
+**Si el sistema detecta** que un empleado intenta acceder a áreas restringidas de la red sin autorización:
+1. Activa una **alerta**
+2. El equipo de seguridad **investiga**
+3. Se **bloquea** el intento de acceso no autorizado
+4. Se toman medidas (revocar privilegios, capacitación adicional)
+
+---
+
+### Herramientas UEBA (User and Entity Behavior Analytics)
+
+#### ¿Qué es UEBA?
+
+Las herramientas de **análisis de comportamiento de usuarios y entidades (UEBA)** emplean el **aprendizaje automático (machine learning)** y la **inteligencia artificial (IA)** para identificar el comportamiento inusual de los usuarios.
+
+#### ¿Qué es el análisis del comportamiento?
+
+El **análisis del comportamiento** implica rastrear y analizar patrones de comportamiento humano empleando datos como:
+- Registros de actividad del usuario
+- Tráfico de red
+- Eventos del sistema
+
+#### ¿Qué datos analizan las herramientas UEBA?
+
+| Tipo de dato | Ejemplos |
+|--------------|----------|
+| Inicios de sesión | Horarios, ubicaciones, frecuencia |
+| Hábitos de correo electrónico | Cantidad de emails, destinatarios |
+| Patrones de acceso a archivos | Qué archivos, cuándo, desde dónde |
+| Uso de aplicaciones | Qué aplicaciones, por cuánto tiempo |
+
+#### Fuentes de información para UEBA
+
+- Equipos de red
+- Firewalls
+- Bases de datos de autenticación
+- Fuentes de inteligencia de amenazas
+- Sistemas de recursos humanos (HR)
+
+---
+
+#### Ejemplo práctico de UEBA en una escuela
+
+**Contexto:**  
+Una escuela implementó una herramienta UEBA para proteger su red y los datos de los estudiantes.
+
+**Cómo funciona:**
+1. La herramienta monitorea la actividad del usuario
+2. Analiza patrones para establecer una **línea de base de comportamiento normal** para cada usuario
+
+**Escenario detectado:**
+- Un estudiante suele acceder a recursos educativos durante el **horario escolar**
+- La herramienta UEBA detecta que la cuenta está accediendo a **archivos administrativos confidenciales** a **altas horas de la noche** (sistemas inactivos)
+
+**Resultado:**
+- La herramienta alerta al departamento de TI
+- Se investiga y descubre que un **hacker** obtuvo acceso no autorizado a la cuenta del estudiante
+- El análisis de UEBA **previno una posible filtración de datos**
+
+---
+
+#### Características clave de UEBA
+
+| Característica | Descripción |
+|----------------|-------------|
+| **Adaptabilidad** | Pueden ajustar lo que buscan a medida que surgen nuevas amenazas o cambian las existentes |
+| **Actualización continua** | Se mantienen actualizadas con las últimas amenazas de seguridad |
+| **Respuesta rápida** | Responden rápidamente si se detecta una amenaza |
+
+---
+
+#### Herramientas UEBA estándar del sector
+
+| Herramienta | Descripción |
+|-------------|-------------|
+| **IBM QRadar User Behavior Analytics** | Análisis de comportamiento de usuarios integrado con QRadar SIEM |
+| **Splunk User Behavior Analytics** | Plataforma de análisis de comportamiento de Splunk |
+| **Fortinet FortiInsight** | Solución UEBA de Fortinet |
+| **Microsoft Azure ATP** | Azure Advanced Threat Protection (protección avanzada contra amenazas) |
+
+---
+
+### Resumen: Monitoreo de usuarios vs. UEBA
+
+| Aspecto | Monitoreo de usuarios tradicional | UEBA |
+|---------|----------------------------------|------|
+| **Método** | Reglas fijas (ej. "alertar si accede a X") | Aprendizaje automático (establece línea base de comportamiento normal) |
+| **Adaptabilidad** | Baja (requiere actualización manual) | Alta (se adapta automáticamente) |
+| **Detección de amenazas internas** | Limitada | Avanzada |
+| **Falsos positivos** | Pueden ser altos | Menores gracias a IA/ML |
+
+### Aspecto destacado de la gestión de carrera: Certificación CompTIA Cybersecurity Analyst (CySA+)
+
+#### Habilidades de gestión de carrera
+
+¿Estás pensando en convertirte en **analista de ciberseguridad**? Si es así, considera la certificación **CySA+ (Cybersecurity Analyst)** de CompTIA.
+
+Esta certificación demuestra a los posibles empleadores que tienes el conocimiento y las habilidades para:
+- **Monitorear y detectar** incidentes
+- **Prevenir y responder** a las amenazas
+
+#### Áreas que evalúa la certificación
+
+| Área | Descripción |
+|------|-------------|
+| **Operaciones de seguridad** | Monitoreo y gestión de operaciones de seguridad |
+| **Respuesta y gestión de incidentes** | Identificación, contención y remediación de incidentes |
+| **Gestión de vulnerabilidades** | Identificación y mitigación de vulnerabilidades |
+| **Reportes y comunicación** | Documentación y comunicación de hallazgos |
+
+#### Carreras que benefician con esta certificación
+
+Esta certificación es una excelente adición al currículum de alguien que busca ingresar a las siguientes carreras:
+
+- **Analista de seguridad de aplicaciones**
+- **Analista de inteligencia de amenazas**
+- **Analista de vulnerabilidades**
+- **Arquitecto de seguridad**
+- **Ingeniero de ciberseguridad**
+
+---
+
+### Actividad: Descubre si una certificación CySA+ es adecuada para ti
+
+**Habilidades para la inserción laboral:** Mentalidad de crecimiento, comunicación escrita
+
+#### Instrucciones
+
+1. **Explora la certificación CompTIA CySA+** (Accede al sitio oficial de CompTIA y lee la descripción general)
+2. **Reflexiona sobre si esta certificación** es algo que podría interesarte obtener
+3. **Mira el video sobre Eduardo** (transcript disponible) y reflexiona sobre qué aspectos de su historia resuenan contigo y con tu propia trayectoria profesional
+
+#### Historia de Eduardo
+
+> *"Siendo yo de la primera generación de estadounidenses en mi familia, mis padres trabajaban en tiendas minoristas para que mi hermana pudiera comer y estar lista para la escuela con tal de vernos triunfar más adelante en la vida. Mi nombre es Eduardo y soy analista de ciberseguridad."*
+
+**Aspectos destacados de su trayectoria:**
+
+- Transición del ejército a la vida civil
+- Trabajó como administrador de sistemas de TI para sistemas clasificados en la Guardia Nacional del Ejército
+- Consiguió un puesto en **Aon Cyber Solutions** como ciberasociado
+- Actualmente en proceso de convertirse en propietario de una vivienda
+
+**Impacto en su vida:**
+
+> *"Conseguir este puesto con Aon Cyber Solutions ha sido muy útil debido al **aumento salarial** que he recibido. Esta transición a TI realmente me ha ayudado a obtener un salario en el que pueda pagar las cuentas, **ahorrar dinero** y aún así tener ingresos sobrantes."*
+
+#### Preguntas para reflexionar
+
+| Pregunta | Reflexión |
+|----------|-----------|
+| ¿Qué aspectos de la historia de Eduardo resuenan contigo? | |
+| ¿Cómo se alinea su trayectoria con tu propia carrera profesional? | |
+| ¿La certificación CySA+ podría ser útil para tus objetivos? | |
+
+> **Conclusión:** La certificación CySA+ es una credencial valiosa para profesionales de ciberseguridad que buscan demostrar sus habilidades en monitoreo, detección, respuesta a incidentes y gestión de vulnerabilidades.
+
+## Resumen y previsión
+
+### Resumen de la lección
+
+En esta lección, aprendiste sobre las **herramientas de diagnóstico de red** y **monitoreo del rendimiento**.
+
+#### Puntos clave aprendidos
+
+- Exploraste diferentes **herramientas de monitoreo** y cómo las organizaciones las emplean para proteger su **infraestructura**
+- Realizaste un **reconocimiento de red** empleando herramientas de monitoreo en una simulación
+- Aprendiste cómo los **atacantes** emplean herramientas de red básicas para infiltrarse en redes de seguridad
+
+#### Herramientas utilizadas en el laboratorio
+
+| Herramienta | Propósito |
+|-------------|-----------|
+| `nslookup` | Consultar registros DNS para encontrar direcciones IP |
+| `ping` | Probar conectividad y medir tiempo de respuesta |
+| `tracert` | Rastrear la ruta de los paquetes hasta el destino |
+| **Nmap / Zenmap** | Escanear puertos, servicios y sistemas operativos |
+| **SIEM, EDR, NDR, IDS/IDPS** | Herramientas avanzadas de monitoreo de seguridad |
+
+---
+
+### Previsión
+
+**En la siguiente lección**, aprenderás sobre:
+
+- **Monitoreo de endpoints**
+- **Detección y respuesta de endpoints (EDR)**
+- Cómo las herramientas de **EDR** ayudan a las organizaciones a **gestionar y proteger los dispositivos** para prevenir y mitigar los incidentes cibernéticos de manera más efectiva
+
+### Acerca de esta lección: Monitoreo de endpoints
+
+Mantener tu información a salvo de las ciberamenazas es más importante que nunca, y es por eso que la **seguridad de los endpoints** es imprescindible.
+
+#### ¿Por qué es importante?
+
+A medida que las personas usan más **computadoras portátiles, teléfonos inteligentes y tabletas**, se ponen en riesgo a sí mismas y a sus empresas al **no proteger sus dispositivos y sistemas**.
+
+#### ¿Cómo ayudan las herramientas de monitoreo?
+
+Las herramientas de **monitoreo, gestión y EDR de endpoints** pueden ayudar a **prevenir los ataques antes de que sucedan**, lo que facilita la protección de los **datos confidenciales**.
+
+#### En esta lección aprenderás
+
+- **Monitoreo y gestión de endpoints**
+- **EDR** (Detección y respuesta de endpoints)
+- Cómo las herramientas de **EDR** pueden:
+  - **Detectar amenazas** de forma proactiva
+  - **Prevenir incidentes** cibernéticos
+  - **Permitir una respuesta más rápida** a incidentes
+  - **Simplificar la gestión** de endpoints
+
+### ¿Qué es el monitoreo de endpoints?
+
+#### Analogía
+
+El monitoreo de endpoints es como tener un **guardia de seguridad en la puerta principal** de una casa, quien vigila a las personas malas que intentan entrar. El guardia vigila la puerta **todo el tiempo** para asegurarse de que la casa esté segura.
+
+> Del mismo modo, el monitoreo de endpoints es una forma en que las compañías **vigilan continuamente** los dispositivos para mantenerlos a salvo de ciberataques.
+
+---
+
+#### ¿Qué son los endpoints?
+
+Los **endpoints** son dispositivos **físicos o virtuales** conectados a una red y que se comunican a través de ella. Estos dispositivos sirven como **puntos de inicio y final** para el flujo de datos.
+
+**Ejemplos de endpoints:**
+- Computadoras portátiles (laptops)
+- Estaciones de trabajo (PC de escritorio)
+- Teléfonos móviles y tabletas
+- Servidores
+
+> Si alguna vez conectaste tu dispositivo al wifi de tu trabajo o escuela, **has usado un endpoint**.
+
+---
+
+#### Beneficios del monitoreo de endpoints
+
+| Beneficio | Descripción |
+|-----------|-------------|
+| **Visibilidad** | Proporciona visibilidad de la actividad en los endpoints |
+| **Detección rápida** | Permite una rápida detección de incidentes de seguridad |
+| **Respuesta rápida** | Permite una rápida respuesta a incidentes de seguridad |
+| **Registros detallados** | Proporciona registros detallados de eventos de seguridad y acciones de respuesta |
+
+---
+
+### Gestión de endpoints vs. Respuesta de endpoints
+
+| Aspecto | Gestión de endpoints | Respuesta de endpoints |
+|---------|---------------------|----------------------|
+| **Enfoque** | **Proactivo** (prevenir incidentes) | **Reactivo** (reaccionar y mitigar incidentes en curso) |
+| **Objetivo** | Mantener la seguridad de los endpoints | Minimizar el impacto de un ataque |
+
+#### Gestión de endpoints
+
+Se refiere al **monitoreo, seguridad y control** de los numerosos endpoints conectados a una red.
+
+**Acciones que implica:**
+- Implementar medidas de seguridad para proteger los endpoints
+- Gestionar **actualizaciones de software y parches**
+- Garantizar el **cumplimiento** de las políticas y regulaciones de la organización
+
+#### Respuesta de endpoints
+
+Es la capacidad de **detectar y responder** ante las amenazas que afectan a los endpoints de la red.
+
+**Herramientas utilizadas:**
+- Software antimalware
+- Sistemas de detección de intrusiones (IDS)
+- Firewalls
+- Herramientas **EDR** (Detección y respuesta de endpoints)
+
+> **Nota:** Un **IDS** (Sistema de Detección de Intrusiones) es un software que detecta automáticamente la actividad maliciosa al monitorear y analizar el tráfico de la red.
+
+---
+
+### Plan de respuesta ante incidentes
+
+Un **plan de respuesta ante incidentes** describe los pasos que los equipos de seguridad deben seguir para **contener y eliminar la amenaza** cuando se detecta una amenaza en un endpoint.
+
+**Objetivos del plan:**
+- **Minimizar el impacto** del incidente
+- **Reducir el riesgo** de pérdida o robo de datos
+- **Aislar** el endpoint infectado
+- **Prevenir la propagación** de la infección
+
+> El uso de herramientas **EDR** es una parte importante de un plan de respuesta a incidentes. Disponer de las herramientas EDR adecuadas puede suponer una **gran diferencia** a la hora de detectar y eliminar amenazas.
+
+### Beneficios de las herramientas de EDR
+
+Las herramientas de **EDR** ayudan a las empresas a mantener su red segura, incluso si ya tienen muchas medidas de seguridad implementadas.
+
+#### ¿Por qué se necesitan herramientas EDR?
+
+Aunque las medidas de seguridad tradicionales, como los **firewalls**, ayudan a proteger contra amenazas conocidas, **no pueden detectar y prevenir amenazas nuevas o avanzadas**.
+
+> Una herramienta **EDR** proporciona esa **capa adicional de seguridad**.
+
+---
+
+#### Beneficios clave de EDR
+
+| Beneficio | Descripción |
+|-----------|-------------|
+| **Detección proactiva** | Usa algoritmos avanzados para detectar e identificar de forma proactiva amenazas cibernéticas **sofisticadas** que pueden pasar inadvertidas por las medidas de seguridad básicas |
+| **Respuesta rápida** | Proporciona **alertas en tiempo real**, lo que permite tiempos de respuesta a incidentes más rápidos. Ayuda a mitigar el impacto de los ataques y reduce el tiempo de identificación y contención |
+| **Gestión eficiente de endpoints** | Simplifica la gestión de endpoints a través de una **plataforma centralizada** o panel de control para monitorear, analizar y administrar endpoints. También garantiza el **cumplimiento** de políticas y regulaciones de seguridad |
+
+---
+
+#### Beneficio 1: Detección proactiva
+
+- Las herramientas EDR **siempre están ejecutándose**
+- Pueden detectar amenazas en **tiempo real**
+- Añaden una **capa de seguridad** contra los ciberataques
+
+---
+
+#### Beneficio 2: Respuesta rápida
+
+- Alertas **en tiempo real** al equipo de seguridad
+- **Mitigan el impacto** de los ataques
+- **Reducen el tiempo** para identificar y contener amenazas
+
+---
+
+#### Beneficio 3: Gestión eficiente de endpoints
+
+- Plataforma **centralizada** (panel de control único)
+- Monitoreo, análisis y administración de endpoints
+- Garantiza el **cumplimiento** de políticas y regulaciones de seguridad
+
+---
+
+### Resumen comparativo
+
+| Característica | Seguridad tradicional (firewalls, antivirus) | EDR |
+|----------------|---------------------------------------------|-----|
+| **Detección de amenazas conocidas** | ✅ Sí | ✅ Sí |
+| **Detección de amenazas nuevas/avanzadas** | ❌ Limitada | ✅ Sí (con algoritmos avanzados) |
+| **Monitoreo en tiempo real** | ❌ No siempre | ✅ Sí (24/7) |
+| **Respuesta automatizada** | ❌ No | ✅ Sí |
+| **Visibilidad centralizada** | ❌ Limitada | ✅ Sí (panel unificado) |
+
