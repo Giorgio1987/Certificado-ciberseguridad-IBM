@@ -1530,7 +1530,7 @@ La respuesta correcta es **Jefe de equipo SOC**. Este rol lidera el equipo, prio
 
 </details>
 
-## Módulo 11: Monitoreo de Seguridad
+## Módulo 10: Monitoreo de Seguridad
 
 ### Acerca de este módulo
 
