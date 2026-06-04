@@ -2822,3 +2822,2108 @@ Aunque las medidas de seguridad tradicionales, como los **firewalls**, ayudan a 
 | **Respuesta automatizada** | ❌ No | ✅ Sí |
 | **Visibilidad centralizada** | ❌ Limitada | ✅ Sí (panel unificado) |
 
+### Gestión de endpoints con herramientas de EDR
+
+Ahora que sabes por qué las herramientas de EDR son importantes, aprenderás **cómo las usan los equipos de seguridad** para detectar y responder a las amenazas.
+
+---
+
+### Pasos para gestionar endpoints con una herramienta de EDR
+
+**Escenario:** Eres un profesional de seguridad de TMBG Technology, responsable de configurar y gestionar la nueva herramienta EDR de tu compañía.
+
+---
+
+#### Paso 1: Instalar
+
+**¿Qué haces?**  
+Instalas **agentes** en cada dispositivo endpoint, incluyendo:
+- Computadoras portátiles (laptops)
+- Computadoras de escritorio
+- Servidores
+- Dispositivos móviles
+
+> **¿Qué es un agente?**  
+> Un **agente** es una aplicación instalada en un endpoint que **recopila y analiza** los datos relacionados con la seguridad del dispositivo.
+
+---
+
+#### Paso 2: Conectar
+
+**¿Qué haces?**  
+Gestionas los agentes a través de una **consola de gestión centralizada**:
+- Monitoreas la actividad en todos los endpoints a través del **panel**
+- Analizas los datos con el **motor de analytics**
+- El agente envía datos al **sistema EDR** para su análisis
+
+---
+
+#### Paso 3: Identificar
+
+**¿Qué haces cuando se detecta una amenaza?**  
+Después de que un agente identifica una actividad maliciosa:
+
+1. **Aíslas** el dispositivo afectado de la red
+2. **Bloqueas** el proceso o aplicación maliciosa
+3. **Terminas** el proceso malicioso
+4. **Eliminas o pones en cuarentena** los archivos sospechosos para análisis posterior
+5. **Alertas** al equipo de seguridad
+6. **Activas** el proceso de respuesta a incidentes
+
+---
+
+#### Paso 4: Mapeo
+
+**¿Qué haces?**  
+Con el panel de EDR, **mapeas la secuencia de ataque** con algoritmos avanzados basados en servicios y procesos ejecutados durante todo el ataque.
+
+Luego, conviertes el mapeo en una **representación visual** que ilustra la **secuencia de eventos**.
+
+---
+
+#### Paso 5: Analizar
+
+**¿Qué haces?**  
+Recibes una alerta que te indica que revises el mapeo. Si es necesario:
+- **Investigas** el incidente más a fondo
+- **Bloqueas** la actividad
+- **Mitigas** cualquier daño que el incidente ya causó
+
+---
+
+### Beneficio adicional: Detección de amenazas internas
+
+> Las herramientas EDR proporcionan **información valiosa** sobre las actividades de los **usuarios privilegiados**, lo que te permite detectar posibles **amenazas internas** antes de que se conviertan en problemas graves.
+
+---
+
+### Cómo seleccionar una herramienta EDR
+
+Para seleccionar una herramienta EDR eficaz, una organización debe considerar lo que funciona mejor para sus **propósitos y objetivos comerciales**.
+
+#### Características a considerar
+
+| Característica | Descripción |
+|----------------|-------------|
+| **Precio** | Costo de la herramienta y su mantenimiento |
+| **Escalabilidad** | Capacidad de crecer con la organización |
+| **Compatibilidad con la nube** | Si funciona en entornos de nube |
+| **Opciones de soporte** | Soporte técnico disponible |
+| **Compatibilidad con herramientas existentes** | Integración con soluciones de seguridad actuales |
+| **Integración perfecta** | Adaptación a la infraestructura existente |
+
+---
+
+### Resumen del proceso EDR
+
+| Paso | Acción | Resultado |
+|------|--------|-----------|
+| **1. Instalar** | Instalar agentes en endpoints | Datos de seguridad recopilados |
+| **2. Conectar** | Gestionar agentes desde consola central | Monitoreo y análisis continuo |
+| **3. Identificar** | Detectar actividad maliciosa | Aislamiento y contención |
+| **4. Mapear** | Visualizar secuencia de ataque | Comprensión del ataque |
+| **5. Analizar** | Investigar y mitigar | Resolución del incidente |
+
+---
+
+> Elegir la herramienta EDR adecuada es **esencial** para mejorar la seguridad y la tranquilidad. Las herramientas EDR ayudan a las organizaciones a:
+> - Proteger los endpoints
+> - Detectar amenazas avanzadas
+> - Usar potentes motores de análisis y algoritmos de **aprendizaje automático (machine learning)**
+> - Descubrir actividades sospechosas
+> - Permitir **respuestas rápidas** a las amenazas
+
+### Características importantes de una herramienta EDR
+
+Según Sam Hector del equipo de Seguridad de IBM, una herramienta EDR efectiva debe hacer **cuatro cosas realmente bien**:
+
+---
+
+#### 1. Recopilar datos de seguridad de los endpoints
+
+**¿Cómo lo hace?**  
+Mediante un **agente**: una pequeña aplicación ligera que se ejecuta en cada dispositivo.
+
+**¿Qué recopila?**  
+- Información de telemetría relevante para la seguridad
+- Qué **procesos** se están ejecutando
+- A qué **servidores** se están conectando
+- A qué **archivos** se está accediendo
+- Y mucha más información útil para detectar amenazas
+
+**Beneficio adicional:**  
+El agente puede recopilar datos incluso cuando el endpoint **no está conectado a Internet**, y los datos se usan para **análisis forense** e **investigación** después de un ataque.
+
+---
+
+#### 2. Detectar y responder a amenazas en tiempo real y de forma automática
+
+Lo hace de **dos formas principales**:
+
+##### a) Para amenazas ya conocidas (IOC - Indicadores de peligro)
+
+| Concepto | Explicación |
+|----------|-------------|
+| **IOC** (Indicator of Compromise) | Huella digital única de un fragmento de malware |
+| **Analogía** | Un portero de club nocturno que niega la entrada a una lista de delincuentes conocidos |
+
+> Tradicionalmente, esto es lo que hacían los **antivirus**.
+
+##### b) Para amenazas nuevas o sin archivos (fileless attacks)
+
+| Problema | Solución EDR |
+|----------|--------------|
+| Amenazas que **nunca se vieron antes** | Usa **algoritmos avanzados** para buscar **comportamientos** sospechosos, no solo firmas |
+| Ataques **sin archivos** (no descargan malware, no dejan rastro) | Detecta **tácticas y técnicas** similares a ataques conocidos |
+
+**Ejemplo práctico:**  
+Un malware se oculta en el código de macro de un archivo de Microsoft Office. Una herramienta EDR puede detectar cuándo Excel intenta **alterar la configuración de seguridad del sistema** (algo que normalmente nunca necesitaría hacer) y **bloquear el intento** antes de que tenga éxito.
+
+---
+
+#### 3. Habilitar la investigación forense y la caza de amenazas
+
+**¿Por qué es necesario?**  
+> Ninguna herramienta de EDR detendrá el **100% de los ataques**.
+
+**¿Qué hace EDR al respecto?**
+- Captura **mucha información relevante** para la seguridad
+- Ayuda a los equipos de seguridad a **comprender cómo los ataques tuvieron éxito**
+- Permite **cambiar el enfoque** para garantizar que los ataques se detecten y bloqueen en el futuro
+- Permite actividades de **caza de amenazas** (threat hunting): investigar **proactivamente** todos los endpoints a la vez para detectar la presencia de nuevas amenazas que aún no se han detectado automáticamente
+
+---
+
+#### 4. Integrar y generar informes
+
+##### Para analistas de seguridad:
+- Debe integrarse en su **flujo de trabajo existente**
+- Debe ayudar a **priorizar incidentes** urgentes
+- Presentar toda la información relevante en una **interfaz fácil de usar**
+- Hablar el mismo idioma que otras herramientas (ej. usando el marco **MITRE ATT&CK**)
+
+##### Para equipos de seguridad:
+- Debe integrarse con todas las **capacidades existentes**
+- Alimentar telemetría adicional a plataformas de gestión (SIEM, SOAR, XDR)
+
+##### Para reportes:
+- Informar sobre el **tiempo medio de respuesta** (MTTR - Mean Time to Respond)
+- Informar sobre el **cumplimiento** de marcos regulatorios
+
+---
+
+### Características adicionales de las mejores herramientas EDR
+
+Según el video, las mejores herramientas EDR (como ReaQta de IBM) deben tener:
+
+| Característica | Descripción |
+|----------------|-------------|
+| **Alta resistencia a ataques** | Ser **invisibles e inaccesibles** para el malware que se ejecuta en el sistema operativo |
+| **IA avanzada** | Aprender de decisiones pasadas de los analistas y recomendar automatización para reducir la carga de trabajo **(hasta 80% menos)** |
+| **Capacidades de inicio de sesión eficientes** | Usar la menor cantidad de datos posible para **ahorrar ancho de banda** |
+| **Múltiples modelos de despliegue** | SaaS, on-premise (local), incluso entornos **air-gapped** (sin conexión a Internet) |
+
+---
+
+### Resumen: Las 4 capacidades clave de EDR
+
+| # | Capacidad | Descripción |
+|---|-----------|-------------|
+| 1 | **Recopilación de datos** | Agentes ligeros recopilan telemetría incluso offline |
+| 2 | **Detección y respuesta en tiempo real** | IOC para amenazas conocidas + algoritmos para amenazas nuevas |
+| 3 | **Investigación forense y caza de amenazas** | Análisis post-ataque y búsqueda proactiva |
+| 4 | **Integración y reportes** | Flujo de trabajo unificado, priorización, cumplimiento |
+
+---
+
+> **Conclusión:** Una buena herramienta EDR no solo detecta amenazas conocidas, sino que usa **IA y algoritmos avanzados** para identificar comportamientos sospechosos, permite **investigación forense**, se **integra** con otras herramientas y **reduce la carga de trabajo** de los analistas.
+
+Características esenciales de una herramienta EDR
+1. Recopilación de datos mediante agentes ligeros
+¿Qué debe hacer?
+Instalar pequeños agentes en cada endpoint (laptops, servidores, móviles) que recopilen datos de seguridad incluso cuando el dispositivo no está conectado a Internet.
+
+¿Qué datos recopila?
+
+Procesos que se ejecutan
+
+Conexiones a servidores
+
+Archivos a los que se accede
+
+Actividad de usuarios
+
+Por qué es importante: Permite análisis forense e investigación después de un ataque.
+
+2. Detección en tiempo real (no solo por firmas)
+¿Qué debe hacer?
+Detectar amenazas de dos formas:
+
+Tipo de amenaza	Método de detección
+Amenazas conocidas	Usar IOC (Indicadores de compromiso) - como una lista negra de malware conocido
+Amenazas nuevas o sin archivos	Usar algoritmos avanzados e IA para detectar comportamientos sospechosos
+Por qué es importante: Los antivirus tradicionales solo detectan lo conocido. EDR debe detectar lo nuevo y lo evasivo.
+
+3. Respuesta automática en tiempo real
+¿Qué debe hacer?
+Cuando detecta una amenaza, debe poder:
+
+Aislar el endpoint infectado de la red
+
+Bloquear el proceso malicioso
+
+Terminar la ejecución del malware
+
+Poner en cuarentena archivos sospechosos
+
+Por qué es importante: La respuesta automática reduce el tiempo de exposición y no depende de que un analista esté disponible.
+
+4. Capacidades de investigación forense y caza de amenazas
+¿Qué debe hacer?
+
+Permitir a los analistas investigar cómo ocurrió un ataque
+
+Habilitar búsqueda proactiva de amenazas (threat hunting) en todos los endpoints simultáneamente
+
+Por qué es importante: Ninguna herramienta detiene el 100% de los ataques. Hay que poder aprender de los fallos y buscar activamente lo que aún no se detectó automáticamente.
+
+5. Integración con otras herramientas y reportes
+¿Qué debe hacer?
+
+Integrarse con SIEM, SOAR y XDR
+
+Usar lenguaje común (ej. MITRE ATT&CK)
+
+Ayudar a priorizar incidentes (no inundar con alertas falsas)
+
+Generar reportes de tiempo de respuesta y cumplimiento normativo
+
+Por qué es importante: Los analistas ya están sobrecargados de alertas. La herramienta debe ayudar, no empeorar el problema.
+
+6. IA avanzada y reducción de carga de trabajo
+¿Qué debe hacer?
+
+Aprender de las decisiones pasadas de los analistas
+
+Recomendar automatización para alertas recurrentes
+
+Reducir la carga de trabajo del analista en hasta un 80%
+
+Por qué es importante: El talento en ciberseguridad es escaso. La herramienta debe multiplicar la eficiencia del equipo.
+
+7. Flexibilidad de despliegue
+¿Qué debe ofrecer?
+
+Múltiples modelos de despliegue:
+
+SaaS (nube)
+
+On-premise (local)
+
+Air-gapped (sin conexión a Internet, para entornos críticos)
+
+Por qué es importante: Cada organización tiene diferentes requisitos de seguridad y cumplimiento.
+
+8. Resistencia a ataques (ser invisible para el malware)
+¿Qué debe hacer?
+La herramienta EDR debe ser invisible e inaccesible para el malware que se ejecuta en el sistema operativo.
+
+Por qué es importante: Si el malware puede detectar o desactivar la herramienta EDR, la protección falla.
+
+Tabla resumen: Características clave de EDR
+Característica	¿Qué debe hacer?	¿Por qué es importante?
+Agentes ligeros	Recopilar datos incluso offline	Análisis forense post-ataque
+Detección en tiempo real	Firmas + comportamiento + IA	Detecta amenazas conocidas Y nuevas
+Respuesta automática	Aislar, bloquear, terminar	Reduce tiempo de exposición
+Investigación forense	Analizar cómo ocurrió el ataque	Aprender de los fallos
+Caza de amenazas	Buscar proactivamente	Encontrar lo que la automatización no detectó
+Integración	Con SIEM, SOAR, MITRE ATT&CK	Flujo de trabajo unificado
+IA y automatización	Reducir carga de trabajo (hasta 80%)	Multiplicar eficiencia del equipo
+Flexibilidad	SaaS, on-prem, air-gapped	Adaptarse a cada entorno
+Resistencia	Ser invisible al malware	Que el atacante no pueda desactivarla
+En resumen: La mejor herramienta EDR no solo detecta lo conocido, sino que usa IA y comportamiento para encontrar lo nuevo, responde automáticamente, integra con otras herramientas y reduce drásticamente la carga de trabajo de los analistas.
+
+### Laboratorio: Nexa Motors - Implementación de herramienta EDR
+
+#### Escenario
+Como gerente de TI de Nexa Motors, soy responsable de proteger nuestros endpoints. Recientemente experimentamos múltiples ataques e implementamos una herramienta EDR. Tu trabajo es ayudarnos a gestionar y monitorear la herramienta EDR para proteger nuestros endpoints.
+
+---
+
+### Pregunta 1: Herramientas de seguridad complementarias
+
+**Pista:** Para implementar la herramienta EDR de manera efectiva, primero debes instalar otras tres herramientas de seguridad en todos los endpoints. Estas herramientas deben trabajar juntas para detectar y bloquear software malicioso, tráfico de red no autorizado y otras amenazas cibernéticas.
+
+**¿Cuáles son las tres herramientas que necesitas?**
+
+- ✅ **Antivirus** - Detecta y bloquea software malicioso
+- ✅ **IDS** (Sistema de Detección de Intrusiones) - Detecta tráfico de red no autorizado
+- ❌ Enrutador - Es hardware de red, no una herramienta de seguridad de endpoint
+- ❌ VPN - Es para comunicación segura, no para detección de amenazas
+- ✅ **Firewall** - Controla el tráfico de red entrante y saliente
+
+---
+
+### Pregunta 2: Software necesario para EDR
+
+**Pista:** Para que la herramienta EDR funcione a pleno rendimiento, debes instalar un software especial en todos los dispositivos. Con este software instalado en los endpoints, la herramienta EDR puede monitorear y gestionarlos eficazmente.
+
+**¿Cómo se denomina el software que debes instalar en cada endpoint?**
+
+- ❌ Firewall
+- ❌ Software antivirus
+- ✅ **Agente**
+- ❌ Sistema operativo
+
+> **Explicación:** Un **agente** es una pequeña aplicación ligera que se ejecuta en cada endpoint y permite la recopilación de datos, detección y respuesta, incluso cuando el endpoint no está conectado a Internet.
+
+---
+
+### Pregunta 3: Elementos para configurar lineamientos y protocolos
+
+**Pista:** Hay dos elementos importantes que debes configurar para implementar la herramienta EDR. Necesitas estos elementos para establecer lineamientos y protocolos específicos sobre cómo debe detectar y responder la herramienta a las amenazas.
+
+**¿Cuáles son los dos elementos descritos?**
+
+- ✅ **Políticas** - Definen los lineamientos generales de seguridad
+- ❌ Acceso de usuarios
+- ❌ Responsabilidades
+- ✅ **Reglas** - Especifican cómo detectar y responder a amenazas específicas
+
+---
+
+### Pregunta 4: Capacidades esenciales para detectar y responder
+
+**Pista:** Hay dos capacidades que son esenciales para detectar y responder a posibles ciberamenazas. Para configurar estas capacidades, debes configurar herramientas y ajustes específicos para rastrear actividades sospechosas y recibir alertas en tiempo real.
+
+**¿Cuáles son las dos capacidades descritas?**
+
+- ✅ **Monitoreo** - Rastrear actividades sospechosas en endpoints
+- ❌ Gestión
+- ✅ **Alerta** - Recibir notificaciones en tiempo real cuando se detectan amenazas
+- ❌ Configuración
+
+---
+
+### Pregunta 5: Plan para responder a ciberataques
+
+**Pista:** En caso de un ciberataque, se necesita un plan para responder de forma rápida y eficaz. Este plan debe incluir medidas para identificar y contener la amenaza, notificar a las partes apropiadas y restaurar los sistemas.
+
+**¿Cómo se llama el plan?**
+
+- ❌ Plan de actualización de contraseñas
+- ❌ Plan de actualización de software
+- ✅ **Plan de respuesta a incidentes**
+- ❌ Plan de copia de seguridad del sistema
+
+> **Explicación:** Un **plan de respuesta a incidentes** describe los pasos que los equipos de seguridad deben seguir para contener y eliminar la amenaza cuando se detecta en un endpoint.
+
+---
+
+### Pregunta 6: Tipos de alertas para monitoreo
+
+**Pista:** No puedes monitorear todos los endpoints todo el tiempo, pero la herramienta EDR puede ayudarte al proporcionarte alertas en tiempo real. Puedes detectar amenazas potenciales de forma temprana configurando dos tipos de alertas.
+
+**¿Cuáles son los dos tipos de alertas?**
+
+- ❌ Actualizaciones sobre phishing
+- ✅ **Inicios de sesión inusuales** - Ej. accesos fuera de horario o desde ubicaciones extrañas
+- ✅ **Modificaciones de archivos** - Ej. cambios no autorizados en archivos sensibles
+- ❌ Restablecimiento de contraseña
+- ❌ Automático
+
+---
+
+### Resumen de respuestas
+
+| Pregunta | Respuesta |
+|----------|-----------|
+| 1. Tres herramientas complementarias | **Antivirus, IDS, Firewall** |
+| 2. Software para instalar en cada endpoint | **Agente** |
+| 3. Elementos para lineamientos y protocolos | **Políticas y Reglas** |
+| 4. Capacidades esenciales | **Monitoreo y Alerta** |
+| 5. Plan para responder a ataques | **Plan de respuesta a incidentes** |
+| 6. Tipos de alertas | **Inicios de sesión inusuales y Modificaciones de archivos** |
+
+## Resumen y previsión
+
+### Resumen de la lección
+
+En esta lección, aprendiste sobre el **monitoreo de endpoints** y las herramientas **EDR**.
+
+#### Puntos clave aprendidos
+
+| Concepto | Descripción |
+|----------|-------------|
+| **Gestión de endpoints** | Vigilar y mantener todos los dispositivos conectados a una red **libres de amenazas** para detener los incidentes de seguridad |
+| **Respuesta de endpoints** | Reaccionar **rápidamente** y solucionar problemas que ya ocurrieron en estos dispositivos |
+| **Herramientas EDR** | Detectar y detener ataques dañinos **antes de que comiencen**, ayudar a responder a incidentes más rápido y facilitar la administración de todos estos dispositivos |
+
+---
+
+### Previsión
+
+**En la siguiente lección**, aprenderás sobre:
+
+- **SIEM** (Gestión de eventos e información de seguridad)
+- Los **beneficios** de usar una plataforma SIEM
+- Cómo realizar una **investigación de amenazas** con la herramienta SIEM **Splunk**
+
+### Acerca de esta lección: Información de seguridad y gestión de eventos (SIEM)
+
+#### ¿Cómo ayuda SIEM a mantener a las organizaciones a salvo de los ciberataques?
+
+Imagina las herramientas **SIEM** como un **guardia vigilante** que:
+- **Recopila información**
+- **Detecta amenazas**
+- **Responde a incidentes**
+- **Mantiene estables** las funciones de seguridad
+
+#### Analogía
+
+> Al igual que un **sistema de seguridad en el hogar** que alerta si alguien intenta entrar, las herramientas SIEM ayudan a las organizaciones a **fortalecer sus defensas** y mantener un paso por delante de posibles atacantes.
+
+#### En esta lección aprenderás
+
+- Cómo las herramientas **SIEM** ayudan a las organizaciones a **monitorear, identificar y resolver** amenazas
+- Los **beneficios** de las herramientas SIEM
+- Cómo las herramientas SIEM respaldan la **investigación y respuesta a incidentes**
+
+### ¿Qué es la gestión de eventos e información de seguridad (SIEM)?
+
+#### Analogía: SIEM como la sala de control de un aeropuerto
+
+Piensa en **SIEM** como en la **sala de control central** de un bullicioso aeropuerto.
+
+La sala de control es un lugar **centralizado** para monitorear y gestionar todas las actividades del aeropuerto. Los operadores miran varias pantallas que muestran información en **tiempo real**, como:
+- Imágenes de vigilancia
+- Estado de los vuelos
+- Actividades de los pasajeros
+
+---
+
+#### Definición
+
+> **SIEM** (Security Information and Event Management) es una solución de seguridad que ayuda a las organizaciones a **reconocer y abordar** posibles amenazas y vulnerabilidades de seguridad antes de que tengan la oportunidad de interrumpir las operaciones comerciales.
+> 
+> *– Fuente: IBM*
+
+---
+
+#### ¿Qué hace SIEM?
+
+| Función | Descripción |
+|---------|-------------|
+| **Identificar** | Actúa como operadores de sala de control que identifican posibles amenazas y actividades sospechosas |
+| **Analizar** | Analiza activamente los datos recopilados para detectar **anomalías, patrones e incidentes de seguridad** |
+| **Monitorear** | Monitorea continuamente la red en busca de señales de **acceso no autorizado, malware u otras actividades maliciosas** |
+| **Alertar** | Proporciona información y alertas para que las organizaciones tomen medidas adecuadas |
+
+---
+
+#### ¿Con quién trabaja SIEM?
+
+SIEM trabaja con:
+
+| Recurso | Rol |
+|---------|-----|
+| **Equipos de respuesta** | Responden a incidentes detectados |
+| **Analistas de seguridad** | Investigan y analizan amenazas |
+| **Otras herramientas de seguridad** | Se integran para una visión completa |
+
+---
+
+#### Beneficio clave
+
+> Al igual que la sala de control de un aeropuerto, SIEM proporciona una **visión centralizada** de todos los eventos de seguridad y ayuda a las organizaciones a **identificar y responder rápidamente** a las amenazas.
+
+#### Analogía final
+
+| Aeropuerto | SIEM |
+|------------|------|
+| Torre de control | Consola central de SIEM |
+| Operadores | Analistas de seguridad |
+| Mantener aviones y pasajeros seguros | Mantener la organización segura y protegida |
+
+### Beneficios de las herramientas SIEM
+
+#### ¿Qué es la postura de seguridad?
+
+La **postura de seguridad** se refiere al **estado general de seguridad** de una organización en sus sistemas de información y redes. Es una medida de **cuán preparada** está la organización para los ciberataques.
+
+---
+
+#### Beneficios clave del uso de herramientas SIEM
+
+| Beneficio | Descripción |
+|-----------|-------------|
+| **Detección de amenazas** | Mejora la detección de incidentes en **tiempo real** mediante el análisis y correlación de datos de múltiples fuentes (registros de eventos, firewalls, aplicaciones). Ayuda a responder más rápido a incidentes |
+| **Respuesta a incidentes** | Proporciona **alertas en tiempo real** y **respuestas automatizadas**. Reduce el tiempo de investigación y resolución, minimizando el impacto y la probabilidad de violaciones de datos |
+| **Cumplimiento normativo** | Ayuda a cumplir con regulaciones como **GDPR** e **HIPAA** mediante capacidades integradas de reportes de cumplimiento. Protege información personal y evita sanciones costosas |
+| **Vista centralizada** | Proporciona una **visión centralizada** de eventos de seguridad de múltiples fuentes. Ayuda a identificar **tendencias y patrones** para informar tácticas de defensa y prevenir incidentes futuros |
+| **Automatización de la seguridad** | Ahorra dinero **automatizando tareas** y reduciendo la intervención manual. **Prioriza amenazas** para que los equipos se enfoquen en incidentes de alta prioridad |
+
+---
+
+#### Resumen visual de beneficios
+┌─────────────────────────────────────────────────────────────────┐
+│ BENEFICIOS DE SIEM │
+├─────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
+│ │ Detección │ │ Respuesta │ │ Cumplimiento│ │
+│ │ de amenazas │ │ a incidentes │ │ normativo │ │
+│ └──────────────┘ └──────────────┘ └──────────────┘ │
+│ │
+│ ┌──────────────┐ ┌──────────────┐ │
+│ │ Vista │ │ Automatización│ │
+│ │ centralizada │ │ de seguridad │ │
+│ └──────────────┘ └──────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────┘
+
+
+---
+
+#### En resumen
+
+Las herramientas SIEM brindan una **variedad de beneficios** a las organizaciones que buscan:
+- Mejorar sus **procesos de seguridad**
+- **Proteger los datos confidenciales**
+- **Detectar y responder** rápidamente a amenazas
+- **Cumplir** con regulaciones
+- **Automatizar** tareas de seguridad
+
+### ¿Qué es SIEM? - Resumen del video de IBM
+
+#### La analogía de la película de espías
+
+¿Alguna vez notaste que en casi todas las películas de acción, un **tipo malo** logra entrar y robar algo valioso al encontrar el **punto ciego** de la cámara de seguridad?
+
+> Lo mismo sucede en el mundo cibernético. Los **hackers** intentan entrar al encontrar ese **punto ciego**, esa vulnerabilidad o eslabón débil que pueden aprovechar.
+
+#### El problema de los analistas de seguridad
+
+Los **buenos** (analistas de seguridad) tienen que luchar una batalla cuesta arriba y están sufriendo **agotamiento**.
+
+**¿Por qué?**
+- Están lidiando con **herramientas desconectadas** (a veces cientos)
+- Las herramientas **no se comunican entre sí**
+- Generan **cientos o miles de alertas a diario**
+
+> ¿Qué debe hacer un analista de seguridad? **Ingresar a una SIEM.**
+
+---
+
+#### Definición de SIEM
+
+Una **SIEM** es básicamente una herramienta que:
+
+| Función | Descripción |
+|---------|-------------|
+| **Extrae** | Fuentes de muchos lugares diferentes |
+| **Agrega** | Los datos |
+| **Consolida** | Los datos en un solo lugar |
+| **Clasifica** | Los datos para identificar amenazas |
+
+> Es la **tecnología central de protección contra amenazas** que la mayoría de las organizaciones usan en su guerra contra los hackers.
+
+---
+
+#### ¿Qué puedes integrar en tu SIEM?
+
+| Fuente de datos | Descripción |
+|-----------------|-------------|
+| **Registros (logs)** | Eventos de sistemas y aplicaciones |
+| **Inteligencia de amenazas** | Información sobre amenazas conocidas |
+| **Fuentes de vulnerabilidad** | Escaneos de vulnerabilidades |
+| **Detección de red y datos de respuesta (NDR)** | Tráfico de red |
+| **Datos de endpoint y respuesta (EDR)** | Actividad en dispositivos |
+
+> Todo esto se integra en tu SIEM. **Aquí es donde ocurre la magia.**
+
+---
+
+#### La magia de SIEM: IA y correlación
+
+Tu SIEM está **infundida con**:
+
+- **IA** (Inteligencia Artificial)
+- **Machine Learning** (Aprendizaje automático)
+- **Analytics** (Análisis avanzado)
+
+**¿Qué hace?**
+- Correlaciona todos los diferentes datos en **tiempo real**
+- Genera una **alerta de alta fidelidad**
+- Prioriza las alertas por **nivel de gravedad**
+
+> **Alta fidelidad** es solo una forma elegante de decir que vas a recibir una **mejor alerta** (más precisa, menos falsos positivos).
+
+---
+
+#### Analogía de la película de espías (continuación)
+
+| Elemento | Analogía |
+|----------|----------|
+| **Distracción en el frente del museo** | **Falso positivo** (alerta que no es real) - SIEM lo elimina |
+| **Irrupción en la puerta de atrás** | **Alerta de alta fidelidad** (la amenaza real) - SIEM la prioriza |
+
+> El **falso positivo** que la SIEM está eliminando es la distracción. La irrupción real es la **alerta de alta fidelidad**.
+
+---
+
+#### Conclusión
+
+> Independientemente del tamaño de tu organización, las **amenazas van en aumento**. Los malos no hacen distinciones y están usando tecnologías altamente sofisticadas y técnicas para explotar vulnerabilidades.
+
+**En pocas palabras:** Una **SIEM es el arma secreta de los buenos**.
+
+---
+
+### Resumen de conceptos clave
+
+| Concepto | Significado |
+|----------|-------------|
+| **Punto ciego** | Vulnerabilidad que los hackers buscan explotar |
+| **Alerta de alta fidelidad** | Alerta precisa y confiable (mínimo de falsos positivos) |
+| **Falso positivo** | Alerta que parece una amenaza pero no lo es |
+| **Correlación** | Relación de datos de múltiples fuentes para identificar amenazas |
+| **IA + Machine Learning** | Tecnologías que mejoran la detección y reducen falsos positivos |
+
+### ¿Cómo ayuda SIEM a priorizar alertas y mejorar la seguridad?
+
+#### El problema
+
+Los equipos de seguridad enfrentan:
+- **Herramientas desconectadas** (no se comunican entre sí)
+- **Sobrecarga de alertas** (cientos o miles por día, muchos falsos positivos)
+
+#### La solución SIEM
+
+| Función | Cómo ayuda |
+|---------|-----------|
+| **Correlación en tiempo real** | Integra datos de múltiples fuentes (logs, inteligencia de amenazas, NDR, EDR) |
+| **Alerta de alta fidelidad** | Genera alertas precisas y confiables (elimina falsos positivos) |
+| **Priorización por gravedad** | Clasifica las alertas para saber cuál necesita atención inmediata |
+
+#### Resultado
+
+- Los analistas **no se agotan** revisando alertas falsas
+- Las **amenazas reales** no se pierden entre el ruido
+- La **respuesta es más rápida** y efectiva
+- Mejora la **postura de seguridad** general
+
+> **En resumen:** SIEM actúa como un **filtro inteligente** que separa el ruido de las amenazas reales, prioriza lo importante y permite a los analistas enfocarse en lo que realmente importa.
+
+### El proceso SIEM
+
+Ahora que has aprendido sobre las herramientas SIEM, vamos a explorar **cómo funcionan** y cómo los equipos de seguridad las usan para proteger mejor los sistemas y los datos.
+
+---
+
+### Las 5 etapas del proceso SIEM
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PROCESO SIEM (Ciclo continuo) │
+│ │
+│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
+│ │ 1. │ │ 2. │ │ 3. │ │
+│ │ Recopilación │─────▶│ Detección │─────▶│ Generación │ │
+│ │ de datos │ │ de amenazas │ │ de alertas │ │
+│ └──────────────┘ └──────────────┘ └──────────────┘ │
+│ │ │ │ │
+│ ▼ ▼ ▼ │
+│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
+│ │ 5. │ │ 4. │ │ │ │
+│ │ Respuesta │◀─────│Investigación │ │ │ │
+│ │ ante │ │ de incidentes│ │ │ │
+│ │ incidentes │ │ │ │ │ │
+│ └──────────────┘ └──────────────┘ └──────────────┘ │
+│ │
+│ El proceso es un CICLO CONTINUO, no un evento único │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+#### 1. Recopilación de datos
+
+**¿Qué hace?**  
+La herramienta SIEM **recopila datos** de varias fuentes en la red de una organización.
+
+**Fuentes de datos:**
+- Registros de eventos (logs)
+- Registros de actividad del **firewall**
+- Registros de **aplicaciones**
+- Endpoints y sistemas
+
+---
+
+#### 2. Detección de amenazas
+
+**¿Qué hace?**  
+La herramienta SIEM emplea **algoritmos avanzados** y técnicas de **aprendizaje automático (machine learning)** para identificar posibles incidentes o amenazas.
+
+**¿Cómo lo hace?**
+- Compara eventos y patrones de datos
+- Detecta **anomalías** y **comportamientos sospechosos**
+- Identifica lo que podría indicar una violación
+
+---
+
+#### 3. Generación de alertas
+
+**¿Qué hace?**  
+Cuando se detecta un posible incidente, la herramienta SIEM envía **alertas o notificaciones** a los equipos de seguridad.
+
+**Información que proporciona la alerta:**
+| Información | Descripción |
+|-------------|-------------|
+| **Origen** | De dónde vino la amenaza |
+| **Tipo** | Qué tipo de amenaza es |
+| **Gravedad** | Qué tan crítica es (alta, media, baja) |
+| **Impacto** | Qué sistemas o datos afecta |
+
+---
+
+#### 4. Investigación de incidentes
+
+**¿Qué hace?**  
+La herramienta SIEM proporciona **registros detallados** de todos los eventos y actividades de la red.
+
+**Ayuda a los equipos a:**
+- **Rastrear la fuente** de un ataque
+- **Reconstruir la secuencia** de eventos
+- **Determinar la causa** de un incidente
+
+---
+
+#### 5. Respuesta ante incidentes
+
+**¿Qué hace?**  
+Las herramientas SIEM ayudan a las organizaciones a **responder rápidamente** a los incidentes proporcionando diferentes métricas de seguridad.
+
+**Ejemplos de métricas:**
+- Cantidad de **incidentes detectados**
+- Cantidad de **incidentes resueltos**
+- **Tiempo que lleva** resolverlos (MTTR - Mean Time to Respond)
+
+---
+
+### Característica clave: Es un ciclo continuo
+
+> El proceso de **monitoreo, identificación y resolución** de amenazas con SIEM **no es un evento único**.
+
+Implica un **ciclo continuo** de:
+
+| Etapa | Acción |
+|-------|--------|
+| 1 | Recopilación de datos |
+| 2 | Detección de amenazas |
+| 3 | Generación de alertas |
+| 4 | Investigación de incidentes |
+| 5 | Respuesta a incidentes |
+
+➡️ Luego **vuelve a empezar** (el ciclo se repite constantemente)
+
+---
+
+### Conclusión
+
+> Mediante el uso de herramientas SIEM como parte de su estrategia de ciberseguridad, las organizaciones pueden **adelantarse a las amenazas en evolución** y **proteger sus sistemas y datos**.
+
+### Laboratorio: Investigación de amenazas con Splunk
+
+#### Escenario
+
+BetterBytes Games, una compañía de videojuegos, recibió el aviso de que en **junio aumentaron los intentos fallidos de inicio de sesión** en su tienda en línea.
+
+Examinar manualmente los millones de registros es **poco práctico e imposible**. En su lugar, usarás la herramienta SIEM **Splunk Enterprise** para ordenar los hallazgos.
+
+---
+
+### Paso 1: Concepto esencial para monitoreo en tiempo real
+
+**Pregunta:** Tu organización necesita monitorear y analizar eventos de seguridad en tiempo real para detectar posibles amenazas. ¿Qué concepto es esencial?
+
+- [ ] Seguimiento y registro de incidentes
+- [ ] Correlación y analytics de eventos
+- [x] **Información de seguridad y gestión de eventos (SIEM)**
+- [ ] Threat detection and response
+
+> **Explicación:** SIEM es la solución central que permite recopilar, correlacionar y analizar eventos de seguridad en tiempo real de múltiples fuentes.
+
+---
+
+### Paso 2: Cargar datos en Splunk
+
+**Interfaz de Splunk - Página de inicio:**
+
+| Elemento | Descripción |
+|----------|-------------|
+| **Quick links** | Dashboard, Recently viewed, Created by you, Shared with you |
+| **Common tasks** | Add data, Visualize your data, Manage permissions |
+| **Search your data** | Turn data into doing with Splunk search |
+| **Add team members** | Agregar miembros al equipo |
+| **Configure mobile devices** | Gestionar dispositivos móviles |
+
+**Para subir archivos de registro:**
+1. Seleccionar **Add data** (Agregar datos)
+2. Arrastrar o seleccionar el archivo `BetterBytes Log Files.zip`
+3. El archivo .zip aparece como archivo seleccionado
+
+---
+
+### Paso 3: Configuración de entrada (Input Settings)
+
+En el asistente **Add Data**, se pueden configurar:
+
+| Campo | Descripción |
+|-------|-------------|
+| **Source type** | Tipo de fuente (le dice a Splunk qué tipo de datos son para formatearlos inteligentemente durante la indexación) |
+| **Host** | Nombre de la máquina de origen del evento |
+
+> **Nota:** Splunk asigna automáticamente estos campos para categorizar los datos y facilitar su búsqueda.
+
+---
+
+### Resumen del proceso en Splunk
+┌─────────────────────────────────────────────────────────────────┐
+│ PROCESO EN SPLUNK │
+├─────────────────────────────────────────────────────────────────┤
+│ │
+│ 1. Add Data ──▶ 2. Select Source ──▶ 3. Input Settings │
+│ (Agregar) (Seleccionar archivo) (Configurar) │
+│ │
+│ 4. Review ──▶ 5. Indexación ──▶ 6. Búsqueda y análisis │
+│ (Revisar) (Procesamiento) (Investigar) │
+│ │
+└─────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Aprendizaje clave
+
+> **Splunk** permite:
+> - Subir y analizar millones de registros sin revisarlos manualmente
+> - Configurar el tipo de fuente (source type) para una indexación inteligente
+> - Categorizar los datos para búsquedas más eficientes
+
+### Laboratorio: Splunk - Configuración de Source Type y Host
+
+#### Configuración de Source Type (Tipo de fuente)
+
+| Configuración | Descripción |
+|---------------|-------------|
+| **Automático (predeterminada)** | Splunk asigna un tipo de fuente en función del formato de datos. Es útil en la mayoría de las situaciones |
+| **Manual** | El usuario especifica el tipo de fuente manualmente |
+
+> **Decisión:** Mantener la configuración **Automático** para que Splunk determine el tipo de fuente según el formato de los datos.
+
+---
+
+#### Pregunta 1: Configuración de host para ordenar eventos por fuente
+
+**Contexto:**  
+La configuración de host por defecto es **Constant value** (Valor constante), que usa un nombre fijo como "Office". Sin embargo, debes asegurarte de que Splunk ordena los eventos **adecuadamente según su fuente**.
+
+**¿Qué configuración de host debes seleccionar?**
+
+- [ ] Asignación dinámica de valores
+- [ ] Introducción manual de cada fuente
+- [x] **Expresión regular en la ruta**
+- [ ] Uso de tipos de fuentes predefinidos
+
+> **Explicación:** La **expresión regular en la ruta (regex in path)** permite extraer dinámicamente el nombre del host desde la ruta del archivo o directorio, lo que es esencial cuando los eventos provienen de múltiples fuentes y necesitan ser ordenados correctamente.
+
+---
+
+#### Pregunta 2: Significado de la expresión regular `\(.*\)/`
+
+**Contexto:**  
+En la configuración de Splunk, debes ordenar los eventos por nombres de host empleando la expresión `\(.*\)/`.
+
+**¿Qué hace esta expresión regular en el contexto de la clasificación de fuentes?**
+
+- [ ] Coincide con nombres fijos para anfitriones como "Office"
+- [x] **Coincide con cualquier secuencia de caracteres seguida de una barra diagonal**
+- [ ] Coincide con cualquier carácter seguido de una barra invertida
+- [ ] Solo coincide con secuencias numéricas seguidas de una barra diagonal
+
+> **Explicación:** La expresión regular `\(.*\)/` significa:
+> - `.*` = cualquier secuencia de caracteres (uno o más)
+> - `/` = una barra diagonal al final
+> 
+> **Ejemplo práctico:** Si la ruta es `/var/log/host1/access.log`, la expresión extraería `host1` como el nombre del host.
+
+---
+
+### Resumen de conceptos clave
+
+| Concepto | Explicación |
+|----------|-------------|
+| **Source Type (Tipo de fuente)** | Le dice a Splunk qué tipo de datos tiene para formatearlos inteligentemente durante la indexación |
+| **Host** | Nombre de la máquina de origen del evento |
+| **Expresión regular (regex)** | Patrón para extraer dinámicamente valores (como el nombre del host) desde rutas de archivos |
+| `\(.*\)/` | Coincide con cualquier secuencia de caracteres seguida de una barra diagonal |
+
+---
+
+### Configuración recomendada
+
+| Parámetro | Configuración | Razón |
+|-----------|---------------|-------|
+| **Source type** | Automático | Splunk detecta el formato automáticamente |
+| **Host** | Expresión regular en la ruta | Extrae dinámicamente el host desde la estructura de directorios |
+| **Expresión regular** | `\(.*\)/` | Captura cualquier texto antes de una barra diagonal (nombre del host) |
+
+### Laboratorio: Splunk - Revisión y finalización de carga de datos
+
+#### Paso 4: Revisar configuración (Review)
+
+Antes de finalizar la carga, Splunk muestra un resumen de la configuración seleccionada:
+
+| Configuración | Valor |
+|---------------|-------|
+| **Input Type** | Uploaded File (Archivo cargado) |
+| **File Name** | BetterBytes Log Files.zip |
+| **Source Type** | Automatic (Automático) |
+| **Host** | Source path regular expression: `\\.*\\` |
+| **Index** | Default (Predeterminado) |
+
+> **Acción:** Confirmar la configuración y seleccionar **Enviar** (Submit) en el asistente Add Data.
+
+---
+
+#### Paso 5: Confirmación de carga exitosa
+
+**Mensaje recibido:**  
+> *"File has been uploaded successfully. Configure your inputs by going to Settings > Data Inputs"*
+
+**Página de finalización (Done):**
+- La página indica que el archivo se subió **correctamente**
+- Ahora puedes **comenzar a usar Splunk** para examinar los datos del archivo de registro
+
+---
+
+#### Paso 6: Comenzar la búsqueda
+
+**Acción final:**  
+Seleccionar **Start Searching** (Comenzar a buscar) para comenzar a analizar los datos.
+
+---
+
+### Resumen del proceso completo en Splunk
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PROCESO DE CARGA DE DATOS EN SPLUNK │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ 1. Add Data ──▶ 2. Select Source ──▶ 3. Input Settings │
+│ (Agregar) (Seleccionar archivo .zip) (Configurar source type │
+│ y host) │
+│ │
+│ 4. Review ──▶ 5. Upload ──▶ 6. Done ──▶ 7. Start Searching │
+│ (Revisar) (Cargar) (Completado) (Comenzar búsqueda) │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Configuración utilizada en el laboratorio
+
+| Parámetro | Configuración | Propósito |
+|-----------|---------------|-----------|
+| **Archivo** | BetterBytes Log Files.zip | Archivo con logs de la tienda en línea |
+| **Source Type** | Automático | Splunk detecta el formato automáticamente |
+| **Host** | Expresión regular: `\\.*\\` | Extrae el nombre del host desde la ruta |
+| **Index** | Default | Índice predeterminado para almacenar los datos |
+
+---
+
+### Próximo paso
+
+> Con los datos cargados exitosamente, ahora puedes **comenzar a buscar y analizar** los intentos fallidos de inicio de sesión en la tienda en línea de BetterBytes Games.
+
+**Objetivo de la investigación:**  
+Identificar qué está causando el **aumento de intentos fallidos de inicio de sesión** en junio.
+
+### Laboratorio: Splunk - Búsqueda y refinamiento de eventos
+
+#### Resultados iniciales de la búsqueda
+
+| Métrica | Valor |
+|---------|-------|
+| **Fuente** | BetterBytes Log Files.zip |
+| **Eventos devueltos** | **439,356 eventos** |
+| **Resultados por página** | 50 eventos |
+| **Páginas de resultados** | Al menos 8 páginas |
+
+> **Nota:** El asterisco (`*`) al final del nombre del archivo significa que la búsqueda devuelve **todos** los resultados del archivo .zip.
+
+---
+
+#### Concepto: Campos en Splunk
+
+Splunk indexa los datos, extrayendo información y formateándola en **pares de nombre y valor** conocidos como **campos**.
+
+**Dos categorías de campos:**
+
+| Categoría | Descripción |
+|-----------|-------------|
+| **Selected fields (Campos seleccionados)** | Campos visibles en los resultados de búsqueda. Por defecto: `host`, `source` y `sourcetype` |
+| **Interesting fields (Campos interesantes)** | Campos adicionales que Splunk extrae de los eventos en los resultados de búsqueda |
+
+---
+
+#### Refinamiento de búsqueda para intentos fallidos
+
+**Problema a investigar:** Numerosos intentos fallidos de inicio de sesión.
+
+**Estrategia:** Cualquier evento de este tipo tendrá alguna variación de la palabra **"fail"** en su descripción.
+
+**Consulta de búsqueda:**
+source="BetterBytes Log Files.zip:" fail
+
+### Laboratorio: Splunk - Búsqueda y refinamiento de eventos
+
+#### Resultados iniciales de la búsqueda
+
+| Métrica | Valor |
+|---------|-------|
+| **Fuente** | BetterBytes Log Files.zip |
+| **Eventos devueltos** | **439,356 eventos** |
+| **Resultados por página** | 50 eventos |
+| **Páginas de resultados** | Al menos 8 páginas |
+
+> **Nota:** El asterisco (`*`) al final del nombre del archivo significa que la búsqueda devuelve **todos** los resultados del archivo .zip.
+
+---
+
+#### Concepto: Campos en Splunk
+
+Splunk indexa los datos, extrayendo información y formateándola en **pares de nombre y valor** conocidos como **campos**.
+
+**Dos categorías de campos:**
+
+| Categoría | Descripción |
+|-----------|-------------|
+| **Selected fields (Campos seleccionados)** | Campos visibles en los resultados de búsqueda. Por defecto: `host`, `source` y `sourcetype` |
+| **Interesting fields (Campos interesantes)** | Campos adicionales que Splunk extrae de los eventos en los resultados de búsqueda |
+
+---
+
+#### Refinamiento de búsqueda para intentos fallidos
+
+**Problema a investigar:** Numerosos intentos fallidos de inicio de sesión.
+
+**Estrategia:** Cualquier evento de este tipo tendrá alguna variación de la palabra **"fail"** en su descripción.
+
+**Consulta de búsqueda:**
+
+source="BetterBytes Log Files.zip:" (fail OR ubicación*)
+
+Esto devolverá todos los eventos que contengan **cualquier variación** de "fail" **o** "ubicación".
+
+### Laboratorio: Splunk - Filtrado por tiempo y análisis de eventos
+
+#### Paso: Filtrar por intervalo de tiempo
+
+**Problema:** Los intentos de inicio de sesión fallidos que estás investigando ocurrieron a **mediados de junio**. Actualmente estamos a principios de julio.
+
+**Solución:** Filtrar los resultados por un intervalo de tiempo específico.
+
+| Configuración predeterminada | Configuración seleccionada |
+|-----------------------------|---------------------------|
+| All time (Todo el tiempo) | **Last 30 days** (Últimos 30 días) |
+
+**Opciones disponibles en el menú Time range:**
+
+| Categoría | Ejemplos |
+|-----------|----------|
+| **REAL-TIME** | 30 second window, 1 minute window, 5 minute window, 30 minute window, 1 hour window |
+| **RELATIVE** | Today, Week to date, Month to date, Year to date, Yesterday, Previous week, Previous month, Previous year |
+
+---
+
+#### Resultados de la búsqueda
+
+**Consulta utilizada:** `source="BetterBytes Log Files.zip:*fail*"`
+
+**Resultados obtenidos:**
+| Métrica | Valor |
+|---------|-------|
+| **Eventos encontrados** | 166,265 eventos |
+| **Período** | Last 30 days (hasta antes del 5/7/24) |
+
+---
+
+#### Análisis de un evento específico
+
+**Descripción del evento encontrado:**
+> *"Invalid user admin from 64.66.0.20 port 4086 ssh2"*
+
+**Interpretación:**
+
+| Elemento | Significado |
+|----------|-------------|
+| **Invalid user admin** | Se intentó iniciar sesión con el usuario "admin" que no existe o no es válido |
+| **from 64.66.0.20** | El intento provino de la dirección IP 64.66.0.20 |
+| **port 4086** | El intento usó el puerto 4086 |
+| **ssh2** | El intento fue a través del protocolo SSH versión 2 |
+
+**¿Qué debes inferir de esta información?**
+
+- [ ] Se produjo un error en el proceso sshd
+- [x] **Un usuario no válido intentó iniciar sesión desde una dirección IP específica**
+- [ ] El servidor www2 procesó correctamente una solicitud
+- [ ] Un usuario válido realizó un intento de inicio de sesión con éxito
+
+> **Explicación:** La descripción claramente indica que un usuario **no válido** (`Invalid user admin`) intentó iniciar sesión desde una **dirección IP específica** (`from 64.66.0.20`). Esto es un **intento de acceso no autorizado** o un posible ataque de fuerza bruta.
+
+---
+
+### Resumen de campos comunes en eventos de Splunk
+
+| Campo | Descripción | Ejemplo |
+|-------|-------------|---------|
+| `Invalid user` | Usuario que no existe en el sistema | `admin`, `root`, `test` |
+| `from X.X.X.X` | Dirección IP de origen del intento | `64.66.0.20` |
+| `port XXXX` | Puerto utilizado para la conexión | `4086`, `22` (SSH) |
+| `ssh2` | Protocolo utilizado | `ssh2`, `ssh1` |
+
+---
+
+### Indicadores de posible ataque
+
+| Patrón | Significado |
+|--------|-------------|
+| `Invalid user` + IP externa | Alguien intentando acceder con usuarios que no existen |
+| Múltiples intentos desde misma IP | Posible **ataque de fuerza bruta** |
+| Usuarios comunes como `admin`, `root`, `test` | Indica un **escaneo automatizado** de credenciales |
+
+---
+
+### Próximo paso de la investigación
+
+Con esta información, puedes:
+1. **Investigar la IP** `64.66.0.20` (¿es legítima o maliciosa?)
+2. **Buscar otros eventos** desde la misma IP
+3. **Determinar si hubo éxito** en algún intento de inicio de sesión
+4. **Bloquear la IP** si es maliciosa
+
+### Laboratorio: Splunk - Investigación de actividad sospechosa por IP
+
+#### Paso 1: Identificación de patrón sospechoso
+
+**Primer evento encontrado:**
+- Un usuario **inválido o inexistente** llamado `inert` intentó ingresar una contraseña sin éxito
+
+**Análisis:**
+- ✅ Un solo evento de este tipo **no es sospechoso** (podría ser un error tipográfico)
+- ❌ **Múltiples intentos** desde la **misma dirección IP** con **diferentes nombres de usuario** → **ES SOSPECHOSO**
+
+> **Conclusión:** La misma IP `64.66.0.20` está intentando acceder con diferentes nombres de usuario. Esto indica un posible **ataque de fuerza bruta** o **escaneo de credenciales**.
+
+---
+
+#### Paso 2: Filtrar búsqueda por dirección IP
+
+**Objetivo:** Determinar si la persona olvidó sus datos de acceso o si está realizando una **actividad maliciosa**.
+
+**Estrategia:** Filtrar los resultados por la dirección IP `64.66.0.20`.
+
+**Consulta de búsqueda:**
+source="BetterBytes Log Files.zip:" fail "64.66.0.20"
+
+
+**Componentes de la consulta:**
+
+| Parte | Propósito |
+|-------|-----------|
+| `source="BetterBytes Log Files.zip:*"` | Busca en todos los logs del archivo .zip |
+| `fail*` | Incluye todas las variaciones de "fail" (failed, failure, etc.) |
+| `"64.66.0.20"` | Filtra solo eventos de esa dirección IP específica |
+
+---
+
+#### Paso 3: Análisis de resultados
+
+**Resultados observados:**
+
+| Patrón | Hallazgo |
+|--------|----------|
+| **Múltiples intentos fallidos** | Numerosos intentos desde la misma IP |
+| **Diferentes nombres de usuario** | Se están probando múltiples usuarios |
+| **Simultaneidad** | Los intentos ocurren al mismo tiempo |
+
+**Conclusión del análisis:**
+
+> Esto **no** es una persona que olvidó sus datos de acceso (eso generaría intentos con un solo usuario, no múltiples).
+
+> **Es una actividad maliciosa** - probablemente un **ataque de fuerza bruta** o **escaneo de credenciales** automatizado.
+
+---
+
+### Indicadores de ataque de fuerza bruta
+
+| Indicador | Significado |
+|-----------|-------------|
+| **Múltiples usuarios desde una IP** | El atacante prueba diferentes nombres de usuario |
+| **Intentos fallidos repetidos** | Están probando combinaciones de usuario/contraseña |
+| **Mismo origen (IP)** | Un solo atacante o botnet controlada |
+| **Frecuencia alta** | Automatizado, no manual |
+
+---
+
+### Resumen de la investigación
+
+| Paso | Acción | Hallazgo |
+|------|--------|----------|
+| 1 | Buscar eventos `fail*` | 166,265 eventos fallidos |
+| 2 | Identificar patrón | Múltiples usuarios desde misma IP |
+| 3 | Filtrar por IP `64.66.0.20` | Numerosos intentos con diferentes usuarios |
+| 4 | Conclusión | **Actividad maliciosa** (ataque de fuerza bruta) |
+
+---
+
+### Recomendaciones de seguridad
+
+| Acción | Propósito |
+|--------|-----------|
+| **Bloquear la IP** `64.66.0.20` | Prevenir más intentos desde ese origen |
+| **Implementar límite de intentos** | Bloquear temporalmente IPs después de N intentos fallidos |
+| **Configurar MFA** | Incluso si adivinan contraseña, no podrán acceder |
+| **Revisar si hubo éxito** | Buscar eventos con "Accepted" o "Success" desde esa IP |
+| **Reportar a equipo de seguridad** | Documentar el incidente |
+
+---
+
+### Consultas útiles para la investigación
+
+| Propósito | Consulta Splunk |
+|-----------|-----------------|
+| Buscar intentos fallidos desde IP sospechosa | `source="*.zip" fail* "64.66.0.20"` |
+| Ver todos los usuarios probados desde esa IP | `source="*.zip" "64.66.0.20" \| stats count by user` |
+| Ver si hubo algún éxito desde esa IP | `source="*.zip" (accepted OR success) "64.66.0.20"` |
+
+### Laboratorio: Splunk - Creación y exportación de tablas para documentación
+
+#### Paso 1: Crear vista de tabla (Create Table View)
+
+**Contexto:** Necesitas documentar tus hallazgos para incluirlos en un **informe de incidente**.
+
+**Acción:** Seleccionar **Create Table View** (Crear vista de tabla).
+
+---
+
+#### Pregunta 1: ¿Por qué crear y exportar una tabla?
+
+**¿Por qué podrías querer crear y exportar una tabla a partir de los resultados de búsqueda de Splunk?**
+
+- [ ] Para eliminar datos irrelevantes de los resultados de búsqueda
+- [ ] Para resolver automáticamente todos los problemas detectados
+- [ ] Para notificar a los usuarios sobre una filtración de seguridad
+- [x] **Para documentar los hallazgos e incluirlos en un informe de incidentes**
+
+> **Explicación:** La creación y exportación de tablas permite **documentar** los hallazgos de manera estructurada para su inclusión en **informes de incidentes**, auditorías o presentaciones a la gerencia.
+
+---
+
+#### Paso 2: Estructura de la vista de tabla
+
+**La vista de tabla ordena la información en columnas:**
+
+| Columna | Contenido |
+|---------|-----------|
+| `_time` | Marca de tiempo del evento |
+| `clientip` | Dirección IP del cliente |
+| `host` | Nombre del host |
+| `source` | Fuente del dato |
+| `sourcetype` | Tipo de fuente |
+| `_raw` | Datos brutos del evento (incluye timestamp, nombre de usuario, IP, etc.) |
+
+> **Beneficio:** Esta organización te ayuda a encontrar la información que estás buscando de manera más eficiente.
+
+---
+
+#### Paso 3: Refinar resultados de búsqueda
+
+**Pregunta 2:** ¿Por qué refinar aún más los resultados de búsqueda en la vista de tabla?
+
+- [ ] Para aumentar el número de eventos incluidos en los resultados
+- [ ] Para resolver automáticamente cualquier problema de seguridad
+- [ ] Para garantizar que no se omita ningún dato, incluso si no es relevante
+- [x] **Para limitar los datos a los eventos más relevantes para un análisis más preciso**
+
+> **Explicación:** Refinar los resultados permite **enfocarse solo en los eventos relevantes**, eliminando el ruido y facilitando un **análisis más preciso** de la amenaza.
+
+---
+
+#### Paso 4: Guardar la tabla
+
+**Acción:** En el cuadro de diálogo **Save As New Table** (Guardar como nueva tabla):
+
+| Campo | Valor ingresado |
+|-------|-----------------|
+| **Table Title** (Título de la tabla) | `BetterBytes Investigation June 2024` |
+
+**Opciones disponibles:**
+- Table ID (ID de la tabla)
+- Description (Descripción)
+- Permissions (Permisos)
+
+---
+
+#### Paso 5: Confirmación de creación
+
+**Mensaje recibido:** *"Your Table Has Been Created"* (Su tabla ha sido creada)
+
+**Opciones disponibles después de crear la tabla:**
+
+| Opción | Acción |
+|--------|--------|
+| **Close** (Cerrar) | Cerrar el cuadro de diálogo |
+| **View Listings** (Ver listados) | Volver a la página de listados de tablas |
+| **View Table** (Ver tabla) | Revisar la tabla creada |
+
+> **Decisión final:** Seleccionar **View Table** (Ver tabla) para revisar los resultados documentados.
+
+---
+
+### Resumen del proceso de documentación en Splunk
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PROCESO DE DOCUMENTACIÓN EN SPLUNK │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ 1. Realizar búsqueda ──▶ 2. Crear Table View ──▶ 3. Refinar resultados │
+│ (Investigar) (Vista de tabla) (Filtrar datos) │
+│ │
+│ 4. Guardar tabla ──────▶ 5. Asignar título ──▶ 6. Exportar para informe │
+│ (Save as Table) (Ej. "Investigation (Documentar hallazgos) │
+│ June 2024") │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Beneficios de exportar tablas en Splunk
+
+| Beneficio | Descripción |
+|-----------|-------------|
+| **Documentación estructurada** | Los datos se organizan en columnas claras |
+| **Informes de incidentes** | Facilita la creación de reportes para gerencia o auditores |
+| **Evidencia** | Sirve como prueba documentada de la investigación |
+| **Análisis posterior** | Permite revisar los hallazgos fuera de Splunk |
+| **Cumplimiento** | Ayuda a cumplir con requisitos regulatorios de documentación |
+
+---
+
+### Buenas prácticas para nombrar tablas
+
+| Ejemplo | Por qué es útil |
+|---------|-----------------|
+| `BetterBytes Investigation June 2024` | Específica: **empresa + tipo + mes/año** |
+| `Failed Logins IP 64.66.0.20` | Describe el contenido exacto |
+| `Incident Response - Brute Force Aug 2024` | Identifica el tipo de incidente |
+
+> **Recomendación:** Usar nombres **claros y descriptivos** para que otros miembros del equipo entiendan el contenido sin abrir la tabla.
+
+### Laboratorio: Splunk - Exportación de tabla y formatos de archivo
+
+#### Paso 1: Ajustar el intervalo de tiempo
+
+**Problema:** La vista por defecto de la tabla solo muestra resultados de las **últimas 24 horas**, pero los eventos en cuestión ocurrieron en **junio**.
+
+**Solución:** Cambiar el intervalo de tiempo a **Last 30 days** (Últimos 30 días) desde la lista **Time range**.
+
+---
+
+#### Paso 2: Exportar la tabla
+
+**Acción:** Seleccionar el botón **Export** (Exportar) para exportar la tabla al informe de incidentes.
+
+---
+
+#### Paso 3: Configurar la exportación
+
+**Cuadro de diálogo Export Results:**
+
+| Configuración | Valor seleccionado |
+|---------------|-------------------|
+| **Format** (Formato) | **CSV** (por defecto) |
+| **File Name** (Nombre del archivo) | Opcional (se deja en blanco) |
+| **Number of Results** (Número de resultados) | En blanco (exporta **todos** los resultados) |
+
+**Otros formatos disponibles en la lista Format:**
+
+| Formato | Descripción |
+|---------|-------------|
+| **CSV** | Comma Separated Values (valores separados por comas) - útil para Excel |
+| **XML** | eXtensible Markup Language - para intercambio de datos |
+| **JSON** | JavaScript Object Notation - para aplicaciones web y APIs |
+
+> **Decisión final:** Mantener el formato **CSV** (el más compatible con hojas de cálculo como Excel).
+
+---
+
+#### Paso 4: Archivo exportado
+
+**Resultado:** La tabla exportada se descarga en tu dispositivo.
+
+**Al abrir el archivo con Microsoft Excel, la tabla incluye:**
+
+| Columna | Contenido |
+|---------|-----------|
+| `_time` | Marca de tiempo del evento |
+| `clientip` | Dirección IP del cliente |
+| `host` | Nombre del host |
+| `source` | Fuente del dato |
+| `sourcetype` | Tipo de fuente |
+| `_raw` | Datos brutos del evento |
+
+---
+
+### Resumen del proceso completo de exportación
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PROCESO DE EXPORTACIÓN EN SPLUNK │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ 1. Crear Tabla ──▶ 2. Ajustar Time Range ──▶ 3. Seleccionar Export │
+│ (Investigar) (Last 30 days) (Botón Export) │
+│ │
+│ 4. Elegir Formato ──▶ 5. Exportar ──▶ 6. Abrir en Excel │
+│ (CSV/XML/JSON) (Descargar) (Revisar columnas) │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+---
+
+### Formatos de exportación - Comparación
+
+| Formato | Mejor para | Ventajas | Desventajas |
+|---------|-----------|----------|-------------|
+| **CSV** | Hojas de cálculo (Excel, Google Sheets) | Fácil de leer, universal, compatible con todas las herramientas | No soporta datos anidados complejos |
+| **XML** | Intercambio de datos entre sistemas | Estructurado, soporta datos complejos | Más pesado, menos legible para humanos |
+| **JSON** | Aplicaciones web, APIs | Ligero, fácil de parsear en programación | Menos compatible con Excel nativo |
+
+> **Recomendación:** Para informes de incidentes y análisis en Excel, usar **CSV** es la mejor opción.
+
+---
+
+### Contenido del archivo exportado (columnas clave)
+
+| Columna | Tipo de dato | Ejemplo |
+|---------|-------------|---------|
+| `_time` | Fecha/Hora | `2024-06-15 14:23:45` |
+| `clientip` | IP | `64.66.0.20` |
+| `host` | Texto | `webserver01` |
+| `source` | Ruta | `BetterBytes Log Files.zip` |
+| `sourcetype` | Texto | `access_combined` |
+| `_raw` | Texto completo | `Invalid user admin from 64.66.0.20 port 4086 ssh2` |
+
+---
+
+### Conclusión del laboratorio
+
+¡Felicidades! Has completado exitosamente la **investigación de amenazas con Splunk** para BetterBytes Games.
+
+**Logros obtenidos:**
+
+- ✅ Cargar archivos de log en Splunk
+- ✅ Configurar source type y host con expresiones regulares
+- ✅ Realizar búsquedas con comodines (`fail*`, `ubicación*`)
+- ✅ Filtrar por intervalo de tiempo (Last 30 days)
+- ✅ Identificar actividad sospechosa (múltiples usuarios desde misma IP)
+- ✅ Crear vista de tabla para organizar resultados
+- ✅ Exportar tabla en formato CSV para informe de incidentes
+
+¿Qué hiciste en el laboratorio de Splunk? (Explicación fácil)
+El problema que tenías
+Imaginá que trabajás en una empresa de videojuegos llamada BetterBytes Games. Te avisan que en junio hubo muchos intentos fallidos de inicio de sesión en la tienda online. Algo raro está pasando.
+
+El problema es que los registros (logs) de la tienda tienen casi medio millón de eventos (439,356 para ser exactos). Revisarlos uno por uno es imposible. Necesitás una herramienta que analice todo eso por vos.
+
+Paso 1: ¿Por qué subiste un archivo .zip?
+Respuesta corta: Porque los archivos de registro eran muchos y muy grandes. Comprimirlos en un solo archivo .zip hace que sea más fácil y rápido subirlos a Splunk.
+
+Sin comprimir	Con .zip
+Muchos archivos sueltos	Un solo archivo
+Ocupa más espacio	Ocupa menos espacio
+Tarda más en subir	Sube más rápido
+Analogía: Es como meter toda la ropa desordenada en una sola valija en lugar de llevar varias bolsas sueltas.
+
+Paso 2: ¿Qué hiciste con Splunk?
+Splunk es una herramienta que lee millones de registros y te ayuda a encontrar lo que buscas sin tener que leerlos uno por uno.
+
+Lo que hiciste paso a paso:
+
+Paso	Qué hiciste	Por qué
+1	Subiste el archivo .zip a Splunk	Para que Splunk tenga los datos
+2	Configuraste el tipo de fuente (automático)	Para que Splunk entienda qué tipo de datos son
+3	Configuraste el host con una expresión regular	Para que Splunk sepa de qué máquina vienen los datos
+4	Hiciste una búsqueda de eventos con fail*	Para encontrar TODOS los intentos fallidos (fail, failed, failure)
+5	Filtramos por fecha (últimos 30 días)	Porque el problema fue en junio
+6	Filtramos por una IP sospechosa (64.66.0.20)	Porque vimos que desde esa IP había muchos intentos raros
+7	Creamos una tabla con los resultados	Para organizar la información
+8	Exportamos la tabla como archivo CSV	Para poner la evidencia en un informe
+Paso 3: ¿Qué descubriste?
+Lo que viste en los registros:
+
+Primer evento: Un usuario llamado "inert" intentó entrar y falló. Solo uno no es raro (puede ser un error de tipeo).
+
+Pero al seguir mirando: Viste que desde la misma dirección IP (64.66.0.20) había muchos intentos con diferentes nombres de usuario: admin, test, root, inert, etc.
+
+Conclusión: No era una persona que olvidó su contraseña. Era alguien malicioso probando muchos nombres de usuario para ver si podía entrar. Eso se llama ataque de fuerza bruta.
+
+Paso 4: ¿Por qué exportaste una tabla?
+Porque después de encontrar la evidencia, necesitás documentarla para:
+
+Razón	Explicación
+Informe de incidente	Le mostrás a tu jefe qué pasó
+Auditoría	Queda registro de que investigaste
+Bloquear la IP	Para que no vuelva a intentar
+Aprender	Para prevenir que vuelva a pasar
+La tabla que exportaste tiene columnas como:
+
+_time: cuándo pasó
+
+clientip: desde qué IP
+
+_raw: la descripción completa del evento
+
+Resumen en una tabla fácil
+Paso	Lo que hiciste	Por qué
+1	Subiste un archivo .zip	Los logs eran muy grandes
+2	Splunk procesó 439,356 eventos	Encontró millones de líneas de registro
+3	Buscaste fail*	Para ver solo los intentos fallidos
+4	Filtramos por fecha (junio)	El problema fue en junio
+5	Viste una IP rara (64.66.0.20)	Desde ahí venían muchos intentos
+6	Buscaste solo esa IP	Para ver qué estaba pasando
+7	Encontraste muchos usuarios diferentes	Era un ataque, no un error
+8	Exportaste una tabla	Para tener evidencia y hacer un informe
+Analogía final
+Imaginá que sos un detective y hay un edificio con 439,356 habitaciones. Revisar una por una es imposible.
+
+Splunk es como un supervisor que recorre todo el edificio a la velocidad de la luz y te dice:
+
+"Solo miré las habitaciones donde pasó algo raro"
+
+"Encontré 166,265 habitaciones con problemas"
+
+"Todas las que tienen problemas vienen desde la misma dirección: 64.66.0.20"
+
+"Ahí te dejo una tabla con todo para que hagas tu informe"
+
+Vos solo tuviste que hacer 3 cosas:
+
+Subir el archivo .zip
+
+Escribir fail* y "64.66.0.20"
+
+Exportar la tabla
+
+Splunk hizo todo el trabajo pesado por vos.
+
+### Laboratorio Splunk: Explicación fácil de lo que hiciste
+
+#### El problema
+- BetterBytes Games tuvo muchos intentos fallidos de inicio de sesión en junio
+- Los archivos de registro tenían **439,356 eventos** (imposible de revisar manualmente)
+
+#### La solución: Splunk
+- Es una herramienta que analiza millones de registros automáticamente
+
+#### ¿Por qué subiste un archivo .zip?
+- Los logs eran muchos archivos grandes
+- Comprimirlos en .zip hace que suban más rápido y ocupen menos espacio
+
+#### ¿Qué hiciste paso a paso?
+
+| Paso | Acción | Por qué |
+|------|--------|---------|
+| 1 | Subiste el .zip a Splunk | Para que Splunk tenga los datos |
+| 2 | Buscaste `fail*` | Para encontrar todos los intentos fallidos |
+| 3 | Filtramos por fecha (junio) | El problema fue en junio |
+| 4 | Viste una IP sospechosa (`64.66.0.20`) | Desde esa IP había muchos intentos |
+| 5 | Filtramos por esa IP | Para investigar solo esa dirección |
+| 6 | Descubrimos múltiples usuarios | Era un ataque de fuerza bruta |
+| 7 | Exportamos una tabla CSV | Para documentar la evidencia |
+
+#### ¿Qué descubriste?
+- Un solo intento fallido no es raro
+- **Muchos intentos desde la misma IP con diferentes usuarios** SÍ es raro
+- Eso es un **ataque de fuerza bruta** (alguien probando muchos nombres de usuario)
+
+#### ¿Por qué exportaste una tabla?
+- Para tener **evidencia** en el informe de incidente
+- Para mostrar a tu jefe qué pasó
+- Para documentar la IP que hay que bloquear
+
+¿De dónde salieron esos logs?
+En el mundo real (cuando trabajes en una empresa)
+Los logs (registros) se generan automáticamente en todos los sistemas de TI. Cada vez que pasa algo importante, el sistema lo anota en un archivo de log.
+
+Para BetterBytes Games (la empresa del laboratorio):
+
+Fuente de log	¿Qué registra?
+Tienda online	Cada vez que alguien intenta iniciar sesión, comprar un juego, ver su cuenta, etc.
+Servidores web	Todas las peticiones que llegan al sitio
+Servidores de autenticación	Intentos de login (exitosos y fallidos), IP de origen, usuario usado, etc.
+En el caso concreto del ataque que investigaste:
+
+Cuando alguien intentó entrar con usuario admin desde la IP 64.66.0.20, el servidor automáticamente anotó algo como:
+Invalid user admin from 64.66.0.20 port 4086 ssh2
+
+Eso quedó guardado en un archivo de log en el servidor.
+
+¿Cómo llegan esos logs a Splunk?
+En el mundo real, el proceso es así:
+
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│  Servidor   │────▶│  Archivo    │────▶│  Se sube a  │────▶│   Splunk    │
+│  (genera    │     │  de log     │     │  Splunk     │     │  (analiza)  │
+│  los logs)  │     │  (.zip o    │     │  automática │     │             │
+│             │     │   suelto)   │     │  o manual   │     │             │
+└─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘
+
+Formas comunes de cargar logs a Splunk:
+
+Método	Cómo funciona	Cuándo se usa
+Automático	Splunk tiene un "agente" instalado en el servidor que envía los logs en tiempo real	Empresas grandes, monitoreo 24/7
+Manual	Alguien descarga los archivos de log y los sube a Splunk (como hiciste vos)	Investigaciones puntuales, laboratorios, empresas chicas
+Programado	Un script automatiza la subida cada cierto tiempo (ej. cada hora)	Cuando se necesita regularidad sin inversión grande
+En el laboratorio que hiciste
+El laboratorio era simulado, entonces:
+
+Los logs ya estaban preparados para vos en un archivo llamado BetterBytes Log Files.zip
+
+Ese archivo contenía logs simulados de la tienda online de BetterBytes Games
+
+Los atacantes (en la simulación) habían generado esos logs al intentar entrar muchas veces
+
+No tuviste que ir a buscarlos a un servidor real porque era un ejercicio de práctica.
+
+En un trabajo real, ¿cómo harías?
+Paso	Acción
+1	Accedés al servidor (por SSH o remote desktop)
+2	Ubicás los archivos de log (ej. /var/log/auth.log, /var/log/apache2/access.log)
+3	Los comprimís en .zip o .tar.gz
+4	Los descargás a tu computadora
+5	Los subís a Splunk (como hiciste en el laboratorio)
+O mejor: configurás Splunk para que lea los logs automáticamente en tiempo real, sin tener que andar subiendo archivos manualmente.
+
+### ¿De dónde salieron los logs que usaste en Splunk?
+
+#### En el laboratorio (simulación)
+
+- Los logs ya estaban **preparados** en un archivo `BetterBytes Log Files.zip`
+- Eran **logs simulados** de una tienda online de videojuegos
+- Los "atacantes" (en la simulación) generaron esos logs al intentar entrar muchas veces
+
+#### En el mundo real (cuando trabajes)
+
+**¿Quién genera los logs?**
+- Servidores web (cada vez que alguien visita una página)
+- Servidores de autenticación (cada intento de login)
+- Firewalls (cada conexión que entra o sale)
+- Aplicaciones (cada error o acción importante)
+
+**¿Cómo llegan a Splunk?**
+
+| Método | Descripción |
+|--------|-------------|
+| **Automático** | Un agente instalado en el servidor envía logs en tiempo real |
+| **Manual** | Alguien descarga los logs y los sube (como en el laboratorio) |
+| **Programado** | Un script sube los logs cada cierto tiempo |
+
+**En un trabajo real:**
+1. Accedés al servidor (SSH, RDP)
+2. Ubicás los logs (ej. `/var/log/auth.log`)
+3. Los comprimís o los envías directo a Splunk
+4. Analizás con búsquedas similares a las que practicaste
+
+¿Hay que configurar servidores para generar logs?
+Respuesta corta: Los servidores ya generan logs por defecto, pero hay que configurarlos para que generen los logs que VOS necesitás y en el formato que VOS querés.
+
+Nivel 1: Logs básicos (vienen por defecto)
+La mayoría de los servidores ya vienen con logs básicos activados sin hacer nada. Ejemplos:
+
+Servidor	Log por defecto	Qué registra
+Linux (SSH)	/var/log/auth.log	Quién intentó conectarse por SSH (éxitos y fracasos)
+Apache (web)	/var/log/apache2/access.log	Cada visita a un sitio web
+Firewall	Log de conexiones	Qué IPs intentaron entrar y a qué puerto
+Estos logs ya existen apenas instalás el servidor. No necesitás hacer nada.
+
+Nivel 2: Logs avanzados (hay que configurarlos)
+Si querés logs más detallados o específicos, tenés que configurarlos:
+
+Qué querés registrar	Cómo se configura
+Intentos de login en una aplicación web	Configurar la app para que registre cada intento
+Compras en una tienda online	El código de la tienda debe tener instrucciones para loguear
+Cambios en bases de datos	Configurar "audit logging" en la base de datos
+Actividad de usuarios específicos	Configurar políticas de auditoría
+Nivel 3: Logs centralizados (para Splunk)
+Para que los logs lleguen a Splunk, tenés que configurar:
+
+Opción	Cómo funciona
+Agente de Splunk	Instalás un programita en cada servidor que envía logs automáticamente a Splunk
+Forwarder	El servidor envía copia de sus logs a un servidor central
+Subida manual	Alguien descarga los logs y los sube (como hiciste en el laboratorio)
+Ejemplo práctico: El ataque que investigaste
+El servidor ya registraba intentos de SSH por defecto. Por eso apareció:
+
+text
+Invalid user admin from 64.66.0.20 port 4086 ssh2
+No hizo falta configurar nada extra. Ese log ya estaba ahí.
+
+Pero si hubieran sido intentos de login en la tienda online (web), alguien tuvo que programar la tienda para que registre cada intento. No viene por defecto.
+
+Resumen fácil
+Tipo de log	Viene por defecto?	Hay que configurar?
+Intentos SSH (Linux)	✅ Sí	❌ No
+Visitas a sitio web (Apache)	✅ Sí	❌ No
+Intentos de login en aplicación web	❌ No	✅ Sí (programarlo)
+Compras en tienda online	❌ No	✅ Sí (programarlo)
+Conexiones bloqueadas por firewall	Depende	⚠️ A veces hay que activarlo
+
+### ¿Hay que configurar servidores para generar logs?
+
+#### Respuesta corta
+- Los servidores **ya generan logs básicos** por defecto (SSH, Apache, firewall)
+- Para logs **específicos** (como intentos de login en una app web) **sí hay que programarlos**
+
+#### ¿Qué logs vienen solos?
+
+| Servicio | Log | Qué registra |
+|----------|-----|--------------|
+| Linux SSH | `/var/log/auth.log` | Intentos de conexión |
+| Apache web | `/var/log/apache2/access.log` | Visitas al sitio |
+| Firewall | logs de red | Conexiones entrantes/salientes |
+
+#### ¿Qué logs hay que configurar?
+
+- Intentos de login en una aplicación web (lo programa el desarrollador)
+- Compras en una tienda online (lo programa el desarrollador)
+- Cambios en bases de datos (se activa "audit logging")
+- Envío de logs a Splunk (se instala un "agente")
+
+#### En el laboratorio
+- Los logs ya estaban **preparados** en el archivo `.zip`
+- Simulaban logs reales de una tienda online
+- No tuviste que configurar nada porque era una simulación
+
+### Actividad: Explorar trabajos de cazador de amenazas
+
+#### ¿Qué es un cazador de amenazas?
+
+Es un profesional de ciberseguridad que **busca activamente** señales de atacantes que ya pudieron haber entrado a la empresa, antes de que causen daño. A diferencia del analista SOC que reacciona a alertas, el cazador investiga **proactivamente** sin que haya una alerta.
+
+#### Habilidades clave
+
+| Habilidad | Explicación |
+|-----------|-------------|
+| Conocimiento de ciberseguridad | Entender cómo piensan los hackers (TTPs, MITRE ATT&CK) |
+| Redes y sistemas | Saber cómo funcionan redes, Windows, Linux |
+| Inteligencia de amenazas | Saber dónde buscar información sobre amenazas |
+| Pensamiento analítico | Encontrar patrones raros en grandes volúmenes de datos |
+| Herramientas SIEM/EDR | Splunk, QRadar, Wazuh |
+| Programación | Python, SQL para automatizar |
+| Comunicación | Explicar hallazgos a no técnicos |
+
+#### Ejemplos de trabajos reales
+
+| Puesto | Empresa | Ubicación | Sueldo |
+|--------|---------|-----------|--------|
+| Staff Cyber Threat Hunter | Viasat | EE.UU. | $165k - $260k |
+| Staff Threat Intelligence Analyst | Huntress | EE.UU. (remoto) | $190k - $210k |
+| Cyber Threat Intelligence Analyst | Caterpillar | EE.UU. | No especificado |
+| Cazador de amenazas OT | Confidencial | Colombia | $4 - $9.5M COP |
+
+#### Requisitos comunes
+
+- **Experiencia:** 3-7 años en ciberseguridad o threat hunting
+- **Estudios:** Ingeniería en Sistemas, Informática o afines
+- **Certificaciones:** GCTI, CISSP, CySA+, CEH
+- **Frameworks:** MITRE ATT&CK, Cyber Kill Chain
+- **Herramientas:** SIEM (Splunk, QRadar), EDR, Wazuh
+- **Programación:** Python, SQL
+- **Idioma:** Inglés (generalmente B2 o superior)
+
+#### ¿Es lo mismo que Analista SOC?
+
+| Analista SOC | Cazador de Amenazas |
+|--------------|---------------------|
+| Reactivo (responde a alertas) | Proactivo (busca sin alerta) |
+| Espera que el SIEM alerte | Asume que el atacante YA está adentro |
+| Nivel 1-2 (entry level) | Especialista (Tier 3 avanzado) |
+
+## Resumen y previsión
+
+### Resumen de la lección
+
+En esta lección, aprendiste cómo las herramientas **SIEM** ayudan a las organizaciones a **monitorear, identificar y resolver** amenazas.
+
+#### Puntos clave aprendidos sobre SIEM
+
+- Las herramientas SIEM emplean **algoritmos avanzados** y **aprendizaje automático (machine learning)** para detectar posibles incidentes
+- Envían **alertas** a los equipos de seguridad cuando se detecta actividad sospechosa
+- Con estas herramientas, las organizaciones pueden **rastrear el origen** de un ataque
+- Permiten **tomar medidas** para proteger sus sistemas y datos
+
+---
+
+### Proceso SIEM (ciclo continuo)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PROCESO SIEM │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ Recopilación ──▶ Detección ──▶ Alerta ──▶ Investigación ──▶ Respuesta │
+│ de datos de amenazas │
+│ │
+│ El ciclo se repite constantemente para mantener la seguridad │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Herramientas y tecnologías del Módulo 10
+
+| Herramienta/Tecnología | Propósito |
+|------------------------|-----------|
+| **Herramientas de diagnóstico de red** | Monitorear rendimiento y detectar problemas (ping, traceroute, nslookup, Nmap) |
+| **Nmap / Zenmap** | Escaneo de puertos y reconocimiento de red |
+| **EDR** | Detección y respuesta de endpoints (protección de dispositivos) |
+| **SIEM** | Correlación de datos, detección de amenazas, alertas |
+| **Splunk** | Herramienta SIEM para investigación de amenazas |
+
+---
+
+### Próximos pasos
+
+Completaste la **última lección** de este módulo. A continuación:
+
+- ✅ Revisar los **puntos clave** del módulo
+- ✅ Explorar **recursos adicionales** relacionados con la supervisión de seguridad
+- ✅ Prepararse para la **evaluación** del módulo
+
+---
+
+## ¡Módulo 10 completado!
+
+Con esto hemos terminado de formatear todo el contenido del **Módulo 10: Monitoreo de Seguridad**.
+
+### Resumen de lo aprendido en el Módulo 10
+
+| Lección | Temas cubiertos |
+|---------|-----------------|
+| **Herramientas de monitoreo** | Diagnóstico de red, ping, traceroute, nslookup, Nmap/Zenmap |
+| **Reconocimiento de red** | Escaneo de puertos, identificación de vulnerabilidades |
+| **Monitoreo de endpoints** | Gestión de endpoints, respuesta de endpoints |
+| **EDR** | Detección proactiva, respuesta automática, gestión centralizada |
+| **SIEM** | Correlación de datos, detección de amenazas, alertas |
+| **Splunk** | Investigación práctica con logs, búsquedas, exportación de tablas |
+
+---
+
+## Puntos para recordar - Conceptos clave
+
+### Herramientas de monitoreo y diagnóstico
+
+| # | Concepto |
+|---|----------|
+| 1 | Las herramientas de **diagnóstico de red y monitoreo del rendimiento** identifican posibles problemas y proporcionan diagnósticos en tiempo real de las ralentizaciones de la red |
+| 2 | El **monitoreo del usuario** permite la observación y el análisis de las acciones y comportamientos de los empleados mientras interactúan con un sistema informático o una red |
+| 3 | Cuando una herramienta de monitoreo de usuario detecta una amenaza, activa una **alerta** para que los equipos de seguridad puedan investigar el incidente |
+| 4 | Las herramientas **UEBA** (User and Entity Behavior Analytics) utilizan **machine learning** e **IA** para analizar puntos de datos como inicios de sesión y uso de aplicaciones |
+
+### Endpoints y EDR
+
+| # | Concepto |
+|---|----------|
+| 5 | Los **endpoints** son dispositivos conectados a una red que sirven como puntos de entrada para la comunicación e interacción |
+| 6 | La **gestión de endpoints** se refiere a monitorear, proteger y controlar los endpoints conectados a una red |
+| 7 | La **respuesta de endpoints** es detectar y responder a las amenazas usando herramientas como antimalware, IDS y firewalls |
+| 8 | Las herramientas **EDR** usan algoritmos avanzados para detectar ciberamenazas sofisticadas que pueden pasar inadvertidas con medidas básicas |
+| 9 | Las herramientas EDR proporcionan **alertas en tiempo real** para responder rápidamente a incidentes |
+| 10 | Las herramientas EDR simplifican la administración de endpoints a través de un **panel de control centralizado** |
+
+### SIEM
+
+| # | Concepto |
+|---|----------|
+| 11 | **SIEM** (Security Information and Event Management) combina personas y herramientas para proteger sistemas y datos de ciberataques |
+| 12 | Los profesionales de seguridad SIEM son responsables de **implementar, monitorear, analizar y responder** a eventos de seguridad |
+| 13 | Las herramientas SIEM protegen y ayudan a **prevenir ciberataques** antes de que causen daños |
+| 14 | Las herramientas SIEM benefician a las organizaciones con: mejor detección de amenazas, respuesta más rápida, reportes de cumplimiento, vistas centralizadas y automatización |
+| 15 | El proceso de gestión de amenazas con SIEM es un **ciclo continuo**: recopilación → detección → alerta → investigación → respuesta |
+
+---
+
+## Grandes ideas - Habilidades practicadas
+
+| Habilidad | Aplicación en el módulo |
+|-----------|-------------------------|
+| **Pensamiento analítico** | Explicar cómo EDR mejora la seguridad y se diferencia de herramientas tradicionales |
+| **Comunicación escrita** | Documentar hallazgos y elaborar informes |
+| **Pensamiento crítico** | Identificar herramientas de diagnóstico y monitoreo |
+| **Atención al detalle** | Identificar beneficios de EDR y SIEM |
+| **Resolución de problemas** | Realizar reconocimiento de red |
+| **Agilidad de aprendizaje** | Investigar amenazas con Splunk Enterprise |
+| **Mentalidad de crecimiento** | Explorar certificación CySA+ y trayectoria profesional |
+| **Investigación** | Listar requisitos comunes para trabajos de cazador de amenazas |
+
+### Habilidades de gestión de carrera
+
+- Enumerar las habilidades que la certificación **CompTIA CySA+** prueba y los trabajos a los que puede ayudar a acceder
+- Describir las habilidades clave necesarias para tener éxito como **cazador de amenazas** (Threat Hunter)
+
+---
+
+## Objetivos de aprendizaje - Módulo 10 completado
+
+Ahora que has completado este módulo, deberías poder:
+
+- ✅ **Realizar reconocimiento de red** (usando herramientas como ping, traceroute, nslookup, Nmap/Zenmap)
+- ✅ **Aplicar los principios de gestión y monitoreo de endpoints** para usar una herramienta EDR
+- ✅ **Realizar una investigación de amenazas** con Splunk Enterprise
+
+---
+
+## ¡Módulo 10 completado! 🎉
+
+### Resumen de tecnologías aprendidas
+
+| Tecnología | Propósito |
+|------------|-----------|
+| **ping** | Probar conectividad y medir tiempo de respuesta |
+| **traceroute / tracert** | Rastrear la ruta de los paquetes hasta el destino |
+| **nslookup** | Consultar registros DNS |
+| **Nmap / Zenmap** | Escanear puertos, servicios y sistemas operativos |
+| **EDR** | Detección y respuesta de endpoints (protección de dispositivos) |
+| **SIEM** | Correlación de datos, detección de amenazas, alertas |
+| **Splunk** | Investigación práctica de logs y amenazas |
+| **UEBA** | Análisis de comportamiento de usuarios con IA/ML |
+
+---
+### Explora más recursos
+
+Para profundizar en los conceptos tratados en este módulo, consulta estos recursos:
+
+| Recurso | Descripción |
+|---------|-------------|
+| **¿Qué es el comando nslookup y cómo se emplea?** | Artículo de Susith Nonis que explica cómo emplear el comando `nslookup` para solucionar problemas de red |
+| **¿Qué es Splunk?** | Sitio web de Fortinet que resume la historia, beneficios, características y versiones de Splunk, y explica cómo funciona |
+| **¿Qué es SIEM?** | Artículo de IBM que define SIEM, cómo funciona y cómo ayuda a las organizaciones a detectar y responder a las amenazas mediante la centralización y análisis de datos de eventos de seguridad |
+
+---
+
+### Referencias
+
+La siguiente lista contiene las fuentes de este módulo:
+
+**Lección 3: Información de seguridad y gestión de eventos**
+
+1. *¿Qué es SIEM?* IBM, consultado el 26 de junio de 2024.
+
+---
+
+## ¡Módulo 10 completado! 🎉
+
+### Resumen final del Módulo 10: Monitoreo de Seguridad
+
+| Lección | Temas cubiertos |
+|---------|-----------------|
+| **Herramientas de monitoreo** | ping, traceroute, nslookup, Nmap/Zenmap, monitoreo activo/pasivo |
+| **Reconocimiento de red** | Escaneo de puertos, identificación de vulnerabilidades, análisis de tráfico |
+| **Monitoreo de endpoints** | Gestión de endpoints, respuesta de endpoints, EDR |
+| **SIEM** | Correlación de datos, detección de amenazas, alertas, ciclo continuo |
+| **Splunk** | Carga de datos, búsqueda con comodines, filtrado por IP, exportación de tablas |
+
+### Tecnologías aprendidas
+
+| Tecnología | Comando/Herramienta | Propósito |
+|------------|-------------------|-----------|
+| **ping** | `ping <IP>` | Probar conectividad y medir latencia |
+| **tracert/traceroute** | `tracert <IP>` | Rastrear ruta de paquetes |
+| **nslookup** | `nslookup <dominio>` | Consultar registros DNS |
+| **Nmap/Zenmap** | `nmap <IP/dominio>` | Escanear puertos y servicios |
+| **EDR** | Herramientas EDR | Protección avanzada de endpoints |
+| **SIEM** | Splunk, QRadar | Correlación y análisis de eventos |
+| **UEBA** | Herramientas UEBA | Análisis de comportamiento con IA/ML |
+
+---
+
+#### Ejercicio: Respuesta de endpoints con EDR
+
+**Escenario:**  
+Después de que un agente identifica una actividad maliciosa en un dispositivo de endpoint, ¿cuál debería ser el siguiente paso como parte de la respuesta del endpoint con una herramienta EDR?
+
+- [ ] Analizar patrones de comportamiento y tipos de archivos
+- [x] **Aislar el dispositivo afectado de la red**
+- [ ] Monitorear la actividad en todos los puntos de conexión
+- [ ] Bloquear el proceso o la aplicación maliciosa
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Aislar el dispositivo afectado de la red**. Según el proceso EDR del módulo, cuando se identifica actividad maliciosa, el primer paso es **aislar** el endpoint para contener la amenaza y evitar que se propague a otros dispositivos. Luego se bloquea el proceso malicioso, se termina y se eliminan los archivos sospechosos.
+
+</details>
+
+#### Ejercicio: Selección de herramienta EDR - Compatibilidad
+
+**Escenario:**  
+¿Cómo deberías explicar qué características debe tener en cuenta una organización al seleccionar una herramienta EDR para **garantizar la compatibilidad con las herramientas y aplicaciones existentes**?
+
+- [ ] Compatibilidad con las medidas de seguridad existentes
+- [x] **Integración perfecta con la infraestructura actual**
+- [ ] Precio y escalabilidad
+- [ ] Compatibilidad con la nube y opciones de soporte
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Integración perfecta con la infraestructura actual**. Esta característica asegura que la nueva herramienta EDR pueda conectarse y trabajar sin problemas con las herramientas, aplicaciones y sistemas que la organización ya tiene implementados (firewalls, SIEM, antivirus, etc.), evitando costos adicionales de adaptación o reemplazo.
+
+</details>
+
+#### Ejercicio: Diferencia entre EDR y firewalls
+
+**Escenario:**  
+Estás escribiendo una capacitación para el equipo de ciberseguridad. ¿Qué descripción debes proporcionar para explicar **cómo una herramienta EDR mejora la seguridad de la red en comparación con medidas tradicionales como los firewalls**?
+
+- [x] **Proporcionan detección proactiva de amenazas avanzadas**
+- [ ] Proporcionan un cumplimiento eficiente de las políticas de los endpoints
+- [ ] Proporcionan monitoreo en tiempo real del comportamiento de los endpoints
+- [ ] Proporcionan una instalación simplificada de agentes de seguridad
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Proporcionan detección proactiva de amenazas avanzadas**. Mientras que los firewalls tradicionales actúan como "porteros" controlando el tráfico que entra/sale basándose en reglas, las herramientas EDR son como "detectives" que buscan activamente comportamientos sospechosos dentro de los dispositivos, incluso amenazas nuevas o sin archivos (fileless) que el firewall no puede detectar.
+
+</details>
+
+#### Ejercicio: Primera acción ante una alerta de SIEM
+
+**Escenario:**  
+Observas una alerta que indica **acceso no autorizado** a un dispositivo de red.
+
+**Pregunta:** ¿Qué acción debes tomar primero?
+
+- [ ] Realizar un escaneo de vulnerabilidades en la red
+- [ ] Notificar al administrador de red sobre la alerta
+- [x] **Analizar patrones de comportamiento y tipos de archivos para recopilar más información**
+- [ ] Ignorar la alerta, ya que podría ser un falso positivo
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Analizar patrones de comportamiento y tipos de archivos para recopilar más información**. Antes de notificar, escalar o actuar, es necesario investigar la alerta para entender qué está pasando, determinar si es real o un falso positivo, y recopilar evidencia que permita tomar decisiones informadas.
+
+</details>
+
+
