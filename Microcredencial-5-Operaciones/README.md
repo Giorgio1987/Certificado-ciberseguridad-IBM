@@ -4926,4 +4926,392 @@ La respuesta correcta es **Analizar patrones de comportamiento y tipos de archiv
 
 </details>
 
+## Proyecto final: Reunir un equipo SOC y realizar tareas de monitoreo de seguridad
+
+### Descripción del proyecto
+
+¡Te damos la bienvenida a **Reunir un equipo SOC y realizar tareas de monitoreo de seguridad**!
+
+En este proyecto final, leerás sobre los requisitos de operaciones de seguridad de diferentes organizaciones y **asignarás roles** a los solicitantes de un equipo de operaciones de seguridad. También realizarás **reconocimiento mediante el escaneo de redes**.
+
+#### Objetivos del proyecto
+
+| # | Objetivo |
+|---|----------|
+| 1 | **Distinguir entre modelos de seguridad estándar** |
+| 2 | **Asignar roles y tareas del centro de operaciones de seguridad (SOC)** a los solicitantes |
+| 3 | **Realizar reconocimiento de red** |
+
+---
+
+### Aprendizaje previo
+
+Este proyecto se basa en los conocimientos y habilidades adquiridos en estos módulos:
+
+- **Operaciones de seguridad** (Módulo 9)
+- **Monitoreo de seguridad** (Módulo 10)
+
+---
+
+### Resumen de competencias
+
+Luego de completar este proyecto final, deberías ser capaz de:
+
+- ✅ **Distinguir entre modelos de seguridad estándar**
+- ✅ **Asignar funciones y tareas del centro de operaciones de seguridad**
+- ✅ **Realizar reconocimiento de red**
+
+---
+
+### Habilidades para la inserción laboral
+
+| Habilidad | Cómo la practicarás en este proyecto |
+|-----------|--------------------------------------|
+| **Pensamiento analítico** | Distinguirás entre modelos de seguridad estándar y realizarás reconocimiento de red. Analizarás información compleja, identificarás patrones y tomarás decisiones informadas |
+| **Pensamiento creativo** | Pensarás de forma creativa al asignar roles y tareas del SOC, considerando cómo afecta al equipo y otras opciones posibles |
+| **Pensamiento crítico** | Evaluarás fortalezas y debilidades de diferentes enfoques de seguridad, la gravedad de vulnerabilidades y emitirás juicios informados |
+| **Profesionalismo** | Identificarás estándares éticos, mantendrás la confidencialidad de información sensible y seguirás mejores prácticas de la industria |
+| **Ingenio** | Encontrarás y usarás las herramientas, técnicas y recursos necesarios para completar los roles y tareas asignados, configurando un equipo SOC con cada persona en el rol correcto |
+
+---
+
+### Estructura del proyecto
+
+A continuación, se presentan los escenarios y las tareas que deberás completar para demostrar tus habilidades en:
+
+1. **Distinguir modelos de seguridad estándar**
+2. **Asignar roles del SOC**
+3. **Realizar reconocimiento de red**
+
+<!-- Acá irán los escenarios específicos del proyecto cuando los compartas -->
+
+### ¿Cómo se te evaluará?
+
+Realizarás **dos evaluaciones** en este proyecto culminante:
+
+---
+
+#### Evaluación 1: Proyecto
+
+Responderás preguntas para demostrar tu conocimiento de las **operaciones y la gestión de seguridad**.
+
+- **Puntaje mínimo requerido:** 80%
+- **Intentos:** Puedes volver a intentarlo tantas veces como desees
+- **⚠️ Importante:** No cierres el navegador mientras trabajas en el proyecto porque perderás tu progreso y tendrás que empezar de nuevo
+
+---
+
+#### Evaluación 2: Cuestionario
+
+Completarás una evaluación de **10 preguntas** para demostrar los conocimientos y habilidades que aplicaste en el proyecto.
+
+- **Puntaje mínimo requerido:** 80%
+- **Intentos:** Puedes volver a intentarlo si es necesario
+- **Feedback:** Recibirás comentarios sobre tus respuestas
+
+---
+
+### Pasos para completar el proyecto
+
+En el rol de **consultor de ciberseguridad**, reunirás los componentes necesarios para las operaciones de seguridad y el monitoreo.
+
+Completarás este proyecto en **tres pasos**:
+
+---
+
+#### Paso 1: Distinguir entre los modelos de SOC
+
+| Tarea | Descripción |
+|-------|-------------|
+| **Tarea 1** | Distinguir entre los diferentes **modelos de seguridad estándar** |
+| **Tarea 2** | Determinar el **mejor modelo de SOC** para una organización |
+
+**Modelos a considerar:**
+- SOC interno
+- SOC virtual (V-SOC)
+- SOC como servicio (SOCaaS)
+- SOC híbrido
+
+---
+
+#### Paso 2: Asignar roles y tareas de SOC
+
+| Tarea | Descripción |
+|-------|-------------|
+| **Tarea 1** | Revisar los **posibles miembros** del equipo de SOC |
+| **Tarea 2** | Asignar **roles a las personas** en función de sus habilidades |
+
+**Roles a considerar:**
+- Especialista en gestión de vulnerabilidades
+- Ingeniero en seguridad
+- Analista de seguridad
+- Cazador de amenazas
+- Especialista en comunicación
+
+---
+
+#### Paso 3: Realizar el reconocimiento de la red
+
+| Tarea | Descripción |
+|-------|-------------|
+| **Tarea 1** | Realizar el **escaneo** de un sitio de destino |
+| **Tarea 2** | Identificar las **características de seguridad** de un dispositivo host |
+
+**Herramientas a considerar:**
+- Nmap / Zenmap
+- Analizadores de paquetes
+- ping, traceroute, nslookup
+- Monitoreo activo / pasivo
+
+---
+
+### Resumen de pasos
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PROYECTO FINAL - 3 PASOS │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ Paso 1 Paso 2 Paso 3 │
+│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
+│ │ Distinguir │ │ Asignar │ │ Reconocer │ │
+│ │ modelos │─────────▶│ roles y │─────────▶│ red │ │
+│ │ de SOC │ │ tareas │ │ │ │
+│ └──────────────┘ └──────────────┘ └──────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+### Descripción general del proyecto por pasos
+
+---
+
+#### Paso 1: Distinguir entre modelos de SOC
+
+En este paso, determinarás las necesidades de distintas organizaciones y seleccionarás el **mejor modelo de SOC** para cada una.
+
+**Modelos de SOC a considerar:**
+| Modelo | Descripción |
+|--------|-------------|
+| **SOC interno** | Equipo interno, infraestructura propia, máximo control |
+| **SOC virtual (V-SOC)** | Basado en nube, equipo interno trabaja remoto |
+| **SOC como servicio (SOCaaS)** | Subcontratado a proveedor externo (todo incluido) |
+| **SOC híbrido** | Combina interno + externo |
+
+---
+
+#### Paso 2: Asignar roles y tareas de SOC
+
+En este paso, revisarás los **perfiles de candidatos** para puestos vacantes en un equipo SOC y determinarás qué candidatos deben avanzar en el proceso de contratación.
+
+**Roles a cubrir:**
+| Rol | Función principal |
+|-----|-------------------|
+| **Especialista en gestión de vulnerabilidades** | Identificar, evaluar y mitigar vulnerabilidades |
+| **Ingeniero en seguridad** | Implementar soluciones de seguridad (firewalls, IDS, etc.) |
+| **Analista de seguridad** | Primer respondedor, monitoreo, análisis de alertas |
+| **Cazador de amenazas** | Detectar y contener amenazas avanzadas |
+| **Especialista en comunicación** | Comunicación interna/externa, capacitación |
+
+---
+
+#### Paso 3: Realizar reconocimiento de red
+
+En este paso, realizarás el **escaneo de un sitio de destino** para recopilar información sobre una red.
+
+**Tareas específicas:**
+| Tarea | Descripción |
+|-------|-------------|
+| **Tarea 1** | Realizar el **escaneo** de un sitio de destino (usando herramientas como Nmap/Zenmap) |
+| **Tarea 2** | Identificar las **características de seguridad** de un dispositivo host: |
+| | - **Sistema operativo** del host |
+| | - **Número de puertos abiertos** |
+| | - Servicios y versiones |
+| | - Posibles vulnerabilidades |
+
+---
+
+### Resumen visual del proyecto
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PROYECTO FINAL │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐ │
+│ │ PASO 1 │ │ PASO 2 │ │ PASO 3 │ │
+│ │ │ │ │ │ │ │
+│ │ Distinguir │ │ Asignar │ │ Reconocimiento│ │
+│ │ modelos de │──▶│ roles y │──▶│ de red │ │
+│ │ SOC │ │ tareas │ │ │ │
+│ │ │ │ │ │ │ │
+│ │ • SOC interno │ │ • Especialista │ │ • Escaneo de │ │
+│ │ • V-SOC │ │ vulnerabilidad│ │ destino │ │
+│ │ • SOCaaS │ │ • Ingeniero │ │ • Identificar │ │
+│ │ • Híbrido │ │ • Analista │ │ características│ │
+│ │ │ │ • Cazador │ │ del host │ │
+│ │ │ │ • Comunicador │ │ │ │
+│ └─────────────────┘ └─────────────────┘ └─────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+#### Proyecto - Paso 1: Modelo de SOC para InfoInc
+
+**Escenario:**  
+InfoInc, una empresa de TI, cuenta con un equipo de seguridad interno competente, pero carece de conocimientos especializados. Buscan una solución que **complemente sus recursos existentes sin costos adicionales significativos**.
+
+**Pregunta:** ¿Qué modelo de SOC se adapta mejor a las necesidades de InfoInc?
+
+- [ ] SOC virtual (V-SOC)
+- [x] **SOC híbrido**
+- [ ] SOC interno
+- [ ] SOC como servicio (SOCaaS)
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **SOC híbrido**. InfoInc ya tiene un equipo interno competente, solo necesita complementar con expertise externo. El modelo híbrido les permite:
+- Mantener su equipo interno existente
+- Agregar conocimiento especializado externo (SOCaaS)
+- Controlar costos (solo pagan por lo que necesitan)
+
+El SOC interno no resolvería la falta de expertise. SOCaaS solo reemplazaría completamente su equipo (más costoso). V-SOC sigue dependiendo del mismo equipo interno.
+
+</details>
+
+#### Proyecto - Paso 1: Modelo de SOC para FastFin
+
+**Escenario:**  
+FastFin, una pequeña compañía emergente de tecnología financiera, carece de experiencia interna en seguridad y necesita una **solución rentable y escalable con monitoreo las 24/7**.
+
+**Pregunta:** ¿Qué modelo de SOC se adapta mejor a las necesidades de FastFin?
+
+- [ ] SOC virtual (V-SOC)
+- [ ] SOC interno
+- [ ] SOC híbrido
+- [x] **SOC como servicio (SOCaaS)**
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **SOCaaS**. FastFin es una startup sin equipo de seguridad interno. Necesita:
+- **Rentabilidad**: SOCaaS se paga por suscripción (sin inversión inicial)
+- **Monitoreo 24/7**: El proveedor externo tiene cobertura continua
+- **Escalabilidad**: Crece con la empresa
+- **Sin experiencia interna**: El proveedor pone el equipo completo
+
+Los otros modelos requieren equipo interno (SOC interno, SOC virtual, SOC híbrido) o inversión alta (SOC interno).
+
+</details>
+
+#### Proyecto - Paso 1: Modelo de SOC para MegaCorp
+
+**Escenario:**  
+MegaCorp, una empresa de grandes dimensiones, requiere un **control total** sobre su infraestructura de seguridad y un **tiempo de respuesta más rápido** ante incidentes de seguridad.
+
+**Pregunta:** ¿Qué modelo de SOC se adapta mejor a las necesidades de MegaCorp?
+
+- [x] **SOC interno**
+- [ ] SOC virtual (V-SOC)
+- [ ] SOC híbrido
+- [ ] SOC como servicio (SOCaaS)
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **SOC interno**. MegaCorp necesita:
+- **Control total** sobre su infraestructura → solo el SOC interno permite tener propiedad completa sobre hardware, software y procesos
+- **Tiempo de respuesta más rápido** → el equipo interno puede actuar inmediatamente sin depender de proveedores externos
+
+Los otros modelos implican compartir responsabilidades con externos (SOC híbrido, SOCaaS) o trabajar remotamente (SOC virtual), lo que reduce el nivel de control y puede afectar los tiempos de respuesta.
+
+</details>
+
+#### Proyecto - Paso 1: Razones para contratar SOC interno
+
+**Escenario:**  
+CyberTech Solutions es una compañía de rápido crecimiento que valora la protección de datos y la confianza de los clientes. Están considerando implementar un SOC.
+
+**Pregunta:** ¿Cuál de las siguientes razones tendría CyberTech Solutions para contratar un **SOC interno**?
+
+- [x] **Alto grado de control sobre la estrategia de seguridad**
+- [ ] Combinación de recursos internos con recursos externos
+- [ ] Servicio de seguridad las 24 horas del día
+- [ ] Monitoreo de seguridad remoto
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Alto grado de control sobre la estrategia de seguridad**. La principal ventaja de un SOC interno es que la organización mantiene control total sobre su infraestructura, políticas, personal y procesos de seguridad.
+
+- **Combinación de recursos** → es SOC híbrido
+- **Servicio 24/7** → también lo ofrecen SOCaaS y V-SOC
+- **Monitoreo remoto** → es más propio de V-SOC o SOCaaS
+
+</details>
+
+#### Proyecto - Paso 1: Modelo de SOC para tiempos de respuesta más rápidos
+
+**Escenario:**  
+CyberTech Solutions necesita un modelo de SOC que proporcione **los tiempos de respuesta más rápidos** a incidentes de seguridad.
+
+**Pregunta:** ¿Qué modelo de SOC se adapta mejor a las necesidades de CyberTech Solutions?
+
+- [ ] SOC virtual (V-SOC)
+- [ ] SOC híbrido
+- [ ] SOC como servicio (SOCaaS)
+- [x] **SOC interno**
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **SOC interno**. Este modelo proporciona los tiempos de respuesta más rápidos porque:
+- El equipo de seguridad trabaja **dentro** de la organización
+- Conocen directamente la infraestructura y los sistemas
+- Pueden **actuar inmediatamente** sin depender de proveedores externos
+- No hay latencia por comunicación, diferencias horarias o procesos de escalamiento
+
+El SOCaaS depende de un proveedor externo, lo que introduce demoras en la respuesta.
+
+</details>
+
+# Laboratorio Práctico: Reconocimiento de Red con Zenmap (Nmap GUI)
+
+## 📌 Resumen del Laboratorio
+Guía paso a paso de la resolución del laboratorio de análisis de infraestructura, escaneo de puertos y verificación de topología de red utilizando la herramienta interactiva **Zenmap** sobre el host objetivo `donut.bar`.
+
+---
+
+## 🛠️ Secuencia de Pasos y Respuestas Correctas
+
+### Paso 1: Configuración del Escaneo Lento pero Completo
+*   **Instrucción:** Seleccionar el escaneo correcto de la lista *Profile (Perfil)* para realizar un escaneo lento pero completo.
+*   **Acción:** Se desplegó el menú de perfiles en la interfaz.
+*   **Respuesta Seleccionada:** `Regular scan`
+*   **Justificación Técnica:** A diferencia de los perfiles `Intense scan` o `Quick scan` que fuerzan temporizaciones agresivas (parámetro `-T4`), el `Regular scan` ejecuta las consultas de puertos de forma secuencial y nativa, ideal para un reconocimiento exhaustivo y minucioso sin generar ráfagas ruidosas de tráfico en la red.
+
+### Paso 2: Análisis de la Topología y Ruta de Red
+*   **Instrucción:** Seleccionar la pestaña correcta de Zenmap para visualizar un mapa interactivo de la ruta de red (traceroute visual) desde la máquina local hacia el host de destino.
+*   **Acción/Clic:** Pestaña `Topology`
+*   **Justificación Técnica:** Esta sección genera un mapa interactivo de círculos concéntricos que representa los saltos de red y los routers intermedios que atraviesan los paquetes de datos hasta alcanzar el destino final.
+
+### Paso 3: Interpretación del Semáforo de Colores en la Topología
+*   **Instrucción:** El host de destino figura con un nodo de color amarillo en el panel de Topología. ¿Qué indica este color respecto al número de puertos abiertos?
+*   **Respuesta Seleccionada:** `De 3 a 6 puertos abiertos`
+*   **Justificación Técnica:** Zenmap utiliza un código de colores predefinido según la superficie de ataque expuesta del host:
+    *   **Verde:** Menos de 3 puertos abiertos.
+    *   **Amarillo:** Entre 3 y 6 puertos abiertos.
+    *   **Rojo:** Más de 6 puertos abiertos.
+
+### Paso 4: Extracción de Detalles de Direccionamiento IPv4
+*   **Instrucción:** Consultar el panel de *Host Details (Detalles del host)* para extraer la dirección IPv4 exacta asignada al sistema de destino.
+*   **Valor Ingresado:** `45.33.32.156`
+*   **Justificación Técnica:** Dentro del submenú de propiedades de red y resoluciones DNS del host, el panel refleja textualmente la dirección IP pública asociada al dominio analizado bajo el apartado *Addresses > IPv4*.
+
+Resumen
+Ahora que has completado este proyecto final, deberías poder: 
+
+•
+Distinguir entre modelos de seguridad estándar
+
+•
+Asignar roles y tareas del centro de operaciones de seguridad
+
+•
+Realizar reconocimiento de red
 
