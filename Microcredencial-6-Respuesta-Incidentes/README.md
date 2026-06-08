@@ -2437,3 +2437,3888 @@ La respuesta correcta es **Detección y análisis**. Esta fase consiste en ident
 
 </details>
 
+## Módulo 12: Ciencia forense de sistemas digitales
+
+### Acerca de este módulo
+
+El campo de la ciberseguridad gira en torno a los **datos** de las personas u organizaciones. La mayoría de los profesionales de la ciberseguridad trabajan para preservar la **confidencialidad, integridad o disponibilidad** de estos datos.
+
+Pero los **investigadores forenses digitales** emplean los datos como medio para un fin diferente: **llevar a los delincuentes cibernéticos ante la justicia**.
+
+Te damos la bienvenida al módulo de **Ciencia forense de sistemas digitales**.
+
+#### En este módulo aprenderás:
+
+- **Qué es la ciencia forense digital**
+- Las **fuentes y usos** de los datos forenses digitales
+- Las **consideraciones legales** para los investigadores, incluida la **cadena de custodia**
+- Las **fases del proceso forense digital**
+- Las **medidas** que toman los expertos en cada fase para preservar la **integridad de las pruebas** y la investigación
+- **Herramientas forenses digitales** y técnicas específicas para trabajar con datos
+- Practicar el uso de **herramientas estándar** para analizar evidencia forense digital
+
+* Objetivos de aprendizaje
+Luego de completar este módulo, deberías ser capaz de:
+
+•
+Analizar un ciberataque mediante ciencia forense digital
+
+•
+Aplicar las cuatro fases de la ciencia forense digital a un escenario
+
+•
+Analizar la evidencia forense digital
+
+### Acerca de esta lección: Introducción a la ciencia forense digital
+
+La mayor parte del trabajo de ciberseguridad se centra en **prevenir, detectar y mitigar** incidentes cibernéticos o recuperarse de ellos.
+
+Pero los **investigadores forenses digitales** van a la ofensiva, empleando sus conocimientos y habilidades para **llevar a los delincuentes cibernéticos ante la justicia**.
+
+#### En esta lección aprenderás:
+
+- Los **conceptos básicos** de ciencia forense digital
+- Las **fuentes y los usos** de los datos forenses digitales
+- Las **consideraciones legales** para los investigadores forenses digitales
+
+### Visión general: Ciencia forense digital
+
+#### ¿Qué es la ciencia forense digital?
+
+Cuando un delito ocurre en línea, puede ser complejo y difícil de rastrear o entender. ¿Cómo puede alguien encontrar a los malhechores para que no puedan cometer más delitos y se enfrenten a la justicia?
+
+La **ciencia forense digital** es un proceso que implica **profundizar en los datos y dispositivos digitales** para descubrir evidencia de actividad delictiva.
+
+> Los expertos en ciencia forense digital requieren **conocimientos y habilidades especializados**. Deben usar las herramientas y procesos adecuados para **recopilar, examinar, analizar e informar** meticulosamente la evidencia digital.
+
+---
+
+#### ¿Para qué sirve la evidencia forense digital?
+
+| Ámbito | Ejemplos |
+|--------|----------|
+| **Tribunales** | Hackeo, fraude, piratería de software, acoso cibernético |
+| **Decisiones internas** | Decisiones de recursos humanos |
+
+> La ciencia forense digital ayuda a proporcionar una revisión **integral** de la evidencia digital para garantizar que sea **confiable y precisa**.
+
+---
+
+#### Las 4 fases del proceso forense digital
+
+| Fase | Descripción |
+|------|-------------|
+| **1. Recopilación** | Reunir datos digitales de diversas fuentes. El perito debe **preservar la integridad** de la evidencia. Una vez adquiridos los datos, deben **almacenarse de forma segura** |
+| **2. Examen** | Revisión exhaustiva de los datos recopilados para **identificar y extraer información relevante**. Incluye búsquedas por palabras clave, extracción de datos y descifrado |
+| **3. Análisis** | Los datos se **correlacionan e interpretan** para crear una narración cohesionada. Se deben identificar e interpretar diversos formatos (texto, gráficos, audio, video) |
+| **4. Informes** | Preparar un informe **detallado y exhaustivo** de las conclusiones. Debe incluir: descripción del proceso y metodología, resumen de la evidencia, análisis realizados y conclusiones extraídas |
+
+---
+
+#### Habilidades necesarias para la ciencia forense digital
+
+| Habilidad | Descripción |
+|-----------|-------------|
+| **Conocimiento técnico** | Muchos tipos de dispositivos y medios digitales |
+| **Análisis de datos** | Manejo de herramientas y técnicas de análisis |
+| **Comunicación** | Capacidad de comunicar conclusiones de manera efectiva y precisa |
+
+> El informe debe presentarse de tal manera que las partes interesadas **no técnicas** (profesionales del derecho, jueces, jurados) puedan comprenderlo fácilmente.
+
+---
+
+#### Diagrama del proceso forense digital
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PROCESO FORENSE DIGITAL - 4 FASES │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌───────────┐ │
+│ │ 1. │ │ 2. │ │ 3. │ │ 4. │ │
+│ │ Recopilación │───▶│ Examen │───▶│ Análisis │───▶│ Informes │ │
+│ │ │ │ │ │ │ │ │ │
+│ │ Preservar │ │ Identificar │ │ Correlacionar│ │ Explicar │ │
+│ │ integridad │ │ extraer │ │ interpretar │ │ claramente│ │
+│ └──────────────┘ └──────────────┘ └──────────────┘ └───────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+---
+
+#### Frase final
+
+> *"En resumen, siempre que necesites evidencia para asegurarte de que un proceso sea justo y legítimo, llama a un perito en ciencia forense digital."*
+
+### Fuentes de datos forenses digitales
+
+#### Definición del NIST
+
+El **National Institute of Standards and Technology (NIST)** ofrece la siguiente definición de ciencia forense digital:
+
+> *"[La ciencia forense digital es] la aplicación de la ciencia a la **identificación, recopilación, examen y análisis** de datos, **preservando la integridad** de la información y manteniendo una **estricta cadena de custodia** de los datos."*
+> 
+> *– Fuente: NIST*
+
+---
+
+#### Fuentes comunes de datos forenses
+
+Los investigadores pueden recuperar datos, incluso **datos borrados o cifrados**, de varias fuentes:
+
+| Categoría | Ejemplos |
+|-----------|----------|
+| **Unidades de disco duro internas** | Computadoras portátiles, tabletas, computadoras de escritorio, servidores físicos |
+| **Medios de almacenamiento extraíbles** | Memorias USB, unidades de disco duro externas |
+| **Almacenamiento de dispositivos móviles** | Tarjetas de memoria, tarjetas SD de smartphones y cámaras digitales |
+| **Dispositivos de seguridad física** | Grabaciones de cámaras de seguridad, registros de sistemas de control de acceso, alertas de alarmas y sensores |
+| **Dispositivos de red** | Enrutadores, firewalls |
+| **Medios de almacenamiento óptico** | CD, DVD |
+| **Dispositivos periféricos** | Impresoras |
+| **Archivos de registro** | Registros de red (logs) |
+
+---
+
+#### Memoria volátil vs. no volátil
+
+| Tipo de memoria | ¿Qué es? | Ejemplo | Desafío forense |
+|----------------|----------|---------|-----------------|
+| **No volátil (NVM)** | Conserva los datos almacenados incluso cuando apagas el dispositivo | Discos duros, USB, tarjetas SD | Se pueden recuperar datos fácilmente |
+| **Volátil** | Datos de una sesión en vivo que se **pierden cuando finaliza la sesión** | Memoria RAM, archivos temporales abiertos | **Recuperarlos es un reto** (se pierden al apagar) |
+
+> ⚠️ **Advertencia:** Cuando apagas la computadora, el sistema operativo cierra todos los archivos abiertos. Podrías perder archivos temporales para siempre si no capturaste una **imagen de copia de seguridad** o una **instantánea del sistema** en ese estado. Perder esos datos será **perjudicial** para las investigaciones forenses.
+
+---
+
+### Diagrama: Fuentes de datos forenses
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ FUENTES DE DATOS FORENSES │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ ALMACENAMIENTO INTERNO │ │
+│ │ Discos duros (laptops, PCs, servidores) │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ MEDIOS EXTRAÍBLES │ │
+│ │ USB, discos duros externos, CD/DVD, tarjetas SD │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ DISPOSITIVOS DE RED │ │
+│ │ Enrutadores, firewalls, logs de red │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ DISPOSITIVOS DE SEGURIDAD FÍSICA │ │
+│ │ Cámaras de seguridad, sistemas de control de acceso │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ DATOS VOLÁTILES (difíciles de recuperar) │ │
+│ │ Memoria RAM, archivos temporales, sesiones activas │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+---
+
+### Importancia de preservar la integridad de los datos
+
+| Concepto | Significado |
+|----------|-------------|
+| **Integridad de los datos** | Los datos no deben ser alterados, modificados o dañados durante la investigación |
+| **Cadena de custodia** | Registro documentado de quién manejó la evidencia, cuándo y con qué propósito |
+| **Imagen forense** | Copia exacta bit a bit del dispositivo original (no solo los archivos visibles) |
+
+### Usos de la ciencia forense digital
+
+La ciencia forense digital (o ciencia forense de computadoras o redes) es cada vez más importante para las **autoridades**, las **investigaciones corporativas** y la **seguridad nacional**.
+
+---
+
+#### 1. Autoridades (investigaciones criminales)
+
+Las autoridades emplean la ciencia forense digital para investigar delitos que involucran datos digitales.
+
+**Ejemplo: Caso de acoso**
+
+| Tipo de evidencia | Qué puede revelar |
+|-------------------|-------------------|
+| **Correos electrónicos, mensajes de texto** | Pistas sobre la identidad y ubicación del acosador |
+| **Dirección IP** | Permite establecer la ubicación del acosador |
+| **Datos de GPS de teléfonos inteligentes** | Demuestra que el sospechoso está en los mismos lugares que la víctima (seguimiento) |
+| **Marcas de tiempo** | Ayuda a desarrollar una cronología detallada de las actividades del acosador |
+
+> Todos estos datos pueden proporcionar pruebas suficientes para **identificar, arrestar y procesar** al sospechoso.
+
+---
+
+#### 2. Corporaciones (entornos empresariales)
+
+En entornos corporativos, los investigadores forenses investigan:
+
+| Tipo de incidente | Ejemplos |
+|-------------------|----------|
+| **Filtraciones de datos** | Exfiltración de información confidencial |
+| **Robo de propiedad intelectual** | Patentes, secretos comerciales, código fuente |
+| **Mala conducta de empleados** | Uso inapropiado de recursos, acoso laboral |
+
+> Pueden **recuperar datos** para determinar **quién** accedió a ellos y **cuándo**.
+
+---
+
+#### 3. Seguridad nacional
+
+Las agencias gubernamentales emplean la ciencia forense digital para investigar:
+
+| Tipo de incidente | Descripción |
+|-------------------|-------------|
+| **Fugas de datos** | Documentos clasificados filtrados |
+| **Terrorismo** | Planes de atentados, comunicaciones entre terroristas |
+| **Espionaje** | Robo de secretos de estado |
+| **Delincuencia cibernética** | Ataques a infraestructura crítica |
+
+**Ejemplo: Atentado terrorista**
+
+| Evidencia | Qué puede revelar |
+|-----------|-------------------|
+| **Historial de navegación** | Horas dedicadas a investigar cómo crear bombas |
+| **Historial de compras en Internet** | Materiales necesarios para crear una bomba |
+
+**Ejemplo: Filtración gubernamental**
+
+| Tipo de evidencia | Qué puede revelar |
+|-------------------|-------------------|
+| **Metadatos de archivos** | El sospechoso accedió a un archivo confidencial sin autorización |
+| **Correos electrónicos, mensajes de chat** | Evidencia de que compartió el archivo |
+| **Paquetes de red** | Envío del archivo a un usuario o dispositivo externo |
+| **Registros del sistema y almacenamiento** | Almacenamiento en discos externos o compartición externa |
+
+> **Nota:** Un **paquete** es un pequeño fragmento de datos en tránsito a través de una red. Con un **analizador de paquetes** (como Wireshark), puedes examinar las actividades de red de un usuario, incluso los tipos de datos que envía.
+
+---
+
+### Resumen de los usos por ámbito
+
+| Ámbito | Aplicaciones principales |
+|--------|-------------------------|
+| **Autoridades** | Acoso, fraudes, delitos digitales, identificación de sospechosos |
+| **Corporaciones** | Filtraciones, robo de propiedad intelectual, mala conducta de empleados |
+| **Seguridad nacional** | Terrorismo, espionaje, fugas de datos, delincuencia cibernética |
+
+---
+
+### Diagrama visual
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ USOS DE LA CIENCIA FORENSE DIGITAL │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐ │
+│ │ AUTORIDADES │ │ CORPORACIONES │ │ SEGURIDAD │ │
+│ │ │ │ │ │ NACIONAL │ │
+│ ├─────────────────┤ ├─────────────────┤ ├─────────────────┤ │
+│ │ • Acoso │ │ • Filtraciones │ │ • Terrorismo │ │
+│ │ • Fraude │ │ • Robo de IP │ │ • Espionaje │ │
+│ │ • Delitos │ │ • Mala conducta │ │ • Fugas de datos│ │
+│ │ digitales │ │ de empleados │ │ • Delincuencia │ │
+│ │ • Identificación│ │ │ │ cibernética │ │
+│ │ de sospechosos│ │ │ │ │ │
+│ └─────────────────┘ └─────────────────┘ └─────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+### Cadena de custodia
+
+#### Consideraciones legales en la ciencia forense digital
+
+Los investigadores forenses digitales trabajan junto con las investigaciones criminales. Las leyes y regulaciones varían según los gobiernos locales, estatales y federales y entre países.
+
+> Los investigadores forenses digitales deben conocer los requisitos pertinentes para garantizar que la evidencia que manejan siga siendo **admisible** en los procedimientos legales. No deben **comprometer la integridad** de la investigación.
+
+Uno de los requisitos legales más importantes para los investigadores forenses de datos es **observar la cadena de custodia**.
+
+---
+
+#### ¿Qué es la cadena de custodia?
+
+La **cadena de custodia** es un proceso en el que se **documenta el ciclo de vida** de la evidencia.
+
+> Es el **rastro de auditoría** de la evidencia. Indica a **todos y todo** lo que entró en contacto con la evidencia y **cuándo, dónde y por qué** ocurrió ese contacto.
+
+Ya sea manejando evidencia **digital o física**, siempre necesitas una **cadena de custodia confiable**.
+
+---
+
+#### Documentación de la cadena de custodia
+
+Cuando los investigadores obtienen su primera evidencia, siguen la cadena de custodia y comienzan a completar un **formulario de cadena de custodia**. Deben actualizar el formulario **cada vez que alguien manipule la evidencia**.
+
+**Información que se debe registrar:**
+
+| Información | Descripción |
+|-------------|-------------|
+| **Fecha, hora y duración** | Cuándo y por cuánto tiempo cada persona manipuló la evidencia |
+| **Acciones realizadas** | Transferir, copiar, analizar evidencia, verificar integridad de la copia vs. original |
+| **Ubicación de almacenamiento** | Dónde se almacena la evidencia cuando no está en uso |
+
+---
+
+#### Ejemplo de formulario de cadena de custodia
+
+| Campo | Descripción |
+|-------|-------------|
+| **Número de caso** | Identificador único del caso |
+| **Descripción de la evidencia** | Tipo de dispositivo, modelo, número de serie |
+| **Recolectado por** | Nombre de quien recolectó la evidencia |
+| **Fecha y hora de recolección** | Cuándo se obtuvo la evidencia |
+| **Ubicación de recolección** | Dónde se encontró la evidencia |
+| **Transferencias** | De quién a quién, fecha, hora, propósito |
+| **Análisis realizados** | Qué análisis se hicieron y por quién |
+| **Almacenamiento** | Ubicación física cuando no se usa |
+
+---
+
+### Importancia de la cadena de custodia
+
+| Razón | Explicación |
+|-------|-------------|
+| **Admisibilidad legal** | Sin una cadena de custodia clara, la evidencia puede ser rechazada en un tribunal |
+| **Integridad de la evidencia** | Demuestra que la evidencia no fue alterada o manipulada |
+| **Rastro de auditoría** | Permite reconstruir quién manejó la evidencia y cuándo |
+| **Credibilidad** | Una cadena de custodia bien documentada fortalece la credibilidad de la investigación |
+
+---
+
+### Analogía fácil
+
+| Situación | Analogía |
+|-----------|----------|
+| **Cadena de custodia** | Es como el **registro de visitas a una prisión**: anotas quién entró, a qué hora, por cuánto tiempo y con qué propósito. Si falta esa información, cualquiera podría haber entrado sin control. |
+
+---
+
+### Diagrama del ciclo de vida de la evidencia
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CADENA DE CUSTODIA - CICLO DE VIDA │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ RECOLECCIÓN ──▶ ALMACENAMIENTO ──▶ TRANSFERENCIA ──▶ ANÁLISIS │
+│ │ │ │ │ │
+│ ▼ ▼ ▼ ▼ │
+│ Documentar Documentar Documentar Documentar │
+│ quién, cuándo, ubicación, transferencia, análisis, │
+│ dónde, cómo condiciones quién recibe resultados │
+│ │
+│ └─────────────────────────────────────────────────────────────────────────┘│
+│ │
+│ CADA VEZ que alguien toca la evidencia, se debe DOCUMENTAR │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+## Ejemplo : 
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    CADENA DE CUSTODIA - CASO DE ACOSO                        │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│   1. RECOLECCIÓN          2. ALMACENAMIENTO        3. TRANSFERENCIA         │
+│   ┌──────────────┐        ┌──────────────┐        ┌──────────────┐         │
+│   │ Detective    │───────▶│ Caja sellada │───────▶│ Analista     │         │
+│   │ López        │        │ Gabinete #3  │        │ Gómez        │         │
+│   │ 14:30 hs     │        │ 15:00 hs     │        │ 09:00 hs     │         │
+│   └──────────────┘        └──────────────┘        └──────────────┘         │
+│                                                              │              │
+│                                                              ▼              │
+│   5. JUICIO ◀─────────────── 4. ANÁLISIS ◀──────────────────┘              │
+│   ┌──────────────┐        ┌──────────────┐                                 │
+│   │ Fiscal       │        │ Imagen       │                                 │
+│   │ presenta     │        │ forense      │                                 │
+│   │ evidencia    │        │ (copia exacta│                                 │
+│   │ sellada      │        │  bit a bit)  │                                 │
+│   └──────────────┘        └──────────────┘                                 │
+│                                                                              │
+│   CADA VEZ que alguien toca la evidencia, se DOCUMENTA                      │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+#### Cadena de custodia - Ejemplo práctico: Caso de acoso digital
+
+**El delito:** María recibe mensajes amenazantes. Denuncia a la policía.
+
+**Paso 1: Recolección**
+- Detective López recibe el teléfono de María a las 14:30 hs
+- Registra: fecha, hora, quién, estado del dispositivo
+- Guarda el teléfono en bolsa de Faraday (evita señales remotas)
+
+**Paso 2: Almacenamiento**
+- Guarda la bolsa en caja de evidencia sellada
+- Registra: ubicación (gabinete #3), número de sello
+- Nadie puede abrirla sin romper el sello
+
+**Paso 3: Transferencia**
+- Detective López entrega la caja a la analista Gómez a las 09:00 hs
+- Ambos firman el traspaso (se documenta quién tiene la evidencia)
+
+**Paso 4: Análisis**
+- Analista Gómez crea una **imagen forense** (copia exacta)
+- Trabaja sobre la copia, el original queda intacto
+- Verifica la copia con hash (huella digital única)
+
+**Paso 5: Juicio**
+- El fiscal presenta la evidencia con la cadena de custodia completa
+- La defensa no puede argumentar manipulación (todo está documentado)
+
+> **Regla de oro:** SIEMPRE documentar QUIÉN, CUÁNDO, DÓNDE, POR QUÉ y CÓMO se manipuló la evidencia. Sin cadena de custodia, la evidencia es **inadmisible** en un tribunal.
+
+### Recopilación de evidencia - Ejemplo de lo que NO hay que hacer
+
+#### El caso
+Un detective encuentra una computadora portátil del sospechoso. Decide investigarla por su cuenta porque el laboratorio está saturado.
+
+#### Error 1: Manipular la evidencia original
+- Inicia sesión en la computadora
+- **MODIFICA** el sistema (cambia fechas de acceso, archivos temporales)
+- ⚠️ **La evidencia original queda contaminada**
+
+#### Error 2: Copiar archivos sueltos
+- Copia correos, imágenes y chats a una USB
+- NO crea una imagen forense bit a bit
+- ⚠️ **Se pierden archivos borrados, metadatos, espacio no asignado**
+
+#### Error 3: Sobrescribe archivos originales
+- Sin querer, destruye la evidencia original
+- ⚠️ **Ya no se puede verificar qué había originalmente**
+
+#### Error 4: Sin imagen forense verificable
+- No hay hash para demostrar que la copia es fiel al original
+- ⚠️ **La defensa puede argumentar falsificación**
+
+#### Error 5: Juicio - Evidencia inadmisible
+- La defensa impugna la evidencia
+- No se puede probar que los archivos no fueron alterados
+- ⚠️ **EL CASO SE DEBILITA O SE PIERDE**
+
+#### El procedimiento correcto
+
+| Paso | Acción correcta |
+|------|-----------------|
+| 1 | Llevar al laboratorio SIN encender |
+| 2 | Crear imagen forense bit a bit |
+| 3 | Calcular hash (MD5/SHA) |
+| 4 | Analizar la copia, NO el original |
+| 5 | Documentar TODO en la cadena de custodia |
+
+> **Regla de oro:** El original NUNCA se toca. Siempre se trabaja sobre una **copia forense verificada**.
+
+* ¿Qué es una imagen forense bit a bit?
+* Definición simple
+Una imagen forense bit a bit es una copia exacta de TODO el contenido de un dispositivo de almacenamiento (disco duro, USB, memoria, etc.), incluyendo:
+
+* Archivos visibles (los que ves normalmente)
+
+* Archivos borrados (que aún no fueron sobrescritos)
+
+* Metadatos (fechas de creación, modificación, acceso)
+
+* Espacio no asignado (donde pueden haber restos de archivos antiguos)
+
+* Particiones ocultas
+
+* El sistema operativo completo
+
+* En criollo: Es como hacer un "gemelo exacto" del disco duro. No solo copias los archivos que ves, sino TODO lo que hay en el disco, incluyendo lo que está "invisible".
+
+#### Analogía: La fotocopia de un libro
+
+| Copia normal | Imagen bit a bit |
+|--------------|------------------|
+| Copias solo las páginas que te interesan | Fotocopias **todas** las páginas (incluso las en blanco) |
+| No ves las páginas arrancadas | Se ve la marca de donde se arrancó la página |
+
+#### Copia normal vs. Imagen forense
+
+| Aspecto | Copia normal | Imagen forense |
+|---------|--------------|----------------|
+| Archivos borrados | ❌ No | ✅ Sí |
+| Metadatos | ⚠️ Algunos se pierden | ✅ Todos |
+| Verificación (hash) | ❌ No | ✅ Sí |
+| Admisible en juicio | ❌ No | ✅ Sí |
+
+
+¿Cómo se hace una imagen forense bit a bit?
+Se usan herramientas especializadas como:
+
+
+#### Herramientas para crear imágenes forenses
+
+| Herramienta | Tipo | Plataforma |
+|-------------|------|-------------|
+| FTK Imager | Gratuita | Windows |
+| DD (comando) | Gratuita | Linux/Mac |
+| Guymager | Gratuita | Linux |
+| EnCase | Paga | Windows |
+
+Ejemplo con comando dd en Linux:
+dd if=/dev/sda of=/ruta/imagen_forense.dd bs=4096
+
+if: dispositivo original (input file)
+
+of: archivo de destino (output file) - la imagen
+
+bs: bloque de tamaño (eficiencia)
+
+* El hash: la "huella digital" de la imagen
+Después de crear la imagen, se calcula un hash (MD5 o SHA):
+
+* Concepto	Explicación
+Hash	Un código único que identifica el contenido exacto de la imagen
+Si cambia 1 bit	El hash cambia completamente
+Para qué sirve	Verificar que la copia es idéntica al original
+Ejemplo de hash MD5:
+Original: 7F83B1657FF1FC53B92DC18148A1D65D
+Copia idéntica: 7F83B1657FF1FC53B92DC18148A1D65D (mismo hash → todo bien)
+Copia alterada: A1B2C3D4E5F67890ABCDEF1234567890 (hash diferente → algo cambió)
+
+En el juicio: El perito forense dice "El hash de la imagen que analicé coincide con el hash de la evidencia original. Por lo tanto, la copia es EXACTAMENTE igual."
+┌─────────────────────────────────────────────────────────────────────────────┐
+│              DISCO ORIGINAL (Disco duro del sospechoso)                     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │  ÁREA 1: Archivos visibles (Fotos, documentos, correos)            │   │
+│  ├─────────────────────────────────────────────────────────────────────┤   │
+│  │  ÁREA 2: Archivos borrados (todavía recuperables)                  │   │
+│  ├─────────────────────────────────────────────────────────────────────┤   │
+│  │  ÁREA 3: Metadatos (cuándo se creó/copió/modificó cada archivo)    │   │
+│  ├─────────────────────────────────────────────────────────────────────┤   │
+│  │  ÁREA 4: Espacio no asignado (restos de archivos antiguos)         │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                              │
+│                              ▼ (imagen forense)                             │
+│                                                                              │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                IMAGEN FORENSE (bit a bit)                            │   │
+│  │                                                                      │   │
+│  │   TODO el contenido se copia EXACTAMENTE igual                       │   │
+│  │   + hash MD5: 7F83B1657FF1FC53B92DC18148A1D65D                      │   │
+│  │                                                                      │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+### Actividad: JobCorp - Identificar fuentes de datos forenses
+
+#### Antecedentes
+
+**JobCorp** sufrió recientemente un ciberataque que afectó **únicamente a la red** (no se conectaron dispositivos móviles ni personales).
+
+**Objetivos de la investigación:**
+- Determinar **cómo se produjo** el ataque
+- Determinar **qué datos** se vieron comprometidos
+- Determinar **quiénes** podrían ser los atacantes
+- Identificar **malware** empleado por los atacantes
+- Determinar **cómo el malware evadió** la detección de los sistemas de seguridad
+
+---
+
+#### Fuentes de datos relevantes (3 de 4)
+
+| Fuente de datos | ¿Relevante? | ¿Por qué? |
+|-----------------|-------------|-----------|
+| **Registros de red** | ✅ **Sí** | El ataque afectó la red. Los registros de red muestran tráfico entrante/saliente, IPs sospechosas, etc. |
+| **Archivos del sistema** | ✅ **Sí** | Permite identificar archivos modificados, procesos sospechosos y malware instalado |
+| **Cuentas de correo electrónico** | ✅ **Sí** | Permite identificar correos de phishing, IOCs y cuentas comprometidas |
+| **Datos móviles** | ❌ **No** | El ataque no afectó dispositivos móviles (solo la red) |
+
+---
+
+#### Hallazgos por fuente de datos
+
+##### 1. Registros de red
+
+| Hallazgo | Indicador |
+|----------|-----------|
+| **Tráfico de correo electrónico saliente** | Cuenta de empleado envió mensaje a dirección sospechosa → **cuenta comprometida** |
+| **Tráfico entrante inusual** | Tráfico desde IP/dominio sospechoso → **bot malicioso** controlado remotamente |
+
+##### 2. Archivos del sistema
+
+| Hallazgo | Indicador |
+|----------|-----------|
+| **Archivos de sistema modificados** | Archivos originales reemplazados por archivos maliciosos → **acceso no autorizado** |
+| **Procesos en ejecución sospechosos** | Procesos no habituales, posible código malicioso → **malware instalado** |
+
+##### 3. Cuentas de correo electrónico
+
+| Hallazgo | Indicador |
+|----------|-----------|
+| **Correo sospechoso abierto** | Empleado recibió correo de phishing de fuente conocida |
+| **Indicadores de compromiso (IoC)** | Enlace malicioso en el que el empleado hizo clic |
+| **Correos de seguimiento** | Correo con dirección mal escrita, contiene malware |
+
+##### 4. Datos móviles
+
+| Hallazgo | Indicador |
+|----------|-----------|
+| **No relevante** | El ataque solo afectó la red, no los dispositivos móviles |
+
+---
+
+#### Resumen de la actividad
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ FUENTES DE DATOS FORENSES - JOB CORP │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ✅ REGISTROS DE RED │
+│ • Tráfico saliente a IP sospechosa (cuenta comprometida) │
+│ • Tráfico entrante inusual (bot malicioso) │
+│ │
+│ ✅ ARCHIVOS DEL SISTEMA │
+│ • Archivos del sistema modificados (acceso no autorizado) │
+│ • Procesos sospechosos en ejecución (malware) │
+│ │
+│ ✅ CUENTAS DE CORREO ELECTRÓNICO │
+│ • Correo de phishing abierto │
+│ • IoC (enlace malicioso) │
+│ • Correo de seguimiento con malware │
+│ │
+│ ❌ DATOS MÓVILES (no relevantes) │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+---
+
+#### Pregunta de selección
+
+**¿Cuál de las siguientes fuentes de datos NO es relevante para este caso?**
+
+- [ ] Registros de red
+- [ ] Archivos del sistema
+- [ ] Cuentas de correo electrónico
+- [x] **Datos móviles**
+
+> **Explicación:** El ataque afectó **únicamente a la red**, no se conectaron dispositivos móviles ni personales, por lo que los datos móviles no son relevantes para la investigación.
+
+### Aspecto destacado de la gestión profesional: investigador forense digital
+
+#### Habilidades de gestión profesional
+
+Aprendiste mucho sobre lo que hacen los investigadores forenses digitales. Exploremos el trabajo más a fondo.
+
+#### ¿Qué hace un investigador forense digital?
+
+Un **investigador forense digital** recupera, examina y analiza evidencia digital para **investigar delitos cibernéticos**.
+
+**Otros nombres para esta función:**
+- Investigador cibernético
+- Investigador forense informático
+- Especialista forense digital
+- Examinador forense digital
+
+#### Tareas principales
+
+| Tarea | Descripción |
+|-------|-------------|
+| **Recuperar datos** | De dispositivos virtuales y físicos |
+| **Analizar datos** | Usando software forense especializado |
+| **Preservar datos** | Asegurar su integridad (imágenes forenses, hash, cadena de custodia) |
+| **Colaborar** | Con recursos humanos, aplicación de la ley y otras partes |
+| **Compartir conclusiones** | En informes forenses y procedimientos legales |
+
+---
+
+#### Habilidades necesarias para tener éxito
+
+| Categoría | Habilidades específicas |
+|-----------|------------------------|
+| **Técnicas** | Computadoras, redes, almacenamiento de datos, sistemas operativos, cifrado, software forense |
+| **Analíticas** | Razonamiento sólido, atención al detalle, capacidad para sacar conclusiones válidas |
+| **Legales** | Conocimiento de leyes y regulaciones de privacidad de datos (para garantizar que los métodos soporten escrutinio legal) |
+| **Comunicación** | Documentación clara y persuasiva para audiencias de distintos niveles (ejecutivos, abogados, jurados) |
+
+---
+
+#### Resumen del perfil del investigador forense digital
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ INVESTIGADOR FORENSE DIGITAL - PERFIL │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ LO QUE HACE │ │
+│ │ │ │
+│ │ Recuperar ──▶ Examinar ──▶ Analizar ──▶ Reportar │ │
+│ │ evidencia evidencia evidencia conclusiones │ │
+│ │ │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ HABILIDADES CLAVE │ │
+│ │ │ │
+│ │ Técnicas ──▶ Computadoras, redes, cifrado, software forense │ │
+│ │ Analíticas ──▶ Razonamiento, atención al detalle │ │
+│ │ Legales ──▶ Leyes de privacidad, cadena de custodia │ │
+│ │ Comunicación ──▶ Claridad, persuasión │ │
+│ │ │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+#### ¿Por qué es importante esta función?
+
+| Ámbito | Contribución |
+|--------|--------------|
+| **Justicia** | Llevar a los delincuentes cibernéticos ante la justicia |
+| **Corporaciones** | Investigar filtraciones, robo de IP, mala conducta de empleados |
+| **Seguridad nacional** | Investigar terrorismo, espionaje, fugas de datos |
+
+> **En resumen:** El investigador forense digital debe garantizar que sus **métodos, hallazgos y conclusiones** sean compatibles con el **escrutinio legal**. Deben documentar y comunicar su trabajo de manera clara y persuasiva para audiencias de varios niveles de experiencia (ejecutivos, abogados, jurados).
+
+### Habilidades clave del investigador forense digital
+
+#### Pensamiento analítico
+
+Los investigadores necesitan un **razonamiento sólido** que les ayude a:
+
+- Analizar los datos y sacar **conclusiones válidas y significativas**
+- **Identificar patrones** y hacer **conexiones** entre diferentes datos
+- Completar **acertijos** o realizar **investigaciones** complejas
+
+> **Perfil ideal:** Personas que disfrutan resolver misterios, armar rompecabezas o investigar problemas complejos.
+
+**Ejemplo en la práctica:**
+Un investigador encuentra archivos de log de diferentes servidores. Debe **conectar** los eventos de cada servidor para reconstruir **cronológicamente** cómo se movió el atacante por la red.
+
+---
+
+#### Atención al detalle
+
+Los investigadores deben ser **meticulosos** y prestar **mucha atención a los detalles**:
+
+- Hasta el **mínimo detalle** puede ayudar a resolver un caso
+- Un archivo mal nombrado, una marca de tiempo incorrecta o un log olvidado pueden ser la clave
+- La meticulosidad evita perder evidencia crucial
+
+> **Perfil ideal:** Personas orientadas a los detalles, que disfrutan **organizar** o **planificar eventos**.
+
+**Ejemplo en la práctica:**
+Un investigador encuentra un archivo con fecha de modificación posterior al secuestro del sistema. Ese **pequeño detalle** revela que el atacante modificó un script de inicio para mantener su acceso.
+
+---
+
+#### Comunicación
+
+Los investigadores necesitan **buenas habilidades de comunicación** para:
+
+| Tarea | Descripción |
+|-------|-------------|
+| **Documentar** | Claramente sus métodos y hallazgos en formularios de cadena de custodia e informes |
+| **Explicar** | Y justificar su trabajo ante audiencias de diversos niveles (ejecutivos, abogados, jurados) |
+| **Testificar** | En procedimientos legales, explicando conceptos técnicos a no técnicos |
+
+> **Perfil ideal:** Personas con excelentes habilidades para **escribir, enseñar o hablar en público**.
+
+**Ejemplo en la práctica:**
+Un investigador debe explicar a un jurado (sin conocimientos técnicos) cómo se recuperó un correo electrónico borrado. Debe hacerlo de manera **simple y convincente**.
+
+---
+
+#### Colaboración
+
+Los investigadores deben **colaborar bien con otros**:
+
+| Aspecto | Descripción |
+|---------|-------------|
+| **Con autoridades** | Cooperar y colaborar con la policía, fiscales, etc. |
+| **Trabajo en equipo** | A menudo trabajan en equipos, compartiendo datos efectivamente |
+| **Responsabilidades separadas** | Diferentes investigadores pueden tener tareas distintas y deben coordinarse |
+
+> **Perfil ideal:** Personas que disfrutan completar **proyectos grupales** o trabajar en **equipos**.
+
+**Ejemplo en la práctica:**
+Un equipo forense investiga un ataque grande. Un miembro analiza el disco duro, otro los logs de red, otro los correos electrónicos. Deben **compartir hallazgos** para reconstruir el ataque completo.
+
+---
+
+### Resumen de habilidades
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ HABILIDADES DEL INVESTIGADOR FORENSE DIGITAL │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐ │
+│ │ PENSAMIENTO │ │ ATENCIÓN AL │ │ COMUNICACIÓN │ │
+│ │ ANALÍTICO │ │ DETALLE │ │ │ │
+│ ├─────────────────┤ ├─────────────────┤ ├─────────────────┤ │
+│ │ • Razonamiento │ │ • Meticuloso │ │ • Documentar │ │
+│ │ • Identificar │ │ • Detalles │ │ • Explicar │ │
+│ │ patrones │ │ mínimos │ │ • Testificar │ │
+│ │ • Conectar │ │ • No perder │ │ • Persuadir │ │
+│ │ datos │ │ evidencia │ │ │ │
+│ └─────────────────┘ └─────────────────┘ └─────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ COLABORACIÓN │ │
+│ ├─────────────────────────────────────────────────────────────────────┤ │
+│ │ • Trabajar con autoridades │ │
+│ │ • Trabajo en equipo │ │
+│ │ • Compartir datos y coordinarse │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+---
+
+### ¿Tu perfil encaja?
+
+| Si en tu vida personal... | Podrías prosperar como investigador forense digital |
+|---------------------------|-----------------------------------------------------|
+| **Disfrutas los acertijos y resolver misterios** | ✅ Pensamiento analítico |
+| **Eres detallista y organizado** | ✅ Atención al detalle |
+| **Te gusta enseñar o escribir** | ✅ Comunicación |
+| **Disfrutas los proyectos grupales** | ✅ Colaboración |
+
+> **Reflexión final:** La ciencia forense digital combina la **precisión de un científico**, el **escepticismo de un detective** y la **claridad de un comunicador**.
+
+## Resumen y perspectivas
+
+### Resumen de la lección
+
+En esta lección, aprendiste sobre los **usos de la ciencia forense digital** en:
+
+- **La aplicación de la ley** (investigaciones criminales, acoso, fraudes)
+- **Investigaciones corporativas** (filtraciones, robo de propiedad intelectual, mala conducta de empleados)
+- **Seguridad nacional** (terrorismo, espionaje, fugas de datos)
+
+#### Puntos clave aprendidos
+
+Independientemente de la industria en la que trabajen, los investigadores forenses digitales deben:
+
+| Requisito | Por qué es importante |
+|-----------|----------------------|
+| **Cumplir con leyes y regulaciones** | Cada jurisdicción tiene normas diferentes sobre recolección y manejo de evidencia |
+| **Seguir estrictamente la cadena de custodia** | Documentar quién, cuándo, dónde y por qué manipuló la evidencia |
+| **Preservar la integridad** | Si no se preserva, la evidencia puede ser **inadmisible** en un tribunal |
+
+> ⚠️ **Riesgo:** No cumplir con estos requisitos puede **comprometer la integridad** y la **situación legal** de la investigación.
+
+---
+
+### Perspectivas
+
+**En la siguiente lección**, aprenderás sobre las **cuatro fases del proceso de la ciencia forense digital**:
+
+| Fase | Descripción |
+|------|-------------|
+| **1. Recopilación** | Reunir datos digitales de diversas fuentes, preservando la integridad |
+| **2. Examen** | Revisión exhaustiva para identificar y extraer información relevante |
+| **3. Análisis** | Correlacionar e interpretar datos para crear una narración cohesionada |
+| **4. Informes** | Preparar un informe detallado de las conclusiones |
+
+También aprenderás a **preservar adecuadamente la evidencia forense digital** para garantizar su **integridad**.
+
+---
+
+### Diagrama del camino a seguir
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PRÓXIMA LECCIÓN - PROCESO FORENSE │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ Recopilación ──▶ Examen ──▶ Análisis ──▶ Informes │
+│ │
+│ • Preservar • Identificar • Correlacionar • Documentar │
+│ • Adquirir • Extraer • Interpretar • Comunicar │
+│ • Cadena de • Buscar por • Crear • Explicar a │
+│ custodia palabras clave narración no técnicos │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+### Acerca de esta lección: El proceso forense digital
+
+Cualquier persona que maneje evidencia en una investigación forense digital debe hacerlo con **cuidado**.
+
+> De lo contrario, los abogados, jueces, jurados y otros responsables de la toma de decisiones relevantes podrían **ignorar las opiniones y recomendaciones** de los investigadores forenses digitales sobre el caso.
+
+Los investigadores deben seguir un **proceso sólido y sistemático** para demostrar la **validez y confiabilidad** de sus hallazgos y conclusiones.
+
+#### En esta lección aprenderás
+
+- Las **fases del proceso forense digital**
+- Los **pasos** que toman los investigadores en cada fase para garantizar la **integridad** de su evidencia y su investigación
+
+---
+
+### Las 4 fases del proceso forense digital
+
+| Fase | Descripción |
+|------|-------------|
+| **1. Recopilación** | Reunir datos digitales de diversas fuentes, preservando la integridad |
+| **2. Examen** | Revisión exhaustiva para identificar y extraer información relevante |
+| **3. Análisis** | Correlacionar e interpretar datos para crear una narración cohesionada |
+| **4. Informes** | Preparar un informe detallado de las conclusiones |
+
+### Fases de la investigación forense digital
+
+El número de fases de una investigación forense digital depende del investigador al que se le pregunte. La mayoría de los modelos incluyen de **cuatro a cinco fases**, mientras que otros incluyen hasta **nueve**. Los pasos específicos y la terminología empleada para describir cada fase también varían.
+
+En cualquier caso, la mayoría de los modelos forenses digitales incluyen las tareas básicas y el proceso general que se encuentran en el siguiente modelo del **National Institute of Standards and Technology (NIST)**.
+
+---
+
+#### Las 4 fases del modelo NIST
+
+| Fase | Nombre | Descripción |
+|------|--------|-------------|
+| **1** | **Colección** | Reunir datos digitales de diversas fuentes |
+| **2** | **Examen** | Revisión exhaustiva para identificar información relevante |
+| **3** | **Análisis** | Correlacionar e interpretar los datos |
+| **4** | **Presentación de informes** | Preparar un informe detallado de las conclusiones |
+
+---
+
+#### Diagrama del proceso NIST
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PROCESO FORENSE DIGITAL - MODELO NIST │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌───────────┐ │
+│ │ 1. │ │ 2. │ │ 3. │ │ 4. │ │
+│ │ COLECCIÓN │───▶│ EXAMEN │───▶│ ANÁLISIS │───▶│ INFORME │ │
+│ │ │ │ │ │ │ │ │ │
+│ │ Reunir datos │ │ Identificar │ │ Correlacionar│ │ Documentar│ │
+│ │ Preservar │ │ Extraer │ │ Interpretar │ │ Comunicar │ │
+│ │ integridad │ │ información │ │ │ │ │ │
+│ └──────────────┘ └──────────────┘ └──────────────┘ └───────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+> **Nota:** El modelo del NIST es uno de los más utilizados como referencia en ciencia forense digital.
+
+### Fase 1: Recopilación
+
+La **recopilación** es la **primera fase** del proceso forense digital.
+
+#### ¿Qué implica?
+
+En la fase de recopilación, los investigadores:
+
+- **Identifican** todas las posibles fuentes de datos
+- **Etiquetan, codifican y recopilan** datos de todas las fuentes posibles
+- **Preservan la integridad** de los datos
+
+> Cualquier paso en falso podría **poner en peligro la credibilidad** de la investigación y la **relevancia legal** del caso.
+
+#### Conocimientos necesarios para la recopilación
+
+| Conocimiento | Descripción |
+|--------------|-------------|
+| **Tipos de datos** | Qué datos se pueden recopilar |
+| **Métodos de recopilación** | Cómo recopilar sin comprometer la integridad |
+| **Leyes y estándares éticos** | Normas para recopilar, estudiar y usar evidencia forense |
+
+---
+
+#### Los dos pasos de la recopilación
+
+| Paso | Descripción |
+|------|-------------|
+| **1. Identificar** | Identificar las fuentes de datos digitales |
+| **2. Recopilar** | Recopilar o crear imágenes de datos de esas fuentes |
+
+---
+
+### Paso 1: Identificar fuentes de datos digitales
+
+**¿Cómo saben los investigadores por dónde empezar?**  
+Su **conocimiento y experiencia** los guían.
+
+**Ejemplo:** Cuando los investigadores ingresan a la oficina en casa de un sospechoso, pueden identificar fácilmente:
+
+| Fuente | Ejemplos |
+|--------|----------|
+| **Unidades de disco duro** | Discos internos, externos |
+| **Medios de almacenamiento extraíbles** | USB, tarjetas SD |
+| **Registros de dispositivos de seguridad** | Cámaras, alarmas |
+| **Datos volátiles** | Memoria RAM, sesiones activas |
+| **Dispositivos de red** | Routers, firewalls |
+| **Archivos de registro** | Logs de red |
+
+> ⚠️ **Datos volátiles:** Se pierden cuando apagas el dispositivo. Si no se capturan a tiempo, pueden perderse para siempre.
+
+---
+
+### Paso 2: Recopilar datos de las fuentes
+
+Según el **NIST**, la recopilación de datos implica **tres pasos**:
+
+| Paso | Acción |
+|------|--------|
+| **1** | Elaborar un plan |
+| **2** | Adquirir los datos |
+| **3** | Verificar la integridad de los datos |
+
+---
+
+#### Subpaso 1: Elaborar un plan
+
+**¿Por qué necesitan un plan?**  
+Los datos relevantes pueden residir en muchas fuentes, por lo que los investigadores deben **priorizar**.
+
+**Factores a considerar:**
+
+| Factor | Descripción |
+|--------|-------------|
+| **Valor esperado** | ¿Qué tan importantes son los datos de esa fuente? |
+| **Volatilidad** | ¿Los datos se pierden rápidamente? |
+| **Esfuerzo** | ¿Cuánto trabajo implica recopilarlos? |
+
+---
+
+#### Subpaso 2: Adquirir los datos
+
+**Métodos de adquisición:**
+
+| Método | Descripción |
+|--------|-------------|
+| **Escaneo de discos duros** | Examinar el contenido del disco |
+| **Extracción de bases de datos** | Recuperar datos de sistemas de bases de datos |
+| **Extracción de memorias** | Recuperar datos de memorias de dispositivos |
+| **Recuperación de archivos borrados** | Restaurar archivos eliminados |
+
+**Copias de seguridad:**
+
+- Los investigadores hacen **copias de seguridad** de los datos
+- Pueden estudiar y manipular las copias sin poner en peligro el original
+- La fuente original se **asegura** para que nadie la manipule
+
+> ⚠️ **Datos volátiles:** Solo se pueden recopilar si el sistema sigue funcionando o si se creó una imagen de respaldo en ese estado.
+
+---
+
+#### Subpaso 3: Verificar la integridad de los datos
+
+**¿Cómo se verifica la integridad?**  
+Empleando **valores hash**.
+
+##### ¿Qué es un valor hash?
+
+| Concepto | Analogía |
+|----------|----------|
+| **Hash** | Una **huella dactilar digital** única |
+| **Propósito** | Identificar de forma única un dato |
+| **Si cambia un bit** | El hash cambia completamente |
+
+> La única persona con la misma huella dactilar que tú es tu clon. Los clones humanos no existen. Del mismo modo, **el único dato con el mismo hash que el original es su copia exacta**.
+
+##### ¿Cómo se usa el hash?
+
+| Paso | Acción |
+|------|--------|
+| 1 | El software crea un **hash de la fuente original** |
+| 2 | El software crea un **hash de la copia de seguridad** |
+| 3 | Se **comparan** ambos hashes |
+| 4 | Si coinciden → la copia es **idéntica**; si no → algo cambió ❌ |
+
+---
+
+### Diagrama de la fase de recopilación
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ FASE 1: RECOPILACIÓN - PROCESO COMPLETO │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ PASO 1: IDENTIFICAR FUENTES │ │
+│ │ │ │
+│ │ Discos duros │ USB │ Tarjetas SD │ Datos volátiles │ Routers │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ PASO 2: RECOPILAR DATOS │ │
+│ │ │ │
+│ │ 1. Elaborar plan ──▶ 2. Adquirir datos ──▶ 3. Verificar hash │ │
+│ │ │ │
+│ │ Factores: valor, volatilidad, esfuerzo │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ RESULTADO │ │
+│ │ │ │
+│ │ ✅ Datos recopilados (copia de seguridad) │ │
+│ │ ✅ Integridad verificada (hash coincide) │ │
+│ │ ✅ Fuente original asegurada (sin manipulación) │ │
+│ │ │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Resumen de la Fase 1: Recopilación
+
+| Actividad | Propósito |
+|-----------|-----------|
+| **Identificar fuentes** | Saber de dónde obtener los datos |
+| **Elaborar plan** | Priorizar según valor, volatilidad y esfuerzo |
+| **Adquirir datos** | Recopilar y hacer copias de seguridad |
+| **Verificar hash** | Asegurar que la copia es idéntica al original |
+| **Asegurar original** | Proteger la fuente de manipulación |
+
+> **Regla de oro:** El original nunca se toca. Todo el trabajo se hace sobre **copias de seguridad verificadas**.
+
+### Actividad: Aplicar la fase de recopilación del proceso forense digital
+
+**Habilidades para la inserción laboral:** Agilidad de aprendizaje
+
+---
+
+#### Escenario: We Insure You
+
+**Antecedentes**
+
+**We Insure You**, una gran empresa de seguros, sospechaba que un empleado **robó información confidencial** de la red de la empresa. La dirección contactó a una empresa forense digital para identificar:
+
+- El **origen** de la filtración de datos
+- El **alcance** de los daños
+
+---
+
+#### Acciones del equipo forense en la fase de recopilación
+
+| Paso | Acción | Detalle |
+|------|--------|---------|
+| **1. Identificar fuentes** | Analizaron la red para identificar posibles fuentes de datos | Descubrieron que el empleado accedió a archivos y carpetas confidenciales no relacionados con su trabajo |
+| **2. Elaborar plan** | Planificaron la recopilación de datos | Decidieron recopilar datos de: computadora portátil del empleado, servidores y cuentas de correo electrónico |
+| **3. Adquirir datos** | Recopilaron datos de la computadora portátil | Crearon una **imagen forense** del disco duro (el original quedó intacto) |
+| **4. Adquirir datos** | Recopilaron datos de servidores y correos | Extrajeron información pertinente y verificaron integridad con **valores hash** |
+| **5. Preservar integridad** | No comprometieron las fuentes originales | Hicieron **copias de seguridad** de todos los datos recopilados |
+| **6. Verificar integridad** | Compararon valores hash | Usaron software especializado para asegurar que las copias eran **exactas** |
+
+---
+
+#### Resultado de la investigación
+
+| Hallazgo | Acción |
+|----------|--------|
+| Confirmaron que el empleado **robó información confidencial** | Proporcionaron evidencia a la dirección |
+| - | La dirección tomó las **medidas oportunas** contra el empleado |
+
+---
+
+#### Resumen del proceso aplicado
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ W E I N S U R E Y O U - FASE 1 │
+│ RECOPILACIÓN │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ IDENTIFICAR ──▶ PLANIFICAR ──▶ ADQUIRIR ──▶ VERIFICAR │
+│ FUENTES DATOS INTEGRIDAD │
+│ │
+│ • Red • Laptop • Imagen • Hash (MD5/SHA) │
+│ • Servidores • Servidores forense │
+│ • Correos • Correos • Extracción │
+│ │
+│ ✅ Copias de seguridad creadas │
+│ ✅ Originales intactos │
+│ ✅ Integridad verificada │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+---
+
+#### Preguntas de verificación (ejemplos)
+
+**Pregunta 1:** ¿Qué descubrió el equipo forense al analizar la red?
+
+<details>
+<summary>Ver respuesta</summary>
+
+El empleado accedió a **varios archivos y carpetas confidenciales no relacionados con sus responsabilidades laborales**.
+
+</details>
+
+---
+
+**Pregunta 2:** ¿Qué método usaron para recopilar datos de la computadora portátil?
+
+<details>
+<summary>Ver respuesta</summary>
+
+Crearon una **imagen forense del disco duro**, asegurando que los datos originales permanecieran intactos.
+
+</details>
+
+---
+
+**Pregunta 3:** ¿Cómo verificaron la integridad de los datos recopilados?
+
+<details>
+<summary>Ver respuesta</summary>
+
+Compararon los **valores hash** de las fuentes de datos y las copias de seguridad usando software especializado.
+
+</details>
+
+---
+
+**Pregunta 4:** ¿Por qué hicieron copias de seguridad de los datos?
+
+<details>
+<summary>Ver respuesta</summary>
+
+Para poder realizar análisis posteriores **sin poner en peligro las fuentes de datos originales**.
+
+</details>
+
+### Fase 2: Examen
+
+El **examen** es la **segunda fase** del proceso forense digital.
+
+#### ¿Qué implica?
+
+En la fase de examen, los investigadores:
+
+- **Examinan** los datos recopilados para determinar qué es **relevante**
+- **Extraen** los datos relevantes para su posterior análisis
+
+> Deben **documentar cada paso** e incluir fotos o capturas de pantalla de las tareas realizadas y de la evidencia adicional encontrada.
+
+#### Conocimientos necesarios para el examen
+
+| Conocimiento | Descripción |
+|--------------|-------------|
+| **Tipos de datos** | Qué datos se pueden extraer sin violar leyes de privacidad |
+| **Métodos de examen** | Cómo examinar sin comprometer la integridad |
+| **Estructuras de datos** | Tipos de archivos relevantes para la investigación |
+
+#### Ejemplos de datos que pueden examinar
+
+| Tipo de dato | Ejemplo |
+|--------------|---------|
+| **Registros de actividad** | Actividad de usuarios, inicios de sesión |
+| **Registros de tráfico de red** | Conexiones entrantes/salientes |
+| **Archivos de imagen** | Fotos, capturas de pantalla |
+| **Metadatos** | Fechas de creación, modificación, acceso |
+
+> **Ejemplo práctico:** Si un sospechoso borra un documento incriminatorio de su memoria USB, los investigadores podrían recuperar parte del contenido del documento a partir de los **metadatos** de la memoria.
+
+---
+
+### Desafíos del examen
+
+| Desafío | Descripción |
+|---------|-------------|
+| **1. Eludir los controles** | Sistemas operativos y aplicaciones pueden tener cifrado o compresión que dificultan el acceso |
+| **2. Examinar una gran cantidad de datos** | Un disco duro puede tener cientos de miles de archivos, no todos relevantes |
+
+---
+
+#### Desafío 1: Eludir los controles
+
+**¿Qué dificulta el acceso?**
+- Características de **cifrado** de archivos
+- Características de **compresión** de archivos
+
+**¿Cómo se eluden?**
+
+| Herramienta/Técnica | Propósito |
+|---------------------|-----------|
+| **Herramientas de descifrado de contraseñas** | Desbloquear archivos cifrados |
+| **Herramientas de extracción** | Extraer archivos de archivos comprimidos y cifrados |
+
+> Con el **conocimiento, las habilidades y las herramientas** suficientes, los investigadores pueden eludir estas barreras.
+
+---
+
+#### Desafío 2: Examinar una gran cantidad de datos
+
+**El problema:**
+- Un disco duro puede tener **cientos de miles de archivos**
+- Los registros del sistema pueden tener **millones de entradas**
+- De esos millones, solo **siete o menos** pueden ser relevantes
+
+**La solución: herramientas de filtrado**
+
+| Herramienta/Técnica | Propósito |
+|---------------------|-----------|
+| **Aplicaciones de búsqueda de texto** | Buscar cadenas de texto específicas (ej. nombre de la víctima) |
+| **Herramientas forenses** | Encontrar tipos de archivos específicos, nombres de usuario o correos electrónicos |
+| **Herramientas de recuperación** | Descubrir datos ocultos o eliminados |
+
+---
+
+### Diagrama de la fase de examen
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ FASE 2: EXAMEN - PROCESO │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ DATOS RECOPILADOS (Fase 1) │ │
+│ │ │ │
+│ │ Discos │ Servidores │ Correos │ Logs │ Metadatos │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ DESAFÍOS │ │
+│ │ │ │
+│ │ ┌─────────────────────┐ ┌─────────────────────────────────┐ │ │
+│ │ │ Eludir controles │ │ Gran cantidad de datos │ │ │
+│ │ │ • Cifrado │ │ • Cientos de miles de archivos │ │ │
+│ │ │ • Compresión │ │ • Millones de registros │ │ │
+│ │ └─────────────────────┘ └─────────────────────────────────┘ │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ HERRAMIENTAS DE EXAMEN │ │
+│ │ │ │
+│ │ • Descifrado de contraseñas │ │
+│ │ • Búsqueda de texto │ │
+│ │ • Filtrado por tipo de archivo │ │
+│ │ • Recuperación de datos ocultos/eliminados │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ RESULTADO │ │
+│ │ │ │
+│ │ ✅ Datos relevantes identificados │ │
+│ │ ✅ Datos extraídos para análisis │ │
+│ │ ✅ Documentación con fotos/capturas │ │
+│ │ │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Resumen de la Fase 2: Examen
+
+| Actividad | Propósito |
+|-----------|-----------|
+| **Examinar datos recopilados** | Determinar qué es relevante para el caso |
+| **Eludir controles** | Superar cifrado, compresión y otras barreras |
+| **Filtrar grandes volúmenes** | Usar herramientas para encontrar agujas en pajar digitales |
+| **Extraer datos relevantes** | Preparar para la fase de análisis |
+| **Documentar** | Registrar cada paso con fotos o capturas de pantalla |
+
+> **Regla de oro:** El examen debe realizarse sin comprometer la **integridad** de los datos originales. Todo el trabajo se hace sobre **copias de seguridad**.
+
+### Actividad: Aplicar la fase de examen del proceso forense digital
+
+**Habilidades para la inserción laboral:** Agilidad de aprendizaje
+
+---
+
+#### Escenario: We Insure You (continuación)
+
+**Antecedentes**
+
+**We Insure You**, una gran compañía de seguros, sufrió una **filtración de datos**. La empresa contrató a un equipo forense digital para investigar e identificar el origen del problema.
+
+El equipo completó la **Fase 1: Recopilación** (identificar, etiquetar, codificar y recopilar datos de todas las fuentes posibles, preservando la integridad).
+
+Luego pasó a la **Fase 2: Examen**.
+
+---
+
+#### Acciones del equipo forense en la fase de examen
+
+| Desafío | Acción del equipo | Herramienta/Técnica |
+|---------|-------------------|---------------------|
+| **Eludir controles** (cifrado) | Desbloquear archivos cifrados | Herramientas de **descifrado de contraseñas** |
+| **Eludir controles** (compresión) | Extraer archivos de archivos comprimidos y cifrados | Técnicas de **tallado de datos** |
+| **Gran cantidad de datos** (cientos de miles de archivos) | Agilizar el filtrado | Aplicaciones de **búsqueda de texto** |
+| **Gran cantidad de datos** | Identificar archivos, nombres de usuario, correos específicos | **Herramientas forenses** |
+| **Datos ocultos o borrados** | Descubrir información no visible | **Herramientas de recuperación** |
+
+#### Documentación
+
+| Acción | Propósito |
+|--------|-----------|
+| Documentar **cada paso** del proceso | Para poder mostrar evidencia ante un tribunal |
+| Incluir **fotos o capturas de pantalla** | Registrar tareas completadas y evidencia adicional |
+
+#### Resultado de la fase de examen
+
+| Logro | Importancia |
+|-------|-------------|
+| Identificaron **archivos de interés** | Determinar la causa de la filtración |
+| Extrajeron **datos pertinentes** | Para análisis posterior |
+| Identificaron **posibles sospechosos** | Avanzar en la investigación |
+
+> La segunda fase del análisis forense digital fue **crucial** para determinar la causa de la filtración de datos e identificar a posibles sospechosos.
+
+---
+
+#### Resumen del proceso aplicado
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ W E I N S U R E Y O U - FASE 2 │
+│ EXAMEN │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ DESAFÍOS Y SOLUCIONES │ │
+│ │ │ │
+│ │ Eludir controles: │ │
+│ │ • Cifrado ──▶ Herramientas de descifrado │ │
+│ │ • Compresión ──▶ Tallado de datos │ │
+│ │ │ │
+│ │ Gran volumen de datos: │ │
+│ │ • Búsqueda de texto │ │
+│ │ • Filtrado por tipo de archivo, usuario, correo │ │
+│ │ • Descubrimiento de datos ocultos/borrados │ │
+│ │ │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ RESULTADO │ │
+│ │ │ │
+│ │ ✅ Archivos de interés identificados │ │
+│ │ ✅ Datos pertinentes extraídos │ │
+│ │ ✅ Posibles sospechosos identificados │ │
+│ │ ✅ Documentación completa (fotos/capturas) │ │
+│ │ │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+#### Preguntas de verificación
+
+**Pregunta 1:** ¿Qué herramientas usó el equipo para desbloquear archivos cifrados?
+
+<details>
+<summary>Ver respuesta</summary>
+
+**Herramientas de descifrado de contraseñas.**
+
+</details>
+
+---
+
+**Pregunta 2:** ¿Qué técnica usaron para extraer archivos de archivos comprimidos y cifrados?
+
+<details>
+<summary>Ver respuesta</summary>
+
+Técnicas de **tallado de datos**.
+
+</details>
+
+---
+
+**Pregunta 3:** ¿Qué usaron para agilizar el filtrado de cientos de miles de archivos?
+
+<details>
+<summary>Ver respuesta</summary>
+
+**Aplicaciones de búsqueda de texto** y **herramientas forenses**.
+
+</details>
+
+---
+
+**Pregunta 4:** ¿Por qué documentaron cada paso con fotos o capturas de pantalla?
+
+<details>
+<summary>Ver respuesta</summary>
+
+Para poder **mostrar la evidencia ante un tribunal**.
+
+</details>
+
+---
+
+**Pregunta 5:** ¿Cuál fue el resultado principal de la fase de examen?
+
+<details>
+<summary>Ver respuesta</summary>
+
+Identificaron **archivos de interés**, extrajeron **datos pertinentes** e identificaron **posibles sospechosos**.
+
+</details>
+
+### Fase 3: Análisis
+
+El **análisis** es la **tercera fase** del proceso forense digital.
+
+#### ¿Qué implica?
+
+En la fase de análisis, los investigadores:
+
+- **Analizan** los datos relevantes (de la fase de examen) para sacar **conclusiones significativas**
+- Siguen una **metodología estricta** (como científicos)
+- Buscan responder **preguntas relevantes** para el caso
+
+> A veces, la única conclusión es que **ninguna conclusión es posible** sin más datos. Pero los analistas pretenden proporcionar información más útil, como **qué o quién causó** un incidente.
+
+#### Actividades clave del análisis
+
+| Actividad | Descripción |
+|-----------|-------------|
+| **Identificar detalles notables** | Encontrar patrones, causa y efecto |
+| **Construir líneas de tiempo** | Ordenar eventos cronológicamente |
+| **Descubrir evidencia adicional** | Pistas en metadatos, datos ocultos |
+| **Convertir datos complejos** | Usar visualización para revelar patrones |
+
+---
+
+### Análisis en acción: El caso de Rasha
+
+#### Contexto
+
+**Rasha**, una investigadora forense, está analizando datos relacionados con un incidente donde un **virus se propagó** por el sistema y los dispositivos de una empresa.
+
+**Objetivo:** Determinar **cómo ocurrió** el incidente.
+
+---
+
+#### Paso 1: Buscar evidencia de actividad maliciosa
+
+| Acción | Hallazgo |
+|--------|----------|
+| Rasha busca evidencia de actividad maliciosa | Encuentra **registros de red** con múltiples intentos de **acceso no autorizado** |
+
+---
+
+#### Paso 2: Examinar marcas de tiempo
+
+| Acción | Hallazgo |
+|--------|----------|
+| Examina las **marcas de tiempo** | Detecta un **patrón inusual**: un intento a la misma hora cada día, desde la misma IP |
+| Sigue analizando | Eventualmente, un intento tiene **éxito** |
+| Observa | No se producen más intentos después del éxito |
+| Descubre | La entrada exitosa ocurrió **varios días antes** de que TI descubriera el virus |
+
+---
+
+#### Paso 3: Formular preguntas clave
+
+| Pregunta de Rasha | Implicación |
+|-------------------|-------------|
+| *"¿Por qué terminaron los intentos?"* | El atacante podría haber logrado todo lo que planeó poco después de entrar |
+
+---
+
+#### Paso 4: Examinar marcas de tiempo de archivos
+
+| Acción | Hallazgo |
+|--------|----------|
+| Examina actividad del sistema en el momento de la entrada exitosa | Busca evidencia de **manipulación de archivos** (eliminados o modificados) |
+| Analiza **fechas de archivos** (creación, modificación, acceso) | Descubre que alguien manipuló un archivo poco después del acceso |
+| El archivo era... | Un **documento de capacitación** que se comparte regularmente con nuevos empleados |
+
+---
+
+#### Paso 5: Análisis detallado del archivo
+
+| Acción | Hallazgo |
+|--------|----------|
+| Analiza el documento en detalle | El documento se infectó con **código malicioso** |
+| Efecto del virus | Cada vez que alguien abría el documento, su dispositivo se infectaba |
+| Propagación | El virus podía propagarse a otros dispositivos de la red |
+| Evasión | El virus **interfería con el software antivirus** de la empresa |
+
+> **Conclusión:** Esta información explica por qué el virus **no se detectó** mientras se propagaba por el sistema.
+
+---
+
+### Diagrama del análisis de Rasha
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ANÁLISIS DE RASHA - MÉTODO FORENSE │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 1. REGISTROS DE RED │ │
+│ │ Múltiples intentos de acceso no autorizado │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 2. MARCAS DE TIEMPO │ │
+│ │ • Patrón: misma hora, misma IP, todos los días │ │
+│ │ • Eventualmente: un intento exitoso │ │
+│ │ • El éxito ocurrió DÍAS ANTES del descubrimiento │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 3. PREGUNTA CLAVE │ │
+│ │ "¿Por qué terminaron los intentos?" │ │
+│ │ → El atacante ya logró su objetivo │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 4. MARCAS DE TIEMPO DE ARCHIVOS │ │
+│ │ • Archivo manipulado poco después del acceso │ │
+│ │ • Era un documento de capacitación (compartido con todos) │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 5. ANÁLISIS DEL ARCHIVO │ │
+│ │ • Infectado con código malicioso │ │
+│ │ • Infectaba dispositivos al abrirse │ │
+│ │ • Desactivaba el antivirus │ │
+│ │ ✅ CONCLUSIÓN: CÓMO ocurrió y por qué NO SE DETECTÓ │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Herramientas de análisis
+
+| Tipo de herramienta | Propósito |
+|---------------------|-----------|
+| **Software de análisis de seguridad** | Descubrir evidencia oculta |
+| **Software de visualización de datos** | Convertir datos complejos en imágenes simples que revelan patrones |
+
+---
+
+### Resumen de la Fase 3: Análisis
+
+| Actividad | Propósito |
+|-----------|-----------|
+| **Analizar datos relevantes** | Sacar conclusiones significativas |
+| **Identificar patrones** | Encontrar relaciones causa-efecto |
+| **Construir líneas de tiempo** | Ordenar eventos cronológicamente |
+| **Descubrir evidencia oculta** | Usar herramientas especializadas |
+| **Responder preguntas clave** | Qué, quién, cómo, cuándo, por qué |
+
+> **Regla de oro:** El análisis forense sigue una **metodología estricta** para llegar a **conclusiones razonables** que respalden los datos.
+
+### Actividad: Aplicar la fase de análisis del proceso forense digital
+
+**Habilidades para la inserción laboral:** Agilidad de aprendizaje
+
+---
+
+#### Escenario: We Insure You (continuación)
+
+**Antecedentes**
+
+**We Insure You**, la gran empresa de seguros, continúa su investigación forense. El equipo completó la **Fase 1: Recopilación** y la **Fase 2: Examen**, y ahora está en la **Fase 3: Análisis**.
+
+---
+
+#### Acciones del equipo forense en la fase de análisis
+
+| Actividad | Acción del equipo | Hallazgo/Resultado |
+|-----------|-------------------|-------------------|
+| **Abordar preguntas relevantes** | ¿Cómo ocurrió el acceso no autorizado? ¿Qué empleado fue responsable? | Determinaron la causa y el responsable |
+| **Identificar detalles notables** | Analizaron registros de actividad de usuarios | Patrón que indicaba acceso a archivos fuera del ámbito autorizado |
+| **Construir cronología** | Ordenaron eventos cronológicamente | Secuencia que llevó al acceso no autorizado |
+| **Determinar causa-efecto** | Relacionaron eventos entre sí | Entendieron cómo se produjo la violación |
+| **Examinar metadatos** | Analizaron fechas, horas y archivos accedidos | Evidencia adicional: archivos específicos, fecha y hora del acceso |
+
+---
+
+#### Herramientas utilizadas
+
+| Herramienta | Propósito |
+|-------------|-----------|
+| **Software de análisis de seguridad** | Descubrir **evidencia oculta** |
+| **Software de visualización de datos** | Convertir datos complejos en **recursos visuales** que resaltan patrones difíciles de detectar |
+
+---
+
+#### Conclusiones del análisis
+
+| Conclusión | Detalle |
+|------------|---------|
+| **Causa del robo de datos** | Un empleado **superó su nivel de acceso autorizado** para acceder a información confidencial de clientes |
+
+---
+
+#### Acciones tomadas por We Insure You
+
+| Acción | Propósito |
+|--------|-----------|
+| Tomar medidas adecuadas | Evitar incidentes similares |
+| Proteger sus datos | Prevenir accesos no autorizados futuros |
+
+---
+
+#### Diagrama de la fase de análisis aplicada
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ W E I N S U R E Y O U - FASE 3 │
+│ ANÁLISIS │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ PREGUNTAS CLAVE │ │
+│ │ │ │
+│ │ • ¿Cómo ocurrió el acceso no autorizado? │ │
+│ │ • ¿Qué empleado fue responsable? │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ ACTIVIDADES │ │
+│ │ │ │
+│ │ • Identificar patrones en registros de actividad │ │
+│ │ • Construir cronología de eventos │ │
+│ │ • Determinar relaciones causa-efecto │ │
+│ │ • Examinar metadatos de archivos │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ HERRAMIENTAS │ │
+│ │ │ │
+│ │ • Software de análisis de seguridad → Evidencia oculta │ │
+│ │ • Software de visualización → Patrones difíciles de detectar │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ CONCLUSIONES │ │
+│ │ │ │
+│ │ ✅ Empleado superó su nivel de acceso autorizado │ │
+│ │ ✅ Accedió a información confidencial de clientes │ │
+│ │ ✅ Causa del robo de datos identificada │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+#### Preguntas de verificación
+
+**Pregunta 1:** ¿Qué patrones identificó el equipo en los registros de actividad de los usuarios?
+
+<details>
+<summary>Ver respuesta</summary>
+
+Un empleado accedió a **archivos fuera de su ámbito autorizado**.
+
+</details>
+
+---
+
+**Pregunta 2:** ¿Qué construyeron los investigadores para entender la secuencia del acceso no autorizado?
+
+<details>
+<summary>Ver respuesta</summary>
+
+Una **cronología de los acontecimientos** que llevaron al acceso no autorizado.
+
+</details>
+
+---
+
+**Pregunta 3:** ¿Qué tipo de software ayudó a los investigadores a convertir datos complejos en recursos visuales?
+
+<details>
+<summary>Ver respuesta</summary>
+
+**Software de visualización de datos**.
+
+</details>
+
+### Fase 4: Elaboración de informes
+
+La **elaboración de informes** es la **cuarta fase** del proceso forense digital.
+
+#### ¿Qué implica?
+
+En la fase de elaboración de informes, los investigadores:
+
+- **Crean** un informe detallado que describe **todos los hallazgos** de la investigación
+- **Comparten** el informe con las partes relevantes (abogados, jueces, ejecutivos, etc.)
+
+#### Características del informe
+
+| Característica | Por qué es importante |
+|----------------|----------------------|
+| **Preciso** | Los datos deben ser correctos |
+| **Completo** | No debe omitirse información relevante |
+| **Conclusiones lógicamente sólidas** | Las conclusiones deben tener sentido basadas en la evidencia |
+| **Basado en evidencia** | Todo hallazgo debe estar respaldado por pruebas |
+
+> Para **resistir el escrutinio legal** y **persuadir a los lectores**, el informe debe cumplir con estos requisitos.
+
+---
+
+### Estructura típica del informe
+
+| Sección | Descripción |
+|---------|-------------|
+| **1. Descripción general** | Contexto de la investigación, alcance, objetivos, roles |
+| **2. Adquisición forense y preparación de exámenes** | Métodos, cadena de custodia, herramientas, condiciones |
+| **3. Resultados e informe** | Hallazgos detallados, evidencia, capturas de pantalla, visualizaciones |
+| **4. Conclusión** | Resumen, recomendaciones para acciones adicionales |
+
+---
+
+#### Sección 1: Descripción general
+
+El investigador proporciona **contexto** para la investigación:
+
+| Elemento | Descripción |
+|----------|-------------|
+| **Cómo se involucró** | Quién lo contactó, por qué motivo |
+| **Estado del caso** | Qué se sabía al momento de iniciar |
+| **Funciones de otros** | Qué roles desempeñaron otras personas en la investigación |
+| **Alcance** | Límites de la investigación (qué se incluía y qué no) |
+| **Objetivos** | Qué se pretendía lograr con la investigación |
+
+---
+
+#### Sección 2: Adquisición forense y preparación de exámenes
+
+Los investigadores explican los **métodos empleados**:
+
+| Aspecto | Detalles a incluir |
+|---------|-------------------|
+| **Dónde** | Dónde se recopilaron las pruebas |
+| **Cómo** | Cómo se procesaron y preservaron (integridad) |
+| **Cadena de custodia** | Detalles de quién manejó la evidencia y cuándo |
+| **Procedimientos** | Métodos de recopilación, examen y análisis |
+| **Herramientas** | Qué herramientas se usaron en cada fase |
+| **Dispositivos examinados** | Cada dispositivo, herramientas usadas y condiciones del examen |
+
+---
+
+#### Sección 3: Resultados e informe (análisis forense)
+
+Los investigadores describen sus **hallazgos en detalle**:
+
+| Elemento | Descripción |
+|----------|-------------|
+| **Vulnerabilidades descubiertas** | Problemas de seguridad identificados |
+| **Evidencia empleada** | Para cada hallazgo, ejemplos concretos |
+| **Capturas de pantalla** | De archivos de texto, herramientas de análisis |
+| **Visualizaciones** | Gráficos que muestran patrones |
+
+> Esta sección también se conoce como **análisis forense**.
+
+---
+
+#### Sección 4: Conclusión
+
+El investigador **resume** su análisis y hallazgos:
+
+| Elemento | Descripción |
+|----------|-------------|
+| **Resumen** | Síntesis de los hallazgos principales |
+| **Precisión técnica** | Ser conciso y técnicamente preciso |
+| **Recomendaciones** | Acciones adicionales sugeridas (recopilar más datos, examinar más a fondo, etc.) |
+
+---
+
+### Diagrama de la fase de informes
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ FASE 4: ELABORACIÓN DE INFORMES │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 1. DESCRIPCIÓN GENERAL │ │
+│ │ Contexto, alcance, objetivos, roles │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 2. ADQUISICIÓN FORENSE Y PREPARACIÓN DE EXÁMENES │ │
+│ │ Métodos, cadena de custodia, herramientas, condiciones │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 3. RESULTADOS E INFORME │ │
+│ │ Hallazgos detallados, evidencia, capturas, visualizaciones │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 4. CONCLUSIÓN │ │
+│ │ Resumen, precisión técnica, recomendaciones │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Resumen de la Fase 4: Informes
+
+| Requisito | Propósito |
+|-----------|-----------|
+| **Preciso y completo** | Asegurar credibilidad del informe |
+| **Conclusiones lógicamente sólidas** | Que tengan sentido basadas en la evidencia |
+| **Basado en evidencia** | Cada hallazgo respaldado por pruebas |
+| **Cadena de custodia documentada** | Demostrar integridad de la evidencia |
+| **Recomendaciones claras** | Guiar acciones futuras |
+
+> **Regla de oro:** El informe debe ser comprensible para **audiencias no técnicas** (abogados, jueces, jurados, ejecutivos) sin perder **precisión técnica**.
+
+### Fase de elaboración de informes: ejemplo de un informe forense digital
+
+Ahora que estás familiarizado con la fase de elaboración de informes del proceso forense digital, examinemos un ejemplo de informe forense digital que el equipo que investiga la filtración de **We Insure You** podría haber creado.
+
+---
+
+#### Ejemplo de informe forense digital - We Insure You
+
+**Título:** Informe de investigación forense digital - Filtración de datos
+
+---
+
+##### Sección 1: Descripción general
+
+| Campo | Contenido |
+|-------|-----------|
+| **Caso** | Filtración de datos en We Insure You |
+| **Investigador** | Equipo forense digital |
+| **Fecha de inicio** | DD/MM/AAAA |
+| **Contexto** | We Insure You sospechaba que un empleado robó información confidencial de la red |
+| **Alcance** | Investigar el origen de la filtración y el alcance de los daños |
+| **Objetivos** | Identificar qué datos se vieron comprometidos, quién fue responsable y cómo ocurrió |
+
+---
+
+##### Sección 2: Adquisición forense y preparación de exámenes
+
+| Aspecto | Detalle |
+|---------|---------|
+| **Fuentes de datos** | Computadora portátil del empleado, servidores, cuentas de correo electrónico |
+| **Método de recopilación** | Imagen forense del disco duro (laptop), extracción de datos de servidores y correos |
+| **Preservación de integridad** | Valores hash (MD5/SHA) para verificar copias |
+| **Cadena de custodia** | Documentación de quién manejó la evidencia, cuándo y con qué propósito |
+| **Herramientas utilizadas** | Software de imagen forense, herramientas de descifrado, aplicaciones de búsqueda de texto |
+| **Dispositivos examinados** | Laptop del empleado (modelo, número de serie), servidores corporativos, cuentas de correo |
+
+---
+
+##### Sección 3: Resultados e informe (análisis forense)
+
+| Hallazgo | Evidencia |
+|----------|-----------|
+| **El empleado accedió a archivos fuera de su ámbito autorizado** | Registros de actividad de usuarios mostrando patrón de acceso no autorizado |
+| **Acceso ocurrió en fechas/horas específicas** | Metadatos de archivos con marcas de tiempo |
+| **Archivos confidenciales fueron accedidos** | Capturas de pantalla de los archivos y rutas de acceso |
+| **El empleado superó su nivel de acceso** | Comparación de nivel de autorización vs. archivos accedidos |
+| **No se detectó el acceso durante la ocurrencia** | El software antivirus estaba desactivado/evadido |
+
+**Visualizaciones incluidas:**
+- Capturas de pantalla de los registros de actividad
+- Línea de tiempo de eventos (cronología)
+- Tabla de archivos accedidos con fechas y horarios
+
+---
+
+##### Sección 4: Conclusión
+
+| Elemento | Contenido |
+|----------|-----------|
+| **Resumen** | Un empleado superó su nivel de acceso autorizado para acceder a información confidencial de clientes |
+| **Causa del incidente** | El empleado explotó sus privilegios para acceder a datos fuera de su ámbito laboral |
+| **Recomendaciones** | 1. Revisar y actualizar políticas de control de acceso<br>2. Implementar monitoreo continuo de accesos no autorizados<br>3. Capacitar empleados sobre manejo de datos confidenciales<br>4. Considerar implementar MFA para acceso a datos sensibles |
+
+---
+
+#### Estructura del informe en diagrama
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ INFORME FORENSE - WE INSURE YOU │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 1. DESCRIPCIÓN GENERAL │ │
+│ │ • Contexto: filtración de datos en We Insure You │ │
+│ │ • Alcance: identificar origen y alcance │ │
+│ │ • Objetivos: qué, quién, cómo │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 2. ADQUISICIÓN FORENSE │ │
+│ │ • Fuentes: laptop, servidores, correos │ │
+│ │ • Método: imagen forense + extracción │ │
+│ │ • Integridad: valores hash (MD5/SHA) │ │
+│ │ • Cadena de custodia: documentada │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 3. RESULTADOS │ │
+│ │ • Acceso a archivos fuera del ámbito autorizado │ │
+│ │ • Metadatos con fechas/horas específicas │ │
+│ │ • Capturas de pantalla y visualizaciones │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 4. CONCLUSIÓN │ │
+│ │ • Empleado superó nivel de acceso autorizado │ │
+│ │ • Recomendaciones │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Características clave del informe forense
+
+| Característica | Propósito |
+|----------------|-----------|
+| **Descripción clara y concisa** | Explicar el proceso y metodología |
+| **Resumen de evidencia** | Listar toda la evidencia reunida |
+| **Descripción de análisis** | Explicar qué análisis se realizaron |
+| **Conclusiones extraídas** | Presentar hallazgos de manera lógica |
+| **Comprensible para no técnicos** | Abogados, jueces, jurados, ejecutivos deben entenderlo |
+
+> **Regla de oro:** El informe forense debe ser **preciso, completo y comprensible** para audiencias no técnicas, sin perder **rigor técnico**.
+
+### Preservación de datos
+
+Las pruebas digitales pueden ser **muy frágiles**. El simple hecho de cambiar el formato de los archivos o abrir un archivo en un sistema operativo diferente puede provocar la **pérdida de datos**, lo que pone en peligro el alcance y la integridad de la investigación.
+
+#### ¿Qué es la preservación de datos?
+
+La **preservación de datos** se refiere al proceso de **proteger y salvaguardar** datos electrónicos para mantener su **integridad, autenticidad y usabilidad** para fines de investigación.
+
+---
+
+### Reglas generales para la preservación de datos
+
+| Regla | Descripción |
+|-------|-------------|
+| **1. Crear una imagen de los datos** | Copia bit a bit exacta del dispositivo original |
+| **2. Verificar la integridad de los datos** | Usar valores hash para confirmar que la copia es idéntica |
+| **3. Seguir una cadena de custodia** | Documentar quién, cuándo y qué se hizo con la evidencia |
+
+---
+
+#### Regla 1: Crear una imagen de los datos
+
+**¿Qué es una imagen forense?**
+- Una copia **bit a bit** de **todos** los datos de un dispositivo
+- Incluye: archivos visibles, **espacio libre** y **archivos eliminados**
+- Es una **instantánea** exacta de lo que había en el dispositivo en ese momento
+
+**Requisitos para crear la imagen:**
+
+| Requisito | Por qué |
+|-----------|---------|
+| **Crear antes de abrir cualquier archivo** | Evita modificar los registros de acceso al sistema y archivos |
+| **Almacenar en dispositivo cifrado** | Proteger la evidencia de accesos no autorizados |
+| **Almacenar en lugar seguro** | Donde ninguna persona o cosa pueda alterar la evidencia |
+
+> La imagen debe ser una **réplica exacta** de los datos originales sin modificaciones, ni siquiera en los registros de acceso.
+
+---
+
+#### Regla 2: Verificar la integridad de los datos
+
+**¿Cómo se verifica?**
+- Comparando los **valores hash** de los datos originales y la imagen
+- Los **valores hash coincidentes** confirman que la imagen sigue siendo una copia auténtica del original
+
+| Situación | Significado |
+|-----------|-------------|
+| Hash original = Hash de la imagen | ✅ La copia es **idéntica** (integridad confirmada) |
+| Hash original ≠ Hash de la imagen | ❌ La copia **no es fiel** (algo cambió) |
+
+> El equipo forense debe verificar la integridad de los datos **durante toda la investigación**, no solo al principio.
+
+---
+
+#### Regla 3: Seguir una cadena de custodia
+
+**¿Qué debe documentarse?**
+
+| Información | Descripción |
+|-------------|-------------|
+| **Quién** | La persona que accedió a la evidencia |
+| **Cuándo** | Fecha y hora del acceso |
+| **Qué** | Qué acción se realizó (transferir, copiar, analizar, etc.) |
+| **Por qué** | Propósito de la manipulación |
+
+> Los investigadores deben actualizar el formulario de cadena de custodia **cada vez que alguien manipula la evidencia**.
+
+---
+
+### Diagrama de la preservación de datos
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PRESERVACIÓN DE DATOS - REGLAS GENERALES │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 1. CREAR IMAGEN │ │
+│ │ │ │
+│ │ Dispositivo original ──▶ Imagen forense (bit a bit) │ │
+│ │ │ │
+│ │ Requisitos: │ │
+│ │ • Crear antes de abrir cualquier archivo │ │
+│ │ • Almacenar en dispositivo cifrado │ │
+│ │ • Almacenar en lugar seguro │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 2. VERIFICAR INTEGRIDAD │ │
+│ │ │ │
+│ │ Hash original = Hash de la imagen? │ │
+│ │ │ │
+│ │ • Si coinciden → ✅ Integridad confirmada │ │
+│ │ • Si no coinciden → ❌ La copia no es fiel │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 3. SEGUIR CADENA DE CUSTODIA │ │
+│ │ │ │
+│ │ Documentar: QUIÉN, CUÁNDO, QUÉ, POR QUÉ │ │
+│ │ Actualizar CADA VEZ que alguien manipula la evidencia │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Resumen de la preservación de datos
+
+| Concepto | Explicación |
+|----------|-------------|
+| **Fragilidad de las pruebas digitales** | Cambiar formato, abrir archivos o usar diferente SO puede dañar los datos |
+| **Preservación** | Proteger y salvaguardar datos para mantener integridad, autenticidad y usabilidad |
+| **Imagen forense** | Copia bit a bit exacta, creada antes de manipular el original |
+| **Verificación con hash** | Confirmar que la copia sigue siendo idéntica al original |
+| **Cadena de custodia** | Registro detallado de cada manipulación de la evidencia |
+
+> **Regla de oro:** Los investigadores nunca deben trabajar sobre el **original**. Siempre deben crear una **imagen forense verificada** y trabajar sobre esa copia, preservando el original intacto como evidencia irrefutable.
+
+### Aspecto destacado de la gestión profesional: habilidades de resolución de problemas para expertos en análisis forense digital
+
+#### Habilidades de gestión profesional
+
+Para ser un investigador forense digital, necesitas habilidades de **resolución de problemas**.
+
+---
+
+#### ¿Qué es la resolución de problemas?
+
+La **resolución de problemas** es el uso de la **lógica y la razón** para resolver un problema.
+
+Implica usar:
+
+| Habilidad | Descripción |
+|-----------|-------------|
+| **Pensamiento creativo** | Encontrar soluciones innovadoras |
+| **Conocimiento** | Aplicar lo que se sabe |
+| **Intuición** | Confiar en la experiencia |
+| **Experiencia** | Aprender de casos anteriores |
+
+> Los empleadores buscan candidatos que puedan **identificar problemas potenciales**, **formular metas**, **diseñar planes eficaces** y **tomar decisiones informadas**.
+
+---
+
+#### Resolución de problemas para el análisis forense digital
+
+La capacidad de resolución de problemas es **esencial** para el análisis forense digital, ya que implica investigar problemas complejos, a menudo técnicos, en diversas circunstancias.
+
+| Requisito | Descripción |
+|-----------|-------------|
+| **Abordar problemas críticamente** | Analizar con escepticismo profesional |
+| **Método y lógica** | Seguir un proceso estructurado |
+| **Identificar y definir problemas** | Saber exactamente qué se investiga |
+| **Considerar información relevante** | Evaluar todas las fuentes de datos |
+| **Seleccionar el mejor curso de acción** | Elegir la estrategia óptima |
+| **Adaptarse rápidamente** | Responder a circunstancias cambiantes |
+| **Anticipar obstáculos** | Prever problemas antes de que ocurran |
+| **Comunicar conclusiones** | Explicar hallazgos a colegas y partes interesadas |
+
+---
+
+#### Combinación con atención al detalle
+
+La resolución de problemas resulta **especialmente útil** cuando se combina con la **atención a los detalles**.
+
+| Ejemplo | Aplicación |
+|---------|-------------|
+| **Analizar conjuntos de datos complejos** | Reconocer **pistas sutiles** que lleven a un descubrimiento |
+
+---
+
+#### Dependencia de conocimientos técnicos
+
+La resolución de problemas en el análisis forense digital también depende de los **conocimientos técnicos**.
+
+| Conocimiento necesario | Aplicación |
+|------------------------|-------------|
+| **Cómo funcionan los sistemas informáticos** | **Ingeniería inversa** de fuentes de datos para descubrir datos ocultos |
+| **Estructura de los datos** | Entender cómo se organiza la información en los sistemas |
+| **Almacenamiento de datos** | Saber cómo funciona en **dispositivos físicos** y en la **nube** |
+
+> Estos conocimientos ayudan a los investigadores a decidir:
+> - **Qué** datos recopilar
+> - **Cómo** recopilarlos
+> - **Cómo** examinarlos y analizarlos
+
+---
+
+### Diagrama de habilidades de resolución de problemas
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ RESOLUCIÓN DE PROBLEMAS EN FORENSE DIGITAL │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ COMPONENTES CLAVE │ │
+│ │ │ │
+│ │ Lógica │ Razón │ Pensamiento │ Conocimiento │ │
+│ │ │ │ creativo │ técnico │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ APLICACIÓN EN FORENSE DIGITAL │ │
+│ │ │ │
+│ │ • Identificar problemas técnicos complejos │ │
+│ │ • Definir alcance de la investigación │ │
+│ │ • Seleccionar herramientas y métodos adecuados │ │
+│ │ • Adaptarse a nuevas circunstancias │ │
+│ │ • Anticipar obstáculos │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ HABILIDADES COMBINADAS │ │
+│ │ │ │
+│ │ Resolución de problemas + Atención al detalle + Conocimiento técnico│ │
+│ │ │ │
+│ │ = OPTIMIZACIÓN DE LA CAPACIDAD PARA DETECTAR Y ANALIZAR │ │
+│ │ DELITOS CIBERNÉTICOS Y GARANTIZAR JUSTICIA │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Preguntas de autoevaluación
+
+| Pregunta | Reflexión |
+|----------|-----------|
+| ¿Puedes identificar **problemas potenciales** antes de que surjan? | |
+| ¿Puedes **formular metas y objetivos** y diseñar un plan eficaz para alcanzarlos? | |
+| ¿Puedes **evaluar las opciones** y tomar decisiones informadas? | |
+
+---
+
+### Resumen
+
+| Habilidad | Importancia en forense digital |
+|-----------|-------------------------------|
+| **Resolución de problemas** | Abordar investigaciones complejas de manera crítica y metódica |
+| **Atención al detalle** | Reconocer pistas sutiles en conjuntos de datos complejos |
+| **Conocimientos técnicos** | Entender sistemas, estructuras de datos y almacenamiento (físico y nube) |
+
+> **Conclusión:** Al desarrollar y perfeccionar sus habilidades de resolución de problemas, los investigadores forenses digitales pueden **optimizar su capacidad** para detectar y analizar la ciberdelincuencia y ayudar a garantizar que se **haga justicia**.
+
+### Mi respuesta a la actividad de reflexión
+
+**Desafío:** Encuentro un nuevo método de cifrado que no esperaba durante una investigación forense digital.
+
+**Cómo lo abordaría:**
+
+1. **Reconozco el problema:** Identifico el cifrado como un obstáculo imprevisto y evalúo su alcance.
+
+2. **Aplico pensamiento crítico:** No tomo decisiones apresuradas. Mantengo la integridad de la evidencia original (trabajo sobre copias forenses).
+
+3. **Uso conocimientos técnicos:** Investigo qué tipo de cifrado podría ser y qué herramientas existen para tratarlo.
+
+4. **Consulto con colegas:** Me comunico con otros investigadores forenses o expertos en criptografía.
+
+5. **Investigación exhaustiva:** Busco documentación sobre métodos de cifrado similares.
+
+6. **Evalúo opciones:** Reviso si hay software especializado, si puedo obtener la clave legalmente, o si puedo hacer ingeniería inversa.
+
+7. **Documento el proceso:** Registro cada paso y mantengo la cadena de custodia actualizada.
+
+8. **Anticipo obstáculos:** Si no puedo descifrarlo, busco fuentes alternativas de evidencia y planeo para futuras investigaciones.
+
+**Conclusión:** Con resolución de problemas, atención al detalle y conocimientos técnicos, puedo sortear el desafío y seguir avanzando con precisión en la investigación.
+
+## Resumen y perspectivas
+
+### Resumen de la lección
+
+En esta lección, aprendiste sobre las **cuatro fases del proceso forense digital**:
+
+| Fase | Descripción |
+|------|-------------|
+| **1. Recopilación** | Identificar fuentes, recopilar datos, preservar integridad |
+| **2. Examen** | Examinar datos recopilados, determinar relevancia, extraer información |
+| **3. Análisis** | Analizar datos relevantes, sacar conclusiones, construir cronología |
+| **4. Informes** | Crear informe detallado de hallazgos, compartir conclusiones |
+
+#### Puntos clave aprendidos
+
+Los investigadores forenses digitales emplean:
+
+- **Conocimientos** (técnicos, legales, metodológicos)
+- **Habilidades** (análisis, atención al detalle, resolución de problemas)
+- **Herramientas** (software forense, visualización, descifrado)
+
+> Un solo paso en falso en cualquier fase puede:
+> - **Alterar** su evidencia
+> - **Distorsionar** sus hallazgos
+> - **Socavar** su investigación
+
+---
+
+### Perspectivas
+
+**En la siguiente lección**, aprenderás sobre las **herramientas de análisis forense digital**.
+
+Explorarás los **cuatro tipos de herramientas** que emplean los investigadores forenses digitales:
+
+| Tipo de herramienta | Propósito |
+|---------------------|-----------|
+| **Adquisición y análisis** | Obtener y examinar datos forenses |
+| **Análisis de clasificación** | Organizar y categorizar evidencia |
+| **Creación de imágenes** | Crear copias bit a bit (imágenes forenses) |
+| **Recuperación** | Restaurar datos borrados o dañados |
+
+También practicarás su uso en un **escenario realista**.
+
+---
+
+### Diagrama del camino a seguir
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PRÓXIMA LECCIÓN - HERRAMIENTAS FORENSES │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ TIPOS DE HERRAMIENTAS │ │
+│ │ │ │
+│ │ • Adquisición y análisis │ │
+│ │ • Análisis de clasificación │ │
+│ │ • Creación de imágenes (bit a bit) │ │
+│ │ • Recuperación de datos │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ Practicarás su uso en un escenario realista │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+
+### Ciencia forense de sistemas digitales
+
+| Lección | Temas cubiertos |
+|---------|-----------------|
+| **Introducción** | Definición, fuentes de datos, consideraciones legales |
+| **Cadena de custodia** | Documentación, integridad, admisibilidad legal |
+| **Preservación de datos** | Imagen forense, hash, verificación |
+| **Fases del proceso** | Recopilación, examen, análisis, informes |
+| **Habilidades** | Resolución de problemas, atención al detalle, comunicación |
+
+### Acerca de esta lección: Herramientas forenses digitales
+
+Para tener éxito en cualquier carrera profesional en ciberseguridad, debes conocer más que solo los conceptos clave relevantes para tu trabajo. Debes conocer **las herramientas adecuadas** para el trabajo y la **forma correcta de usarlas**.
+
+Si aspiras a una carrera en análisis forense digital, tendrás **muchas herramientas** para elegir.
+
+#### En esta lección aprenderás
+
+- Las **herramientas que emplean los investigadores** a lo largo del proceso de análisis forense digital
+- Los **propósitos** a los que sirven estas herramientas
+- **Herramientas y técnicas específicas** para trabajar con datos
+- Practicar el uso de **herramientas estándar** para analizar evidencia forense digital
+
+---
+
+### Tipos de herramientas forenses digitales
+
+| Tipo | Propósito |
+|------|-----------|
+| **Adquisición y análisis** | Obtener y examinar datos forenses |
+| **Análisis de clasificación** | Organizar y categorizar evidencia |
+| **Creación de imágenes** | Crear copias bit a bit (imágenes forenses) |
+| **Recuperación** | Restaurar datos borrados o dañados |
+
+### Elegir las herramientas forenses digitales adecuadas
+
+#### Evolución de la ciencia forense digital
+
+La disciplina de la ciencia forense digital comenzó cuando los datos y dispositivos digitales (como las computadoras) se volvieron habituales. Al principio, analizar estos dispositivos era **sencillo**.
+
+Pero la tecnología evolucionó en las últimas décadas:
+
+| Avance tecnológico | Impacto en la forensia |
+|--------------------|------------------------|
+| **Teléfonos inteligentes** | Nuevas fuentes de datos |
+| **Plataformas de redes sociales** | Datos en la nube, evidencia de comunicaciones |
+| **Almacenamiento en la nube** | Datos remotos, acceso complejo |
+| **Dispositivos IoT** | Múltiples fuentes de datos |
+| **Multimedia** | Imágenes, videos, grabaciones de audio (no solo texto y números) |
+
+> A medida que aumentaba la **cantidad y complejidad** de los datos, también aumentaba la necesidad de **herramientas especializadas**.
+
+---
+
+#### ¿Qué son las herramientas forenses digitales?
+
+Las **herramientas forenses digitales** son **hardware o software** que:
+
+| Función | Descripción |
+|---------|-------------|
+| **Recopilan** | Obtener evidencia digital de diversas fuentes |
+| **Extraen** | Aislar datos relevantes |
+| **Clasifican** | Organizar y categorizar evidencia |
+| **Preservan** | Mantener la integridad de los datos |
+| **Recuperan** | Restaurar datos borrados o dañados |
+
+---
+
+### Criterios para elegir herramientas forenses
+
+| Criterio | Preguntas a considerar |
+|----------|------------------------|
+| **Características de la herramienta** | ¿Para qué se usará? ¿Con qué tipo de datos se trabajará? ¿En qué formato se almacenarán? |
+| **Confiabilidad y precisión** | ¿La herramienta fue probada y avalada? ¿Tiene historial comprobado en investigaciones similares? ¿Confían en ella? |
+| **Facilidad de uso** | ¿Qué conocimientos técnicos y experiencia se necesitan? ¿Tiene GUI o solo línea de comandos? |
+| **Asequibilidad** | ¿Cuánto cuesta? ¿Está dentro del presupuesto? |
+
+---
+
+#### Ejemplo de aplicación de criterios
+
+| Situación | Herramienta adecuada |
+|-----------|---------------------|
+| Extraer direcciones de correo electrónico de un archivo de imagen de disco y almacenarlas en un archivo de texto | Herramienta con capacidad de **búsqueda de palabras clave** y **exportación** |
+| Realizar análisis de líneas de tiempo | Herramientas como **Autopsy** |
+| Investigador con poca experiencia técnica | Herramienta con **interfaz gráfica (GUI)** fácil de usar |
+| Investigador experto en línea de comandos | Herramienta CLI (puede ser más potente pero menos amigable) |
+
+---
+
+### Herramientas gratuitas vs. pagas
+
+| Tipo | Ventajas | Desventajas |
+|------|----------|-------------|
+| **Código abierto / gratuitas** | ✅ Asequibles (sin costo)<br>✅ Buena para tareas básicas | ⚠️ Pueden tener menos funciones |
+| **Comerciales / pagas** | ✅ Más complejas y potentes<br>✅ Soporte técnico | ❌ Pueden ser **costosas** |
+
+---
+
+### Diagrama de selección de herramientas
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CÓMO ELEGIR HERRAMIENTAS FORENSES │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 1. CARACTERÍSTICAS │ │
+│ │ • ¿Qué función se necesita? (recopilar, extraer, clasificar?) │ │
+│ │ • ¿Qué tipo de datos? (texto, imagen, video?) │ │
+│ │ • ¿Qué formato de salida? (texto, CSV, reporte?) │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 2. CONFIABILIDAD │ │
+│ │ • ¿Está probada y avalada? │ │
+│ │ • ¿Tiene historial comprobado? │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 3. FACILIDAD DE USO │ │
+│ │ • ¿Requiere GUI o CLI? │ │
+│ │ • ¿Qué nivel de experiencia se necesita? │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 4. ASEQUIBILIDAD │ │
+│ │ • ¿Costo? │ │
+│ │ • ¿Está dentro del presupuesto? │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Resumen de la selección de herramientas
+
+| Criterio | Por qué es importante |
+|----------|----------------------|
+| **Características** | La herramienta debe hacer lo que se necesita |
+| **Confiabilidad** | Los hallazgos deben ser defendibles en un tribunal |
+| **Facilidad de uso** | Ahorra tiempo y reduce errores |
+| **Asequibilidad** | Debe ajustarse al presupuesto del caso/organización |
+
+> **Regla de oro:** La mejor herramienta es la que **cumple con los requisitos del caso**, es **confiable**, puede ser **utilizada correctamente por el investigador** y está **dentro del presupuesto**.
+
+### Objetivos de las herramientas forenses digitales
+
+Los investigadores emplean herramientas forenses digitales durante la mayor parte del proceso de análisis forense digital. Los **tipos y la cantidad** de herramientas necesarias dependen de:
+
+- Los **objetivos** de la investigación
+- Las **fuentes de datos** disponibles
+- Los **datos** específicos a analizar
+
+---
+
+### Los 4 objetivos principales de las herramientas forenses
+
+| Objetivo | Descripción | Herramientas de ejemplo |
+|----------|-------------|------------------------|
+| **1. Adquisición y análisis** | Recopilar y analizar evidencia digital de fuentes de datos (discos duros, tarjetas de memoria) | EnCase Forensic, Autopsy, FTK Imager, Volatility |
+| **2. Clasificación** | Analizar rápidamente grandes cantidades de datos en busca de archivos o palabras clave importantes | Belkasoft Evidence Center, Bulk Extractor, EnCase Portable, BlackLight |
+| **3. Creación de imágenes** | Crear una imagen digital (copia fiel al original) de discos duros, USBs u otros medios | X-Ways Forensics, Foremost, FTK Imager |
+| **4. Recuperación** | Recuperar archivos eliminados o inaccesibles | PhotoRec, TestDisk, R-Studio, Recuva |
+
+---
+
+#### 1. Herramientas de adquisición y análisis
+
+**Propósito:** Recopilar y analizar evidencia digital de fuentes de datos.
+
+| Función | Ejemplo |
+|---------|---------|
+| Buscar palabras clave o cadenas de caracteres dentro de bloques de datos | EnCase Forensic |
+| Descubrir archivos ocultos y eliminados | EnCase Forensic |
+| Análisis forense general | Autopsy, FTK Imager, Volatility |
+
+> **Herramienta estándar de la industria:** EnCase Forensic
+
+---
+
+#### 2. Herramientas de clasificación
+
+**Propósito:** Analizar rápidamente **grandes cantidades** de datos adquiridos en busca de archivos o palabras clave importantes.
+
+| Función | Ejemplo |
+|---------|---------|
+| Examinar espacio no asignado o volcados de memoria en busca de nombres de usuario, correos electrónicos y tipos de archivos específicos | Belkasoft Evidence Center |
+| Clasificación de datos a gran escala | Bulk Extractor, Electronic Evidence Examiner, EnCase Portable, BlackLight |
+
+---
+
+#### 3. Herramientas de creación de imágenes
+
+**Propósito:** Crear una **imagen digital (copia fiel al original)** de una unidad de disco duro, memoria USB u otro medio de almacenamiento.
+
+| Función | Ejemplo |
+|---------|---------|
+| Obtener imágenes rápidas de cualquier medio de almacenamiento | X-Ways Forensics |
+| Creación de imágenes forenses | Foremost, FTK Imager |
+
+> La herramienta X-Ways Forensics es especialmente útil para **obtener imágenes rápidas** de cualquier medio de almacenamiento.
+
+---
+
+#### 4. Herramientas de recuperación
+
+**Propósito:** Recuperar **archivos eliminados o inaccesibles**, proporcionando evidencia valiosa en algunos casos.
+
+| Función | Ejemplo |
+|---------|---------|
+| Recuperar datos de imágenes dañadas o corruptas | PhotoRec |
+| Recuperación de archivos eliminados | TestDisk, R-Studio, Recuva |
+
+---
+
+### Diagrama de los 4 objetivos
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ OBJETIVOS DE LAS HERRAMIENTAS FORENSES │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 1. ADQUISICIÓN Y ANÁLISIS │ │
+│ │ EnCase Forensic, Autopsy, FTK Imager, Volatility │ │
+│ │ → Recopilar y analizar evidencia digital │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 2. CLASIFICACIÓN │ │
+│ │ Belkasoft Evidence Center, Bulk Extractor │ │
+│ │ → Analizar grandes cantidades de datos rápidamente │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 3. CREACIÓN DE IMÁGENES │ │
+│ │ X-Ways Forensics, Foremost, FTK Imager │ │
+│ │ → Crear copias fieles (bit a bit) de dispositivos │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 4. RECUPERACIÓN │ │
+│ │ PhotoRec, TestDisk, R-Studio, Recuva │ │
+│ │ → Recuperar archivos eliminados o inaccesibles │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Tabla resumen de herramientas por objetivo
+
+| Objetivo | Herramientas clave | Uso principal |
+|----------|-------------------|---------------|
+| **Adquisición y análisis** | EnCase Forensic, Autopsy, FTK Imager, Volatility | Buscar palabras clave, descubrir archivos ocultos/eliminados |
+| **Clasificación** | Belkasoft, Bulk Extractor, EnCase Portable | Examinar espacio no asignado, volcados de memoria |
+| **Creación de imágenes** | X-Ways Forensics, Foremost, FTK Imager | Copia bit a bit de discos y USBs |
+| **Recuperación** | PhotoRec, TestDisk, R-Studio, Recuva | Recuperar archivos dañados, corruptos o eliminados |
+
+---
+
+### Nota importante
+
+> Las herramientas de **creación de imágenes** son fundamentales porque permiten trabajar sobre **copias exactas** (imágenes forenses) preservando el **original intacto** como evidencia irrefutable.
+
+![ejercicio](/img/ejer.png)
+
+### Creación de imágenes - FTK Imager
+
+#### Escenario de ejemplo
+
+Imagina que eres un trabajador de TI. Tu jefa sospecha que un empleado resentido **borró archivos** que contenían datos importantes del cliente. Te asigna la tarea de encontrar y recuperar esos archivos.
+
+**El problema:**  
+Si los archivos aún existen, están en la unidad de disco duro de la computadora del empleado.
+
+**El riesgo:**  
+Puedes trabajar directamente en esa unidad, pero la recuperación de archivos puede complicarse. Si accidentalmente **sobrescribes o corrompes** estos archivos, podrías perder los datos **para siempre**.
+
+**La solución:**  
+Crear una **imagen** de la unidad y trabajar sobre esa imagen para recuperar los archivos.
+
+---
+
+#### ¿Por qué crear una imagen forense?
+
+Una **imagen** es una copia **bit por bit** de **todos** los datos de un dispositivo, incluyendo:
+
+| Tipo de dato | Incluido en la imagen |
+|--------------|----------------------|
+| Archivos visibles | ✅ Sí |
+| Espacio libre | ✅ Sí |
+| Archivos eliminados | ✅ Sí |
+
+> Con una imagen, el investigador puede **estudiar y manipular** una copia precisa de los datos sin comprometer el original.
+
+---
+
+#### Bloqueadores de escritura
+
+**¿Qué es un bloqueador de escritura?**  
+Un dispositivo que **bloquea cualquier comando de escritura** enviado a un dispositivo de almacenamiento.
+
+**¿Por qué es importante?**
+
+| Con bloqueador de escritura | Sin bloqueador de escritura |
+|----------------------------|----------------------------|
+| ✅ Se asegura de no alterar accidentalmente la fuente de datos | ❌ Riesgo de modificar accidentalmente la evidencia original |
+| ✅ Se puede crear la imagen sin comprometer la integridad | ❌ La evidencia podría ser inadmisible en un tribunal |
+
+> Los investigadores suelen conectar la fuente de datos (disco duro) a un **bloqueador de escritura** antes de crear una imagen.
+
+---
+
+#### FTK Imager
+
+**¿Qué es FTK Imager?**  
+Una de las herramientas de creación de imágenes más **confiables**. Es una herramienta de **código abierto** para crear imágenes de disco sin riesgo de realizar cambios en la fuente de datos original.
+
+**Disponibilidad:**
+
+| Sistema operativo | Interfaz |
+|-------------------|----------|
+| **Microsoft Windows** | GUI (interfaz gráfica) y línea de comandos |
+| **Linux** | Solo línea de comandos |
+
+---
+
+#### Tareas que puedes realizar con FTK Imager
+
+| Tarea | Descripción |
+|-------|-------------|
+| **Crear imágenes** | De discos duros, disquetes, CD, DVD, carpetas y archivos |
+| **Crear y comparar valores hash** | Confirmar la integridad de la imagen (coincidencia con el original) |
+| **Vista previa de datos** | Ver los datos de la fuente sin riesgo de dañarla (ahorra tiempo al decidir si vale la pena analizar) |
+| **Montar imagen** | Vista previa de solo lectura (similar a un dispositivo conectado a un bloqueador de escritura) |
+
+---
+
+#### Flujo de trabajo con FTK Imager
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PROCESO CON FTK IMAGER │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 1. CONECTAR BLOQUEADOR DE ESCRITURA │ │
+│ │ → Protege la fuente de datos original │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 2. CREAR IMAGEN FORENSE │ │
+│ │ → Copia bit a bit de todo el dispositivo │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 3. CALCULAR HASH │ │
+│ │ → MD5 o SHA del original y la imagen │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 4. VERIFICAR INTEGRIDAD │ │
+│ │ → Comparar hashes: si coinciden → copia fiel │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 5. TRABAJAR SOBRE LA IMAGEN │ │
+│ │ → Analizar, examinar, recuperar archivos │ │
+│ │ → El original queda INTACTO │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+#### Ventaja clave de la vista previa
+
+> Con FTK Imager, puedes obtener una **vista previa** de los datos de la fuente sin el riesgo de dañarlos. Esto te permite decidir si los datos merecen un análisis adicional, posiblemente **ahorrando tiempo y esfuerzo** en la obtención de imágenes de datos inservibles.
+
+---
+
+#### Montar una imagen
+
+Montar una imagen permite una **vista previa de solo lectura**, similar a montar un dispositivo de almacenamiento conectado a un bloqueador de escritura. Con esta vista previa, puedes examinar el contenido de la imagen **tal como lo hizo el usuario** con la fuente de datos original.
+
+---
+
+### Resumen: Creación de imágenes con FTK Imager
+
+| Concepto | Explicación |
+|----------|-------------|
+| **Bloqueador de escritura** | Dispositivo que evita modificaciones accidentales al original |
+| **Imagen forense** | Copia bit a bit (incluye archivos eliminados y espacio libre) |
+| **Hash** | Verifica que la imagen es idéntica al original |
+| **FTK Imager** | Herramienta gratuita para crear imágenes forenses |
+| **Vista previa** | Permite examinar datos sin comprometer el original |
+
+> **Regla de oro:** Nunca trabajes directamente sobre el original. Siempre crea una **imagen forense verificada** y trabaja sobre esa copia.
+
+### Recuperación de datos
+
+#### Escenario de ejemplo (continuación)
+
+Eres un informático que intenta encontrar **archivos borrados** en el disco duro de un empleado. Tras crear una **imagen** de la unidad, la examinas para determinar si puedes recuperar los archivos borrados.
+
+#### ¿Qué es la recuperación de datos?
+
+La **recuperación de datos** es un proceso para recuperar datos **perdidos, eliminados, dañados o inaccesibles**.
+
+> La recuperación de datos ayuda a los investigadores a encontrar **todos los datos forenses relevantes** en un dispositivo.
+
+#### Desafíos en la recuperación
+
+| Desafío | Ejemplo |
+|---------|---------|
+| Archivos **borrados** | El sospechoso eliminó archivos incriminatorios |
+| Archivos **cifrados** | El sospechoso protegió los archivos con contraseña |
+| Datos **dañados** | El dispositivo sufrió daño físico o lógico |
+
+> Con las **herramientas de recuperación**, los investigadores pueden descubrir esos archivos y cerrar el caso.
+
+---
+
+### Analogía: La casa de juguete de Felipe
+
+Para explicar cómo funciona la recuperación de datos, usemos una analogía con un juego de construcción.
+
+---
+
+#### Paso 1: Construir la casa
+
+| Situación | Analogía forense |
+|-----------|------------------|
+| Felipe recibe un juego de construcción y sigue el manual para construir una casa | Un usuario guarda un archivo en el disco duro (los datos se escriben de manera ordenada) |
+
+---
+
+#### Paso 2: La casa desaparece
+
+| Situación | Analogía forense |
+|-----------|------------------|
+| La casa se cae del estante y se rompe | El archivo se **marca como borrado** (los datos aún existen, pero el sistema ya no los ve) |
+| Las piezas se dispersan por la habitación | Los datos del archivo se esparcen por el disco |
+
+---
+
+#### Paso 3: Las piezas se mezclan con otras
+
+| Situación | Analogía forense |
+|-----------|------------------|
+| La hermana guarda las piezas en un contenedor con cientos de piezas similares | Los datos del archivo se mezclan con otros datos (el espacio se marca como disponible y puede ser sobrescrito) |
+
+---
+
+#### Paso 4: Encontrar el manual
+
+| Situación | Analogía forense |
+|-----------|------------------|
+| Felipe encuentra el manual de instrucciones | El **sistema de archivos** conserva la "receta" de cómo estaba organizado el archivo |
+
+---
+
+#### Paso 5: Reconstruir la casa
+
+| Situación | Analogía forense |
+|-----------|------------------|
+| Felipe sigue el manual para encontrar y ensamblar las piezas | Un investigador usa **herramientas forenses** para recuperar y reconstruir el archivo borrado |
+
+---
+
+### Diagrama de la analogía
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ANALOGÍA: CASA DE JUGUETE vs. RECUPERACIÓN │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ JUGUETE COMPUTADORA │
+│ ───────── ──────────── │
+│ │
+│ Casa construida Archivo guardado │
+│ │ │ │
+│ ▼ ▼ │
+│ Casa se rompe Archivo "borrado" (marcado) │
+│ │ │ │
+│ ▼ ▼ │
+│ Piezas dispersas Datos esparcidos en el disco │
+│ │ │ │
+│ ▼ ▼ │
+│ Piezas mezcladas Espacio marcado como disponible │
+│ │ │ │
+│ ▼ ▼ │
+│ Manual encontrado Sistema de archivos consultado │
+│ │ │ │
+│ ▼ ▼ │
+│ Casa reensamblada Archivo recuperado │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Lecciones de la analogía
+
+| Concepto forense | Explicación |
+|------------------|-------------|
+| **Borrado no es eliminación** | Cuando un archivo se "borra", el sistema solo marca su espacio como disponible. Los datos siguen ahí hasta que se sobrescriben |
+| **Importancia de actuar rápido** | Cuanto más tiempo pase, más probabilidad de que los datos borrados sean sobrescritos |
+| **Sistema de archivos como manual** | El sistema de archivos conserva metadatos que ayudan a reconstruir la estructura original |
+| **Herramientas forenses** | Permiten encontrar y reconstruir archivos incluso cuando están fragmentados o mezclados |
+
+---
+
+### Herramientas de recuperación comunes
+
+| Herramienta | Tipo | Uso principal |
+|-------------|------|---------------|
+| **PhotoRec** | Gratuita | Recuperar datos de imágenes dañadas o corruptas |
+| **TestDisk** | Gratuita | Recuperar particiones perdidas y reparar discos |
+| **R-Studio** | Paga | Recuperación avanzada de datos |
+| **Recuva** | Gratuita/Paga | Recuperación de archivos eliminados en Windows |
+
+---
+
+### Resumen de recuperación de datos
+
+| Concepto | Explicación |
+|----------|-------------|
+| **Recuperación de datos** | Proceso para recuperar datos perdidos, eliminados, dañados o inaccesibles |
+| **Archivo "borrado"** | El sistema solo marca el espacio como disponible; los datos permanecen hasta ser sobrescritos |
+| **Importancia de la imagen forense** | Permite trabajar sobre una copia sin riesgo de dañar el original |
+| **Herramientas de recuperación** | Permiten descubrir archivos que el sospechoso creía eliminados |
+
+> **Regla de oro:** Actúa rápido. Cuanto más tiempo pase, mayor es el riesgo de que los datos borrados sean **sobrescritos** y se pierdan para siempre.
+
+### Recuperación de datos - Conceptos avanzados y Autopsy
+
+#### La analogía completa: Casa de juguete vs. archivo borrado
+
+| Elemento de la analogía | Significado forense |
+|------------------------|---------------------|
+| **Casa de juguete** | Un archivo completo y funcional |
+| **La casa se rompe** | El archivo se **marca como borrado** |
+| **Piezas dispersas por la habitación** | Los datos del archivo se **esparcen** por el disco |
+| **Contenedor grande con cientos de piezas** | El **sistema de archivos** (contiene miles o millones de piezas de otros archivos) |
+| **Manual de instrucciones** | Los **metadatos** del archivo (indican dónde están las piezas y cómo ensamblarlas) |
+| **Reconstruir la casa con el manual** | **Recuperar** el archivo usando herramientas forenses |
+
+---
+
+### ¿Qué ocurre cuando se borra un archivo?
+
+Con los sistemas de archivos más comunes, **borrar un archivo no lo elimina por completo**, al menos no al principio.
+
+| Proceso | Explicación |
+|---------|-------------|
+| **Marcar espacio como disponible** | El sistema de archivos marca el espacio que ocupaba el archivo como **libre** |
+| **El archivo permanece** | Hasta que alguien **sobrescriba** ese espacio con nuevos datos, el archivo sigue ahí |
+| **Se borran metadatos** | Borrar el archivo solo elimina **parte** de sus metadatos |
+
+> Si nadie sobrescribió los metadatos, los investigadores pueden usarlos (junto con herramientas de recuperación) para **recuperar el archivo**.
+
+---
+
+### Tallado de datos (Data Carving)
+
+#### ¿Qué es el tallado de datos?
+
+El **tallado de datos** es el proceso de extraer datos de un dispositivo de almacenamiento **sin depender del sistema de archivos o los metadatos**.
+
+#### ¿Cómo funciona?
+
+| Paso | Explicación |
+|------|-------------|
+| 1 | El software busca en los **datos sin procesar** (raw data) del dispositivo |
+| 2 | Los algoritmos buscan **encabezados y pies de página** exclusivos de tipos de archivo (.doc, .jpeg, .pdf) |
+| 3 | Cuando identifica un patrón asociado con un tipo de archivo, **extrae y reconstruye** el archivo |
+
+#### ¿Cuándo es más efectivo?
+
+| Situación | Efectividad |
+|-----------|-------------|
+| **Archivo creado y almacenado de una sola vez** | ✅ Mejores resultados (se almacena en una gran parte contigua) |
+| **Archivo almacenado en múltiples sesiones** | ⚠️ Menos eficaz (se propaga en fragmentos más pequeños) |
+
+> El archivo recuperado puede no tener su **nombre original**, ni metadatos, e incluso pueden faltar algunas piezas. Pero **se podrá acceder a partes del archivo**.
+
+---
+
+### Autopsy - Herramienta de recuperación de código abierto
+
+**Autopsy** es una herramienta de recuperación de datos de **código abierto** para Windows, Linux y macOS.
+
+**¿Qué es Autopsy?**  
+Es una **interfaz gráfica (GUI)** para **The Sleuth Kit (TSK)** , una colección diversa de aplicaciones de línea de comandos para investigar imágenes de disco.
+
+---
+
+#### Métodos de análisis con Autopsy
+
+| Método | Descripción |
+|--------|-------------|
+| **Análisis del sistema de archivos** | Ver archivos, directorios y metadatos para identificar archivos sospechosos o datos borrados |
+| **Análisis de imágenes** | Extraer metadatos de archivos gráficos (.jpg, .png) |
+| **Análisis de cronología** | Ver historial cronológico de la actividad del sistema de archivos |
+| **Búsqueda de palabras clave** | Buscar palabras específicas relevantes para la investigación |
+
+---
+
+#### 1. Análisis del sistema de archivos
+
+| Información que se puede obtener | Aplicación forense |
+|--------------------------------|-------------------|
+| Fecha de creación del archivo | Identificar cuándo se generó la evidencia |
+| Fecha de modificación | Detectar alteraciones |
+| Fecha de acceso | Saber quién pudo haber visto el archivo |
+| Archivos borrados | Recuperar evidencia eliminada |
+
+> Esta información puede ayudar a identificar **usuarios no autorizados** que accedieron a datos o intentaron ocultar o borrar archivos robados.
+
+---
+
+#### 2. Análisis de imágenes
+
+| Metadato que se puede extraer | Aplicación forense |
+|------------------------------|-------------------|
+| **Fecha y hora** | Cuándo se tomó la foto |
+| **Ubicación geográfica (GPS)** | Dónde se tomó la foto |
+| **Dispositivo** | Qué cámara o teléfono se usó |
+| **Ediciones o manipulaciones** | Detectar si la imagen fue alterada |
+| **Imágenes ocultas o borradas** | Recuperar evidencia que el sospechoso creía eliminada |
+
+---
+
+#### 3. Análisis de cronología
+
+| Información que se puede obtener | Aplicación forense |
+|--------------------------------|-------------------|
+| Secuencia de eventos (modificación, copia, acceso) | Determinar **quién** tuvo acceso a los datos en ese momento |
+| Patrones de comportamiento | Qué aplicaciones usaba o qué sitios web visitaba frecuentemente |
+| Cómo se eliminaron los datos | Entender el método usado para borrar evidencia |
+
+---
+
+#### 4. Búsqueda de palabras clave
+
+**¿Qué es una palabra clave?**  
+Una palabra específica relevante para la investigación (ej. "transferencia", "transferencia bancaria", "pago", "cuenta").
+
+**Ejemplo:** En un caso de posible fraude, se buscarían palabras clave relacionadas con transacciones financieras.
+
+---
+
+### Diagrama de métodos de análisis en Autopsy
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ MÉTODOS DE ANÁLISIS EN AUTOPSY │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 1. ANÁLISIS DEL SISTEMA DE ARCHIVOS │ │
+│ │ • Ver archivos, directorios, metadatos │ │
+│ │ • Identificar archivos sospechosos o borrados │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 2. ANÁLISIS DE IMÁGENES │ │
+│ │ • Extraer metadatos (fecha, ubicación GPS, dispositivo) │ │
+│ │ • Detectar ediciones o manipulaciones │ │
+│ │ • Recuperar imágenes ocultas o borradas │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 3. ANÁLISIS DE CRONOLOGÍA │ │
+│ │ • Ver historial de actividad del sistema de archivos │ │
+│ │ • Identificar patrones de usuario │ │
+│ │ • Determinar cómo se eliminaron los datos │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 4. BÚSQUEDA DE PALABRAS CLAVE │ │
+│ │ • Buscar palabras específicas relevantes para el caso │ │
+│ │ • Ejemplo: "transferencia", "pago", "cuenta" en casos de fraude │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Resumen de conceptos clave
+
+| Concepto | Explicación |
+|----------|-------------|
+| **Recuperación de archivos borrados** | El archivo permanece hasta ser sobrescrito; los metadatos ayudan a reconstruirlo |
+| **Tallado de datos** | Extraer datos sin depender del sistema de archivos o metadatos |
+| **Autopsy** | Herramienta GUI gratuita para análisis forense (basada en The Sleuth Kit) |
+| **Análisis de sistema de archivos** | Ver archivos, directorios, metadatos |
+| **Análisis de imágenes** | Extraer metadatos de fotos (fecha, GPS, dispositivo) |
+| **Análisis de cronología** | Historial cronológico de actividad |
+| **Búsqueda de palabras clave** | Buscar términos relevantes en los datos |
+
+> **Regla de oro:** Cuanto más rápido se actúe después de la eliminación, mayor será la probabilidad de recuperar exitosamente los archivos borrados.
+
+### Actividad práctica: Caso de George Smith - Happ Industries
+
+#### Antecedentes del caso
+
+| Elemento | Detalle |
+|----------|---------|
+| **Sospechoso** | George Smith, empleado de Happ Industries |
+| **Situación** | Suspendido a la espera de investigación por conducta inapropiada |
+| **Sospecha** | Robo de datos confidenciales de clientes (incluyendo números de tarjetas de crédito) |
+| **Hallazgo** | Una memoria USB personal en el escritorio de George (contra las políticas de la empresa) |
+| **Defensa de George** | Afirmó que formateó la USB para recuperación del sistema, pero que **no almacenó archivos** en ella |
+
+#### Tarea asignada
+
+> Analizar la memoria USB para encontrar **cualquier dato existente o eliminado** relevante para el caso.
+
+---
+
+### Flujo de investigación forense
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CASO GEORGE SMITH - PROCESO FORENSE │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 1. RECOPILACIÓN │ │
+│ │ • Identificar fuente: Memoria USB │ │
+│ │ • Conectar a bloqueador de escritura │ │
+│ │ • Crear imagen forense (bit a bit) │ │
+│ │ • Calcular hash (MD5/SHA) para verificar integridad │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 2. EXAMEN │ │
+│ │ • Examinar datos recopilados │ │
+│ │ • Identificar archivos existentes y eliminados │ │
+│ │ • Buscar datos relacionados con clientes │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 3. ANÁLISIS │ │
+│ │ • Analizar metadatos de archivos │ │
+│ │ • Construir cronología de acceso │ │
+│ │ • Buscar patrones de actividad sospechosa │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ 4. INFORMES │ │
+│ │ • Documentar hallazgos │ │
+│ │ • Preservar cadena de custodia │ │
+│ │ • Presentar evidencia │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Preguntas clave de la investigación
+
+| Pregunta | Método forense |
+|----------|----------------|
+| ¿George formateó realmente la USB? | Analizar sistema de archivos, buscar evidencia de formateo |
+| ¿Almacenó datos confidenciales antes del formateo? | Recuperar archivos eliminados con herramientas como PhotoRec o Autopsy |
+| ¿Qué datos estaban en la USB? | Examinar archivos existentes y recuperar los borrados |
+| ¿Cuándo se almacenaron/accedieron? | Analizar metadatos (fechas de creación, modificación, acceso) |
+
+---
+
+### Herramientas forenses aplicables
+
+| Fase | Herramienta | Propósito |
+|------|-------------|-----------|
+| **Adquisición** | FTK Imager | Crear imagen forense de la USB |
+| **Adquisición** | Bloqueador de escritura | Proteger la evidencia original |
+| **Recuperación** | Autopsy / PhotoRec / TestDisk | Recuperar archivos eliminados |
+| **Análisis** | Autopsy | Análisis de sistema de archivos, metadatos, cronología |
+| **Búsqueda** | Búsqueda de palabras clave | Buscar números de tarjetas de crédito, datos de clientes |
+
+---
+
+### ¿Qué buscar en la memoria USB?
+
+| Tipo de evidencia | Dónde buscar |
+|-------------------|--------------|
+| **Archivos existentes** | Sistema de archivos actual |
+| **Archivos eliminados** | Espacio no asignado (recuperación) |
+| **Metadatos** | Fechas de creación, modificación, acceso |
+| **Datos de clientes** | Búsqueda de palabras clave (números de tarjeta, nombres) |
+| **Historial de accesos** | Análisis de cronología |
+
+---
+
+### Posibles hallazgos
+
+| Hallazgo | Implicación |
+|----------|-------------|
+| ✅ Archivos con datos de clientes encontrados | George mintió sobre no almacenar archivos |
+| ✅ Archivos recuperados de formateo | George intentó eliminar evidencia |
+| ✅ Metadatos muestran acceso reciente | George accedió a los datos antes de la suspensión |
+| ❌ No se encuentra evidencia | La versión de George podría ser cierta |
+
+---
+
+### Consideraciones legales
+
+| Requisito | Acción necesaria |
+|-----------|------------------|
+| **Cadena de custodia** | Documentar cada paso del manejo de la evidencia |
+| **Integridad** | Verificar hashes (imagen forense = original) |
+| **Bloqueador de escritura** | Usar para no modificar la evidencia original |
+| **Documentación** | Registrar todas las acciones y hallazgos |
+
+---
+
+### Resumen del caso
+
+> **Objetivo:** Determinar si George Smith usó la memoria USB para almacenar datos robados de clientes.
+> 
+> **Desafío:** George afirma que formateó la USB y no almacenó archivos.
+> 
+> **Solución forense:** Crear imagen forense, recuperar archivos eliminados, analizar metadatos y buscar datos de clientes.
+> 
+> **Resultado esperado:** Evidencia para confirmar o refutar la versión de George.
+
+### Actividad práctica: Verificación de integridad con FTK Imager
+
+#### Pasos realizados
+
+| Paso | Acción | Propósito |
+|------|--------|-----------|
+| **13/60** | Seleccionar **Next** en el cuadro de diálogo Evidence Item Information | Continuar con la configuración de la imagen |
+| **21/60** | FTK Imager calcula los **valores hash** de la memoria USB (original) | Obtener hash de la fuente original |
+| **22/60** | FTK Imager calcula los **valores hash** de la imagen del disco | Obtener hash de la copia creada |
+| **23/60** | Verificar que los valores hash **coincidan** | Confirmar que la imagen es una copia idéntica al original |
+
+---
+
+#### Resultado de la verificación
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ VERIFICACIÓN DE HASH - FTK IMAGER │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ HASH DE LA MEMORIA USB (original) │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ MD5: 7F83B1657FF1FC53B92DC18148A1D65D │ │
+│ │ SHA-1: 2fd4e1c67a2d28fced849ee1bb76e7391b93eb12 │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ HASH DE LA IMAGEN DEL DISCO (copia) │ │
+│ │ MD5: 7F83B1657FF1FC53B92DC18148A1D65D │ │
+│ │ SHA-1: 2fd4e1c67a2d28fced849ee1bb76e7391b93eb12 │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ VERIFY RESULT │ │
+│ │ │ │
+│ │ ✅ Los valores hash COINCIDEN │ │
+│ │ ✅ La imagen es una COPIA IDÉNTICA del sistema de archivos │ │
+│ │ ✅ La integridad de la evidencia está CONFIRMADA │ │
+│ │ │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+#### Significado de los resultados
+
+| Resultado | Qué significa |
+|-----------|---------------|
+| **Los valores hash coinciden** | La imagen creada es **idéntica** al dispositivo original |
+| **Los valores hash NO coinciden** | Algo alteró la copia (error en la creación, modificación accidental, etc.) |
+
+---
+
+#### Importancia de la verificación
+
+| Razón | Por qué es crucial |
+|-------|-------------------|
+| **Integridad de la evidencia** | Confirma que la copia es exacta y no fue alterada |
+| **Admisibilidad legal** | En un tribunal, se puede demostrar que la evidencia no fue manipulada |
+| **Confianza en el análisis** | Los hallazgos sobre la copia reflejan fielmente el original |
+
+---
+
+#### Resumen del proceso
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ PROCESO DE VERIFICACIÓN - FTK IMAGER │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ 1. Crear imagen ──▶ 2. Calcular hash ──▶ 3. Calcular hash ──▶ 4. Comparar│
+│ de la USB del original de la imagen │
+│ │
+│ │
+│ RESULTADO: ✅ HASHES COINCIDEN → IMAGEN ES UNA COPIA EXACTA │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+> **Regla de oro:** Siempre verificar los valores hash después de crear una imagen forense. Si los hashes no coinciden, la imagen no es válida y debe crearse nuevamente.
+
+#### Ejercicio: Propósito del nombre de caso y directorio base en Autopsy
+
+**Pregunta:** ¿Por qué es esencial proporcionar un **nombre de caso** y un **directorio base** al crear un nuevo caso en Autopsy?
+
+- [ ] Para aumentar la seguridad del análisis
+- [x] **Para organizar y almacenar los resultados del análisis de forma sistemática**
+- [ ] Para garantizar un procesamiento más rápido de la imagen del disco
+- [ ] Para que varios usuarios puedan trabajar simultáneamente en el caso
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Para organizar y almacenar los resultados del análisis de forma sistemática**. Autopsy utiliza el nombre del caso y el directorio base para crear una estructura ordenada donde se guardan todos los archivos, logs, reportes y hallazgos de la investigación. Esto permite que el análisis sea reproducible y fácil de revisar.
+
+</details>
+
+### Actividad práctica: Análisis de memoria USB con Autopsy - Selección de volumen
+
+#### Contexto
+
+George Smith afirma que **formateó** la memoria USB para recuperación del sistema. El formateo crea un nuevo volumen (volumen 2).
+
+Si George almacenó archivos en la USB (como la empresa sospecha), lo más probable es que lo haya hecho en el **volumen formateado** (volumen 2).
+
+---
+
+#### Paso en Autopsy
+
+| Acción | Propósito |
+|--------|-----------|
+| **Ampliar vol2** | Acceder al volumen formateado de la memoria USB para buscar archivos existentes o eliminados |
+
+---
+
+#### Estructura de volúmenes en Autopsy
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ MEMORIA USB - ESTRUCTURA DE VOLÚMENES │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ USB ──┬── vol1 (posiblemente espacio no asignado, boot, etc.) │
+│ │ │
+│ └── vol2 (volumen formateado) ◀─── ¡COMENZAR BÚSQUEDA AQUÍ! │
+│ │
+│ ¿Por qué comenzar en vol2? │
+│ • Si George almacenó archivos, probablemente usó el volumen formateado │
+│ • Autopsy puede encontrar archivos eliminados incluso en volúmenes │
+│ no asignados, pero la búsqueda principal comienza en vol2 │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+---
+
+#### ¿Qué se puede encontrar en vol2?
+
+| Tipo de evidencia | Descripción |
+|-------------------|-------------|
+| **Archivos existentes** | Archivos que George guardó y no eliminó |
+| **Archivos eliminados** | Archivos que George borró pero que aún pueden recuperarse |
+| **Metadatos** | Fechas de creación, modificación y acceso |
+| **Carpetas** | Estructura de directorios que George pudo haber creado |
+
+---
+
+#### Importancia de la decisión
+
+| Si se encuentra evidencia en vol2... | Implicación |
+|--------------------------------------|-------------|
+| ✅ Archivos con datos de clientes | George mintió sobre no almacenar archivos |
+| ✅ Archivos recuperados (eliminados) | George intentó eliminar evidencia |
+| ✅ Metadatos muestran actividad reciente | George accedió a los datos antes de la suspensión |
+
+> **Regla de oro:** Siempre comenzar la búsqueda en el volumen donde el usuario tenía mayor probabilidad de almacenar datos (generalmente el volumen formateado o la partición principal).
+
+### Actividad práctica: Resultados del análisis en Autopsy
+
+#### Archivos encontrados en la memoria USB
+
+El análisis de Autopsy en la carpeta `CarvedFiles` (archivos tallados) encontró **dos archivos**:
+
+| Archivo | Tamaño | Estado |
+|---------|--------|--------|
+| **f0000000.fat** | 65,536 bytes | Archivo tallado (recuperado) |
+| **f1048512.docx** | 13,241 bytes | Archivo tallado (recuperado) |
+
+---
+
+#### Interpretación de la vista de resultados
+
+| Columna | Significado |
+|---------|-------------|
+| **Name** | Nombre del archivo (los archivos tallados pierden su nombre original) |
+| **Modified Time** | Fecha y hora de última modificación |
+| **Change Time** | Fecha y hora del último cambio de metadatos |
+| **Access Time** | Fecha y hora del último acceso |
+| **Created Time** | Fecha y hora de creación |
+| **Size** | Tamaño del archivo en bytes |
+| **Location** | Ubicación dentro de la imagen forense |
+
+> **Nota importante:** Los archivos en `CarvedFiles` son archivos **recuperados mediante tallado de datos** (data carving). Estos archivos:
+> - Pueden haber sido **eliminados** por el usuario
+> - **Pierden sus nombres originales**
+> - Pueden tener **metadatos incompletos** (fechas en 0000-00-00)
+
+---
+
+#### Significado de los hallazgos
+
+| Hallazgo | Posible implicación |
+|----------|---------------------|
+| **f1048512.docx** (archivo .docx) | George pudo haber almacenado documentos en la USB |
+| **Archivos en CarvedFiles** | Estos archivos fueron **recuperados** (probablemente eliminados previamente) |
+| **Fechas en 0000-00-00** | Los metadatos se perdieron durante el tallado o la eliminación |
+
+---
+
+#### ¿Qué es un archivo "tallado" (carved)?
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ¿QUÉ ES UN ARCHIVO TALLADO? │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ 1. El usuario almacena un archivo .docx en la USB │
+│ 2. El usuario ELIMINA el archivo (o formatea la USB) │
+│ 3. Los datos permanecen en el disco, pero marcados como "disponibles" │
+│ 4. Autopsy usa TALLADO DE DATOS para recuperar el archivo │
+│ 5. El archivo recuperado se guarda en la carpeta "CarvedFiles" │
+│ 6. El nombre original se PIERDE (de ahí el formato f1048512.docx) │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+---
+
+#### Próximo paso
+
+Ahora que se han identificado archivos tallados en la memoria USB, el siguiente paso es **examinar el contenido** de estos archivos (especialmente `f1048512.docx`) para determinar si contienen datos confidenciales de clientes (números de tarjetas de crédito, etc.).
+
+#### Ejercicio: Interpretación de metadatos en Autopsy
+
+**Escenario:**  
+Autopsy recuperó un archivo `f1048512.docx` de 13,241 bytes (documento de Microsoft Word).
+
+**Pregunta:** ¿Indican estos metadatos que George podría haber usado el archivo para almacenar datos?
+
+- [ ] No, el tamaño del archivo es demasiado pequeño para almacenar datos significativos
+- [x] **Sí, el tamaño y el tipo de archivo sugieren que puede almacenar datos sustanciales**
+- [ ] No, el tipo de archivo es irrelevante para el almacenamiento de datos
+- [ ] Sí, porque todos los archivos con la extensión .docx almacenan datos confidenciales
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Sí, el tamaño y el tipo de archivo sugieren que puede almacenar datos sustanciales**.
+
+- El tamaño de 13 KB es suficiente para almacenar texto, incluyendo números de tarjeta de crédito (16 dígitos)
+- La extensión .docx es un formato de documento común que puede contener información relevante para el caso
+- El archivo fue recuperado mediante tallado (carving), lo que sugiere que fue eliminado (posible intento de ocultar evidencia)
+
+No todos los .docx contienen datos confidenciales, pero el tamaño y tipo justifican una inspección más profunda.
+
+</details>
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    FILE METADATA - EJEMPLO                                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│   Nombre del archivo: f1048512.docx                                         │
+│   Tipo: Documento de Microsoft Word (.docx)                                 │
+│   Tamaño: 13,241 bytes                                                      │
+│   Fecha de creación: 0000-00-00 (desconocida - archivo tallado)             │
+│   Fecha de modificación: 0000-00-00                                         │
+│   Fecha de acceso: 0000-00-00                                               │
+│   Ubicación: /img_GSmith USB Image.001/vol_vol2/CarvedFiles/                │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+#### Ejercicio: Propósito del panel File Metadata en Autopsy
+
+**Pregunta:** ¿Por qué verías el panel **File Metadata** (Metadatos de archivo) en Autopsy durante una investigación forense digital?
+
+- [x] **Para examinar las propiedades y los detalles de un archivo, como la fecha de creación y el tamaño del archivo.**
+- [ ] Para buscar palabras clave específicas dentro de los archivos, como nombres o términos.
+- [ ] Para crear una línea de tiempo de las actividades de los archivos, como las fechas de acceso y modificación.
+- [ ] Para ver imágenes en un formato de galería, como miniaturas de imágenes.
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Para examinar las propiedades y los detalles de un archivo, como la fecha de creación y el tamaño del archivo**.
+
+El panel **File Metadata** está diseñado para mostrar información técnica del archivo:
+- Fechas (creación, modificación, acceso)
+- Tamaño
+- Tipo de archivo
+- Ubicación
+
+Las otras funciones corresponden a otras herramientas de Autopsy:
+- **Keyword Search** → buscar palabras clave
+- **Timeline** → línea de tiempo
+- **Gallery View** → ver imágenes en galería
+
+</details>
+
+#### Ejercicio: Propósito del panel File Metadata en Autopsy
+
+**Pregunta:** ¿Por qué verías el panel **File Metadata** (Metadatos de archivo) en Autopsy durante una investigación forense digital?
+
+- [x] **Para examinar las propiedades y los detalles de un archivo, como la fecha de creación y el tamaño del archivo.**
+- [ ] Para buscar palabras clave específicas dentro de los archivos, como nombres o términos.
+- [ ] Para crear una línea de tiempo de las actividades de los archivos, como las fechas de acceso y modificación.
+- [ ] Para ver imágenes en un formato de galería, como miniaturas de imágenes.
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Para examinar las propiedades y los detalles de un archivo, como la fecha de creación y el tamaño del archivo**.
+
+El panel **File Metadata** está diseñado para mostrar información técnica del archivo:
+- Fechas (creación, modificación, acceso)
+- Tamaño
+- Tipo de archivo
+- Ubicación
+
+Las otras funciones corresponden a otras herramientas de Autopsy:
+- **Keyword Search** → buscar palabras clave
+- **Timeline** → línea de tiempo
+- **Gallery View** → ver imágenes en galería
+
+</details>
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    CÓMO ANALIZAR UN ARCHIVO EN AUTOPSY                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│   1. Localizar el archivo en Results Viewer                                 │
+│                    │                                                         │
+│                    ▼                                                         │
+│   2. Seleccionar el archivo para verlo en Content Viewer                    │
+│                    │                                                         │
+│                    ▼                                                         │
+│   3. Cambiar a la pestaña TEXT para ver el contenido                        │
+│                    │                                                         │
+│                    ▼                                                         │
+│   4. Examinar el texto en busca de datos confidenciales                     │
+│      (números de tarjeta, nombres, direcciones, etc.)                       │
+│                    │                                                         │
+│                    ▼                                                         │
+│   5. Si es necesario, usar Keyword Search para buscar términos específicos  │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+#### Ejercicio: Cómo determinar si un archivo contiene datos confidenciales
+
+**Escenario:**  
+En Autopsy, encuentras un archivo llamado `f1048512.docx`. Necesitas determinar si contiene datos confidenciales del cliente.
+
+**Pregunta:** ¿Cómo lo determinarás?
+
+- [ ] Verifica la fecha de creación del archivo en el panel File Metadata
+- [x] **Analiza el contenido del archivo en el panel Text (Texto) del visor Content (Contenido)**
+- [ ] Mira el tamaño del archivo en el panel File Metadata
+- [ ] Busca palabras clave relacionadas con el caso en la herramienta Keyword Search
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Analizar el contenido del archivo en el panel Text del visor Content**.
+
+- **File Metadata** muestra propiedades (fechas, tamaño), pero NO el contenido real
+- **Content Viewer (pestaña Text)** muestra el texto dentro del archivo
+- **Keyword Search** es útil después de saber qué buscar, pero lo más directo es abrir el archivo
+
+</details>
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    CÓMO ANALIZAR UN ARCHIVO EN AUTOPSY                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│   1. Localizar el archivo en Results Viewer                                 │
+│                    │                                                         │
+│                    ▼                                                         │
+│   2. Seleccionar el archivo para verlo en Content Viewer                    │
+│                    │                                                         │
+│                    ▼                                                         │
+│   3. Cambiar a la pestaña TEXT para ver el contenido                        │
+│                    │                                                         │
+│                    ▼                                                         │
+│   4. Examinar el texto en busca de datos confidenciales                     │
+│      (números de tarjeta, nombres, direcciones, etc.)                       │
+│                    │                                                         │
+│                    ▼                                                         │
+│   5. Si es necesario, usar Keyword Search para buscar términos específicos  │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+#### Ejercicio: Cómo determinar si un archivo contiene datos confidenciales
+
+**Escenario:**  
+En Autopsy, encuentras un archivo llamado `f1048512.docx`. Necesitas determinar si contiene datos confidenciales del cliente.
+
+**Pregunta:** ¿Cómo lo determinarás?
+
+- [ ] Verifica la fecha de creación del archivo en el panel File Metadata
+- [x] **Analiza el contenido del archivo en el panel Text (Texto) del visor Content (Contenido)**
+- [ ] Mira el tamaño del archivo en el panel File Metadata
+- [ ] Busca palabras clave relacionadas con el caso en la herramienta Keyword Search
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Analizar el contenido del archivo en el panel Text del visor Content**.
+
+- **File Metadata** muestra propiedades (fechas, tamaño), pero NO el contenido real
+- **Content Viewer (pestaña Text)** muestra el texto dentro del archivo
+- **Keyword Search** es útil después de saber qué buscar, pero lo más directo es abrir el archivo
+
+</details>
+
+#### Ejercicio: Próximo paso después de encontrar evidencia
+
+**Escenario:**  
+En Autopsy, recuperaste un archivo que contiene nombres, números de teléfono, números de Seguro Social y números de tarjetas de crédito.
+
+**Pregunta:** ¿Cuál debería ser el próximo paso en la investigación?
+
+- [ ] Cifrar el archivo recuperado para mayor seguridad y proteger la información confidencial
+- [ ] Eliminar el archivo recuperado para proteger los datos y evitar el acceso no autorizado
+- [x] **Notificar las conclusiones a tu supervisor y documentar la evidencia**
+
+<details>
+<summary>Ver explicación</summary>
+
+La respuesta correcta es **Notificar las conclusiones a tu supervisor y documentar la evidencia**.
+
+El procedimiento estándar en una investigación forense al encontrar evidencia relevante es:
+1. **Documentar** los hallazgos (capturas, descripciones, ubicación)
+2. **Preservar** la cadena de custodia
+3. **Notificar** al supervisor o autoridad correspondiente
+
+**No se debe** eliminar ni modificar la evidencia, ya que esto destruiría pruebas clave y podría tener consecuencias legales.
+
+</details>
+
+### Otras herramientas forenses digitales clave
+
+Aprendiste sobre las herramientas forenses digitales estándar e incluso practicaste su uso en una investigación forense digital. Exploremos varias herramientas forenses digitales más que cualquier profesional de ciberseguridad debería conocer.
+
+---
+
+#### Volatility
+
+**¿Qué es Volatility?**  
+Volatility es una herramienta valiosa para **identificar y analizar software malicioso** (como un virus) en la **memoria de un sistema**.
+
+**¿Qué la hace especial?**  
+Muchas herramientas analizan datos en unidades de disco duro, memorias USB u otros dispositivos de almacenamiento estándar (memoria no volátil). Pero como su nombre lo indica, **Volatility analiza datos volátiles**, específicamente datos volátiles en **RAM**.
+
+**¿Qué puede hacer un investigador con Volatility?**
+
+| Función | Descripción |
+|---------|-------------|
+| **Extraer datos** | Del sistema operativo y los procesos que se ejecutan en la memoria |
+| **Descubrir procesos ocultos** | El malware a menudo oculta procesos en segundo plano; Volatility puede detectarlos |
+| **Identificar conexiones de red** | Descubrir conexiones de red asociadas al malware |
+| **Identificar archivos abiertos** | Detectar qué archivos abrió el malware |
+
+**Ejemplo de uso:**  
+Un investigador estudia una infección de malware. El malware oculta procesos en segundo plano, dificultando su detección con herramientas básicas. Con Volatility, el investigador puede analizar el contenido de la memoria del sistema para descubrir estos procesos y las conexiones de red o archivos que abrió el malware.
+
+---
+
+#### Kali Linux
+
+**¿Por qué aprender Linux?**  
+Linux es una familia de sistemas operativos (SO) de **código abierto** que se ejecuta en la mayoría de los:
+- Dispositivos de red
+- Aplicaciones de seguridad
+- Servidores basados en la nube
+
+> Necesitarás conocer Linux para reforzar la seguridad o recopilar datos de seguridad de estos dispositivos, aplicaciones y servidores.
+
+**¿Qué es Kali Linux?**  
+Kali Linux es una de las **distribuciones más populares** para:
+- **Pruebas de penetración**
+- **Hacking ético**
+- **Análisis forense digital**
+
+**¿Qué incluye Kali Linux?**  
+Viene con una serie de **herramientas estándar de ciberseguridad** preinstaladas:
+
+| Categoría | Herramientas |
+|-----------|--------------|
+| **Análisis de redes** | Wireshark, tcpdump, Nmap |
+| **Ingeniería inversa** | Varias herramientas |
+| **Escaneo de vulnerabilidades** | Nessus, OpenVAS |
+| **Explotación** | Metasploit |
+| **Crackeo de contraseñas** | John the Ripper |
+| **Forense digital** | Autopsy, Bulk Extractor, Foremost |
+
+**Ventajas de Kali Linux:**
+
+| Ventaja | Descripción |
+|---------|-------------|
+| **Actualizaciones periódicas** | Nuevas herramientas, exploits y funciones |
+| **Fácil de usar** | Interfaz amigable |
+| **Portable** | Puede ejecutarse desde Windows o macOS como **máquina virtual (VM)** |
+
+> **Nota:** Una **máquina virtual (VM)** es una versión meramente basada en software de una computadora y un SO que se ejecuta dentro del sistema operativo real de un dispositivo. Las VM pueden ejecutar sus propias aplicaciones y otro software, al igual que las máquinas físicas.
+
+---
+
+### Diagrama de herramientas forenses clave
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ HERRAMIENTAS FORENSES DIGITALES CLAVE │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ VOLATILITY │ │
+│ │ • Analiza datos VOLÁTILES (RAM) │ │
+│ │ • Detecta procesos ocultos (malware) │ │
+│ │ • Identifica conexiones de red y archivos abiertos │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+│ ┌─────────────────────────────────────────────────────────────────────┐ │
+│ │ KALI LINUX │ │
+│ │ • Distribución Linux para hacking ético y forense │ │
+│ │ • Incluye herramientas preinstaladas: │ │
+│ │ - Wireshark, tcpdump, Nmap (redes) │ │
+│ │ - Autopsy, Bulk Extractor, Foremost (forense) │ │
+│ │ - John the Ripper (contraseñas) │ │
+│ │ - Metasploit (explotación) │ │
+│ └─────────────────────────────────────────────────────────────────────┘ │
+│ │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+### Comparación: Volatility vs. herramientas tradicionales
+
+| Aspecto | Herramientas tradicionales | Volatility |
+|---------|---------------------------|------------|
+| **Tipo de datos** | No volátiles (disco, USB) | **Volátiles (RAM)** |
+| **Detección de malware oculto** | Limitada | **Excelente** |
+| **Análisis de procesos en memoria** | No | **Sí** |
+| **Análisis de conexiones de red activas** | No | **Sí** |
+
+---
+
+### Resumen
+
+| Herramienta | Propósito principal | Tipo de datos |
+|-------------|---------------------|---------------|
+| **Volatility** | Análisis de malware en memoria | Volátiles (RAM) |
+| **Kali Linux** | Distribución todo-en-uno para pruebas de penetración y forense | No volátiles y volátiles |
+| **Autopsy (en Kali)** | Análisis forense de discos | No volátiles |
+| **Wireshark (en Kali)** | Análisis de tráfico de red | Datos en tránsito |
+
+> **Regla de oro:** Para investigar malware activo o ataques en memoria, usa **Volatility**. Para una plataforma completa con múltiples herramientas forenses, usa **Kali Linux** (que incluye muchas de las herramientas que aprendiste, como Autopsy).
+
+## Puntos para recordar - Conceptos clave
+
+### Ciencia forense digital
+
+| # | Concepto |
+|---|----------|
+| 1 | El **análisis forense digital** es la aplicación de la ciencia a la identificación, recopilación, examen y análisis de datos mientras se preserva la **integridad** de la información y se mantiene una estricta **cadena de custodia** |
+| 2 | Los investigadores recopilan y extraen datos de **fuentes** como: medios de almacenamiento, dispositivos de seguridad físicos, dispositivos de red y archivos de registro (logs) |
+| 3 | El análisis forense digital es cada vez más importante en la **aplicación de la ley**, las **investigaciones corporativas** y la **seguridad nacional** |
+
+### Cadena de custodia y legalidad
+
+| # | Concepto |
+|---|----------|
+| 4 | Los investigadores deben cumplir con las **leyes y regulaciones** pertinentes y seguir estrictamente una **cadena de custodia** para garantizar la integridad y la situación legal de sus investigaciones |
+| 5 | La **cadena de custodia** es un proceso donde se documenta el **ciclo de vida de las pruebas**, incluyendo: fecha/hora/duración de manipulación, acciones realizadas y ubicación de almacenamiento |
+
+### Las 4 fases del proceso forense digital
+
+| # | Fase | Descripción |
+|---|------|-------------|
+| 6 | **Recopilación** | Identificar fuentes, etiquetar, codificar y adquirir datos preservando la integridad |
+| 6 | **Examen** | Examinar datos recopilados para determinar relevancia y extraer información |
+| 6 | **Análisis** | Analizar datos relevantes para extraer conclusiones significativas |
+| 6 | **Elaboración de informes** | Crear y compartir informe detallado de todos los hallazgos |
+| 7 | **Un solo paso en falso** en cualquier fase puede alterar la evidencia, distorsionar los hallazgos y socavar la credibilidad de la investigación |
+
+### Preservación de datos
+
+| # | Concepto |
+|---|----------|
+| 8 | Para preservar datos forenses, los investigadores deben: crear una **imagen** de la fuente original (antes de abrir cualquier archivo), verificar la **integridad** con valores hash, y seguir una **cadena de custodia** |
+
+### Herramientas forenses digitales
+
+| # | Concepto |
+|---|----------|
+| 9 | Los investigadores emplean herramientas forenses con **4 fines**: **Adquisición y análisis**, **Clasificación**, **Creación de imágenes**, **Recuperación** |
+| 10 | Antes de crear una imagen de disco, se conecta la fuente a un **bloqueador de escritura** (dispositivo que evita ediciones accidentales) |
+| 11 | Si quedan **metadatos** de un archivo eliminado, los investigadores pueden usarlos (junto con herramientas de recuperación) para **recuperar el archivo** |
+| 12 | El **tallado de datos (data carving)** es el proceso de extraer datos de un dispositivo **sin depender del sistema de archivos ni de los metadatos** |
+| 13 | **Kali Linux** es una distribución de Linux centrada en ciberseguridad con herramientas como Autopsy y otras aplicaciones forenses |
+
+---
+
+## Grandes ideas - Habilidades practicadas
+
+| Habilidad | Aplicación en el módulo |
+|-----------|-------------------------|
+| **Pensamiento sistémico** | Explicar cómo diversas habilidades contribuyen a la integridad del proceso forense |
+| **Comunicación escrita** | Describir habilidades necesarias para ser investigador forense digital |
+| **Pensamiento analítico** | Analizar un ciberataque a través de la ciencia forense digital |
+| **Mentalidad de crecimiento** | Aplicar las 4 fases de la ciencia forense digital a un escenario |
+| **Pensamiento crítico** | Describir la aplicación de habilidades de resolución de problemas en forense |
+| **Atención al detalle** | Identificar el propósito de las herramientas forenses digitales |
+| **Resolución de problemas** | Analizar evidencia forense digital con FTK Imager y Autopsy |
+| **Agilidad de aprendizaje** | Utilizar herramientas forenses en escenarios prácticos |
+
+### Habilidades de gestión profesional
+
+- Enumerar las **tareas típicas** que realiza un investigador forense digital
+- Explicar por qué los investigadores forenses digitales necesitan **habilidades para resolver problemas**
+
+---
+
+## Objetivos de aprendizaje - Módulo 13 completado
+
+Ahora que has completado este módulo, deberías poder:
+
+- ✅ **Analizar un ciberataque mediante ciencia forense digital**
+- ✅ **Aplicar las cuatro fases de la ciencia forense digital a un escenario**
+- ✅ **Analizar la evidencia forense digital**
+
+---
+
+## Explora más recursos
+
+Para explorar los conceptos cubiertos en este módulo con más profundidad, consulta estos recursos:
+
+| Recurso | Descripción |
+|---------|-------------|
+| **What Is Digital Forensics?** (EC-Council) | Resumen detallado del campo de la ciencia forense digital (historia, requisitos laborales, desafíos) |
+| **Digital and Multimedia Evidence** (NIST) | Enlaces a productos y servicios forenses digitales, catálogo de herramientas y técnicas |
+| **Chances for data recovery** | Resumen de causas de pérdida de datos y cómo afectan las posibilidades de recuperación |
+| **The Anatomy of an Att&ck** (IBM - Jeff Crume) | Video sobre cómo los atacantes irrumpen en sistemas (útil para identificar y recopilar datos forenses) |
+| **Kali Linux** (sitio oficial) | Descargas, documentación, foros y cursos sobre esta distribución Linux |
+
+---
+
+## Referencias
+
+**Lección 1: Introducción a la ciencia forense digital**
+
+1. *digital forensics*. NIST, consultado el 30 de junio de 2024.
+
+**Lección 2: El proceso forense digital**
+
+1. Kent, Karen, Suzanne Chevalier, Tim Grance, and Hung Dang. *Guide to Integrating Forensic Techniques into Incident Response*. NIST, agosto de 2006.
+
+---
+
+## ¡Módulo 13 completado! 🎉
+
+### Resumen del Módulo 13: Herramientas forenses digitales
+
+| Herramienta | Propósito |
+|-------------|-----------|
+| **FTK Imager** | Crear imágenes forenses (copias bit a bit) |
+| **Autopsy** | Análisis forense de discos (interfaz gráfica) |
+| **The Sleuth Kit (TSK)** | Herramientas de línea de comandos para análisis forense |
+| **PhotoRec / TestDisk** | Recuperación de archivos eliminados |
+| **Volatility** | Análisis de memoria RAM (malware, procesos ocultos) |
+| **Kali Linux** | Distribución todo-en-uno con herramientas forenses y de hacking ético |
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    LO CORRECTO EN LA FASE DE RECOPILACIÓN                   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│   ❌ Lo que hicieron: "Zambullirse rápidamente y recopilar de todas las     │
+│      fuentes posibles sin planificación previa"                             │
+│                                                                              │
+│   ✅ Lo que DEBIERON hacer:                                                 │
+│      1. Desarrollar un plan priorizando fuentes                             │
+│      2. Identificar fuentes de datos (correos, servidores, logs, etc.)      │
+│      3. Usar bloqueadores de escritura                                      │
+│      4. Crear imágenes forenses (no trabajar sobre originales)              │
+│      5. Calcular y verificar hashes para garantizar integridad              │
+│      6. Documentar la cadena de custodia                                    │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
