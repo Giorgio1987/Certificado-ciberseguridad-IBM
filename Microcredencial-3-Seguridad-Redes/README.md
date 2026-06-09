@@ -5993,42 +5993,102 @@ Los **analistas de IAM (Identity and Access Management)** gestionan y protegen e
 ---
 
 ### 🗺️ Mapa del módulo 4
-Módulo 4: Seguridad de redes
-│
-├── ⚠️ Lección 1: Amenazas a la seguridad de la red
-│ ├── Ataques a aplicaciones y servicios (DoS, DDoS, MITM, Buffer Overflow, Zero-day, Spoofing)
-│ └── Ataques inalámbricos (Evil Twin, Rogue AP, Jamming, Bluesnarfing)
-│
-├── 🛡️ Lección 2: Dispositivos de seguridad de red
-│ ├── Firewalls (filtrado simple, origen/destino, stateful, aplicación)
-│ ├── Routers (configuración segura, cifrado WEP/WPA/WPA2/WPA3)
-│ ├── Switches (segmentación, port security)
-│ ├── Proxies (intermediario, filtrado, caché)
-│ ├── Load Balancers (distribución de tráfico)
-│ └── HSM (protección de claves criptográficas)
-│
-├── 🏗️ Lección 3: Arquitectura de seguridad de red
-│ ├── Diseño de red (requisitos empresariales y técnicos)
-│ ├── Infraestructura de red (protección de dispositivos)
-│ ├── DMZ (zona desmilitarizada)
-│ ├── NAT (traducción de direcciones)
-│ ├── Honeypot (señuelo para atacantes)
-│ ├── Segmentación de red (subredes)
-│ ├── Extranet / Intranet
-│ ├── Air Gap (aislamiento total)
-│ └── Actividad: Diseñar una red segura (Yummy In My Tummy)
-│
-├── 🔐 Lección 4: Control de acceso a la red
-│ ├── NAC (Network Access Control)
-│ ├── IAAA (Identificación, Autenticación, Autorización, Contabilidad)
-│ ├── Métodos de autenticación (KBA, SSO, MFA, Adaptativa)
-│ ├── Esquemas de control de acceso (ABAC, RBAC, DAC, MAC)
-│ └── Permisos del sistema de archivos
-│
-└── 💼 Gestión de carrera
-├── Administrador de red
-├── Certificación CompTIA Network+
-└── Analista de gestión de identidad y acceso (IAM)
+Este temario del Módulo 4: Seguridad de Redes es el núcleo duro de la infraestructura defensiva. Consolida conceptos clave que van directo a certificaciones internacionales y al día a día de un Administrador de Red o Analista IAM. Como es un mapa de ruta extenso y con mucha jerarquía, meterlo en un archivo Markdown sin formatear puede transformarlo en una lista interminable y difícil de repasar.
+
+Para que este módulo quede espectacular, scannable y con una navegación visual impecable en tu repositorio, te armé la arquitectura completa usando un diagrama conceptual en Mermaid.js y un desglose técnico estructurado abajo.
+
+Copia y pega este bloque en tu README:
+
+Markdown
+## 🌐 Módulo 4: Seguridad de Redes (Arquitectura y Defensa)
+
+```mermaid
+graph TD
+    %% Configuración de Estilos y Colores por Lección
+    classDef main fill:#7f1d1d,stroke:#b91c1c,stroke-width:3px,color:#ffffff,font-weight:bold;
+    classDef l1 fill:#f8d7da,stroke:#dc3545,stroke-width:2px,color:#721c24;
+    classDef l2 fill:#e8f4f8,stroke:#2b7b9b,stroke-width:2px,color:#1a4d63;
+    classDef l3 fill:#e2efda,stroke:#375623,stroke-width:2px,color:#212529;
+    classDef l4 fill:#fff2cc,stroke:#d6b656,stroke-width:2px,color:#000000;
+    classDef career fill:#f3e8ff,stroke:#6b21a8,stroke-width:2px,color:#581c87;
+
+    %% Nodo Principal
+    M4["🌐 MÓDULO 4: SEGURIDAD DE REDES"]:::main
+
+    %% Lecciones Principales
+    M4 --> L1["⚠️ Lección 1:<br>Amenazas a la Red"]:::l1
+    M4 --> L2["🛡️ Lección 2:<br>Dispositivos de Seguridad"]:::l2
+    M4 --> L3["🏗️ Lección 3:<br>Arquitectura de Seguridad"]:::l3
+    M4 --> L4["🔐 Lección 4:<br>Control de Acceso (NAC/IAM)"]:::l4
+    M4 --> LC["💼 Gestión de Carrera<br>& Certificaciones"]:::career
+
+    %% Detalle Lección 1
+    L1 --> A1["<b>Ataques a Aplicaciones/Servicios:</b><br>• DoS / DDoS<br>• MITM (Man-in-the-Middle)<br>• Buffer Overflow<br>• Zero-day / Spoofing"]:::l1
+    L1 --> A2["<b>Ataques Inalámbricos:</b><br>• Evil Twin / Rogue AP<br>• Jamming / Bluesnarfing"]:::l1
+
+    %% Detalle Lección 2
+    L2 --> D1["<b>Hardening de Capa 2 y 3:</b><br>• Firewalls (Filtrado, Stateful, L7)<br>• Routers (WEP, WPA2, WPA3)<br>• Switches (Port Security, VLANs)"]:::l2
+    L2 --> D2["<b>Infraestructura de Soporte:</b><br>• Proxies (Caché/Filtrado)<br>• Load Balancers<br>• HSM (Módulos Criptográficos)"]:::l2
+
+    %% Detalle Lección 3
+    L3 --> AR1["<b>Segmentación y Perímetros:</b><br>• DMZ (Zona Desmilitarizada)<br>• NAT / Honeypots<br>• Subredes / Air Gap"]:::l3
+    L3 --> AR2["🎯 <b>Actividad Práctica:</b><br>Diseño de red segura<br><i>(Yummy In My Tummy)</i>"]:::l3
+
+    %% Detalle Lección 4
+    L4 --> AC1["<b>Identidad y Autenticación:</b><br>• IAAA Framework<br>• Métodos (SSO, MFA, Adaptativa)<br>• Control de Admisión (NAC)"]:::l4
+    L4 --> AC2["<b>Modelos de Autorización:</b><br>• ABAC, RBAC, DAC, MAC<br>• Permisos de File System"]:::l4
+
+    %% Detalle Carrera
+    LC --> C1["• Administrador de Red<br>• Certificación CompTIA Network+<br>• Analista de Gestión de Identidad y Acceso (IAM)"]:::career
+
+---
+
+*Y aquí tenés la versión de **gabinete / consola técnica** con el desglose conceptual alineado al estándar de la industria:*
+
+```text
+==========================================================================================
+[ BLUEPRINT DE INGENIERÍA: MÓDULO 4 - SEGURIDAD DE INFRAESTRUCTURA DE REDES ]
+==========================================================================================
+
+⚠️ LECCIÓN 1: VECTORES DE ATAQUE Y AMENAZAS A LA RED
+   ├── 🌐 Capa de Aplicación y Flujo:  Análisis de denegación de servicio (DoS/DDoS), 
+   │                                   intercepción de tráfico (MITM), desbordamiento de 
+   │                                   búfer (Buffer Overflow), exploits Zero-day y Spoofing.
+   └── 📡 Amenazas Inalámbricas (RF):  Suplantación de estaciones base (Evil Twin / Rogue AP),
+                                       ataques de denegación de señal (Jamming) y robo de 
+                                       datos corporativos sobre Bluetooth (Bluesnarfing).
+
+🛡️ LECCIÓN 2: DISPOSITIVOS DE SEGURIDAD (Defensa Perimetral e Interna)
+   ├── 🔥 Firewalls:                   Evolución desde Packet Filtering clásico, análisis 
+   │                                   Stateful (inspección de estado) hasta Next-Gen (L7 / App).
+   ├── 📶 Routers & WiFi:              Hardening de enrutadores y migración criptográfica hacia 
+   │                                   protocolos robustos (WPA3 Enterprise / SAE).
+   ├── 🔌 Switches:                    Mitigación de ataques a Capa 2 (VLAN Trunking, Port Security).
+   └── 🔑 Módulos Críticos:            Proxies de filtrado, Load Balancers para alta disponibilidad 
+                                       y appliances HSM para el resguardo de claves criptográficas.
+
+🏗️ LECCIÓN 3: ARQUITECTURA DE SEGURIDAD Y DISEÑO DE RED
+   ├── 🏙️ Topología Empresarial:       Estructuración de zonas de confianza: Intranet, Extranet,
+   │                                   y DMZ (Zona Desmilitarizada) para servicios expuestos.
+   ├── 🛡️ Aislamiento y Trampas:       Traducción de direcciones (NAT), Honeypots (sistemas señuelo) 
+   │                                   y entornos de alta seguridad mediante Air Gap (aislamiento físico).
+   └── 🎯 Laboratorio Práctico:        Diseño e ingeniería de una red corporativa segura 
+                                       (Caso de estudio: Yummy In My Tummy).
+
+🔐 LECCIÓN 4: CONTROL DE ACCESO A LA RED Y GESTIÓN DE IDENTIDADES (IAM)
+   ├── 🛡️ Control de Admisión (NAC):   Validación de la postura de seguridad del host antes del acceso.
+   ├── 🆔 Framework IAAA:              Garantizar la Identificación, Autenticación (MFA, SSO, 
+   │                                   Adaptativa), Autorización y Contabilidad (Auditoría/Logs).
+   └── 🔑 Modelos de Control de Acceso: Implementación de políticas basadas en Roles (RBAC), 
+                                       Atributos (ABAC), Discrecional (DAC) y Mandatorio (MAC).
+
+==========================================================================================
+💼 PERFILES PROFESIONALES Y OBJETIVOS DE CARRERA
+==========================================================================================
+  ✔ SysAdmin de Redes / Network Security Engineer.
+  ✔ Target de Certificación: CompTIA Network+ (Validación global de infraestructura).
+  ✔ Especialización: Identity and Access Management Analyst (IAM) - Gobierno de Acceso.
+=========================================================================================
 
 
 ---
