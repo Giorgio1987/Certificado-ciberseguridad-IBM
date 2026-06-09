@@ -1083,18 +1083,24 @@ Los primeros momentos frenéticos de la identificación de un incidente pueden c
 
 ### 👥 Estructura del Equipo de Respuesta a Incidentes (IR)
 
-```mermaid
-graph TD
-    Jefe[Jefe de Equipo IR] --> Redes[Líder Técnico <br> Redes]
-    Jefe --> Sis[Líder Técnico <br> Sistemas]
-    Jefe --> Malware[Líder Técnico <br> Malware]
+```text
+==========================================================================================
+[ ESTRUCTURA: EQUIPO DE RESPUESTA A INCIDENTES ]
+==========================================================================================
 
-    subgraph Modelos de Gestión
-        M1[Interno <br> Solo empleados]
-        M2[Subcontratado <br> Externo / MSSP]
-        M3[Híbrido <br> Internos + Externos]
-    end
+                      [ JEFE DE EQUIPO (Incident Commander) ]
+                                         │
+       ┌─────────────────────────────────┼─────────────────────────────────┐
+       ▼                                 ▼                                 ▼
+[ LÍDER TÉCNICO ]                 [ LÍDER TÉCNICO ]                 [ LÍDER TÉCNICO ]
+   ( Redes )                         ( Sistemas )                      ( Malware )
 
+------------------------------------------------------------------------------------------
+MODELOS DE EQUIPO:
+• Interno: Integrado únicamente por empleados propios de la organización.
+• Subcontratado: Servicio tercerizado 100% por personal externo (ej. MSSP).
+• Híbrido: Combinación de recursos internos y externos trabajando en conjunto.
+==========================================================================================
 
 ---
 
@@ -1132,35 +1138,27 @@ graph TD
 
 ### 👥 Estructura Detallada del Equipo de Respuesta a Incidentes (IR)
 
-```mermaid
-graph TD
-    %% Configuración de Estilos y Colores
-    classDef jefe fill:#1f4e79,stroke:#112f4a,stroke-width:2px,color:#ffffff;
-    classDef lider fill:#2e75b6,stroke:#1f4e79,stroke-width:2px,color:#ffffff;
-    classDef miembro fill:#d9e1f2,stroke:#2e75b6,stroke-width:2px,color:#000000;
-    classDef nota fill:#f2f2f2,stroke:#7f7f7f,stroke-dasharray: 5 5,color:#333333;
+```text
+==========================================================================================
+[ ORGANIGRAMA OPERATIVO: EQUIPO DE RESPUESTA A INCIDENTES ]
+==========================================================================================
 
-    %% Nodos con saltos de línea e información
-    Jefe["<b>Jefe de Equipo</b><br>• Punto de contacto<br>• Enlace con otros equipos"]:::jefe
-    Lider["<b>Lider Técnico</b><br>• Dirige el trabajo técnico"]:::lider
-    
-    M_Redes["<b>Miembro Técnico</b><br>(Redes)"]:::miembro
-    M_Sistemas["<b>Miembro Técnico</b><br>(Sistemas)"]:::miembro
-    M_Malware["<b>Miembro Técnico</b><br>(Malware)"]:::miembro
+  [ JEFE DE EQUIPO ]
+  • Punto de contacto principal.
+  • Enlace estratégico con la alta dirección y otros equipos de la empresa.
+         │
+         ▼
+  [ LÍDER TÉCNICO ]
+  • Dirige, coordina y supervisa directamente todo el trabajo técnico en terreno.
+         │
+         ├───────────────────────────────┼───────────────────────────────┐
+         ▼                               ▼                               ▼
+  [ MIEMBRO TÉCNICO ]             [ MIEMBRO TÉCNICO ]             [ MIEMBRO TÉCNICO ]
+       (Redes)                       (Sistemas)                      (Malware)
 
-    Nota["Todo el EQUIPO DE RESPUESTA A INCIDENTES ejecuta el plan"]:::nota
-
-    %% Jerarquía
-    Jefe --> Lider
-    Lider --> M_Redes
-    Lider --> M_Sistemas
-    Lider --> M_Malware
-    
-    %% Relación con la nota explicativa
-    M_Redes -.-> Nota
-    M_Sistemas -.-> Nota
-    M_Malware -.-> Nota
-
+------------------------------------------------------------------------------------------
+📌 NOTA OPERATIVA: Todo el EQUIPO DE RESPUESTA A INCIDENTES ejecuta el plan de forma coordinada.
+==========================================================================================
 
 
 ### Otros participantes en la respuesta a incidentes
@@ -1201,20 +1199,35 @@ Cada equipo de respuesta a incidentes depende de la **experiencia, el juicio y l
 
 ### 🌐 Otros Participantes en la Respuesta a Incidentes (IR)
 
-```mermaid
-flowchart TD
-    %% Configuración de Estilos y Colores
-    classDef area fill:#f8f9fa,stroke:#6c757d,stroke-width:2px,color:#212529;
+```text
+==========================================================================================
+[ ROLES SATELES Y COMPLEMENTARIOS EN LA RESPUESTA A INCIDENTES ]
+==========================================================================================
 
-    subgraph Roles de Soporte y Gobernanza
-        G["<b>1. Gestión / Dirección</b><br>• Política y estrategia<br>• Asignación de presupuesto<br>• Continuidad del negocio"]:::area
-        T["<b>2. Soporte de TI</b><br>• Expertos técnicos de sistemas<br>• Asistencia en infraestructura"]:::area
-        J["<b>3. Legal / Jurídico</b><br>• Cumplimiento de contratos<br>• Regulaciones y leyes vigentes"]:::area
-        P["<b>4. Asuntos Públicos / PR</b><br>• Relación con los medios<br>• Comunicación externa oficial"]:::area
-        R["<b>5. Recursos Humanos</b><br>• Medidas disciplinares (internas)<br>• Soporte y recuperación del personal"]:::area
-        I["<b>6. Instalaciones / Facility</b><br>• Seguridad física de oficinas<br>• Control de acceso a servidores"]:::area
-    end
+• GESTIÓN Y DIRECCIÓN
+  --> Define las políticas internas, aprueba el presupuesto de emergencia y asegura
+      los objetivos de continuidad de negocio de la organización.
 
+• SOPORTE DE TI
+  --> Aporta los expertos técnicos de la infraestructura tradicional para colaborar 
+      con los analistas de seguridad en el aislamiento y remediación de sistemas.
+
+• JURÍDICO / LEGAL
+  --> Analiza las implicaciones legales del ataque, gestiona los seguros de ciberriesgo
+      y evalúa el cumplimiento de las regulaciones gubernamentales.
+
+• ASUNTOS PÚBLICOS / PRENSA
+  --> Controla la narrativa de la crisis, diseña los comunicados oficiales de prensa
+      y mitiga el daño reputacional frente a los medios de comunicación y clientes.
+
+• RECURSOS HUMANOS (RR.HH.)
+  --> Gestiona las acciones disciplinarias si el incidente involucró a empleados, y
+      coordina los planes de apoyo y contención para el personal afectado.
+
+• INSTALACIONES / SEGURIDAD FÍSICA
+  --> Monitorea el acceso a centros de datos, resguarda el perímetro edilicio y provee
+      evidencia clave (como bitácoras de entrada o grabaciones de cámaras).
+==========================================================================================
 
 
 > **Importante:** Todos estos grupos deben ser **consultados y entrenados** antes de que ocurra un incidente, para que cuando ocurra, sepan exactamente qué hacer y cómo coordinar con el equipo de IR.
@@ -1332,20 +1345,27 @@ El **IRP** debe contener instrucciones para **cada fase** de la respuesta a un i
 
 ### 🏥 Analogía del Proceso de Respuesta a Incidentes (IR) con un Hospital
 
-```mermaid
-graph TD
-    %% Configuración de Estilos y Colores
-    classDef fase fill:#e8f4f8,stroke:#2b7b9b,stroke-width:2px,color:#1a4d63;
+```text
+==========================================================================================
+[ LAS 4 FASES DE RESPUESTA A INCIDENTES: ANALOGÍA HOSPITALARIA ]
+==========================================================================================
 
-    F1["<b>1. Preparación</b><br><br>🏥 <i>Hospital:</i><br>• Equipo médico listo<br>• Material e insumos listos"]:::fase
-    F2["<b>2. Detección y Análisis</b><br><br>🏥 <i>Hospital:</i><br>• Clasificar al paciente (Triage)<br>• Diagnosticar la enfermedad"]:::fase
-    F3["<b>3. Contención y Erradicación</b><br><br>🏥 <i>Hospital:</i><br>• Estabilizar al paciente<br>• Tratar la afección/Operar"]:::fase
-    F4["<b>4. Recuperación</b><br><br>🏥 <i>Hospital:</i><br>• Rehabilitación del paciente<br>• Seguimiento médico"]:::fase
+1. PREPARACIÓN
+   • En Ciberseguridad: Políticas, herramientas y equipo técnico listo para actuar.
+   • En el Hospital:    Personal de guardia preparado y material médico esterilizado.
 
-    %% Conexiones del flujo
-    F1 --> F2
-    F2 --> F3
-    F3 --> F4
+2. DETECCIÓN Y ANÁLISIS
+   • En Ciberseguridad: Identificar alertas, clasificar el incidente y analizar el impacto.
+   • En el Hospital:    Triage en la guardia, clasificar gravedad y dar un diagnóstico.
+
+3. CONTENCIÓN Y ERRADICACIÓN
+   • En Ciberseguridad: Aislar equipos afectados de la red y eliminar la amenaza/malware.
+   • En el Hospital:    Estabilizar los signos vitales del paciente y operarlo o tratarlo.
+
+4. RECUPERACIÓN
+   • En Ciberseguridad: Volver a levantar los servicios de forma segura y monitorear.
+   • En el Hospital:    Etapa de rehabilitación del paciente y consultas de seguimiento.
+==========================================================================================
 
 
 
@@ -1468,32 +1488,31 @@ A grandes rasgos, el análisis de intrusiones incluye **cuatro áreas clave**. L
 
 ### 💎 Modelo de Diamante: Las 4 Áreas Clave del Análisis de Intrusiones
 
-```mermaid
-graph TD
-    %% Configuración de Estilos y Colores
-    classDef centro fill:#f8f9fa,stroke:#6c757d,stroke-width:2px,color:#212529,font-weight:bold;
-    classDef vertice fill:#e8f4f8,stroke:#2b7b9b,stroke-width:2px,color:#1a4d63;
+```text
+==========================================================================================
+[ MODELO DE DIAMANTE: 4 ÁREAS CLAVE DEL ANÁLISIS DE INTRUSIONES ]
+==========================================================================================
 
-    %% Nodo Central
-    Centro((ANÁLISIS DE<br>INTRUSIONES)):::centro
+1. ADVERSARIO (¿Quién realiza el ataque?)
+   • ¿Quiénes son los actores de la amenaza? (Hacktivistas, cibercrimen, estado-nación).
+   • ¿Desde qué ubicaciones geográficas o direcciones IP operan?
+   • ¿Cuál es su motivación principal? (Venganza, espionaje, ganancia económica).
 
-    %% Vértices del Diamante con sus preguntas clave
-    Adv["🕵️‍♂️ ADVERSARIO<br>• ¿Quiénes son?<br>• ¿Desde dónde atacan?<br>• ¿Por qué atacaron?"]:::vertice
-    Inf["🌐 INFRAESTRUCTURA<br>• ¿Qué sistemas están comprometidos?<br>• ¿Hay credenciales robadas?<br>• ¿Hubo violación física?"]:::vertice
-    Cap["⚡ CAPACIDAD<br>• ¿Qué herramientas/malware usan?<br>• ¿Qué saben hacer?<br>• ¿Pueden volver a entrar?"]:::vertice
-    Obj["🎯 OBJETIVO<br>• ¿Qué datos o activos querían?<br>• ¿Apuntan a alguien específico?<br>• ¿Es político, económico o industrial?"]:::vertice
+2. INFRAESTRUCTURA (¿Qué camino o herramientas de red utilizaron?)
+   • ¿Qué servidores, servicios web o endpoints resultaron comprometidos?
+   • ¿Se detectó el robo y uso de credenciales legítimas de la empresa?
+   • ¿Existió alguna brecha o violación de seguridad física en las instalaciones?
 
-    %% Conexiones estructurales del Diamante
-    Centro --- Adv
-    Centro --- Inf
-    Centro --- Cap
-    Centro --- Obj
-    
-    Adv --- Cap
-    Cap --- Inf
-    Inf --- Obj
-    Obj --- Adv
+3. CAPACIDAD (¿Qué nivel técnico y herramientas tiene el atacante?)
+   • ¿Qué tipo de malware, exploits o técnicas supieron desplegar?
+   • ¿Tienen la persistencia necesaria para volver a ingresar si se cierran los accesos?
+   • ¿Qué nivel de sofisticación demostraron durante la intrusión?
 
+4. OBJETIVO (¿Hacia dónde iba dirigido el esfuerzo?)
+   • ¿Qué datos, bases de datos o propiedad intelectual buscaban extraer?
+   • ¿El ataque estaba dirigido a una persona o puesto específico de la alta dirección?
+   • ¿El impacto buscado es de índole política, económica o de espionaje industrial?
+==========================================================================================
 
 
 ---
@@ -1556,35 +1575,31 @@ El marco se divide en 14 tácticas (pasos o fases) que sigue un atacante, desde 
 
 ### 🛡️ Marco MITRE ATT&CK: Las 14 Tácticas del Ciclo de Vida del Ataque
 
-```mermaid
-graph TD
-    %% Configuración de Estilos y Colores para agrupar fases del ataque
-    classDef faseInicial fill:#fce4d6,stroke:#c65911,stroke-width:2px,color:#000000;
-    classDef faseInterna fill:#fff2cc,stroke:#d6b656,stroke-width:2px,color:#000000;
-    classDef faseFinal fill:#e2efda,stroke:#375623,stroke-width:2px,color:#000000;
+```text
+==========================================================================================
+[ MARCO MITRE ATT&CK: LAS 14 TÁCTICAS OPERATIVAS ]
+==========================================================================================
 
-    %% Definición de las 14 Tácticas en orden secuencial
-    T1[1. Reconocimiento]:::faseInicial
-    T2[2. Desarrollo de Recursos]:::faseInicial
-    T3[3. Acceso Inicial]:::faseInicial
-    T4[4. Ejecución]:::faseInicial
-    T5[5. Persistencia]:::faseInicial
-    
-    T6[6. Escalada de Privilegios]:::faseInterna
-    T7[7. Evasión de Defensa]:::faseInterna
-    T8[8. Acceso a Credenciales]:::faseInterna
-    T9[9. Descubrimiento]:::faseInterna
-    T10[10. Movimiento Lateral]:::faseInterna
-    
-    T11[11. Recopilación]:::faseFinal
-    T12[12. Mando y Control]:::faseFinal
-    T13[13. Exfiltración]:::faseFinal
-    T14[14. Impacto]:::faseFinal
+FASES PREVIAS Y ACCESO:
+  [01] Reconocimiento         --> Investigar el objetivo (OSINT, escaneos activos).
+  [02] Desarrollo de Recursos --> Comprar dominios, armar botnets, preparar malware.
+  [03] Acceso Inicial         --> Entrar a la red (Phishing, exploits, contraseñas débiles).
+  [04] Ejecución              --> Correr código malicioso en el sistema de la víctima.
+  [05] Persistencia           --> Mantener el acceso (crear usuarios, tareas programadas).
 
-    %% Flujo de conexiones
-    T1 --> T2 --> T3 --> T4 --> T5 --> T6 --> T7 --> T8 --> T9 --> T10 --> T11 --> T12 --> T13 --> T14
+MOVIMIENTO INTERNO Y EXPLORACIÓN:
+  [06] Escalada de Privilegios--> Conseguir permisos de Administrador o SYSTEM.
+  [07] Evasión de Defensa     --> Esquivar el Antivirus, borrar logs, ocultar procesos.
+  [08] Acceso a Credenciales  --> Robar usuarios y contraseñas de la memoria (LSASS).
+  [09] Descubrimiento         --> Explorar la red interna para ver qué otros equipos hay.
+  [10] Movimiento Lateral     --> Saltarse de una computadora comprometida a otra más crítica.
 
-
+ETAPA FINAL Y OBJETIVOS:
+  [11] Recopilación           --> Buscar y juntar los datos valiosos (archivos, correos).
+  [12] Mando y Control (C2)   --> Conectarse al servidor del atacante para recibir órdenes.
+  [13] Exfiltración           --> Sacar los datos robados de la empresa de forma oculta.
+  [14] Impacto                --> Destruir, cifrar (Ransomware) o alterar la información.
+==========================================================================================
 
 ¿Cómo se usa MITRE ATT&CK?
 Uso	Descripción
