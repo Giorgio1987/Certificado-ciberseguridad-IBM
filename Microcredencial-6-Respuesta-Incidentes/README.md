@@ -264,37 +264,7 @@ Los equipos suelen realizar las tareas de respuesta a incidentes en **cuatro fas
 
 ### 📊 Diagrama del Proceso de Respuesta a Incidentes (IR)
 
-```mermaid
-graph LR
-    %% Configuración de Estilos y Colores
-    classDef antes fill:#d4edda,stroke:#28a745,stroke-width:2px,color:#155724;
-    classDef durante fill:#fff3cd,stroke:#ffc107,stroke-width:2px,color:#856404;
-    classDef despues fill:#f8d7da,stroke:#dc3545,stroke-width:2px,color:#721c24;
 
-    %% Nodos principales
-    F1[1. Preparación]:::antes
-    F2[2. Detección y Análisis]:::durante
-    F3[3. Contención y Erradicación]:::durante
-    F4[4. Recuperación]:::despues
-
-    %% Flujo del proceso
-    F1 --> F2
-    F2 --> F3
-    F3 --> F4
-
-    %% Subtítulos o agrupaciones lógicas
-    subgraph Antes del Ataque
-    F1
-    end
-
-    subgraph Durante el Ataque
-    F2 --> F3
-    end
-
-    subgraph Después del Ataque
-    F4
-    end
----
 
 ### Resumen de cada fase
 
