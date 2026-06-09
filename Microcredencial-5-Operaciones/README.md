@@ -151,22 +151,31 @@ Al igual que un equipo de superhéroes, cada miembro aporta fortalezas important
 
 ### Laboratorio SOC casero: Red virtual + ataques + monitoreo
 
-#### Esquema de red
-┌─────────────────────────────────────────────────────────────┐
-│ RED VIRTUAL (VirtualBox) │
-│ │
-│ ┌──────────────┐ ┌──────────────┐ │
-│ │ SOC │◄────►│ Víctima │ │
-│ │ (Wazuh) │ │ (Ubuntu) │ │
-│ └──────────────┘ └──────────────┘ │
-│ ▲ ▲ │
-│ │ │ │
-│ ▼ ▼ │
-│ ┌──────────────┐ ┌──────────────┐ │
-│ │ Atacante │ │ Windows │ │
-│ │ (Kali) │ │ (opcional) │ │
-│ └──────────────┘ └──────────────┘ │
-└─────────────────────────────────────────────────────────────┘
+```text
+==========================================================================================
+[ INFRAESTRUCTURA DE RED: ARQUITECTURA DEL LAB DE CIBERSEGURIDAD ]
+==========================================================================================
+
+[🛡️] BLUE TEAM NODE: Wazuh SIEM / XDR Manager
+     ├── Sistema:     Debian / Ubuntu Server (Consola de Monitoreo).
+     └── Función:     Indexar logs, correlacionar eventos de seguridad y alertar intrusiones.
+                       ▲
+                       ║ [Recopilación de Telemetría vía Agentes / Puerto 1514]
+                       ▼
+[💻] TARGET NODE 1:  Ubuntu Target (Víctima Principal)
+     ├── Sistema:     Ubuntu Linux con agente de Wazuh instalado.
+     └── Función:     Simular servicios expuestos (SSH, Web Apache/PHP) y auditoría de logs.
+                       ▲
+                       ║ [Línea de Fuego: Escaneos Nmap, Fuerza Bruta, Inyecciones Web]
+                       ▼
+[⚔️] RED TEAM NODE:  Kali Linux OS (Atacante)
+     ├── Sistema:     Kali Linux (Suite de Pentesting y Hacking Ético).
+     └── Función:     Ejecutar reconocimiento, explotación de vulnerabilidades y post-explotación.
+
+[🖥️] TARGET NODE 2:  Windows Target (Nodo Complementario Opcional)
+     ├── Sistema:     Windows 10 / Windows Server.
+     └── Función:     Monitoreo de persistencias en registro, ataques a PowerShell y Sysmon.
+==========================================================================================
 
 
 #### Qué vas a practicar
@@ -275,27 +284,91 @@ UEBA (User and Entity Behavior Analytics)	Detecta comportamientos anormales de u
 Entonces, ¿cómo se relacionan?
 
 
-┌─────────────────────────────────────────────────────────────┐
-│                      SOC (EL EQUIPO)                        │
-│                                                              │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │              SOFTWARE DEL SOC (todas las herramientas)  │ │
-│  │                                                          │ │
-│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌────────┐  │ │
-│  │  │  SIEM    │  │  EDR/XDR │  │   SOAR   │  │   TIP  │  │ │
-│  │  │ (QRadar) │  │ (Crowd)  │  │ (Phantom)│  │ (MISP) │  │ │
-│  │  └──────────┘  └──────────┘  └──────────┘  └────────┘  │ │
-│  │                                                          │ │
-│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐              │ │
-│  │  │   NDR    │  │   UEBA   │  │  Scanner │              │ │
-│  │  │ (Zeek)   │  │ (Exabeam)│  │ (Nessus) │              │ │
-│  │  └──────────┘  └──────────┘  └──────────┘              │ │
-│  └────────────────────────────────────────────────────────┘ │
-│                                                              │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │              INSTALACIONES FÍSICAS                      │ │
-│  └────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────┘
+Este esquema es fundamental para entender la arquitectura integral de un SOC (Security Operations Center) moderno. Muestra muy bien que un centro de operaciones no es solo "un programa", sino un ecosistema modular donde conviven soluciones de telemetría de red, endpoints, automatización e inteligencia de amenazas, complementado por el equipo humano y la infraestructura física.
+
+En GitHub, los diagramas anidados con cajas horizontales múltiples (como la fila de SIEM, EDR, SOAR, TIP) se rompen por completo debido al diseño responsivo.
+
+Para que esta taxonomía de herramientas del SOC quede impecable, modular y súper profesional en tu repositorio, te preparé la versión nativa adaptada con Mermaid.js, organizando el stack tecnológico por capas de visibilidad y acción.
+
+Copia y pega este bloque en tu README:
+
+Markdown
+### 🛡️ Anatomía de un SOC (Security Operations Center): Infraestructura y Stack Tecnológico
+
+```mermaid
+graph TD
+    %% Configuración de Estilos por Capa Tecnológica
+    classDef core fill:#e8f4f8,stroke:#2b7b9b,stroke-width:2px,color:#1a4d63,font-weight:bold;
+    classDef telemetry fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000000;
+    classDef ops fill:#f8d7da,stroke:#dc3545,stroke-width:2px,color:#721c24;
+    classDef physical fill:#f8f9fa,stroke:#6c757d,stroke-width:1px,color:#6c757d,stroke-dasharray: 5 5;
+
+    %% Estructura Principal del SOC
+    subgraph SOC_TEAM ["👥 SOC (El Equipo Humano y Operaciones)"]
+        
+        subgraph SOFTWARE ["💻 Software del SOC (Ecosistema de Herramientas)"]
+            
+            subgraph Centralizacion ["Capa de Centralización y Analítica"]
+                SIEM["📊 SIEM<br>(IBM QRadar / Splunk)<br>• Gestión de eventos e historial"]:::core
+                UEBA["🧠 UEBA<br>(Exabeam)<br>• Comportamiento de usuarios"]:::telemetry
+            end
+
+            subgraph Visibilidad ["Capa de Telemetría y Detección (Endpoints & Red)"]
+                EDR["🛡️ EDR / XDR<br>(CrowdStrike / Defender)<br>• Seguridad en Hosts"]:::telemetry
+                NDR["🌐 NDR<br>(Zeek / Corelight)<br>• Análisis de Tráfico"]:::telemetry
+                SCAN["🔍 Vulnerability Scanner<br>(Tenable Nessus)<br>• Auditoría de Activos"]:::telemetry
+            end
+
+            subgraph Accion ["Capa de Respuesta e Inteligencia"]
+                SOAR["⚡ SOAR<br>(Splunk Phantom / Demisto)<br>• Automatización y Playbooks"]:::ops
+                TIP["🎯 TIP<br>(MISP / Anomali)<br>• Threat Intelligence Platform"]:::ops
+            end
+
+        end
+
+        subgraph INFRA ["🏢 Instalaciones Físicas"]
+            FAC["🔒 Video Walls, Control de Acceso, Redes Aisladas y Búnker de Operaciones"]:::physical
+        end
+
+    end
+
+    %% Flujos de información lógicos dentro del SOC
+    Visibilidad ==> |Flujo de Eventos y Logs| Centralizacion
+    TIP -.-> |Inyección de Indicadores de Compromiso IoC| Centralizacion
+    Centralizacion ==> |Disparo de Alertas de Alta Prioridad| SOAR
+
+---
+
+*Y aquí tenés la versión en **texto estructurado por bloques independientes (estilo consola)**, manteniendo la homogeneidad estética si estás armando una guía en texto plano:*
+
+```text
+==========================================================================================
+[ ARQUITECTURA CORPORATIVA: COMPONENTES DE UN SOC DE ALTA DISPONIBILIDAD ]
+==========================================================================================
+
+1. CAPA DE CENTRALIZACIÓN Y COMPORTAMIENTO (El Cerebro)
+   ├── 📊 SIEM (QRadar, Splunk):    Agregación de logs, correlación de reglas en tiempo real 
+   │                                y retención de logs para cumplimiento normativo.
+   └── 🧠 UEBA (Exabeam):           Perfilado de identidad mediante Machine Learning para 
+                                    detectar anomalías de comportamiento (anomalous logins).
+
+2. CAPA DE TELEMETRÍA Y CONTROL DE SUPERFICIE (Los Ojos)
+   ├── 🛡️ EDR/XDR (CrowdStrike):     Monitoreo continuo del endpoint, detección de inyecciones 
+   │                                en memoria, aislamiento de hosts y análisis forense local.
+   ├── 🌐 NDR (Zeek, Suricata):     Inspección profunda de paquetes (DPI), descifrado de 
+   │                                tráfico y detección de conexiones de comando y control (C2).
+   └── 🔍 SCANNERS (Nessus):        Descubrimiento de activos y mapeo proactivo de CVEs.
+
+3. CAPA DE ORQUESTACIÓN E INTELIGENCIA (El Músculo)
+   ├── ⚡ SOAR (Splunk Phantom):     Mitigación automatizada (Playbooks) para bloquear IPs, 
+   │                                aislar máquinas o resetear credenciales sin intervención humana.
+   └── 🎯 TIP (MISP, OpenCTI):      Plataformas de compartición de ciberinteligencia para 
+                                    ingestar feeds de reputación, IPs maliciosas y hashes de malware.
+
+4. INFRAESTRUCTURA FÍSICA & OPERATIVA
+   └── 🏢 INSTALACIONES:            Salas de control con pantallas críticas (Video Walls) para 
+                                    monitoreo 24/7/365, conectividad redundante y data centers locales.
+=======================================================================================
 
 En la práctica: ¿Qué usa un SOC?
 Tamaño del SOC	Herramientas típicas
@@ -5064,20 +5137,34 @@ Completarás este proyecto en **tres pasos**:
 - Monitoreo activo / pasivo
 
 ---
+```text
+==========================================================================================
+[ ROADMAP DE EJECUCIÓN: ESTRUCTURA METODOLÓGICA DEL PROYECTO FINAL ]
+==========================================================================================
 
-### Resumen de pasos
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ PROYECTO FINAL - 3 PASOS │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ Paso 1 Paso 2 Paso 3 │
-│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
-│ │ Distinguir │ │ Asignar │ │ Reconocer │ │
-│ │ modelos │─────────▶│ roles y │─────────▶│ red │ │
-│ │ de SOC │ │ tareas │ │ │ │
-│ └──────────────┘ └──────────────┘ └──────────────┘ │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+[📋] PASO 1: DISTINGUIR MODELOS DE SOC (Gobernanza y Estrategia)
+     ├── Enfoque:   Determinar la arquitectura organizativa adecuada para la organización.
+     └── Entregable: Análisis comparativo justificando la elección (ej: SOC Propio Dedicado, 
+                     MSSP Tercerizado, o un esquema Híbrido de Co-Sourcing).
+
+                                       │
+                                       ▼ [Hito de Aprobación 1]
+                                       │
+
+[👥] PASO 2: ASIGNAR ROLES Y TAREAS (Estructura del Factor Humano)
+     ├── Enfoque:   Modelar la matriz de responsabilidades (RACI) y turnos del centro.
+     └── Entregable: Definición de perfiles: Analistas L1 (Triage), L2 (Investigación), 
+                     L3 (Advanced Hunting), Ingenieros SIEM y el Director del SOC.
+
+                                       │
+                                       ▼ [Hito de Aprobación 2]
+                                       │
+
+[🌐] PASO 3: RECONOCER LA RED (Arquitectura Tecnológica e Infraestructura)
+     ├── Enfoque:   Mapear la superficie de ataque y la ubicación de los controles de seguridad.
+     └── Entregable: Planos de topología lógica, segmentación de DMZs, zonas de confianza 
+                     y puntos de anclaje para colectores de logs (Wazuh, Firewalls, NDR).
+==========================================================================================
 
 ### Descripción general del proyecto por pasos
 
@@ -5129,27 +5216,33 @@ En este paso, realizarás el **escaneo de un sitio de destino** para recopilar i
 ---
 
 ### Resumen visual del proyecto
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ PROYECTO FINAL │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐ │
-│ │ PASO 1 │ │ PASO 2 │ │ PASO 3 │ │
-│ │ │ │ │ │ │ │
-│ │ Distinguir │ │ Asignar │ │ Reconocimiento│ │
-│ │ modelos de │──▶│ roles y │──▶│ de red │ │
-│ │ SOC │ │ tareas │ │ │ │
-│ │ │ │ │ │ │ │
-│ │ • SOC interno │ │ • Especialista │ │ • Escaneo de │ │
-│ │ • V-SOC │ │ vulnerabilidad│ │ destino │ │
-│ │ • SOCaaS │ │ • Ingeniero │ │ • Identificar │ │
-│ │ • Híbrido │ │ • Analista │ │ características│ │
-│ │ │ │ • Cazador │ │ del host │ │
-│ │ │ │ • Comunicador │ │ │ │
-│ └─────────────────┘ └─────────────────┘ └─────────────────┘ │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+```text
+==========================================================================================
+[ MATRIZ DETALLADA DE HITOS: PLAN DE DESARROLLO PARA EL PROYECTO FINAL ]
+==========================================================================================
 
+📋 PASO 1: DISEÑO ESTRATÉGICO Y GOBERNANZA (Modelos de SOC)
+   ├── 🏢 SOC Interno:  Control absoluto de los datos; alto costo de infraestructura (CapEx/OpEx).
+   ├── 🌐 V-SOC:        Estructura ágil, descentralizada y adaptada a equipos remotos.
+   ├── ☁️ SOCaaS:       Rápido despliegue, escalabilidad inmediata y delegación del monitoreo.
+   └── 🔄 Híbrido:      Triage inicial interno + Escalado avanzado a un centro especializado.
+
+         │
+         ▼
+👥 PASO 2: ARQUITECTURA DEL COMPONENTE HUMANO (Roles y Funciones)
+   ├── 🎯 Gestión de Vulnerabilidades: Identificar parches faltantes y brechas antes que el atacante.
+   ├── 🛠️ Ingeniería de Seguridad:       Garantizar el *uptime* de colectores, SIEM y sensores de red.
+   ├── 📊 Análisis Operativo (SOC):    Filtrado de falsos positivos y contención de alertas L1/L2.
+   ├── 🏹 Threat Hunting:              Aislar amenazas complejas que evadieron los controles automáticos.
+   └── 📢 Gestión de Crisis:           Traducción de logs técnicos en directivas de negocio.
+
+         │
+         ▼
+🌐 PASO 3: RECONOCIMIENTO ACTIVO DE INFRAESTRUCTURA (Superficie de Red)
+   ├── ⚡ Escaneo de Destino:          Barrer segmentos IP para detectar servicios activos e ilegítimos.
+   └── 🖥️ Fingerprinting de Hosts:     Determinar sistemas operativos, versiones de software y 
+                                       vectores potenciales de compromiso en la red interna.
+==========================================================================================
 #### Proyecto - Paso 1: Modelo de SOC para InfoInc
 
 **Escenario:**  
