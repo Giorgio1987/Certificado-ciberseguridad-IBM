@@ -6324,29 +6324,40 @@ Para explorar los conceptos cubiertos en este módulo con más profundidad, cons
 | **Volatility** | Análisis de memoria RAM (malware, procesos ocultos) |
 | **Kali Linux** | Distribución todo-en-uno con herramientas forenses y de hacking ético |
 
-¡Este cuadro es letal! Sintetiza a la perfección el error más común en la respuesta a incidentes (el "pánico del administrador", que sale corriendo a tocar todo sin medir las consecuencias) frente al deber ser de la informática forense. Es un gran contraste metodológico para tus apuntes.
+==========================================================================================
+📊 COMPARATIVA DE ENFOQUES EN RECOPILACIÓN FORENSE
+==========================================================================================
 
-Para que se vea impecable en GitHub, te preparé la versión en Mermaid.js estructurada como una comparativa de caminos (el erróneo vs. el normado por buenas prácticas), y abajo la versión estructurada en texto de consola.
-graph TD
-    %% Configuración de Estilos
-    classDef error fill:#f8d7da,stroke:#dc3545,stroke-width:2px,color:#721c24;
-    classDef correcto fill:#e2efda,stroke:#375623,stroke-width:2px,color:#212529;
-    classDef pasos fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63;
+🚨 Incidente Detectado
+   │
+   ├── ❌ EL ERROR COMÚN
+   │      └── Zambullirse rápidamente: Recopilar de todas las fuentes posibles al mismo tiempo
+   │          y sin planificación previa.
+   │          ⚠️ Resultado: Evidencia impugnada o alterada.
+   │
+   └── ✅ EL PROTOCOLO CORRECTO
+          │
+          ├── 1. Planificación Inicial
+          │      └── Desarrollar un plan estratégico priorizando según el orden de volatilidad.
+          │
+          ├── 2. Identificación Exhaustiva
+          │      └── Localizar fuentes críticas (correos, servidores, logs de red).
+          │
+          ├── 3. Aislamiento Físico/Lógico
+          │      └── Conectar bloqueadores de escritura antes de cualquier interacción.
+          │
+          ├── 4. Preservación Bit a Bit
+          │      └── Crear imágenes forenses. NUNCA operar sobre los discos originales.
+          │
+          ├── 5. Control Criptográfico
+          │      └── Calcular y verificar hashes para asegurar la inmutabilidad.
+          │
+          ├── 6. Blindaje Legal
+          │      └── Documentar minuciosamente cada eslabón de la cadena de custodia.
+          │
+          └── 🎯 Evidencia Admisible y Resguardada
 
-    INCIDENTE("🚨 Incidente Detectado") --> PATH_BAD("❌ El Error Común")
-    INCIDENTE --> PATH_GOOD("✅ El Protocolo Correcto")
-
-    PATH_BAD --> E1("Zambullirse rápidamente: Recopilar de todas las fuentes posibles al mismo tiempo y sin planificación previa. Resultado: Evidencia impugnada o alterada."):::error
-
-    PATH_GOOD --> P1("1. Planificación Inicial: Desarrollar un plan estratégico priorizando según el orden de volatilidad."):::pasos
-    P1 --> P2("2. Identificación Exhaustiva: Localizar fuentes críticas (correos, servidores, logs de red)."):::pasos
-    P2 --> P3("3. Aislamiento Físico/Lógico: Conectar bloqueadores de escritura antes de cualquier interacción."):::pasos
-    P3 --> P4("4. Preservación Bit a Bit: Crear imágenes forenses. NUNCA operar sobre los discos originales."):::pasos
-    P4 --> P5("5. Control Criptográfico: Calcular y verificar hashes para asegurar la inmutabilidad."):::pasos
-    P5 --> P6("6. Blindaje Legal: Documentar minuciosamente cada eslabón de la cadena de custodia."):::pasos
-
-    P6 --> FIN("🎯 Evidencia Admisible y Resguardada"):::correcto
-
+==========================================================================================
 
 ```text
 ==========================================================================================
@@ -6434,3 +6445,1167 @@ graph TD
       → Determinar una respuesta adecuada.
 
 ==========================================================================================
+
+
+==========================================================================================
+📋 ¿CÓMO TE EVALUARÁN?
+==========================================================================================
+
+Completarás dos evaluaciones en este proyecto culminante:
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  EVALUACIÓN 1: PROYECTO                                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Responderás preguntas para demostrar tu conocimiento de operaciones y gestión de     │
+│    seguridad.                                                                           │
+│  • Puntaje mínimo requerido: 80%                                                        │
+│  • Intentos: Puedes volver a intentarlo tantas veces como desees.                       │
+│  • ⚠️ IMPORTANTE: No cierres el navegador mientras trabajas en el proyecto porque       │
+│    perderás tu progreso y tendrás que empezar de nuevo.                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  EVALUACIÓN 2: CUESTIONARIO (10 preguntas)                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Demostrar los conocimientos y habilidades aplicados en el proyecto.                  │
+│  • Puntaje mínimo requerido: 80%                                                        │
+│  • Intentos: Puedes volver a intentarlo si es necesario.                                │
+│  • Recibirás comentarios sobre tus respuestas.                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 PASOS PARA COMPLETAR EL PROYECTO
+==========================================================================================
+
+En la función de consultor de ciberseguridad, investigarás un informe de incidentes a través
+de un análisis forense digital. Completarás este proyecto en un solo paso:
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 1: INVESTIGAR UN INCIDENTE A TRAVÉS DEL ANÁLISIS FORENSE DIGITAL                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  │                                                                                      │
+│  ├── TAREA 1: Aplicar el marco de respuesta a incidentes                               │
+│  │                                                                                      │
+│  ├── TAREA 2: Crear una imagen de memoria USB                                          │
+│  │                                                                                      │
+│  └── TAREA 3: Analizar la evidencia forense digital                                    │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+
+==========================================================================================
+🔍 ROL DEL INVESTIGADOR FORENSE DIGITAL - PASOS CLAVE
+==========================================================================================
+
+Contexto: Te asignan investigar un incidente. Hay una memoria USB involucrada.
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 1: PLANIFICACIÓN (MARCO DE RESPUESTA A INCIDENTES)                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • No tocar nada todavía.                                                              │
+│  • Definir: ¿Qué pasó? ¿Qué fuentes de evidencia existen? (ej. USB, logs, servidor).   │
+│  • Priorizar: Datos volátiles primero (RAM, procesos activos) si aplica.               │
+│  • Armar un plan de recopilación.                                                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 2: RECOPILACIÓN DE EVIDENCIA                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Conectar la memoria USB a un bloqueador de escritura (write blocker).               │
+│  • Crear una IMAGEN FORENSE de la USB (copia bit a bit).                               │
+│  • Herramienta típica: FTK Imager.                                                     │
+│  • Calcular HASH (MD5 o SHA) del original y la imagen para verificar integridad.       │
+│  • Documentar cadena de custodia.                                                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 3: EXAMEN (ANÁLISIS DE LA EVIDENCIA)                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Trabajar SIEMPRE sobre la imagen forense (nunca sobre la USB original).            │
+│  • Usar herramientas como Autopsy, FTK Imager o Volatility.                            │
+│  • Buscar: Archivos existentes, archivos borrados, metadatos, palabras clave.          │
+│  • Recuperar archivos eliminados si es necesario (data carving).                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 4: ANÁLISIS Y CONCLUSIONES                                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Interpretar los datos encontrados.                                                  │
+│  • Relacionar hallazgos con el incidente (¿qué pasó? ¿quién? ¿cómo?).                 │
+│  • Sacar conclusiones claras y basadas en evidencia.                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 5: ELABORACIÓN DE INFORME                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Redactar informe forense con:                                                        │
+│    - Descripción general del caso                                                      │
+│    - Metodología usada (herramientas, procedimientos)                                  │
+│    - Hallazgos encontrados (con capturas si es necesario)                              │
+│    - Conclusiones y recomendaciones                                                    │
+│  • Presentar a supervisor o cliente.                                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+⚠️ REGLA DE ORO
+==========================================================================================
+
+NUNCA trabajes sobre la evidencia original. SIEMPRE:
+
+    USB original ──(FTK Imager)──▶ Imagen forense (copia bit a bit)
+                                        │
+                                        └── Trabajar AQUÍ (análisis, recuperación)
+
+==========================================================================================
+
+==========================================================================================
+📋 PLANIFICACIÓN FORENSE - ¿QUÉ HACER ANTES DE TOCAR CUALQUIER COSA?
+==========================================================================================
+
+Contexto: Te asignan investigar un incidente. Hay una memoria USB involucrada.
+Regla de oro: TODAVÍA NO TOCAS NADA.
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 1: ENTENDER EL INCIDENTE                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • ¿Qué pasó exactamente? (ej. robo de datos, infección por malware, etc.)            │
+│  • ¿Cuándo pasó? (fecha y hora aproximada)                                            │
+│  • ¿Qué sistemas o dispositivos están involucrados? (ej. USB, computadora, servidor)   │
+│  • ¿Hay testigos o reportes iniciales?                                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 2: IDENTIFICAR FUENTES DE EVIDENCIA                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Listar TODOS los lugares donde podría haber evidencia:                              │
+│    - Memoria USB (la que te dieron)                                                    │
+│    - Computadora del sospechoso                                                        │
+│    - Logs del servidor                                                                 │
+│    - Correos electrónicos                                                              │
+│    - Cámaras de seguridad (si aplica)                                                  │
+│    - Registros de acceso                                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 3: PRIORIZAR SEGÚN VOLATILIDAD (lo que se pierde más rápido primero)            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Orden de prioridad (de MÁS volátil a MENOS volátil):                                  │
+│                                                                                         │
+│  1. Memoria RAM (se pierde al apagar)                                                  │
+│  2. Procesos activos, conexiones de red                                                │
+│  3. Discos duros, USB (menos volátiles, se pueden apagar y analizar después)          │
+│  4. Logs, backups (los más estables)                                                   │
+│                                                                                         │
+│  ⚠️ Si la USB es la evidencia principal, va en prioridad alta pero después de RAM.    │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 4: ELEGIR HERRAMIENTAS Y MÉTODOS                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • ¿Con qué herramientas voy a trabajar?                                               │
+│    - FTK Imager para crear imagen forense de la USB                                    │
+│    - Write blocker (bloqueador de escritura) para proteger la USB original            │
+│    - Autopsy para analizar la imagen                                                   │
+│    - Volatility si hay que analizar RAM (si aplica)                                    │
+│                                                                                         │
+│  • ¿Cómo voy a documentar la cadena de custodia?                                       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 5: ARMAR EL PLAN ESCRITO (antes de actuar)                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  El plan debe responder:                                                               │
+│                                                                                         │
+│  • ¿Qué evidencia voy a recolectar?                                                    │
+│  • ¿En qué orden? (por volatilidad)                                                    │
+│  • ¿Con qué herramientas?                                                              │
+│  • ¿Cómo voy a preservar la integridad? (write blocker, hash)                          │
+│  • ¿Cómo voy a documentar todo? (cadena de custodia)                                   │
+│  • ¿Qué hago si algo sale mal? (plan de contingencia)                                  │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ QUÉ LOGRAS CON UNA BUENA PLANIFICACIÓN
+==========================================================================================
+
+  ✔ La evidencia NO se contamina
+  ✔ La cadena de custodia es clara y defendible
+  ✔ El caso se sostiene legalmente
+  ✔ El análisis es más rápido porque ya sabés qué buscar
+  ✔ No perdés tiempo recopilando cosas inútiles
+
+==========================================================================================
+❌ QUÉ PASA SI NO PLANIFICAS (error común)
+==========================================================================================
+
+  ✘ Agarrás la USB y la conectás directamente al PC → modificás la evidencia (fechas de acceso)
+  ✘ No usás bloqueador de escritura → podés escribir accidentalmente en la USB
+  ✘ No documentás nada → la cadena de custodia queda rota, la evidencia es inadmisible
+  ✘ Recopilás todo sin orden → perdés datos volátiles importantes
+
+==========================================================================================
+
+* ¿Cómo sé qué pasó? ¿La empresa me dice o yo investigo?
+==========================================================================================
+🔍 ¿CÓMO SABÉS QUÉ PASÓ?
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  FUENTE 1: LA EMPRESA TE CUENTA (información inicial)                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Te dan un reporte inicial: "Hubo un ataque", "Un empleado robó datos",               │
+│    "Detectamos malware", etc.                                                           │
+│  • Te indican qué dispositivos están involucrados (ej. esta memoria USB).              │
+│  • Esto es el PUNTO DE PARTIDA, no la verdad final.                                    │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  FUENTE 2: VOS INVESTIGÁS (análisis forense)                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Creás la imagen forense de la USB.                                                   │
+│  • Analizás la imagen con Autopsy.                                                      │
+│  • Encontrás evidencia: archivos borrados, logs, metadatos.                            │
+│  • CONFIRMÁS o DESCARTÁS la hipótesis inicial.                                         │
+│  • Podés descubrir cosas que la empresa no sabía.                                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+Ejemplo:
+  La empresa dice: "Creemos que el empleado robó datos con esta USB".
+  Vos analizás la USB y encontrás un archivo borrado con nombres de clientes.
+  → Confirmás la hipótesis.
+
+  O al revés: La USB está vacía y no hay rastros de datos.
+  → Descartás la hipótesis.
+
+==========================================================================================
+
+**Cadena de custodia vs. imagen forense (son cosas distintas)**
+
+==========================================================================================
+🔐 CADENA DE CUSTODIA vs IMAGEN FORENSE
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CADENA DE CUSTODIA (es un DOCUMENTO / PROCESO)                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un REGISTRO ESCRITO de quién tuvo la evidencia y cuándo.                         │
+│  • Se documenta CADA VEZ que alguien toca la evidencia.                                │
+│  • Preguntas que responde:                                                             │
+│    - ¿Quién la recolectó?                                                              │
+│    - ¿Cuándo y dónde?                                                                  │
+│    - ¿Quién la recibió?                                                                │
+│    - ¿Dónde se guardó?                                                                 │
+│    - ¿Quién la analizó?                                                                │
+│                                                                                         │
+│  • SIN cadena de custodia → la evidencia es INÚTIL en un juicio.                       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  IMAGEN FORENSE (es un ARCHIVO / COPIA)                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un archivo que contiene una COPIA EXACTA (bit a bit) de la memoria USB.          │
+│  • Se crea con herramientas como FTK Imager.                                           │
+│  • Se trabaja sobre la IMAGEN, no sobre la USB original.                               │
+│  • Se verifica con HASH (MD5 o SHA) para asegurar que la copia es idéntica.            │
+│                                                                                         │
+│  • SIN imagen forense → trabajás sobre el original y lo destruís.                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 ANALOGÍA FÁCIL
+==========================================================================================
+
+  CADENA DE CUSTODIA = el diario de a bordo de un barco.
+                      Anota quién lo manejó, cuándo, dónde, por qué.
+
+  IMAGEN FORENSE = una fotocopia IDÉNTICA del barco (con todos los detalles).
+                   Trabajás sobre la fotocopia, el barco original queda guardado.
+
+==========================================================================================
+
+* ¿Cómo se documenta la cadena de custodia?
+
+==========================================================================================
+📄 EJEMPLO DE CADENA DE CUSTODIA (lo que anotás)
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CASO: Oceanix Living - Incidente de robo de datos                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  Fecha: 10/06/2024  Hora: 09:00                                                        │
+│  Acción: Recolección de la memoria USB                                                 │
+│  Realizado por: Juan Pérez (Investigador forense)                                      │
+│  Ubicación: Oficina de Oceanix Living, escritorio del empleado                         │
+│  Descripción: Memoria USB marca Kingston, color negro, 32GB                           │
+│  Estado: Sin daños visibles                                                            │
+│  Almacenamiento: Bolsa de evidencia Nro. 001, sellada                                  │
+│  Firma: Juan Pérez                                                                      │
+│                                                                                         │
+│  Fecha: 10/06/2024  Hora: 11:00                                                        │
+│  Acción: Creación de imagen forense                                                    │
+│  Realizado por: Juan Pérez                                                              │
+│  Herramienta: FTK Imager v4.7.1                                                        │
+│  Hash MD5 original: 7F83B1657FF1FC53B92DC18148A1D65D                                   │
+│  Hash MD5 imagen: 7F83B1657FF1FC53B92DC18148A1D65D (coinciden)                         │
+│  Almacenamiento: Disco forense Nro. 002, gabinete 3                                    │
+│  Firma: Juan Pérez                                                                      │
+│                                                                                         │
+│  Fecha: 11/06/2024  Hora: 14:00                                                        │
+│  Acción: Transferencia de imagen a Analista                                            │
+│  Entregado por: Juan Pérez                                                              │
+│  Recibido por: María Gómez (Analista forense)                                          │
+│  Motivo: Análisis de evidencia                                                         │
+│  Firmas: Juan Pérez / María Gómez                                                       │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+## Resumen corto para tu proyecto
+
+==========================================================================================
+✅ PARA TU PROYECTO DE OCEANIX LIVING
+==========================================================================================
+
+  1. La empresa te da información inicial (hipótesis).
+  2. Vos investigás y CONFIRMÁS o DESCARTÁS con evidencia.
+  3. La CADENA DE CUSTODIA es el DOCUMENTO que registra quién tocó la evidencia.
+  4. La IMAGEN FORENSE es el ARCHIVO que contiene la copia exacta de la USB.
+  5. Trabajás sobre la IMAGEN, no sobre la USB original.
+  6. Verificás con HASH que la imagen es idéntica al original.
+
+==========================================================================================
+
+==========================================================================================
+📋 DESCRIPCIÓN GENERAL DEL PROYECTO
+==========================================================================================
+
+Oceanix Living - Investigación de incidente de ciberseguridad
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  TAREA 1: APLICAR EL MARCO DE RESPUESTA A INCIDENTES                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Leerás el informe de incidente de Oceanix Living.                                   │
+│  • Aplicarás el marco de respuesta a incidentes.                                       │
+│  • Responderás preguntas sobre el incidente.                                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+                                      │
+                                      ▼
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  TAREA 2: CREAR UNA IMAGEN DE MEMORIA USB                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Pasarás a la fase de investigación.                                                 │
+│  • Crearás una imagen forense completa de la memoria USB del sospechoso.               │
+│  • Usarás herramientas como FTK Imager.                                                │
+│  • Preservarás la integridad de la evidencia (hash, cadena de custodia).              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+                                      │
+                                      ▼
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  TAREA 3: ANALIZAR EVIDENCIA FORENSE DIGITAL                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Analizarás la imagen forense de la memoria USB.                                     │
+│  • Usarás herramientas de recuperación de datos (recuperar archivos borrados).         │
+│  • Buscarás evidencia relevante para la investigación.                                 │
+│  • Sacarás conclusiones sobre la naturaleza y el alcance de la violación.             │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+🎯 OBJETIVO FINAL
+==========================================================================================
+
+  Investigar el incidente, recuperar evidencia digital y determinar:
+    • ¿Qué pasó?
+    • ¿Qué datos se vieron comprometidos?
+    • Quién pudo ser el responsable?
+
+==========================================================================================
+
+==========================================================================================
+🏭 OCEANIX LIVING - INFORME DE INCIDENTE
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  EMPRESA                                                                               │
+│  Oceanix Living - manufactura de viviendas flotantes                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PROYECTO CLAVE                                                                        │
+│  AquaDome 3000 (alojamiento de lujo bajo el agua)                                      │
+│  + dos tecnologías pendientes de patente:                                              │
+│     • EcoHarmony                                                                       │
+│     • AquaSphere                                                                       │
+│  → Valor potencial: miles de millones de dólares en 30 años                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MEDIDAS DE SEGURIDAD (antes del incidente)                                            │
+│  • Planes confidenciales (todos firmaron acuerdos de confidencialidad).                │
+│  • Sistemas aislados (sin acceso por Internet).                                        │
+│  • Solo 6 personas con acceso a los sistemas.                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  LO QUE PASÓ (incidente)                                                               │
+│  • Se filtraron varios documentos protegidos a un competidor.                          │
+│  • Se activaron los protocolos de respuesta a incidentes.                              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+🔍 PREGUNTAS CLAVE PARA LA INVESTIGACIÓN
+==========================================================================================
+
+  • ¿Cómo se filtraron los documentos si los sistemas están aislados?
+  • ¿Fue uno de los 6 empleados con acceso?
+  • ¿Hubo copia de datos a un dispositivo externo (ej. memoria USB)?
+  • ¿Hay evidencia digital que lo confirme?
+
+==========================================================================================
+
+==========================================================================================
+❓ PREGUNTA - PRIMERA MEDIDA A TOMAR
+==========================================================================================
+
+Escenario: Filtración de datos de los planes del AquaDome 3000.
+Solo 6 empleados tienen acceso a los sistemas.
+
+Pregunta: ¿Qué medida debe tomar Oceanix Living INMEDIATAMENTE?
+
+Opciones:
+  ○ Llevar a cabo una reunión en toda la empresa.
+  ● Confiscar la evidencia de todos los empleados con acceso al sistema. (CORRECTA)
+  ○ Comenzar a mejorar la infraestructura de seguridad.
+  ○ Preparar un informe para la junta directiva.
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Confiscar la evidencia de todos los empleados con acceso al sistema.
+
+Motivo:
+  • Solo 6 personas tienen acceso → grupo acotado y controlable.
+  • Hay que preservar la evidencia antes de que pueda ser alterada o destruida.
+  • La cadena de custodia comienza con la recolección de dispositivos (PC, USB, etc.).
+  • Las otras acciones (reuniones, informes, mejoras) son posteriores.
+
+==========================================================================================
+
+==========================================================================================
+❓ PREGUNTA - TIPO DE EVIDENCIA A RECOPILAR
+==========================================================================================
+
+Escenario: La empresa confiscó evidencia de los 6 empleados con acceso.
+
+Pregunta: ¿Cuál de los siguientes tipos de evidencia debe recopilar la empresa?
+
+Opciones:
+  ○ Horarios de trabajo
+  ○ Evaluaciones de desempeño
+  ● Dispositivos personales (CORRECTO)
+  ○ Verificación de antecedentes
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Dispositivos personales.
+
+Motivo:
+  • La evidencia digital forense se obtiene de dispositivos electrónicos.
+  • Los documentos filtrados pueden estar en: memorias USB, discos externos, laptops.
+  • También se deben confiscar: PC de escritorio, teléfonos, tablets.
+  • Las otras opciones son documentos administrativos, no evidencia forense.
+
+==========================================================================================
+
+==========================================================================================
+❓ PREGUNTA - SIGUIENTE PASO CON LA MEMORIA USB
+==========================================================================================
+
+Escenario:
+  • Se confiscó una memoria USB perteneciente a Tuttle Leach.
+  • El aprendiz dice que solo la usó para fotos submarinas.
+  • La unidad podría contener datos incriminatorios.
+
+Pregunta: ¿Cuál debe ser el siguiente paso del equipo?
+
+Opciones:
+  ○ Eliminar todos los datos de la memoria USB para evitar más filtraciones.
+  ○ Entregar la memoria USB a las autoridades locales.
+  ○ Usar la memoria USB para acceder a la computadora de Tuttle.
+  ● Crear una imagen de la memoria USB para su análisis. (CORRECTO)
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Crear una imagen de la memoria USB para su análisis.
+
+Motivo:
+  • Preserva la evidencia original (no se modifica la USB).
+  • La imagen es una copia bit a bit (forense) que se puede analizar sin riesgos.
+  • Se verifica la integridad con hashes (MD5 o SHA).
+  • El original queda resguardado para cadena de custodia.
+
+==========================================================================================
+
+* INFORME REALIZADO POR EL EQUIPO DE LA EMPRESA.
+==========================================================================================
+📄 INFORME DE INCIDENTES - OCEANIX LIVING
+==========================================================================================
+
+Número de caso interno: OLI-2022A-0098
+Redactado por: Armida Albacore (gerente del equipo IR)
+Fecha: 23 de junio de 2023
+
+==========================================================================================
+PARTE I - DESCRIPCIÓN GENERAL DEL INCIDENTE
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  FECHA: 22 de junio de 2023                                                            │
+│  TIPO: Violación de seguridad grave                                                    │
+│  QUÉ PASÓ: Robo y manipulación de archivos privados                                    │
+│  DÓNDE: Sistemas informáticos aislados en instalaciones de I+D                        │
+│  QUÉ ARCHIVOS: Tecnologías del AquaDome 3000 (sistemas AquaSphere y EcoHarmony)       │
+│  QUIÉN DESCUBRIÓ: Un ingeniero de Oceanix Living                                       │
+│  CAUSA: Acto deliberado de un infractor no identificado                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+PARTE II - ACCIONES DE RESPUESTA A INCIDENTES
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  1. CONFISCACIÓN DE EVIDENCIA                                                          │
+│     • Se confiscaron dispositivos de los 6 usuarios con acceso al sistema.             │
+│     • Se documentó todo en la cadena de custodia.                                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  2. NOTIFICACIÓN A AUTORIDADES                                                         │
+│     • 22 de junio, 12:32 p.m. - se llamó a la policía local.                          │
+│     • Detective llegó en 17 minutos.                                                   │
+│     • Número de caso policial: PR-2023B-0145                                           │
+│     • Oceanix cooperará con la investigación.                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  3. CONTRATACIÓN DE EMPRESA EXTERNA                                                    │
+│     • Se contrató a Ancira Consulting.                                                 │
+│     • Funciones: recopilar inteligencia de amenazas y monitorear la dark web.          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  4. INVESTIGACIÓN FORENSE EN CURSO                                                     │
+│     • El equipo IR está analizando evidencia forense.                                  │
+│     • Objetivo: determinar la fuente de la filtración.                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+🔍 DATOS CLAVE PARA LA INVESTIGACIÓN
+==========================================================================================
+
+  • Solo 6 personas tenían acceso a los sistemas aislados.
+  • La filtración fue un acto deliberado (no accidental).
+  • El ingeniero que descubrió el incidente notó que FALTABAN DATOS (manipulación).
+  • Hay una memoria USB confiscada (Tuttle Leach, aprendiz).
+  • Se está investigando evidencia forense.
+
+==========================================================================================
+
+==========================================================================================
+📌 TAREA 2: CREAR UNA IMAGEN DE MEMORIA USB
+==========================================================================================
+
+Escenario:
+  • Eres miembro del equipo de IR de Oceanix Living.
+  • Debes analizar la memoria USB de Tuttle Leach (aprendiz del Dr. Sebastian Trench).
+  • Leach dice que solo guardaba fotos submarinas.
+  • Antes de ver los archivos, debes crear una imagen idéntica de la USB.
+
+==========================================================================================
+✅ TIPO CORRECTO DE EVIDENCIA PARA CREAR UNA IMAGEN
+==========================================================================================
+
+  Opción correcta: Imagen forense (copia bit a bit)
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ¿QUÉ ES UNA IMAGEN FORENSE?                                                           │
+│                                                                                         │
+│  • Es una copia EXACTA (bit a bit) de toda la memoria USB.                            │
+│  • Incluye archivos visibles, archivos borrados y espacio no asignado.                 │
+│  • Permite trabajar sobre la copia sin modificar la evidencia original.                │
+│  • Se verifica con HASH (MD5 o SHA) para asegurar que es idéntica.                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+⚠️ IMPORTANTE
+==========================================================================================
+
+  • NUNCA se trabaja sobre la memoria USB original.
+  • PRIMERO se crea la imagen forense.
+  • LUEGO se analiza la imagen.
+  • La USB original se guarda como evidencia (cadena de custodia).
+
+==========================================================================================
+
+==========================================================================================
+📌 FTK IMAGER - CREAR IMAGEN DE MEMORIA USB
+==========================================================================================
+
+Pantalla: Evidence Item Information (Información del elemento de evidencia)
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CAMPOS A COMPLETAR                                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  Case Number:     OLI-2022A-0098                                                        │
+│  Evidence Number: (se asigna automático o se completa después)                         │
+│  Unique Description: Memoria USB - Tuttle Leach                                        │
+│  Examiner:         tu_nombre                                                            │
+│  Notes:            Creación de imagen forense de USB                                   │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ NÚMERO DE CASO CORRECTO
+==========================================================================================
+
+  Según el informe de incidentes OLI-2022A-0098:
+
+  Número de caso: OLI-2022A-0098
+
+  (incluir los guiones tal como está escrito)
+
+==========================================================================================
+📌 ¿DÓNDE SE OBTIENE ESTE DATO?
+==========================================================================================
+
+  El número de caso está en el informe de incidentes, Parte I:
+
+  "Número de caso interno OLI-2022A-0098"
+
+==========================================================================================
+
+==========================================================================================
+📌 FTK IMAGER - NÚMERO DE EVIDENCIA
+==========================================================================================
+
+Pantalla: Evidence Item Information (Información del elemento de evidencia)
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CAMPOS COMPLETADOS HASTA AHORA                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  Case Number:     OLI-2022A-0098                                                        │
+│  Evidence Number: [completar con el número del formulario]                             │
+│  Unique Description: Memoria USB - Tuttle Leach                                        │
+│  Examiner:         tu_nombre                                                            │
+│  Notes:            Creación de imagen forense de USB                                   │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ ¿CÓMO OBTENER EL NÚMERO DE EVIDENCIA?
+==========================================================================================
+
+  El número de evidencia está en el FORMULARIO DE SEGUIMIENTO DE CADENA DE CUSTODIA.
+
+  Buscá en el formulario un campo que diga:
+    • "Evidence Number"
+    • "Número de evidencia"
+    • "Número de pieza"
+
+  Ejemplo típico: EVI-2023A-001
+
+==========================================================================================
+⚠️ IMPORTANTE
+==========================================================================================
+
+  • Incluir el guión si lo tiene (ej. EVI-2023A-001, no EVI2023A001).
+  • Si no ves el número en el formulario, revisá las imágenes anteriores del laboratorio.
+  • En algunos casos, el laboratorio asigna automáticamente el número al hacer clic en "Next".
+
+==========================================================================================
+
+==========================================================================================
+📋 FORMULARIO DE CADENA DE CUSTODIA - DATOS CLAVE
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  Número de caso:        OLI-2022A-0098                                                  │
+│  Elemento número:       0098-001                                                       │
+│  Descripción:           Memoria USB AquaSync Trident X Marine                          │
+│                         Número de serie: ASX-5213-KQ84                                 │
+│  Lugar de incautación:  Departamento de I+D, oficina de Tuttle Leach                   │
+│  Cadena de custodia:    Recolectada por Mehari Coralberg                               │
+│                         Examinada por Jahn Dough (creación de imagen)                  │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ EN FTK IMAGER - EVIDENCE ITEM INFORMATION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  Case Number:       OLI-2022A-0098                                                      │
+│  Evidence Number:   0098-001                                                            │
+│  Unique Description: Memoria USB - Tuttle Leach (AquaSync Trident X Marine)            │
+│  Examiner:          [tu nombre o Jahn Dough según corresponda]                         │
+│  Notes:             Creación de imagen forense - Elemento 0098-001                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 ELEMENTO NÚMERO CORRECTO
+==========================================================================================
+
+  Según la tabla de evidencia:
+
+  Elemento núm. | Cantidad | Descripción
+  ------------------------------------------------
+  0098-001     |    1     | Memoria USB AquaSync Trident X Marine
+
+  → Evidence Number: 0098-001
+
+==========================================================================================
+
+==========================================================================================
+📋 FTK IMAGER - CAMPO EXAMINER (EXAMINADOR)
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  INFORMACIÓN DEL FORMULARIO DE CADENA DE CUSTODIA                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  Fecha: 23 de junio, 9:03 a.m.                                                         │
+│  Entregado por: Mehari Coralberg (jefe de seguridad)                                   │
+│  Recibido por: Jahn Dough (examinador de respuesta a incidentes)                       │
+│  Propósito: Crear una imagen de disco USB                                              │
+│  Ubicación: Laboratorio de seguridad                                                   │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+  Examiner (Examinador): Jahn Dough
+
+  (incluir nombre y apellido exactamente como está escrito)
+
+==========================================================================================
+📌 CÓMO COMPLETAR EL FORMULARIO EN FTK IMAGER
+==========================================================================================
+
+  Case Number:       OLI-2022A-0098
+  Evidence Number:   0098-001
+  Unique Description: Tuttle Leach USB Drive Image
+  Examiner:          Jahn Dough
+  Notes:             (opcional, puede quedar vacío o poner "Imagen forense de USB")
+
+==========================================================================================
+
+==========================================================================================
+✅ IMAGEN FORENSE CREADA CON ÉXITO
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ESTADO: FTK Imager creó la imagen correctamente                                        │
+│                                                                                         │
+│  • La copia bit a bit (imagen forense) está lista.                                     │
+│  • La evidencia original (memoria USB) está preservada.                                │
+│  • Se puede proceder al análisis sobre la imagen.                                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📋 COMPROBACIÓN FINAL DE LA TAREA 2
+==========================================================================================
+
+  ✔ Se confiscó la memoria USB de Tuttle Leach
+  ✔ Se documentó la cadena de custodia (elemento 0098-001)
+  ✔ Se creó la imagen forense (FTK Imager)
+  ✔ Se verificó la integridad (hash, si aplicó)
+  ✔ La imagen está lista para analizar
+
+==========================================================================================
+▶️ PRÓXIMO PASO
+==========================================================================================
+
+  TAREA 3: Analizar la evidencia forense digital
+
+  • Usar herramientas de recuperación de datos.
+  • Buscar archivos borrados o relevantes para la investigación.
+  • Determinar si Tuttle Leach usó la USB para almacenar documentos del AquaDome 3000.
+
+==========================================================================================
+
+==========================================================================================
+⚠️ CONSECUENCIAS DE NO VERIFICAR LA IMAGEN FORENSE
+==========================================================================================
+
+❌ Error: No verificar que la imagen coincide exactamente con el original
+          (los hashes no son iguales)
+
+==========================================================================================
+✅ CONSECUENCIAS CORRECTAS (2)
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  1. INADMISIBLE EN EL TRIBUNAL POR SOSPECHA DE MANIPULACIÓN                            │
+│                                                                                         │
+│     • La evidencia pierde validez legal.                                               │
+│     • El abogado contrario puede impugnar la prueba.                                   │
+│     • El caso puede perderse por mala praxis.                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  2. CONCLUSIONES INCORRECTAS DEBIDO A DATOS ALTERADOS                                  │
+│                                                                                         │
+│     • El análisis se basa en información falsa o incompleta.                           │
+│     • Se pueden acusar a personas inocentes.                                           │
+│     • Se pueden dejar ir a los verdaderos responsables.                                │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ OPCIONES INCORRECTAS
+==========================================================================================
+
+  ○ Falta de evidencia para apoyar las conclusiones de la investigación
+     → Esto no es exacto: evidencia hay, pero está alterada.
+
+  ○ Error de cadena de custodia, ya que la imagen no es exacta
+     → La cadena de custodia puede estar correctamente documentada.
+       El error es de INTEGRIDAD, no de cadena de custodia.
+
+==========================================================================================
+✅ REGLA DE ORO
+==========================================================================================
+
+  SIEMPRE verificar los hashes (MD5 o SHA) del original y la copia.
+
+  Si coinciden → la imagen es IDÉNTICA → se puede analizar.
+  Si NO coinciden → la imagen NO es válida → hay que crearla de nuevo.
+
+==========================================================================================
+
+==========================================================================================
+📌 ACTUALIZACIÓN DE CADENA DE CUSTODIA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  INFORMACIÓN REGISTRADA                                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  Entregado por:     Jahn Dough (examinador)                                            │
+│  Recibido por:      Mehari Coralberg (jefe de seguridad)                               │
+│  Propósito:         Creación de imagen forense para análisis                           │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+▶️ PRÓXIMO PASO: ANALIZAR ARCHIVOS ELIMINADOS
+==========================================================================================
+
+  Para buscar archivos eliminados en la imagen forense, se debe usar:
+
+  ✅ Autopsy (herramienta de análisis forense)
+
+  Otras herramientas posibles:
+  • PhotoRec
+  • TestDisk
+  • FTK Imager (para vista previa, pero Autopsy es más completa)
+
+==========================================================================================
+✅ ¿CÓMO IDENTIFICAR EL ÍCONO CORRECTO?
+==========================================================================================
+
+  Buscar un ícono que represente:
+  • Un dragón (logo de Autopsy)
+  • Una lupa sobre una carpeta
+  • Un escudo o herramienta de análisis forense
+
+  Si el laboratorio muestra íconos específicos, seleccioná el que corresponda a Autopsy.
+
+==========================================================================================
+
+==========================================================================================
+📌 AUTopsy - CÓMO VER ARCHIVOS ELIMINADOS
+==========================================================================================
+
+Pantalla: Autopsy con Data Sources
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ESTRUCTURA EN AUTOPSY                                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  Data Sources                                                                          │
+│  │                                                                                      │
+│  └── [+] Tuttle USB Drive   ← HACER CLIC EN EL SIGNO MÁS (+) AQUÍ                       │
+│         │                                                                               │
+│         ├── [ ] vol1                                                                   │
+│         └── [+] vol2        ← Expandir el volumen para ver contenido                    │
+│                │                                                                        │
+│                ├── Deleted Files     ← Archivos eliminados                             │
+│                ├── Carved Files      ← Archivos recuperados por tallado                │
+│                └── ...                                                                │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+  Hacer clic en el signo MÁS (+) al lado de "Tuttle USB Drive" (o al lado del volumen)
+  para expandir y acceder a los archivos eliminados.
+
+==========================================================================================
+📌 TIPOS DE ARCHIVOS QUE SE PUEDEN ENCONTRAR
+==========================================================================================
+
+  • Deleted Files: archivos que el usuario eliminó pero aún son recuperables.
+  • Carved Files: archivos recuperados mediante tallado de datos (data carving).
+  • Unallocated Space: espacio no asignado donde pueden quedar restos de datos.
+
+==========================================================================================
+
+==========================================================================================
+🔍 ANÁLISIS FORENSE DE ARCHIVOS ELIMINADOS - MEMORIA USB DE TUTTLE LEACH
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  AFIRMACIONES DE LEACH                                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • "Solo usé la memoria USB para almacenar fotos submarinas"                          │
+│  • (archivos gráficos / imágenes)                                                      │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  HALLAZGO DEL ANÁLISIS FORENSE (archivos eliminados)                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Se encontró un patrón de ARCHIVOS DE WORD                                           │
+│  • (documentos de texto, no fotos)                                                     │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+  Opción: "Surge un patrón de archivos de Word, que no coincide con las afirmaciones de Leach."
+
+==========================================================================================
+🔍 CONCLUSIÓN
+==========================================================================================
+
+  Leach dijo:                     Solo fotos submarinas (archivos gráficos)
+  La evidencia muestra:           Archivos de Word (documentos)
+                                  ↓
+                              NO COINCIDE con sus afirmaciones
+
+==========================================================================================
+⚠️ IMPLICANCIA
+==========================================================================================
+
+  • Leach podría no estar diciendo la verdad.
+  • Los archivos de Word podrían contener documentos del AquaDome 3000.
+  • Se debe seguir investigando el contenido de esos archivos de Word.
+
+==========================================================================================
+==========================================================================================
+🔍 ANÁLISIS DE METADATOS - Kelp Study.docx
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PREGUNTA                                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  ¿Puedes confirmar que este archivo es uno de los documentos privados filtrados        │
+│  basándote ÚNICAMENTE en los metadatos?                                                │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+  NO, porque la presencia de metadatos por sí sola no establece que este archivo sea
+  uno de los documentos filtrados.
+
+==========================================================================================
+🔍 EXPLICACIÓN
+==========================================================================================
+
+  Los metadatos te pueden decir:
+  • Quién creó el archivo.
+  • Cuándo se creó o modificó.
+  • El tamaño del archivo.
+
+  Pero NO te dicen:
+  ✘ Cuál es el CONTENIDO del archivo.
+  ✘ Si ese contenido es confidencial o no.
+  ✘ Si fue parte de la filtración.
+
+==========================================================================================
+📌 ENTONCES, ¿CÓMO SE CONFIRMA?
+==========================================================================================
+
+  1. Analizar el CONTENIDO del archivo (texto, planos, cifras).
+  2. Compararlo con los documentos que se sabe que fueron robados.
+  3. Correlacionar la información con otras fuentes (logs, etc.).
+
+  Solo así se puede confirmar si es parte de los documentos filtrados.
+
+==========================================================================================
+
+==========================================================================================
+🔍 CONCLUSIONES DEL ANÁLISIS FORENSE - MEMORIA USB DE TUTTLE LEACH
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  LO QUE DIJO LEACH                                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  "Solo usé la memoria USB para almacenar fotos submarinas"                             │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  LO QUE ENCONTRÓ EL ANÁLISIS FORENSE                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Archivo: Kelp Study.docx (nombre engañoso)                                          │
+│  • Contenido REAL: Documentación completa del AquaDome 3000                           │
+│  • Incluye: AquaSphere, EcoHarmony, AquaBot, especificaciones técnicas                 │
+│  • El archivo estaba ELIMINADO (intento de ocultar evidencia)                          │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  IMPLICACIONES                                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  ❌ Leach mintió sobre el contenido de la USB.                                         │
+│  ❌ Almacenó documentos confidenciales del AquaDome 3000 en un dispositivo personal.   │
+│  ❌ Intentó eliminar los archivos (posiblemente después de ser descubierto).           │
+│  ✅ La evidencia forense confirma la filtración de datos.                              │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 EVIDENCIA QUE CONFIRMA LA FILTRACIÓN
+==========================================================================================
+
+  • Archivo recuperado (eliminado) con contenido del AquaDome 3000.
+  • Tecnologías AquaSphere y EcoHarmony documentadas.
+  • Leach mencionado como colaborador del proyecto.
+  • Inconsistencia entre su declaración y la evidencia.
+
+==========================================================================================
+
+==========================================================================================
+🔍 IDENTIFICACIÓN DE DOCUMENTO CONFIDENCIAL
+==========================================================================================
+
+Archivo: Kelp Study.docx (nombre engañoso)
+Contenido real: Documentación del AquaDome 3000
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ¿QUÉ SUGIERE QUE ES UN DOCUMENTO PRIVADO FILTRADO?                                    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  ✅ La introducción del AquaDome 3000                                                   │
+│     • Presenta el proyecto como un "invento de última generación"                     │
+│     • Menciona que es propiedad de Oceanix Living                                      │
+│     • Describe las tecnologías pendientes de patente (AquaSphere, EcoHarmony)          │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 LAS OTRAS OPCIONES TAMBIÉN SON CONFIDENCIALES, PERO...
+==========================================================================================
+
+  ○ La descripción de la tecnología AquaSphere → también es confidencial
+  ○ La mención de la participación de la Dra. Marina Deepwater → también es confidencial
+  ○ La descripción general del sistema EcoHarmony → también es confidencial
+
+  TODAS son partes del mismo documento filtrado.
+
+  La introducción es la que REVELA LA NATURALEZA GENERAL del proyecto como
+  un invento privado y patentado de Oceanix Living.
+
+==========================================================================================
+✅ CONCLUSIÓN
+==========================================================================================
+
+  El documento completo (Kelp Study.docx) es confidencial.
+  La introducción establece que el AquaDome 3000 es un proyecto privado
+  con tecnologías pendientes de patente.
+
+==========================================================================================
+
+==========================================================================================
+📊 EVALUACIÓN DEL IMPACTO - PROYECTO AQUADOME 3000
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ¿QUÉ ES LO MÁS VALIOSO PARA OCEANIX LIVING?                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  🏆 Tecnologías pendientes de patente:                                                 │
+│     • AquaSphere (nanotecnología, autorreparación, patrón hexagonal)                   │
+│     • EcoHarmony (energías renovables, IA, baterías de iones de litio)                │
+│                                                                                         │
+│  Estos sistemas podrían generar "miles de millones de dólares en 30 años".            │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+  Al evaluando el contenido para tecnologías patentadas.
+
+  Motivo:
+  • El impacto NO es solo que se filtraron archivos.
+  • El impacto REAL es si las TECNOLOGÍAS CLAVE (patentes) quedaron expuestas.
+  • Un competidor con esas especificaciones podría copiar los inventos.
+
+==========================================================================================
+❌ POR QUÉ LAS OTRAS OPCIONES SON MENOS RELEVANTES PARA EVALUAR EL IMPACTO
+==========================================================================================
+
+  ○ Al determinar si los archivos se compartieron externamente
+     → Eso es parte de la investigación (cómo), no del impacto.
+
+  ○ Al revisar la frecuencia de acceso a los archivos
+     → Eso es parte del análisis forense (cuándo), no del impacto.
+
+  ○ Al analizar los tipos de dispositivos donde se almacenaron
+     → Eso es parte de la recolección de evidencia (dónde), no del impacto.
+
+==========================================================================================
+🔍 CONCLUSIÓN
+==========================================================================================
+
+  Para evaluar el IMPACTO, hay que responder:
+
+  ¿Qué tan dañino es que estas tecnologías específicas estén en manos de un competidor?
+
+  La respuesta está en el CONTENIDO de los archivos y su nivel de detalle técnico.
+
+==========================================================================================
+
