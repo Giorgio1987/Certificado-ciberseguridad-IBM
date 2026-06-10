@@ -6353,7 +6353,6 @@ graph TD
 
 ---
 
-*Y aquí tenés la alternativa en **texto estructurado estilo consola**, manteniendo el formato limpio de tu bloque de notas:*
 
 ```text
 ==========================================================================================
@@ -6379,3 +6378,65 @@ graph TD
    └── 6. TRAZAR:          Firmar las actas de cadena de custodia en cada relevo de la prueba.
 =======================================================================================
 
+==========================================================================================
+[ PROYECTO CULMINANTE: INVESTIGAR UN INCIDENTE MEDIANTE ANÁLISIS FORENSE DIGITAL ]
+==========================================================================================
+
+🎯 OBJETIVOS DEL PROYECTO
+   ├── 1. Aplicar el marco de respuesta a incidentes.
+   ├── 2. Crear una imagen de una memoria USB.
+   └── 3. Analizar la evidencia forense digital.
+
+==========================================================================================
+📌 ESCENARIO BASE
+==========================================================================================
+  Empresa:      Oceanix Living (manufactura)
+  Incidente:    Datos corporativos comprometidos
+  Contexto:     Se requiere respuesta rápida + investigación forense exhaustiva.
+  Enfoque:      Aplicar marco de respuesta a incidentes + recuperación de evidencia digital.
+
+==========================================================================================
+📚 APRENDIZAJE PREVIO (Módulos requeridos)
+==========================================================================================
+  ✔ Respuesta a incidentes
+  ✔ Análisis forense de sistemas digitales
+
+==========================================================================================
+✅ COMPETENCIAS AL FINALIZAR EL PROYECTO
+==========================================================================================
+  ✔ Investigar informes de incidentes mediante análisis forense digital.
+  ✔ Crear una imagen forense de una memoria USB.
+  ✔ Analizar evidencia digital recuperada.
+
+==========================================================================================
+🧠 HABILIDADES BLANDAS PRACTICADAS
+==========================================================================================
+  ├── Pensamiento analítico
+  ├── Atención al detalle
+  ├── Pensamiento crítico
+  ├── Agilidad de aprendizaje
+  └── Resolución de problemas
+
+==========================================================================================
+🔍 APLICACIÓN DE HABILIDADES EN EL PROYECTO
+==========================================================================================
+  🧠 Pensamiento analítico
+      → Identificar pasos inmediatos según el contexto del incidente.
+      → Elegir las herramientas forenses digitales correctas.
+
+  🔎 Atención al detalle
+      → Examinar los resultados de escaneo en busca de pistas clave.
+
+  ⚖️ Pensamiento crítico
+      → Interpretar y analizar los datos recuperados.
+      → Extraer conclusiones significativas.
+
+  ⚡ Agilidad de aprendizaje
+      → Adaptarse rápidamente a distintos incidentes.
+      → Seleccionar herramientas adecuadas según cada caso.
+
+  🧩 Resolución de problemas
+      → Identificar pasos posteriores al incidente.
+      → Determinar una respuesta adecuada.
+
+==========================================================================================
