@@ -6327,31 +6327,25 @@ Para explorar los conceptos cubiertos en este módulo con más profundidad, cons
 ¡Este cuadro es letal! Sintetiza a la perfección el error más común en la respuesta a incidentes (el "pánico del administrador", que sale corriendo a tocar todo sin medir las consecuencias) frente al deber ser de la informática forense. Es un gran contraste metodológico para tus apuntes.
 
 Para que se vea impecable en GitHub, te preparé la versión en Mermaid.js estructurada como una comparativa de caminos (el erróneo vs. el normado por buenas prácticas), y abajo la versión estructurada en texto de consola.
-
-📊 Comparativa de Enfoques en Recopilación Forense
-Markdown
-```mermaid
 graph TD
     %% Configuración de Estilos
     classDef error fill:#f8d7da,stroke:#dc3545,stroke-width:2px,color:#721c24;
     classDef correcto fill:#e2efda,stroke:#375623,stroke-width:2px,color:#212529;
     classDef pasos fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63;
 
-    INCIDENTE["🚨 Incidente Detectado"] --> PATH_BAD["❌ El Error Común"]
-    INCIDENTE --> PATH_GOOD["✅ El Protocolo Correcto"]
+    INCIDENTE("🚨 Incidente Detectado") --> PATH_BAD("❌ El Error Común")
+    INCIDENTE --> PATH_GOOD("✅ El Protocolo Correcto")
 
-    PATH_BAD --> E1["<b>Zambullirse rápidamente:</b><br>Recopilar de todas las fuentes posibles<br>al mismo tiempo y sin planificación previa.<br><br>⚠️ <i>Resultado: Evidencia impugnada o alterada.</i>"]:::error
+    PATH_BAD --> E1("Zambullirse rápidamente: Recopilar de todas las fuentes posibles al mismo tiempo y sin planificación previa. Resultado: Evidencia impugnada o alterada."):::error
 
-    PATH_GOOD --> P1["<b>1. Planificación Inicial</b><br>Desarrollar un plan estratégico priorizando según el orden de volatilidad."]:::pasos
-    P1 --> P2["<b>2. Identificación Exhaustiva</b><br>Localizar fuentes críticas (correos, servidores, logs de red)."]:::pasos
-    P2 --> P3["<b>3. Aislamiento Físico/Lógico</b><br>Conectar bloqueadores de escritura antes de cualquier interacción."]:::pasos
-    P3 --> P4["<b>4. Preservación Bit a Bit</b><br>Crear imágenes forenses (NUNCA operar sobre los discos originales)."]:::pasos
-    P4 --> P5["<b>5. Control Criptográfico</b><br>Calcular y verificar hashes para asegurar la inmutabilidad."]:::pasos
-    P5 --> P6["<b>6. Blindaje Legal</b><br>Documentar minuciosamente cada eslabón de la cadena de custodia."]:::pasos
+    PATH_GOOD --> P1("1. Planificación Inicial: Desarrollar un plan estratégico priorizando según el orden de volatilidad."):::pasos
+    P1 --> P2("2. Identificación Exhaustiva: Localizar fuentes críticas (correos, servidores, logs de red)."):::pasos
+    P2 --> P3("3. Aislamiento Físico/Lógico: Conectar bloqueadores de escritura antes de cualquier interacción."):::pasos
+    P3 --> P4("4. Preservación Bit a Bit: Crear imágenes forenses. NUNCA operar sobre los discos originales."):::pasos
+    P4 --> P5("5. Control Criptográfico: Calcular y verificar hashes para asegurar la inmutabilidad."):::pasos
+    P5 --> P6("6. Blindaje Legal: Documentar minuciosamente cada eslabón de la cadena de custodia."):::pasos
 
-    P6 --> FIN["🎯 Evidencia Admisible y Resguardada"]:::correcto
-
----
+    P6 --> FIN("🎯 Evidencia Admisible y Resguardada"):::correcto
 
 
 ```text
