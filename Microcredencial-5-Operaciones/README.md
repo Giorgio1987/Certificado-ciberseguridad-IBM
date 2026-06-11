@@ -176,7 +176,7 @@ Al igual que un equipo de superhéroes, cada miembro aporta fortalezas important
      ├── Sistema:     Windows 10 / Windows Server.
      └── Función:     Monitoreo de persistencias en registro, ataques a PowerShell y Sysmon.
 ==========================================================================================
-
+```
 
 #### Qué vas a practicar
 
@@ -336,7 +336,7 @@ graph TD
     Visibilidad ==> |Flujo de Eventos y Logs| Centralizacion
     TIP -.-> |Inyección de Indicadores de Compromiso IoC| Centralizacion
     Centralizacion ==> |Disparo de Alertas de Alta Prioridad| SOAR
-
+```
 ---
 
 *Y aquí tenés la versión en **texto estructurado por bloques independientes (estilo consola)**, manteniendo la homogeneidad estética si estás armando una guía en texto plano:*
@@ -376,7 +376,7 @@ SOC pequeño	Solo un SIEM (ej. Wazuh) + tal vez un EDR básico
 SOC mediano	SIEM + EDR + Vulnerability Scanner
 SOC grande	SIEM + SOAR + EDR + NDR + TIP + UEBA (todo integrado)
 El SIEM es el CORAZÓN del SOC, pero no es todo el software.
-
+```
 ### El software del SOC es un ecosistema de múltiples herramientas
 
 - **SIEM** (Security Information and Event Management): Centraliza logs y genera alertas
@@ -1968,7 +1968,7 @@ Realizar diagnósticos de la red
 Estos pasos son cruciales para preparar la red de SecureFin Solutions para la auditoría de seguridad.
 
 Nota: Las mismas herramientas que usan los administradores de red para mantener seguras sus redes también pueden ser utilizadas por atacantes para encontrar vulnerabilidades y planificar sus ataques.
-
+```
 
 ### Laboratorio: Escaneo de red con Zenmap (Nmap GUI)
 
@@ -3438,26 +3438,26 @@ La **postura de seguridad** se refiere al **estado general de seguridad** de una
 
 ---
 
-#### Resumen visual de beneficios
-┌─────────────────────────────────────────────────────────────────┐
-│ BENEFICIOS DE SIEM │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
-│ │ Detección │ │ Respuesta │ │ Cumplimiento│ │
-│ │ de amenazas │ │ a incidentes │ │ normativo │ │
-│ └──────────────┘ └──────────────┘ └──────────────┘ │
-│ │
-│ ┌──────────────┐ ┌──────────────┐ │
-│ │ Vista │ │ Automatización│ │
-│ │ centralizada │ │ de seguridad │ │
-│ └──────────────┘ └──────────────┘ │
-│ │
-└─────────────────────────────────────────────────────────────────┘
+## 📊 Beneficios Estratégicos de un Sistema SIEM
 
+Un **SIEM** (Security Information and Event Management) actúa como el cerebro centralizado de un Centro de Operaciones de Seguridad (SOC), recolectando, normalizando y analizando eventos en tiempo real para transformar millones de logs dispersos en inteligencia accionable.
 
----
+```mermaid
+graph TD
+    %% Estilos del Bloque SIEM
+    classDef core fill:#1e1b4b,stroke:#4338ca,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef benefit fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63,font-weight:bold;
+    classDef compliance fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000000,font-weight:bold;
 
+    SIEM["🛡️ ARQUITECTURA DE BENEFICIOS SIEM"]:::core
+
+    %% Distribución de Beneficios Directos
+    SIEM --> D["🫵 Detección de Amenazas<br>• Correlación en tiempo real<br>• Identificación de IoCs"]:::benefit
+    SIEM --> R["⚡ Respuesta a Incidentes<br>• Alertas tempranas prioritarias<br>• Reducción del MTTR"]:::benefit
+    SIEM --> C["📜 Cumplimiento Normativo<br>• Retención legal de logs<br>• Auditorías (ISO 27001, PCI-DSS)"]:::compliance
+    SIEM --> V["👁️ Vista Centralizada<br>• Tableros unificados (Single Pane of Glass)<br>• Visibilidad de toda la red"]:::benefit
+    SIEM --> A["🤖 Automatización de Seguridad<br>• Integración con SOAR<br>• Respuestas mitigatorias veloces"]:::benefit
+```
 #### En resumen
 
 Las herramientas SIEM brindan una **variedad de beneficios** a las organizaciones que buscan:
@@ -3594,28 +3594,30 @@ Ahora que has aprendido sobre las herramientas SIEM, vamos a explorar **cómo fu
 
 ---
 
-### Las 5 etapas del proceso SIEM
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ PROCESO SIEM (Ciclo continuo) │
-│ │
-│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
-│ │ 1. │ │ 2. │ │ 3. │ │
-│ │ Recopilación │─────▶│ Detección │─────▶│ Generación │ │
-│ │ de datos │ │ de amenazas │ │ de alertas │ │
-│ └──────────────┘ └──────────────┘ └──────────────┘ │
-│ │ │ │ │
-│ ▼ ▼ ▼ │
-│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
-│ │ 5. │ │ 4. │ │ │ │
-│ │ Respuesta │◀─────│Investigación │ │ │ │
-│ │ ante │ │ de incidentes│ │ │ │
-│ │ incidentes │ │ │ │ │ │
-│ └──────────────┘ └──────────────┘ └──────────────┘ │
-│ │
-│ El proceso es un CICLO CONTINUO, no un evento único │
-└─────────────────────────────────────────────────────────────────────────────┘
+## 🔁 Las 5 Etapas del Proceso SIEM (Ciclo Continuo)
 
+El funcionamiento de un SIEM no es un evento único ni estático; opera como un **ciclo continuo de retroalimentación** diseñado para optimizar de manera constante la postura defensiva del SOC.
 
+```mermaid
+graph LR
+    %% Estilos del Proceso Cíclico
+    classDef step fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63,font-weight:bold;
+    classDef alert fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000000,font-weight:bold;
+    classDef response fill:#fce8e6,stroke:#ea4335,stroke-width:1px,color:#a51d24,font-weight:bold;
+
+    E1["📥 1. Recopilación de Datos"]:::step
+    E2["🔍 2. Detección de Amenazas"]:::step
+    E3["🚨 3. Generación de Alertas"]:::alert
+    E4["🕵️‍♂️ 4. Investigación de Incidentes"]:::step
+    E5["⚡ 5. Respuesta ante Incidentes"]:::response
+
+    %% Flujo del Ciclo
+    E1 --> E2
+    E2 --> E3
+    E3 --> E4
+    E4 --> E5
+    E5 -->|Retroalimentación y Afinación| E1
+```
 ---
 
 #### 1. Recopilación de datos
@@ -3759,19 +3761,30 @@ En el asistente **Add Data**, se pueden configurar:
 
 ---
 
-### Resumen del proceso en Splunk
-┌─────────────────────────────────────────────────────────────────┐
-│ PROCESO EN SPLUNK │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ 1. Add Data ──▶ 2. Select Source ──▶ 3. Input Settings │
-│ (Agregar) (Seleccionar archivo) (Configurar) │
-│ │
-│ 4. Review ──▶ 5. Indexación ──▶ 6. Búsqueda y análisis │
-│ (Revisar) (Procesamiento) (Investigar) │
-│ │
-└─────────────────────────────────────────────────────────────────┘
+## 🪵 El Pipeline de Datos en Splunk (Ingesta y Análisis)
 
+Splunk procesa la información a través de un flujo estructurado que transforma archivos de texto plano, logs de red o métricas crudas en eventos indexados, legibles y listos para ser consultados mediante comandos SPL (*Splunk Search Processing Language*).
+
+```mermaid
+graph TD
+    %% Estilos del flujo de Splunk
+    classDef input fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63,font-weight:bold;
+    classDef process fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000000;
+    classDef search fill:#dcfce7,stroke:#22c55e,stroke-width:2px,color:#14532d,font-weight:bold;
+
+    %% Fases del Flujo
+    S1["📥 1. Add Data<br>(Agregar Datos)"]:::input
+    S2["📄 2. Select Source<br>(Seleccionar Fuente)"]:::input
+    S3["⚙️ 3. Input Settings<br>(Configurar Entradas)"]:::input
+    S4["🔍 4. Review<br>(Revisar Configuración)"]:::input
+    S5["📦 5. Indexación<br>(Procesamiento y Almacenamiento)"]:::process
+    S6["📊 6. Búsqueda y Análisis<br>(Investigación con SPL)"]:::search
+
+    %% Conexiones
+    S1 --> S2 --> S3
+    S3 --> S4 --> S5
+    S5 --> S6
+```
 
 ---
 
@@ -3886,20 +3899,32 @@ Seleccionar **Start Searching** (Comenzar a buscar) para comenzar a analizar los
 
 ---
 
-### Resumen del proceso completo en Splunk
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ PROCESO DE CARGA DE DATOS EN SPLUNK │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ 1. Add Data ──▶ 2. Select Source ──▶ 3. Input Settings │
-│ (Agregar) (Seleccionar archivo .zip) (Configurar source type │
-│ y host) │
-│ │
-│ 4. Review ──▶ 5. Upload ──▶ 6. Done ──▶ 7. Start Searching │
-│ (Revisar) (Cargar) (Completado) (Comenzar búsqueda) │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+## 📦 Ciclo Completo de Carga y Aprovisionamiento en Splunk
 
+Este flujo describe el procedimiento técnico secuencial para la ingesta manual de paquetes de logs empaquetados (archivos `.zip`), garantizando la correcta asignación de metadatos antes de la indexación.
+
+```mermaid
+graph TD
+    %% Estilos del pipeline de carga
+    classDef input fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63,font-weight:bold;
+    classDef process fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000000;
+    classDef success fill:#dcfce7,stroke:#22c55e,stroke-width:2px,color:#14532d,font-weight:bold;
+
+    %% Nivel 1: Configuración
+    S1["📥 1. Add Data<br>(Punto de Entrada)"]:::input
+    S2["🗜️ 2. Select Source<br>(Seleccionar archivo .zip)"]:::input
+    S3["⚙️ 3. Input Settings<br>(Configurar Source Type y Host)"]:::input
+    S4["🔍 4. Review<br>(Revisar Parámetros)"]:::input
+
+    %% Nivel 2: Procesamiento y Ejecución
+    S5["🚀 5. Upload<br>(Cargar e Indexar)"]:::process
+    S6["✨ 6. Done<br>(Completado con Éxito)"]:::success
+    S7["📊 7. Start Searching<br>(Comenzar Búsqueda / SPL)"]:::success
+
+    %% Flujo Lógico
+    S1 --> S2 --> S3 --> S4
+    S4 --> S5 --> S6 --> S7
+```
 
 ---
 
@@ -4263,21 +4288,31 @@ source="BetterBytes Log Files.zip:" fail "64.66.0.20"
 > **Decisión final:** Seleccionar **View Table** (Ver tabla) para revisar los resultados documentados.
 
 ---
+## 📊 Fase de Documentación y Reporte en Splunk
 
-### Resumen del proceso de documentación en Splunk
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ PROCESO DE DOCUMENTACIÓN EN SPLUNK │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ 1. Realizar búsqueda ──▶ 2. Crear Table View ──▶ 3. Refinar resultados │
-│ (Investigar) (Vista de tabla) (Filtrar datos) │
-│ │
-│ 4. Guardar tabla ──────▶ 5. Asignar título ──▶ 6. Exportar para informe │
-│ (Save as Table) (Ej. "Investigation (Documentar hallazgos) │
-│ June 2024") │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+El ciclo forense se consolida al transformar los resultados de las búsquedas complejas en reportes estructurados y legibles (vistas de tabla), permitiendo exportar la evidencia digital de forma limpia para los informes ejecutivos y legales.
 
+```mermaid
+graph TD
+    %% Estilos del proceso de documentación
+    classDef search fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63;
+    classDef refine fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000000;
+    classDef report fill:#dcfce7,stroke:#22c55e,stroke-width:2px,color:#14532d,font-weight:bold;
+
+    %% Nivel 1: Investigación y Filtrado
+    D1["🔍 1. Realizar Búsqueda<br>• Consultar logs con SPL"]:::search
+    D2["📋 2. Crear Table View<br>• Formatear en vista de tabla"]:::search
+    D3["⚙️ 3. Refinar Resultados<br>• Filtrar campos innecesarios"]:::refine
+
+    %% Nivel 2: Guardado y Exportación
+    D4["💾 4. Guardar Tabla<br>• Comando 'Save as Table'"]:::refine
+    D5["🏷️ 5. Asignar Título<br>• Nombre descriptivo del caso"]:::refine
+    D6["📄 6. Exportar para Informe<br>• Documentar hallazgos finales"]:::report
+
+    %% Conexiones
+    D1 --> D2 --> D3
+    D3 --> D4 --> D5 --> D6
+```
 
 ---
 
@@ -4358,18 +4393,32 @@ source="BetterBytes Log Files.zip:" fail "64.66.0.20"
 
 ---
 
-### Resumen del proceso completo de exportación
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ PROCESO DE EXPORTACIÓN EN SPLUNK │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ 1. Crear Tabla ──▶ 2. Ajustar Time Range ──▶ 3. Seleccionar Export │
-│ (Investigar) (Last 30 days) (Botón Export) │
-│ │
-│ 4. Elegir Formato ──▶ 5. Exportar ──▶ 6. Abrir en Excel │
-│ (CSV/XML/JSON) (Descargar) (Revisar columnas) │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+## 📄 Proceso de Exportación de Resultados para Auditoría Externa
+
+Cuando los datos refinados deben ser entregados a entidades regulatorias, equipos legales o revisados mediante herramientas de análisis locales, Splunk implementa un protocolo de extracción secuencial.
+
+```mermaid
+graph TD
+    %% Estilos del proceso de exportación
+    classDef setup fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63;
+    classDef format fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000000;
+    classDef excel fill:#dcfce7,stroke:#22c55e,stroke-width:2px,color:#14532d,font-weight:bold;
+
+    %% Nivel 1: Preparación en Consola
+    E1["📋 1. Crear Tabla<br>• Consolidar variables analizadas"]:::setup
+    E2["⏱️ 2. Ajustar Time Range<br>• Acotar ventana temporaria (Ej: Last 30 days)"]:::setup
+    E3["📤 3. Seleccionar Export<br>• Acceder al menú de extracción"]:::setup
+
+    %% Nivel 2: Formateo y Verificación Local
+    E4["⚙️ 4. Elegir Formato<br>• Definir estructura (CSV / XML / JSON)"]:::format
+    E5["💾 5. Exportar<br>• Descarga local del archivo de datos"]:::format
+    E6["📊 6. Abrir en Excel<br>• Control de calidad y revisión de columnas"]:::excel
+
+    %% Conexiones
+    E1 --> E2 --> E3
+    E3 --> E4 --> E5 --> E6
+
+```
 
 ---
 
@@ -4747,19 +4796,32 @@ En esta lección, aprendiste cómo las herramientas **SIEM** ayudan a las organi
 
 ---
 
-### Proceso SIEM (ciclo continuo)
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ PROCESO SIEM │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ Recopilación ──▶ Detección ──▶ Alerta ──▶ Investigación ──▶ Respuesta │
-│ de datos de amenazas │
-│ │
-│ El ciclo se repite constantemente para mantener la seguridad │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+## 🔁 El Pipeline de Operaciones SIEM
 
+El flujo de trabajo dentro de una plataforma SIEM sigue un camino lineal de procesamiento de datos para convertir eventos aislados de infraestructura en acciones de respuesta defensiva coordinadas.
 
+```mermaid
+graph LR
+    %% Estilos del pipeline SIEM
+    classDef collect fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63;
+    classDef detect fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000000;
+    classDef alert fill:#fee2e2,stroke:#ef4444,stroke-width:1px,color:#7f1d1d;
+    classDef investigate fill:#f3e8ff,stroke:#9333ea,stroke-width:1px,color:#581c87;
+    classDef respond fill:#dcfce7,stroke:#22c55e,stroke-width:2px,color:#14532d,font-weight:bold;
+
+    P1["📥 1. Recopilación<br>• Ingesta masiva de logs<br>• Normalización (CEF/JSON)"]:::collect
+    
+    P2["🔍 2. Detección<br>• Reglas de correlación<br>• Análisis conductual (UEBA)"]:::detect
+    
+    P3["🚨 3. Alerta<br>• Disparo de incidentes<br>• Priorización de severidad"]:::alert
+    
+    P4["🕵️‍♂️ 4. Investigación<br>• Triage y análisis forense<br>• Cruce con Threat Intel"]:::investigate
+    
+    P5["⚡ 5. Respuesta<br>• Ejecución de Playbooks<br>• Contención y mitigación"]:::respond
+
+    P1 --> P2 --> P3 --> P4 --> P5
+    P5 -.->|Retroalimentación Constante| P1
+```
 ---
 
 ### Herramientas y tecnologías del Módulo 10
@@ -5165,7 +5227,7 @@ Completarás este proyecto en **tres pasos**:
      └── Entregable: Planos de topología lógica, segmentación de DMZs, zonas de confianza 
                      y puntos de anclaje para colectores de logs (Wazuh, Firewalls, NDR).
 ==========================================================================================
-
+```
 ### Descripción general del proyecto por pasos
 
 ---
@@ -5243,6 +5305,7 @@ En este paso, realizarás el **escaneo de un sitio de destino** para recopilar i
    └── 🖥️ Fingerprinting de Hosts:     Determinar sistemas operativos, versiones de software y 
                                        vectores potenciales de compromiso en la red interna.
 ==========================================================================================
+```
 #### Proyecto - Paso 1: Modelo de SOC para InfoInc
 
 **Escenario:**  

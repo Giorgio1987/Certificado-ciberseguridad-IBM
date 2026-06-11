@@ -1101,7 +1101,7 @@ MODELOS DE EQUIPO:
 • Subcontratado: Servicio tercerizado 100% por personal externo (ej. MSSP).
 • Híbrido: Combinación de recursos internos y externos trabajando en conjunto.
 ==========================================================================================
-
+```
 ---
 
 ### Habilidades clave del equipo de IR
@@ -1159,7 +1159,7 @@ MODELOS DE EQUIPO:
 ------------------------------------------------------------------------------------------
 📌 NOTA OPERATIVA: Todo el EQUIPO DE RESPUESTA A INCIDENTES ejecuta el plan de forma coordinada.
 ==========================================================================================
-
+```
 
 ### Otros participantes en la respuesta a incidentes
 
@@ -1228,7 +1228,7 @@ Cada equipo de respuesta a incidentes depende de la **experiencia, el juicio y l
   --> Monitorea el acceso a centros de datos, resguarda el perímetro edilicio y provee
       evidencia clave (como bitácoras de entrada o grabaciones de cámaras).
 ==========================================================================================
-
+```
 
 > **Importante:** Todos estos grupos deben ser **consultados y entrenados** antes de que ocurra un incidente, para que cuando ocurra, sepan exactamente qué hacer y cómo coordinar con el equipo de IR.
 
@@ -1366,7 +1366,7 @@ El **IRP** debe contener instrucciones para **cada fase** de la respuesta a un i
    • En Ciberseguridad: Volver a levantar los servicios de forma segura y monitorear.
    • En el Hospital:    Etapa de rehabilitación del paciente y consultas de seguimiento.
 ==========================================================================================
-
+```
 
 
 Ejemplos de trabajos reales en Respuesta a Incidentes
@@ -1513,7 +1513,7 @@ A grandes rasgos, el análisis de intrusiones incluye **cuatro áreas clave**. L
    • ¿El ataque estaba dirigido a una persona o puesto específico de la alta dirección?
    • ¿El impacto buscado es de índole política, económica o de espionaje industrial?
 ==========================================================================================
-
+```
 
 ---
 
@@ -1600,7 +1600,7 @@ ETAPA FINAL Y OBJETIVOS:
   [13] Exfiltración           --> Sacar los datos robados de la empresa de forma oculta.
   [14] Impacto                --> Destruir, cifrar (Ransomware) o alterar la información.
 ==========================================================================================
-
+```
 ¿Cómo se usa MITRE ATT&CK?
 Uso	Descripción
 Análisis de intrusiones	Identificar en qué etapa del ataque están los atacantes
@@ -1814,7 +1814,7 @@ MAPEO DE COMPLEMENTARIEDAD:
 1. Cyber Kill Chain te dice: "El atacante está actualmente en la fase de ENTREGA".
 2. MITRE ATT&CK te detalla:   "La técnica específica fue un Phishing con adjunto malicioso".
 ==========================================================================================
-
+```
 En la práctica: Los profesionales de seguridad usan primero Cyber Kill Chain para entender en qué fase están, y luego MITRE ATT&CK para obtener el detalle técnico de esa fase.
 
 3. ¿Tienen costo?
@@ -2027,7 +2027,7 @@ Actualizar la política de contraseñas (exigir contraseñas más seguras, imple
      Alta exposición a incidentes de                             Mitigación robusta ante vectores de
      fuerza bruta y relleno de credenciales.                    ataque por diccionario y spoofing.
 ==========================================================================================
-
+```
 
 #### Ejercicio: Acción después de bloquear una IP maliciosa
 
@@ -2276,7 +2276,7 @@ FASES POSTERIORES (SIGUIENTES PASOS DEL ATACANTE):
   [ ] 12. Exfiltración
   [ ] 13. Impacto
 ==========================================================================================
-
+```
 #### Ejercicio: Identificar la fase de Mando y control en MITRE ATT&CK
 
 **Escenario:**  
@@ -2585,7 +2585,7 @@ La **ciencia forense digital** es un proceso que implica **profundizar en los da
    • Foco:      Explicar claramente los hallazgos técnicos en un lenguaje comprensible y libre de tecnicismos innecesarios.
 ==========================================================================================
 
-
+```
 
 ---
 
@@ -2658,7 +2658,7 @@ Los investigadores pueden recuperar datos, incluso **datos borrados o cifrados**
    • Componentes:  Memoria RAM, registros del procesador, conexiones de red activas, caché del sistema.
    • Interés:      Procesos en ejecución, malware inyectado en memoria, claves de cifrado activas.
 ==========================================================================================
-
+```
 ---
 
 ### Importancia de preservar la integridad de los datos
@@ -2769,7 +2769,7 @@ Las agencias gubernamentales emplean la ciencia forense digital para investigar:
    • Enfoque:    Defensa soberana, atribución técnica de ataques a actores patrocinados 
                  por estados extranjeros y mitigación de amenazas de alto impacto.
 ==========================================================================================
-
+```
 ### Cadena de custodia
 
 #### Consideraciones legales en la ciencia forense digital
@@ -2856,7 +2856,7 @@ Cuando los investigadores obtienen su primera evidencia, siguen la cadena de cus
 ==========================================================================================
 [ CASO PRÁCTICO: CADENA DE CUSTODIA EN UN CASO DE ACOSO ]
 ==========================================================================================
-
+```
 [Fase 1: RECOLECCIÓN]
   • Custodio: Detective López.
   • Registro: 14:30 hs. Extracción primaria de almacenamiento.
@@ -2883,7 +2883,7 @@ Cuando los investigadores obtienen su primera evidencia, siguen la cadena de cus
 
 📌 NOTA OPERATIVA: El documento de Cadena de Custodia viaja físicamente junto con el 
    indicio. Cualquier firma faltante anula la validez legal de la prueba en el juicio.
-
+```
 #### Cadena de custodia - Ejemplo práctico: Caso de acoso digital
 
 **El delito:** María recibe mensajes amenazantes. Denuncia a la policía.
@@ -3043,7 +3043,7 @@ En el juicio: El perito forense dice "El hash de la imagen que analicé coincide
          • Hash MD5: 7F83B1657FF1FC53B92DC18148A1D65D
          • Nota: Cualquier cambio mínimo en el disco original alteraría este valor.
 ==========================================================================================
-
+```
 ### Actividad: JobCorp - Identificar fuentes de datos forenses
 
 #### Antecedentes
@@ -3101,29 +3101,37 @@ En el juicio: El perito forense dice "El hash de la imagen que analicé coincide
 | **No relevante** | El ataque solo afectó la red, no los dispositivos móviles |
 
 ---
+## 🏢 Caso Práctico (JOB CORP): Clasificación de Fuentes de Datos Forenses
 
-#### Resumen de la actividad
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ FUENTES DE DATOS FORENSES - JOB CORP │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ ✅ REGISTROS DE RED │
-│ • Tráfico saliente a IP sospechosa (cuenta comprometida) │
-│ • Tráfico entrante inusual (bot malicioso) │
-│ │
-│ ✅ ARCHIVOS DEL SISTEMA │
-│ • Archivos del sistema modificados (acceso no autorizado) │
-│ • Procesos sospechosos en ejecución (malware) │
-│ │
-│ ✅ CUENTAS DE CORREO ELECTRÓNICO │
-│ • Correo de phishing abierto │
-│ • IoC (enlace malicioso) │
-│ • Correo de seguimiento con malware │
-│ │
-│ ❌ DATOS MÓVILES (no relevantes) │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+Durante el proceso de clasificación inicial (*Triage*) en el incidente de **Job Corp**, se evaluaron los diferentes activos tecnológicos para determinar cuáles contenían evidencia digital relevante (Artefactos Forenses) y descartar el ruido operativo.
 
+```mermaid
+graph TD
+    %% Estilos del Triage de Datos
+    classDef scope fill:#1e1b4b,stroke:#4338ca,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef evidence fill:#dcfce7,stroke:#22c55e,stroke-width:1px,color:#14532d;
+    classDef discard fill:#fee2e2,stroke:#ef4444,stroke-width:1px,color:#7f1d1d;
+    classDef detail fill:#f8f9fa,stroke:#cbd5e1,stroke-width:1px,color:#334155;
+
+    Root["🔍 AUDITORÍA DE ACTIVOS: JOB CORP"]:::scope
+
+    %% Clasificación Principal
+    Root --> EV["✅ FUENTES ADMISIBLES / CON EVIDENCIA"]:::evidence
+    Root --> DS["❌ FUENTES EXCLUIDAS / NO RELEVANTES"]:::discard
+
+    %% Ramas de Evidencia
+    EV --> NET["🌐 REGISTROS DE RED"]:::evidence
+    EV --> SYS["💻 ARCHIVOS DEL SISTEMA"]:::evidence
+    EV --> MAIL["📧 CORREO ELECTRÓNICO"]:::evidence
+
+    %% Detalles Técnicos
+    NET --> N1["• Tráfico saliente hacia IP sospechosa<br>• Conexiones entrantes inusuales (Botnets)"]:::detail
+    SYS --> S1["• Archivos de configuración alterados<br>• Procesos persistentes maliciosos (Malware)"]:::detail
+    MAIL --> M1["• Recepción de correo de Phishing<br>• Enlaces maliciosos (IoC detectado)<br>• Adjuntos con Payload activo"]:::detail
+
+    %% Ramas de Descarte
+    DS --> MÓVIL["📱 DATOS MÓVILES<br><i>(Sin vectores de ataque identificados)</i>"]:::discard
+```
 ---
 
 #### Pregunta de selección
@@ -3204,7 +3212,7 @@ Un **investigador forense digital** recupera, examina y analiza evidencia digita
                               a un lenguaje simple para jueces, fiscales o directores.
 ==========================================================================================
 
-
+```
 ---
 
 #### ¿Por qué es importante esta función?
@@ -3311,7 +3319,7 @@ Un equipo forense investiga un ataque grande. Un miembro analiza el disco duro, 
   • Compromiso para compartir datos de manera segura y coordinar la respuesta.
 ==========================================================================================
 ---
-
+```
 ### ¿Tu perfil encaja?
 
 | Si en tu vida personal... | Podrías prosperar como investigador forense digital |
@@ -3362,20 +3370,30 @@ También aprenderás a **preservar adecuadamente la evidencia forense digital** 
 
 ---
 
-### Diagrama del camino a seguir
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ PRÓXIMA LECCIÓN - PROCESO FORENSE │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ Recopilación ──▶ Examen ──▶ Análisis ──▶ Informes │
-│ │
-│ • Preservar • Identificar • Correlacionar • Documentar │
-│ • Adquirir • Extraer • Interpretar • Comunicar │
-│ • Cadena de • Buscar por • Crear • Explicar a │
-│ custodia palabras clave narración no técnicos │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+## 🔄 El Ciclo de Vida del Proceso Forense Digital
 
+El análisis forense no es una acción aislada, sino un proceso metodológico estructurado que garantiza que la evidencia digital mantenga su validez legal y técnica desde el momento del hallazgo hasta su exposición final.
+
+```mermaid
+graph LR
+    %% Estilos de las Fases del Proceso
+    classDef recopila fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63;
+    classDef examen fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000000;
+    classDef analisis fill:#fce8e6,stroke:#ea4335,stroke-width:1px,color:#a51d24;
+    classDef informes fill:#e2efda,stroke:#375623,stroke-width:2px,color:#212529,font-weight:bold;
+
+    F1["📋 1. RECOPILACIÓN<br><br>• Preservar la escena<br>• Adquirir imágenes bit a bit<br>• Asegurar Cadena de Custodia"]:::recopila
+    
+    F2["🔬 2. EXAMEN<br><br>• Identificar evidencias<br>• Extraer datos crudos<br>• Buscar por palabras clave/Regex"]:::examen
+    
+    F3["🧠 3. ANÁLISIS<br><br>• Correlacionar eventos y logs<br>• Interpretar artefactos<br>• Crear la línea de tiempo/Narración"]:::analisis
+    
+    F4["⚖️ 4. INFORMES<br><br>• Documentar hallazgos<br>• Comunicar conclusiones<br>• Explicar a perfiles no técnicos"]:::informes
+
+    F1 --> F2
+    F2 --> F3
+    F3 --> F4
+```
 ### Acerca de esta lección: El proceso forense digital
 
 Cualquier persona que maneje evidencia en una investigación forense digital debe hacerlo con **cuidado**.
@@ -3448,7 +3466,7 @@ En cualquier caso, la mayoría de los modelos forenses digitales incluyen las ta
    • Foco Técnico:   Generar un reporte reproducible y auditable que pueda sostenerse como
                      prueba científica ante un comité de incidentes o un tribunal legal.
 ==========================================================================================
-
+```
 
 > **Nota:** El modelo del NIST es uno de los más utilizados como referencia en ciencia forense digital.
 
@@ -3615,7 +3633,7 @@ graph TD
     P1 --> A
     C --> R
 
-
+```
 
 
 ---
@@ -3671,25 +3689,31 @@ graph TD
 
 ---
 
-#### Resumen del proceso aplicado
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ W E I N S U R E Y O U - FASE 1 │
-│ RECOPILACIÓN │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ IDENTIFICAR ──▶ PLANIFICAR ──▶ ADQUIRIR ──▶ VERIFICAR │
-│ FUENTES DATOS INTEGRIDAD │
-│ │
-│ • Red • Laptop • Imagen • Hash (MD5/SHA) │
-│ • Servidores • Servidores forense │
-│ • Correos • Correos • Extracción │
-│ │
-│ ✅ Copias de seguridad creadas │
-│ ✅ Originales intactos │
-│ ✅ Integridad verificada │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+## 🛡️ Caso Práctico (WEINSUREYOU): Fase 1 - Recopilación
 
+El aseguramiento de la infraestructura ante un compromiso real en la organización **WeInsureYou** exige un despliegue metódico para capturar el estado técnico de los activos sin alterar la escena digital original.
+
+```mermaid
+graph LR
+    %% Estilos de la Fase 1
+    classDef fasefill fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63;
+    classDef checkfill fill:#e2efda,stroke:#375623,stroke-width:2px,color:#212529,font-weight:bold;
+
+    P1["🔍 1. IDENTIFICAR FUENTES<br><br>• Infraestructura de Red<br>• Servidores afectados<br>• Cuentas de Correo"]:::fasefill
+    
+    P2["📋 2. PLANIFICAR DATOS<br><br>• Laptop corporativa<br>• Servidores críticos<br>• Tráfico de Correos"]:::fasefill
+    
+    P3["💾 3. ADQUIRIR INTEGRIDAD<br><br>• Imágenes forenses (Bit a bit)<br>• Extracción de logs<br>• Volcados volátiles"]:::fasefill
+    
+    P4["⚖️ 4. VERIFICAR<br><br>• Cálculo de firmas Hash<br>• Comparativa MD5/SHA<br>• Cadena de custodia"]:::fasefill
+
+    Out["🎯 HITOS ALCANZADOS:<br><br>✅ Copias de seguridad creadas<br>✅ Medios originales intactos<br>✅ Integridad matemática verificada"]:::checkfill
+
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> Out
+```
 ---
 
 #### Preguntas de verificación (ejemplos)
@@ -3813,51 +3837,34 @@ En la fase de examen, los investigadores:
 
 ---
 
-### Diagrama de la fase de examen
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ FASE 2: EXAMEN - PROCESO │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ ┌─────────────────────────────────────────────────────────────────────┐ │
-│ │ DATOS RECOPILADOS (Fase 1) │ │
-│ │ │ │
-│ │ Discos │ Servidores │ Correos │ Logs │ Metadatos │ │
-│ └─────────────────────────────────────────────────────────────────────┘ │
-│ │ │
-│ ▼ │
-│ ┌─────────────────────────────────────────────────────────────────────┐ │
-│ │ DESAFÍOS │ │
-│ │ │ │
-│ │ ┌─────────────────────┐ ┌─────────────────────────────────┐ │ │
-│ │ │ Eludir controles │ │ Gran cantidad de datos │ │ │
-│ │ │ • Cifrado │ │ • Cientos de miles de archivos │ │ │
-│ │ │ • Compresión │ │ • Millones de registros │ │ │
-│ │ └─────────────────────┘ └─────────────────────────────────┘ │ │
-│ └─────────────────────────────────────────────────────────────────────┘ │
-│ │ │
-│ ▼ │
-│ ┌─────────────────────────────────────────────────────────────────────┐ │
-│ │ HERRAMIENTAS DE EXAMEN │ │
-│ │ │ │
-│ │ • Descifrado de contraseñas │ │
-│ │ • Búsqueda de texto │ │
-│ │ • Filtrado por tipo de archivo │ │
-│ │ • Recuperación de datos ocultos/eliminados │ │
-│ └─────────────────────────────────────────────────────────────────────┘ │
-│ │ │
-│ ▼ │
-│ ┌─────────────────────────────────────────────────────────────────────┐ │
-│ │ RESULTADO │ │
-│ │ │ │
-│ │ ✅ Datos relevantes identificados │ │
-│ │ ✅ Datos extraídos para análisis │ │
-│ │ ✅ Documentación con fotos/capturas │ │
-│ │ │ │
-│ └─────────────────────────────────────────────────────────────────────┘ │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+## 🔬 Fase 2: Examen - Procesamiento Técnico de Evidencia
 
+Una vez recolectada la evidencia en la Fase 1 de forma inmutable, la **Fase de Examen** se encarga de procesar los volúmenes masivos de datos para visibilizar la información útil, superando las contramedidas lógicas del atacante.
 
+```mermaid
+graph TD
+    %% Estilos de la fase de examen
+    classDef input fill:#f8f9fa,stroke:#cbd5e1,stroke-width:2px,color:#334155,font-weight:bold;
+    classDef challenge fill:#7f1d1d,stroke:#ef4444,stroke-width:1px,color:#ffffff;
+    classDef tools fill:#1e3a8a,stroke:#2563eb,stroke-width:1px,color:#ffffff;
+    classDef success fill:#16a34a,stroke:#15803d,stroke-width:2px,color:#ffffff,font-weight:bold;
+
+    %% Flujo de Proceso
+    In["💾 DATOS RECOPILADOS (Fase 1)<br>• Discos Clónicos (E01) • Servidores • Correos • Logs • Metadatos"]:::input
+    
+    In --> Ch["⚠️ DESAFÍOS OPERATIVOS DE PROCESAMIENTO"]:::challenge
+    
+    Ch --> Ch1["🔒 Eludir Controles:<br>• Cifrado de volúmenes<br>• Archivos comprimidos / corruptos"]:::challenge
+    Ch --> Ch2["📈 Big Data / Volumen:<br>• Cientos de miles de archivos<br>• Millones de registros de logs"]:::challenge
+
+    Ch1 & Ch2 --> Tools["🧰 APLICACIÓN DE HERRAMIENTAS DE EXAMEN"]:::tools
+    
+    Tools --> T1["• Descifrado de contraseñas y bypass de hashes<br>• Motores de búsqueda de texto indexado y Regex<br>• Filtrado por tipos de extensión y firmas mágicas<br>• Recuperación de datos ocultos y File Carving"]:::tools
+
+    Tools --> Out["🎯 RESULTADO OPERATIVO"]:::success
+    
+    Out --> O1["✅ Datos relevantes identificados y aislados<br>✅ Información crítica extraída para análisis posterior<br>✅ Evidencia documentada bajo capturas e informes técnicos"]:::success
+```
 ---
 
 ### Resumen de la Fase 2: Examen
@@ -4121,7 +4128,7 @@ graph TD
     %% Conexión del flujo deductivo
     R1 --> R2 --> R3 --> R4 --> R5 --> C
 
-
+```
 
 
 ---
@@ -4223,7 +4230,7 @@ graph TD
     A --> H
     H --> C
 
-
+```
 
 ---
 
@@ -4369,7 +4376,7 @@ graph TD
 
     %% Flujo secuencial descendente
     S1 --> S2 --> S3 --> S4
-
+```
 ---
 
 ### Resumen de la Fase 4: Informes
@@ -4467,7 +4474,7 @@ graph TD
 
     %% Flujo secuencial descendente
     S1 --> S2 --> S3 --> S4
-
+```
 ---
 
 ### Características clave del informe forense
@@ -4585,7 +4592,7 @@ graph TD
     P2 -- Coinciden --> V_OK
     P2 -- Discrepancia --> V_ERR
     V_OK --> P3
-
+```
 ---
 
 ### Resumen de la preservación de datos
@@ -4699,7 +4706,7 @@ graph TD
     %% Flujo metodológico
     C --> Act
     Act --> Result
-
+```
 ### Preguntas de autoevaluación
 
 | Pregunta | Reflexión |
@@ -4789,24 +4796,30 @@ También practicarás su uso en un **escenario realista**.
 
 ---
 
-### Diagrama del camino a seguir
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ PRÓXIMA LECCIÓN - HERRAMIENTAS FORENSES │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ ┌─────────────────────────────────────────────────────────────────────┐ │
-│ │ TIPOS DE HERRAMIENTAS │ │
-│ │ │ │
-│ │ • Adquisición y análisis │ │
-│ │ • Análisis de clasificación │ │
-│ │ • Creación de imágenes (bit a bit) │ │
-│ │ • Recuperación de datos │ │
-│ └─────────────────────────────────────────────────────────────────────┘ │
-│ │
-│ Practicarás su uso en un escenario realista │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+## 🗺️ El Camino Defensivo: Clasificación de Herramientas Forenses
 
+La siguiente fase se enfoca en la aplicación práctica y el despliegue operativo de soluciones de software forense dentro de escenarios e incidentes del mundo real.
+
+```mermaid
+graph TD
+    %% Estilos de la ruta de aprendizaje
+    classDef main fill:#312e81,stroke:#4338ca,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef category fill:#1e3a8a,stroke:#2563eb,stroke-width:1px,color:#ffffff;
+    classDef practice fill:#0f766e,stroke:#0d9488,stroke-width:2px,color:#ffffff,font-weight:bold;
+
+    Root["🚀 PRÓXIMA LECCIÓN: INGENIERÍA FORENSE"]:::main
+
+    %% Ramas de Clasificación
+    Root --> CAT["🛠️ Tipos de Herramientas Obligatorias"]:::category
+    
+    CAT --> T1["💾 Adquisición y Análisis<br><i>(Captura de entornos operativos)</i>"]:::category
+    CAT --> T2["📊 Análisis de Clasificación<br><i>(Triage de artefactos y logs)</i>"]:::category
+    CAT --> T3["💿 Creación de Imágenes<br><i>(Clonado bit a bit inmutable)</i>"]:::category
+    CAT --> T4["🧩 Recuperación de Datos<br><i>(Data Carving y File System Rebuild)</i>"]:::category
+
+    %% Bloque Práctico Final
+    T1 & T2 & T3 & T4 --> LAB["🎯 Simulación en Escenario Realista<br><i>(Resolución de incidentes de punta a punta)</i>"]:::practice
+```
 
 ---
 
@@ -4931,7 +4944,7 @@ graph TD
     %% Flujo del embudo de decisión
     C1 --> C2 --> C3 --> C4 --> ELEGIDA
 
-
+```
 ---
 
 ### Resumen de la selección de herramientas
@@ -5035,7 +5048,7 @@ graph TD
 
     %% Layout estructurado apilado
     O1 --- O2 --- O3 --- O4
-
+```
 ---
 
 ### Tabla resumen de herramientas por objetivo
@@ -5149,7 +5162,7 @@ graph TD
 
     %% Flujo secuencial descendente
     P1 --> P2 --> P3 --> P4 --> P5
-
+```
 ---
 
 #### Ventaja clave de la vista previa
@@ -5269,7 +5282,7 @@ chronology
         Archivo recuperado exitosamente
     end
 
-
+```
 ---
 
 ### Lecciones de la analogía
@@ -5443,7 +5456,7 @@ graph TD
 
     %% Disposición apilada limpia
     M1 --- M2 --- M3 --- M4
-
+```
 ---
 
 ### Resumen de conceptos clave
@@ -5498,7 +5511,7 @@ graph TD
 
     %% Flujo secuencial descendente
     F1 --> F2 --> F3 --> F4
-
+```
 
 ---
 
@@ -5607,7 +5620,7 @@ graph TD
     %% Conexiones de flujo de verificación
     H1 --> H2
     H2 --> R
-
+```
 ---
 
 *Y si preferís mantener el formato homogéneo de **texto estructurado por bloques independientes (estilo consola)** para tu guía de estudio, acá tenés la alternativa limpia:*
@@ -5636,7 +5649,7 @@ graph TD
   [✔] FIDELIDAD:        La estructura de datos clonada es idéntica bit a bit al soporte original.
   [✔] ADMISIBILIDAD:    Integridad confirmada. Certificado libre de contaminación o mutación.
 ======================================================================================
-
+```
 
 ---
 
@@ -5659,19 +5672,29 @@ graph TD
 
 ---
 
-#### Resumen del proceso
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ PROCESO DE VERIFICACIÓN - FTK IMAGER │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ 1. Crear imagen ──▶ 2. Calcular hash ──▶ 3. Calcular hash ──▶ 4. Comparar│
-│ de la USB del original de la imagen │
-│ │
-│ │
-│ RESULTADO: ✅ HASHES COINCIDEN → IMAGEN ES UNA COPIA EXACTA │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+## ⚖️ Proceso de Verificación de Integridad Criptográfica (FTK Imager)
 
+Para garantizar que la imagen forense sea admisible en un entorno legal o auditoría interna, se debe demostrar de manera matemática que el clonado es una copia idéntica bit a bit del medio original y que no sufrió alteraciones durante el proceso.
+
+```mermaid
+graph LR
+    %% Estilos del proceso de verificación
+    classDef step fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63;
+    classDef hash fill:#fff2cc,stroke:#d6b656,stroke-width:1px,color:#000000;
+    classDef match fill:#dcfce7,stroke:#22c55e,stroke-width:2px,color:#14532d,font-weight:bold;
+
+    S1["1. Clonado Forense<br>• Crear imagen de la USB original"]:::step
+    S2["2. Hash del Origen<br>• Calcular valor hash del medio físico"]:::hash
+    S3["3. Hash del Destino<br>• Calcular valor hash del archivo de imagen (E01/RAW)"]:::hash
+    S4["4. Verificación Criptográfica<br>• Comparar ambos resultados binarios"]:::step
+    
+    Result["✅ MATCH:<br>Hashes Coincidentes<br><br>👉 La imagen es una copia exacta e inmutable"]:::match
+
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> Result
+```
 
 > **Regla de oro:** Siempre verificar los valores hash después de crear una imagen forense. Si los hashes no coinciden, la imagen no es válida y debe crearse nuevamente.
 
@@ -5742,7 +5765,7 @@ Si George almacenó archivos en la USB (como la empresa sospecha), lo más proba
 | **Archivos eliminados** | Archivos que George borró pero que aún pueden recuperarse |
 | **Metadatos** | Fechas de creación, modificación y acceso |
 | **Carpetas** | Estructura de directorios que George pudo haber creado |
-
+```
 ---
 
 #### Importancia de la decisión
@@ -5797,20 +5820,34 @@ El análisis de Autopsy en la carpeta `CarvedFiles` (archivos tallados) encontr�
 
 ---
 
-#### ¿Qué es un archivo "tallado" (carved)?
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ ¿QUÉ ES UN ARCHIVO TALLADO? │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ 1. El usuario almacena un archivo .docx en la USB │
-│ 2. El usuario ELIMINA el archivo (o formatea la USB) │
-│ 3. Los datos permanecen en el disco, pero marcados como "disponibles" │
-│ 4. Autopsy usa TALLADO DE DATOS para recuperar el archivo │
-│ 5. El archivo recuperado se guarda en la carpeta "CarvedFiles" │
-│ 6. El nombre original se PIERDE (de ahí el formato f1048512.docx) │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+## 📁 ¿Qué es un Archivo Tallado (Data Carving)?
 
+El tallado de datos es una técnica forense utilizada para recuperar archivos basados estrictamente en sus estructuras de datos internas, firmas mágicas (*headers* y *footers*) y contenido, **ignorando por completo la información del sistema de archivos** (la cual puede estar dañada, formateada o eliminada).
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor U as Usuario
+    participant SA as Sistema de Archivos (FAT/NTFS)
+    participant D as Almacenamiento Físico (Sectores/Clusters)
+    participant A as Software Forense (Autopsy)
+
+    U->>SA: Almacena archivo "Informe_Confidencial.docx"
+    SA->>D: Escribe los datos binarios en clusters Libres
+    SA->>SA: Registra Metadatos (Nombre, Ruta, Fechas MAC)
+    
+    Note over U,SA: --- ELIMINACIÓN O FORMATEO ---
+    U->>SA: Elimina el archivo (.docx)
+    SA->>SA: Borra el puntero/registro de metadatos (Nombre PERDIDO)
+    SA->>D: Marca los clusters como "Disponibles" (Pero NO los borra)
+    
+    Note over SA,A: --- ANÁLISIS FORENSE (DATA CARVING) ---
+    A->>D: Escanea el disco bit a bit de forma secuencial
+    A->>D: Detecta Firma Mágica de Inicio (Header: 50 4B 03 04)
+    A->>D: Detecta Firma Mágica de Cierre (Footer: 50 4B 05 06)
+    A->>A: Extrae el bloque y lo reconstruye en la carpeta "CarvedFiles"
+    A->>U: Entrega archivo recuperado como: "f1048512.docx"
+```
 ---
 
 #### Próximo paso
@@ -5871,7 +5908,7 @@ No todos los .docx contienen datos confidenciales, pero el tamaño y tipo justif
                         *internos* del propio documento (propiedades OLE/XML del .docx), los 
                         que a menudo conservan las fechas reales de autoría y guardado.
 ==========================================================================================
-
+```
 #### Ejercicio: Propósito del panel File Metadata en Autopsy
 
 **Pregunta:** ¿Por qué verías el panel **File Metadata** (Metadatos de archivo) en Autopsy durante una investigación forense digital?
@@ -5957,6 +5994,7 @@ graph TD
     %% Flujo secuencial interactivo
     P1 --> P2 --> P3 --> P4 --> P5
 
+```
 ---
 
 *Y si preferís conservar la uniformidad en tus apuntes con el formato de **texto estructurado por bloques independientes estilo consola**, acá tenés la alternativa limpia para tu guía:*
@@ -5996,6 +6034,8 @@ graph TD
    └── Objetivo:  Ingresar strings específicos o Regex para barrer la imagen completa en segundos
                   en caso de que el archivo seleccionado sea solo un fragmento del incidente.
 =========================================================================================
+```
+
 #### Ejercicio: Cómo determinar si un archivo contiene datos confidenciales
 
 **Escenario:**  
@@ -6044,7 +6084,7 @@ graph TD
     N2 --> A1
     A1 --> A2
     A2 --> A3
-
+```
 #### Ejercicio: Cómo determinar si un archivo contiene datos confidenciales
 
 **Escenario:**  
@@ -6160,32 +6200,32 @@ Viene con una serie de **herramientas estándar de ciberseguridad** preinstalada
 > **Nota:** Una **máquina virtual (VM)** es una versión meramente basada en software de una computadora y un SO que se ejecuta dentro del sistema operativo real de un dispositivo. Las VM pueden ejecutar sus propias aplicaciones y otro software, al igual que las máquinas físicas.
 
 ---
+## 🛠️ Herramientas Forenses Digitales Clave
 
-### Diagrama de herramientas forenses clave
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ HERRAMIENTAS FORENSES DIGITALES CLAVE │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ │
-│ ┌─────────────────────────────────────────────────────────────────────┐ │
-│ │ VOLATILITY │ │
-│ │ • Analiza datos VOLÁTILES (RAM) │ │
-│ │ • Detecta procesos ocultos (malware) │ │
-│ │ • Identifica conexiones de red y archivos abiertos │ │
-│ └─────────────────────────────────────────────────────────────────────┘ │
-│ │
-│ ┌─────────────────────────────────────────────────────────────────────┐ │
-│ │ KALI LINUX │ │
-│ │ • Distribución Linux para hacking ético y forense │ │
-│ │ • Incluye herramientas preinstaladas: │ │
-│ │ - Wireshark, tcpdump, Nmap (redes) │ │
-│ │ - Autopsy, Bulk Extractor, Foremost (forense) │ │
-│ │ - John the Ripper (contraseñas) │ │
-│ │ - Metasploit (explotación) │ │
-│ └─────────────────────────────────────────────────────────────────────┘ │
-│ │
-└─────────────────────────────────────────────────────────────────────────────┘
+El análisis de un incidente requiere el uso de herramientas especializadas según la capa de datos que se esté investigando (Memoria RAM vs. Almacenamiento Persistente y Red).
 
+```mermaid
+graph TD
+    %% Estilos de herramientas
+    classDef main fill:#312e81,stroke:#4338ca,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef vol fill:#064e3b,stroke:#059669,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef kali fill:#1e3a8a,stroke:#2563eb,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef cat fill:#f8f9fa,stroke:#cbd5e1,stroke-width:1px,color:#334155;
 
+    Root["🛠️ ARSENAL FORENSE DIGITAL"]:::main
+
+    %% Divisiones Principales
+    Root --> VOL["🧠 VOLATILITY FRAMEWORK<br>(Análisis de Memoria RAM)"]:::vol
+    Root --> KALI["🐉 KALI LINUX SUITE<br>(Entorno de Auditoría y Forense)"]:::kali
+
+    %% Detalle Volatility
+    VOL --> V1["🔍 Extracción de artefactos volátiles<br>🔍 Detección de inyecciones de código (Malware)<br>🔍 Reconstrucción de conexiones de red activas"]:::cat
+
+    %% Detalle Kali
+    KALI --> K1["🌐 Análisis de Red:<br>• Wireshark<br>• Tcpdump<br>• Nmap"]:::cat
+    KALI --> K2["📁 Análisis de Disco:<br>• Autopsy<br>• Bulk Extractor<br>• Foremost"]:::cat
+    KALI --> K3["🔑 Criptoanálisis / Pentesting:<br>• John the Ripper<br>• Metasploit Framework"]:::cat
+```
 ---
 
 ### Comparación: Volatility vs. herramientas tradicionales
@@ -6324,40 +6364,40 @@ Para explorar los conceptos cubiertos en este módulo con más profundidad, cons
 | **Volatility** | Análisis de memoria RAM (malware, procesos ocultos) |
 | **Kali Linux** | Distribución todo-en-uno con herramientas forenses y de hacking ético |
 
-==========================================================================================
-📊 COMPARATIVA DE ENFOQUES EN RECOPILACIÓN FORENSE
-==========================================================================================
+## 📊 Comparativa de Enfoques en Recopilación Forense
 
-🚨 Incidente Detectado
-   │
-   ├── ❌ EL ERROR COMÚN
-   │      └── Zambullirse rápidamente: Recopilar de todas las fuentes posibles al mismo tiempo
-   │          y sin planificación previa.
-   │          ⚠️ Resultado: Evidencia impugnada o alterada.
-   │
-   └── ✅ EL PROTOCOLO CORRECTO
-          │
-          ├── 1. Planificación Inicial
-          │      └── Desarrollar un plan estratégico priorizando según el orden de volatilidad.
-          │
-          ├── 2. Identificación Exhaustiva
-          │      └── Localizar fuentes críticas (correos, servidores, logs de red).
-          │
-          ├── 3. Aislamiento Físico/Lógico
-          │      └── Conectar bloqueadores de escritura antes de cualquier interacción.
-          │
-          ├── 4. Preservación Bit a Bit
-          │      └── Crear imágenes forenses. NUNCA operar sobre los discos originales.
-          │
-          ├── 5. Control Criptográfico
-          │      └── Calcular y verificar hashes para asegurar la inmutabilidad.
-          │
-          ├── 6. Blindaje Legal
-          │      └── Documentar minuciosamente cada eslabón de la cadena de custodia.
-          │
-          └── 🎯 Evidencia Admisible y Resguardada
+Ante la detección de un incidente, la metodología aplicada determina la validez legal y técnica de los hallazgos.
 
-==========================================================================================
+```mermaid
+graph TD
+    %% Estilos de Estado Forense
+    classDef alert fill:#7f1d1d,stroke:#b91c1c,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef error fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#7f1d1d;
+    classDef ok fill:#e2efda,stroke:#375623,stroke-width:2px,color:#212529,font-weight:bold;
+    classDef step fill:#e8f4f8,stroke:#2b7b9b,stroke-width:1px,color:#1a4d63;
+    classDef success fill:#16a34a,stroke:#15803d,stroke-width:2px,color:#ffffff,font-weight:bold;
+
+    Incidente["🚨 INCIDENTE DETECTADO"]:::alert
+
+    %% Bifurcación de Caminos
+    Incidente --> |"Enfoque Reactivo / Incorrecto"| CaminoMal["❌ EL ERROR COMÚN"]:::error
+    Incidente --> |"Enfoque Metodológico / Estándar"| CaminoBien["✅ EL PROTOCOLO CORRECTO"]:::ok
+
+    %% Camino Erróneo
+    CaminoMal --> F1["Zambullirse rápidamente:<br>Recopilar de todas las fuentes en simultáneo,<br>sin orden de volatilidad ni planificación."]:::error
+    F1 --> ResultMal["⚠️ Evidencia Impugnada, Alterada o Inadmisible"]:::error
+
+    %% Camino Correcto (Fases)
+    CaminoBien --> P1["1. Planificación Inicial<br>• Estrategia según orden de volatilidad"]:::step
+    P1 --> P2["2. Identificación Exhaustiva<br>• Localizar fuentes críticas (logs, ram, discos)"]:::step
+    P2 --> P3["3. Aislamiento Físico/Lógico<br>• Bloqueadores de escritura de hardware"]:::step
+    P3 --> P4["4. Preservación Bit a Bit<br>• Clonado forense (Jamás operar sobre el original)"]:::step
+    P4 --> P5["5. Control Criptográfico<br>• Verificación de hashes (MD5, SHA-256)"]:::step
+    P5 --> P6["6. Blindaje Legal<br>• Documentación estricta de Cadena de Custodia"]:::step
+    
+    P6 --> ResultBien["🎯 Evidencia Admisible, Inmutable y Resguardada"]:::success
+```
+
 
 ```text
 ==========================================================================================
