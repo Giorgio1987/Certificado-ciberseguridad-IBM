@@ -1148,3 +1148,2178 @@ A continuación se detalla el repositorio bibliográfico y las fuentes documenta
    * *¿Qué es la computación cuántica?* IBM (Consultado: junio 2024).
    * *¿Qué es la biotecnología?* Organización de Innovación en Biotecnología (Consultado: junio 2024).
 
+```
+==========================================================================================
+❓ PREGUNTA - PASOS PARA EMPLEAR UNA HERRAMIENTA EDR
+==========================================================================================
+
+Escenario:
+Como profesional de la seguridad en TMBG Tecnologia Company, eres responsable de gestionar
+la nueva herramienta de deteccion y respuesta de endpoints (EDR) de la compañia.
+
+Pregunta:
+Luego de instalar agentes en los dispositivos endpoint, cual es el siguiente paso?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Gestion de los agentes a traves de una consola centralizada
+
+==========================================================================================
+📌 EXPLICACION - ORDEN CORRECTO DE LOS PASOS EDR
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 1: INSTALAR                                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Instalar agentes en cada dispositivo endpoint (laptops, servidores, moviles)          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 2: CONECTAR Y GESTIONAR (RESPUESTA CORRECTA)                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Gestionar los agentes a traves de una consola centralizada                            │
+│  Monitorear la actividad en todos los endpoints desde un panel                         │
+│  Analizar los datos con el motor de analytics                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 3: IDENTIFICAR Y RESPONDER                                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Detectar actividad maliciosa                                                          │
+│  Aislar el dispositivo afectado de la red                                              │
+│  Bloquear el proceso malicioso                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 4: MAPEAR Y ANALIZAR                                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Mapear la secuencia de ataque mediante algoritmos avanzados                           │
+│  Analizar patrones de comportamiento y tipos de archivos                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES SON POSTERIORES
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  OPCION              │  CUANDO OCURRE                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Aislar dispositivo  │  DESPUES de detectar una actividad maliciosa                   │
+│  Analizar patrones   │  DESPUES de aislar y durante la investigacion                  │
+│  Mapear secuencia    │  DESPUES de aislar, durante el analisis profundo               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 ORDEN CORRECTO DE LOS PASOS EDR
+==========================================================================================
+
+  1. INSTALAR agentes en los endpoints
+  2. GESTIONAR agentes desde consola centralizada ✓
+  3. MONITOREAR actividad en tiempo real
+  4. DETECTAR actividad maliciosa
+  5. AISLAR dispositivo afectado
+  6. BLOQUEAR proceso malicioso
+  7. MAPEAR secuencia de ataque
+  8. ANALIZAR patrones y archivos
+
+==========================================================================================
+```
+```
+==========================================================================================
+❓ PREGUNTA - SISTEMA PARA ATRAER ATACANTES
+==========================================================================================
+
+Escenario:
+Una compañia de servicios financieros establece un sistema para atraer a los atacantes
+y recopilar informacion sobre sus tacticas sin poner en peligro la red.
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Honeypot
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  HONEYPOT (TARRO DE MIEL)                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Es un SISTEMA SEÑUELO que simula ser un objetivo valioso                           │
+│  • Atrae a los atacantes para que intenten comprometerlo                               │
+│  • Permite estudiar sus tacticas sin arriesgar sistemas reales                         │
+│  • Recopila informacion sobre: metodos de ataque, herramientas utilizadas,             │
+│    procedimientos del atacante                                                         │
+│  • Da tiempo al equipo de seguridad para responder                                     │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SEGMENTACION DE LA RED                                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Divide la red en subredes mas pequeñas y aisladas                                   │
+│  • Limita el movimiento lateral de los atacantes                                       │
+│  • NO atrae atacantes ni recopila informacion sobre ellos                              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  NAT (TRADUCCION DE DIRECCIONES DE RED)                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Traduce direcciones IP privadas a publicas y viceversa                              │
+│  • Permite que multiples dispositivos compartan una IP publica                         │
+│  • NO es un sistema señuelo ni recopila informacion de atacantes                       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  EXTRANET                                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Extension de la red interna de una empresa para socios o clientes                   │
+│  • Permite acceso controlado a ciertos recursos                                        │
+│  • NO es un sistema para atraer atacantes                                              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 COMPARACION RAPIDA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  HERRAMIENTA        │  PROPOSITO                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Honeypot           │  Atraer atacantes y estudiar sus tacticas                       │
+│  Segmentacion       │  Aislar partes de la red para limitar el dano                    │
+│  NAT                │  Ocultar IPs privadas y traducir direcciones                     │
+│  Extranet           │  Dar acceso controlado a externos autorizados                    │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+```
+```
+==========================================================================================
+❓ PREGUNTA - SISTEMA OPERATIVO PARA COMPARTIR ARCHIVOS EN EQUIPO
+==========================================================================================
+
+Escenario:
+Eres un pasante de ciberseguridad que colabora con un grupo mas grande de pasantes en un
+proyecto. Necesitas compartir un archivo con los afiliados a tu grupo.
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Sistema operativo distribuido
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SISTEMA OPERATIVO DISTRIBUIDO                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Permite que MULTIPLES USUARIOS trabajen juntos en red                               │
+│  • Facilita COMPARTIR ARCHIVOS entre diferentes computadoras                          │
+│  • Los recursos remotos parecen locales                                                │
+│  • Ideal para TRABAJO COLABORATIVO y equipos                                           │
+│  • Ejemplos: Unix, Linux, Windows Server en red                                        │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SISTEMA OPERATIVO POR LOTES                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Procesa trabajos en SECUENCIA, uno tras otro                                        │
+│  • No permite interaccion del usuario durante el proceso                               │
+│  • NO esta diseñado para compartir archivos en equipo                                  │
+│  • Ejemplo: sistemas de procesamiento de transacciones bancarias                       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SISTEMA OPERATIVO MULTIPROGRAMACION                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Ejecuta VARIOS PROGRAMAS a la vez en un solo procesador                             │
+│  • Mejora la eficiencia del CPU                                                        │
+│  • NO esta diseñado especificamente para compartir archivos en red                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SISTEMA OPERATIVO MULTIPROCESADOR                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Usa MULTIPLES CPUs para ejecutar tareas                                             │
+│  • Mejora el rendimiento y la potencia de computo                                      │
+│  • NO esta diseñado especificamente para compartir archivos en equipo                  │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 COMPARACION RAPIDA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  TIPO DE SO                    │  CARACTERISTICA PRINCIPAL                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  DISTRIBUIDO                   │  MULTIPLES USUARIOS comparten archivos en RED        │
+│  POR LOTES                     │  Procesa tareas en SECUENCIA sin interaccion          │
+│  MULTIPROGRAMACION             │  Ejecuta VARIOS PROGRAMAS en un CPU                   │
+│  MULTIPROCESADOR               │  Usa VARIOS CPUs para mayor rendimiento               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+```
+```
+==========================================================================================
+❓ PREGUNTA - TIPO DE CIFRADO PARA TRANSFERENCIA DE DATOS
+==========================================================================================
+
+Escenario:
+Una compañia esta transfiriendo datos entre su cliente y su servidor.
+El cliente cifra los datos con la clave publica del servidor.
+El servidor descifra los datos empleando su clave privada.
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Cifrado asimetrico
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CIFRADO ASIMETRICO                                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Usa un PAR DE CLAVES: CLAVE PUBLICA y CLAVE PRIVADA                                 │
+│  • Lo que se cifra con la clave PUBLICA solo se descifra con la clave PRIVADA          │
+│  • Lo que se cifra con la clave PRIVADA solo se descifra con la clave PUBLICA          │
+│                                                                                         │
+│  En el escenario:                                                                       │
+│  • Cliente cifra con CLAVE PUBLICA del servidor                                        │
+│  • Servidor descifra con su CLAVE PRIVADA                                              │
+│                                                                                         │
+│  • Ejemplo: SSL/TLS, HTTPS, PGP                                                        │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CIFRADO SIMETRICO                                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Usa una SOLA CLAVE para cifrar y descifrar                                          │
+│  • La misma clave se comparte entre ambas partes                                        │
+│  • NO coincide con la descripcion (cliente y servidor usan claves diferentes)          │
+│  • Ejemplo: AES, DES                                                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  FIREWALL                                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Controla el trafico de red (permite o bloquea conexiones)                           │
+│  • NO es un metodo de cifrado                                                          │
+│  • NO aplica a la descripcion                                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CERTIFICADO DIGITAL                                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un documento digital que verifica la identidad                                   │
+│  • Contiene la clave publica de una entidad                                            │
+│  • NO es el metodo de cifrado en si mismo, sino que se USA en el cifrado asimetrico    │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 COMPARACION CIFRADO SIMETRICO vs ASIMETRICO
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CARACTERISTICA     │  CIFRADO SIMETRICO  │  CIFRADO ASIMETRICO                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Claves             │  Una sola clave     │  Par de claves (publica + privada)         │
+│  Velocidad          │  Rapido             │  Lento                                     │
+│  Distribucion claves│  Dificil            │  Facil (clave publica es abierta)          │
+│  Ejemplo            │  AES, DES           │  RSA, ECC                                   │
+│  Uso tipico         │  Cifrado de datos   │  Intercambio de claves, firmas digitales   │
+│                      │  masivos            │                                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - VALOR DE LA HERRAMIENTA EDR
+==========================================================================================
+
+Contexto:
+Las herramientas de EDR son componentes esenciales de los planes de respuesta, ya que
+mejoran la capacidad de identificar y eliminar amenazas mientras responden a problemas
+de seguridad.
+
+Pregunta:
+Cual es el valor de esta caracteristica de la herramienta EDR?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Minimizar el impacto de los incidentes de seguridad
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  VALOR PRINCIPAL DE EDR                                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Detecta amenazas en TIEMPO REAL                                                     │
+│  • RESPUESTA RAPIDA para contener la amenaza                                           │
+│  • Aisla endpoints infectados para evitar propagacion                                 │
+│  • Reduce el TIEMPO DE RESPUESTA (MTTR)                                                │
+│  • El objetivo final es MINIMIZAR EL DAÑO                                              │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MEJORA DE LA ESCALABILIDAD DE LA RED                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • EDR NO mejora la escalabilidad de la red                                            │
+│  • La escalabilidad es funcion del diseño de red, no de EDR                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MITIGACION DE AMENAZAS FISICAS                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • EDR protege ENDPOINTS (dispositivos), no amenazas fisicas                          │
+│  • Amenazas fisicas se mitigan con controles fisicos (camaras, guardias, etc.)         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PREVENCION DE AMENAZAS INTERNAS                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • EDR puede ayudar a detectar amenazas internas, pero NO es su valor principal        │
+│  • Su valor principal es DETECTAR y RESPONDER a amenazas en general                    │
+│  • La prevencion de amenazas internas requiere IAM, POLP, monitoreo de usuarios        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 BENEFICIOS CLAVE DE EDR
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  BENEFICIO                    │  DESCRIPCION                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  DETECCION PROACTIVA          │  Identifica amenazas avanzadas y nuevas                │
+│  RESPUESTA RAPIDA             │  Alertas en tiempo real, respuesta automatica          │
+│  GESTION EFICIENTE            │  Panel centralizado para monitorear endpoints          │
+│  REDUCCION DE IMPACTO         │  MINIMIZA el daño causado por incidentes (CORRECTO)   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - TIPO DE CAPACITACION PARA EMAILS SOSPECHOSOS
+==========================================================================================
+
+Escenario:
+Una corporacion realiza de manera regular simulacros de seguridad para evaluar la conciencia
+y la capacidad de respuesta de su personal para reconocer y marcar emails sospechosos.
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Capacitacion en phishing
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CAPACITACION EN PHISHING                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • SIMULA ataques de phishing del mundo real                                           │
+│  • Ensea a los empleados a IDENTIFICAR emails sospechosos                              │
+│  • Practica como REPORTAR intentos de phishing                                         │
+│  • Evalua la conciencia y respuesta del personal                                       │
+│  • Reduce el riesgo de caer en ataques reales                                          │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CAPACITACION RECURRENTE                                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se repite PERIODICAMENTE para reforzar conocimientos                                │
+│  • Actualiza sobre nuevas amenazas y politicas                                         │
+│  • NO se enfoca especificamente en simulaciones de phishing                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CAPACITACION DE INCORPORACION                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se da a NUEVOS EMPLEADOS al ingresar a la empresa                                   │
+│  • Cubre requisitos, riesgos y protocolos basicos                                       │
+│  • NO son simulacros regulares de phishing                                             │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CAPACITACION EN CUMPLIMIENTO                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en LEYES, REGULACIONES y requisitos de la industria                       │
+│  • Ejemplo: GDPR, HIPAA, PCI-DSS                                                       │
+│  • NO incluye simulacros de phishing                                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 COMPARACION DE TIPOS DE CAPACITACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  TIPO                      │  ENFOQUE PRINCIPAL                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  PHISHING                  │  Simular ataques para reconocer emails falsos ✓           │
+│  RECURRENTE                │  Refrescar conocimientos periodicamente                   │
+│  INCORPORACION             │  Capacitar a NUEVOS empleados                             │
+│  CUMPLIMIENTO              │  Ensenar LEYES y regulaciones                             │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - ESTRATEGIA DE CIBERSEGURIDAD
+==========================================================================================
+
+Escenario:
+Una compañia implementa la segmentacion de la red, la autenticacion multifactor y la
+capacitacion periodica de los empleados.
+
+Pregunta:
+Que estrategia de ciberseguridad ilustra este escenario?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Capas
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SEGURIDAD POR CAPAS (DEFENSE IN DEPTH)                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Consiste en implementar MULTIPLES niveles de seguridad                              │
+│  • Si una capa falla, las otras continúan protegiendo                                 │
+│  • Ninguna medida por si sola es suficiente                                            │
+│                                                                                         │
+│  En el escenario:                                                                       │
+│                                                                                         │
+│  CAPA 1: Segmentacion de la red (control de trafico)                                   │
+│  CAPA 2: Autenticacion multifactor (control de acceso)                                 │
+│  CAPA 3: Capacitacion de empleados (factor humano)                                     │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  INTEGRACION                                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se refiere a como diferentes sistemas trabajan juntos                               │
+│  • NO es la estrategia principal que describe multiples capas de seguridad            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  REDUNDANCIA                                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Consiste en tener DUPLICADOS de sistemas para evitar caidas                         │
+│  • Ejemplo: servidores espejo, fuentes de poder redundantes                            │
+│  • NO describe diferentes TIPOS de medidas de seguridad                                │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  COMPLEJIDAD                                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se refiere a lo dificil que es entender o gestionar un sistema                      │
+│  • NO es una estrategia de seguridad deseable (la complejidad excesiva es mala)        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 EJEMPLO DE SEGURIDAD POR CAPAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CAPA                      │  MEDIDA DE SEGURIDAD                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  CAPA FISICA              │  Guardias, camaras, puertas con cerradura                   │
+│  CAPA DE RED              │  Firewalls, segmentacion, IDS/IPS                           │
+│  CAPA DE ACCESO           │  Autenticacion multifactor (MFA), RBAC                      │
+│  CAPA DE APLICACION       │  Firewalls de aplicaciones (WAF), cifrado                   │
+│  CAPA DE DATOS            │  Cifrado de datos en reposo y en transito                   │
+│  CAPA HUMANA              │  Capacitacion, concienciacion, simulacros de phishing       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  El escenario describe TRES medidas de seguridad diferentes:
+
+  1. Segmentacion de red → protege la red
+  2. Autenticacion multifactor → protege el acceso
+  3. Capacitacion de empleados → protege el factor humano
+
+  Esto es SEGURIDAD POR CAPAS (defense in depth).
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - TIPO DE SISTEMA OPERATIVO
+==========================================================================================
+
+Escenario:
+TechServe emplea un sistema de ciberseguridad que requiere un sistema operativo optimizado
+para tareas como: navegacion web, acceso a email, creacion de documentos y diseño grafico.
+
+Pregunta:
+Que tipo de sistema operativo seria la opcion mas adecuada para sus necesidades?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Sistema operativo de la estacion de trabajo
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SISTEMA OPERATIVO DE ESTACION DE TRABAJO (WORKSTATION OS)                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Diseñado para TAREAS DE USUARIO FINAL                                               │
+│  • Optimizado para INTERFAZ GRAFICA y aplicaciones de escritorio                       │
+│  • Ejemplos: Windows 10/11, macOS, Linux (Ubuntu, Fedora)                              │
+│                                                                                         │
+│  Las tareas mencionadas son tipicas de una estacion de trabajo:                        │
+│  • Navegacion web                                                                      │
+│  • Acceso a email                                                                      │
+│  • Creacion de documentos                                                              │
+│  • Diseño grafico                                                                      │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SISTEMA OPERATIVO MOVIL                                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Diseñado para dispositivos MOVILES (smartphones, tablets)                           │
+│  • Ejemplos: Android, iOS                                                              │
+│  • NO es optimo para diseño grafico o creacion extensiva de documentos                │
+│  • Las aplicaciones son mas limitadas que en una estacion de trabajo                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SISTEMA OPERATIVO DE SERVIDOR                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Diseñado para SERVIDORES (servir recursos a otros equipos)                          │
+│  • Ejemplos: Windows Server, Linux Server (Red Hat, Ubuntu Server)                     │
+│  • Optimizado para: manejo de conexiones, bases de datos, servicios web                │
+│  • NO esta optimizado para tareas de usuario final como diseño grafico                 │
+│  • Generalmente NO tiene interfaz grafica                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 COMPARACION DE SISTEMAS OPERATIVOS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  TIPO DE SO               │  USO PRINCIPAL                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  ESTACION DE TRABAJO      │  Tareas de USUARIO FINAL (web, email, documentos) ✓       │
+│  MOVIL                    │  Dispositivos MOVILES (smartphones, tablets)               │
+│  SERVIDOR                 │  Proveer SERVICIOS a otros equipos                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  Navegacion web, email, documentos y diseño grafico son tareas de USUARIO FINAL.
+  Estas tareas se realizan en ESTACIONES DE TRABAJO.
+  Por lo tanto, se necesita un SISTEMA OPERATIVO DE ESTACION DE TRABAJO.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - AMENAZA DE CIBERSEGURIDAD EN LA NUBE
+==========================================================================================
+
+Escenario:
+CyberSecure experimenta una brecha resultante de la configuracion incorrecta de su
+infraestructura en la nube, que expone los datos de los clientes. Esta violacion implica
+el uso de soluciones tecnologicas no autorizadas dentro de la organizacion.
+
+Pregunta:
+Que amenaza ejemplifica este escenario?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Configuracion incorrecta de la nube
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CONFIGURACION INCORRECTA DE LA NUBE (CLOUD MISCONFIGURATION)                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Es UNA DE LAS PRINCIPALES CAUSAS de brechas en la nube                              │
+│  • Ocurre cuando los recursos en la nube estan MAL CONFIGURADOS                        │
+│  • Ejemplos: buckets de almacenamiento PUBLICOS, puertos abiertos,                     │
+│    permisos excesivos, cifrado desactivado                                             │
+│                                                                                         │
+│  En el escenario:                                                                       │
+│  • "configuracion incorrecta de su infraestructura en la nube" → CAUSA DIRECTA         │
+│  • "expone los datos de los clientes" → CONSECUENCIA                                   │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  IDENTIDADES MAL GESTIONADAS                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se refiere a MAL manejo de usuarios, credenciales y permisos                        │
+│  • Ejemplo: cuentas sin revocar, falta de MFA                                          │
+│  • NO es la causa principal mencionada en el escenario                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DENEGACION DE SERVICIO (DOS)                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un ataque que busca SATURAR recursos para que no esten disponibles               │
+│  • Causa INDISPONIBILIDAD, no exposicion de datos                                      │
+│  • NO coincide con el escenario                                                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  USO NO AUTORIZADO DE CARGAS DE TRABAJO EN LA NUBE (TI EN LA SOMBRA)                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se refiere al uso de SERVICIOS NO APROBADOS por empleados                           │
+│  • Ejemplo: usar Dropbox personal para guardar datos de la empresa                     │
+│  • Es una CAUSA POSIBLE (mencionada en el escenario), pero la brecha fue por           │
+│    CONFIGURACION INCORRECTA de la infraestructura                                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 COMPARACION DE AMENAZAS EN LA NUBE
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  AMENAZA                      │  DESCRIPCION                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  CONFIGURACION INCORRECTA     │  Recursos MAL CONFIGURADOS (buckets publicos, etc.) ✓  │
+│  IDENTIDADES MAL GESTIONADAS  │  Credenciales debiles, falta de MFA                    │
+│  DOS                          │  Saturar recursos para causar caida                     │
+│  TI EN LA SOMBRA              │  Uso de servicios NO APROBADOS por empleados            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  La causa DIRECTA de la brecha fue la CONFIGURACION INCORRECTA de la nube.
+
+  La TI en la sombra (uso no autorizado) puede haber contribuido, pero el problema
+  principal que permitio la exposicion fue la MALA CONFIGURACION.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - COMPONENTE DE GOBERNANZA (CORREGIDO)
+==========================================================================================
+
+Escenario:
+Buy4You establecio una regla de que todos los dispositivos de red deben tener firmware
+actualizado y parches de seguridad aplicados dentro de las dos semanas posteriores al
+lanzamiento.
+
+Pregunta:
+Que componente de gobernanza describe mejor este ejemplo?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Directrices
+
+==========================================================================================
+📌 EXPLICACION CORREGIDA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DIRECTRICES (GUIDELINES)                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Son RECOMENDACIONES o LINEAMIENTOS generales                                        │
+│  • Indican el COMPORTAMIENTO ESPERADO                                                  │
+│  • No son estrictamente obligatorias (no tienen sanciones explicadas)                  │
+│  • Ejemplo: "Los dispositivos deben actualizarse dentro de 2 semanas"                  │
+│                                                                                         │
+│  DIFERENCIA CLAVE:                                                                     │
+│  • Politica: "Es obligatorio actualizar" (con consecuencias por incumplimiento)        │
+│  • Directriz: "Se debe actualizar dentro de 2 semanas" (recomendacion fuerte)          │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO ENCAJAN
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  POLITICAS                                                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Son reglas OBLIGATORIAS con consecuencias claras por incumplimiento                 │
+│  • El escenario NO menciona sanciones ni consecuencias                                 │
+│  • Por eso el sistema lo considero INCORRECTO                                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ESTANDARES                                                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Definen REQUISITOS TECNICOS ESPECIFICOS (versiones, configuraciones exactas)        │
+│  • El escenario NO especifica que firmware version ni que parches                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PROCEDIMIENTOS                                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Describen PASOS ESPECIFICOS para realizar una tarea                                 │
+│  • El escenario NO da una secuencia de pasos                                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 COMPARACION FINAL
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  COMPONENTE         │  ENFOQUE                     │  EJEMPLO                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  POLITICA           │  Regla obligatoria           │  "Es obligatorio actualizar"      │
+│  DIRECTRIZ          │  Recomendacion / lineamiento │  "Actualizar en 2 semanas" ✓       │
+│  ESTANDAR           │  Requisito tecnico exacto    │  "Firmware v2.0 o superior"       │
+│  PROCEDIMIENTO      │  Pasos especificos           │  "Paso 1, Paso 2, Paso 3"         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - VULNERABILIDAD EN IMPRESORA INALAMBRICA
+==========================================================================================
+
+Escenario:
+Confias en una impresora inalambrica en tu oficina para imprimir documentos importantes.
+Recientemente, notaste que la impresora a veces imprime contenido no relacionado o ilegible
+y experimenta fallas inesperadas. Tras la investigacion, descubres que la impresora tiene
+una vulnerabilidad que permite a personas no autorizadas controlar la impresora y manipular
+sus operaciones a distancia.
+
+Pregunta:
+Que vulnerabilidad describe este escenario?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Vulnerabilidad del control remoto en el firmware
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  VULNERABILIDAD DEL CONTROL REMOTO EN EL FIRMWARE                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • El FIRMWARE es el software interno del dispositivo                                  │
+│  • Una vulnerabilidad en el firmware puede permitir CONTROL REMOTO                     │
+│  • Atacantes pueden MANIPULAR las operaciones del dispositivo                         │
+│  • Esto explica: impresiones no relacionadas, fallas inesperadas                       │
+│                                                                                         │
+│  En el escenario:                                                                       │
+│  • "Permite a personas no autorizadas CONTROLAR la impresora" → CLAVE                  │
+│  • "Manipular sus operaciones a distancia" → CONTROL REMOTO                            │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  FALTA DE CIFRADO DE DATOS                                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Permite que alguien INTERCEPTE o LEA los datos enviados                             │
+│  • NO permite CONTROLAR la impresora ni manipular sus operaciones                      │
+│  • No explica las impresiones no relacionadas                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DESBORDAMIENTO DE BUFFER EN EL SOFTWARE                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Permite ejecutar CODIGO MALICIOSO en el dispositivo                                 │
+│  • PODRIA permitir control remoto, pero es un tipo ESPECIFICO de vulnerabilidad        │
+│  • El escenario NO describe un desbordamiento de búfer                                │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CROSS-SITE SCRIPTING (XSS) EN APLICACIONES WEB                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Afecta a APLICACIONES WEB, no a impresoras                                          │
+│  • Permite inyectar codigo malicioso en sitios web                                     │
+│  • NO es relevante para este escenario                                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 COMPARACION DE VULNERABILIDADES
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  VULNERABILIDAD                       │  EFECTO PRINCIPAL                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  CONTROL REMOTO EN FIRMWARE           │  CONTROL TOTAL del dispositivo ✓               │
+│  FALTA DE CIFRADO                     │  INTERCEPCION de datos (lectura)               │
+│  DESBORDAMIENTO DE BUFFER             │  EJECUCION DE CODIGO malicioso                 │
+│  CROSS-SITE SCRIPTING                 │  INYECCION en aplicaciones web                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  Las señales clave son:
+  • "CONTROLAR la impresora"
+  • "MANIPULAR sus operaciones"
+  • "A DISTANCIA"
+
+  Esto indica una vulnerabilidad de CONTROL REMOTO en el FIRMWARE del dispositivo.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - FASE DE RESPUESTA A INCIDENTES
+==========================================================================================
+
+Escenario:
+Durante un ciberataque reciente, el equipo de respuesta a incidentes identifico rapidamente
+la superficie de ataque, evaluo la gravedad del ataque y desarrollo una estrategia de
+priorizacion de amenazas. A continuacion, investigaron y mitigaron el ataque, restablecieron
+las operaciones y tomaron medidas preventivas para reducir la posibilidad de que se repitiera.
+
+Pregunta:
+Que fase de respuesta a incidentes se describe en este escenario?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Contencion y erradicacion
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  LAS 4 FASES DE RESPUESTA A INCIDENTES                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  1. PREPARACION          → Antes del ataque (planificar, capacitar, herramientas)      │
+│  2. DETECCION Y ANALISIS → Identificar y analizar el incidente                         │
+│  3. CONTENCION Y         → DETENER la propagacion, ELIMINAR la amenaza,               │
+│     ERRADICACION           RESTAURAR operaciones ✓                                     │
+│  4. RECUPERACION         → Restaurar sistemas, aprender, mejorar                       │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+🔍 ANALISIS DEL ESCENARIO
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ACCION DEL EQUIPO                    │  FASE QUE CORRESPONDE                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Identificar superficie de ataque     │  Deteccion y analisis                          │
+│  Evaluar gravedad                     │  Deteccion y analisis                          │
+│  Desarrollar priorizacion             │  Deteccion y analisis                          │
+│  INVESTIGAR el ataque                 │  CONTENCION Y ERRADICACION ✓                   │
+│  MITIGAR el ataque                    │  CONTENCION Y ERRADICACION ✓                   │
+│  RESTABLECER operaciones              │  CONTENCION Y ERRADICACION / Recuperacion      │
+│  Tomar medidas preventivas            │  Recuperacion (lecciones aprendidas)           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  RECUPERACION                                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en RESTAURAR sistemas despues de erradicar la amenaza                     │
+│  • Incluye: copias de seguridad, reincorporar sistemas, monitorear                     │
+│  • El escenario incluye restablecer operaciones, PERO tambien investigar y mitigar     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DETECCION Y ANALISIS                                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en IDENTIFICAR que algo esta pasando                                      │
+│  • Incluye: monitoreo, alertas, analisis de logs                                       │
+│  • El escenario describe acciones posteriores (mitigar, restablecer)                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PREPARACION                                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Ocurre ANTES del ataque                                                             │
+│  • Incluye: planificar, capacitar, tener herramientas listas                           │
+│  • El escenario describe acciones DURANTE el ataque                                    │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  Las acciones clave son: INVESTIGAR, MITIGAR y RESTABLECER.
+
+  Esto corresponde a la fase de CONTENCION Y ERRADICACION.
+
+  (Algunas acciones iniciales pertenecen a Deteccion y analisis, pero el nucleo
+   del proceso descrito es la respuesta activa para detener y eliminar la amenaza.)
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - PRINCIPIO DE SEGURIDAD DE APLICACIONES EN LA NUBE
+==========================================================================================
+
+Escenario:
+CyberSecure evalua rutinariamente los posibles puntos debiles y puntos de acceso que los
+actores maliciosos podrian aprovechar para infiltrarse en sus activos en la nube. Utilizan
+herramientas automatizadas e inspecciones manuales para detectar activamente amenazas y
+vulnerabilidades.
+
+Pregunta:
+Que principio de seguridad de aplicaciones en la nube demuestra este escenario?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Monitorear la superficie de ataque
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MONITOREAR LA SUPERFICIE DE ATAQUE                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Evalua PERIODICAMENTE las posibles VULNERABILIDADES                                 │
+│  • Identifica PUNTOS DE ENTRADA que los atacantes podrian usar                          │
+│  • Emplea herramientas AUTOMATIZADAS y revisiones MANUALES                             │
+│  • Busca activamente amenazas y vulnerabilidades                                       │
+│                                                                                         │
+│  En el escenario:                                                                       │
+│  • "Evaluar rutinariamente puntos debiles" → coincide                                   │
+│  • "Puntos de acceso que los atacantes podrian aprovechar" → superficie de ataque       │
+│  • "Herramientas automatizadas e inspecciones manuales" → monitoreo activo              │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CENTRARSE EN EL ADVERSARIO                                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en COMPRENDER las motivaciones, tacticas y tecnicas del atacante           │
+│  • Es un enfoque PROACTIVO (pensar como el atacante)                                   │
+│  • El escenario NO menciona analisis de motivaciones del adversario                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  REDUCIR EL RIESGO DE EXPOSICION                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en MINIMIZAR el riesgo de que usuarios NO AUTORIZADOS accedan              │
+│  • Incluye: controles de acceso, cifrado, evaluaciones de seguridad                     │
+│  • El escenario se centra en IDENTIFICAR puntos debiles, no en REDUCIR exposicion       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  IMPLEMENTAR POLITICA, MARCO Y ARQUITECTURA DE SEGURIDAD                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en un ENFOQUE HOLISTICO para proteger recursos                             │
+│  • Incluye: politicas, marcos de trabajo, arquitectura                                 │
+│  • El escenario NO menciona politicas, marcos o arquitectura                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 LOS 4 PRINCIPIOS DE SEGURIDAD EN APLICACIONES EN LA NUBE
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PRINCIPIO                              │  DESCRIPCION                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  CENTRARSE EN EL ADVERSARIO             │  Pensar como el atacante                      │
+│  REDUCIR EL RIESGO DE EXPOSICION        │  Minimizar acceso no autorizado               │
+│  IMPLEMENTAR POLITICA, MARCO Y ARQUITECTURA │ Enfoque holistico                         │
+│  MONITOREAR LA SUPERFICIE DE ATAQUE     │  Evaluar puntos debiles y de entrada ✓        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  Las palabras clave son:
+  • "Evaluar puntos debiles"
+  • "Puntos de acceso"
+  • "Herramientas automatizadas e inspecciones manuales"
+
+  Esto es MONITOREAR LA SUPERFICIE DE ATAQUE.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - COMPONENTE DE CAPACITACION EN CIBERSEGURIDAD
+==========================================================================================
+
+Escenario:
+Un programa de capacitacion en ciberseguridad educa a los empleados sobre la importancia
+de usar contraseñas seguras para acceder o usar la informacion de la compañia.
+
+Pregunta:
+Cual de los siguientes describe este componente de capacitacion?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Almacenamiento de datos confidenciales
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ALMACENAMIENTO DE DATOS CONFIDENCIALES                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Ensea sobre CONTRASEÑAS SEGURAS                                                     │
+│  • Explica la importancia de NO REUTILIZAR contraseñas                                 │
+│  • Advierte sobre NO COMPARTIR contraseñas                                             │
+│  • Recomienda el uso de ADMINISTRADORES DE CONTRASEÑAS                                 │
+│  • Protege el acceso a datos sensibles                                                 │
+│                                                                                         │
+│  En el escenario:                                                                       │
+│  • "Usar contraseñas seguras" → componente de ALMACENAMIENTO DE DATOS CONFIDENCIALES   │
+│  • "Acceder a informacion de la compañia" → protege datos sensibles                    │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  NAVEGACION SEGURA                                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en NAVEGAR POR INTERNET de manera segura                                  │
+│  • Incluye: evitar sitios maliciosos, no descargar archivos no autorizados             │
+│  • Actualizar navegadores                                                              │
+│  • NO trata sobre contraseñas                                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PROTECCION DE COMPUTADORAS (SEGURIDAD DEL DISPOSITIVO)                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en PROTEGER LOS DISPOSITIVOS                                               │
+│  • Incluye: firewalls, antimalware, actualizaciones                                    │
+│  • Autenticacion multifactor (MFA)                                                     │
+│  • NO trata especificamente sobre CONTRASEÑAS SEGURAS                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  INGENIERIA SOCIAL                                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en ENGAÑOS para que los empleados revelen informacion                     │
+│  • Incluye: phishing, pretexting, baiting                                              │
+│  • Ensea a IDENTIFICAR intentos de ingenieria social                                   │
+│  • NO trata sobre CONTRASEÑAS SEGURAS                                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 COMPONENTES DE CAPACITACION EN SEGURIDAD
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  COMPONENTE                        │  ENFOQUE PRINCIPAL                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  ALMACENAMIENTO DE DATOS CONF.     │  CONTRASEÑAS SEGURAS, proteger datos ✓            │
+│  NAVEGACION SEGURA                 │  Navegar seguro por Internet                       │
+│  PROTECCION DE COMPUTADORAS        │  Firewalls, antimalware, MFA                      │
+│  INGENIERIA SOCIAL                 │  Identificar PHISHING y enganos                    │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  El uso de CONTRASEÑAS SEGURAS es parte del componente:
+  "ALMACENAMIENTO DE DATOS CONFIDENCIALES"
+
+  Este componente ensena como proteger cuentas y accesos con contraseñas seguras.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - MODELO DE IMPLEMENTACION EN LA NUBE
+==========================================================================================
+
+Escenario:
+WeInvest quiere tener un control total sobre sus opciones de hardware y software y
+personalizar sus protocolos de seguridad y requisitos de cumplimiento.
+
+Pregunta:
+Que modelo de implementacion en la nube es el mas adecuado para este escenario?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Nube privada
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  NUBE PRIVADA                                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Infraestructura DEDICADA exclusivamente a una sola organizacion                    │
+│  • CONTROL TOTAL sobre hardware y software                                             │
+│  • PERSONALIZACION completa de protocolos de seguridad                                 │
+│  • CUMPLIMIENTO normativo a medida                                                     │
+│  • Mayor nivel de SEGURIDAD y PRIVACIDAD                                               │
+│                                                                                         │
+│  En el escenario:                                                                       │
+│  • "Control total sobre hardware y software" → Solo nube privada lo permite            │
+│  • "Personalizar protocolos de seguridad" → Solo nube privada                         │
+│  • "Personalizar requisitos de cumplimiento" → Solo nube privada                       │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  NUBE PUBLICA                                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Infraestructura COMPARTIDA entre multiples organizaciones                           │
+│  • MENOS control (el proveedor gestiona el hardware)                                   │
+│  • Personalizacion LIMITADA                                                            │
+│  • NO es adecuada para "control total"                                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  NUBE HIBRIDA                                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Combina nube PUBLICA + PRIVADA                                                      │
+│  • Ofrece control parcial (solo en la parte privada)                                   │
+│  • NO da "control total" sobre todo el entorno                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  NUBE COMUNITARIA                                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Infraestructura COMPARTIDA entre organizaciones con INTERESES COMUNES               │
+│  • Ejemplo: varios hospitales comparten una nube                                       │
+│  • NO da "control total" (es compartida)                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 COMPARACION DE MODELOS DE NUBE
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MODELO          │  CONTROL       │  PERSONALIZACION  │  SEGURIDAD                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  NUBE PRIVADA    │  TOTAL ✓       │  COMPLETA ✓       │  MAXIMA ✓                      │
+│  NUBE HIBRIDA    │  PARCIAL       │  PARCIAL          │  ALTA                          │
+│  NUBE PUBLICA    │  BAJO          │  LIMITADA         │  MEDIA                         │
+│  NUBE COMUNITARIA│  COMPARTIDO    │  POR GRUPO        │  ALTA                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  Las palabras clave son:
+  • "CONTROL TOTAL sobre hardware y software"
+  • "PERSONALIZAR protocolos de seguridad"
+  • "PERSONALIZAR requisitos de cumplimiento"
+
+  Esto solo es posible con una NUBE PRIVADA.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - CATEGORIZACION DE VULNERABILIDAD (CORREGIDO)
+==========================================================================================
+
+Escenario:
+Un analista de seguridad realiza una evaluacion de vulnerabilidades e identifica una
+vulnerabilidad de gravedad limitada en un sistema que expone informacion no critica o
+no confidencial. A pesar de que la vulnerabilidad es relativamente sencilla de explotar,
+encuentran parches que se pueden obtener y abordan el problema de manera efectiva.
+
+Pregunta:
+Cual es la categorizacion apropiada para esta vulnerabilidad?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA (SEGUN EL SISTEMA)
+==========================================================================================
+
+Moderada
+
+==========================================================================================
+📌 EXPLICACION CORREGIDA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  NIVEL MODERADO                                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • La vulnerabilidad es RELATIVAMENTE SENCILLA DE EXPLOTAR                             │
+│  • El IMPACTO es limitado (informacion no critica)                                     │
+│  • La combinacion de BAJO IMPACTO + ALTA FACILIDAD = MODERADA                          │
+│  • Existen parches disponibles (mitigacion efectiva)                                   │
+│                                                                                         │
+│  En el escenario:                                                                       │
+│  • "Gravedad limitada" + "sencilla de explotar" → MODERADA                             │
+│  • "Informacion no critica" → el impacto es bajo                                       │
+│  • "Parches disponibles" → se puede mitigar                                            │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 COMPARACION DE CRITERIOS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  NIVEL       │  IMPACTO         │  EXPLOTACION      │  TIPO INFORMACION                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  CRITICA     │  MUY ALTO        │  REMOTA / FACIL   │  SENSIBLE / CRITICA              │
+│  ALTA        │  ALTO            │  FACIL            │  CONFIDENCIAL                    │
+│  MODERADA    │  MEDIO / LIMITADO│  SENCILLA         │  NO CRITICA ✓                    │
+│  BAJA        │  MINIMO          │  DIFICIL          │  PUBLICA                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION CORREGIDA
+==========================================================================================
+
+  La vulnerabilidad es:
+  • "Sencilla de explotar" (facilidad alta)
+  • "Informacion no critica" (impacto bajo)
+
+  La combinacion de FACIL EXPLOTACION + IMPACTO LIMITADO la clasifica como MODERADA.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - RESPONSABILIDAD CLAVE DEL SOC (MONITOREO, DETECCION Y RESPUESTA)
+==========================================================================================
+
+Escenario:
+Eres parte de un equipo del centro de operaciones de seguridad (SOC) responsable de
+proteger la red de una institucion financiera.
+
+En el area de monitoreo, deteccion y respuesta, cual de las siguientes opciones
+identifica mejor una responsabilidad clave del equipo SOC?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Respuesta a incidentes
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  AREA: MONITOREO, DETECCION Y RESPUESTA                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  Responsabilidades clave:                                                              │
+│  • Gestion de registros (logs)                                                         │
+│  • DETECCION de amenazas                                                               │
+│  • RESPUESTA A INCIDENTES ✓                                                            │
+│                                                                                         │
+│  Respuesta a incidentes incluye:                                                       │
+│  • Detectar, investigar y abordar amenazas                                             │
+│  • Mitigar el impacto                                                                  │
+│  • Prevenir incidentes futuros                                                         │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 LAS 3 CATEGORIAS DE RESPONSABILIDADES DEL SOC
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CATEGORIA                    │  ACTIVIDADES                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  PREPARACION, PLANEACION,     │  Inventario de activos, mantenimiento rutina,         │
+│  PREVENCION                   │  planeacion respuesta, pruebas                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  MONITOREO, DETECCION Y       │  Gestion de registros, DETECCION DE AMENAZAS,         │
+│  RESPUESTA                    │  RESPUESTA A INCIDENTES ✓                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  RECUPERACION, REFINAMIENTO,  │  Recuperacion, analisis post mortem,                   │
+│  CUMPLIMIENTO                 │  GESTION DEL CUMPLIMIENTO                              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO PERTENECEN A ESTA AREA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  GESTION DEL CUMPLIMIENTO                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Pertenece a la categoria: RECUPERACION, REFINAMIENTO Y CUMPLIMIENTO                │
+│  • No es parte de monitoreo, deteccion y respuesta                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MANTENIMIENTO Y PREPARACION DE RUTINA                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Pertenece a la categoria: PREPARACION, PLANEACION Y PREVENCION                      │
+│  • No es parte de monitoreo, deteccion y respuesta                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  INVENTARIO DE ACTIVOS                                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Pertenece a la categoria: PREPARACION, PLANEACION Y PREVENCION                      │
+│  • Se hace ANTES de que ocurra un incidente                                            │
+│  • No es parte de monitoreo, deteccion y respuesta                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  En el area de MONITOREO, DETECCION Y RESPUESTA,
+  la responsabilidad clave es RESPUESTA A INCIDENTES.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - TIPO DE ATAQUE DE INGENIERIA SOCIAL
+==========================================================================================
+
+Escenario:
+Un grupo de amigos recibe un mensaje de texto de un numero de telefono que dice ser DropIt,
+un servicio de entrega popular. El mensaje les informa que han ganado un premio y les pide
+informacion personal para reclamarlo.
+
+Pregunta:
+Que tipo de ataque de ingenieria social es este?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Phishing
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PHISHING                                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Ataque MASIVO (no dirigido a una persona especifica)                               │
+│  • Mensaje GENERICO (no personalizado)                                                 │
+│  • Suplanta la identidad de una entidad confiable (DropIt)                            │
+│  • Ofrece un "premio" como gancho                                                      │
+│  • Solicita INFORMACION PERSONAL                                                       │
+│                                                                                         │
+│  Por que NO es Spear Phishing:                                                         │
+│  • Spear phishing es DIRIGIDO a una persona especifica                                │
+│  • Utiliza informacion PERSONALIZADA (nombre, cargo, empresa)                          │
+│  • Aquí el mensaje llega a un GRUPO de amigos (masivo)                                 │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 COMPARACION DE ATAQUES DE INGENIERIA SOCIAL
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ATAQUE            │  DESCRIPCION                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  PHISHING          │  Masivo, generico, suplanta identidad (correo, SMS) ✓             │
+│  SPEAR PHISHING    │  Dirigido, personalizado, investiga a la victima                  │
+│  TAILGATING        │  Seguir a alguien autorizado para entrar a un lugar fisico        │
+│  SHOULDER SURFING  │  Mirar por encima del hombro para ver contraseñas                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  Es PHISHING porque:
+  • Llega a un GRUPO de personas (masivo)
+  • No esta personalizado
+  • Usa un gancho generico ("ganaron un premio")
+  • Suplanta la identidad de una empresa conocida (DropIt)
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - MODELO DE SOC
+==========================================================================================
+
+Escenario:
+CyberSecure quiere externalizar sus operaciones de seguridad a un proveedor externo y
+beneficiarse de las ultimas herramientas y experiencia en seguridad.
+
+Pregunta:
+Que modelo de SOC se alinea con estos requisitos?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+SOC como servicio (SOCaaS)
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SOC COMO SERVICIO (SOCaaS)                                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Subcontrata las operaciones de seguridad a un PROVEEDOR EXTERNO                     │
+│  • El proveedor pone el EQUIPO, las HERRAMIENTAS y la EXPERIENCIA                      │
+│  • Proporciona las ULTIMAS herramientas de seguridad                                   │
+│  • Modelo de pago por SUSCRIPCION (rentable)                                           │
+│  • Monitoreo 24/7                                                                      │
+│                                                                                         │
+│  En el escenario:                                                                       │
+│  • "Externalizar a un proveedor externo" → SOCaaS                                      │
+│  • "Ultimas herramientas y experiencia" → SOCaaS                                       │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 COMPARACION DE MODELOS DE SOC
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MODELO        │  DESCRIPCION                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  SOCaaS        │  EXTERNALIZADO: proveedor externo da todo ✓                           │
+│  V-SOC         │  EQUIPO INTERNO trabaja remoto (nube)                                 │
+│  HIBRIDO       │  INTERNO + EXTERNO                                                    │
+│  INTERNO       │  TODO INTERNO (infraestructura, personal, herramientas)               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  Las palabras clave son:
+  • "Externalizar a un proveedor externo"
+  • "Ultimas herramientas"
+  • "Experiencia en seguridad"
+
+  Esto es SOC COMO SERVICIO (SOCaaS).
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - PASO DEL MARCO DE GESTION DE RIESGOS DEL NIST
+==========================================================================================
+
+Escenario:
+Broadcasting Enterprises clasifico sus sistemas y datos en funcion del impacto potencial
+de su perdida o fracaso en las operaciones. Determinaron el nivel de daño asociado con
+cada sistema.
+
+Pregunta:
+Que paso del marco de gestion de riesgos del NIST describe mejor este escenario?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Categorizar
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO: CATEGORIZAR (NIST RISK MANAGEMENT FRAMEWORK)                                    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Se CLASIFICAN los sistemas y datos                                                  │
+│  • Se evalua el IMPACTO POTENCIAL de su perdida o fracaso                              │
+│  • Se determina el NIVEL DE DAÑO asociado                                              │
+│  • Se asigna una CATEGORIA de riesgo                                                   │
+│                                                                                         │
+│  En el escenario:                                                                       │
+│  • "Clasifico sus sistemas y datos" → CATEGORIZAR                                     │
+│  • "Impacto potencial de su perdida o fracaso" → CATEGORIZAR                          │
+│  • "Nivel de daño asociado" → CATEGORIZAR                                              │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 PASOS DEL MARCO DE GESTION DE RIESGOS DEL NIST
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO            │  DESCRIPCION                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  CATEGORIZAR     │  Clasificar sistemas y datos por IMPACTO POTENCIAL ✓                 │
+│  SELECCIONAR     │  Elegir controles de seguridad apropiados                            │
+│  IMPLEMENTAR     │  Aplicar los controles seleccionados                                 │
+│  EVALUAR         │  Verificar que los controles funcionan                              │
+│  AUTORIZAR       │  Aceptar el riesgo residual                                         │
+│  MONITOREAR      │  Supervisar continuamente                                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PREPARAR                                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Implica preparar la organizacion para la gestion de riesgos                         │
+│  • Incluye roles, responsabilidades, politicas                                         │
+│  • NO es la clasificacion de sistemas                                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  EVALUAR                                                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en EVALUAR los controles de seguridad implementados                       │
+│  • Verificar que funcionan correctamente                                               │
+│  • NO es la clasificacion inicial de sistemas                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MONITOREAR                                                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un proceso CONTINUO                                                              │
+│  • Supervisar cambios, riesgos nuevos                                                  │
+│  • NO es la clasificacion inicial de sistemas                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  Las palabras clave son:
+  • "Clasifico sus sistemas y datos"
+  • "Impacto potencial de su perdida"
+  • "Nivel de daño asociado"
+
+  Esto es el paso de CATEGORIZAR.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+NIST RISK MANAGEMENT FRAMEWORK (RMF) - MARCO DE GESTION DE RIESGOS
+==========================================================================================
+
+El NIST (National Institute of Standards and Technology) es una agencia del gobierno de EE.UU.
+Su marco de gestion de riesgos (RMF) se usa para proteger sistemas y datos.
+
+==========================================================================================
+LOS 7 PASOS DEL RMF
+==========================================================================================
+
+1. PREPARAR
+   • Establecer contexto, roles, politicas y apetito de riesgo
+   • Pregunta: ¿Quien hace que y cuales son las reglas?
+
+2. CATEGORIZAR
+   • Clasificar sistemas y datos por IMPACTO POTENCIAL de su perdida
+   • Determinar nivel de daño asociado (Bajo, Moderado, Alto)
+   • Ejemplo: Sistema critico → Alto, Sistema interno → Bajo
+
+3. SELECCIONAR
+   • Elegir controles de seguridad apropiados segun la categoria
+   • Se usa el catalogo NIST SP 800-53
+
+4. IMPLEMENTAR
+   • Aplicar los controles seleccionados
+   • Ejemplo: instalar MFA, configurar cifrado, backups
+
+5. EVALUAR
+   • Verificar que los controles funcionan correctamente
+   • Pruebas, auditorias, scans
+
+6. AUTORIZAR
+   • Aceptar formalmente el RIESGO RESIDUAL
+   • Autorizacion para operar (ATO)
+
+7. MONITOREAR
+   • Supervisar continuamente los controles
+   • Evaluar cambios en el riesgo (nuevas vulnerabilidades)
+
+==========================================================================================
+APLICACION AL ESCENARIO (Broadcasting Enterprises)
+========================================================================================┐
+
+  Ellos clasificaron sus sistemas por IMPACTO POTENCIAL y determinaron nivel de daño.
+
+  → Esto es el paso de CATEGORIZAR.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+NIST vs ISO 27001
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  NIST RMF                                   ISO 27001                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Origen: EE.UU.                             Origen: Internacional                     │
+│  Obligatorio para agencias federales        Voluntario (certificacion)                 │
+│  Enfoque: SISTEMAS                          Enfoque: ORGANIZACION completa            │
+│  7 pasos                                     Clausulas + Anexo A                        │
+│  Usa NIST SP 800-53                         Usa ISO 27002                              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+CONCLUSION: Son PRIMOS, no gemelos.
+• Si trabajas en gobierno de EE.UU. o contratista → NIST RMF
+• Si trabajas internacionalmente o quieres certificacion → ISO 27001
+• Muchas organizaciones usan AMBOS combinados
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - GRUPO EXTERNO AL EQUIPO DE IR
+==========================================================================================
+
+Escenario:
+Que grupo fuera del equipo de respuesta a incidentes ayuda proporcionando experiencia
+tecnica, comunicandose con los usuarios y ayudando a mantenerlos informados y tranquilos?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Soporte de TI
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  POR QUE ES SOPORTE DE TI                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Tiene EXPERIENCIA TECNICA                                                           │
+│  • Se comunica DIRECTAMENTE con los usuarios                                           │
+│  • Ayuda a mantenerlos INFORMADOS                                                      │
+│  • Los mantiene TRANQUILOS                                                             │
+│  • Es el puente entre el equipo IR y los usuarios                                      │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 POR QUE NO LAS OTRAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DEPARTAMENTO JURIDICO                                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Solo se involucra en aspectos LEGALES                                               │
+│  • No tiene experiencia tecnica                                                        │
+│  • No se comunica con usuarios                                                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  GESTION                                                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Toma decisiones EJECUTIVAS                                                          │
+│  • No se comunica con usuarios                                                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ASUNTOS PUBLICOS                                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Solo si el incidente trasciende a MEDIOS                                            │
+│  • No es el contacto tecnico con usuarios                                              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  El grupo que da EXPERIENCIA TECNICA y comunica a USUARIOS es:
+
+  SOPORTE DE TI.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - TIPO DE INGENIERIA SOCIAL
+==========================================================================================
+
+Escenario:
+Una persona no autorizada sigue de cerca a un empleado para obtener acceso a un area
+restringida sin la debida autorizacion.
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Tailgating
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  TAILGATING (cola, acceso por cola)                                                    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Una persona NO AUTORIZADA sigue a una autorizada                                   │
+│  • Se cuela por una puerta de seguridad (fisica)                                       │
+│  • No usa su propia tarjeta o credencial                                               │
+│  • Aprovecha la confianza o la cortesia                                                │
+│  • Ejemplo: "Disculpe, se me olvido la tarjeta ¿me abre?"                             │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 COMPARACION DE ATAQUES FISICOS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ATAQUE               │  DESCRIPCION                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  TAILGATING           │  Seguir a alguien autorizado para entrar ✓                     │
+│  PIGGYBACKING         │  Similar, pero con CONOCIMIENTO del empleado                   │
+│  SHOULDER SURFING     │  Mirar por encima del hombro para ver PASSWORD                 │
+│  DUMPSTER DIVING      │  Bucear en contenedores en busca de documentos                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  BUCEO EN CONTENEDORES (DUMPSTER DIVING)                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Buscar documentos o dispositivos en la basura                                       │
+│  • No implica seguir a alguien                                                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SHOULDER SURFING                                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Observar por encima del hombro mientras alguien teclea                             │
+│  • Robo de contraseñas, datos visibles                                                 │
+│  • No es seguimiento fisico                                                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SPEAR PHISHING                                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Ataque DIRIGIDO por correo electronico o mensajes                                  │
+│  • Personalizado, no es fisico                                                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  La descripcion:
+  • "Sigue de cerca a un empleado"
+  • "Para obtener acceso a un area restringida"
+
+  Es TAILGATING.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - ASPECTO DE CIBERSEGURIDAD
+==========================================================================================
+
+Escenario:
+WeInvest experimenta una interrupcion disruptiva en su infraestructura basada en la nube.
+
+Para garantizar la continuidad del negocio y acelerar la recuperacion de datos, la
+organizacion implementa una solucion que proporciona recuperacion ante desastres
+automatizada basada en la nube con tiempos de recuperacion rapidos.
+
+Pregunta:
+Con que aspecto de la ciberseguridad se relaciona esta pista?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Estrategia de recuperacion ante desastres como servicio (DRaaS)
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DRaaS - DISASTER RECOVERY AS A SERVICE                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Es un SERVICIO EN LA NUBE de recuperacion ante desastres                           │
+│  • AUTOMATIZADO (no requiere intervencion manual constante)                            │
+│  • TIEMPOS DE RECUPERACION RAPIDOS                                                     │
+│  • Escalable (paga por lo que usas)                                                    │
+│  • Permite continuidad del negocio                                                     │
+│                                                                                         │
+│  En el escenario:                                                                       │
+│  • "Recuperacion ante desastres automatizada" → DRaaS                                  │
+│  • "Basada en la nube" → DRaaS                                                         │
+│  • "Tiempos de recuperacion rapidos" → DRaaS                                           │
+│  • "Continuidad del negocio" → DRaaS                                                   │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 COMPARACION DE ESTRATEGIAS DE RECUPERACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ESTRATEGIA                    │  DESCRIPCION                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  DRaaS                         │  RECUPERACION AUTOMATIZADA en la NUBE ✓               │
+│  COPIA DE SEGURIDAD            │  Hacer copias (backups) para restaurar datos         │
+│  REPLICACION                   │  Duplicar datos en otra ubicacion                     │
+│  PLAN DE RECUPERACION          │  Procedimientos documentados                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ESTRATEGIA INTEGRAL DE COPIA DE SEGURIDAD Y REPLICACION                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en HACER COPIAS y REPLICAR datos                                         │
+│  • NO es automaticamente "recuperacion ante desastres como servicio"                  │
+│  • Es parte de una estrategia, pero no el servicio especifico                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ESTRATEGIA DE CIFRADO DE DATOS                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en PROTEGER datos (confidencialidad)                                      │
+│  • NO se relaciona con recuperacion ante desastres                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ESTRATEGIA DE SEGURIDAD DE LA RED                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se enfoca en PROTEGER el trafico de red                                            │
+│  • NO se relaciona con recuperacion ante desastres                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  La solucion descrita es:
+  • Recuperacion ante desastres
+  • Automatizada
+  • Basada en la nube
+  • Tiempos de recuperacion rapidos
+
+  = DRaaS (Disaster Recovery as a Service)
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - FASE DEL ANALISIS FORENSE DIGITAL (CORREGIDO)
+==========================================================================================
+
+Escenario:
+En una investigacion forense digital, los investigadores emplean software especializado
+para revelar pruebas ocultas.
+
+Pregunta:
+A que fase del analisis forense digital pertenece esta actividad?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA (SEGUN EL SISTEMA)
+==========================================================================================
+
+Fase de analisis
+
+==========================================================================================
+📌 EXPLICACION CORREGIDA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  FASE DE ANALISIS                                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • En esta fase se INTERPRETAN los datos                                               │
+│  • Se CORRELACIONA informacion de multiples fuentes                                   │
+│  • Se "REVELAN" pruebas ocultas mediante herramientas especializadas                   │
+│  • Se extraen CONCLUSIONES significativas                                              │
+│  • Se prepara la narrativa del incidente                                               │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 LAS 4 FASES (CORREGIDO)
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  FASE            │  QUE HACE                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  RECOLECCION     │  Identificar fuentes, adquirir datos, crear imagenes forenses       │
+│  EXAMEN          │  Revisar, extraer informacion, identificar datos relevantes         │
+│  ANALISIS        │  INTERPRETAR, CORRELACIONAR, REVELAR pruebas ocultas, concluir ✓    │
+│  INFORMES        │  Documentar hallazgos, preparar reporte                             │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION CORREGIDA
+==========================================================================================
+
+  "Emplean software especializado para REVELAR PRUEBAS OCULTAS"
+
+  → Segun el sistema, esto pertenece a la FASE DE ANALISIS.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - MODELO DE SERVICIO EN LA NUBE (ÚLTIMA BALA)
+==========================================================================================
+
+Escenario:
+Rose Productions es una compañia de desarrollo de software que busca una forma eficiente
+de desarrollar y desplegar aplicaciones mientras reduce el tiempo y los costos rapidamente.
+
+Pregunta:
+Que modelo de servicio de computacion en la nube satisface mejor las necesidades de la
+compañia?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Plataforma como servicio (PaaS)
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  POR QUE PaaS ES LA RESPUESTA CORRECTA                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Es una empresa de DESARROLLO DE SOFTWARE                                           │
+│  • Necesita DESARROLLAR y DESPLEGAR aplicaciones                                      │
+│  • Quiere REDUCIR TIEMPO y COSTOS                                                     │
+│  • PaaS da:                                                                           │
+│    - Entorno de desarrollo preconfigurado                                             │
+│    - Herramientas de desarrollo integradas                                            │
+│    - Runtime para ejecutar aplicaciones                                               │
+│    - Escalado automatico                                                              │
+│    - Pago por uso                                                                     │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 POR QUE NO LAS OTRAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  IaaS (Infraestructura como servicio)                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Da servidores, almacenamiento, redes                                               │
+│  • Requiere que la empresa administre OS, middleware, runtime                         │
+│  • NO es la opcion mas eficiente para desarrollo rapido                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SaaS (Software como servicio)                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Da aplicaciones LISTAS PARA USAR (ej. Gmail, Office 365)                           │
+│  • NO se desarrollan aplicaciones propias                                             │
+│  • NO sirve para una empresa de desarrollo de software                                │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DBaaS (Base de datos como servicio)                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Solo da base de datos gestionada                                                   │
+│  • NO da el entorno completo para desarrollar y desplegar aplicaciones                │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📊 COMPARACION RAPIDA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MODELO        │  IDEAL PARA                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  PaaS          │  DESARROLLADORES que quieren CODIFICAR sin administrar servidores ✓   │
+│  IaaS          │  Empresas que necesitan CONTROL TOTAL sobre servidores virtuales      │
+│  SaaS          │  Usuarios finales que quieren USAR software listo                     │
+│  DBaaS         │  Empresas que solo necesitan una BASE DE DATOS gestionada             │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  Rose Productions quiere DESARROLLAR y DESPLEGAR aplicaciones.
+
+  → El modelo es PLATAFORMA COMO SERVICIO (PaaS).
+
+==========================================================================================
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
