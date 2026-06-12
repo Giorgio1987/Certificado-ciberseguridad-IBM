@@ -69,3 +69,15 @@ A continuación, detallo los módulos del programa. Iré marcando cada uno confo
 # Clases :
 
 *Clase intro* [https://youtu.be/Hyj7B\_7HJ2o## 📌 Mi progreso en Ciberseguridad](https://youtu.be/Hyj7B_7HJ2o)
+
+*Clase 1* [https://youtu.be/J8xxl3Kmm-k📌] 
+
+*Clase 2* [https://youtu.be/tR_R42rZY9M📌 ]
+
+*Clase 3* [https://youtu.be/PlzMpE8Y-wc📌 ]
+
+*Clase 4* [https://youtu.be/iXgjjFtLzuo 📌 ]
+
+*Clase 5* [https://youtu.be/xUdQN32zCas 📌 ]
+
+

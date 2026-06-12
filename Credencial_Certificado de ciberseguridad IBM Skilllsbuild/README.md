@@ -3293,33 +3293,3050 @@ Plataforma como servicio (PaaS)
 ```
 
 ```
+==========================================================================================
+🎯 PROYECTO FINAL DE CIBERSEGURIDAD - PARTE 1 Y 2
+==========================================================================================
+
+Bienvenido a la parte 1 del Proyecto Final de Ciberseguridad.
+
+Este proyecto es la primera de las dos partes del proyecto final del Certificado
+IBM SkillsBuild en Ciberseguridad: Mejorar la Ciberseguridad Organizacional y la
+Respuesta a Incidentes.
+
+==========================================================================================
+📌 EMPRESA DEL CASO: BRISTOL Y ASOCIADOS
+========================================================================================┐
+
+  • Pequeño bufete de abogados
+  • Sufrio un ataque de malware
+  • Objetivo: evaluar y mejorar su postura de ciberseguridad
+
+==========================================================================================
+🎯 PARTE 1: RESPONDER A UN INCIDENTE DE CIBERSEGURIDAD
+==========================================================================================
+
+  • CONTENER la amenaza identificando, justificando e implementando tacticas de
+    mitigacion de amenazas
+  • INVESTIGAR la amenaza para determinar su origen
+
+==========================================================================================
+🎯 PARTE 2: ASEGURAR LA INFRAESTRUCTURA DE LA ORGANIZACION
+==========================================================================================
+
+  • REFORZAR la postura de ciberseguridad para prevenir futuros incidentes
+  • Reconocimiento de red
+  • Gestion de riesgos
+  • Diseno de redes seguras
+  • Medidas de seguridad en la nube
+  • Configuracion del SOC
+
+==========================================================================================
+📚 APRENDIZAJE PREVIO (MODULOS REQUERIDOS)
+==========================================================================================
+
+  • Datos y privacidad
+  • Gobernanza, riesgo y cumplimiento
+  • Amenazas y vulnerabilidades
+  • Gestion de vulnerabilidades
+  • Seguridad del sistema
+  • Seguridad de la red
+  • Computacion en la nube y virtualizacion
+  • Proteccion de la infraestructura en la nube
+  • Operaciones de seguridad
+  • Monitoreo de seguridad
+  • Respuesta a incidentes
+  • Analisis forense de sistemas digitales
+
+==========================================================================================
+✅ COMPETENCIAS - PARTE 1
+==========================================================================================
+
+  • Aplicar un marco de respuesta a incidentes adecuado
+  • Justificar tacticas de mitigacion de amenazas
+  • Categorizar vulnerabilidades por gravedad para priorizar controles
+  • Proteger un sistema operativo host
+  • Actualizar firmware en un dispositivo
+  • Investigar informes de incidentes a traves de analisis forense digital
+  • Crear una imagen de unidad
+  • Analizar pruebas forenses digitales
+
+==========================================================================================
+✅ COMPETENCIAS - PARTE 2
+==========================================================================================
+
+  • Realizar reconocimiento de red
+  • Disenar una red segura
+  • Aplicar el modelo de despliegue en la nube adecuado
+  • Gestionar endpoints
+  • Distinguir entre modelos de seguridad estandar
+  • Asignar roles y tareas del SOC
+  • Evaluar el riesgo
+  • Analizar el impacto de amenazas de ciberseguridad
+  • Desarrollar un plan de copia de seguridad y recuperacion
+  • Aplicar el cifrado de archivos y unidades
+
+==========================================================================================
+🧠 HABILIDADES PRACTICADAS
+==========================================================================================
+
+  ┌─────────────────────────────────────────────────────────────────────────────────────┐
+  │  PENSAMIENTO CRITICO                                                               │
+  │  • Evaluar la postura de seguridad                                                 │
+  │  • Analizar impacto de amenazas                                                    │
+  │  • Justificar tacticas de mitigacion                                               │
+  └─────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─────────────────────────────────────────────────────────────────────────────────────┐
+  │  PENSAMIENTO CREATIVO                                                              │
+  │  • Asegurar sistema operativo host                                                 │
+  │  • Actualizar firmware                                                             │
+  │  • Disenar redes seguras                                                           │
+  │  • Desarrollar planes de seguridad                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─────────────────────────────────────────────────────────────────────────────────────┐
+  │  RESOLUCION DE PROBLEMAS                                                           │
+  │  • Identificar vulnerabilidades                                                    │
+  │  • Disenar redes seguras                                                           │
+  │  • Desarrollar planes de respuesta a incidentes                                    │
+  └─────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─────────────────────────────────────────────────────────────────────────────────────┐
+  │  HABILIDADES ANALITICAS                                                            │
+  │  • Reconocimiento de red                                                           │
+  │  • Evaluar riesgos                                                                 │
+  │  • Categorizar vulnerabilidades                                                    │
+  │  • Analizar evidencia forense digital                                              │
+  └─────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─────────────────────────────────────────────────────────────────────────────────────┐
+  │  AGILIDAD DE APRENDIZAJE                                                           │
+  │  • Usar Nmap para reconocimiento de red                                            │
+  │  • Usar Autopsy para analisis forense digital                                      │
+  │  • Aplicar marcos de ciberseguridad                                                │
+  └─────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─────────────────────────────────────────────────────────────────────────────────────┐
+  │  ATENCION AL DETALLE                                                               │
+  │  • Evaluar riesgos                                                                 │
+  │  • Analizar pruebas forenses                                                       │
+  │  • Implementar medidas de seguridad                                                │
+  └─────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+```
+* Descripción general
+* En el paso 1, investigar un incidente, revisarás la inteligencia sobre amenazas para comprender el malware implicado en el ataque a Bristol y Asociados. A continuación, identificarás y justificarás las tácticas de mitigación de amenazas para contener y erradicar el malware, y luego priorizarás los controles de seguridad que la compañía implementará. 
+
+* En el paso 2, mitigar la amenaza, realizarás varias tareas para contener y erradicar el malware. En primer lugar, configurarás el firewall del host en una de las estaciones de trabajo de la compañía para demostrar el proceso al personal informático de Bristol y Asociados. A su vez, ellos configurarán los firewall de las demás estaciones de trabajo. A continuación, actualizarás el firmware del router de la oficina para reforzar la red. 
+
+* En el paso 3, emplea la ciencia forense digital para determinar el origen de la amenaza, investigarás el incidente para determinar su origen. Explicarás cómo debe recoger y conservar el equipo informático las pruebas forenses digitales. A continuación, crearás una imagen completa de la fuente de datos relevante para la investigación: la unidad de disco duro de un portátil perteneciente a un posible sospechoso. A continuación, analizarás la imagen de la unidad. Emplearás una herramienta de recuperación de datos para buscar en la imagen archivos borrados que impliquen al sospechoso en el ataque de malware.
+
+
+```
+==========================================================================================
+🏢 CASO: BRISTOL AND ASSOCIATES - INFORMACION DE FONDO
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  EMPRESA                                                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Pequeño bufete de abogados                                                         │
+│  • Edificio de oficinas modesto                                                        │
+│  • Pequeña red de servidores y dispositivos de red interconectados                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  TU ROL                                                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Analista de ciberseguridad contratado                                               │
+│  • Primer dia de trabajo                                                               │
+│  • En lugar de papeleo normal → enorme desafio de ciberseguridad                       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CONTACTO CLAVE                                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Szarka Attila - Directora de TI                                                     │
+│  • Reporta: caidas frecuentes del sistema + rendimiento lento de la red                │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+🔍 IRREGULARIDADES DETECTADAS
+==========================================================================================
+
+  • Servidores que se comportan de manera extrana
+  • Transferencias de datos a horas inusuales
+  • Entradas de registro sospechosas
+
+==========================================================================================
+🦠 CODIGOS MALICIOSOS IDENTIFICADOS (3 TIPOS)
+==========================================================================================
+
+  ┌─────────────────────────────────────────────────────────────────────────────────────┐
+  │  1. IMPACKET                                                                        │
+  │     • Biblioteca de scripts de Python                                               │
+  │     • Usada por evaluadores (pen testers) y grupos de ransomware                    │
+  │     • Permite transferencias de datos NO AUTORIZADAS a horas inusuales              │
+  │                                                                                      │
+  │  2. GARMARUE                                                                        │
+  │     • (sin detalles aun)                                                            │
+  │                                                                                      │
+  │  3. TRICKBOT (Robot de truco)                                                       │
+  │     • (sin detalles aun)                                                            │
+  └─────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+🎯 OBJETIVOS INMEDIATOS
+==========================================================================================
+
+  • Trabajar con Szarka y el personal de TI
+  • Investigar el incidente
+  • MITIGAR la amenaza
+  • Determinar el ORIGEN del ataque
+  • Revisar inteligencia de amenazas relevante
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+🦠 LOS 3 CODIGOS MALICIOSOS - EXPLICACION FACIL
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  1. IMPACKET (HERRAMIENTA PYTHON)                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es una BIBLIOTECA DE SCRIPTS DE PYTHON                                              │
+│  • Permite interactuar con protocolos de red                                          │
+│  • Los atacantes la usan para:                                                        │
+│    - Moverse lateralmente                                                              │
+│    - Ejecutar comandos en otras PCs                                                    │
+│    - TRANSFERIR DATOS NO AUTORIZADOS a horas raras (lo que paso en el caso)            │
+│                                                                                         │
+│  Analogia: Es como tener una LLAVE MAESTRA que abre muchas puertas                   │
+│            si sabes programar.                                                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  2. GARMARUE (GUSANO / WORM)                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un GUSANO que se PROPAGA SOLO                                                   │
+│  • Se replica a traves de:                                                            │
+│    - Unidades USB                                                                      │
+│    - Unidades de red compartidas                                                      │
+│  • Tambien puede:                                                                     │
+│    - Robar credenciales                                                                │
+│    - Descargar OTROS malware                                                          │
+│                                                                                         │
+│  Analogia: Es como un VIRUS que se pega a USBs y salta de computadora en computadora  │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  3. TRICKBOT (TROJAN BANCARIO MODULAR)                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un TROJAN avanzado (modular)                                                    │
+│  • Comenzo robando datos bancarios                                                     │
+│  • Hoy puede:                                                                          │
+│    - Robar credenciales                                                                │
+│    - Moverse lateralmente                                                              │
+│    - DESCARGAR RANSOMWARE (Conti, Ryuk)                                                │
+│    - Comunicarse con servidores C2 (comando y control)                                │
+│                                                                                         │
+│  Analogia: Es un "CAMALEON" que cambia de funcion segun lo que le orden el atacante   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 COMO ACTUARIAN JUNTOS EN EL ATAQUE (POSIBLE ESCENARIO)
+==========================================================================================
+
+  1. GARMARUE entra por una USB infectada o red compartida
+  2. IMPACKET se usa para moverse lateralmente y transferir datos a horas raras
+  3. TRICKBOT se instala, roba credenciales y prepara el terreno para ransomware
+
+  = ATAQUE COORDINADO CON MULTIPLES HERRAMIENTAS
+
+==========================================================================================
+✅ QUE HACER SEGUN EL CASO
+==========================================================================================
+
+  • Contener: aislar equipos infectados, bloquear comunicaciones C2
+  • Erradicar: limpiar los tres malwares con herramientas especificas
+  • Investigar: revisar logs, USBs conectadas, horarios de transferencia
+  • Prevenir: deshabilitar scripts no autorizados, actualizar firmwares
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+🚪 VECTORES DE ENTRADA DE LOS MALWARE
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PHISHING (CORREO ELECTRONICO)                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Un empleado recibe un correo falso que parece legítimo                              │
+│  • Hace clic en un enlace malicioso o descarga un archivo adjunto                      │
+│  • El malware se instala silenciosamente                                               │
+│  • Ejemplo: "Factura pendiente - Haga clic para ver"                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  USB INFECTADA (ATAQUE DE MEDIO EXTRAIBLE)                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Alguien deja una USB en el estacionamiento o en la oficina                         │
+│  • Un empleado curioso la conecta a su computadora                                    │
+│  • El USB tiene malware que se ejecuta automaticamente (ej. Garmarue)                 │
+│  • O el USB contiene un archivo malicioso disfrazado de documento                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SOFTWARE SIN PARCHES (VULNERABILIDADES)                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • La empresa no actualiza sus sistemas                                               │
+│  • Un atacante explota una vulnerabilidad conocida                                    │
+│  • Entra sin necesidad de que nadie haga clic                                         │
+│  • Ejemplo: exploit de EternalBlue (usado por WannaCry)                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  INGENIERIA SOCIAL                                                                    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Atacante llama por telefono fingiendo ser soporte tecnico                          │
+│  • Convence a un empleado de instalar un programa "para ayudar"                       │
+│  • O de dar su contraseña                                                             │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DESCARGA DRIVE-BY (SITIOS WEB COMPROMETIDOS)                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Un empleado visita un sitio web legitimo que fue hackeado                          │
+│  • El sitio descarga malware automaticamente sin que el usuario haga clic             │
+│  • Se aprovecha de vulnerabilidades del navegador o plugins                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+🔍 ¿COMO SE DESCUBRE UN MALWARE? (SEÑALES DE COMPROMISO)
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SEÑALES TECNICAS (Lo que vieron en el caso)                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Caidas frecuentes del sistema                                                       │
+│  • Rendimiento LENTO de la red                                                        │
+│  • Servidores que se comportan de manera EXTRAÑA                                      │
+│  • Transferencias de datos a horas INUSUALES (ej. 3 AM)                               │
+│  • Entradas de registro (LOGS) SOSPECHOSAS                                            │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  COMO SE DETECTAN (HERRAMIENTAS Y METODOS)                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • ANTIVIRUS / EDR: Detectan firmas conocidas (ej. TrickBot)                          │
+│  • SIEM: Correlaciona eventos y alerta sobre transferencias inusuales                │
+│  • ANALISIS DE LOGS: Revisar registros del sistema                                    │
+│  • MONITOREO DE RED: Ver trafico hacia IPs sospechosas                                │
+│  • ANALISIS FORENSE: Herramientas como Autopsy para examinar discos                   │
+│  • INTELIGENCIA DE AMENAZAS: Consultar bases de datos (VirusTotal, Red Canary)        │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+==========================================================================================
+📋 APLICACION AL CASO PRACTICO
+========================================================================================┐
+
+  LO QUE SABEMOS:
+
+  1. Hay caidas frecuentes de sistema
+  2. Rendimiento lento de red
+  3. Servidores extranos
+  4. Transferencias de datos a horas inusuales
+  5. Logs sospechosos
+
+  + Se identificaron:
+     • Impacket (transferencias no autorizadas)
+     • Garmarue (propagacion)
+     • TrickBot (robo de credenciales, posible ransomware)
+
+  POSIBLE EXPLICACION:
+  • Alguien conecto una USB con Garmarue (o entro por phishing)
+  • Garmarue se propago por la red
+  • Atacante uso Impacket para moverse y transferir datos
+  • Instalo TrickBot para robar informacion del bufete
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - MITIGACION DE IMPACKET
+==========================================================================================
+
+Escenario:
+Impacket permitio transferencias de datos no autorizadas a horas inusuales.
+
+Pregunta:
+Cual es el primer paso mas efectivo para mitigar la amenaza de Impacket?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Aisla el endpoint y realice una consulta de red.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  POR QUE ES LA MEJOR OPCION                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • AISLAR el endpoint → evita que el malware siga moviendose lateralmente             │
+│  • CONSULTA DE RED → permite identificar que otras maquinas estan comprometidas       │
+│  • Tambien ayuda a detectar exfiltracion de datos                                     │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CERRAR TODA LA RED                                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es una medida EXTREMA e innecesaria                                                │
+│  • Detiene todas las operaciones de la empresa                                        │
+│  • No es el primer paso                                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  REINSTALAR SISTEMA OPERATIVO EN TODOS LOS SERVIDORES                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es una medida DRASTICA que se toma DESPUES de investigar                          │
+│  • No se hace antes de saber el alcance                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  COMUNICARSE CON LA POLICIA                                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se hace DESPUES de contener la amenaza y recopilar evidencia                       │
+│  • No es el primer paso operativo                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  El orden correcto es:
+
+  1. AISLAR el endpoint comprometido
+  2. CONSULTAR RED para ver alcance
+  3. INVESTIGAR (logs, transferencias)
+  4. ERRADICAR
+  5. RECUPERAR
+  6. NOTIFICAR autoridades si aplica
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+🦠 GAMARUE (ANDROMEDA / WAUCHOS) - INTELIGENCIA DE AMENAZAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  QUE ES GAMARUE                                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Familia de malware que opera como parte de una BOTNET                               │
+│  • Variante mas comun: GUSANO que se propaga por USB                                   │
+│  • Se usa para:                                                                        │
+│    - Propagar OTRO malware                                                             │
+│    - Robar informacion                                                                 │
+│    - Hacer fraudes de clics                                                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DATOS CLAVE                                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Fue interrumpido en 2017                                                            │
+│  • Años despues, SIGUE ACTIVO                                                         │
+│  • Aun aparece en las 10 principales amenazas                                          │
+│  • Es un signo de MALA HIGIENE DE SEGURIDAD                                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  COMO AFECTO A BRISTOL AND ASSOCIATES                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se detecto en VARIAS estaciones de trabajo                                          │
+│  • Provoco cambios NO AUTORIZADOS en configuracion del sistema                        │
+│  • Redujo el RENDIMIENTO del sistema                                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+🛡️ MEDIDAS DE MITIGACION PARA GAMARUE (SEGUN RED CANARY)
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  1. GESTION DE ACCESO A ALMACENAMIENTO EXTRAIBLE                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Usar POLITICA DE GRUPO (GPO) de Windows                                             │
+│  • Restringir acciones: LECTURA, ESCRITURA o EJECUCION desde USB                       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  2. REGLA ASR (Attack Surface Reduction) de Windows                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Habilitar regla para BLOQUEAR procesos NO CONFIABLES y NO FIRMADOS                  │
+│  • Que se ejecutan desde unidades flash USB                                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  3. DESHABILITAR REPRODUCCION AUTOMATICA (AUTORUN)                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Evita que los archivos se ejecuten AUTOMATICAMENTE al conectar un USB               │
+│  • Reduce el riesgo de infeccion sin intervencion del usuario                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  4. ESCANEAR UNIDADES EXTRAIBLES                                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Usar ANTIVIRUS que escanee USBs automaticamente durante el montaje                 │
+│  • Detectar malware antes de que se ejecute                                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ OPCIONES ADICIONALES (NO MENCIONADAS EN EL EXTRACTO PERO UTILES)
+==========================================================================================
+
+  • Educar a los empleados sobre NO conectar USBs desconocidas
+  • Usar USBs cifradas y controladas por la empresa
+  • Deshabilitar puertos USB si no son necesarios (control de endpoints)
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - MITIGACION DE GAMARUE
+==========================================================================================
+
+Escenario:
+Gamarue es un gusano que se propaga principalmente por USB.
+Provoco cambios no autorizados en configuracion y bajo rendimiento.
+
+Pregunta:
+Cual es el primer paso mas efectivo para mitigar la amenaza de Gamarue?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Deshabilita la reproduccion automatica en Windows para evitar la ejecucion automatica
+de archivos.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  POR QUE ES EL MEJOR PRIMER PASO                                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Gamarue se propaga por USB                                                          │
+│  • La reproduccion automatica (AutoRun) ejecuta archivos al conectar un USB           │
+│  • Deshabilitarla CORTA LA CADENA DE INFECCION                                        │
+│  • Es una medida RAPIDA y EFICAZ que no afecta la productividad general               │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  NOTIFICAR A LOS CLIENTES                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se hace DESPUES de contener, investigar y confirmar la filtración                  │
+│  • No es el primer paso operativo                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  APAGAR LAS ESTACIONES Y ESPERAR                                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • No resuelve el problema                                                             │
+│  • Solo detiene temporalmente la visibilidad                                          │
+│  • No es una solucion activa                                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ELIMINAR MANUALMENTE EL MALWARE                                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es una medida que se hace DESPUES de contener (no es el PRIMER paso)               │
+│  • Hacerlo sin plan puede propagar aun mas la amenaza                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  El orden correcto para Gamarue:
+
+  1. DESHABILITAR REPRODUCCION AUTOMATICA (cortar la via de infeccion)
+  2. Aislar equipos infectados
+  3. Escanear todas las USBs
+  4. Eliminar malware
+  5. Educar a usuarios
+
+==========================================================================================
 
 ```
 
 ```
+==========================================================================================
+🦠 TRICKBOT (TROYANO BANCARIO MODULAR) - INTELIGENCIA DE AMENAZAS
+==========================================================================================
 
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  QUE ES TRICKBOT                                                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Troyano BANCARIO reconocido                                                         │
+│  • Tambien llamado "TrickLoader"                                                       │
+│  • Altamente MODULAR (se adapta al entorno)                                            │
+│  • Activo desde 2016                                                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  QUE ROBA                                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Informacion bancaria                                                                │
+│  • Credenciales de cuentas                                                             │
+│  • Informacion de identificacion personal (PII)                                        │
+│  • Bitcoins                                                                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CAPACIDADES ADICIONALES                                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Se propaga DENTRO de la red (movimiento lateral)                                    │
+│  • Descarga RANSOMWARE (especialmente Ryuk)                                            │
+│  • Explora documentos y archivos multimedia en equipos infectados                      │
+│  • Usa vulnerabilidades SMB: EternalBlue, EternalRomance, EternalChampion             │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  COMO LLEGA (VECTORES DE ENTRADA)                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Campañas de SPAM malicioso (malspam)                                                │
+│  • URL integradas en correos                                                            │
+│  • Archivos adjuntos infectados                                                         │
+│  • Infeccion secundaria por EMOTET                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+⚠️ PROBLEMA ESPECIAL DE TRICKBOT
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  REINFECCION                                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Usa EternalBlue para propagarse                                                     │
+│  • Cualquier maquina infectada en la red puede REINFECTAR a maquinas limpias           │
+│  • Cuando una maquina limpia se VUELVE A UNIR a la red, puede ser reinfectada         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ PASOS DE CORRECCION PARA TRICKBOT (SEGUN MALWAREBYTES)
+==========================================================================================
+
+  Paso 1: IDENTIFICAR las maquinas infectadas
+  Paso 2: DESCONECTAR las maquinas infectadas de la red
+  Paso 3: PARCHAR para EternalBlue
+  Paso 4: DESHABILITAR la funcion de compartir a nivel administrativo
+  Paso 5: ELIMINAR el troyano TrickBot
+  Paso 6: CAMBIAR las credenciales de las cuentas
+
+==========================================================================================
+📌 NOTA IMPORTANTE
+========================================================================================┐
+
+  Malwarebytes puede detectar y eliminar TrickBot automaticamente,
+  pero para que sea efectivo en equipos en red, primero hay que seguir los 6 pasos.
+
+==========================================================================================
 ```
 
 ```
+==========================================================================================
+🔑 ETERNALBLUE - EXPLICACION FACIL
+==========================================================================================
 
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  QUE ES                                                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es una VULNERABILIDAD en Windows (protocolo SMB)                                   │
+│  • Permite ejecutar codigo de forma REMOTA sin contraseña                             │
+│  • Fue creada por la NSA de EE.UU.                                                    │
+│  • Se filtro en 2017                                                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  QUE MALWARE LA USAN                                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • WANNACRY (ransomware masivo de 2017) - para propagarse como gusano                 │
+│  • NOTPETYA (otro ransomware) - para propagarse                                       │
+│  • TRICKBOT - para moverse lateralmente dentro de la red                              │
+│  • RYUK (ransomware) - desplegado por TrickBot                                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  EN EL CASO DE BRISTOL AND ASSOCIATES                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • TrickBot usa EternalBlue para propagarse por la red                                │
+│  • Por eso es tan DIFICIL de eliminar                                                  │
+│  • Una maquina limpia se vuelve a infectar al reconectarse si otra aun tiene el malware│
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  EternalBlue NO es exclusivo de WannaCry.
+
+  Es una VULNERABILIDAD que usaron MULTIPLES malware:
+    • WannaCry (para propagarse)
+    • NotPetya (para propagarse)
+    • TrickBot (para movimiento lateral)
+    • Ryuk (desplegado por TrickBot)
+
+  Lo que los diferencia es el OBJETIVO final:
+    • WannaCry → extorsion con rescate
+    • TrickBot → robo de datos y preparar ransomware
+
+==========================================================================================
 ```
 
 ```
+==========================================================================================
+❓ PREGUNTA - MITIGACION DE TRICKBOT
+==========================================================================================
 
+Escenario:
+TrickBot esta robando informacion sensible y extendiendose rapidamente por la red.
+Usa EternalBlue para propagarse.
+
+Pregunta:
+Cual es el primer paso mas efectivo para mitigar la amenaza de TrickBot?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Usa Malwarebytes para detectar y eliminar malware.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  POR QUE ES LA MEJOR OPCION                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Malwarebytes puede detectar y eliminar TrickBot                                     │
+│  • Es una herramienta ESPECIFICA mencionada en el propio informe de amenazas          │
+│  • Ofrece un punto de partida tecnico confiable                                       │
+│  • Permite actuar sin tener que apagar toda la red o formatear equipos ciegamente     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  FORMATEAR LAS UNIDADES DE DISCO DURO                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es una medida DRASTICA que se toma si no hay otra opcion                           │
+│  • No es el primer paso                                                                │
+│  • Elimina evidencia que podria ser util para investigar                              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DESCONECTAR TODA LA RED DE INTERNET                                                    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es una medida de contencion EXTREMA                                                 │
+│  • Detiene todas las operaciones                                                       │
+│  • No resuelve la infeccion por si sola                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  REINICIAR EN MODO SEGURO Y LIMPIEZA MANUAL                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es lento y manual                                                                   │
+│  • Requiere mucho tiempo para muchas maquinas                                          │
+│  • No aprovecha herramientas automaticas                                              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ LOS 6 PASOS RECOMENDADOS (SEGUN MALWAREBYTES)
+==========================================================================================
+
+  1. IDENTIFICAR las maquinas infectadas
+  2. DESCONECTAR las maquinas infectadas de la red
+  3. PARCHAR para EternalBlue
+  4. DESHABILITAR compartir a nivel administrativo
+  5. ELIMINAR TrickBot (ej. con Malwarebytes)
+  6. CAMBIAR credenciales de cuentas
+
+  Usar Malwarebytes se enmarca dentro del paso 5 (eliminar).
+
+==========================================================================================
 ```
 
 ```
+==========================================================================================
+❓ PREGUNTA - MITIGACION INMEDIATA (EXFILTRACION DE DATOS)
+==========================================================================================
 
+Escenario:
+Malware descubierto en VARIOS servidores. Esta EXFILTRANDO datos confidenciales.
+Necesitas soluciones INMEDIATAS para reducir el impacto.
+
+Pregunta:
+Que metodo de control debe implementar primero la compañia?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Actualiza y ejecuta software antimalware.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  POR QUE ES EL PRIMER PASO                                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • El malware YA ESTA ACTIVO y exfiltration datos                                     │
+│  • Antimalware actualizado puede DETECTAR y BLOQUEAR la amenaza                       │
+│  • Es la medida mas DIRECTA para frenar la exfiltracion                               │
+│  • Puede eliminar el malware o ponerlo en cuarentena                                  │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON PRIORIDAD AHORA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  REALIZAR AUDITORIAS DE SEGURIDAD PERIODICAS                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Son MEDIDAS PREVENTIVAS                                                             │
+│  • No contienen una amenaza ACTIVA                                                     │
+│  • Llevan tiempo y no resuelven la urgencia                                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DESHABILITAR SERVICIOS INNECESARIOS                                                    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Reduce la superficie de ataque (PREVENCION)                                         │
+│  • No elimina el malware que YA esta corriendo                                         │
+│  • No detiene la exfiltracion en curso                                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  IMPLEMENTAR CONTROLES DE ACCESO DE USUARIOS                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es una medida de CONTROL DE ACCESO (PREVENCION)                                     │
+│  • No afecta al malware que ya tiene acceso                                            │
+│  • No detiene la exfiltracion activa                                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ ORDEN DE PRIORIDADES (CONTENCION INMEDIATA)
+==========================================================================================
+
+  1. ACTUALIZAR y EJECUTAR software antimalware (detener la amenaza activa) ✓
+  2. Aislar servidores infectados de la red (contener)
+  3. Investigar alcance (que datos se exfiltraron)
+  4. Planificar erradicacion completa
+  5. Implementar medidas preventivas a largo plazo
+
+==========================================================================================
 ```
 
 ```
+==========================================================================================
+❓ PREGUNTA - POR QUE ACTUALIZAR EL SOFTWARE ANTIMALWARE ES EL PRIMER PASO
+==========================================================================================
 
+Escenario:
+Malware disenado para exfiltrar datos confidenciales en varios servidores.
+
+Pregunta:
+Por que actualizar el software antimalware es el primer paso para mitigar este malware?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Detecta y elimina el malware de las estaciones de trabajo.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CUAL ES LA FUNCION DIRECTA DEL ANTIMALWARE ACTUALIZADO                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Tiene las FIRMAS MAS RECIENTES para detectar variantes actuales de malware         │
+│  • Puede IDENTIFICAR el malware en los sistemas infectados                            │
+│  • Puede ELIMINARLO o ponerlo en CUARENTENA                                           │
+│  • Es la forma mas RAPIDA de detener la exfiltracion activa                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES SON INCORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  FORTALECE EL CIFRADO DE DATOS CONFIDENCIALES                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • El antimalware NO cifra datos                                                       │
+│  • Esa funcion corresponde a herramientas de cifrado (BitLocker, VeraCrypt, etc.)     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  AUMENTA LA CONCIENCIACION DE LOS USUARIOS                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Eso es CAPACITACION, no funcion de antimalware                                      │
+│  • Importante a largo plazo, pero NO es el primer paso tecnico                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MEJORA EL RENDIMIENTO DE LA RED AL REDUCIR LA CARGA                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • El antimalware NO mejora el rendimiento de la red                                   │
+│  • Eliminar el malware puede indirectamente ayudar, pero no es el proposito principal │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  El antimalware actualizado sirve para:
+  • DETECTAR malware (con firmas recientes)
+  • ELIMINAR malware de los sistemas infectados
+
+  Por eso es el PRIMER PASO para mitigar una amenaza activa.
+
+==========================================================================================
 ```
 
 ```
+==========================================================================================
+❓ PREGUNTA - PRIORIZACION DE VULNERABILIDAD (MALWARE EN SERVIDORES)
+==========================================================================================
 
+Escenario:
+Servidores afectados por malware. Exfiltracion de datos sensibles.
+Impacto operativo ya presente (caidas, lentitud).
+
+Pregunta:
+Como debe priorizar la compañia esta vulnerabilidad relacionada con el malware
+basado en el marco de evaluacion de vulnerabilidades?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Critico
+
+==========================================================================================
+📌 EXPLICACION - NIVELES DE SEVERIDAD
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CRITICO                                                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Explotacion REMOTA                                                                  │
+│  • Impacto GRAVE (perdida de datos confidenciales, toma de control)                    │
+│  • Sin parche disponible o parche complejo                                             │
+│  • La vulnerabilidad YA ESTA SIENDO EXPLOTADA                                          │
+│  • Datos SENSIBLES de clientes                                                        │
+│  • Consecuencias LEGALES y REPUTACIONALES graves                                       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  POR QUE ES CRITICO EN ESTE CASO                                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • YA HAY malware activo en servidores                                                │
+│  • YA HAY exfiltracion de datos SENSIBLES                                             │
+│  • El impacto operativo YA es visible (caidas, lentitud)                              │
+│  • La empresa es un bufete de abogados (datos de clientes altamente confidenciales)   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 COMPARACION DE NIVELES
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  NIVEL         │  DESCRIPCION                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  CRITICO       │  Explotacion activa o inminente, datos SENSIBLES, impacto GRAVE ✓     │
+│  ALTO          │  Impacto SIGNIFICATIVO, datos importantes, parche disponible          │
+│  MODERADO      │  Impacto LIMITADO, requiere condiciones especificas                   │
+│  BAJO          │  Impacto MINIMO, datos no criticos, parche facil                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  Factores que determinan CRITICO:
+  • Malware ACTIVO
+  • Exfiltracion EN CURSO
+  • Datos SENSIBLES de clientes
+  • Impacto operativo YA visible
+  • Consecuencias legales y reputacionales graves
+
+  → PRIORIDAD MAXIMA (CRITICO)
+
+==========================================================================================
 ```
 
 ```
+==========================================================================================
+🛡️ CONFIGURACION DEL WINDOWS DEFENDER FIREWALL (RED PRIVADA)
+==========================================================================================
 
+Escenario:
+La empresa tiene malware activo. El firewall de red ya esta configurado correctamente.
+Ahora se configuran los firewalls de host (Windows) para agregar una capa adicional.
+
+Pregunta:
+Observa que el Firewall de Windows Defender no usa la configuracion de seguridad recomendada
+por Microsoft para una red privada. Selecciona la configuracion adecuada.
+
+==========================================================================================
+✅ RESPUESTA CORRECTA (SEGUN BUENAS PRACTICAS)
+==========================================================================================
+
+En la seccion "Private network settings":
+
+  [X] Turn on Windows Defender Firewall
+      [ ] Block all incoming connections (NO marcar a menos que sea extremo)
+      [X] Notify me when Windows Defender Firewall blocks a new app
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CONFIGURACION RECOMENDADA POR MICROSOFT (RED PRIVADA)                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Turn on Windows Defender Firewall → SI (activado)                                   │
+│  • Block all incoming connections → NO (solo si se necesita aislamiento extremo)       │
+│  • Notify me when firewall blocks a new app → SI (para monitorear aplicaciones)        │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  POR QUE ESTA CONFIGURACION                                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • El firewall de red YA protege el perimetro                                          │
+│  • El firewall de host es una capa ADICIONAL                                           │
+│  • Bloquear TODAS las conexiones entrantes puede romper aplicaciones internas          │
+│  • Notificar al usuario ayuda a detectar comportamientos extranos                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 OPCION COMPLEMENTARIA (RED PUBLICA)
+==========================================================================================
+
+  En la seccion "Public network settings" (si aplica):
+
+  [X] Turn on Windows Defender Firewall
+      [X] Block all incoming connections (RECOMENDADO para redes publicas)
+      [X] Notify me when Windows Defender Firewall blocks a new app
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+🎯 PROPOSITO DE CONFIGURAR EL FIREWALL DE WINDOWS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  QUE LOGRA                                                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  1. BLOQUEAR CONEXIONES NO DESEADAS                                                     │
+│     • Evita que el malware se comunique con servidores externos (C2)                   │
+│     • Impide que otros equipos infectados accedan a esta computadora                   │
+│                                                                                         │
+│  2. CONTROL PRECISO DEL TRAFICO                                                        │
+│     • Decide que aplicaciones pueden recibir conexiones externas                       │
+│     • Bloquea el resto                                                                 │
+│                                                                                         │
+│  3. NOTIFICACIONES AL USUARIO                                                          │
+│     • Si una aplicacion legitima es bloqueada, el usuario lo sabe                      │
+│     • Puede detectar comportamientos anormales                                         │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+🔍 POR QUE SOLO LA RED PRIVADA (Y NO LA PUBLICA EN ESTE CASO)
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  RAZON                                                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • El equipo solo esta trabajando dentro de la red INTERNA de la empresa               │
+│  • No estan configurando computadoras que se conectan directamente a redes publicas   │
+│    (ej. un empleado desde su casa)                                                     │
+│  • En este momento, la prioridad es proteger los equipos dentro de la oficina          │
+│  • Por eso la pregunta del sistema se enfoca en la "Private network settings"          │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ EN EL CONTEXTO DEL MALWARE (TRICKBOT, GAMARUE, IMPACKET)
+========================================================================================┐
+
+  • TrickBot usa EternalBlue para moverse lateralmente entre equipos
+  • Un firewall de host BIEN CONFIGURADO puede bloquear ese movimiento lateral
+  • Aunque un equipo este infectado, el firewall puede impedir que ataque a otros
+
+  Por eso es una capa de defensa CLAVE.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - POR QUE PERMITIR ALGUNAS CONEXIONES EN REDES PUBLICAS
+==========================================================================================
+
+Escenario:
+Configuracion del firewall de Windows en redes publicas.
+
+Pregunta:
+Por que es necesario permitir algunas conexiones entrantes en las redes publicas?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Para habilitar servicios como la navegacion del sitio web, el correo electronico y
+el acceso remoto.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SERVICIOS QUE REQUIEREN CONEXIONES ENTRANTES                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • NAVEGACION WEB: puertos 80 (HTTP) y 443 (HTTPS)                                     │
+│  • CORREO ELECTRONICO: puertos 25 (SMTP), 465 (SMTPS), 587 (SMTP),                     │
+│                       995 (POP3S), 993 (IMAPS)                                         │
+│  • ACCESO REMOTO: puertos para VPN, RDP, SSH                                           │
+│  • ACTUALIZACIONES: descarga de parches y actualizaciones del sistema                  │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  HABILITAR LAS ACTUALIZACIONES Y PARCHES                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Las actualizaciones suelen ser SALIENTES (el equipo las busca)                      │
+│  • No es la razon principal para permitir conexiones ENTRANTES                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PERMITIR QUE LAS APLICACIONES SE COMUNIQUEN LIBREMENTE DENTRO DE LA RED                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Eso aplica a REDES PRIVADAS, no publicas                                            │
+│  • En redes publicas se RESTRINGE la comunicacion interna                              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  AUMENTAR LA VELOCIDAD Y FIABILIDAD                                                    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • El firewall no acelera la red                                                        │
+│  • Es una funcion de seguridad, no de rendimiento                                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ COMPARACION RAPIDA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  TIPO DE RED     │  CONFIGURACION DEL FIREWALL                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  RED PRIVADA     │  Mas permisiva (confianza interna)                                  │
+│  RED PUBLICA     │  Mas restrictiva, pero permite SERVICIOS BASICOS (web, email) ✓    │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - COMO ACCEDER A LA INTERFAZ DEL ROUTER
+==========================================================================================
+
+Escenario:
+Necesitas acceder a la interfaz de usuario del enrutador (router).
+
+Pregunta:
+Como se determina lo que se debe escribir en el campo de busqueda para acceder a la interfaz?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Ingresa la direccion de la puerta de enlace predeterminada que figura en la configuracion
+de red.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  QUE ES LA PUERTA DE ENLACE PREDETERMINADA (GATEWAY)                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Es la direccion IP del router en la red local                                       │
+│  • Aparece en la configuracion de red de cualquier computadora conectada               │
+│  • Ejemplos comunes: 192.168.0.1, 192.168.1.1, 10.0.0.1                                │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  COMO ENCONTRARLA (WINDOWS)                                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • ipconfig (simbolo del sistema)                                                      │
+│  • Buscar "Puerta de enlace predeterminada"                                            │
+│  • Esa direccion es la del router                                                      │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES SON MENOS CONFIABLES
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ETIQUETA DEL ROUTER (IP PREDETERMINADA)                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • El router PODRIA HABER SIDO RECONFIGURADO con otra IP                               │
+│  • La etiqueta solo es valida si nunca se cambio la configuracion                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  GUIA DE CONFIGURACION RAPIDA                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Muestra la IP PREDETERMINADA (mismo problema que la etiqueta)                       │
+│  • No refleja cambios posteriores                                                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DOCUMENTACION DEL ROUTER                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Misma limitacion: IP predeterminada, no la real si fue modificada                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+==========================================================================================
+
+  El metodo mas SEGURO y CONFIABLE es verificar la IP REAL en uso:
+
+  "Puerta de enlace predeterminada" en la configuracion de red.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - PARA QUE SE NECESITA LA DIRECCION IP DEL ROUTER
+==========================================================================================
+
+Pregunta:
+Por que necesitas la direccion IP del enrutador?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Para acceder a la interfaz de usuario del enrutador y configurar los ajustes.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  QUE SE LOGRA CON LA DIRECCION IP DEL ROUTER                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Acceder al PANEL DE ADMINISTRACION del router (interfaz web)                        │
+│  • Configurar ajustes de red (IPs, DHCP, DNS)                                          │
+│  • Actualizar el FIRMWARE                                                            │
+│  • Modificar reglas del firewall                                                        │
+│  • Administrar puertos y red Wi-Fi                                                     │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DESCARGAR ACTUALIZACIONES DE FIRMWARE                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Las actualizaciones se descargan DESDE LA INTERFAZ (una vez dentro)                 │
+│  • No es la razon de NECESITAR la IP                                                  │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MEJORAR LA INTENSIDAD DE LA SEÑAL                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • La IP no tiene relacion con la intensidad de la señal                               │
+│  • Eso depende de la ubicacion, antenas, interferencia                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  RESTABLECER EL ROUTER A SU CONFIGURACION DE FABRICA                                    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • El reseteo se hace con un boton FISICO en el router                                 │
+│  • No requiere la direccion IP                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  La direccion IP del router es la PUERTA DE ENTRADA a su configuracion.
+
+  Sin ella, no se puede administrar el dispositivo.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - DONDE ENCONTRAR INFORMACION DEL FIRMWARE EN EL ROUTER
+==========================================================================================
+
+Escenario:
+Interfaz del router NETGEAR Nighthawk RAX50 con pestanas BASIC y ADVANCED.
+
+Pregunta:
+Seleccione la opcion adecuada para encontrar informacion sobre el firmware del enrutador.
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+ADVANCED
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DONDE ESTA LA INFORMACION DEL FIRMWARE                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • En la pestaña ADVANCED (Configuracion avanzada)                                     │
+│  • Luego en: Administration → Firmware Update o Router Update                          │
+│  • Ahi se ve la version actual y se pueden buscar actualizaciones                      │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  QUE OPCIONES TIENE BASIC (NO ES AHI)                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Home (inicio)                                                                       │
+│  • Internet (configuracion WAN)                                                        │
+│  • Wireless (Wi-Fi)                                                                    │
+│  • Attached Devices (dispositivos conectados)                                          │
+│  • QoS (calidad de servicio)                                                           │
+│  • ReadySHARE (compartir USB)                                                          │
+│  • Guest Network (red de invitados)                                                    │
+│                                                                                         │
+│  NINGUNA de estas opciones muestra informacion del firmware.                           │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  Para firmware:
+
+  ADVANCED → Administration → Firmware Update
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+🔍 INVESTIGACION FORENSE - ALEX EL INGENIERO DE REDES
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ANTECEDENTES DEL SOSPECHOSO                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Alex: ingeniero de redes talentoso                                                  │
+│  • Queria un ascenso, pero restricciones presupuestarias lo impidieron                 │
+│  • Se sintio DESPRECIADO y no reconocido                                               │
+│  • Presento su renuncia                                                                │
+│  • Sospecha: pudo haber inyectado MALWARE en secreto                                   │
+│  • Lo dejo INACTIVO hasta activarlo justo antes de su ultimo dia                      │
+│  • Su ultimo dia fue el dia ANTES de que empezaras vos                                 │
+│  • El caos en la red empezo en tu primer dia                                           │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  EVIDENCIA DISPONIBLE                                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Laptop de la compañia que uso Alex                                                   │
+│  • Hay que examinar el contenido del DISCO DURO                                        │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+🛠️ FTK IMAGER - CREACION DE IMAGEN FORENSE
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  TIPO DE IMAGEN SELECCIONADO                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Raw (dd) → opcion por defecto                                                        │
+│  • Formato estandar y ampliamente compatible                                          │
+│  • Permite crear una copia bit a bit del disco                                        │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  OTRAS OPCIONES DE FORMATO                                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • E01 → formato EnCase (comprimido, puede incluir metadatos)                         │
+│  • SMART → formato propio de SMART                                                     │
+│  • AFF → Advanced Forensic Format (open source)                                        │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ PROXIMOS PASOS
+==========================================================================================
+
+  1. Crear imagen forense del disco de Alex (Raw/dd) ✓
+  2. Verificar integridad con hash (MD5 o SHA)
+  3. Analizar la imagen con Autopsy o FTK Imager
+  4. Buscar evidencia de malware (TrickBot, Impacket, Gamarue)
+  5. Investigar si hay archivos eliminados relacionados con el ataque
+  6. Determinar si Alex fue el responsable
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+📋 CADENA DE CUSTODIA - CASO ALEX SPEARMAN
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DATOS DEL CASO                                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  NUMERO DE CASO:     OLI-2024A-0090                                                     │
+│  CUESTION DELITO:    Ataque de malware que afecta la estabilidad de la red             │
+│                     y la seguridad de los datos                                        │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  EVIDENCIA                                                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  ELEMENTO NUM:      0090-001                                                            │
+│  CANTIDAD:          1                                                                   │
+│  DESCRIPCION:       Unidad de disco duro SaberSpeed                                     │
+│  NUMERO DE SERIE:   BXC-7851-RC77                                                       │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  INC AUTACION                                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  FECHA Y HORA:       24 de julio, 10:32 a.m.                                           │
+│  LUGAR:              Tecnologia de la Informacion, Escritorio de Alex Spearman         │
+│  RECOGIDO POR:       Szarka Attila (Directora de TI)                                   │
+│  ALMACENAMIENTO:     Caja fuerte cerrada dentro de la oficina de seguridad             │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  TRANSFERENCIA PARA ANALISIS                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  FECHA Y HORA:       24 de julio, 3:05 p.m.                                            │
+│  ENTREGADO POR:      Szarka Attila (ID: 7777519)                                        │
+│  RECIBIDO POR:       Jahn Dough (ID: 5552534) - EXAMINADOR                              │
+│  PROPOSITO:          Crear una imagen de disco duro                                     │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ DATOS PARA COMPLETAR EN FTK IMAGER
+========================================================================================┐
+
+  Case Number:        OLI-2024A-0090
+  Evidence Number:    0090-001
+  Unique Description: SaberSpeed Hard Drive - Alex Spearman
+  Examiner:           Jahn Dough
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+🎯 PROYECTO FINAL DE CIBERSEGURIDAD - PARTE 2
+==========================================================================================
+
+Bienvenido a la segunda parte del Proyecto Final de Ciberseguridad.
+
+Este proyecto es la segunda de las dos partes del proyecto final del Certificado
+IBM SkillsBuild en Ciberseguridad: Mejora de la Ciberseguridad Organizacional y
+Respuesta a Incidentes.
+
+==========================================================================================
+📌 EMPRESA DEL CASO: BRISTOL AND ASSOCIATES (CONTINUACION)
+==========================================================================================
+
+  • Pequeño bufete de abogados
+  • Ya se respondio al ataque de malware en la Parte 1
+  • Ahora hay que REFORZAR la postura de ciberseguridad para PREVENIR futuros incidentes
+
+==========================================================================================
+🎯 QUE SE HARA EN LA PARTE 2
+==========================================================================================
+
+  ┌─────────────────────────────────────────────────────────────────────────────────────┐
+  │  PROTEGER LA INFRAESTRUCTURA ORGANIZACIONAL                                        │
+  ├─────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                                                      │
+  │  • Reconocimiento de red                                                            │
+  │  • Medidas de seguridad en la nube                                                  │
+  │  • Gestion de endpoints                                                             │
+  │  • Configuracion del SOC                                                            │
+  │  • Gestion de riesgos                                                               │
+  │  • Desarrollo de un plan de seguridad                                               │
+  │                                                                                      │
+  └─────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📚 APRENDIZAJE PREVIO (MODULOS REQUERIDOS)
+==========================================================================================
+
+  • Datos y privacidad
+  • Gobernanza, riesgo y cumplimiento
+  • Amenazas y vulnerabilidades
+  • Gestion de vulnerabilidades
+  • Seguridad del sistema
+  • Seguridad de la red
+  • Computacion en la nube y virtualizacion
+  • Proteccion de la infraestructura en la nube
+  • Operaciones de seguridad
+  • Monitoreo de seguridad
+  • Respuesta a incidentes
+  • Analisis forense de sistemas digitales
+
+==========================================================================================
+✅ OBJETIVOS DE LA PARTE 2
+==========================================================================================
+
+  Al finalizar esta parte, deberias poder:
+
+  • Realizar reconocimiento de red
+  • Disenar una red segura
+  • Aplicar el modelo de despliegue en la nube adecuado
+  • Gestionar endpoints
+  • Distinguir entre modelos de seguridad estandar
+  • Asignar roles y tareas del SOC
+  • Evaluar el riesgo
+  • Analizar el impacto de amenazas de ciberseguridad
+  • Desarrollar un plan de copia de seguridad y recuperacion
+  • Aplicar el cifrado de archivos y unidades
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+📋 DESCRIPCION GENERAL - PARTE 2 (5 PASOS)
+==========================================================================================
+
+==========================================================================================
+PASO 1: REALIZAR EL RECONOCIMIENTO DE LA RED
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  • Escanear el sitio web de Bristol and Associates para recopilar informacion de la red│
+│  • Ver los resultados del escaneo                                                      │
+│  • Identificar caracteristicas del host:                                               │
+│    - Sistema operativo                                                                 │
+│    - Numero de puertos abiertos                                                        │
+│    - Servicios y versiones                                                             │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+PASO 2: DISEÑAR UNA RED SEGURA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  • Determinar el mejor modelo de despliegue en la nube para Bristol and Associates     │
+│    (infraestructura actual, objetivos, limitaciones)                                   │
+│  • Responder preguntas para estandarizar la PROTECCION y SUPERVISION de endpoints      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+PASO 3: ESTABLECER UN CENTRO DE OPERACIONES DE SEGURIDAD (SOC)
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  • Revisar los 4 modelos de SOC estandar                                               │
+│  • Seleccionar el MEJOR modelo para Bristol and Associates                            │
+│  • Revisar perfiles de candidatos para puestos del SOC                                 │
+│  • Determinar que candidatos avanzan                                                   │
+│  • Elegir el candidato mas adecuado para cada puesto                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+PASO 4: REALIZAR UNA EVALUACION DE RIESGOS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  • Identificar los riesgos de ciberseguridad de la compañia                           │
+│  • Elegir los controles adecuados para abordarlos                                      │
+│  • Determinar las consecuencias si NO se abordan los riesgos                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+PASO 5: DESARROLLAR PLANES DE COPIA DE SEGURIDAD, RECUPERACION Y ENCRIPTACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  • Establecer controles para reforzar la postura de seguridad de los datos             │
+│  • Desarrollar planes de:                                                              │
+│    - Copias de seguridad (backups)                                                     │
+│    - Recuperacion de incidentes                                                        │
+│  • Determinar practicas de ENCRIPTACION para proteger datos de los clientes           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ RESUMEN VISUAL
+========================================================================================┐
+
+  PASO 1: Reconocimiento de red (escaneo, puertos, SO)
+     │
+     ▼
+  PASO 2: Diseñar red segura + proteccion de endpoints
+     │
+     ▼
+  PASO 3: Establecer SOC (modelo + equipo)
+     │
+     ▼
+  PASO 4: Evaluacion de riesgos (identificar + controles)
+     │
+     ▼
+  PASO 5: Backups + recuperacion + encriptacion
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - ZENMAP: CAMPO PARA ESCRIBIR LA DIRECCION WEB
+==========================================================================================
+
+Escenario:
+Se emplea Zenmap para mapear dispositivos y documentar el diseno de la red.
+Hay que escanear el host: bristolassociates.org
+
+Pregunta:
+Selecciona el campo donde escribira la direccion web del host que escaneara.
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Target
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CAMPOS PRINCIPALES DE ZENMAP                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • TARGET: destino del escaneo (IP, dominio, rango)                                    │
+│  • PROFILE: perfil de escaneo (intenso, rapido, etc.)                                  │
+│  • COMMAND: comando Nmap que se ejecutara                                              │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 EJEMPLO
+========================================================================================┐
+
+  Target: bristolassociates.org
+  Profile: Quick scan
+  Command: nmap -T4 -F bristolassociates.org
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - ZENMAP: PERFIL PARA ANALISIS LENTO PERO COMPLETO
+==========================================================================================
+
+Escenario:
+Se necesita un analisis LENTO pero COMPLETO del host.
+
+Pregunta:
+Selecciona el escaneo correcto de la lista Perfil.
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Intense scan (Escaneo intenso)
+
+==========================================================================================
+📌 EXPLICACION - PERFILES DE ZENMAP
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PERFIL                    │  DESCRIPCION                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Intense scan              │  Escaneo COMPLETO (mas lento) ✓                           │
+│  Intense scan + UDP        │  Escaneo completo + puertos UDP (mas lento aun)          │
+│  Quick scan                │  Escaneo RAPIDO (menos puertos)                           │
+│  Ping scan                 │  Solo detecta hosts activos (muy rapido)                  │
+│  Regular scan              │  Escaneo estandar                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 COMPARACION DE VELOCIDAD
+========================================================================================┐
+
+  Rapido (pocos puertos)         Completo (todos los puertos)
+  ─────────────────────          ─────────────────────────────
+  Quick scan                      Intense scan
+  Ping scan                       Intense scan + UDP
+
+  "Lento pero completo" → INTENSE SCAN
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - PUERTOS MAS SUSCEPTIBLES A ATAQUES
+==========================================================================================
+
+Escenario:
+Resultados del escaneo en bristolassociates.org
+
+Puertos encontrados:
+  22/tcp    abierto     ssh
+  25/tcp    filtrado    smtp
+  80/tcp    abierto     http
+  5431/tcp  filtrado    park-agent
+  9929/tcp  abierto     nping-echo
+  31337/tcp abierto     tcpwrapped
+
+Pregunta:
+Cuantos puertos cumplen los criterios de ser los mas susceptibles a ataques?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+4
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  QUE PUERTOS SON MAS SUSCEPTIBLES?                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Los puertos en estado ABIERTO (open)                                                │
+│  • Los puertos FILTRADOS (filtered) no son directamente accesibles                     │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CONTEO                                                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  Puertos abiertos:                                                                     │
+│  • 22 (ssh)                                                                            │
+│  • 80 (http)                                                                           │
+│  • 9929 (nping-echo)                                                                   │
+│  • 31337 (tcpwrapped)                                                                  │
+│                                                                                         │
+│  TOTAL: 4                                                                              │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  Los puertos abiertos son el punto de entrada para los atacantes.
+  Por eso son los mas susceptibles.
+
+  En este caso: 4 puertos abiertos.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - ZENMAP: PESTAÑA PARA VER MAPA INTERACTIVO DE LA RUTA DE RED
+==========================================================================================
+
+Escenario:
+Se realizo un escaneo a bristolassociates.org.
+Se quiere ver un mapa interactivo de la ruta de red desde tu computadora hasta el host.
+
+Pregunta:
+Selecciona la pestaña correcta.
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Topology
+
+==========================================================================================
+📌 EXPLICACION - PESTAÑAS DE ZENMAP
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PESTAÑA         │  QUE MUESTRA                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Nmap Output     │  Resultado del escaneo en texto                                     │
+│  Ports / Hosts   │  Lista de puertos y hosts                                           │
+│  TOPOLOGY        │  MAPA INTERACTIVO de la ruta de red (saltos entre nodos) ✓          │
+│  Host Details    │  Detalles del host (SO, direcciones)                                │
+│  Scans           │  Historial de escaneos                                              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 QUE MUESTRA LA PESTAÑA TOPOLOGY
+========================================================================================┐
+
+  • Visualizacion grafica de la red
+  • Cada nodo (router, switch, host) representado como un circulo
+  • Lineas que muestran las conexiones
+  • La ruta completa desde tu PC hasta el destino
+  • Colores que indican cantidad de puertos abiertos
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - COLOR AMARILLO EN TOPOLOGIA (ZENMAP)
+==========================================================================================
+
+Escenario:
+En el panel Topologia, el color del host de destino es AMARILLO.
+
+Pregunta:
+Que indica el color amarillo sobre el numero de puertos abiertos en bristolassociates.org?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+De 3 a 6 puertos abiertos
+
+==========================================================================================
+📌 EXPLICACION - CODIGO DE COLORES EN TOPOLOGIA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  COLOR          │  NUMERO DE PUERTOS ABIERTOS                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  VERDE          │  Menos de 3 puertos abiertos                                         │
+│  AMARILLO       │  De 3 a 6 puertos abiertos ✓                                         │
+│  ROJO           │  Mas de 6 puertos abiertos                                           │
+│  BLANCO         │  No se escaneo (numero desconocido)                                  │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 APLICACION AL ESCANEO
+========================================================================================┐
+
+  Puertos abiertos encontrados: 4 (22, 80, 9929, 31337)
+  4 esta en el rango de 3 a 6
+
+  Por lo tanto: COLOR AMARILLO
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+☁️ MODELO DE DESPLIEGUE EN LA NUBE - BRISTOL AND ASSOCIATES
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  INFRAESTRUCTURA ACTUAL                    │  REQUISITOS                               │
+├────────────────────────────────────────────┼───────────────────────────────────────────┤
+│  • Infraestructura existente (modesta)     │  • Eficacia y escalabilidad               │
+│  • Red con servidores y dispositivos       │  • Gestion de costos                      │
+│  • Aplicaciones variadas                   │  • Entorno informatico SEGURO             │
+│  • Datos SENSIBLES de clientes             │  • Recuperacion estable ante desastres    │
+├────────────────────────────────────────────┼───────────────────────────────────────────┤
+│  RESTRICCIONES                             │                                           │
+├────────────────────────────────────────────┼───────────────────────────────────────────┤
+│  • Infraestructura existente (limitada)    │                                           │
+│  • Rendimiento de red (variable)           │                                           │
+│  • Experiencia limitada en la nube         │                                           │
+│  • Datos SENSIBLES (requieren control)     │                                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ MODELO ELEGIDO: NUBE HIBRIDA
+==========================================================================================┐
+
+  Justificacion:
+
+  1. DATOS SENSIBLES (clientes de un bufete de abogados)
+     → Se quedan en la NUBE PRIVADA o local (control total)
+
+  2. ESCALABILIDAD Y COSTOS
+     → La NUBE PUBLICA permite escalar bajo demanda y pagar solo por uso
+
+  3. RECUPERACION ANTE DESASTRES
+     → La nube publica puede ser el sitio de respaldo (DR)
+
+  4. EXPERIENCIA LIMITADA EN NUBE
+     → El modelo hibrido permite migracion gradual
+
+  5. APLICACIONES VARIADAS
+     → Algunas pueden ir a la nube publica, otras quedan locales
+
+==========================================================================================
+📌 POR QUE NO LOS OTROS MODELOS
+==========================================================================================
+
+  • NUBE PUBLICA sola → no da control suficiente para datos sensibles
+  • NUBE PRIVADA sola → muy costosa, no escala tan facilmente
+  • NUBE COMUNITARIA → no aplica (bufete de abogados solo)
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - MODELO DE NUBE POR RENTABILIDAD, ESCALABILIDAD Y CONTROL LIMITADO
+==========================================================================================
+
+Pregunta:
+Que modelo de nube es mas conocido por su rentabilidad y escalabilidad, aunque ofrece
+un control limitado sobre la seguridad de los datos?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Nube publica
+
+==========================================================================================
+📌 EXPLICACION - CARACTERISTICAS DE CADA MODELO
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MODELO            │  RENTABILIDAD │  ESCALABILIDAD │  CONTROL DE SEGURIDAD            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  NUBE PUBLICA      │  ALTA (pago por uso)   │  ALTA   │  BAJO (compartida) ✓           │
+│  NUBE PRIVADA      │  BAJA (inversion alta) │  MEDIA  │  ALTO (dedicada)                │
+│  NUBE HIBRIDA      │  MEDIA                 │  ALTA   │  MEDIO                          │
+│  NUBE COMUNITARIA  │  MEDIA (costos compartidos) │ MEDIA  │  MEDIO (por grupo)            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  NUBE PUBLICA:
+  • Rentabilidad: pago por uso, sin inversion inicial
+  • Escalabilidad: recursos bajo demanda
+  • Control limitado: la seguridad la gestiona el proveedor (responsabilidad compartida)
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - ASPECTO DE LA NUBE PRIVADA QUE RESPALDA UN ENTORNO SEGURO
+==========================================================================================
+
+Escenario:
+Bristol and Associates (bufete de abogados) necesita un entorno de TI SEGURO.
+
+Pregunta:
+Que aspecto del modelo de nube privada respalda este requisito?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Proporciona control sobre la seguridad y el cumplimiento.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  BENEFICIOS DE LA NUBE PRIVADA PARA SEGURIDAD                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  1. CONTROL TOTAL sobre politicas de seguridad                                         │
+│  2. Personalizacion de medidas de proteccion                                           │
+│  3. Cumplimiento normativo a medida                                                    │
+│  4. Infraestructura DEDICADA (no compartida)                                           │
+│  5. Los datos SENSIBLES permanecen bajo control de la empresa                          │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SIMPLIFICA LA INFRAESTRUCTURA A UNA SOLA PLATAFORMA                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • No es el aspecto principal de seguridad                                             │
+│  • Es mas una ventaja administrativa                                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  RESTRINGE LAS ACTUALIZACIONES A UNA VEZ AL AÑO                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Falso: las actualizaciones se pueden aplicar cuando se necesite                     │
+│  • No es una caracteristica de seguridad                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  LIMITA EL ACCESO SOLO A EMPLEADOS EN EL SITIO                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • No es exclusivo de nube privada                                                     │
+│  • El control de acceso se configura, no es una limitacion fisica                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  La principal ventaja de la nube privada para un entorno SEGURO es:
+
+  CONTROL SOBRE SEGURIDAD Y CUMPLIMIENTO.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - NUBE PRIVADA: LATENCIA Y ANCHO DE BANDA EN UBICACIONES REMOTAS
+==========================================================================================
+
+Escenario:
+Bristol and Associates tiene ubicaciones remotas con posible latencia y ancho de banda limitado.
+
+Pregunta:
+Como aborda el modelo de nube privada la latencia de red y las restricciones de ancho de banda?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Almacena datos localmente con acceso remoto seguro.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  BENEFICIO DE LA NUBE PRIVADA PARA UBICACIONES REMOTAS                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Los datos CRITICOS se almacenan LOCALMENTE (en la oficina principal)                │
+│  • Los empleados remotos acceden a traves de VPN o conexiones seguras                  │
+│  • No se depende de un ancho de banda constante hacia la nube publica                  │
+│  • La LATENCIA se reduce porque los datos criticos no viajan largas distancias         │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON CORRECTAS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  OBLIGA A TODAS LAS UBICACIONES REMOTAS A ACTUALIZAR                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Falso: no es obligatorio                                                            │
+│  • No resuelve la latencia                                                             │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ELIMINA LA NECESIDAD DE ALMACENAMIENTO LOCAL                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Falso: la nube privada PUEDE incluir almacenamiento local                           │
+│  • Es todo lo contrario                                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PROCESA TODOS LOS DATOS A TRAVES DE UNA UBICACION CENTRALIZADA                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Puede empeorar la latencia en lugar de mejorarla                                    │
+│  • No es una ventaja para ubicaciones remotas                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  La nube privada permite:
+
+  • Datos LOCALES (cerca de quien los necesita)
+  • Acceso REMOTO seguro (sin depender de gran ancho de banda)
+
+  = Soluciona problemas de LATENCIA y ANCHO DE BANDA.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - PRIMERA ACCION PARA GESTIONAR ENDPOINTS
+==========================================================================================
+
+Escenario:
+Bristol and Associates necesita gestionar endpoints para la seguridad de la red.
+
+Pregunta:
+Cual es la primera accion a tomar?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Agregar todos los dispositivos a la gestion de puntos finales.
+
+==========================================================================================
+📌 EXPLICACION - ORDEN LOGICO DE LA GESTION DE ENDPOINTS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 1: IDENTIFICAR Y AGREGAR                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Inventariar todos los dispositivos (PC, laptops, servidores, etc.)                  │
+│  • Agregarlos a la plataforma de gestion de endpoints (ej. EDR)                        │
+│  • Sin esto, no se pueden aplicar politicas ni monitorear                              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 2: CONFIGURAR Y MONITOREAR                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Aplicar politicas de seguridad                                                     │
+│  • Configurar alertas                                                                 │
+│  • Monitorear actividad                                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON EL PRIMER PASO
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ESTABLECER UN SOC                                                                    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • El SOC es para OPERACIONES de seguridad, no es el primer paso para gestionar       │
+│    endpoints                                                                          │
+│  • Primero se agregan los dispositivos, luego se define como se operan                │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  REALIZAR PRUEBAS DE PENETRACION                                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Son pruebas OFENSIVAS que se hacen DESPUES de tener gestion basica                 │
+│  • No es el primer paso                                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  REALIZAR ANALISIS DE TRAFICO DE RED                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • El analisis de trafico es parte del monitoreo                                       │
+│  • Para analizar trafico, los dispositivos ya deben estar integrados                  │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  La gestion de endpoints comienza con:
+
+  "AGREGAR TODOS LOS DISPOSITIVOS A LA GESTION DE PUNTOS FINALES"
+
+  (inventario + plataforma centralizada)
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+🖥️ GESTION DE ENDPOINTS (PUNTOS FINALES) - EXPLICACION FACIL
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 1: INVENTARIO                                                                    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Identificar TODOS los dispositivos conectados a la red                              │
+│  • Registrar: tipo de dispositivo, sistema operativo, ubicacion, usuario              │
+│  • Ejemplo: "Hay 30 PCs con Windows 10, 5 servidores Linux, 15 laptops"               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 2: AGREGAR A UNA PLATAFORMA CENTRAL (EDR)                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Instalar un AGENTE (software) en cada dispositivo                                   │
+│  • El agente se comunica con un servidor central (consola)                             │
+│  • Desde ahi se monitorean TODOS los dispositivos                                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 3: APLICAR POLITICAS DE SEGURIDAD                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Configurar: firewalls, antivirus, restricciones de USB, etc.                        │
+│  • Las politicas se aplican a TODOS los endpoints desde la consola                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PASO 4: MONITOREAR Y RESPONDER                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Detectar comportamientos extranos (ej. un proceso intentando cifrar archivos)       │
+│  • Responder: aislar el endpoint, bloquear el proceso, etc.                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 EJEMPLO CON BRISTOL AND ASSOCIATES
+========================================================================================┐
+
+  ANTES: No sabian cuantas computadoras tenian realmente.
+         Un empleado se llevaba su laptop sin control.
+
+  DESPUES (gestion de endpoints):
+    1. Inventariaron 30 PCs, 5 servidores, 15 laptops.
+    2. Instalaron un agente EDR en cada uno.
+    3. Desde una consola ven la actividad de todos.
+    4. Pueden bloquear una laptop infectada remotamente.
+
+==========================================================================================
+✅ EN LA PRACTICA (HERRAMIENTAS)
+==========================================================================================
+
+  • Microsoft Intune (si usan Windows)
+  • CrowdStrike, SentinelOne, Carbon Black (EDR)
+  • Wazuh (open source)
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - PROTECCION Y SUPERVISION INTEGRAL DE ENDPOINTS
+==========================================================================================
+
+Pregunta:
+Que combinacion de acciones proporcionaria una proteccion y supervision integral de
+endpoints?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Desplegar software de gestion de endpoints y un sistema de deteccion de intrusiones (IDS).
+
+==========================================================================================
+📌 EXPLICACION - QUE CUBRE CADA ACCION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ACCION                               │  QUE APORTA                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  SOFTWARE DE GESTION DE ENDPOINTS     │  Control centralizado de dispositivos         │
+│                                       │  Aplicacion de politicas                      │
+│                                       │  Monitoreo de actividad                       │
+│                                       │  Respuesta remota                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  SISTEMA DE DETECCION DE INTRUSIONES  │  Detecta amenazas en la red                    │
+│  (IDS)                                │  Alerta sobre trafico sospechoso               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS COMBINACIONES NO SON INTEGRALES
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  FIREWALL + VPN                                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Firewall: protege el perimetro (no gestiona endpoints)                              │
+│  • VPN: acceso remoto seguro (no es proteccion de endpoints)                           │
+│  • Falta GESTION centralizada                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CIFRADO + MFA                                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Cifrado: protege datos, no detecta intrusiones                                      │
+│  • MFA: control de acceso, no monitorea actividad                                      │
+│  • No hay supervision de endpoints                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  EVALUACION DE RIESGOS + SOC                                                           │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Evaluacion de riesgos: es una actividad PUNTUAL (no supervision continua)           │
+│  • SOC: operaciones de seguridad, pero necesita herramientas para ejecutar             │
+│  • Falta el SOFTWARE DE GESTION concreto                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  Proteccion integral = GESTION (control) + DETECCION (alertas)
+
+  = Software de gestion de endpoints + IDS
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - POR QUE UNA STARTUP (FINANCIERA) ELIGIO SOCaaS
+==========================================================================================
+
+Escenario:
+Faster Financial, una pequeña empresa emergente de tecnologia financiera, eligio SOCaaS.
+
+Pregunta:
+Por que Faster Financial eligio el modelo SOCaaS?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Para garantizar servicios escalables y rentables.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CARACTERISTICAS DE UNA STARTUP                                                       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Presupuesto LIMITADO                                                               │
+│  • Poco personal interno                                                              │
+│  • Necesidad de CRECER rapidamente                                                    │
+│  • No puede invertir en infraestructura propia                                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  BENEFICIOS DE SOCaaS PARA UNA STARTUP                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  1. ESCALABILIDAD: el servicio crece con la empresa                                   │
+│  2. RENTABILIDAD: pago por suscripcion (sin inversion inicial)                        │
+│  3. No necesita contratar personal especializado                                      │
+│  4. Proveedor externo se encarga de todo                                              │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON LA RAZON PRINCIPAL
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  COMBINAR RECURSOS INTERNOS CON EXPERTOS EXTERNOS                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Eso es SOC HIBRIDO, no SOCaaS                                                      │
+│  • SOCaaS es COMPLETAMENTE externo, no combina                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PROPORCIONAR MONITOREO REMOTO LAS 24 HORAS                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un beneficio, pero NO es la razon PRINCIPAL para una STARTUP                     │
+│  • Muchos modelos ofrecen monitoreo 24/7                                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  MANTENER CONTROL TOTAL SOBRE LAS MEDIDAS DE SEGURIDAD                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • SOCaaS da MENOS control (dependes del proveedor)                                    │
+│  • Eso es caracteristico de SOC INTERNO                                                │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  Para una startup, la prioridad es:
+
+  ESCALABILIDAD + RENTABILIDAD
+
+  Por eso eligio SOCaaS.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - INICIATIVA ESTRATEGICA PARA OPTIMIZAR UN SOC INTERNO
+==========================================================================================
+
+Escenario:
+Bristol and Associates recomienda implementar un SOC interno.
+
+Pregunta:
+Que iniciativa estrategica deberia emprender la compañia para optimizar la eficacia
+de su SOC interno?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Desarrolle un plan estable de respuesta a incidentes adaptado a las necesidades
+especificas de la compañia.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  POR QUE ES LA MEJOR OPCION                                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Un SOC interno ya tiene PERSONAL y HERRAMIENTAS                                     │
+│  • Lo que necesita es un PROCESO CLARO para responder                                  │
+│  • El PLAN DE RESPUESTA A INCIDENTES (IRP) define:                                     │
+│    - Roles y responsabilidades                                                         │
+│    - Pasos a seguir ante un incidente                                                  │
+│    - Comunicacion y escalamiento                                                       │
+│    - Recuperacion y lecciones aprendidas                                               │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON LA MEJOR INICIATIVA ESTRATEGICA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SUBCONTRATAR ALGUNAS FUNCIONES                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Eso es un modelo HIBRIDO, no es optimizar un SOC interno                            │
+│  • Puede ser util, pero no es la iniciativa principal                                  │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  IMPLEMENTAR HERRAMIENTAS AVANZADAS                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es necesario, pero SIN UN PLAN las herramientas no tienen direccion                │
+│  • El plan define COMO se usan esas herramientas                                       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  IMPLEMENTAR UN SOC VIRTUAL                                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Eso es otro modelo, no optimizar el SOC interno                                     │
+│  • Un SOC virtual reemplazaria o complementaria, no "optimizaria"                      │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  La iniciativa estrategica clave es:
+
+  TENER UN PLAN DE RESPUESTA A INCIDENTES ADAPTADO.
+
+  (herramientas y personal + plan = SOC interno eficaz)
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+👥 SELECCION DE CANDIDATOS PARA EL EQUIPO SOC
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CANDIDATO            │  ROL SUGERIDO                       │  HABILIDADES CLAVE       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Aisha Khatri         │  INGENIERO DE SEGURIDAD             │  Monitoreo trafico,       │
+│                        │                                     │  diseno arquitecturas,    │
+│                        │                                     │  politicas seguridad      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  Ikenna Nnamdi         │  CAZADOR DE AMENAZAS                │  Investigacion forense,   │
+│                         │                                     │  analisis patrones,       │
+│                         │                                     │  contencion amenazas      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  (Perfil sin nombre)   │  ESPECIALISTA EN COMUNICACION      │  Distribucion alertas,    │
+│                         │                                     │  capacitacion,            │
+│                         │                                     │  relaciones medios        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  (Perfil sin nombre)   │  INGENIERO DE SEGURIDAD /           │  Gestion hardware/software│
+│                         │  SOPORTE TECNICO                   │  resolucion problemas     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  (Perfil sin nombre)   │  ESPECIALISTA EN GESTION DE         │  Evaluacion vulnerabilidades│
+│                         │  VULNERABILIDADES                  │  mitigacion riesgos       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ CANDIDATOS QUE PODRIAN NO AVANZAR (SEGUN NECESIDAD)
+==========================================================================================
+
+  • Hazel Oliver (relaciones publicas y comunicacion) → similar al especialista en comunicacion
+  • Rosa De La Cruz (analisis alertas, respuesta incidentes) → podria ser Analista de seguridad
+    si hay puesto disponible
+
+==========================================================================================
+✅ RECOMENDACION FINAL
+========================================================================================┐
+
+  Priorizar perfiles que cubran los roles BASICOS del SOC:
+
+  1. Analista de seguridad (respuesta a incidentes)
+  2. Ingeniero de seguridad (infraestructura)
+  3. Cazador de amenazas (busqueda proactiva)
+  4. Especialista en vulnerabilidades
+  5. Especialista en comunicacion (capacitacion y alertas)
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+👥 SELECCION DE 5 CANDIDATOS PARA EL SOC (DE 7)
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ✅ AVANZAN (5)                                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  1. Aisha Khatri                     → INGENIERO DE SEGURIDAD                          │
+│  2. Ikenna Nnamdi                     → CAZADOR DE AMENAZAS                             │
+│  3. Perfil (evaluacion vulnerabilidades) → ESPECIALISTA EN VULNERABILIDADES            │
+│  4. Rosa De La Cruz                   → ANALISTA DE SEGURIDAD                           │
+│  5. Perfil (distribucion alertas y capacitacion) → ESPECIALISTA EN COMUNICACION        │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ❌ NO AVANZAN (2)                                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • Perfil (gestion hardware/software) → rol mas de SOPORTE TI que SOC                  │
+│  • Hazel Oliver                       → redundante (comunicacion ya cubierta)           │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 CRITERIOS DE SELECCION
+========================================================================================┐
+
+  Se priorizaron los roles BASICOS del SOC:
+
+  • Ingeniero de seguridad (infraestructura y politicas)
+  • Cazador de amenazas (busqueda proactiva)
+  • Especialista en vulnerabilidades (evaluacion y remediacion)
+  • Analista de seguridad (respuesta a incidentes)
+  • Especialista en comunicacion (alertas y capacitacion)
+☑️ Aisha Khatri
+☑️ Ikenna Nnamdi
+☑️ Ravi Desai
+☑️ Rosa De La Cruz
+☑️ Zhi Chang
+==========================================================================================
+```
+```
+==========================================================================================
+❓ PREGUNTA - RIESGO INTERNO TRAS EL ATAQUE DE MALWARE
+==========================================================================================
+
+Escenario:
+Bristol and Associates sufrio un ataque de malware (involucro a Alex Spearman, ex empleado).
+Se busca identificar un riesgo INTERNO.
+
+Pregunta:
+A que riesgo interno podria enfrentar la compania tras el ataque de malware?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Amenazas internas de empleados actuales.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  POR QUE AMENAZAS INTERNAS                                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  • El ataque fue cometido por Alex Spearman (ex empleado)                              │
+│  • Esto demuestra que PERSONAS CON ACCESO pueden ser una amenaza                       │
+│  • Empleados ACTUALES tambien podrian:                                                 │
+│    - Robar datos                                                                       │
+│    - Instalar malware                                                                  │
+│    - Hacer mal uso de sus privilegios                                                  │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON RIESGOS INTERNOS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ATAQUES DDoS                                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un riesgo EXTERNO (atacantes desde Internet)                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  DESASTRES NATURALES                                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un riesgo FISICO / AMBIENTAL, no interno                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ATAQUES DE INGENIERIA SOCIAL                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Generalmente son ataques EXTERNOS (phishing, llamadas)                              │
+│  • Pueden involucrar empleados como victimas, pero la amenaza es externa               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  Despues de un ataque con un sospechoso interno, la leccion es:
+
+  PREPARARSE CONTRA AMENAZAS INTERNAS DE EMPLEADOS ACTUALES.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - OTRO RIESGO INTERNO
+==========================================================================================
+
+Escenario:
+Bristol and Associates necesita identificar un riesgo INTERNO adicional.
+
+Pregunta:
+Cual es otro riesgo interno que la compañia deberia considerar?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Malas practicas de gestion de contraseñas.
+
+==========================================================================================
+📌 EXPLICACION - RIESGOS INTERNOS VS EXTERNOS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  RIESGO                                    │  TIPO                                     │
+├────────────────────────────────────────────┼───────────────────────────────────────────┤
+│  Malas practicas de gestion de contraseñas  │  INTERNO (empleados) ✓                    │
+│  Falta de encriptacion en transmision      │  TECNICO (puede ser interno)              │
+│  Vulnerabilidades en software terceros     │  EXTERNO (proveedor)                       │
+│  Phishing focalizado a ejecutivos          │  EXTERNO (atacante)                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON RIESGOS INTERNOS (EN SENTIDO ESTRICTO)
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  FALTA DE ENCRIPTACION EN TRANSMISION                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es una deficiencia TECNICA, no necesariamente un "riesgo interno" clasico           │
+│  • La empresa puede decidir no implementarla, pero la amenaza es externa               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  VULNERABILIDADES EN SOFTWARE DE TERCEROS                                               │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un riesgo EXTERNO (depende del proveedor de software)                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PHISHING FOCALIZADO A EJECUTIVOS                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es un riesgo EXTERNO (el atacante es externo)                                       │
+│  • El ejecutivo es la VICTIMA, no la fuente del riesgo                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  El riesgo interno MAS CLARO de las opciones es:
+
+  MALAS PRACTICAS DE GESTION DE CONTRASEÑAS.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - REGLA DE COPIA DE SEGURIDAD 3-2-1
+==========================================================================================
+
+Pregunta:
+De acuerdo con la regla de copia de seguridad 3-2-1, donde debe almacenar Bristol and
+Associates sus copias de seguridad?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+En las instalaciones en un servidor local y en una unidad de disco duro y fuera del
+sitio en la nube.
+
+==========================================================================================
+📌 EXPLICACION - REGLA 3-2-1
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  REGLA 3-2-1                                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  3: Tener al menos TRES copias de los datos (1 original + 2 backups)                   │
+│  2: Usar al menos DOS tipos de medios DIFERENTES                                       │
+│  1: Mantener al menos UNA copia FUERA DEL SITIO (off-site)                            │
+│                                                                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 APLICACION AL ESCENARIO
+========================================================================================┐
+
+  Opcion correcta:
+
+  • En las instalaciones: servidor local (copia 1)
+  • En las instalaciones: unidad de disco duro (copia 2, medio diferente)
+  • Fuera del sitio: nube (copia 3, off-site)
+
+  Cumple: 3 copias, 2 medios, 1 off-site ✓
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO CUMPLEN
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SERVIDOR LOCAL + DOS SERVICIOS EN LA NUBE                                             │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • No hay DOS tipos de medios DIFERENTES (nube y nube son similares)                   │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  SERVIDOR LOCAL + DISCO DURO + USB                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Todo en las instalaciones (sin copia OFF-SITE) ❌                                    │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CINTA + DISCO DURO + USB                                                              │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Todo en las instalaciones (sin copia OFF-SITE) ❌                                    │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - MEDIDAS PARA EVITAR INCIDENTES SIMILARES EN EL FUTURO
+==========================================================================================
+
+Escenario:
+Bristol and Associates sufrio un ataque de malware (ex empleado descontento).
+
+Pregunta:
+Que medidas debe tomar la compania para EVITAR incidentes similares en el futuro?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Reforzar las normas de seguridad de la red y los controles de acceso.
+
+==========================================================================================
+📌 EXPLICACION
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  PREVENCION VS REACCION                                                                │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  MEDIDA                                      │  TIPO                                  │
+├──────────────────────────────────────────────┼────────────────────────────────────────┤
+│  Reforzar normas de seguridad y controles   │  PREVENCION (evita que vuelva a pasar) ✓ │
+│  Realizar analisis de vulnerabilidades       │  DETECCION / ANALISIS                   │
+│  Revisar y mejorar procedimientos de respuesta│  REACCION / MEJORA                     │
+│  Ofrecer proteccion de identidad             │  MITIGACION DE CONSECUENCIAS            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON PREVENTIVAS (O NO SON LAS MAS DIRECTAS)
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  OFRECER PROTECCION DE IDENTIDAD                                                        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Mitiga el daño a los clientes, pero NO PREVIENE el incidente                        │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  REALIZAR ANALISIS DE VULNERABILIDADES                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Ayuda a IDENTIFICAR debilidades, pero la accion PREVENTIVA es aplicar los parches   │
+│  • Es parte del proceso, no la medida en si                                            │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  REVISAR Y MEJORAR PROCEDIMIENTOS DE RESPUESTA                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Mejora la REACCION ante futuros incidentes, pero NO los PREVIENE                    │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  Para EVITAR que vuelva a pasar un incidente similar (empleado malicioso o negligente):
+
+  REFORZAR NORMAS DE SEGURIDAD DE RED Y CONTROLES DE ACCESO.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - ACTIVIDADES POSTERIORES AL INCIDENTE PARA MEJORA CONTINUA
+==========================================================================================
+
+Escenario:
+Bristol and Associates quiere garantizar una MEJORA CONTINUA despues del incidente.
+
+Pregunta:
+Que deben hacer como parte de las actividades posteriores al incidente?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Llevar a cabo una reunion de "lecciones aprendidas" con todos los involucrados.
+
+==========================================================================================
+📌 EXPLICACION - MEJORA CONTINUA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  ACTIVIDAD                             │  PROPÓSITO                                    │
+├────────────────────────────────────────┼───────────────────────────────────────────────┤
+│  Lecciones aprendidas                  │  ANALIZAR que paso, que funcionó, que falló,  │
+│  (post-mortem)                         │  y definir MEJORAS para el futuro ✓           │
+│  Restaurar sistemas                    │  RECUPERACION (no es mejora continua)         │
+│  Cambiar contraseñas                   │  MITIGACION (no es mejora continua)           │
+│  Instalar parches                      │  CORRECCION (no es mejora continua)           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES NO SON ACTIVIDADES DE MEJORA CONTINUA
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  RESTAURAR SISTEMAS                                                                   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es parte de la RECUPERACION, no de la mejora continua                               │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CAMBIAR CONTRASEÑAS                                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es una accion de MITIGACION (contencion)                                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  INSTALAR PARCHES                                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  • Es una accion CORRECTIVA, no esta enfocada en la mejora continua                    │
+│  • La mejora continua implica ANALISIS y CAMBIOS EN PROCESOS                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+✅ CONCLUSION
+========================================================================================┐
+
+  La mejora continua despues de un incidente se logra con:
+
+  REUNION DE "LECCIONES APRENDIDAS" (post-mortem).
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - METODO DE CIFRADO PARA EMAILS CONFIDENCIALES
+==========================================================================================
+
+Escenario:
+Emails que contienen informacion confidencial de clientes.
+
+Pregunta:
+Que metodo de cifrado debe emplear Bristol and Associates?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+Cifrado asimetrico.
+
+==========================================================================================
+📌 EXPLICACION - CIFRADO DE EMAILS
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  METODO                    │  APLICA PARA EMAILS                        │  VIABLE     │
+├────────────────────────────┼────────────────────────────────────────────┼─────────────┤
+│  CIFRADO ASIMETRICO        │  PGP, S/MIME (clave publica/privada)       │  SI ✓       │
+│  CIFRADO SIMETRICO         │  Requiere compartir la misma clave         │  NO         │
+│                            │  por otro canal                            │  (poco practico)
+│  CIFRADO A NIVEL DE ARCHIVO│  Solo para adjuntos, no el cuerpo          │  PARCIAL    │
+│  CIFRADO DE DISCO COMPLETO │  Protege el disco, no emails enviados      │  NO         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 COMO FUNCIONA EL CIFRADO ASIMETRICO EN EMAILS
+========================================================================================┐
+
+  1. El destinatario genera un par de claves: PUBLICA y PRIVADA
+  2. El remitente obtiene la CLAVE PUBLICA del destinatario
+  3. El remitente CIFRA el email con la clave publica
+  4. El destinatario DESCIFRA con su CLAVE PRIVADA
+
+  Nadie mas puede leer el mensaje.
+
+==========================================================================================
+```
+
+```
+==========================================================================================
+❓ PREGUNTA - BENEFICIO DEL CIFRADO ASIMETRICO
+==========================================================================================
+
+Escenario:
+Comunicacion segura entre abogados de Bristol and Associates.
+
+Pregunta:
+Cual es un beneficio significativo del uso del cifrado asimetrico?
+
+==========================================================================================
+✅ RESPUESTA CORRECTA
+==========================================================================================
+
+No requiere claves previamente compartidas.
+
+==========================================================================================
+📌 EXPLICACION - DIFERENCIA CLAVE ENTRE CIFRADO SIMETRICO Y ASIMETRICO
+==========================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  CARACTERISTICA        │  CIFRADO SIMETRICO      │  CIFRADO ASIMETRICO                │
+├────────────────────────┼────────────────────────┼────────────────────────────────────┤
+│  CLAVES                │  UNA SOLA (compartida)  │  PAR (publica + privada)            │
+│  CLAVES PREVIAMENTE    │  REQUIERE ✓             │  NO REQUIERE ✓                     │
+│  COMPARTIDAS           │                        │                                    │
+│  VELOCIDAD             │  RAPIDO                 │  LENTO                              │
+│  POTENCIA COMPUTACIONAL│  BAJA                   │  ALTA                               │
+│  ALGORITMOS            │  AES, DES               │  RSA, ECC                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+==========================================================================================
+📌 POR QUE ESTE BENEFICIO ES IMPORTANTE PARA ABOGADOS
+========================================================================================┐
+
+  • Un abogado puede comunicarse con un CLIENTE NUEVO sin haber intercambiado claves antes
+  • Solo necesita la CLAVE PUBLICA del destinatario (ej. publicada en el sitio web)
+  • El cliente usa esa clave publica para cifrar el mensaje
+  • Solo el abogado (con su clave privada) puede descifrarlo
+
+==========================================================================================
+❌ POR QUE LAS OTRAS OPCIONES SON INCORRECTAS
+==========================================================================================
+
+  • Emplea algoritmos mas simples? → FALSO, los algoritmos asimetricos son MAS COMPLEJOS
+  • Es mas rapido que el simetrico? → FALSO, es MAS LENTO
+  • Requiere menos potencia computacional? → FALSO, requiere MAS
+
+==========================================================================================
 ```
